@@ -65,7 +65,7 @@ p {text-align: justify;}
 
 .chapterTitle {
     color: blue;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-style: italic;
 }
 
@@ -502,6 +502,16 @@ p {text-align: justify;}
         padding: 20px !important;
         border-radius: 20px !important;
         background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
         box-shadow: 10px 10px 5px #aaaaaa !important;
         position: relative !important;
         overflow: hidden !important;
