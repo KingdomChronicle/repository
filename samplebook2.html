@@ -50,16 +50,21 @@
       transition: background .4s ease, color .4s ease;
     }
 
+    /* 🧭 UPDATED: Centered Header and Title */
     header.book-header{
       padding:1.25rem 1.5rem;
       display:flex;
+      flex-direction:column;
       align-items:center;
       justify-content:center;
-      flex-wrap:wrap;
-      gap:1rem;
+      text-align:center;
       border-bottom:1px solid rgba(0,0,0,0.1);
+      gap:1rem;
     }
 
+    .title-group{
+      text-align:center;
+    }
     .title-group h1{margin:0;font-size:1.3rem;}
     .title-group p{margin:0;font-size:.95rem;opacity:.8;}
 
@@ -68,9 +73,9 @@
       align-items:center;
       gap:.75rem;
       flex-wrap:wrap;
+      justify-content:center;
     }
 
-    /* ✨ Modern Glass Buttons */
     button, select{
       padding:.55rem .9rem;
       border-radius:10px;
@@ -97,21 +102,10 @@
       transition:opacity .3s ease;
     }
 
-    /* 🧭 Custom Scrollbar */
-    main.book-content::-webkit-scrollbar {
-      width: 10px;
-    }
-    main.book-content::-webkit-scrollbar-track {
-      background: rgba(0,0,0,0.05);
-      border-radius:10px;
-    }
-    main.book-content::-webkit-scrollbar-thumb {
-      background: rgba(100,100,100,0.3);
-      border-radius:10px;
-    }
-    main.book-content::-webkit-scrollbar-thumb:hover {
-      background: rgba(100,100,100,0.5);
-    }
+    main.book-content::-webkit-scrollbar { width: 10px; }
+    main.book-content::-webkit-scrollbar-track { background: rgba(0,0,0,0.05); border-radius:10px; }
+    main.book-content::-webkit-scrollbar-thumb { background: rgba(100,100,100,0.3); border-radius:10px; }
+    main.book-content::-webkit-scrollbar-thumb:hover { background: rgba(100,100,100,0.5); }
 
     article.chapter{display:none;}
     article.active{display:block;}
@@ -152,7 +146,6 @@
       main.book-content{padding:1.25rem}
     }
 
-    /* 🖨️ Print protection */
     @media print {
       body {display:none !important;}
       body::before {
@@ -161,7 +154,6 @@
       }
     }
 
-    /* 🖥️ Fullscreen view mode — ONLY show article + Prev/Next */
     .fullscreen-active #prevBtn,
     .fullscreen-active #nextBtn {
       position: fixed;
@@ -202,15 +194,15 @@
 <body class="light" oncontextmenu="return false">
   <div class="book-wrap" id="bookWrapper">
     <header class="book-header">
-      <center>
-        <div class="title-group">
+      <div class="title-group">
         <h1>Ang Bayaning May Puso at Dangal</h1>
         <p>Posporo</p>
-      </div></center>
+      </div>
       <div class="controls">
         <button id="decrease">A-</button>
         <button id="reset">A</button>
         <button id="increase">A+</button>
+        <button id="fullscreenBtn">🖥️ Fullscreen</button>
         <select id="fontSelect">
           <option value="serif">Serif (Georgia)</option>
           <option value="sans">Sans (Arial)</option>
@@ -226,7 +218,7 @@
           <option value="rose">🌷 Rose</option>
           <option value="classic">🖤 Classic</option>
         </select>
-        <button id="fullscreenBtn">🖥️ Fullscreen</button>
+        
       </div>
     </header>
 
@@ -258,7 +250,7 @@
         <h3>Ang mga Bagong Bayani</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam eveniet odio consequuntur ex voluptatibus dolorem maiores dolore quidem nesciunt, non ad repellendus animi, rem eligendi repellat iste dolores quasi amet unde qui aut! Officia pariatur repudiandae quasi aliquid illo soluta totam, ullam aspernatur at dolor, fuga sit laborum sunt. Ipsa vero, enim consectetur voluptatum laudantium quisquam similique voluptate vel earum, qui nostrum corporis tempore sequi dolorem animi quis laborum, fuga tenetur iste nobis hic recusandae itaque ducimus assumenda? Natus odit culpa cum perferendis iste aut sit soluta, laboriosam aspernatur delectus, saepe excepturi! Possimus quisquam voluptas sint dolores odio in, quas nesciunt sequi rem est dolor eligendi saepe, praesentium voluptatum dignissimos obcaecati dolore minima officiis maiores? Consequuntur minus, asperiores iste dolorem assumenda odio omnis doloremque hic quibusdam id odit saepe reprehenderit quas molestiae libero repellat quo quam dolorum voluptates. Pariatur animi eius nobis iste ut eos necessitatibus recusandae commodi consequatur. Voluptate tempora repellendus facilis animi dolorem esse assumenda aut eveniet. Doloremque quibusdam perspiciatis pariatur, hic dolorem iste distinctio repudiandae repellat, nihil quasi enim, vero voluptates consequatur eligendi! Illo ducimus repellat a quis autem earum rerum mollitia cupiditate molestiae quae! Dolorum non pariatur natus, et, esse molestiae delectus, facere nemo illum a illo eveniet consequuntur eaque doloremque sed quaerat atque aliquid. Corporis fuga laborum placeat quas reprehenderit nam ipsam sed nostrum atque dolore eum, soluta dolor itaque laboriosam cumque sit nisi facilis quaerat illum maiores incidunt doloremque! Illo aliquid aperiam illum quidem hic expedita molestiae rerum atque cumque reiciendis accusantium sed saepe enim, debitis modi natus totam eaque, ex iste voluptate porro facere sunt. Harum doloribus facilis nostrum accusantium deleniti repudiandae totam numquam exercitationem praesentium, dolores itaque consequuntur cum ipsum laborum at vero excepturi similique? Voluptas maiores blanditiis molestiae incidunt officiis, similique id laboriosam officia natus fugit, voluptatibus, quasi dicta repellendus dolores sint optio? Facilis sunt quidem eligendi deserunt cupiditate dolor tempora quibusdam recusandae praesentium totam. Quibusdam ducimus laboriosam numquam, facilis commodi cum iste eum! Delectus quis inventore magni sunt tenetur quod. Rem expedita dicta cumque reiciendis! Doloremque id a libero, quaerat incidunt voluptates veritatis eveniet quasi aperiam ratione perferendis illo voluptatibus eius, minus quo sit. Quisquam deleniti aut ipsum nulla commodi maiores voluptate reiciendis culpa facilis eaque enim, quibusdam beatae minus dolor officia reprehenderit vitae? Mollitia laboriosam molestias sapiente, modi fuga amet, recusandae dolor alias sit necessitatibus totam molestiae quos, praesentium libero. Et sed dolore ab velit, nulla harum quia commodi magnam rerum adipisci maxime quae! Ipsam reprehenderit eaque voluptatibus eveniet magni consequuntur porro. Neque, laboriosam soluta voluptate nemo reprehenderit, ipsam dolores maiores nulla delectus porro adipisci in ullam voluptatum, praesentium iusto. Accusamus soluta, esse similique distinctio deserunt tenetur? Dolor quia ex, reprehenderit assumenda velit eligendi pariatur eveniet iure labore amet sed quisquam eum ullam voluptas sint saepe vitae, maxime id voluptatibus earum alias ipsa similique debitis autem? Itaque incidunt exercitationem neque iusto possimus molestiae ipsum, natus consectetur architecto! Veritatis, sit itaque! Dicta repellat exercitationem ducimus doloremque accusantium aspernatur! Eveniet in repellendus cupiditate adipisci! Sapiente velit eius, quidem temporibus consectetur ea culpa? Enim illum nam quam ad magni molestiae reiciendis adipisci molestias reprehenderit optio, consequuntur iste expedita quia quis, tempore error dicta sunt. Voluptatum, earum voluptate nisi accusantium totam veniam aliquid architecto quia? Culpa voluptate aspernatur, fugiat esse molestias adipisci maiores eum, voluptatem aliquid fugit unde dignissimos error laborum, sit commodi molestiae earum consequuntur nisi perferendis magnam obcaecati minus provident. Sunt, nostrum nam neque a voluptatem, sapiente officiis nemo doloremque maiores excepturi quis eos, alias facere velit expedita repudiandae totam? Optio nam quas quaerat quo repellendus numquam iusto qui dolorum vero! Molestiae similique quae recusandae dolores minus quis quia ipsam voluptatibus cum, amet perspiciatis est ratione numquam cumque ullam provident obcaecati adipisci voluptas! Rem, itaque expedita, at in magni, delectus cupiditate a aliquam reprehenderit quas sapiente dicta! Voluptate quae atque maiores quas voluptates earum ad doloremque architecto, corrupti porro deleniti nemo unde animi veniam harum magni nostrum autem impedit neque eum rerum dolores iste. Obcaecati adipisci voluptatum labore, harum facilis quis in cupiditate eveniet iure omnis optio commodi quasi alias dolorum voluptate doloremque! Nesciunt cupiditate laboriosam expedita omnis minus est animi maiores reprehenderit saepe modi asperiores, nobis, mollitia accusamus sequi tempora consequuntur. Odit aliquid obcaecati dolores assumenda recusandae unde. Sunt deleniti assumenda laudantium quisquam perspiciatis iure rem quidem omnis! Ea accusantium sit voluptates ipsa sed qui nemo officiis quae excepturi, recusandae dignissimos consequuntur, maxime hic, quibusdam provident numquam dolorem tempora doloribus nesciunt porro omnis vero? Ducimus impedit deserunt dolore pariatur facere recusandae iste aperiam debitis harum natus doloribus reprehenderit distinctio nisi eligendi quos quae molestias cumque incidunt, beatae maxime, labore praesentium! Earum voluptatum modi sint consectetur aut consequuntur, vel iusto dignissimos, blanditiis in deserunt a? Aspernatur pariatur eius, quae eos magni placeat quod aperiam unde quos accusantium rerum deserunt recusandae soluta autem, dolorem provident nihil laudantium nostrum minus facilis impedit! Quia, sequi unde! Dolore nemo, commodi cupiditate tempore sapiente doloremque fuga voluptates corrupti sit? Magni cumque, dolor debitis impedit quo fuga, consequuntur rerum perferendis est deserunt nesciunt et veniam eius neque rem minus recusandae exercitationem. Dolores, accusantium iusto quam aspernatur magni consequuntur voluptatem a unde modi architecto dolorem repellendus perspiciatis ullam voluptatibus molestias quas ipsum fugit voluptatum. Incidunt provident ut, iure porro officiis numquam tempore accusantium pariatur expedita unde facilis a ab temporibus odio nostrum optio est eos fugiat. Et optio hic repudiandae ut. Consequuntur blanditiis, voluptatum est pariatur, similique repudiandae quae voluptates error delectus perferendis et, quidem debitis. Aliquid vel praesentium eum esse consequatur hic atque temporibus voluptatum accusantium, sequi commodi neque eveniet ut eius adipisci harum! Temporibus consequuntur atque sequi enim numquam cumque iusto aspernatur voluptates architecto illo, dolorum quos eaque deserunt incidunt consectetur, ea ipsam, optio eligendi dignissimos omnis explicabo quidem esse quia. Totam natus cupiditate neque ut repudiandae ea pariatur inventore dolor, aspernatur cumque, consequatur harum ducimus eos, odio accusantium quam? Assumenda rem, sed commodi saepe quibusdam magnam. At voluptatum necessitatibus aliquam qui dolorem deserunt vitae, fugiat modi nulla. Voluptates tempore consequatur dolor, aliquid animi quisquam pariatur quas dolorum officia natus autem vitae beatae praesentium adipisci.</p>
         
-    </article>
+      </article>
 
       <article id="ch2" class="chapter">
         <h2>Kabanata 2 — Gitna</h2>
@@ -306,9 +298,7 @@
       increase.onclick=()=>{base=Math.min(40,base+1);applyFont();}
       reset.onclick=()=>{base=18;applyFont();}
 
-      // 📖 Font Family Switcher
-      fontSelect.onchange=()=>{
-        const font=fontSelect.value;
+      fontSelect.onchange=()=>{const font=fontSelect.value;
         switch(font){
           case "serif": document.body.style.fontFamily="var(--serif)"; break;
           case "sans": document.body.style.fontFamily="var(--sans)"; break;
@@ -337,26 +327,8 @@
       themeSelect.onchange=()=>{applyTheme(themeSelect.value);localStorage.setItem('theme',themeSelect.value);};
       function applyTheme(theme){document.body.className=theme;}
 
-      // 🖥️ Fullscreen Feature
-      fullscreenBtn.onclick=()=>{
-        if(!document.fullscreenElement){
-          wrapper.requestFullscreen().catch(err=>alert("Fullscreen error: "+err.message));
-        }else{
-          document.exitFullscreen();
-        }
-      };
-
-      document.addEventListener("fullscreenchange",()=>{
-        if(document.fullscreenElement){
-          document.body.classList.add("fullscreen-active");
-          prevBtn.textContent = "<";
-          nextBtn.textContent = ">";
-        }else{
-          document.body.classList.remove("fullscreen-active");
-          prevBtn.textContent = "⬅️ Previous";
-          nextBtn.textContent = "Next ➡️";
-        }
-      });
+      fullscreenBtn.onclick=()=>{if(!document.fullscreenElement){wrapper.requestFullscreen().catch(err=>alert("Fullscreen error: "+err.message));}else{document.exitFullscreen();}};
+      document.addEventListener("fullscreenchange",()=>{if(document.fullscreenElement){document.body.classList.add("fullscreen-active");prevBtn.textContent="<";nextBtn.textContent=">";}else{document.body.classList.remove("fullscreen-active");prevBtn.textContent="⬅️ Previous";nextBtn.textContent="Next ➡️";}});
     })();
   </script>
 </body>
