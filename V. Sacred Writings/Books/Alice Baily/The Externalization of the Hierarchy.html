@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="tl">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Secure eBook — Interactive Reader</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
+  <style>
+    :root{
+      --base-font: 18px;
+      --measure: 60ch;
+      --max-width: 900px;
+      --serif: "Georgia", "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --mono: "Courier New", Courier, monospace;
+      --open-dyslexic: "OpenDyslexic", "Arial", sans-serif;
+    }
+
+    @font-face {
+      font-family: "OpenDyslexic";
+      src: url("https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/compiled/OpenDyslexic-Regular.otf");
+    }
+
+    *{box-sizing:border-box;}
+    html,body{height:100%;margin:0;padding:0;}
+    body{
+      font-family: var(--serif);
+      font-size: var(--base-font);
+      line-height:1.68;
+      display:flex;
+      justify-content:center;
+      padding:2.5rem 1rem;
+      transition: background .4s ease, color .4s ease, font-family .3s ease;
+      user-select:none;
+      overflow:hidden;
+    }
+
+    .book-wrap{
+      width:100%;
+      max-width:var(--max-width);
+      border-radius:16px;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      backdrop-filter: blur(5px);
+      box-shadow:0 8px 30px rgba(0,0,0,0.1);
+      transition: background .4s ease, color .4s ease;
+    }
+
+    header.book-header, nav.chapter-nav, footer.book-footer{
+      transition: background .4s ease, color .4s ease;
+    }
+
+    /* 🧭 UPDATED: Centered Header and Title */
+    header.book-header{
+      padding:1.25rem 1.5rem;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      border-bottom:1px solid rgba(0,0,0,0.1);
+      gap:1rem;
+    }
+
+    .title-group{
+      text-align:center;
+    }
+    .title-group h1{margin:0;font-size:1.3rem;}
+    .title-group p{margin:0;font-size:.95rem;opacity:.8;}
+
+    .controls, .chapter-controls{
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    button, select{
+      padding:.55rem .9rem;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.3);
+      background:rgba(255,255,255,0.15);
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      color:inherit;
+      font-family:var(--sans);
+      cursor:pointer;
+      transition:all .25s ease;
+      backdrop-filter:blur(6px);
+    }
+    button:hover, select:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+    select{background:rgba(255,255,255,0.2);}
+
+    main.book-content{
+      flex:1;
+      padding:2rem 2.25rem;
+      max-width:var(--measure);
+      margin:0 auto;
+      overflow-y:auto;
+      scroll-behavior:smooth;
+      min-height:300px;
+      transition:opacity .3s ease;
+    }
+
+    main.book-content::-webkit-scrollbar { width: 10px; }
+    main.book-content::-webkit-scrollbar-track { background: rgba(0,0,0,0.05); border-radius:10px; }
+    main.book-content::-webkit-scrollbar-thumb { background: rgba(100,100,100,0.3); border-radius:10px; }
+    main.book-content::-webkit-scrollbar-thumb:hover { background: rgba(100,100,100,0.5); }
+
+    article.chapter{display:none;}
+    article.active{display:block;}
+
+    nav.chapter-nav{
+      padding:1rem 1.25rem;
+      display:flex;
+      justify-content:center;
+      border-top:1px solid rgba(0,0,0,0.1);
+      border-bottom:1px solid rgba(0,0,0,0.05);
+    }
+
+    footer.book-footer{
+      padding:1rem;
+      text-align:center;
+      font-size:.9rem;
+      opacity:.8;
+    }
+
+    /* 🎨 Themes */
+    body.light { background:#f8f8f8; color:#222; }
+    body.light .book-wrap{background:#ffffff;color:#222;}
+    body.dark { background:#121212; color:#eee; }
+    body.dark .book-wrap{background:#1e1e1e;color:#eee;}
+    body.sepia { background:#f4ecd8; color:#4a3b26; }
+    body.sepia .book-wrap{background:#f7f0dc;color:#4a3b26;}
+    body.midnight { background:#001f3f; color:#d6e8ff; }
+    body.midnight .book-wrap{background:#032b52;color:#d6e8ff;}
+    body.forest { background:#10281a; color:#e8f5ee; }
+    body.forest .book-wrap{background:#1e3a2a;color:#e8f5ee;}
+    body.rose { background:#ffeef1; color:#4a1f2a; }
+    body.rose .book-wrap{background:#fff5f6;color:#4a1f2a;}
+    body.classic { background:#eaeaea; color:#111; }
+    body.classic .book-wrap{background:#fff;color:#111;}
+
+    @media (max-width:680px){
+      :root{--base-font:16px}
+      main.book-content{padding:1.25rem}
+    }
+
+    @media print {
+      body {display:none !important;}
+      body::before {
+        content:"⚠️ PAALALA: Hindi maaaring i-print o kopyahin ang akdang ito. Protektado ng RA 8293.";
+        display:block;text-align:center;color:red;font-size:1.6rem;margin-top:50vh;
+      }
+    }
+
+    .fullscreen-active #prevBtn,
+    .fullscreen-active #nextBtn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+      font-size: 1.5rem;
+      padding: .75rem 1rem;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+    }
+    .fullscreen-active #prevBtn:hover,
+    .fullscreen-active #nextBtn:hover {
+      background: rgba(0,0,0,0.6);
+      transform: translateY(-50%) scale(1.1);
+    }
+    .fullscreen-active #prevBtn { left: 1rem; }
+    .fullscreen-active #nextBtn { right: 1rem; }
+
+    .fullscreen-active header,
+    .fullscreen-active nav,
+    .fullscreen-active footer,
+    .fullscreen-active #themeSelect,
+    .fullscreen-active #decrease,
+    .fullscreen-active #increase,
+    .fullscreen-active #reset,
+    .fullscreen-active #fontSelect {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="light" oncontextmenu="return false">
+  <div class="book-wrap" id="bookWrapper">
+    
+    <header class="book-header">
+      <div class="title-group">
+        <h1>The Externalization of the Hierarchy</h1>
+        <p>Alice Bailey</p>
+      </div>
+      <details>
+  <summary style="color: blue;">Settings</summary>    
+      <div class="controls">
+        <button id="decrease">A-</button>
+        <button id="reset">A</button>
+        <button id="increase">A+</button>
+        <button id="fullscreenBtn">🖥️ Fullscreen</button>
+        <select id="fontSelect">
+          <option value="serif">Serif (Georgia)</option>
+          <option value="sans">Sans (Arial)</option>
+          <option value="mono">Monospace</option>
+          <option value="open-dyslexic">Open Dyslexic</option>
+        </select>
+        <select id="themeSelect">
+          <option value="light">☀️ Light</option>
+          <option value="dark">🌙 Dark</option>
+          <option value="sepia">📜 Sepia</option>
+          <option value="midnight">🌌 Midnight</option>
+          <option value="forest">🌲 Forest</option>
+          <option value="rose">🌷 Rose</option>
+          <option value="classic">🖤 Classic</option>
+        </select>
+        
+      </div>
+    </header>
+
+    <nav class="chapter-nav">
+      <div class="chapter-controls">
+        <button id="prevBtn">⬅️ Previous</button>
+        <select id="chapterSelect">
+          <option value="index">THE GREAT INVOCATIONS</option>
+          <option value="section1P1">Section 1 - Part 1</option>
+          <option value="ch2">Tuesday AM</option>
+          <option value="ch3">Tuesday PM</option>
+        </select>
+        <button id="nextBtn">Next ➡️</button>
+      </div>
+    </nav>
+  </details>
+
+    <main class="book-content" id="bookContent">
+<!-- Index -->
+<article id="monday-am" class="chapter active">
+          <h2>The Great Invocations</h2>
+          <p>
+          Let the Forces of Light bring illumination to mankind. <br>
+          Let the Spirit of Peace be spread abroad. <br>
+          May men of goodwill everywhere meet in a spirit of cooperation.<br><br>
+
+          May forgiveness on the part of all men be the keynote at this time.<br>
+          Let power attend the efforts of the Great Ones.<br>
+          So let it be, and help us to do our part. — 1935<br><br>
+
+          Let the Lords of Liberation issue forth.<br>
+          Let Them bring succour to the sons of men.<br>
+          Let the Rider from the Secret Place come forth,<br>
+          And coming, save.<br>
+          Come forth, O Mighty One.<br><br>
+
+          Let the souls of men awaken to the Light,<br>
+          And may they stand with massed intent.<br>
+          Let the fiat of the Lord go forth:<br>
+          The end of woe has come!<br>
+          Come forth, O Mighty One.<br>
+          The hour of service of the Saving Force has now arrived.<br>
+          Let it be spread abroad, O Mighty One.<br><br>
+
+          Let Light and Love and Power and Death<br>
+          Fulfil the purpose of the Coming One.<br>
+          The WILL to save is here.<br>
+          The LOVE to carry forth the work is widely spread abroad.<br>
+          The ACTIVE AID of all who know the truth is also here.<br>
+          Come forth, O Mighty One and blend these three.<br>
+          Construct a great defending wall.<br>
+          The rule of evil now must end. — 1940<br><br>
+
+          From the point of Light within the Mind of God<br>
+          Let light stream forth into the minds of men.<br>
+          Let Light descend on Earth.<br><br>
+
+          From the point of Love within the Heart of God<br>
+          Let love stream forth into the hearts of men.<br>
+          May Christ return to Earth.<br><br>
+
+          From the centre where the Will of God is known<br>
+          Let purpose guide the little wills of men—<br>
+          The purpose which the Masters know and serve.<br>
+
+          From the centre which we call the race of men<br>
+          Let the Plan of Love and Light work out.<br>
+          And may it seal the door where evil dwells.<br><br>
+
+          Let Light and Love and Power restore the Plan on Earth. — 1945 </p>   
+        
+</article>
+
+      <article id="section1P1" class="chapter">
+          <h2>SECTION ONE - INTRODUCTORY REMARKS - Part 1</h2>
+          <h3>THE PERIOD OF TRANSITION <br>
+            March 1934</h3>
+          <p>
+            One of the results of the world condition at this time is the speeding up of all the atomic lives upon and within the planet. This necessarily involves the increased vibratory activity of the human mechanism, with a consequent effect upon the psychic nature, producing an abnormal sensitivity and psychic awareness. It would be of value here to remember that the condition of humanity at this time is not the result of simply one factor, but of several—all of them being active simultaneously, because this period marks the close of one age and the inauguration of the new.
+
+            The factors to which I refer are, primarily, three in number:
+
+            1. This is a transition period between the passing out of the Piscean Age, with its emphasis upon authority and belief, and the coming in of the Aquarian Age, with its emphasis upon individual understanding and direct knowledge. The activity of these forces, characteristic of the two signs, produces in the atoms of the human body a corresponding activity. We are on the verge of new knowledges and the atoms of the body are being tuned up for reception. Those atoms which are predominantly Piscean are beginning to slow down their activity and to be "occultly withdrawn," as it is called, or abstracted, whilst those which are responsive to the New Age tendencies are, in their turn, being stimulated and their vibratory activity increased.
+
+            [4]
+
+            2. The world war marked a climax in the history of mankind, and its subjective effect was far more potent than has hitherto been grasped. Through the power of prolonged sound, carried forward as a great experiment on the battlefields all over the world during a period of four years (1914-1918), and through the intense emotional strain of the entire planetary populace, the web of etheric matter (called the "veil of the temple") which separates the physical and astral planes was rent or torn asunder, and the amazing process of unifying the two worlds of physical plane living and of astral plane experience was begun and is now slowly going on. It will be obvious, therefore, that this must bring about vast changes and alterations in the human consciousness. Whilst it will usher in the age of understanding, of brotherhood and of illumination, it will also bring about states of reaction and the letting loose of psychic forces which today menace the uncontrolled and ignorant, and warrant the sounding of a note of warning and of caution.
+
+            3. A third factor is as follows. It has been known for a long time by the mystics of all the world religions and by esoteric students everywhere, that certain members of the planetary Hierarchy are approaching closer to the earth at this time. By this I want you to infer that the thought, or the mental attention, of the Christ and of certain of His great disciples, the Masters of the Wisdom, is directed or focussed at this time on human affairs, and that some of Them are also preparing to break Their long silence and may appear later among men. This necessarily has a potent effect, first of all upon Their disciples and on those who are attuned to and synchronized with Their Minds, and secondly, it should be remembered that the energy which flows through these focal points of the Divine Will will have a dual effect and be destructive as well as constructive, according to the quality of the bodies which react to it. Different types of men respond distinctively to any inflow of energy, and a tremendous psychic stimulation is at this time going on, with results both divinely beneficent and sadly destructive.
+
+            [5]
+
+            It might be added also that certain astrological relationships between the constellations are releasing new types of force which are playing through our solar system and on to our planet and thereby making possible developments hitherto frustrated in expression, and bringing about the demonstration of latent powers and the manifestation of new knowledges. All this must be most carefully borne in mind by the worker in the field of human affairs if the present crisis is to be rightly appreciated and its splendid opportunities rightly employed. I have felt it wise to write a few words concerning the condition to be found in the world today especially in connection with esoteric, occult and mystical groups and the spiritualistic movement.
+
+            All true spiritual thinkers and workers are much concerned at this time about the growth of crime on every hand, by the display of the lower psychic powers, by the apparent deterioration of the physical body, as shown in the spread of disease, and by the extraordinary increase in insanity, neurotic conditions and mental unbalance. All this is the result of the tearing of the planetary web, and at the same time it is a part of the evolutionary plan and the providing of the opportunity whereby humanity may take its next step forward. The Hierarchy of Adepts has been divided in opinion (if so unsuitable a word can be applied to a group of souls and brothers who know no sense of separateness, but only differ over problems of "skill in action") over the present world condition. Some believe it to be premature and consequently undesirable and providing a difficult situation, whilst others take Their stand upon the basic soundness of humanity and regard the present crisis as inevitable and brought about by the developments in man himself; They look upon the condition as educational and as constituting only a temporary problem which—as it is solved—will lead mankind on the way to a still more glorious future. But there is, at the same time, no denying the fact that great and frequently devastating forces have been let loose upon the earth, and that the effect is a cause of grave concern to all the Masters, Their disciples and workers.
+
+            [6]
+
+            The difficulty can, in the main, be traced back to the overstimulation and the undue strain placed upon the mechanism of the bodies, which the world of souls (in physical incarnation) have to employ as they seek to manifest on the physical plane and so respond to their environment. The flow of energy, pouring through from the astral plane and (in a lesser degree) from the lower mental plane, is brought in contact with bodies that are unresponsive at first, and over-responsive later; it pours into brain cells which, from lack of use, are unaccustomed to the powerful rhythm imposed upon them; and humanity's equipment of knowledge is so poor that the majority have not sense enough to proceed with caution and to progress slowly. Therefore, they are soon in danger and difficulty; their natures are oft so impure or so selfish that the new powers which are beginning to make their presence felt, and so opening up new avenues of awareness and contact, are subordinated to purely selfish ends and prostituted to mundane objectives. The glimpses vouchsafed to the man of that which lies behind the veil are misinterpreted and the information gained is misused and distorted by wrong motives. But whether a person is unintentionally a victim of force or brings himself in touch with it deliberately, he pays the price of his ignorance or temerity in the physical body, even though his soul may "go marching on."
+
+            It is of no use at this time to close one's eyes to the immediate problem or to endeavour to lay the blame for the sad failures, the occult wrecks, for the half-demented psychics, the hallucinated mystics and the feeble-minded dabblers in esotericism at the door of their own stupidity, or upon the backs of some teachers, groups or organisations. Much blame can indeed be placed here and there, but it is the part of wisdom to face facts and to realise the cause of that which is everywhere transpiring and which can be stated as follows.
+
+            The cause of the growth of the lower psychism and of the increasing sensitivity of humanity at this time is the sudden inflow of a new form of astral energy through the rent veil which has, until a short while ago, safeguarded the [7] many. Add to this the inadequacy of the mass of human vehicles to meet the newly imposed strain and some idea of the problem can be grasped.
+
+            Let it not be forgotten, however, that there is another side to the picture. The inflow of this energy has brought many hundreds of people into a new and deeper spiritual realisation; it has opened a door through which many will pass before long and take their second initiation, and it has let a flood of light into the world—a light which will go on increasing for the next thirty years, bringing assurance of immortality and a fresh revelation of the divine potencies in the human being. Thus is the New Age dawning. Access to levels of inspiration, hitherto untouched, has been facilitated. The stimulation of the higher faculties (and this on a large scale) is now possible, and the coordination of the personality with the soul and the right use of energy can go forward with renewed understanding and enterprise. Ever the race is to the strong, and always the many are called and the few chosen. This is the occult law.
+
+            We are now in a period of tremendous spiritual potency and of opportunity to all upon the probationary path and the path of discipleship. It is the hour wherein a clarion call goes forth to man to be of good cheer and of goodwill, for deliverance is on the way. But it is also the hour of danger and of menace for the unwary and the unready, for the ambitious, the ignorant, and for those who selfishly seek the Way and who refuse to tread the path of service with pure motive. Lest this widespread upheaval and consequent disaster to so many should seem to you unfair, let me remind you that this one life is but a second of time in the larger and wider existence of the soul, and that those who fail and are disrupted by the impact of the powerful forces now flooding our earth will nevertheless have their vibration "stepped up" to better things along with the mass of those who achieve, even if their physical vehicles are destroyed in the process. The destruction of the body is not the worst disaster that can overcome a man.
+
+            It is not my purpose to cover the whole ground possible [8] in relation to the situation in the field of psychism caused by the inflow of astral energy at this time. I seek to confine myself to the effect of this inflow on aspirants and sensitives. These two words—aspirants and sensitives—are employed by me in this article to distinguish the awakened seeker after control and mastery from the lower type of psychic, who is controlled and mastered. It is necessary here to remind you that psychism, so-called, can be divided into the following two groups:
+             
+          </p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Higher Psychism</th>
+                <th scope="col">Lower Psychism</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Divine</td>
+                <td>Animal</td>
+              </tr>
+              <tr>
+                <td>Controlled</td>
+                <td>Uncontrolled</td>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td>Intelligently applied</td>
+                <td>Automatic</td>
+              </tr>
+              <tr>
+                <td>Mediatorship</td>
+                <td>Mediumship</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            These distinctions are little understood, nor is the fact appreciated that both groups of qualities indicate our divinity. All are expressions of God.
+
+There are certain psychic powers which men share in common with the animals; these powers are inherent in the animal body and are instinctual, but they have, for the vast majority, dropped below the threshold of consciousness and are unrealised and therefore useless. These are the powers, for instance, of astral clairvoyance and clairaudience, and the seeing of colours and similar phenomena. Clairvoyance and clairaudience are also possible on mental levels, and we then call it telepathy, and the seeing of symbols, for all visioning of geometrical forms is mental clairvoyance. All these powers are, however, tied up with the human mechanism or response apparatus, and serve to put the man in touch with aspects of the phenomenal world for which the response mechanism, which we call the personality, exists. They are the product of the activity of the divine soul in man, which takes the form of what we call "the animal soul," which really corresponds to the Holy Ghost aspect in the human microcosmic trinity. All these powers have their [9] higher spiritual correspondences, which manifest when the soul becomes consciously active and controls its mechanism through the mind and the brain. When astral clairvoyance and clairaudience are not below the threshold of consciousness, but are actively used and functioning, it means that the solar plexus centre is open and active. When the corresponding mental faculties are present in consciousness, then it means that the throat centre and the centre between the eyebrows are becoming "awake" and active. But the higher psychic powers, such as spiritual perception with its infallible knowledge, the intuition with its unerring judgment, and psychometry of the higher kind with its power to reveal the past and the future, are the prerogatives of the divine soul. These higher powers come into play when the head and heart centres, as well as the throat centre, are brought into activity as the result of meditation and service. Let the student, however, remember two things:
+
+That the greater can always include the lesser, but the purely animal psychic does not include the higher.
+
+That between the lowest type of negative mediumship and the highest type of inspired teacher and seer are found a vast diversity of grades, and that the centres are not uniformly developed in humanity.
+
+The complexity of the subject is great, but the general situation can be grasped, the significance of the opportunity proffered can be understood, and the right use of knowledge be employed to bring good out of the present critical period, and thus the psychic and spiritual growth of man be fostered and nurtured.
+
+Two questions should, I believe, at this time engross the attention of all workers in the field of esotericism and those who are engaged with the training of students and aspirants.
+
+I. How shall we train our sensitives and psychics so that the dangers can be avoided and men can go safely forward to their new and glorious heritage?
+
+[10]
+
+II. How can esoteric schools or "disciplines," as they are sometimes called, make right use of the opportunity?
+
+Let us speak first of the training and safeguarding of our psychics and sensitives.
+
+I. The Training of Psychics
+
+The first thing to be borne in mind is that negative, unintelligent mediumship and psychism reduces its exponent to the level of an automaton; it is dangerous and inadvisable because it deprives man of his free will and his positivity, and militates against his acting as a free intelligent human being. The man is not acting in these cases as a channel for his own soul, but is little better than an instinctual animal, if he is not literally an empty shell, which an obsessing entity can occupy and use. When speaking thus I am dealing with the very lowest type of animal mediumship of which there is far too much these days, and which is the cause of concern to the best minds in all the movements which foster mediumship. A mediumship which is entered into with a fully conscious focussed attitude and in which the medium, knowingly and intelligently, vacates his body to an entering entity of whom he is fully aware and who takes possession with his conscious permission in order to serve some spiritual end and help his fellowmen can be right and good. But how often is this type of mediumship to be seen? Few mediums know the technique governing the passing in or out of an informing entity, nor do they know how to carry on this work in such a way that never for a moment are they unaware of what they themselves are doing and the purpose of their activity. Definitely and with purpose they lend their body temporarily to another soul for service, preserving their own integrity all the time. The highest expression of this type of activity was the giving of his body by the disciple Jesus for the use of the Christ. It is in the word service that the whole story lies, and the safeguard. When this true mediumship is better understood, we shall have the medium passing out of his body in full [11] waking consciousness through the orifice at the top of his head, and not, as is now the case in the majority of instances, through the solar plexus, with no preservation of awareness of the transaction, nor any recollection of what has transpired.
+
+We shall then have the temporary entrance of a new tenant along the line of a synchronous vibration through the entrance in the head, and the subsequent use of the instrument of the loaned body in service of some kind or another. But this procedure will never be followed in order to satisfy idle curiosity, or an equally idle grief, based on personal loneliness and self-pity. At present many of the lower kind of mediums are exploited by the curious or unhappy public, and those peculiar human beings whose consciousness is centred entirely below the diaphragm and whose solar plexus is indeed their brain (as it is the brain of the animal) are forced to act as mediums to satisfy the love of sensation or desire for comfort of their almost equally unintelligent fellowmen.
+
+At the same time, there are mediums of a very much higher order whose lives are offered in service to advanced souls on the other side of the veil and who give themselves so that their fellowmen may learn of them; thus, on both sides of the veil of separation, are souls aided and given opportunity to hear or serve. But these, too, would profit by a more intelligent training and by a more accurate understanding of the technique of their work and the organisation of their bodies. They would then be better channels and more dependable intermediaries.
+
+Above all, let the psychics in the world today grasp the necessity of controlling and of not being controlled; let them realise that all that they do can be done by any trained disciple of the Ageless Wisdom should the occasion warrant it, and circumstances justify such an expenditure of force. Psychics are easily deceived. For example, it is of course obvious that on the astral plane there is a thoughtform of myself, your Tibetan brother. All who have received the disciples' degree monthly instructions, all who read the books which I have sent out into the world with the aid of A.A.B., [12] also all who are working in my personal group of disciples have naturally and automatically aided in the construction of this astral thoughtform. It is not me, nor is it linked to me, nor do I use it. I have definitely disassociated myself from it and do not employ it as a means of contacting those I teach, for I work from choice entirely on mental levels thereby undoubtedly limiting my range of contacts but increasing the effectiveness of my work. This astral thoughtform is a distortion of me and my work, needless to say, and resembles an animated and galvanised shell.
+
+Because there is in this form much emotional substance and also a certain amount of mental substance, it can make a wide appeal and its validity is such that like all shells, for instance, which are contacted in the seance room, it masquerades as myself and where the intuition is unawakened the illusion is complete and real. Devotees can therefore tune in with great facility on this illusory form and be completely deceived. Its vibration is of a relatively high order. Its mental effect is like a beautiful parody of myself and serves to place the deluded devotees in touch with the scroll of the astral light, which is the reflection of the akashic records. These latter are the eternal scroll whereon the plan for our world is inscribed and from which those of us who teach gather our data and much of our information. This, the astral light distorts and steps down. Because this is a distorted image and functions in the three worlds of form and has no source of validity higher than those of form, it has in it the seeds of separativeness and of disaster. Forms of flattery are sent out from it, ideas of separateness, those thoughts which feed ambition and which foster love of power, and those germs of desire and personal longing (which divide groups) emerge from contact with it. The results to those who are deceived thereby are sad.
+
+I would like to point out also that trance mediumship, as it is called, must inevitably be superseded by that mediumship which is offered by the man or woman who is clairvoyant or clairaudient on the astral plane, and who therefore in full waking consciousness and with the physical brain alert and [13] active can offer himself as an intermediary between men in physical plane bodies (and therefore blind and deaf on the subtler levels) and those who, having discarded their bodies, are cut off from physical communication. This type of psychic can communicate with both groups and their value and their usefulness as mediums is beyond computation when they are singleminded, unselfish, pure and dedicated to service. But in the training to which they subject themselves they must avoid the present negative methods, and instead of "sitting for development" in a blank and waiting silence, they should endeavour to work positively as souls, remaining in conscious and intelligent possession of the lower mechanism of their bodies; they must know which centre in that body they use whilst working psychically, and they must learn to look out, as souls, upon the world of illusion in which they are undertaking to work; from their high and pure position let them see clearly, hear truly and report accurately, and so serve their age and generation, and make the astral plane a familiar and well-known place of activity, accustoming mankind to a state of existence wherein are found their fellowmen, experiencing, living and following the Path.
+
+I cannot here write concerning the technique of that training. The subject is too vast for a brief article. I do say, with emphasis, that a more careful and wise training is needed and a more intelligent use of the knowledge which is available, if sought after. I appeal to all who are interested in the growth of psychic knowledge to study, and think, and experiment, and teach, and learn until such time as the entire level of psychic phenomena has been lifted out of its present ignorant, speculative and negative position to one of potent assurance, proved technique, and spiritual expression. I appeal to such movements as the Psychical Research Societies in the world and the vast Spiritualistic Movement to lay the emphasis on divine expression and not so much on phenomena; let them approach the subject from the angle of service and carry their researches into the realm of energy, and cease to pander so much to the public. The opportunity [14] offered them is great and the need of their work is vital. The service rendered has been real and essential, but if these movements are to avail themselves of the coming inflow of spiritual energy, they must shift their attention into the realm of true values. The training of the intellect and the presenting to the world of a group of intelligent psychics should be a main objective, and the astral plane will then be, for them, only a stage on the way to that world wherein all the spiritual Guides and Masters are found, and from whence all souls go forth to incarnation and all souls return from the place of experience and of experiment.
+
+It might be asked what ground this training should cover. I would suggest that teaching should be given as to the nature of man and the purpose and objectives of the soul; training can be offered as to the technique of expression, and careful instruction also given as to the use of the centres in the etheric body and in the development of the ability to preserve inviolate the attitude of the positive onlooker, who is always the directing, controlling factor. There will have to be careful analysis of the type and character of the psychic, and then the application of differentiated and suitable methods so that he may progress with the least hindrance. Training schools and classes which seek to develop the student must be graded according to his point in evolution, and his passing into a group, optimistically hoping that something will happen to him whilst in it, will have to cease.
+
+The goal for the low-grade negative psychic should be the training of the mind and the closing of the solar plexus until such time as he can function as a true mediator; if this involves the temporary cessation of his mediumistic powers (and consequently of his commercial exploitation), then so much the better for him, viewing him as an immortal soul, with a spiritual destiny and usefulness.
+
+The instruction given to the intelligent medium and psychic should lead him to a full understanding of himself and of his powers; it should develop those powers without risk and with care, and he should be stabilised in the position [15] of the positive controlling factor. His clairvoyant and clairaudient powers should gradually be perfected, and the right interpretation of what he sees and contacts on the plane of illusion, the astral plane, should be cultivated.
+
+Thus we shall gradually find emerging in the world a large body of trained psychics whose powers are understood and who function on the astral plane with as much intelligence as they function on the physical plane, and who are preparing themselves for the expression of the higher psychic powers—spiritual perception and telepathy. These people will constitute eventually a body of linking souls, mediating between those who cannot see and hear on the astral plane because they are the prisoners of the physical body and those who are equally the prisoners of the astral plane, lacking the physical response apparatus.
+
+The great need, therefore, is not that we should cease to consult and train our psychics and mediums, but that we should train them rightly and guard them intelligently and so link, through their means, the two worlds of the physical and the astral. {i}*
+
+II. Esoteric Schools and Disciplines
+
+Our second question relates to the work of the esoteric schools or "disciplines," as they are sometimes called, and the training and safeguarding of the aspirants found working in them.
+
+I would like first of all to make one point clear. The great hindrance to the work of the majority of the esoteric schools at this time is their sense of separateness and their intolerance of other schools and methods. The leaders of these schools need to absorb the following fact. All schools which recognise the influence of the trans-Himalayan Lodge and whose workers are linked, consciously or unconsciously, with such Masters of the Wisdom as the Master Morya or the Master K.H., form one school and are part of one "discipline." There is therefore no essential conflict of interests, and on [16] the inner side—if they are in any way functioning effectively—the various schools and presentations are regarded as a unity. There is no basic difference in teaching, even if the terminology used may vary, and the technique of work is fundamentally identical. If the work of the Great Ones is to go forward as desired in these days of stress and of world need, it is imperative that these various groups should begin to recognise their real unity in goal, guidance and technique, and that their leaders should realise that it is fear of other leaders and the desire that their group should be numerically the most important which prompts the frequent use of the words, "This is a different discipline," or, "Their work is not the same as ours." It is this attitude which is hindering the true growth of spiritual life and understanding among the many students gathered into the many outer organisations. At this time, the "great heresy of separateness" taints them. The leaders and members talk in terms of "our" and "your," of this "discipline" and that, and of this method being right (usually their own) and the other method which may be right, but it is probably doubtful, if not positively wrong. Each regards their own group as specifically pledged to them and to their mode of instruction, and threaten their members with dire results if they cooperate with the membership of other groups. Instead, they should recognise that all students in analogous schools and working under the same spiritual impulses are members of the one school and are linked together in a basic subjective unity. The time must come when these various (and at present) separative esoteric bodies will have to proclaim their identity, when the leaders and workers and secretaries will meet with each other and learn to know and understand each other. Some day this recognition and understanding will bring them to the point where they will endeavour to supplement each other's efforts, exchange ideas with each other, and so in truth and in deed constitute one great college of esotericism in the world, with varying classes and grades but all occupied with the work of training aspirants and preparing them for discipleship, or superintending the work of disciples as they prepare [17] themselves to take initiation. Then will cease the present attempts to hinder each other's work by comparison of methods and of techniques, by criticism and defamation, by warning and the cult of fear, and the insistence on exclusiveness. It is these attitudes and methods which at this time are hindering the entrance of the pure light of truth.
+
+Aspirants in these schools present a different problem from that of ordinary psychism and mediumship. These men and women have offered themselves for intellectual training and have subjected themselves to a forcing process which is intended to bring the full flower of the soul into premature blossoming, and this in order more rapidly and effectively to serve the race, and to cooperate with the plan of the Hierarchy. Such students thereby lay themselves open to dangers and difficulties which would have been avoided had they chosen to go the slower and equally sure way. This fact should be realised by all workers in such schools and the problem carefully explained to the entering aspirant, so that he may be on his guard and adhere with care to the rules and instructions. He should not be permitted to be afraid or to refuse to subject himself to this forcing process, but he should enter upon it with his eyes wide open and should be taught to avail himself of the safeguards offered and the experience of the older students.
+
+The emphasis in all esoteric schools is necessarily, and rightly, laid upon meditation. Technically speaking, meditation is the process whereby the head centre is awakened, brought under control and used. When this is the case, the soul and the personality are coordinated and fused, and at-one-ment takes place, producing in the aspirant a tremendous inflow of spiritual energy, galvanising his whole being into activity, and bringing to the surface the latent good and also evil. Herein lies much of the problem and much of the danger. Hence also the stress laid in such true schools upon the need of purity and truth. Over-emphasis has been laid upon the need for physical purity, and not sufficient emphasis laid upon the avoidance of all fanaticism and intolerance. These two qualities hinder the student far more than [18] can wrong diet, and they feed the fires of separativeness more than any other one factor.
+
+Meditation involves the living of a one-pointed life always and every day. This perforce puts an undue strain on the brain cells for it brings quiescent cells into activity and awakens the brain consciousness to the light of the soul. This process of ordered meditation, when carried forward over a period of years and supplemented by meditative living and one-pointed service, will successfully arouse the entire system, and bring the lower man under the influence and control of the spiritual man; it will awaken also the centres of force in the etheric body and stimulate into activity that mysterious stream of energy which sleeps at the base of the spinal column. When this process is carried forward with care and due safeguards, and under direction, and when the process is spread over a long period of time there is little risk of danger, and the awakening will take place normally and under the law of being itself. If, however, the tuning up and awakening is forced, or is brought about by exercises of various kinds before the student is ready and before the bodies are coordinated and developed, then the aspirant is headed towards disaster. Breathing exercises or pranayama training should never be undertaken without expert guidance and only after years of spiritual application, devotion and service; concentration upon the centres in the force body (with a view to their awakening) is ever to be avoided; it will cause overstimulation and the opening of doors on to the astral plane which the student may have difficulty in closing. I cannot impress too strongly upon aspirants in all occult schools that the yoga for this transition period is the yoga of one-pointed intent, of directed purpose, of a constant practice of the Presence of God, and of ordered regular meditation carried forward systematically and steadily over years of effort.
+
+When this is done with detachment and is paralleled by a life of loving service, the awakening of the centres and the raising of the sleeping fire of kundalini will go forward with safety and sanity and the whole system will be brought to [19] the requisite stage of "aliveness." I cannot too strongly advise students against the following of intensive meditation processes for hours at a time, or against practices which have for their objective the arousing of the fires of the body, the awakening of a particular centre and the moving of the serpent fire. The general world stimulation is so great at this time and the average aspirant is so sensitive and finely organised that excessive meditation, a fanatical diet, the curtailing of the hours of sleep or undue interest in and emphasis upon psychic experience will upset the mental balance and often do irretrievable harm.
+
+Let the students in esoteric schools settle down to steady, quiet, unemotional work. Let them refrain from prolonged hours of study and of meditation. Their bodies are as yet incapable of the requisite tension, and they only damage themselves. Let them lead normal busy lives, remembering in the press of daily duties and service who they are essentially and what are their goal and objectives. Let them meditate regularly every morning, beginning with a period of fifteen minutes and never exceeding forty minutes. Let them forget themselves in service, and let them not concentrate their interest upon their own psychic development. Let them train their minds with a normal measure of study and learn to think intelligently, so that their minds can balance their emotions and enable them to interpret correctly that which they contact as their measure of awareness increases and their consciousness expands.
+
+Students need to remember that devotion to the Path or to the Master is not enough. The Great Ones are looking for intelligent cooperators and workers more than They are looking for devotion to Their Personalities, and a student who is walking independently in the light of his own soul is regarded by Them as a more dependable instrument than a devoted fanatic. The light of his soul will reveal to the earnest aspirant the unity underlying all groups, and enable him to eliminate the poison of intolerance which taints and hinders so many; it will cause him to recognise the spiritual fundamentals which guide the steps of humanity; it will force [20] him to overlook the intolerance and the fanaticism and separativeness which characterise the small mind and the beginner upon the Path, and help him so to love them that they will begin to see more truly and enlarge their horizon; it will enable him to estimate truly the esoteric value of service and teach him above all to practise that harmlessness which is the outstanding quality of every son of God. A harmlessness that speaks no word that can damage another person, that thinks no thought which could poison or produce misunderstanding, and which does no action which could hurt the least of his brethren—this is the main virtue which will enable the esoteric student to tread with safety the difficult path of development. Where the emphasis is laid upon service to one's fellowmen and the trend of the life force is outward to the world, then there is freedom from danger and the aspirant can safely meditate and aspire and work. His motive is pure, and he is seeking to decentralise his personality and shift the focus of his attention away from himself to the group. Thus the life of the soul can pour through him, and express itself as love to all beings. He knows himself to be a part of a whole and the life of that whole can flow through him consciously, leading him to a realisation of brotherhood and of his oneness in relation to all manifested lives.
+
+THE PRESENT URGENCY
+October 10, 1934
+
+I have somewhat to say to those who are the recipients of my words as embodied in my books and pamphlets and who, with mental interest and devotion, follow out as far as may be my line of thought.
+
+I have for years—ever since 1919—sought to aid you to the best of my ability. The Hierarchy (a name covering the working disciples of all degrees) has for hundreds of generations sought to aid humanity, and since the fifteenth century has steadily approached closer to the physical plane [21] and sought to make a deeper impact on the human consciousness. This has resulted in a recognition which has in it (at this time) the seeds of world salvation. Until the fifteenth century, the pull and the magnetic appeal was from the side of the watching Elder Brothers. Today, so numerous are the inner and outer disciples, and so many are the world aspirants, the pull and the magnetic appeal are largely equalised, and what will happen in the world unfoldment and in the recognitions by the races will be the result of mutual interplay of the two intents (I am choosing my words with care)—the intent of the Masters to help humanity, and that of the world aspirants and disciples to aid in that helping.
+
+Esoterically speaking, a point of contact, a moment of "spiritual intercourse," is imminent, and out of that moment a new world can be born.
+
+If that can be brought about, then there can be re-established on earth the condition which was brought to an end in earlier days, when the Hierarchy (in order to further man's mental development) withdrew behind the scenes for a period. If this spiritual contact can be brought about, it means that the Hierarchy will no longer be hidden and unknown, but will be recognised as present upon the physical plane. This would at first be necessarily on a small scale, and the recognition will be confined to the aspirants and disciples. Increasingly the New Group of World Servers will be active in every nation and found functioning throughout the entire world.
+
+The two thoughts which I seek to impress upon your minds are, first, the re-establishing of this closer relation, and secondly, the work of a practical kind that each of you can do to bring about this general recognition. I seek to emphasise the point that the final activity which will bring about this spiritual event must come from the outer plane of physical life. All of us who are occupied with the Plan for "the next three years" are seeking earnestly for those who can help us and to whom appeal can be made for the putting forth of that final last effort which will bring the desired and anticipated result.
+
+[22]
+
+I would preface what I have to say with the reminder that I only make a suggestion and that naught that I say carries with it the slightest weight of authority; and also that I am aware of the frequent futility of such appeals for cooperation. The history of the world of thought evidences the fact that men are oft thrilled and enlightened and aided by ideas and by the promise of a developing future, but that when their aid is sought in the materialising of the idea, then their hope and interest fade out on the mental plane, or—if it reaches the world of emotion and of strong desire—the sacrifice required to bring the hope to birth on the physical plane is lacking or too feeble to produce the longed-for result.
+
+What I have to say as a result of the urgency upon me to bring about a more intensive cooperation upon the part of those who read with interest the pamphlet The Next Three Years, [ii]* carries not the smallest fraction of authority. I only appeal to you in the hope of intensifying your effort for the space of the next two years (one has already passed), because after the early autumn of 1936, any effort along this particular line will either have failed or will no longer be required in this particular form.
+
+My sole responsibility is to put the opportunity before the world aspirants, to point out to them the inherent possibilities of this particular situation, to indicate lines of helpful activity, and then (having so done) to withdraw the power of my mind and thought, and so leave each aspirant free to come to his own decisions.
+
+The pamphlet The Next Three Years is going forth today upon its mission. Its objective is to educate public opinion. It carries both inspiration and the power to produce cleavages in the life—cleavages which will produce new activities and the cessation of old attitudes of mind. A possible happening is indicated—the formation upon the physical plane of that group of aspirants and disciples which, [23] given time and opportunity, can salvage a distressed world and bring light and understanding to humanity. As to this, I need say no more.
+
+All of you have read the plan as it is embodied in the pamphlet, and the challenge to faith and the appeal to your service is before you. The next two years will see the decision as to whether the fusion of the inner and the outer groups of world servers can be made, or whether more time must elapse before the earlier ancient cooperation between the Hierarchy and humanity can be re-established.
+
+I speak with love and almost anxiety, and with a wider knowledge of the present urgency than you can possibly have. I couch what I have to say to you in the form of certain questions, which I ask that you should put to yourselves with quietness and sincerity.
+
+1. Do I really and in truth desire the establishment of this closer interplay between the inner and outer worlds? If so, what am I prepared to do in order to bring this about?
+
+2. Is there any way in which I can make a definite contribution towards this desired end? Recognising my special circumstances what more can I give in
+
+a. Meditation
+
+b. Understanding of the Plan
+
+c. Love of my fellowmen?
+
+Forget not that meditation clarifies the mind as to the fact and nature of the Plan, that understanding brings that Plan into the world of desire, and that love releases the form which will make the Plan materialise upon the physical plane. To these three expressions of your soul I call you. All of you, without exception, can serve in these three ways, if you so desire.
+
+3. The objective of all the work to be done at this time is to educate public opinion and to familiarise the thinking people of the world with the urgency and the opportunity of the next two years. If this is indeed so, what am I doing to make this possible? To elaborate this question:
+
+[24]
+
+a. Have I spoken to all I could in my environment, or have I been held back by fear?
+
+b. Have I made possible the wide distribution of the pamphlet on this subject? Its distribution in its present form is possible only until the fall of 1936, and the time is therefore short.
+
+c. Have I aided in a material and financial way as far as is possible? Can I do more than I have done so far to help to meet this requirement?
+
+d. What more of my time can I give to help this work, to aid those who are distributing the pamphlet, or to gather people together for discussion? Can I not dedicate some time every day to this definite idea and service?
+
+Responding to my appeal will involve sacrifice, but all who grasp the Plan are today spending themselves in the effort to lift humanity up to another rung of the ladder and into greater light. Their hands need strengthening, their work needs helping, and there is not one of you who cannot do more than you are doing, through the aid of meditation, money and thought, to salvage the world, to educate public opinion and so bring in the New Day.
+
+A CHALLENGING OPPORTUNITY
+April 1935
+
+During the Wesak Festival this year, Those Who are seeking to lift humanity nearer to the Light and to expand the consciousness of mankind, will be gathering Their forces for a renewed approach with its inevitable consequences. These consequences are the stimulation of the human family to a fresh spiritual effort; the process and the exalted Personnel involved have been described by me in my previous message (A Treatise on the Seven Rays, Vol. II, Esoteric Psychology, pp. 683-688); They will also bring about the strengthening of the New Group of World Servers so that they can work with greater effectiveness, vision the Plan with greater clarity and—within themselves as a group—bring [25] about greater integration. Thus they can aid in carrying out the plans of the Council of the Hierarchy to meet the immediate human emergency. As I told you before, the plans for humanity are not laid down, for humanity determines its own destiny; the effort is directed towards establishing a closer relationship between humanity and the Hierarchy.
+
+It is possible for all aspirants and disciples to participate in this effort to the extent of rendering the task of the Masters easier by their clarity of thinking, their renewed spiritual effort, and the rededication of themselves to the task of service. To this effort I call you. It is a continuing effort which will be spread over many years. The opportunity will be offered to all true servers and aspirants and, above all, to the New Group of World Servers to participate in the establishing of the necessary momentum in the immediate cycle.
+
+I call you, therefore, to a month of inner silence, of introspective thought, of self-control and of meditation, to self-forgetfulness and attentiveness to opportunity and not to your own inner aspiration to achieve. I call you to concentrate upon the world need for peace, mutual understanding and illumination and to forget utterly your own needs—mental, emotional and physical. I call you to prayer and to fasting, though along what lines your abstinence should go is for you to decide. For the five days of meditation, I call you to a more complete 'fasting,' to a grave silence, to an inner focalisation, to a purity of thought and to an active spirit of loving kindness which will make you a pure channel. Thus will the work of the Hierarchy be facilitated and the door opened to the regenerative forces of Those extra-planetary Beings Who offer Their help at this time and particularly during 1936. The response of this Festival will submit a gauge of opportunity for the guidance of the Great Ones. (This theme is developed in the book, A Treatise on the Seven Rays, Vol. II, Esoteric Psychology, pp. 629-751, which contains the writings from May, 1935, to April, 1938, inclusive.)
+
+One practical thing also I will ask of you. Will you say, each night and morning, with all your heart's desire [26] and with the attention of your mind as well, the following words. Their united saying will set up a rhythm and a momentum of great potency.
+
+Let the Forces of Light bring illumination to mankind.
+
+Let the Spirit of Peace be spread abroad.
+
+May men of goodwill everywhere meet in a spirit of cooperation.
+
+May forgiveness on the part of all men be the keynote at this time.
+
+Let power attend the efforts of the Great Ones.
+
+So let it be, and help us to do our part.
+
+These words sound simple, but the "Forces of Light" is the name for certain new Powers which are being invoked by the Hierarchy at this time, Whose potencies can be brought into great activity at the May full moon if due effort is made. The Spirit of Peace which is invoked is an inter-planetary Agent of great power Whose cooperation has been promised if all aspirants and disciples can cooperate to break through the shell of separation and hatred which holds our planet in thrall.
+
+May I therefore close with these simple words: Please give us your aid, my brothers.
+
+SEED GROUPS IN THE NEW AGE
+July 1937
+
+Earlier I gave you some thoughts anent the new groups which come into functioning activity under The Law of Group Progress. This law has a peculiarly close relation to the new Aquarian Age. [iii]*
+          </p>
+        
+      </article>
+
+      <article id="section1P1" class="chapter">
+        <h2>Kabanata 2 — Gitna</h2>
+        <h3>Ang Panawagan</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam eveniet odio consequuntur ex voluptatibus dolorem maiores dolore quidem nesciunt, non ad repellendus animi, rem eligendi repellat iste dolores quasi amet unde qui aut! Officia pariatur repudiandae quasi aliquid illo soluta totam, ullam aspernatur at dolor, fuga sit laborum sunt. Ipsa vero, enim consectetur voluptatum laudantium quisquam similique voluptate vel earum, qui nostrum corporis tempore sequi dolorem animi quis laborum, fuga tenetur iste nobis hic recusandae itaque ducimus assumenda? Natus odit culpa cum perferendis iste aut sit soluta, laboriosam aspernatur delectus, saepe excepturi! Possimus quisquam voluptas sint dolores odio in, quas nesciunt sequi rem est dolor eligendi saepe, praesentium voluptatum dignissimos obcaecati dolore minima officiis maiores? Consequuntur minus, asperiores iste dolorem assumenda odio omnis doloremque hic quibusdam id odit saepe reprehenderit quas molestiae libero repellat quo quam dolorum voluptates. Pariatur animi eius nobis iste ut eos necessitatibus recusandae commodi consequatur. Voluptate tempora repellendus facilis animi dolorem esse assumenda aut eveniet. Doloremque quibusdam perspiciatis pariatur, hic dolorem iste distinctio repudiandae repellat, nihil quasi enim, vero voluptates consequatur eligendi! Illo ducimus repellat a quis autem earum rerum mollitia cupiditate molestiae quae! Dolorum non pariatur natus, et, esse molestiae delectus, facere nemo illum a illo eveniet consequuntur eaque doloremque sed quaerat atque aliquid. Corporis fuga laborum placeat quas reprehenderit nam ipsam sed nostrum atque dolore eum, soluta dolor itaque laboriosam cumque sit nisi facilis quaerat illum maiores incidunt doloremque! Illo aliquid aperiam illum quidem hic expedita molestiae rerum atque cumque reiciendis accusantium sed saepe enim, debitis modi natus totam eaque, ex iste voluptate porro facere sunt. Harum doloribus facilis nostrum accusantium deleniti repudiandae totam numquam exercitationem praesentium, dolores itaque consequuntur cum ipsum laborum at vero excepturi similique? Voluptas maiores blanditiis molestiae incidunt officiis, similique id laboriosam officia natus fugit, voluptatibus, quasi dicta repellendus dolores sint optio? Facilis sunt quidem eligendi deserunt cupiditate dolor tempora quibusdam recusandae praesentium totam. Quibusdam ducimus laboriosam numquam, facilis commodi cum iste eum! Delectus quis inventore magni sunt tenetur quod. Rem expedita dicta cumque reiciendis! Doloremque id a libero, quaerat incidunt voluptates veritatis eveniet quasi aperiam ratione perferendis illo voluptatibus eius, minus quo sit. Quisquam deleniti aut ipsum nulla commodi maiores voluptate reiciendis culpa facilis eaque enim, quibusdam beatae minus dolor officia reprehenderit vitae? Mollitia laboriosam molestias sapiente, modi fuga amet, recusandae dolor alias sit necessitatibus totam molestiae quos, praesentium libero. Et sed dolore ab velit, nulla harum quia commodi magnam rerum adipisci maxime quae! Ipsam reprehenderit eaque voluptatibus eveniet magni consequuntur porro. Neque, laboriosam soluta voluptate nemo reprehenderit, ipsam dolores maiores nulla delectus porro adipisci in ullam voluptatum, praesentium iusto. Accusamus soluta, esse similique distinctio deserunt tenetur? Dolor quia ex, reprehenderit assumenda velit eligendi pariatur eveniet iure labore amet sed quisquam eum ullam voluptas sint saepe vitae, maxime id voluptatibus earum alias ipsa similique debitis autem? Itaque incidunt exercitationem neque iusto possimus molestiae ipsum, natus consectetur architecto! Veritatis, sit itaque! Dicta repellat exercitationem ducimus doloremque accusantium aspernatur! Eveniet in repellendus cupiditate adipisci! Sapiente velit eius, quidem temporibus consectetur ea culpa? Enim illum nam quam ad magni molestiae reiciendis adipisci molestias reprehenderit optio, consequuntur iste expedita quia quis, tempore error dicta sunt. Voluptatum, earum voluptate nisi accusantium totam veniam aliquid architecto quia? Culpa voluptate aspernatur, fugiat esse molestias adipisci maiores eum, voluptatem aliquid fugit unde dignissimos error laborum, sit commodi molestiae earum consequuntur nisi perferendis magnam obcaecati minus provident. Sunt, nostrum nam neque a voluptatem, sapiente officiis nemo doloremque maiores excepturi quis eos, alias facere velit expedita repudiandae totam? Optio nam quas quaerat quo repellendus numquam iusto qui dolorum vero! Molestiae similique quae recusandae dolores minus quis quia ipsam voluptatibus cum, amet perspiciatis est ratione numquam cumque ullam provident obcaecati adipisci voluptas! Rem, itaque expedita, at in magni, delectus cupiditate a aliquam reprehenderit quas sapiente dicta! Voluptate quae atque maiores quas voluptates earum ad doloremque architecto, corrupti porro deleniti nemo unde animi veniam harum magni nostrum autem impedit neque eum rerum dolores iste. Obcaecati adipisci voluptatum labore, harum facilis quis in cupiditate eveniet iure omnis optio commodi quasi alias dolorum voluptate doloremque! Nesciunt cupiditate laboriosam expedita omnis minus est animi maiores reprehenderit saepe modi asperiores, nobis, mollitia accusamus sequi tempora consequuntur. Odit aliquid obcaecati dolores assumenda recusandae unde. Sunt deleniti assumenda laudantium quisquam perspiciatis iure rem quidem omnis! Ea accusantium sit voluptates ipsa sed qui nemo officiis quae excepturi, recusandae dignissimos consequuntur, maxime hic, quibusdam provident numquam dolorem tempora doloribus nesciunt porro omnis vero? Ducimus impedit deserunt dolore pariatur facere recusandae iste aperiam debitis harum natus doloribus reprehenderit distinctio nisi eligendi quos quae molestias cumque incidunt, beatae maxime, labore praesentium! Earum voluptatum modi sint consectetur aut consequuntur, vel iusto dignissimos, blanditiis in deserunt a? Aspernatur pariatur eius, quae eos magni placeat quod aperiam unde quos accusantium rerum deserunt recusandae soluta autem, dolorem provident nihil laudantium nostrum minus facilis impedit! Quia, sequi unde! Dolore nemo, commodi cupiditate tempore sapiente doloremque fuga voluptates corrupti sit? Magni cumque, dolor debitis impedit quo fuga, consequuntur rerum perferendis est deserunt nesciunt et veniam eius neque rem minus recusandae exercitationem. Dolores, accusantium iusto quam aspernatur magni consequuntur voluptatem a unde modi architecto dolorem repellendus perspiciatis ullam voluptatibus molestias quas ipsum fugit voluptatum. Incidunt provident ut, iure porro officiis numquam tempore accusantium pariatur expedita unde facilis a ab temporibus odio nostrum optio est eos fugiat. Et optio hic repudiandae ut. Consequuntur blanditiis, voluptatum est pariatur, similique repudiandae quae voluptates error delectus perferendis et, quidem debitis. Aliquid vel praesentium eum esse consequatur hic atque temporibus voluptatum accusantium, sequi commodi neque eveniet ut eius adipisci harum! Temporibus consequuntur atque sequi enim numquam cumque iusto aspernatur voluptates architecto illo, dolorum quos eaque deserunt incidunt consectetur, ea ipsam, optio eligendi dignissimos omnis explicabo quidem esse quia. Totam natus cupiditate neque ut repudiandae ea pariatur inventore dolor, aspernatur cumque, consequatur harum ducimus eos, odio accusantium quam? Assumenda rem, sed commodi saepe quibusdam magnam. At voluptatum necessitatibus aliquam qui dolorem deserunt vitae, fugiat modi nulla. Voluptates tempore consequatur dolor, aliquid animi quisquam pariatur quas dolorum officia natus autem vitae beatae praesentium adipisci.</p>
+        <h3>Ang mga Bagong Bayani</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam eveniet odio consequuntur ex voluptatibus dolorem maiores dolore quidem nesciunt, non ad repellendus animi, rem eligendi repellat iste dolores quasi amet unde qui aut! Officia pariatur repudiandae quasi aliquid illo soluta totam, ullam aspernatur at dolor, fuga sit laborum sunt. Ipsa vero, enim consectetur voluptatum laudantium quisquam similique voluptate vel earum, qui nostrum corporis tempore sequi dolorem animi quis laborum, fuga tenetur iste nobis hic recusandae itaque ducimus assumenda? Natus odit culpa cum perferendis iste aut sit soluta, laboriosam aspernatur delectus, saepe excepturi! Possimus quisquam voluptas sint dolores odio in, quas nesciunt sequi rem est dolor eligendi saepe, praesentium voluptatum dignissimos obcaecati dolore minima officiis maiores? Consequuntur minus, asperiores iste dolorem assumenda odio omnis doloremque hic quibusdam id odit saepe reprehenderit quas molestiae libero repellat quo quam dolorum voluptates. Pariatur animi eius nobis iste ut eos necessitatibus recusandae commodi consequatur. Voluptate tempora repellendus facilis animi dolorem esse assumenda aut eveniet. Doloremque quibusdam perspiciatis pariatur, hic dolorem iste distinctio repudiandae repellat, nihil quasi enim, vero voluptates consequatur eligendi! Illo ducimus repellat a quis autem earum rerum mollitia cupiditate molestiae quae! Dolorum non pariatur natus, et, esse molestiae delectus, facere nemo illum a illo eveniet consequuntur eaque doloremque sed quaerat atque aliquid. Corporis fuga laborum placeat quas reprehenderit nam ipsam sed nostrum atque dolore eum, soluta dolor itaque laboriosam cumque sit nisi facilis quaerat illum maiores incidunt doloremque! Illo aliquid aperiam illum quidem hic expedita molestiae rerum atque cumque reiciendis accusantium sed saepe enim, debitis modi natus totam eaque, ex iste voluptate porro facere sunt. Harum doloribus facilis nostrum accusantium deleniti repudiandae totam numquam exercitationem praesentium, dolores itaque consequuntur cum ipsum laborum at vero excepturi similique? Voluptas maiores blanditiis molestiae incidunt officiis, similique id laboriosam officia natus fugit, voluptatibus, quasi dicta repellendus dolores sint optio? Facilis sunt quidem eligendi deserunt cupiditate dolor tempora quibusdam recusandae praesentium totam. Quibusdam ducimus laboriosam numquam, facilis commodi cum iste eum! Delectus quis inventore magni sunt tenetur quod. Rem expedita dicta cumque reiciendis! Doloremque id a libero, quaerat incidunt voluptates veritatis eveniet quasi aperiam ratione perferendis illo voluptatibus eius, minus quo sit. Quisquam deleniti aut ipsum nulla commodi maiores voluptate reiciendis culpa facilis eaque enim, quibusdam beatae minus dolor officia reprehenderit vitae? Mollitia laboriosam molestias sapiente, modi fuga amet, recusandae dolor alias sit necessitatibus totam molestiae quos, praesentium libero. Et sed dolore ab velit, nulla harum quia commodi magnam rerum adipisci maxime quae! Ipsam reprehenderit eaque voluptatibus eveniet magni consequuntur porro. Neque, laboriosam soluta voluptate nemo reprehenderit, ipsam dolores maiores nulla delectus porro adipisci in ullam voluptatum, praesentium iusto. Accusamus soluta, esse similique distinctio deserunt tenetur? Dolor quia ex, reprehenderit assumenda velit eligendi pariatur eveniet iure labore amet sed quisquam eum ullam voluptas sint saepe vitae, maxime id voluptatibus earum alias ipsa similique debitis autem? Itaque incidunt exercitationem neque iusto possimus molestiae ipsum, natus consectetur architecto! Veritatis, sit itaque! Dicta repellat exercitationem ducimus doloremque accusantium aspernatur! Eveniet in repellendus cupiditate adipisci! Sapiente velit eius, quidem temporibus consectetur ea culpa? Enim illum nam quam ad magni molestiae reiciendis adipisci molestias reprehenderit optio, consequuntur iste expedita quia quis, tempore error dicta sunt. Voluptatum, earum voluptate nisi accusantium totam veniam aliquid architecto quia? Culpa voluptate aspernatur, fugiat esse molestias adipisci maiores eum, voluptatem aliquid fugit unde dignissimos error laborum, sit commodi molestiae earum consequuntur nisi perferendis magnam obcaecati minus provident. Sunt, nostrum nam neque a voluptatem, sapiente officiis nemo doloremque maiores excepturi quis eos, alias facere velit expedita repudiandae totam? Optio nam quas quaerat quo repellendus numquam iusto qui dolorum vero! Molestiae similique quae recusandae dolores minus quis quia ipsam voluptatibus cum, amet perspiciatis est ratione numquam cumque ullam provident obcaecati adipisci voluptas! Rem, itaque expedita, at in magni, delectus cupiditate a aliquam reprehenderit quas sapiente dicta! Voluptate quae atque maiores quas voluptates earum ad doloremque architecto, corrupti porro deleniti nemo unde animi veniam harum magni nostrum autem impedit neque eum rerum dolores iste. Obcaecati adipisci voluptatum labore, harum facilis quis in cupiditate eveniet iure omnis optio commodi quasi alias dolorum voluptate doloremque! Nesciunt cupiditate laboriosam expedita omnis minus est animi maiores reprehenderit saepe modi asperiores, nobis, mollitia accusamus sequi tempora consequuntur. Odit aliquid obcaecati dolores assumenda recusandae unde. Sunt deleniti assumenda laudantium quisquam perspiciatis iure rem quidem omnis! Ea accusantium sit voluptates ipsa sed qui nemo officiis quae excepturi, recusandae dignissimos consequuntur, maxime hic, quibusdam provident numquam dolorem tempora doloribus nesciunt porro omnis vero? Ducimus impedit deserunt dolore pariatur facere recusandae iste aperiam debitis harum natus doloribus reprehenderit distinctio nisi eligendi quos quae molestias cumque incidunt, beatae maxime, labore praesentium! Earum voluptatum modi sint consectetur aut consequuntur, vel iusto dignissimos, blanditiis in deserunt a? Aspernatur pariatur eius, quae eos magni placeat quod aperiam unde quos accusantium rerum deserunt recusandae soluta autem, dolorem provident nihil laudantium nostrum minus facilis impedit! Quia, sequi unde! Dolore nemo, commodi cupiditate tempore sapiente doloremque fuga voluptates corrupti sit? Magni cumque, dolor debitis impedit quo fuga, consequuntur rerum perferendis est deserunt nesciunt et veniam eius neque rem minus recusandae exercitationem. Dolores, accusantium iusto quam aspernatur magni consequuntur voluptatem a unde modi architecto dolorem repellendus perspiciatis ullam voluptatibus molestias quas ipsum fugit voluptatum. Incidunt provident ut, iure porro officiis numquam tempore accusantium pariatur expedita unde facilis a ab temporibus odio nostrum optio est eos fugiat. Et optio hic repudiandae ut. Consequuntur blanditiis, voluptatum est pariatur, similique repudiandae quae voluptates error delectus perferendis et, quidem debitis. Aliquid vel praesentium eum esse consequatur hic atque temporibus voluptatum accusantium, sequi commodi neque eveniet ut eius adipisci harum! Temporibus consequuntur atque sequi enim numquam cumque iusto aspernatur voluptates architecto illo, dolorum quos eaque deserunt incidunt consectetur, ea ipsam, optio eligendi dignissimos omnis explicabo quidem esse quia. Totam natus cupiditate neque ut repudiandae ea pariatur inventore dolor, aspernatur cumque, consequatur harum ducimus eos, odio accusantium quam? Assumenda rem, sed commodi saepe quibusdam magnam. At voluptatum necessitatibus aliquam qui dolorem deserunt vitae, fugiat modi nulla. Voluptates tempore consequatur dolor, aliquid animi quisquam pariatur quas dolorum officia natus autem vitae beatae praesentium adipisci.</p>
+        
+      </article>
+
+      <article id="ch3" class="chapter">
+        <center>
+              <h1>Daily Devotional Verses</h1>
+          </center>
+          <p class="SCQoute">The Daily Devotional Program is designed to train us to grow in Christ through God's Word.</p>
+  
+          <p class="chapterTitle">Instruction on how to successfully kickstart your Daily Devotional Lifestyle with the Lord.</p>
+          <ul style="color: red;">
+            <li>Start your Daily Devotion by praying sincerely to God, asking Him for understanding and guidance.</li>
+            <li>If you have your own Bible, open it to the verse; otherwise, read the verse from this page.</li>
+            <li>Next, read the devotional verse aloud three times so the enemy can hear God's Word from your lips.</li>
+            <li>Then, read the reflection section multiple times if needed, until you truly understand its message.</li>
+            <li>Then, end your devotion with prayer having a thankful heart.</li>
+          </ul>
+
+
+                <hr>
+                <p class="chapterTitle">Bible Verse of the Day</p> 
+
+                <h2>Psalm 119:105</h2>
+                <p class="chapterTitle">NLT (New Living Translation)</p>
+
+                <p><sup>105</sup><b>Your word is a lamp to guide my feet and a light for my path.</b> </p>
+
+                
+                <br><hr>
+                <h2 class="chapterTitle">GUIDE REFLECTION:</h2> <br>
+                <p> Light is essential for us to navigate in this world considered darkness. Darkness signifies being surrounded by numerous evil things, deeds, and practices. To conquer this darkness, we require light, which is the Word of God, to safely guide us so that we can overcome or avoid the dangers that lie ahead on our path.</p> 
+
+                <p>In Proverbs, it is written, “But the way of the wicked is like deep darkness; they do not know what makes them stumble.” <br><br>
+                  
+                  We have the choice to walk in darkness or to walk in the light. Yes, there are many dangers along our path, but we can trust that our daily, personal use of God's Word will illuminate those dangers.</p> 
+                
+                <p>In Proverbs, King Solomon shared that the "correction and instruction" found in the lamp of God's Word "is the way of life".</p>
+
+                <p> Living in the light of Truth allows God to guide our steps and keep us safe from harm. This is why we are told to always carry the Light and Lamp of God. His Word serves as our light and lamp! It is important to read it daily to ensure we are always guided in our daily journey in this world surrounded by darkness.</p>
+                 
+
+          <hr>
+        
+      </article>
+    </main>
+
+    <footer class="book-footer">
+      ⚠️ <span id="warningNote">Ang akdang ito ay pag-aari ng may-akda. Ipinagbabawal ang pagpi-print, pagkopya, o screenshot.</span>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const root=document.documentElement;
+      let base=18;
+      const decrease=document.getElementById('decrease');
+      const increase=document.getElementById('increase');
+      const reset=document.getElementById('reset');
+      const book=document.getElementById('bookContent');
+      const wrapper=document.getElementById('bookWrapper');
+      const chapters=document.querySelectorAll('.chapter');
+      const select=document.getElementById('chapterSelect');
+      const prevBtn=document.getElementById('prevBtn');
+      const nextBtn=document.getElementById('nextBtn');
+      const themeSelect=document.getElementById('themeSelect');
+      const fullscreenBtn=document.getElementById('fullscreenBtn');
+      const fontSelect=document.getElementById('fontSelect');
+
+      function applyFont(){root.style.setProperty('--base-font', base+'px');}
+      decrease.onclick=()=>{base=Math.max(12,base-1);applyFont();}
+      increase.onclick=()=>{base=Math.min(40,base+1);applyFont();}
+      reset.onclick=()=>{base=18;applyFont();}
+
+      fontSelect.onchange=()=>{const font=fontSelect.value;
+        switch(font){
+          case "serif": document.body.style.fontFamily="var(--serif)"; break;
+          case "sans": document.body.style.fontFamily="var(--sans)"; break;
+          case "mono": document.body.style.fontFamily="var(--mono)"; break;
+          case "open-dyslexic": document.body.style.fontFamily="var(--open-dyslexic)"; break;
+        }
+        localStorage.setItem("font", font);
+      };
+      const savedFont=localStorage.getItem("font")||"serif";
+      fontSelect.value=savedFont;
+      fontSelect.onchange();
+
+      function showChapter(id){
+        chapters.forEach(ch=>ch.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        book.scrollTop=0;
+        select.value=id;
+      }
+      select.onchange=()=>showChapter(select.value);
+      prevBtn.onclick=()=>{const i=[...select.options].findIndex(o=>o.value===select.value);if(i>0)showChapter(select.options[i-1].value);}
+      nextBtn.onclick=()=>{const i=[...select.options].findIndex(o=>o.value===select.value);if(i<select.options.length-1)showChapter(select.options[i+1].value);}
+
+      const savedTheme=localStorage.getItem('theme')||'light';
+      applyTheme(savedTheme);
+      themeSelect.value=savedTheme;
+      themeSelect.onchange=()=>{applyTheme(themeSelect.value);localStorage.setItem('theme',themeSelect.value);};
+      function applyTheme(theme){document.body.className=theme;}
+
+      fullscreenBtn.onclick=()=>{if(!document.fullscreenElement){wrapper.requestFullscreen().catch(err=>alert("Fullscreen error: "+err.message));}else{document.exitFullscreen();}};
+      document.addEventListener("fullscreenchange",()=>{if(document.fullscreenElement){document.body.classList.add("fullscreen-active");prevBtn.textContent="<";nextBtn.textContent=">";}else{document.body.classList.remove("fullscreen-active");prevBtn.textContent="⬅️ Previous";nextBtn.textContent="Next ➡️";}});
+    })();
+  </script>
+</body>
+</html>
