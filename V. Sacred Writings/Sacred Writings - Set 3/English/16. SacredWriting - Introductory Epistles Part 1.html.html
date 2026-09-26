@@ -1,96 +1,274 @@
 <!doctype html>
-<html>
-
-<!-- Mirrored from www.cssscript.com/demo/collapsible-side-table-of-contents/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Mar 2024 08:54:17 GMT -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Introductory Epistles Part 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<title>Sacred Writings</title>
+
 <link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../../../outline.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
- <style>
+<link rel="stylesheet" href="../../../outline.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<style>
   body { background-color: #fafafa; line-height: 1.6; }
-  html,* { font-family: 'Inter'; }
+  html, * { font-family: 'Inter'; }
   p { font-size: 1.25rem; }
+
+  .language-only[hidden] {
+    display: none !important;
+  }
+  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
+  :root {
+    --reader-font-scale: 1;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  body > div,
+  .language-only,
+  #englishContent,
+  #tagalogContent {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #englishContent p,
+  #tagalogContent p {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: calc(1.25rem * var(--reader-font-scale));
+    line-height: 1.65;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #englishContent h2, #tagalogContent h2,
+  #englishContent h3, #tagalogContent h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, table, pre {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  .reader-zoom-controls {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem 0;
+    background: #fafafa;
+  }
+
+  .reader-zoom-controls button {
+    min-width: 3.2rem;
+    min-height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .reader-zoom-label {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 .75rem;
+    }
+  }
+
 </style>
 </head>
 
 <body>
-  <div>
-        
+<div>
 
-        <center>
-          <h1>Sacred Writing</h1>
-          <p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p>
-        </center>
-        <center>
-          <a href="../Filipino/16. SacredWriting - Introductory Epistles Part 1 (Fil).html.html"><button type="button" class="btn btn-secondary w-100">Tagalog Version</button></a>
-        </center>
-        
+  <!-- =========================================================
+       SINGLE-FILE ENGLISH / TAGALOG PAGE
+       IMPORTANT:
+       DocumentOutline is initialized only once.
+       Language switching only toggles the hidden attribute.
+       ========================================================= -->
 
-                    
-        <h2>Epistle of Peter to James</h2><p>Peter to James, the lord and bishop of the holy Church, under the Father of all, through Jesus Christ, wishes peace always.</p><h3>Chapter I. Doctrine of Reserve</h3><p>Knowing, my brother, your eager desire after that which is for the advantage of us all, I beg and beseech you not to communicate to any one of the Gentiles the books of my preachings which I sent to you, nor to any one of our own tribe before trial; but if any one has been proved and found worthy, then to commit them to him, after the manner in which Moses delivered <em>his books</em> to the Seventy who succeeded to his chair. Wherefore also the fruit of that caution appears even till now. For his countrymen keep the same rule of monarchy and polity everywhere, being unable in any way to think otherwise, or to be led out of the way of the much-indicating Scriptures. For, according to the rule delivered to them, they endeavour to correct the discordances of the Scriptures, if any one, haply not knowing the traditions, is confounded at the various utterances of the prophets. Wherefore they charge no one to teach, unless he has first learned how the Scriptures must be used. And thus they have amongst them one God, one law, one hope.</p><h3>Chapter II. Misrepresentation of Peter's Doctrine</h3><p>In order, therefore, that the like may also happen to those among us as to these Seventy, give the books of my preachings to our brethren, with the like mystery of initiation, that they may indoctrinate those who wish to take part in teaching; for if it be not so done, our word of truth will be rent into many opinions. And this I know, not as being a prophet, but as already seeing the beginning of this very evil. For some from among the Gentiles have rejected my legal preaching, attaching themselves to certain lawless and trifling preaching of the man who is my enemy. And these things some have attempted while I am still alive, to transform my words by certain various interpretations, in order to the dissolution of the law; as though I also myself were of such a mind, but did not freely proclaim it, which God forbid! For such a thing were to act in opposition to the law of God which was spoken by Moses, and was borne witness to by our Lord in respect of its eternal continuance; for thus he spoke: <q>The heavens and the earth shall pass away, but one jot or one tittle shall in no wise pass from the law.</q> And this He has said, that all things might come to pass. But these men, professing, I know not how, to know my mind, undertake to explain my words, which they have heard of me, more intelligently than I who spoke them, telling their catechumens that this is my meaning, which indeed I never thought of. But if, while I am still alive, they dare thus to misrepresent me, how much more will those who shall come after me dare to do so!</p><h3>Chapter III. Initiation</h3><p>Therefore, that no such thing may happen, for this end I have prayed and besought you not to communicate the books of my preaching which I have sent you to any one, whether of our own nation or of another nation, before trial; but if any one, having been tested, has been found worthy, then to hand them over to him, according to the initiation of Moses, by which he delivered <em>his books</em> to the Seventy who succeeded to his chair; in order that thus they may keep the faith, and everywhere deliver the rule of truth, explaining all things after our tradition; lest being themselves dragged down by ignorance, being drawn into error by conjectures after their mind, they bring others into the like pit of destruction. Now the things that seemed good to me, I have fairly pointed out to you; and what seems good to you, do you, my lord, becomingly perform. Farewell.</p><h3>Chapter IV. An Adjuration Concerning the Receivers of the Book</h3><p>1. Therefore James, having read the epistle, sent for the elders; and having read it to them, said: <q>Our Peter has strictly and becomingly charged us concerning the establishing of the truth, that we should not communicate the books of his preachings, which have been sent to us, to any one at random, but to one who is good and religious, and who wishes to teach, and who is circumcised, and faithful. And these are not all to be committed to him at once; that, if he be found injudicious in the first, the others may not be entrusted to him. Wherefore let him be proved not less than six years. And then according to the initiation of Moses, he <em>that is to deliver the books</em> should bring him to a river or a fountain, which is living water, where the regeneration of the righteous takes place, and should make him, not swear—for that is not lawful—but to stand by the water and adjure, as we ourselves, when we were re-generated, were made to do for the sake of not sinning.</q></p><p>2. <q>And let him say: 'I take to witness heaven, earth, water, in which all things are comprehended, and in addition to all these, that air also which pervades all things, and without which I cannot breathe, that I shall always be obedient to him who gives me the books of the preachings; and those same books which he may give me, I shall not communicate to any one in any way, either by writing them, or giving them in writing, or giving them to a writer, either myself or by another, or through any other initiation, or trick, or method, or by keeping them carelessly, or placing them before <em>any one,</em> or granting him permission <em>to see them,</em> or in any way or manner whatsoever communicating them to another; unless I shall ascertain one to be worthy, as I myself have been judged, or even more so, and that after a probation of not less than six years; but to one who is religious and good, chosen to teach, as I have received them, so I will commit them, doing these things also according to the will of my bishop.</q></p><p>3. <q>'But otherwise, though he were my son or my brother, or my friend, or otherwise in any way pertaining to me by kindred, if he be unworthy, that I will not vouchsafe the favour to him, as is not meet; and I shall neither be terrified by plot nor mollified by gifts. But if even it should ever seem to me that the books of the preachings given to me are not true, I shall not so communicate them, but shall give them back. And when I go abroad, I shall carry them with me, whatever of them I happen to possess. But if I be not minded to carry them about with me, I shall not suffer them to be in my house, but shall deposit them with my bishop, having the same faith, and setting out from the same persons <em>as myself. </em>But if it befall me to be sick, and in expectation of death, and if I be childless, I shall act in the same manner. But if I die having a son who is not worthy, or not yet capable, I shall act in the same manner. For I shall deposit them with my bishop, in order that if my son, when he grows up, be worthy of the trust, he may give them to him as his father's bequest, according to the terms of this engagement.</q></p><p>4. <q>'And that I shall thus do, I again call to witness heaven, earth, water, in which all things are enveloped, and in addition to all these, the all-pervading air, without which I cannot breathe, that I shall always be obedient to him who gives me these books of the preachings, and shall observe in all things as I have engaged, or even something more. To me, therefore, keeping this covenant, there shall be a part with the holy ones; but to me doing anything contrary to what I have covenanted, may the universe be hostile to me, and the all-pervading ether, and the God who is over all, to whom none is superior, than whom none is greater. But if even I should come to the acknowledgment of another God, I now swear by him also, be he or be he not, that I shall not do otherwise. And in addition to all these things, if I shall lie, I shall be accursed living and dying, and shall be punished with everlasting punishment.</q></p><p><q>And after this, let him partake of bread and salt with him who commits them to him.</q></p><h3>Chapter V. The Adjuration Accepted</h3><p>James having thus spoken, the elders were in an agony of terror. Therefore James, perceiving that they were greatly afraid, said: <q>Hear me, brethren and fellow-servants. If we should give the books to all indiscriminately, and they should be corrupted by any daring men, or be perverted by interpretations, as you have heard that some have already done, it will remain even for those who really seek the truth, always to wander in error. Wherefore it is better that they should be with us, and that we should communicate them with all the fore-mentioned care to those who wish to live piously, and to save others. But if any one, after taking this adjuration, shall act otherwise, he shall with good reason incur eternal punishment. For why should not he who is the cause of the destruction of others not be destroyed himself?</q> The elders, therefore, being pleased with the sentiments of James exclaimed, <q>Blessed be He who, as foreseeing all things, has graciously appointed you as our bishop;</q> and when they had said this, we all rose up, and prayed to the Father and God of all, to whom be glory forever. Amen.</p><h2><br></h2>
+  <!-- ENGLISH SITE HEADER -->
+  <div id="englishHeader" class="language-only">
+    <center>
+      <h1>Sacred Writing</h1>
+      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+    </center>
+  </div>
+
+  <!-- TAGALOG SITE HEADER -->
+  <div id="tagalogHeader" class="language-only" hidden>
+    <center>
+      <h1>Mga Sagradong Sulatin</h1>
+      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
+    </center>
+  </div>
+
+  <!-- ONE SHARED TRANSLATION BUTTON -->
+
+  <center class="reader-zoom-controls" aria-label="Text size controls">
+  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
+  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
+  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
+  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
+</center>
+  <center>
+    <button id="languageToggle"
+            type="button"
+            class="btn btn-secondary w-100"
+            aria-live="polite">
+      Tagalog Version
+    </button>
+  </center>
 
 
-<!-------------------------------NOTES ABOUT THE BOOK ------------------------------->
-
- <!------
-
------>
 
 
-<!-- Goodgle ads script -->
-                <div class="css-script-ads" style="margin:30px auto"><div id="carbon-block"></div>
-                      <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-                  <!-- CSSScript Demo Page -->
-                      <ins class="adsbygoogle"
-                          style="display:inline-block;width:728px;height:90px"
-                          data-ad-client="ca-pub-2783044520727903"
-                          data-ad-slot="3025259193"></ins>
-                      <script>
-                      (adsbygoogle = window.adsbygoogle || []).push({});
-                      </script>
-                </div>
+  <!-- ENGLISH CONTENT -->
+  <section id="englishContent" class="language-only" data-language="en">
+<h2>Epistle of Peter to James</h2><p>Peter to James, the lord and bishop of the holy Church, under the Father of all, through Jesus Christ, wishes peace always.</p><h3>Chapter I. Doctrine of Reserve</h3><p>Knowing, my brother, your eager desire after that which is for the advantage of us all, I beg and beseech you not to communicate to any one of the Gentiles the books of my preachings which I sent to you, nor to any one of our own tribe before trial; but if any one has been proved and found worthy, then to commit them to him, after the manner in which Moses delivered <em>his books</em> to the Seventy who succeeded to his chair. Wherefore also the fruit of that caution appears even till now. For his countrymen keep the same rule of monarchy and polity everywhere, being unable in any way to think otherwise, or to be led out of the way of the much-indicating Scriptures. For, according to the rule delivered to them, they endeavour to correct the discordances of the Scriptures, if any one, haply not knowing the traditions, is confounded at the various utterances of the prophets. Wherefore they charge no one to teach, unless he has first learned how the Scriptures must be used. And thus they have amongst them one God, one law, one hope.</p><h3>Chapter II. Misrepresentation of Peter's Doctrine</h3><p>In order, therefore, that the like may also happen to those among us as to these Seventy, give the books of my preachings to our brethren, with the like mystery of initiation, that they may indoctrinate those who wish to take part in teaching; for if it be not so done, our word of truth will be rent into many opinions. And this I know, not as being a prophet, but as already seeing the beginning of this very evil. For some from among the Gentiles have rejected my legal preaching, attaching themselves to certain lawless and trifling preaching of the man who is my enemy. And these things some have attempted while I am still alive, to transform my words by certain various interpretations, in order to the dissolution of the law; as though I also myself were of such a mind, but did not freely proclaim it, which God forbid! For such a thing were to act in opposition to the law of God which was spoken by Moses, and was borne witness to by our Lord in respect of its eternal continuance; for thus he spoke: <q>The heavens and the earth shall pass away, but one jot or one tittle shall in no wise pass from the law.</q> And this He has said, that all things might come to pass. But these men, professing, I know not how, to know my mind, undertake to explain my words, which they have heard of me, more intelligently than I who spoke them, telling their catechumens that this is my meaning, which indeed I never thought of. But if, while I am still alive, they dare thus to misrepresent me, how much more will those who shall come after me dare to do so!</p><h3>Chapter III. Initiation</h3><p>Therefore, that no such thing may happen, for this end I have prayed and besought you not to communicate the books of my preaching which I have sent you to any one, whether of our own nation or of another nation, before trial; but if any one, having been tested, has been found worthy, then to hand them over to him, according to the initiation of Moses, by which he delivered <em>his books</em> to the Seventy who succeeded to his chair; in order that thus they may keep the faith, and everywhere deliver the rule of truth, explaining all things after our tradition; lest being themselves dragged down by ignorance, being drawn into error by conjectures after their mind, they bring others into the like pit of destruction. Now the things that seemed good to me, I have fairly pointed out to you; and what seems good to you, do you, my lord, becomingly perform. Farewell.</p><h3>Chapter IV. An Adjuration Concerning the Receivers of the Book</h3><p>1. Therefore James, having read the epistle, sent for the elders; and having read it to them, said: <q>Our Peter has strictly and becomingly charged us concerning the establishing of the truth, that we should not communicate the books of his preachings, which have been sent to us, to any one at random, but to one who is good and religious, and who wishes to teach, and who is circumcised, and faithful. And these are not all to be committed to him at once; that, if he be found injudicious in the first, the others may not be entrusted to him. Wherefore let him be proved not less than six years. And then according to the initiation of Moses, he <em>that is to deliver the books</em> should bring him to a river or a fountain, which is living water, where the regeneration of the righteous takes place, and should make him, not swear—for that is not lawful—but to stand by the water and adjure, as we ourselves, when we were re-generated, were made to do for the sake of not sinning.</q></p><p>2. <q>And let him say: 'I take to witness heaven, earth, water, in which all things are comprehended, and in addition to all these, that air also which pervades all things, and without which I cannot breathe, that I shall always be obedient to him who gives me the books of the preachings; and those same books which he may give me, I shall not communicate to any one in any way, either by writing them, or giving them in writing, or giving them to a writer, either myself or by another, or through any other initiation, or trick, or method, or by keeping them carelessly, or placing them before <em>any one,</em> or granting him permission <em>to see them,</em> or in any way or manner whatsoever communicating them to another; unless I shall ascertain one to be worthy, as I myself have been judged, or even more so, and that after a probation of not less than six years; but to one who is religious and good, chosen to teach, as I have received them, so I will commit them, doing these things also according to the will of my bishop.</q></p><p>3. <q>'But otherwise, though he were my son or my brother, or my friend, or otherwise in any way pertaining to me by kindred, if he be unworthy, that I will not vouchsafe the favour to him, as is not meet; and I shall neither be terrified by plot nor mollified by gifts. But if even it should ever seem to me that the books of the preachings given to me are not true, I shall not so communicate them, but shall give them back. And when I go abroad, I shall carry them with me, whatever of them I happen to possess. But if I be not minded to carry them about with me, I shall not suffer them to be in my house, but shall deposit them with my bishop, having the same faith, and setting out from the same persons <em>as myself. </em>But if it befall me to be sick, and in expectation of death, and if I be childless, I shall act in the same manner. But if I die having a son who is not worthy, or not yet capable, I shall act in the same manner. For I shall deposit them with my bishop, in order that if my son, when he grows up, be worthy of the trust, he may give them to him as his father's bequest, according to the terms of this engagement.</q></p><p>4. <q>'And that I shall thus do, I again call to witness heaven, earth, water, in which all things are enveloped, and in addition to all these, the all-pervading air, without which I cannot breathe, that I shall always be obedient to him who gives me these books of the preachings, and shall observe in all things as I have engaged, or even something more. To me, therefore, keeping this covenant, there shall be a part with the holy ones; but to me doing anything contrary to what I have covenanted, may the universe be hostile to me, and the all-pervading ether, and the God who is over all, to whom none is superior, than whom none is greater. But if even I should come to the acknowledgment of another God, I now swear by him also, be he or be he not, that I shall not do otherwise. And in addition to all these things, if I shall lie, I shall be accursed living and dying, and shall be punished with everlasting punishment.</q></p><p><q>And after this, let him partake of bread and salt with him who commits them to him.</q></p><h3>Chapter V. The Adjuration Accepted</h3><p>James having thus spoken, the elders were in an agony of terror. Therefore James, perceiving that they were greatly afraid, said: <q>Hear me, brethren and fellow-servants. If we should give the books to all indiscriminately, and they should be corrupted by any daring men, or be perverted by interpretations, as you have heard that some have already done, it will remain even for those who really seek the truth, always to wander in error. Wherefore it is better that they should be with us, and that we should communicate them with all the fore-mentioned care to those who wish to live piously, and to save others. But if any one, after taking this adjuration, shall act otherwise, he shall with good reason incur eternal punishment. For why should not he who is the cause of the destruction of others not be destroyed himself?</q> The elders, therefore, being pleased with the sentiments of James exclaimed, <q>Blessed be He who, as foreseeing all things, has graciously appointed you as our bishop;</q> and when they had said this, we all rose up, and prayed to the Father and God of all, to whom be glory forever. Amen.</p>
+  </section>
 
+  <!-- TAGALOG CONTENT -->
+  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
+<h2>Sulat ni Pedro kay Santiago</h2><p>Si Pedro kay Santiago, ang ginoo at obispo ng banal na Iglesia, sa ilalim ng Ama ng lahat, sa pamamagitan ni Jesu-Cristo, ay bumabati ng kapayapaan magpakailanman.</p><h3>Kabanata I. Aral Hinggil sa Pag-iingat</h3><p>Nalalaman ko, kapatid ko, ang iyong taimtim na pagnanais sa kung ano ang makabubuti sa ating lahat, kaya hinihiling at isinasamo ko sa iyo na huwag mong ibahagi sa sinuman sa mga Hentil ang mga aklat ng aking mga pangangaral na ipinadala ko sa iyo, ni sa sinuman sa sarili nating lahi bago siya masubok; ngunit kung ang sinuman ay nasubok na at natagpuang karapat-dapat, saka lamang ipagkatiwala sa kaniya ang mga iyon, ayon sa paraang ipinagkatiwala ni Moises ang <em>kaniyang mga aklat</em> sa Pitumpu na humalili sa kaniyang luklukan. Kaya naman hanggang ngayon ay nakikita pa rin ang bunga ng gayong pag-iingat. Sapagkat saanman naroroon ang kaniyang mga kababayan, pinananatili nila ang iisang tuntunin ng pamamahala at kaayusan, anupat hindi sila basta napapaisip nang iba ni naililihis mula sa mga Kasulatang maraming ipinahihiwatig. Sapagkat ayon sa tuntuning ipinasa sa kanila, sinisikap nilang ituwid ang tila hindi pagkakatugma ng mga Kasulatan kung ang sinuman, dahil hindi niya nalalaman ang mga tradisyon, ay nalilito sa magkakaibang pahayag ng mga propeta. Kaya walang sinuman sa kanila ang pinahihintulutang magturo malibang natutuhan muna niya kung paano dapat gamitin ang mga Kasulatan. At sa gayon ay mayroon sa kanila na isang Diyos, isang kautusan, at isang pag-asa.</p><h3>Kabanata II. Maling Paglalarawan sa Turo ni Pedro</h3><p>Kaya, upang mangyari rin sa atin ang katulad ng nangyari sa Pitumpung ito, ibigay mo sa ating mga kapatid ang mga aklat ng aking mga pangangaral sa pamamagitan ng gayunding hiwaga ng pagpapasimula, upang maturuan nila ang mga nagnanais makibahagi sa pagtuturo; sapagkat kung hindi ito gagawin sa ganitong paraan, ang ating salita ng katotohanan ay mahahati sa maraming magkakaibang paniniwala. At nalalaman ko ito, hindi dahil ako ay propeta, kundi dahil nakikita ko na ang pasimula ng mismong kasamaang ito. Sapagkat ang ilan mula sa mga Hentil ay itinakwil ang aking pangangaral tungkol sa kautusan at kumapit sa isang walang-kautusan at walang-kabuluhang pangangaral ng taong kaaway ko. At habang ako ay nabubuhay pa, may ilan nang nagtangkang baguhin ang aking mga salita sa pamamagitan ng iba't ibang pagpapakahulugan upang pawalang-bisa ang kautusan, na para bang ganoon din ang iniisip ko ngunit hindi ko lamang hayagang ipinapahayag—na huwag nawang mangyari! Sapagkat ang paggawa ng gayon ay pagsalungat sa kautusan ng Diyos na ipinahayag sa pamamagitan ni Moises at pinatotohanan ng ating Panginoon tungkol sa walang hanggang pananatili nito; sapagkat ganito ang sinabi Niya: <q>Lilipas ang langit at ang lupa, ngunit kahit isang titik o isang kudlit ay hindi kailanman lilipas mula sa kautusan.</q> At sinabi Niya ito upang ang lahat ng bagay ay matupad. Ngunit ang mga taong ito, na sa paraang hindi ko maunawaan ay nag-aangking nalalaman ang aking isip, ay nagtatangkang ipaliwanag sa mga nakikinig sa kanila ang aking mga salita nang higit na may kaalaman kaysa sa akin na siyang nagsalita ng mga iyon, at sinasabi nila sa kanilang mga tinuturuan na ito raw ang ibig kong sabihin—isang bagay na hindi ko kailanman naisip. Ngunit kung habang ako ay buhay pa ay nangangahas na silang ilarawan nang mali ang aking mga salita, gaano pa kaya ang pangangahas ng mga darating pagkatapos ko!</p><h3>Kabanata III. Pagpapasimula</h3><p>Kaya, upang hindi mangyari ang gayong bagay, dahil dito ay nanalangin at nakiusap ako sa iyo na huwag mong ibahagi sa sinuman ang mga aklat ng aking pangangaral na ipinadala ko sa iyo—maging siya man ay mula sa sarili nating bansa o sa ibang bansa—bago siya masubok; ngunit kung ang sinuman, matapos masubok, ay natagpuang karapat-dapat, saka mo lamang ibigay sa kaniya ang mga iyon, ayon sa pagpapasimula ni Moises nang ipinagkatiwala niya ang <em>kaniyang mga aklat</em> sa Pitumpu na humalili sa kaniyang luklukan. Sa ganitong paraan ay mapananatili nila ang pananampalataya at maipahahayag saanman ang tuntunin ng katotohanan, na ipinaliliwanag ang lahat ng bagay ayon sa ating tradisyon; upang hindi sila, dahil sa kamangmangan at sa mga haka-hakang mula lamang sa sarili nilang pag-iisip, ay maligaw at makaladkad pababa, at makapagdala rin ng iba sa gayunding hukay ng kapahamakan. Ang mga bagay na itinuring kong mabuti ay malinaw ko nang itinuro sa iyo; at kung ano naman ang sa tingin mo ay nararapat, gawin mo iyon nang karapat-dapat, ginoo ko. Paalam.</p><h3>Kabanata IV. Isang Mahigpit na Panata Hinggil sa mga Tatanggap ng Aklat</h3><p>1. Kaya matapos basahin ni Santiago ang sulat, ipinatawag niya ang mga matatanda; at nang mabasa niya iyon sa kanila, sinabi niya: <q>Mahigpit at nararapat tayong pinagbilinan ni Pedro tungkol sa pagpapatatag ng katotohanan: huwag nating ibahagi nang basta-basta sa sinuman ang mga aklat ng kaniyang mga pangangaral na ipinadala sa atin, kundi sa isang taong mabuti at relihiyoso, nagnanais magturo, tuli, at tapat. At hindi dapat ipagkatiwala sa kaniya ang lahat ng mga ito nang sabay-sabay; upang kung mapatunayang wala siyang wastong paghatol sa unang aklat, hindi na maipagkatiwala sa kaniya ang iba pa. Kaya dapat siyang subukin nang hindi bababa sa anim na taon. Pagkatapos, ayon sa pagpapasimula ni Moises, ang <em>taong magbibigay ng mga aklat</em> ay dapat siyang dalhin sa isang ilog o bukal na may tubig na buhay, kung saan nagaganap ang muling kapanganakan ng mga matuwid, at ipatayo siya roon—hindi upang manumpa, sapagkat hindi iyon naaayon sa kautusan—kundi upang tumayo sa tabi ng tubig at gumawa ng isang taimtim na panata, gaya ng ginawa sa atin nang tayo ay muling ipanganak, upang tayo ay huwag magkasala.</q></p><p>2. <q>At sabihin niya: 'Ginagawa kong saksi ang langit, ang lupa, ang tubig na kinaroroonan ng lahat ng bagay, at bukod sa mga ito, ang hangin na laganap sa lahat at kung wala ito ay hindi ako makahihinga, na lagi akong susunod sa taong nagbibigay sa akin ng mga aklat ng mga pangangaral; at ang mismong mga aklat na ibibigay niya sa akin ay hindi ko ibabahagi sa sinuman sa anumang paraan—hindi sa pamamagitan ng pagsusulat ng mga iyon, pagbibigay ng mga iyon nang nakasulat, pagpapasa ng mga iyon sa isang tagasulat, ako man mismo o sa pamamagitan ng iba, ni sa pamamagitan ng anumang ibang pagpapasimula, panlilinlang, o pamamaraan, ni sa pabaya kong pag-iingat sa mga iyon, paglalagay ng mga iyon sa harap ng <em>sinuman,</em> pagbibigay sa kaniya ng pahintulot <em>na makita ang mga iyon,</em> o sa anumang paraan o pamamaraan ng pagbabahagi sa iba—malibang matiyak kong ang isang tao ay karapat-dapat, gaya ng pagkakahatol na karapat-dapat ako, o higit pa rito, at iyon ay matapos ang pagsubok na hindi bababa sa anim na taon. Ngunit sa isang taong relihiyoso at mabuti, na pinili upang magturo, kung paano ko tinanggap ang mga ito, gayon ko rin ipagkakatiwala ang mga ito sa kaniya, at gagawin ko rin ang lahat ng ito ayon sa kalooban ng aking obispo.</q></p><p>3. <q>'Ngunit kung hindi siya karapat-dapat, maging siya man ay anak ko, kapatid ko, kaibigan ko, o kamag-anak ko sa anumang paraan, hindi ko ipagkakaloob sa kaniya ang pabor na ito, sapagkat hindi iyon nararapat; at hindi ako matatakot sa anumang pakana ni mapapalambot ng mga regalo. Ngunit kung dumating man ang panahon na sa palagay ko ay hindi totoo ang mga aklat ng mga pangangaral na ibinigay sa akin, hindi ko pa rin ibabahagi ang mga iyon, kundi ibabalik ko ang mga iyon. At kapag ako ay naglalakbay, dadalhin ko ang anumang aklat na nasa aking pag-iingat. Ngunit kung ayaw kong dalhin ang mga iyon sa aking paglalakbay, hindi ko hahayaang manatili ang mga iyon sa aking bahay, kundi ipagkakatiwala ko ang mga iyon sa aking obispo, na may gayunding pananampalataya at nagmumula sa gayunding mga taong <em>pinagmulan ko.</em> Kung ako naman ay magkasakit at naghihintay ng kamatayan, at wala akong anak, gayon din ang gagawin ko. Ngunit kung ako ay mamatay na may anak na hindi karapat-dapat o hindi pa may kakayahan, gayon din ang gagawin ko. Sapagkat ipagkakatiwala ko ang mga iyon sa aking obispo upang, kung paglaki ng aking anak ay maging karapat-dapat siya sa ipinagkatiwala, maibigay ng obispo sa kaniya ang mga iyon bilang pamana ng kaniyang ama, ayon sa mga tuntunin ng pangakong ito.</q></p><p>4. <q>'At upang patunayan na gagawin ko nga ito, muli kong ginagawa bilang saksi ang langit, ang lupa, ang tubig na bumabalot sa lahat ng bagay, at bukod sa mga ito, ang hangin na laganap sa lahat at kung wala ito ay hindi ako makahihinga, na lagi akong susunod sa taong nagbibigay sa akin ng mga aklat ng mga pangangaral at tutuparin ko sa lahat ng bagay ang aking ipinangako, o higit pa rito. Kaya, kung tutuparin ko ang tipang ito, magkaroon nawa ako ng bahagi kasama ng mga banal; ngunit kung gagawa ako ng anumang salungat sa aking ipinangako, maging laban nawa sa akin ang sansinukob at ang eter na laganap sa lahat, gayundin ang Diyos na higit sa lahat, na walang nakahihigit at walang mas dakila. Ngunit kung dumating man ako sa pagkilala sa ibang Diyos, ngayon pa lamang ay nanunumpa rin ako sa kaniya, maging umiiral man siya o hindi, na hindi ako gagawa nang iba rito. At bukod sa lahat ng ito, kung ako ay magsisinungaling, sumpain nawa ako sa aking buhay at sa aking kamatayan, at maparusahan ako ng walang hanggang kaparusahan.</q></p><p><q>At pagkatapos nito, hayaang kumain siya ng tinapay at asin kasama ng taong nagkakatiwala ng mga aklat sa kaniya.</q></p><h3>Kabanata V. Tinanggap ang Mahigpit na Panata</h3><p>Matapos magsalita nang gayon si Santiago, labis na natakot ang mga matatanda. Kaya nang makita ni Santiago na lubha silang natatakot, sinabi niya: <q>Pakinggan ninyo ako, mga kapatid at kapwa-lingkod. Kung ibibigay natin ang mga aklat sa lahat nang walang pagtatangi, at sirain ng ilang mapangahas na tao ang mga iyon, o baluktutin sa pamamagitan ng kanilang mga pagpapakahulugan, gaya ng narinig ninyong ginawa na ng ilan, maging ang mga tunay na naghahanap ng katotohanan ay patuloy na maliligaw sa kamalian. Kaya mas mabuting manatili sa atin ang mga ito at ibahagi lamang natin ang mga ito, taglay ang buong pag-iingat na nabanggit na, sa mga nagnanais mamuhay nang maka-Diyos at magligtas ng iba. Ngunit kung ang sinuman, matapos tanggapin ang mahigpit na panatang ito, ay gagawa ng iba rito, may sapat na dahilan upang mapatawan siya ng walang hanggang kaparusahan. Sapagkat bakit hindi rin mapapahamak ang taong naging sanhi ng kapahamakan ng iba?</q> Kaya, nasiyahan ang mga matatanda sa mga sinabi ni Santiago at sumigaw sila: <q>Purihin Siya na, sapagkat nakikita Niya nang una ang lahat ng bagay, ay buong biyayang nagtalaga sa iyo bilang aming obispo;</q> at pagkasabi nila nito, tumayo kaming lahat at nanalangin sa Ama at Diyos ng lahat, na sa Kaniya ang kaluwalhatian magpakailanman. Amen.</p>
 
+  </section>
 
-              <hr>
-              <button class="richblue"><A Href="../index.html">BACK</A></button>                  
-    </div>
+  <hr>
+</div>
+
 <script src="../../../DocumentOutline.js"></script>
+
 <script>
-  let outline = new DocumentOutline();
-</script>
-<script>
-try {
-  fetch(new Request("../../../pagead2.googlesyndication.com/pagead/js/f.txt", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-    return true;
-  }).catch(function(e) {
-    var carbonScript = document.createElement("script");
-    carbonScript.src = "../../../cdn.carbonads.com/carbon544e.js?serve=CE7DC2JW&amp;placement=wwwcssscriptcom";
-    carbonScript.id = "_carbonads_js";
-    document.getElementById("carbon-block").appendChild(carbonScript);
+(function () {
+  'use strict';
+
+  const englishHeader = document.getElementById('englishHeader');
+  const tagalogHeader = document.getElementById('tagalogHeader');
+  const englishContent = document.getElementById('englishContent');
+  const tagalogContent = document.getElementById('tagalogContent');
+  const languageToggle = document.getElementById('languageToggle');
+
+  let currentLanguage = 'en';
+
+  function renderLanguage() {
+    const isTagalog = currentLanguage === 'tl';
+
+    englishHeader.hidden = isTagalog;
+    englishContent.hidden = isTagalog;
+
+    tagalogHeader.hidden = !isTagalog;
+    tagalogContent.hidden = !isTagalog;
+
+    languageToggle.textContent = isTagalog
+      ? 'English Version'
+      : 'Tagalog Version';
+
+    document.documentElement.lang = isTagalog ? 'tl' : 'en';
+    languageToggle.setAttribute(
+      'aria-label',
+      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
+    );
+  }
+
+  languageToggle.addEventListener('click', function () {
+    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    renderLanguage();
   });
-} catch (error) {
-  console.log(error);
-}
+
+  // Initial state only.
+  renderLanguage();
+
+  // IMPORTANT: initialize the old site's outline script only once.
+  // Recreating DocumentOutline during every language switch can repeatedly
+  // modify the DOM and eventually cause content to disappear.
+  if (typeof DocumentOutline !== 'undefined') {
+    try {
+      window.sacredWritingsOutline = new DocumentOutline();
+    } catch (error) {
+      console.warn('Document outline initialization skipped:', error);
+    }
+  }
+})();
 </script>
+
+
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+(function () {
+  const root = document.documentElement;
+  const zoomIn = document.getElementById('textZoomIn');
+  const zoomOut = document.getElementById('textZoomOut');
+  const zoomReset = document.getElementById('textZoomReset');
+  const zoomLabel = document.getElementById('textZoomLabel');
 
-  ga('create', 'UA-46156385-1', 'cssscript.com');
-  ga('send', 'pageview');
+  let scale = 1;
+  const minScale = 0.85;
+  const maxScale = 2.00;
+  const step = 0.15;
 
+  function applyTextScale() {
+    scale = Math.max(minScale, Math.min(maxScale, scale));
+    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
+    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  }
+
+  zoomIn.addEventListener('click', function () {
+    scale += step;
+    applyTextScale();
+  });
+
+  zoomOut.addEventListener('click', function () {
+    scale -= step;
+    applyTextScale();
+  });
+
+  zoomReset.addEventListener('click', function () {
+    scale = 1;
+    applyTextScale();
+  });
+
+  applyTextScale();
+})();
 </script>
-</body>
 
+</body>
 </html>

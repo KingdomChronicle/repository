@@ -1,85 +1,316 @@
 <!doctype html>
-<html>
-
-<!-- Mirrored from www.cssscript.com/demo/collapsible-side-table-of-contents/ by HTTrack Website Copier/3<br>.x [XR&CO'2014], Wed, 27 Mar 2024 08:54:17 GMT -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 <title>Sacred Writings</title>
+
 <link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../../../outline.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
- <style>
+<link rel="stylesheet" href="../../../outline.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<style>
   body { background-color: #fafafa; line-height: 1.6; }
-  html,* { font-family: 'Inter'; }
+  html, * { font-family: 'Inter'; }
   p { font-size: 1.25rem; }
+
+  .language-only[hidden] {
+    display: none !important;
+  }
+  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
+  :root {
+    --reader-font-scale: 1;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  body > div,
+  .language-only,
+  #englishContent,
+  #tagalogContent {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #englishContent p,
+  #tagalogContent p {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: calc(1.25rem * var(--reader-font-scale));
+    line-height: 1.65;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #englishContent h2, #tagalogContent h2,
+  #englishContent h3, #tagalogContent h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, table, pre {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  .reader-zoom-controls {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem 0;
+    background: #fafafa;
+  }
+
+  .reader-zoom-controls button {
+    min-width: 3.2rem;
+    min-height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .reader-zoom-label {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 .75rem;
+    }
+  }
+
 </style>
 </head>
 
 <body>
-  <div>
-        
-        <!-- https://www.maryjones.us/ctexts/sorrows.html -->
-          <!-- Use heading tags to structure your document -->
-        <center>
-          <h1>Sacred Writing</h1>
-          <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
-        </center>
-        <center>
-          <a href="../Filipino/11. Recognitions - Book 6 (Fil).html"><button type="button" class="btn btn-secondary w-100">Tagalog Version</button></a>
-        </center>
+<div>
 
-        <h2>Book 6</h2>
+  <!-- =========================================================
+       SINGLE-FILE ENGLISH / TAGALOG PAGE
+       IMPORTANT:
+       DocumentOutline is initialized only once.
+       Language switching only toggles the hidden attribute.
+       ========================================================= -->
+
+  <!-- ENGLISH SITE HEADER -->
+  <div id="englishHeader" class="language-only">
+    <center>
+      <h1>Sacred Writing</h1>
+      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+    </center>
+  </div>
+
+  <!-- TAGALOG SITE HEADER -->
+  <div id="tagalogHeader" class="language-only" hidden>
+    <center>
+      <h1>Mga Sagradong Sulatin</h1>
+      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
+    </center>
+  </div>
+
+  <!-- ONE SHARED TRANSLATION BUTTON -->
+
+  <center class="reader-zoom-controls" aria-label="Text size controls">
+  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
+  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
+  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
+  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
+</center>
+  <center>
+    <button id="languageToggle"
+            type="button"
+            class="btn btn-secondary w-100"
+            aria-live="polite">
+      Tagalog Version
+    </button>
+  </center>
+
+
+
+
+  <!-- ENGLISH CONTENT -->
+  <section id="englishContent" class="language-only" data-language="en">
+<h2>Book 6</h2>
 <h3>Chapter 1. Diligence in Study.</h3><p>But as soon as day began to advance the dawn upon the retiring darkness, Peter having gone into the garden to pray, and returning thence and coming to us, by way of excuse for awaking and coming to us a little later than usual, said this: <q>Now that the spring-time has lengthened the day, of course the night is shorter; if, therefore, one desires to occupy some portion of the night in study, he must not keep the same hours for waking at all seasons, but should spend the same length of time in sleeping, whether the night be longer or shorter, and be exceedingly careful that he do not cut off from the period which he is wont to have for study, and so add to his sleep and lessen his time of keeping awake. And this also is to be observed, lest haply if sleep be interrupted while the food is still undigested, the undigested mass lead the mind, and by the exhalation of crude spirits render the inner sense confused and disturbed. It is right, therefore, that that part also be cherished with sufficient rest, so that, those things being sufficiently accomplished which are due to it, the body may be able in other things to render due service to the mind.</q></p><h3>Chapter 2. Much to Be Done in a Little Time.</h3><p>When he had said this, as very many had already assembled in the accustomed place of the garden to hear him, Peter went forth; and having saluted the crowds in his usual manner, began to speak as follows: Since, indeed, as land neglected by the cultivator necessarily produces thorns and thistles, so your sense, by long neglect, has produced a plentiful crop of noxious opinions of things and dogmas of false science; there is need now of much care in cultivating the field of your mind, that the word of truth, which is the true and diligent husbandman of the heart, may cultivate it with continual instructions. It is therefore your part to render obedience to it, and to lop off superfluous occupations and anxieties, lest a noxious growth choke the good seed of the word. For it may be that a short and earnest diligence may repair a long time's neglect; for the time of every one's life is uncertain, and therefore we must hasten to salvation, lest haply sudden death seize upon him who delays.</p><h3>Chapter 3. Righteous Anger.</h3><p>And all the more eagerly must we strive on this account, that while there is time, the collected vices of evil custom may be cut off. And this you shall not be able to do otherwise, than by being angry with yourselves on account of your profitless and base doings. For this is righteous and necessary anger, by which every one is indignant with himself, and accuses himself for those things in which he has erred and done amiss; and by this indignation a certain fire is kindled in us, which, applied as it were to a barren field, consumes and burns up the roots of vile pleasure, and renders the soil of the heart more fertile for the good seed of the word of God. And I think that you have sufficiently worthy causes of anger, from which that most righteous fire may be kindled, if you consider into what errors the evil of ignorance has drawn you, and how it has caused you to fall and rush headlong into sin, from what good things it has withdrawn you, and into what evils it has driven you, and, what is of more importance than all the rest, how it has made you liable to eternal punishments in the world to come. Is not the fire of most righteous indignation kindled within you for all these things, now that the light of truth has shone upon you; and does not the flame of that anger which is pleasing to God rise within you, that every sprout may be burnt up and destroyed from the root, if haply any shoot of evil concupiscence has budded within you?</p><h3>Chapter 4. Not Peace, But a Sword.</h3><p>Hence, also, He who has sent us, when He had come, and had seen that all the world had fallen into wickedness, did not immediately give peace to him who is in error, lest He should confirm him in evil; but set the knowledge of truth in opposition to the ruins of ignorance of it, that, if haply men would repent and look upon the light of truth, they might rightly grieve that they had been deceived and drawn away into the precipices of error, and might kindle the fire of salutary anger against the ignorance that had deceived them. On this account, therefore, He said, 'I have come to send fire on the earth; and how I wish that it were kindled!' Luke 12:49 There is therefore a certain fight, which is to be fought by us in this life; for the word of truth and knowledge necessarily separates men from error and ignorance, as we have often seen putrified and dead flesh in the body separated by the cutting knife from its connection with the living members. Such is the effect produced by knowledge of the truth. For it is necessary that, for the sake of salvation, the son, for example, who has received the word of truth, be separated from his unbelieving parents; or again, that the father be separated from his son, or the daughter from her mother. And in this manner the battle of knowledge and ignorance, of truth and error, arises between believing and unbelieving kinsmen and relations. And therefore He who has sent us said again, 'I am not come to send peace on earth, but a sword.' Matthew 10:34</p><h3>Chapter 5. How the Fight Begins.</h3><p>But if any one say, How does it seem right for men to be separated from their parents? I will tell you how. Because, if they remained with them in error, they would do no good to them, and they would themselves perish with them. It is therefore right, and very right, that he who will be saved be separated from him who will not. But observe this also, that this separation does not come from those who understand aright; for they wish to be with their relatives, and to do them good, and to teach them better things. But it is the vice peculiar to ignorance, that it will not bear to have near it the light of truth, which confutes it; and therefore that separation originates with them. For those who receive the knowledge of the truth, because it is full of goodness, desire, if it be possible, to share it with all, as given by the good God; yea, even with those who hate and persecute them: for they know that ignorance is the cause of their sin. Wherefore, in short, the Master Himself, when He was being led to the cross by those who knew Him not, prayed the Father for His murderers, and said, 'Father, forgive their sin, for they know not what they do!' Luke 23:34 The disciples also, in imitation of the Master, even when themselves were suffering, in like manner prayed for their murderers. Acts 7:60 But if we are taught to pray even for our murderers and persecutors, how ought we not to bear the persecutions of parents and relations, and to pray for their conversion?</p><h3>Chapter 6. God to Be Loved More Than Parents.</h3><p>Then let us consider carefully, in the next place, what reason we have for loving our parents. For this cause, it is said, we love them, because they seem to be the authors of our life. But our parents are not authors of our life, but means of it. For they do not bestow life, but afford the means of our entering into this life; while the one and sole author of life is God. If, therefore we would love the Author of our life, let us know that it is He that is to be loved. But then it is said, We cannot know Him; but them we know, and hold in affection. Be it so: you cannot know <em>what</em> God is, but you can very easily know what God is <em>not</em>. For how can any man fail to know that wood, or stone, or brass, or other such matter, is not God? But if you will not give your mind to consider the things which you might easily apprehend, it is certain that you are hindered in the knowledge of God, not by impossibility, but by indolence; for if you had wished it, even from these useless images you might have been set on the way of understanding.</p><h3>Chapter 7. The Earth Made for Men.</h3><p>For it is certain that these images are made with iron tools; but iron is wrought by fire, which fire is extinguished by water. But water is moved by spirit; and spirit has its beginning from God. For thus says the prophet Moses: 'In the beginning God made the heaven and the earth. But the earth was invisible, and unarranged; and darkness was over the deep: and the Spirit of God was upon the waters.' Genesis 1:1-2 Which Spirit, like the Creator's hand, by command of God separated light from darkness; and after that invisible heaven produced this visible one, that He might make the higher places a habitation for angels, and the lower for men. For your sake, therefore, by command of God, the water which was upon the face of the earth withdrew, that the earth might produce fruits for you; and into the earth also He inserted veins of moisture, that fountains and rivers might flow forth from it for you. For your sake it was commanded to bring forth living creatures, and all things which could serve for your use and pleasure. Is it not for you that the winds blow, that the earth, conceiving by them, may bring forth fruits? Is it not for you that the showers fall, and the seasons change? Is it not for you that the sun rises and sets, and the moon undergoes her changes? For you the sea offers its service, that all things may be subject to you, ungrateful as you are. For all these things shall there not be a righteous punishment of vengeance, because beyond all else you are ignorant of the bestower of all these things, whom you ought to acknowledge and reverence above all?</p><h3>Chapter 8. Necessity of Baptism.</h3><p>But now I lead you to understanding by the same paths. For you see that all things are produced from waters. But water was made at first by the Only-begotten; and the Almighty God is the head of the Only-begotten, by whom we come to the Father in such order as we have stated above. But when you have come to the Father you will learn that this is His will, that you be born anew by means of waters, which were first created. For he who is regenerated by water, having filled up the measure of good works, is made heir of Him by whom he has been regenerated in incorruption. Wherefore, with prepared minds, approach as sons to a father, that your sins may be washed away, and it may be proved before God that ignorance was their sole cause. For if, after the learning of these things, you remain in unbelief, the cause of your destruction will be imputed to yourselves, and not to ignorance. And do you suppose that you can have hope towards God, even if you cultivate all piety and all righteousness, but do not receive baptism. Yea rather, he will be worthy or greater punishment, who does good works not well; for merit accrues to men from good works, but only if they be done as God commands. Now God has ordered every one who worships Him to be sealed by baptism; but if you refuse, and obey your own will rather than God's, you are doubtless contrary and hostile to His will.</p><h3>Chapter 9. Use of Baptism.</h3><p>But you will perhaps say, What does the baptism of water contribute towards the worship of God? In the first place, because that which has pleased God is fulfilled. In the second place, because, when you are regenerated and born again of water and of God, the frailty of your former birth, which you have through men, is cut off, and so at length you shall be able to attain salvation; but otherwise it is impossible. For thus has the true prophet testified to us with an oath: 'Verily I say to you, That unless a man is born again of water, he shall not enter into the kingdom of heaven.' Therefore make haste; for there is in these waters a certain power of mercy which was borne upon them at the beginning, and acknowledges those who are baptized under the name of the threefold sacrament, and rescues them from future punishments, presenting as a gift to God the souls that are consecrated by baptism. Betake yourselves therefore to these waters, for they alone can quench the violence of the future fire; and he who delays to approach to them, it is evident that the idol of unbelief remains in him, and by it he is prevented from hastening to the waters which confer salvation. For whether you be righteous or unrighteous, baptism is necessary for you in every respect: for the righteous, that perfection may be accomplished in him, and he may be born again to God; for the unrighteous, that pardon may be vouchsafed him of the sins which he has committed in ignorance. Therefore all should hasten to be born again to God without delay, because the end of every one's life is uncertain.</p><h3>Chapter 10. Necessity of Good Works.</h3><p>But when you have been regenerated by water, show by good works the likeness in you of that Father who has begotten you. Now you know God, honour Him as a father; and His honour is, that you live according to His will. And His will is, that you so live as to know nothing of murder or adultery, to flee from hatred and covetousness, to put away anger, pride, and boasting, to abhor envy, and to count all such things entirely unsuitable to you. There is truly a certain peculiar observance of our religion, which is not so much imposed upon men, as it is sought out by every worshipper of God by reason of its purity. By reason of chastity, I say, of which there are many kinds, but first, that every one be careful that he 'come not near a menstruous woman;' for this the law of God regards as detestable. But though the law had given no admonition concerning these things, should we willingly, like beetles, roll ourselves in filth? For we ought to have something more than the animals, as reasonable men, and capable of heavenly senses, whose chief study it ought to be to guard the conscience from every defilement of the heart.</p><h3>Chapter 11. Inward and Outward Cleansing.</h3><p>Moreover, it is good, and tends to purity, also to wash the body with water. I call it good, not as if it were that prime good of the purifying of the mind, but because this of the washing of the body is the sequel of that good. For so also our Master rebuked some of the Pharisees and scribes, who seemed to be better than others, and separated from the people, calling them hypocrites, because they purified only those things which were seen of men, but left defiled and sordid their hearts, which God alone sees. To some therefore of them — not to all — He said, 'Woe to you, scribes and Pharisees, hypocrites! Because ye cleanse the outside of the cup and platter, but the inside is full of pollution. O blind Pharisees, first make clean what is within, and what is without shall be clean also.' Matthew 23:25-26 For truly, if the mind be purified by the light of knowledge, when once it is clean and clear, then it necessarily takes care of that which is without a man, that is, his flesh, that it also may be purified. But when that which is without, the cleansing of the flesh, is neglected, it is certain that there is no care taken of the purity of the mind and the cleanness of the heart. Thus therefore it comes to pass, that he who is clean inwardly is without doubt cleansed outwardly also, but not always that he who is clean outwardly is also cleansed inwardly — to wit, when he does these things that he may please men.</p><h3>Chapter 12. Importance of Chastity.</h3><p>But this kind of chastity is also to be observed, that sexual intercourse must not take place heedlessly and for the sake of mere pleasure, but for the sake of begetting children. And since this observance is found even among some of the lower animals, it were a shame if it be not observed by men, reasonable, and worshipping God. But there is this further reason why chastity should be observed by those who hold the true worship of God, in those forms of it of which we have spoken, and others of like sort, that it is observed strictly even among those who are still held by the devil in error, for even among them there is in some degree the observance of chastity. What then? Will you not observe, now that you are reformed, what you observed when you were in error?</p><h3>Chapter 13. Superiority of Christian Morality.</h3><p>But perhaps some one of you will say, Must we then observe all things which we did while we worshipped idols? Not all. But whatever things were done well, these you ought to observe even now; because, if anything is rightly done by those who are in error, it is certain that that is derived from the truth; whereas, if anything is not rightly done in the true religion, that is, without doubt, borrowed from error. For good is good, though it be done by those who are in error; and evil is evil, though it be done by those who follow the truth. Or shall we be so foolish, that if we see a worshipper of idols to be sober, we shall refuse to be sober, lest we should seem to do the same things which he does who worships idols? It is not so. But let this be our study, that if those who err do not commit murder, we should not even be angry; if they do not commit adultery, we should not even covet another's wife; if they love their neighbours, we should love even our enemies; if they lend to those who have the means of paying, we should give to those from whom we do not hope to receive anything. And in all things, we who hope for the inheritance of the eternal world ought to excel those who know only the present world; knowing that if their works, when compared with our works, be found like and equal in the day of judgment, there will be confusion to us, because we are found equal in our works to those who are condemned on account of ignorance, and had no hope of the world to come.</p><h3>Chapter 14. Knowledge Enhances Responsibility.</h3><p><q>And truly confusion is our worthy portion, if we have done no more than those who are inferior to us in knowledge. But if it be confusion to us, to be found equal to them in works, what shall become of us if the examination that is to take place find us inferior and worse than them? Hear, therefore, how our true Prophet has taught us concerning these things; for, with respect to those who neglect to hear the words of wisdom, He speaks thus: 'The queen of the south shall rise in judgment with this generation, and shall condemn it, because she came from the ends of the earth to hear the wisdom of Solomon; and, behold, a greater than Solomon is here, and they hear Him not.' But with respect to those who refused to repent of their evil deeds, He spoke thus: 'The men of Nineve shall rise in the judgment with this generation, and shall condemn it; for they repented at the preaching of Jonas; and, behold, a greater than Jonas is here.' You see, therefore, how He condemned those who were instructed out of the law, by adducing the example of those who came from Gentile ignorance, and showing that the former were not even equal to those who seemed to live in error. From all these things, then, the statement that He propounded is proved, that chastity, which is observed to a certain extent even by those who live in error, should be held much more purely and strictly, in all its forms, as we showed above, by us who follow the truth; and the rather because with us eternal rewards are assigned to its observance.</q></p><h3>Chapter 15. Bishops, Presbyters, Deacons, and Widows Ordained at Tripolis.</h3><p>When he had said these things, and others to the same effect, he dismissed the crowds; and having, according to his custom, supped with his friends, he went to sleep. And while in this manner he was teaching the word of God for three whole months, and converting multitudes to the faith, at the last he ordered me to fast; and after the fast he conferred on me the baptism of ever-flowing water, in the fountains which adjoin the sea. And when, for the grace of regeneration divinely conferred upon me, we had joyfully kept holiday with our brethren, Peter ordered those who had been appointed to go before him, to proceed to Antioch, and there to wait three months more. And they having gone, he himself led down to the fountains, which, I have said, are near the sea, those who had fully received the faith of the Lord, and baptized them; and celebrating the Eucharist with them, he appointed, as bishop over them, Maro, who had entertained him in his house, and who was now perfect in all things; and with him he ordained twelve presbyters and deacons at the same time. He also instituted the order of widows, and arranged all the services of the Church; and charged them all to obey Maro their bishop in all things that he should command them. And thus all things being suitably arranged, when the three months were fulfilled, we bade farewell to those who were at Tripolis, and set out for Antioch.</p>
+  </section>
 
-      <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-  <!-- CSSScript Demo Page -->
-      <ins class="adsbygoogle"
-          style="display:inline-block;width:728px;height:90px"
-          data-ad-client="ca-pub-2783044520727903"
-          data-ad-slot="3025259193"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+  <!-- TAGALOG CONTENT -->
+  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
+<h2>Aklat 6</h2>
+<h3>Kabanata 1. Masikap na Pag-aaral.</h3>
+<p>Ngunit pagsapit ng bukang-liwayway at unti-unting pag-urong ng dilim, nagtungo si Pedro sa hardin upang manalangin. Pagbalik niya at paglapit sa amin, ipinaliwanag niya kung bakit medyo nahuli ang kanyang paggising at pagpunta sa amin kaysa karaniwan. Sinabi niya: <q>Ngayong tagsibol at humahaba na ang araw, natural na umiikli ang gabi. Kaya kung nais ng isang tao na gamitin ang isang bahagi ng gabi sa pag-aaral, hindi niya dapat panatilihin ang iisang oras ng paggising sa lahat ng panahon. Sa halip, dapat niyang panatilihin ang parehong haba ng oras ng pagtulog, mahaba man o maikli ang gabi, at mag-ingat nang lubos na huwag bawasan ang panahong nakalaan niya sa pag-aaral, upang hindi madagdagan ang kanyang tulog at mabawasan ang oras ng kanyang pagpupuyat. Dapat ding pag-ingatan na huwag maputol ang tulog habang hindi pa natutunaw ang pagkain, sapagkat ang hindi pa natutunaw na laman ng tiyan ay maaaring makaapekto sa pag-iisip at, sa pamamagitan ng singaw mula sa hilaw na pagkain, guluhin at lituhin ang panloob na pandama. Kaya nararapat ding bigyan ang bahaging iyon ng sapat na pahinga, upang matapos nitong magampanan nang maayos ang kinakailangan nito, ang katawan ay maging handang maglingkod nang nararapat sa isip sa iba pang bagay.</q></p>
+
+<h3>Kabanata 2. Maraming Dapat Gawin sa Maikling Panahon.</h3>
+<p>Pagkasabi niya nito, dahil napakarami na ang nagtipon sa karaniwang lugar sa hardin upang makinig sa kanya, lumabas si Pedro. Binati niya ang mga tao ayon sa kanyang nakagawian at nagsimulang magsalita nang ganito: Kung paanong ang lupang pinabayaan ng magsasaka ay tiyak na tinutubuan ng mga tinik at dawag, gayundin ang inyong pag-iisip, dahil sa matagal na kapabayaan, ay nagbunga ng saganang masasamang palagay at mga aral ng huwad na karunungan. Kaya kailangan ngayon ang matinding pag-aalaga sa bukid ng inyong isipan, upang ang salita ng katotohanan—na siyang tunay at masikap na magsasaka ng puso—ay malinang ito sa pamamagitan ng patuloy na pagtuturo. Bahagi ninyo, kung gayon, ang sumunod dito at putulin ang mga hindi kinakailangang gawain at pagkabalisa, upang hindi sakalin ng mapaminsalang paglago ang mabuting binhi ng salita. Sapagkat maaaring maituwid ng maikli ngunit taimtim na pagsisikap ang mahabang panahon ng kapabayaan. Hindi tiyak ang haba ng buhay ng bawat tao, kaya kailangan nating magmadali tungo sa kaligtasan, baka abutan ng biglaang kamatayan ang nag-aantala.</p>
+
+<h3>Kabanata 3. Matuwid na Galit.</h3>
+<p>Lalo tayong dapat magsikap nang buong sigla dahil, habang may panahon pa, kailangang putulin ang mga bisyong naipon dahil sa masasamang nakagawian. At hindi ninyo ito magagawa sa ibang paraan kundi sa pagkagalit sa inyong sarili dahil sa inyong walang saysay at kahiya-hiyang mga gawa. Ito ang matuwid at kinakailangang galit: ang bawat isa ay nagagalit sa sarili at inaakusahan ang sarili dahil sa mga bagay na kanyang pinagkamalian at ginawang masama. Sa ganitong pagkagalit ay nag-aalab sa atin ang isang apoy na, kapag itinapat na wari'y sa isang tigang na bukid, ay tumutupok at sumusunog sa mga ugat ng hamak na pagnanasa at ginagawang higit na mabunga ang lupa ng puso para sa mabuting binhi ng salita ng Diyos. At sa palagay ko ay mayroon kayong sapat at makatarungang mga dahilan upang magalit, na makapagpapaliyab sa napakamatuwid na apoy na ito, kung pag-iisipan ninyo kung sa anu-anong kamalian kayo dinala ng kasamaan ng kamangmangan; kung paano kayo nito pinabagsak at itinulak nang pabigla-bigla sa kasalanan; kung sa anu-anong mabubuting bagay kayo nito inilayo at sa anu-anong kasamaan kayo nito itinulak; at higit sa lahat, kung paano kayo nito inilagay sa panganib ng walang hanggang kaparusahan sa mundong darating. Hindi ba nag-aalab sa loob ninyo ang apoy ng pinakamatwid na pagkagalit dahil sa lahat ng ito, ngayong sumikat na sa inyo ang liwanag ng katotohanan? At hindi ba nag-aalab sa loob ninyo ang galit na kalugud-lugod sa Diyos, upang masunog at malipol hanggang sa ugat ang bawat usbong ng masamang pagnanasa na maaaring sumibol sa inyo?</p>
+
+<h3>Kabanata 4. Hindi Kapayapaan, Kundi Tabak.</h3>
+<p>Dahil dito, nang dumating Siya na nagsugo sa amin at makitang ang buong sanlibutan ay nahulog sa kasamaan, hindi Niya kaagad binigyan ng kapayapaan ang taong nasa kamalian, sapagkat baka lalo lamang nitong mapagtibay ang tao sa kasamaan. Sa halip, itinapat Niya ang kaalaman ng katotohanan laban sa pagkawasak na dulot ng kamangmangan, upang kung magsisi ang mga tao at tumingin sa liwanag ng katotohanan, makatuwiran nilang ikalungkot na sila'y nalinlang at nailayo tungo sa bangin ng kamalian, at magsindi sila ng nakapagliligtas na galit laban sa kamangmangang dumaya sa kanila. Kaya sinabi Niya, 'Naparito ako upang maghagis ng apoy sa lupa; at gaano ko ninanais na ito'y magliyab!' Luke 12:49 May isang pakikipaglaban, kung gayon, na kailangan nating harapin sa buhay na ito; sapagkat ang salita ng katotohanan at kaalaman ay tiyak na naghihiwalay sa mga tao mula sa kamalian at kamangmangan, gaya ng madalas nating makita na ang bulok at patay na laman sa katawan ay hinihiwalay sa buhay na mga bahagi sa pamamagitan ng talim ng kutsilyo. Ganyan ang ginagawa ng kaalaman ng katotohanan. Sapagkat alang-alang sa kaligtasan, maaaring kailangang mahiwalay ang anak na tumanggap ng salita ng katotohanan sa kanyang mga magulang na hindi nananampalataya; o ang ama sa kanyang anak; o ang anak na babae sa kanyang ina. Sa ganitong paraan lumilitaw ang labanan ng kaalaman at kamangmangan, ng katotohanan at kamalian, sa pagitan ng mga kamag-anak at kapamilyang nananampalataya at hindi nananampalataya. Kaya sinabi rin Niya na nagsugo sa amin, 'Hindi ako naparito upang magdala ng kapayapaan sa lupa, kundi ng tabak.' Matthew 10:34</p>
+
+<h3>Kabanata 5. Kung Paano Nagsisimula ang Labanan.</h3>
+<p>Ngunit kung may magsabi, Paano magiging tama na mahiwalay ang mga tao sa kanilang mga magulang? Sasabihin ko sa inyo kung paano. Sapagkat kung mananatili silang kasama nila sa kamalian, wala silang maitutulong sa mga ito at mapapahamak din silang kasama nila. Kaya tama, at tunay na tama, na ang taong nagnanais maligtas ay mahiwalay sa taong ayaw maligtas. Ngunit pansinin din ninyo ito: ang paghihiwalay na ito ay hindi nagmumula sa mga taong nakauunawa nang tama, sapagkat nais nilang manatiling kasama ng kanilang mga kamag-anak, gawan sila ng mabuti, at turuan sila ng mas mabuting mga bagay. Sa halip, likas sa kamangmangan na hindi nito kayang tiisin ang liwanag ng katotohanang naglalantad sa kanya; kaya sa kanila nagmumula ang paghihiwalay. Sapagkat ang mga tumatanggap ng kaalaman ng katotohanan, dahil ito'y puspos ng kabutihan, ay nagnanais—kung maaari—na ibahagi ito sa lahat bilang kaloob ng mabuting Diyos, maging sa mga napopoot at umuusig sa kanila, sapagkat alam nilang kamangmangan ang sanhi ng kanilang kasalanan. Kaya maging ang Guro mismo, nang Siya'y dinadala sa krus ng mga hindi nakakilala sa Kanya, ay nanalangin sa Ama para sa mga pumapatay sa Kanya at nagsabi, 'Ama, patawarin Mo ang kanilang kasalanan, sapagkat hindi nila nalalaman ang kanilang ginagawa!' Luke 23:34 Gayundin, bilang pagtulad sa Guro, ang mga alagad ay nanalangin para sa mga pumapatay sa kanila kahit sila mismo ay nagdurusa. Acts 7:60 Kung tinuturuan tayong manalangin maging para sa ating mga mamamatay-tao at mang-uusig, gaano pa kaya natin dapat pagtiisan ang pag-uusig ng mga magulang at kamag-anak at ipanalangin ang kanilang pagbabalik-loob?</p>
+<h3>Kabanata 6. Ang Diyos ay Dapat Ibigin Nang Higit sa mga Magulang.</h3>
+<p>Isaalang-alang naman natin nang maingat kung ano ang dahilan kung bakit natin iniibig ang ating mga magulang. Sinasabing iniibig natin sila dahil waring sila ang pinagmulan ng ating buhay. Ngunit ang ating mga magulang ay hindi ang mga may-akda ng ating buhay, kundi mga kasangkapan lamang nito. Hindi sila ang nagbibigay ng buhay; sila lamang ang nagiging daan upang tayo'y makapasok sa buhay na ito. Ang iisa at tanging May-akda ng buhay ay ang Diyos. Kaya kung ibig nating ibigin ang May-akda ng ating buhay, dapat nating malaman na Siya ang nararapat ibigin. Ngunit sinasabi naman, Hindi natin Siya makikilala; ang ating mga magulang ang nakikilala natin at minamahal. Sige, ipagpalagay natin iyan: maaaring hindi ninyo malaman <em>kung ano</em> ang Diyos, ngunit napakadali ninyong malaman kung ano ang Diyos ay <em>hindi</em>. Paanong hindi malalaman ng isang tao na ang kahoy, bato, tanso, o anumang gayong bagay ay hindi Diyos? Ngunit kung ayaw ninyong ituon ang inyong isip sa mga bagay na madali naman ninyong mauunawaan, tiyak na ang humahadlang sa inyong pagkilala sa Diyos ay hindi kawalan ng kakayahan kundi katamaran. Sapagkat kung nanaisin ninyo, maging ang walang kabuluhang mga larawang ito ay maaaring maging daan upang magsimula kayong makaunawa.</p>
+
+<h3>Kabanata 7. Ang Lupa ay Ginawa para sa mga Tao.</h3>
+<p>Sapagkat tiyak na ang mga larawang ito ay ginagawa sa pamamagitan ng mga kasangkapang bakal; ngunit ang bakal ay pinoproseso ng apoy, at ang apoy ay pinapatay ng tubig. Ang tubig naman ay pinakikilos ng espiritu, at ang espiritu ay nagmumula sa Diyos. Sapagkat ganito ang sinabi ng propetang si Moises: 'Nang pasimula ay nilikha ng Diyos ang langit at ang lupa. Ngunit ang lupa ay hindi nakikita at hindi pa maayos; at ang kadiliman ay nasa ibabaw ng kalaliman, at ang Espiritu ng Diyos ay nasa ibabaw ng mga tubig.' Genesis 1:1-2 Ang Espiritung iyon, na parang kamay ng Maylalang, ay ayon sa utos ng Diyos na naghiwalay ng liwanag sa kadiliman; at pagkatapos ng di-nakikitang langit ay ginawa Niya ang nakikitang ito, upang ang mas mataas na mga dako ay maging tahanan ng mga anghel at ang mas mababang mga dako ay para sa mga tao. Kaya para sa inyo, sa utos ng Diyos, umurong ang tubig na nasa ibabaw ng lupa upang ang lupa ay mamunga para sa inyo; at inilagay rin Niya sa lupa ang mga ugat ng kahalumigmigan upang mula roon ay umagos ang mga bukal at ilog para sa inyo. Para sa inyo iniutos na magsilang ito ng mga buhay na nilalang at ng lahat ng bagay na maaaring maglingkod sa inyong gamit at kasiyahan. Hindi ba para sa inyo umiihip ang mga hangin, upang sa pamamagitan ng mga ito ay mabuntis ang lupa at mamunga? Hindi ba para sa inyo bumabagsak ang ulan at nagpapalit ang mga panahon? Hindi ba para sa inyo sumisikat at lumulubog ang araw at nagbabago ang buwan? Para sa inyo iniaalok ng dagat ang paglilingkod nito upang ang lahat ng bagay ay mapasailalim sa inyo, kahit kayo'y walang utang na loob. Dahil sa lahat ng ito, hindi ba magkakaroon ng makatarungang kaparusahan, sapagkat higit sa lahat ay hindi ninyo kinikilala ang Nagkaloob ng lahat ng ito, na dapat ninyong kilalanin at igalang nang higit sa lahat?</p>
+
+<h3>Kabanata 8. Ang Pangangailangan ng Bautismo.</h3>
+<p>Ngayon ay inaakay ko kayo sa pagkaunawa sa pamamagitan ng gayunding mga landas. Nakikita ninyo na ang lahat ng bagay ay nagmumula sa tubig. Ngunit ang tubig ay unang ginawa sa pamamagitan ng Bugtong na Anak; at ang Makapangyarihang Diyos ang ulo ng Bugtong na Anak, at sa pamamagitan Niya tayo lumalapit sa Ama ayon sa pagkakasunod-sunod na sinabi namin sa itaas. Kapag nakarating na kayo sa Ama, malalaman ninyo na ito ang Kanyang kalooban: na kayo'y ipanganak na muli sa pamamagitan ng tubig, na siyang unang nilikha. Sapagkat ang taong muling isinilang sa tubig at nakapagpuno ng sukat ng mabubuting gawa ay nagiging tagapagmana Niya na sa pamamagitan Niya ay muling isinilang sa kawalang-kasiraan. Kaya lumapit kayo nang may handang pag-iisip, gaya ng mga anak na lumalapit sa ama, upang mahugasan ang inyong mga kasalanan at mapatunayan sa harap ng Diyos na kamangmangan lamang ang sanhi ng mga iyon. Sapagkat kung matapos ninyong matutuhan ang mga bagay na ito ay mananatili pa rin kayo sa kawalan ng pananampalataya, ang sanhi ng inyong kapahamakan ay ibibilang na sa inyo mismo at hindi sa kamangmangan. At inaakala ba ninyong maaari kayong magkaroon ng pag-asa sa Diyos kahit linangin ninyo ang buong kabanalan at katuwiran ngunit hindi tumanggap ng bautismo? Sa halip, higit na karapat-dapat sa kaparusahan ang gumagawa ng mabubuting gawa ngunit hindi ayon sa tamang paraan; sapagkat nagkakaroon ng merito ang tao mula sa mabubuting gawa, ngunit kung ginagawa lamang ang mga iyon ayon sa utos ng Diyos. Iniutos ng Diyos na ang bawat sumasamba sa Kanya ay tatakan sa pamamagitan ng bautismo; ngunit kung tumanggi kayo at sundin ang sarili ninyong kalooban sa halip na ang kalooban ng Diyos, tiyak na sumasalungat at kumakalaban kayo sa Kanyang kalooban.</p>
+
+<h3>Kabanata 9. Ang Gamit ng Bautismo.</h3>
+<p>Ngunit maaaring sabihin ninyo, Ano ang naiaambag ng bautismo sa tubig sa pagsamba sa Diyos? Una, sapagkat sa pamamagitan nito ay natutupad ang bagay na kinalulugdan ng Diyos. Ikalawa, sapagkat kapag kayo'y muling isinilang at ipinanganak na muli sa tubig at sa Diyos, napuputol ang kahinaan ng inyong unang kapanganakan na tinanggap ninyo sa pamamagitan ng mga tao, at sa gayon ay saka lamang ninyo maaabot ang kaligtasan; kung hindi, imposible ito. Sapagkat ganito ang taimtim na pinatotohanan sa amin ng tunay na Propeta: 'Katotohanang sinasabi ko sa inyo, malibang ang isang tao ay ipanganak na muli sa tubig, hindi siya makapapasok sa kaharian ng langit.' Kaya magmadali kayo; sapagkat sa mga tubig na ito ay may isang kapangyarihan ng awa na mula pa sa pasimula ay nasa ibabaw ng mga ito, at kinikilala nito ang mga binautismuhan sa pangalan ng tatlong-bahaging sakramento, inililigtas sila mula sa darating na mga kaparusahan, at inihahandog bilang kaloob sa Diyos ang mga kaluluwang itinatalaga sa pamamagitan ng bautismo. Kaya lumapit kayo sa mga tubig na ito, sapagkat ang mga ito lamang ang makapapawi sa tindi ng apoy na darating; at maliwanag na sa taong nag-aantala ng paglapit sa mga ito ay nananatili ang diyus-diyosan ng kawalan ng pananampalataya, at ito ang humahadlang sa kanya na magmadali sa mga tubig na nagbibigay ng kaligtasan. Sapagkat maging matuwid man kayo o hindi, kailangan ninyo ang bautismo sa lahat ng pagkakataon: para sa matuwid, upang ganapin sa kanya ang kasakdalan at siya'y maipanganak na muli sa Diyos; para sa hindi matuwid, upang mapagkalooban siya ng kapatawaran sa mga kasalanang nagawa niya sa kamangmangan. Kaya dapat magmadali ang lahat na maipanganak na muli sa Diyos nang walang pagkaantala, sapagkat hindi tiyak ang wakas ng buhay ng bawat isa.</p>
+
+<h3>Kabanata 10. Ang Pangangailangan ng Mabubuting Gawa.</h3>
+<p>Ngunit kapag kayo'y muling isinilang sa pamamagitan ng tubig, ipakita ninyo sa inyong mabubuting gawa ang wangis ng Amang nagsilang sa inyo. Ngayong kilala na ninyo ang Diyos, parangalan ninyo Siya bilang Ama; at ang paggalang sa Kanya ay ang mamuhay ayon sa Kanyang kalooban. At ang Kanyang kalooban ay mamuhay kayo nang walang kinalaman sa pagpatay o pangangalunya, lumayo sa poot at kasakiman, iwaksi ang galit, kapalaluan, at pagmamapuri, kamuhian ang inggit, at ituring na lubusang hindi angkop sa inyo ang lahat ng gayong bagay. Mayroon ding isang natatanging pagsunod sa ating relihiyon na hindi lamang ipinapataw sa mga tao kundi kusang hinahanap ng bawat sumasamba sa Diyos dahil sa kalinisan nito. Ang tinutukoy ko ay kalinisang-asal, na may maraming anyo; at una sa mga ito ay mag-ingat ang bawat isa na 'huwag lumapit sa isang babaeng nireregla,' sapagkat itinuturing ito ng kautusan ng Diyos na karumal-dumal. Ngunit kahit walang ibinigay na paalala ang kautusan tungkol sa mga bagay na ito, dapat ba tayong kusang gumulong sa karumihan gaya ng mga salagubang? Sapagkat bilang mga taong may katwiran at may kakayahang umunawa ng makalangit na mga bagay, nararapat tayong magkaroon ng isang bagay na higit kaysa sa mga hayop; at pangunahing pagsisikap natin ang ingatan ang budhi mula sa bawat karumihan ng puso.</p>
+<h3>Kabanata 11. Panloob at Panlabas na Paglilinis.</h3>
+<p>Bukod dito, mabuti rin at nakatutulong sa kalinisan ang paghuhugas ng katawan sa tubig. Tinatawag ko itong mabuti, hindi na para bang ito ang pangunahing kabutihan ng paglilinis ng isip, kundi dahil ang paghuhugas ng katawan ay kasunod ng kabutihang iyon. Ganito rin sinaway ng ating Guro ang ilan sa mga Fariseo at mga eskriba, na waring higit na mabuti kaysa sa iba at humihiwalay sa mga tao. Tinawag Niya silang mga mapagkunwari sapagkat nililinis lamang nila ang mga bagay na nakikita ng mga tao, samantalang iniiwan nilang marumi at madungis ang kanilang mga puso na Diyos lamang ang nakakakita. Kaya sinabi Niya sa ilan sa kanila—hindi sa lahat—'Kahabag-habag kayo, mga eskriba at mga Fariseo, mga mapagkunwari! Sapagkat nililinis ninyo ang labas ng kopa at pinggan, ngunit ang loob ay punô ng karumihan. O mga bulag na Fariseo, linisin muna ninyo ang nasa loob, at magiging malinis din ang nasa labas.' Matthew 23:25-26 Sapagkat tunay na kung nalinis ang isip sa pamamagitan ng liwanag ng kaalaman, kapag ito'y naging malinis at malinaw na, tiyak na aalagaan din nito ang nasa labas ng tao—ang kanyang laman—upang ito rin ay malinis. Ngunit kapag napapabayaan ang nasa labas, ang paglilinis ng laman, tiyak na walang tunay na pag-aalaga sa kadalisayan ng isip at kalinisan ng puso. Kaya nangyayari na ang taong malinis sa loob ay walang alinlangang nagiging malinis din sa labas; ngunit hindi laging ang taong malinis sa labas ay malinis din sa loob—lalo na kapag ginagawa niya ang mga bagay na ito upang kalugdan lamang ang mga tao.</p>
+
+<h3>Kabanata 12. Ang Kahalagahan ng Kalinisang-Asal.</h3>
+<p>Dapat ding sundin ang ganitong uri ng kalinisang-asal: ang pagtatalik ay hindi dapat gawin nang padalus-dalos o para lamang sa kasiyahan, kundi para sa pag-aanak ng mga anak. At yamang ang ganitong pagpipigil ay matatagpuan maging sa ilan sa mabababang uri ng hayop, kahiya-hiya kung hindi ito susundin ng mga taong may katwiran at sumasamba sa Diyos. May isa pang dahilan kung bakit dapat sundin ng mga taong may tunay na pagsamba sa Diyos ang kalinisang-asal sa mga anyong nabanggit natin at sa iba pang katulad nito: mahigpit din itong sinusunod ng ilan sa mga taong nananatili pa sa kamalian sa ilalim ng diyablo, sapagkat maging sa kanila ay may isang antas ng kalinisang-asal. Ano kung gayon? Ngayong kayo'y naituwid na, hindi ba ninyo susundin ang bagay na sinusunod ninyo noong kayo'y nasa kamalian?</p>
+
+<h3>Kabanata 13. Ang Higit na Mataas na Pamantayan ng Moralidad ng mga Kristiyano.</h3>
+<p>Ngunit maaaring may magsabi sa inyo, Dapat ba nating sundin ang lahat ng bagay na ginagawa natin noong sumasamba pa tayo sa mga diyus-diyosan? Hindi lahat. Ngunit ang anumang ginawa nang tama ay dapat pa rin ninyong sundin ngayon; sapagkat kung may anumang ginagawang tama ng mga nasa kamalian, tiyak na nagmumula iyon sa katotohanan; samantalang kung may anumang hindi tamang ginagawa sa tunay na relihiyon, walang alinlangang hiniram iyon mula sa kamalian. Sapagkat ang mabuti ay mabuti kahit gawin ng mga nasa kamalian, at ang masama ay masama kahit gawin ng mga sumusunod sa katotohanan. O magiging napakahangal ba tayo na kung makita nating mahinahon ang isang sumasamba sa diyus-diyosan ay tatanggi tayong maging mahinahon, dahil baka magmukha tayong gumagawa ng katulad ng ginagawa niya? Hindi ganoon. Sa halip, ito ang pag-aralan natin: kung ang mga nasa kamalian ay hindi pumapatay, tayo ay huwag man lamang magalit; kung hindi sila nangangalunya, tayo ay huwag man lamang magnasa sa asawa ng iba; kung iniibig nila ang kanilang mga kapwa, tayo ay umibig maging sa ating mga kaaway; kung nagpapahiram sila sa mga may kakayahang magbayad, tayo ay magbigay sa mga taong hindi natin inaasahang makababalik ng anuman sa atin. At sa lahat ng bagay, tayong umaasa sa mana ng walang hanggang sanlibutan ay dapat humigit sa mga taong ang kasalukuyang sanlibutan lamang ang kilala. Sapagkat kung sa araw ng paghuhukom ay matagpuang magkatulad at magkapantay ang kanilang mga gawa at ang ating mga gawa, magiging kahiya-hiya iyon para sa atin, sapagkat natagpuan tayong kapantay sa mga gawa ng mga taong hinahatulan dahil sa kamangmangan at walang pag-asa sa mundong darating.</p>
+
+<h3>Kabanata 14. Pinalalaki ng Kaalaman ang Pananagutan.</h3>
+<p><q>At tunay na kahihiyan ang nararapat na bahagi natin kung wala tayong nagawang higit kaysa sa mga taong mas mababa sa atin sa kaalaman. Ngunit kung kahiya-hiya na para sa atin na matagpuang kapantay nila sa mga gawa, ano ang mangyayari sa atin kung sa pagsusuring darating ay matagpuan tayong mas mababa at mas masama kaysa sa kanila? Pakinggan ninyo kung paano tayo tinuruan ng ating tunay na Propeta tungkol sa mga bagay na ito. Tungkol sa mga nagpapabaya na makinig sa mga salita ng karunungan, sinabi Niya: 'Ang reyna ng timog ay babangon sa paghuhukom kasama ng salinlahing ito at hahatulan ito, sapagkat nagmula siya sa mga dulo ng lupa upang pakinggan ang karunungan ni Solomon; at narito, may higit na dakila kaysa kay Solomon dito, ngunit hindi nila Siya pinakikinggan.' Tungkol naman sa mga tumangging magsisi sa kanilang masasamang gawa, sinabi Niya: 'Ang mga taga-Nineve ay babangon sa paghuhukom kasama ng salinlahing ito at hahatulan ito; sapagkat nagsisi sila sa pangangaral ni Jonas; at narito, may higit na dakila kaysa kay Jonas dito.' Nakikita ninyo kung paano Niya hinatulan ang mga naturuan mula sa kautusan sa pamamagitan ng pagbanggit sa halimbawa ng mga nagmula sa kamangmangan ng mga Gentil, at ipinakitang ang una ay hindi man lamang naging kapantay ng mga taong waring namumuhay sa kamalian. Mula sa lahat ng ito ay napatutunayan ang pahayag na Kanyang inilatag: na ang kalinisang-asal, na sa isang antas ay sinusunod maging ng mga namumuhay sa kamalian, ay dapat nating sundin nang higit na dalisay at mahigpit sa lahat ng anyo nito, gaya ng ipinakita natin sa itaas, sapagkat tayo ang sumusunod sa katotohanan; lalo na't sa atin ay may nakalaang walang hanggang gantimpala para sa pagsunod dito.</q></p>
+
+<h3>Kabanata 15. Pagtatalaga ng mga Obispo, Presbitero, Diyakono, at mga Balo sa Tripolis.</h3>
+<p>Pagkasabi niya ng mga bagay na ito at ng iba pang katulad ng mga ito, pinaalis niya ang mga tao; at ayon sa kanyang nakagawian, kumain siya ng hapunan kasama ng kanyang mga kaibigan at pagkatapos ay natulog. Sa ganitong paraan ay itinuro niya ang salita ng Diyos sa loob ng tatlong buong buwan at inakay ang napakaraming tao sa pananampalataya. Sa huli ay inutusan niya akong mag-ayuno; at pagkatapos ng pag-aayuno ay ipinagkaloob niya sa akin ang bautismo sa umaagos na tubig, sa mga bukal na nasa tabi ng dagat. At dahil sa biyaya ng muling kapanganakang ipinagkaloob sa akin ng Diyos, masaya naming ipinagdiwang iyon kasama ng ating mga kapatid. Pagkatapos ay inutusan ni Pedro ang mga itinalagang mauna sa kanya na magtungo sa Antioquia at maghintay doon nang tatlo pang buwan. Pagkaalis nila, siya mismo ang nagdala sa mga bukal na malapit sa dagat, na nabanggit ko na, sa mga ganap nang tumanggap sa pananampalataya sa Panginoon, at binautismuhan niya sila. Ipinagdiwang niya ang Eukaristiya kasama nila at itinalaga bilang obispo nila si Maro, na nagpatuloy sa kanya sa kanyang bahay at ngayo'y ganap na sa lahat ng bagay. Kasama niya ay nagtalaga rin siya ng labindalawang presbitero at mga diyakono. Itinatag din niya ang kaayusan ng mga balo at inayos ang lahat ng paglilingkod sa Iglesia; at inatasan silang lahat na sundin si Maro, ang kanilang obispo, sa lahat ng bagay na iuutos niya sa kanila. Nang maayos nang nararapat ang lahat ng bagay at matapos ang tatlong buwan, nagpaalam kami sa mga nasa Tripolis at naglakbay patungong Antioquia.</p>
+  </section>
+
+  <hr>
 </div>
 
-
-    <hr>
-    <!-- <button class="richblue"><A Href="../index.html">BACK</A></button>                     -->
-</div>
 <script src="../../../DocumentOutline.js"></script>
-<script>
-let outline = new DocumentOutline();
-</script>
-<script>
-try {
-fetch(new Request("../../../pagead2.googlesyndication.com/pagead/js/f.txt", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-return true;
-}).catch(function(e) {
-var carbonScript = document.createElement("script");
-carbonScript.src = "../../../cdn.carbonads.com/carbon544e.js?serve=CE7DC2JW&amp;placement=wwwcssscriptcom";
-carbonScript.id = "_carbonads_js";
-document.getElementById("carbon-block").appendChild(carbonScript);
-});
-} catch (error) {
-console.log(error);
-}
-</script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46156385-1', 'cssscript.com');
-ga('send', 'pageview');
+<script>
+(function () {
+  'use strict';
 
+  const englishHeader = document.getElementById('englishHeader');
+  const tagalogHeader = document.getElementById('tagalogHeader');
+  const englishContent = document.getElementById('englishContent');
+  const tagalogContent = document.getElementById('tagalogContent');
+  const languageToggle = document.getElementById('languageToggle');
+
+  let currentLanguage = 'en';
+
+  function renderLanguage() {
+    const isTagalog = currentLanguage === 'tl';
+
+    englishHeader.hidden = isTagalog;
+    englishContent.hidden = isTagalog;
+
+    tagalogHeader.hidden = !isTagalog;
+    tagalogContent.hidden = !isTagalog;
+
+    languageToggle.textContent = isTagalog
+      ? 'English Version'
+      : 'Tagalog Version';
+
+    document.documentElement.lang = isTagalog ? 'tl' : 'en';
+    languageToggle.setAttribute(
+      'aria-label',
+      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
+    );
+  }
+
+  languageToggle.addEventListener('click', function () {
+    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    renderLanguage();
+  });
+
+  // Initial state only.
+  renderLanguage();
+
+  // IMPORTANT: initialize the old site's outline script only once.
+  // Recreating DocumentOutline during every language switch can repeatedly
+  // modify the DOM and eventually cause content to disappear.
+  if (typeof DocumentOutline !== 'undefined') {
+    try {
+      window.sacredWritingsOutline = new DocumentOutline();
+    } catch (error) {
+      console.warn('Document outline initialization skipped:', error);
+    }
+  }
+})();
 </script>
+
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const zoomIn = document.getElementById('textZoomIn');
+  const zoomOut = document.getElementById('textZoomOut');
+  const zoomReset = document.getElementById('textZoomReset');
+  const zoomLabel = document.getElementById('textZoomLabel');
+
+  let scale = 1;
+  const minScale = 0.85;
+  const maxScale = 2.00;
+  const step = 0.15;
+
+  function applyTextScale() {
+    scale = Math.max(minScale, Math.min(maxScale, scale));
+    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
+    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  }
+
+  zoomIn.addEventListener('click', function () {
+    scale += step;
+    applyTextScale();
+  });
+
+  zoomOut.addEventListener('click', function () {
+    scale -= step;
+    applyTextScale();
+  });
+
+  zoomReset.addEventListener('click', function () {
+    scale = 1;
+    applyTextScale();
+  });
+
+  applyTextScale();
+})();
+</script>
+
 </body>
-
 </html>

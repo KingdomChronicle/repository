@@ -1,41 +1,170 @@
 <!doctype html>
-<html>
-
-<!-- Mirrored from www.cssscript.com/demo/collapsible-side-table-of-contents/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Mar 2024 08:54:17 GMT -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 <title>Homily 7</title>
+
 <link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../../../outline.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
- <style>
+<link rel="stylesheet" href="../../../outline.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<style>
   body { background-color: #fafafa; line-height: 1.6; }
-  html,* { font-family: 'Inter'; }
+  html, * { font-family: 'Inter'; }
   p { font-size: 1.25rem; }
+
+  .language-only[hidden] {
+    display: none !important;
+  }
+  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
+  :root {
+    --reader-font-scale: 1;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  body > div,
+  .language-only,
+  #englishContent,
+  #tagalogContent {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #englishContent p,
+  #tagalogContent p {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: calc(1.25rem * var(--reader-font-scale));
+    line-height: 1.65;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #englishContent h2, #tagalogContent h2,
+  #englishContent h3, #tagalogContent h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, table, pre {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  .reader-zoom-controls {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem 0;
+    background: #fafafa;
+  }
+
+  .reader-zoom-controls button {
+    min-width: 3.2rem;
+    min-height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .reader-zoom-label {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 .75rem;
+    }
+  }
+
 </style>
 </head>
 
 <body>
-  <div>
-        
+<div>
 
-        <center>
-          <h1>Sacred Writing</h1>
-          <p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p>
-        </center>
-        <center>
-          <a href="../Filipino/24. SacredWriting - Homily 7 (Fil).html"><button type="button" class="btn btn-secondary w-100">Tagalog Version</button></a>
-        </center>
-        
+  <!-- =========================================================
+       SINGLE-FILE ENGLISH / TAGALOG PAGE
+       IMPORTANT:
+       DocumentOutline is initialized only once.
+       Language switching only toggles the hidden attribute.
+       ========================================================= -->
 
-                    
-        <h3>Chapter I. Peter Addresses the People</h3><p>And on the fourth day of our stay in Tyre, Peter went out about daybreak, and there met him not a few of the dwellers round about, with very many of the inhabitants of Tyre itself, who cried out, and said, <q>God through you have mercy upon us, God through you heal us!</q> And Peter stood on a high stone, that all might see him; and having greeted them in a godly manner, thus began:—</p><h3>Chapter II. Reason of Simon's Power</h3><p><q>God, who created the heavens and the whole universe, does not want occasion for the salvation of those who would be saved. Wherefore let no one, in seeming evils, rashly charge Him with unkindness to man. For men do not know the issue of those things which happen to them, nay, suspect that the result will be evil; but God knows that they will turn out well. So is it in the case of Simon. He is a power of the left hand of God, and has authority to do harm to those who know not God, so that he has been able to involve you in diseases; but by these very diseases, which have been permitted to come upon you by the good providence of God, you, seeking and finding him who is able to cure, have been compelled to submit to the will of God on the occasion of the cure of the body, and to think of believing, in order that in this way you may have your souls as well as your bodies in a healthy state.</q></p><h3>Chapter III. The Remedy</h3><p><q>Now I have been told, that after he had sacrificed an ox he feasted you in the middle of the forum, and that you, being carried away with much wine, made friends with not only the evil demons, but their prince also, and that in this way the most of you were seized by these sicknesses, unwittingly drawing upon yourselves with your own hands the sword of destruction. For the demons would never have had power over you, had not you first supped with their prince. For thus from the beginning was a law laid by God, the Creator of all things, on each of the two princes, him of the right hand and him of the left, that neither should have power over any one whom they might wish to benefit or to hurt, unless first he had sat down at the same table with them. As, then, when you partook of meat offered to idols, you became servants to the prince of evil, in like manner, if you cease from these things, and flee for refuge to God through the good Prince of His right hand, honouring Him without sacrifices, by doing whatsoever He wills, know of a truth that not only will your bodies be healed, but your souls also will become healthy. For He only, destroying with His left hand, can quicken with His right; He only can both smite and raise the fallen.</q></p><h3>Chapter IV. The Golden Rule</h3><p><q>Wherefore, as then you were deceived by the forerunner Simon, and so became dead in your souls to God, and were smitten in your bodies; so now, if you repent, as I said, and submit to those things which are well-pleasing to God, you may get new strength to your bodies, and recover your soul's health. And the things which are well-pleasing to God are these: to pray to Him, to ask from Him, recognising that He is the giver of all things, and gives with discriminating law; to abstain from the table of devils, not to taste dead flesh, not to touch blood; to be washed from all pollution; and the rest in one word,—as the God-fearing Jews have heard, do you also hear, and be of one mind in many bodies; let each man be minded to do to his neighbour those good things he wishes for himself. And you may all find out what is good, by holding some such conversation as the following with yourselves: You would not like to be murdered; do not murder another man: you would not like your wife to be seduced by another; do not you commit adultery: you would not like any of your things to be stolen from you; steal nothing from another. And so understanding by yourselves what is reasonable, and doing it, you will become dear to God, and will obtain healing; otherwise in the life which now is your bodies will be tormented, and in that which is to come your souls will be punished.</q></p><h3>Chapter V. Peter Departs for Sidon</h3><p>After Peter had spent a few days in teaching them in this way, and in healing them, they were baptized. And after that, all sat down together in the market-places in sackcloth and ashes, grieving because of his other wondrous works, and repenting their former sins. And when they of Sidon heard it, they did likewise, and sent to beseech Peter, since they could not come themselves for their diseases. And Peter did not spend many days in Tyre; but when he had instructed all its inhabitants, and freed them from all manners of diseases and had founded a church, and set over it as bishop one of the elders who were with him, he departed for Sidon. But when Simon heard that Peter was coming, he straightway fled to Beyrout with Appion and his friends.</p><h3>Chapter VI. Peter in Sidon</h3><p>And as Peter entered Sidon, they brought many in couches, and laid them before him. And he said to them: <q>Think not, I pray you, that I can do anything to heal you, who am a mortal man, myself subject to many evils. But I shall not refuse to show you the way in which you must be saved. For I have learned from the Prophet of truth the conditions fore-ordained of God before the foundation of the world; that is to say, the evil deeds which if men do He has ordained that they shall be injured by the prince of evil, and in like manner the good deeds for which He has decreed that they who have believed in Him as their Physician shall have their bodies made whole, and their souls established in safety.</q></p><h3>Chapter VII. The Two Paths</h3><p><q>Knowing, then, these good and evil deeds, I make known unto you as it were two paths, and I shall show you by which travellers are lost and by which they are saved, being guided of God. The path of the lost, then, is broad and very smooth—it ruins them without troubling them; but the path of the saved is narrow, rugged, and in the end it saves, not without much toil, those who have journeyed through it. And these two paths are presided over by unbelief and faith; and these journey through the path of unbelief, those who have preferred pleasure, on account of which they have forgotten the day of judgment, doing that which is not pleasing to God, and not caring to save their souls by the word, and have not anxiously sought their own good. Truly they know not that the counsels of God are not like men's counsels; for, in the first place, He knows the thoughts of all men, and all must give an account not only of their actions, but also of their thoughts. And their sin is much less who strive to understand well and fall, than that of those who do not at all strive after good things. Because it has pleased God that he who errs in his knowledge of good, as men count errors, should be saved after being slightly punished. But they who have taken no care at all to know the better way, even though they may have done countless other good deeds, if they have not stood in the service He has Himself appointed, come under the charge of indifference, and are severely punished, and utterly destroyed.</q></p><h3>Chapter VIII. The Service of God's Appointment</h3><p><q>And this is the service He has appointed: To worship Him only, and trust only in the Prophet of truth, and to be baptized for the remission of sins, and thus by this pure baptism to be born again unto God by saving water; to abstain from the table of devils, that is, from food offered to idols, from dead carcases, from animals which have been suffocated or caught by wild beasts, and from blood; not to live any longer impurely; to wash after intercourse; that the women on their part should keep the law of purification; that all should be sober-minded, given to good works, refraining from wrongdoing, looking for eternal life from the all-powerful God, and asking with prayer and continual supplication that they may win it.</q> Such was Peter's counsel to the men of Sidon also. And in few days many repented and believed, and were healed. And Peter having founded a church, and set over it as bishop one of the elders who were with him, left Sidon.</p><h3>Chapter IX. Simon Attacks Peter</h3><p>No sooner had he reached Beyrout than an earthquake took place; and the multitude, running to Peter, said, <q>Help us, for we are afraid we shall all utterly perish.</q> Then Simon ventured, along with Appion and Anubion and Athenodorus, and the rest of his companions, to cry out to the people against Peter in public: <q>Flee, friends, from this man! He is a magician; trust us, he it was who caused this earthquake: he sent us these diseases to terrify us, as if he were God Himself.</q> And many such false charges did Simon and his friends bring against Peter, as one who could do things above human power. But as soon as the people gave him a moment's quiet, Peter with surprising boldness gave a little laugh, and said, <q>Friends, I admit that I can do, God willing, what these men say; and more than that, I am ready, if you do not believe what I say, to overturn your city from top to bottom.</q></p><h3>Chapter X. Simon is Driven Away</h3><p>And the people were afraid, and promised to do whatever he should command. <q>Let none of you, then,</q> said Peter, <q>either hold conversation with these sorcerers, or have anything to do with them.</q> And as soon as the people heard this concise command, they took up sticks, and pursued them till they had driven them wholly out of the town. And they who were sick and possessed with devils came and cast themselves at Peter's feet. And he seeing all this, and anxious to free them from their terror, said to them:—</p><h3>Chapter XI. The Way of Salvation</h3><p><q>Were I able to cause earthquakes, and do all that I wish, I assure you I would not destroy Simon and his friends (for not to destroy men am I sent), but would make him my friend, that he might no longer, by his slanders against my preaching the truth, hinder the salvation of many. But if you believe me, he himself is a magician; he is a slanderer; he is a minister of evil to them who know not the truth. Therefore he has power to bring diseases on sinners, having the sinners themselves to help him in his power over them. But I am a servant of God the Creator of all things, and a disciple of His Prophet who is at His right hand. Wherefore I, being His apostle, preach the truth: to serve a good man I drive away diseases, for I am His second messenger, since first the disease comes, but after that the healing. By that evil-working magician, then, you were stricken with disease because you revolted from God. By me, if you believe in Him ye shall be cured: and so having had experience that He is able, you may turn to good works, and have your souls saved.</q></p><h3>Chapter XII. Peter Goes to Byblus and Tripolis</h3><p>As he said these things, all fell on their knees before his feet. And he, lifting up his hands to heaven, prayed to God, and healed them all by his simple prayer alone. And he remained not many days in Beyrout; but after he had accustomed many to the service of the one God, and had baptized them, and had set over them a bishop from the elders who were with him, he went to Byblus. And when he came there, and learned that Simon had not waited for them for a day, but had gone straightway to Tripolis, he remained there only a few days; and after that he had healed not a few, and exercised them in the Scriptures, he followed in Simon's track to Tripolis, preferring to pursue him rather than flee from him.</p>
+  <!-- ENGLISH SITE HEADER -->
+  <div id="englishHeader" class="language-only">
+    <center>
+      <h1>Sacred Writing</h1>
+      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+    </center>
+  </div>
+
+  <!-- TAGALOG SITE HEADER -->
+  <div id="tagalogHeader" class="language-only" hidden>
+    <center>
+      <h1>Mga Sagradong Sulatin</h1>
+      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
+    </center>
+  </div>
+
+  <!-- ONE SHARED TRANSLATION BUTTON -->
+
+  <center class="reader-zoom-controls" aria-label="Text size controls">
+  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
+  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
+  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
+  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
+</center>
+  <center>
+    <button id="languageToggle"
+            type="button"
+            class="btn btn-secondary w-100"
+            aria-live="polite">
+      Tagalog Version
+    </button>
+  </center>
+
+
+
+
+  <!-- ENGLISH CONTENT -->
+  <section id="englishContent" class="language-only" data-language="en">
+<h3>Chapter I. Peter Addresses the People</h3><p>And on the fourth day of our stay in Tyre, Peter went out about daybreak, and there met him not a few of the dwellers round about, with very many of the inhabitants of Tyre itself, who cried out, and said, <q>God through you have mercy upon us, God through you heal us!</q> And Peter stood on a high stone, that all might see him; and having greeted them in a godly manner, thus began:—</p><h3>Chapter II. Reason of Simon's Power</h3><p><q>God, who created the heavens and the whole universe, does not want occasion for the salvation of those who would be saved. Wherefore let no one, in seeming evils, rashly charge Him with unkindness to man. For men do not know the issue of those things which happen to them, nay, suspect that the result will be evil; but God knows that they will turn out well. So is it in the case of Simon. He is a power of the left hand of God, and has authority to do harm to those who know not God, so that he has been able to involve you in diseases; but by these very diseases, which have been permitted to come upon you by the good providence of God, you, seeking and finding him who is able to cure, have been compelled to submit to the will of God on the occasion of the cure of the body, and to think of believing, in order that in this way you may have your souls as well as your bodies in a healthy state.</q></p><h3>Chapter III. The Remedy</h3><p><q>Now I have been told, that after he had sacrificed an ox he feasted you in the middle of the forum, and that you, being carried away with much wine, made friends with not only the evil demons, but their prince also, and that in this way the most of you were seized by these sicknesses, unwittingly drawing upon yourselves with your own hands the sword of destruction. For the demons would never have had power over you, had not you first supped with their prince. For thus from the beginning was a law laid by God, the Creator of all things, on each of the two princes, him of the right hand and him of the left, that neither should have power over any one whom they might wish to benefit or to hurt, unless first he had sat down at the same table with them. As, then, when you partook of meat offered to idols, you became servants to the prince of evil, in like manner, if you cease from these things, and flee for refuge to God through the good Prince of His right hand, honouring Him without sacrifices, by doing whatsoever He wills, know of a truth that not only will your bodies be healed, but your souls also will become healthy. For He only, destroying with His left hand, can quicken with His right; He only can both smite and raise the fallen.</q></p><h3>Chapter IV. The Golden Rule</h3><p><q>Wherefore, as then you were deceived by the forerunner Simon, and so became dead in your souls to God, and were smitten in your bodies; so now, if you repent, as I said, and submit to those things which are well-pleasing to God, you may get new strength to your bodies, and recover your soul's health. And the things which are well-pleasing to God are these: to pray to Him, to ask from Him, recognising that He is the giver of all things, and gives with discriminating law; to abstain from the table of devils, not to taste dead flesh, not to touch blood; to be washed from all pollution; and the rest in one word,—as the God-fearing Jews have heard, do you also hear, and be of one mind in many bodies; let each man be minded to do to his neighbour those good things he wishes for himself. And you may all find out what is good, by holding some such conversation as the following with yourselves: You would not like to be murdered; do not murder another man: you would not like your wife to be seduced by another; do not you commit adultery: you would not like any of your things to be stolen from you; steal nothing from another. And so understanding by yourselves what is reasonable, and doing it, you will become dear to God, and will obtain healing; otherwise in the life which now is your bodies will be tormented, and in that which is to come your souls will be punished.</q></p><h3>Chapter V. Peter Departs for Sidon</h3><p>After Peter had spent a few days in teaching them in this way, and in healing them, they were baptized. And after that, all sat down together in the market-places in sackcloth and ashes, grieving because of his other wondrous works, and repenting their former sins. And when they of Sidon heard it, they did likewise, and sent to beseech Peter, since they could not come themselves for their diseases. And Peter did not spend many days in Tyre; but when he had instructed all its inhabitants, and freed them from all manners of diseases and had founded a church, and set over it as bishop one of the elders who were with him, he departed for Sidon. But when Simon heard that Peter was coming, he straightway fled to Beyrout with Appion and his friends.</p><h3>Chapter VI. Peter in Sidon</h3><p>And as Peter entered Sidon, they brought many in couches, and laid them before him. And he said to them: <q>Think not, I pray you, that I can do anything to heal you, who am a mortal man, myself subject to many evils. But I shall not refuse to show you the way in which you must be saved. For I have learned from the Prophet of truth the conditions fore-ordained of God before the foundation of the world; that is to say, the evil deeds which if men do He has ordained that they shall be injured by the prince of evil, and in like manner the good deeds for which He has decreed that they who have believed in Him as their Physician shall have their bodies made whole, and their souls established in safety.</q></p><h3>Chapter VII. The Two Paths</h3><p><q>Knowing, then, these good and evil deeds, I make known unto you as it were two paths, and I shall show you by which travellers are lost and by which they are saved, being guided of God. The path of the lost, then, is broad and very smooth—it ruins them without troubling them; but the path of the saved is narrow, rugged, and in the end it saves, not without much toil, those who have journeyed through it. And these two paths are presided over by unbelief and faith; and these journey through the path of unbelief, those who have preferred pleasure, on account of which they have forgotten the day of judgment, doing that which is not pleasing to God, and not caring to save their souls by the word, and have not anxiously sought their own good. Truly they know not that the counsels of God are not like men's counsels; for, in the first place, He knows the thoughts of all men, and all must give an account not only of their actions, but also of their thoughts. And their sin is much less who strive to understand well and fall, than that of those who do not at all strive after good things. Because it has pleased God that he who errs in his knowledge of good, as men count errors, should be saved after being slightly punished. But they who have taken no care at all to know the better way, even though they may have done countless other good deeds, if they have not stood in the service He has Himself appointed, come under the charge of indifference, and are severely punished, and utterly destroyed.</q></p><h3>Chapter VIII. The Service of God's Appointment</h3><p><q>And this is the service He has appointed: To worship Him only, and trust only in the Prophet of truth, and to be baptized for the remission of sins, and thus by this pure baptism to be born again unto God by saving water; to abstain from the table of devils, that is, from food offered to idols, from dead carcases, from animals which have been suffocated or caught by wild beasts, and from blood; not to live any longer impurely; to wash after intercourse; that the women on their part should keep the law of purification; that all should be sober-minded, given to good works, refraining from wrongdoing, looking for eternal life from the all-powerful God, and asking with prayer and continual supplication that they may win it.</q> Such was Peter's counsel to the men of Sidon also. And in few days many repented and believed, and were healed. And Peter having founded a church, and set over it as bishop one of the elders who were with him, left Sidon.</p><h3>Chapter IX. Simon Attacks Peter</h3><p>No sooner had he reached Beyrout than an earthquake took place; and the multitude, running to Peter, said, <q>Help us, for we are afraid we shall all utterly perish.</q> Then Simon ventured, along with Appion and Anubion and Athenodorus, and the rest of his companions, to cry out to the people against Peter in public: <q>Flee, friends, from this man! He is a magician; trust us, he it was who caused this earthquake: he sent us these diseases to terrify us, as if he were God Himself.</q> And many such false charges did Simon and his friends bring against Peter, as one who could do things above human power. But as soon as the people gave him a moment's quiet, Peter with surprising boldness gave a little laugh, and said, <q>Friends, I admit that I can do, God willing, what these men say; and more than that, I am ready, if you do not believe what I say, to overturn your city from top to bottom.</q></p><h3>Chapter X. Simon is Driven Away</h3><p>And the people were afraid, and promised to do whatever he should command. <q>Let none of you, then,</q> said Peter, <q>either hold conversation with these sorcerers, or have anything to do with them.</q> And as soon as the people heard this concise command, they took up sticks, and pursued them till they had driven them wholly out of the town. And they who were sick and possessed with devils came and cast themselves at Peter's feet. And he seeing all this, and anxious to free them from their terror, said to them:—</p><h3>Chapter XI. The Way of Salvation</h3><p><q>Were I able to cause earthquakes, and do all that I wish, I assure you I would not destroy Simon and his friends (for not to destroy men am I sent), but would make him my friend, that he might no longer, by his slanders against my preaching the truth, hinder the salvation of many. But if you believe me, he himself is a magician; he is a slanderer; he is a minister of evil to them who know not the truth. Therefore he has power to bring diseases on sinners, having the sinners themselves to help him in his power over them. But I am a servant of God the Creator of all things, and a disciple of His Prophet who is at His right hand. Wherefore I, being His apostle, preach the truth: to serve a good man I drive away diseases, for I am His second messenger, since first the disease comes, but after that the healing. By that evil-working magician, then, you were stricken with disease because you revolted from God. By me, if you believe in Him ye shall be cured: and so having had experience that He is able, you may turn to good works, and have your souls saved.</q></p><h3>Chapter XII. Peter Goes to Byblus and Tripolis</h3><p>As he said these things, all fell on their knees before his feet. And he, lifting up his hands to heaven, prayed to God, and healed them all by his simple prayer alone. And he remained not many days in Beyrout; but after he had accustomed many to the service of the one God, and had baptized them, and had set over them a bishop from the elders who were with him, he went to Byblus. And when he came there, and learned that Simon had not waited for them for a day, but had gone straightway to Tripolis, he remained there only a few days; and after that he had healed not a few, and exercised them in the Scriptures, he followed in Simon's track to Tripolis, preferring to pursue him rather than flee from him.</p>
 
 
 <!-------------------------------NOTES ABOUT THE BOOK ------------------------------->
@@ -46,51 +175,122 @@
 
 
 <!-- Goodgle ads script -->
-                <div class="css-script-ads" style="margin:30px auto"><div id="carbon-block"></div>
-                      <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-                  <!-- CSSScript Demo Page -->
-                      <ins class="adsbygoogle"
-                          style="display:inline-block;width:728px;height:90px"
-                          data-ad-client="ca-pub-2783044520727903"
-                          data-ad-slot="3025259193"></ins>
-                      <script>
-                      (adsbygoogle = window.adsbygoogle || []).push({});
-                      </script>
-                </div>
+                
+</section>
 
+  <!-- TAGALOG CONTENT -->
+  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
+<h3>Kabanata I. Hinarap ni Pedro ang mga Tao</h3><p>At sa ikaapat na araw ng aming pananatili sa Tiro, lumabas si Pedro nang magbukang-liwayway, at sinalubong siya ng hindi kakaunti sa mga naninirahan sa paligid, kasama ang napakaraming taga-Tiro mismo, na sumigaw at nagsabi, <q>Kaawaan nawa kami ng Diyos sa pamamagitan mo; pagalingin nawa kami ng Diyos sa pamamagitan mo!</q> At tumayo si Pedro sa isang mataas na bato upang makita siya ng lahat; at matapos silang batiin sa paraang maka-Diyos, nagsimula siyang magsalita nang ganito:—</p>
+<h3>Kabanata II. Dahilan ng Kapangyarihan ni Simon</h3><p><q>Ang Diyos, na lumikha ng langit at ng buong sansinukob, ay hindi nagkukulang ng pagkakataon para sa kaligtasan ng mga nagnanais maligtas. Kaya huwag agad paratangan ninuman ang Diyos ng kawalan ng malasakit sa tao dahil lamang sa mga bagay na waring masama. Sapagkat hindi alam ng mga tao ang kahihinatnan ng mga nangyayari sa kanila; bagkus, iniisip nilang magiging masama ang bunga nito. Ngunit alam ng Diyos na mauuwi ang mga iyon sa mabuti. Gayon din sa kaso ni Simon. Siya ay isang kapangyarihan ng kaliwang kamay ng Diyos, at binigyan ng kapahintulutang gumawa ng pinsala sa mga hindi nakakakilala sa Diyos, kaya nagawa niyang magdala sa inyo ng mga karamdaman. Ngunit sa pamamagitan mismo ng mga karamdamang ito, na pinahintulutang dumating sa inyo ayon sa mabuting kalooban ng Diyos, napilitan kayong hanapin at matagpuan ang makapagpapagaling sa inyo; at dahil sa pagpapagaling ng katawan, napasailalim kayo sa kalooban ng Diyos at napukaw na manampalataya, upang sa ganitong paraan ay maging malusog hindi lamang ang inyong mga katawan kundi pati ang inyong mga kaluluwa.</q></p>
+<h3>Kabanata III. Ang Lunas</h3><p><q>Nasabi sa akin na matapos siyang maghandog ng isang baka, pinakain niya kayo sa gitna ng liwasan, at dahil sa labis na alak ay nakipag-ugnayan kayo hindi lamang sa masasamang demonyo kundi maging sa kanilang pinuno; at sa ganitong paraan marami sa inyo ang dinapuan ng mga sakit na ito, na hindi namamalayang sa sarili ninyong mga kamay ay inilapit ninyo sa inyong sarili ang tabak ng kapahamakan. Sapagkat hindi sana nagkaroon ng kapangyarihan sa inyo ang mga demonyo kung hindi muna kayo nakisalo sa kanilang pinuno. Sapagkat mula pa sa pasimula ay nagtakda ang Diyos, ang Maylikha ng lahat ng bagay, ng isang batas para sa dalawang pinuno—sa nasa kanan at sa nasa kaliwa—na walang sinuman sa kanila ang magkakaroon ng kapangyarihan sa sinumang nais nilang tulungan o saktan malibang nakisalo muna ang taong iyon sa kanilang hapag. Kaya kung paanong nang kumain kayo ng karneng inihandog sa mga diyus-diyosan ay naging mga alipin kayo ng pinuno ng kasamaan, gayundin naman, kung titigil kayo sa mga bagay na ito at magpapakupkop sa Diyos sa pamamagitan ng mabuting Pinuno ng Kanyang kanang kamay, na pinararangalan Siya nang walang mga hain sa pamamagitan ng paggawa ng anumang Kanyang kalooban, alamin ninyo nang may katiyakan na hindi lamang gagaling ang inyong mga katawan kundi magiging malusog din ang inyong mga kaluluwa. Sapagkat Siya lamang, na pumupuksa sa pamamagitan ng Kanyang kaliwang kamay, ang makapagbibigay-buhay sa pamamagitan ng Kanyang kanan; Siya lamang ang makapananakit at makapagbabangon sa mga nabuwal.</q></p>
+<h3>Kabanata IV. Ang Gintong Tuntunin</h3><p><q>Kaya kung paanong noon ay nalinlang kayo ng tagapangunang si Simon, at dahil dito ay naging patay ang inyong mga kaluluwa sa Diyos at napinsala ang inyong mga katawan, gayundin ngayon, kung magsisisi kayo, gaya ng sinabi ko, at susunod sa mga bagay na kalugod-lugod sa Diyos, maaari kayong tumanggap ng panibagong lakas sa inyong mga katawan at maibalik ang kalusugan ng inyong kaluluwa. At ito ang mga bagay na kalugod-lugod sa Diyos: manalangin sa Kanya, humingi sa Kanya, na kinikilalang Siya ang nagbibigay ng lahat ng bagay at nagbibigay ayon sa matuwid na batas; umiwas sa hapag ng mga demonyo; huwag kumain ng patay na laman ni humipo ng dugo; maglinis mula sa lahat ng karumihan; at ang iba pa ay mabubuod sa isang salita—kung ano ang narinig ng mga Judiong may takot sa Diyos, pakinggan din ninyo, at maging iisa ang pag-iisip ninyo kahit marami ang inyong mga katawan. Isaisip ng bawat isa na gawin sa kanyang kapwa ang mabubuting bagay na nais niyang gawin sa kanya. At malalaman ninyong lahat kung ano ang mabuti sa pamamagitan ng ganitong pakikipag-usap sa inyong sarili: Ayaw mong patayin ka; huwag kang pumatay ng ibang tao. Ayaw mong akitin ng iba ang iyong asawa; huwag kang mangalunya. Ayaw mong nakawin sa iyo ang alinman sa iyong mga bagay; huwag kang magnakaw sa iba. At sa ganitong paraan, kapag naunawaan ninyo sa inyong sarili kung ano ang makatuwiran at ginawa ninyo iyon, magiging mahal kayo ng Diyos at tatanggap kayo ng kagalingan; kung hindi, sa buhay na ito ay pahihirapan ang inyong mga katawan, at sa darating na buhay ay parurusahan ang inyong mga kaluluwa.</q></p>
+<h3>Kabanata V. Umalis si Pedro Patungong Sidon</h3><p>Matapos gugulin ni Pedro ang ilang araw sa pagtuturo sa kanila sa ganitong paraan at sa pagpapagaling sa kanila, sila ay binautismuhan. At pagkatapos nito, silang lahat ay naupo nang magkakasama sa mga liwasan na nakasuot ng damit-sako at may abo, na nagdadalamhati dahil sa iba pa niyang kahanga-hangang mga gawa at nagsisisi sa dati nilang mga kasalanan. Nang mabalitaan ito ng mga taga-Sidon, gayon din ang ginawa nila, at nagpadala sila ng mga tao upang pakiusapan si Pedro, sapagkat hindi sila makapunta mismo dahil sa kanilang mga karamdaman. At hindi nagtagal si Pedro ng maraming araw sa Tiro; kundi matapos niyang maturuan ang lahat ng naninirahan doon, mapalaya sila mula sa lahat ng uri ng karamdaman, makapagtatag ng isang iglesya, at makapagtalaga bilang obispo ng isa sa mga matatandang kasama niya, umalis siya patungong Sidon. Ngunit nang mabalitaan ni Simon na dumarating si Pedro, agad siyang tumakas patungong Beirut kasama sina Appion at ang kanyang mga kaibigan.</p>
+<h3>Kabanata VI. Si Pedro sa Sidon</h3><p>At nang pumasok si Pedro sa Sidon, dinala nila ang maraming maysakit na nakahiga sa mga higaan at inilagay sila sa harap niya. At sinabi niya sa kanila: <q>Huwag ninyong isipin, nakikiusap ako sa inyo, na kaya kong gumawa ng anuman upang pagalingin kayo, sapagkat ako ay isang taong mortal at ako rin ay napapailalim sa maraming kasamaan. Ngunit hindi ko ipagkakait na ipakita sa inyo ang daan kung paano kayo dapat maligtas. Sapagkat natutuhan ko mula sa Propeta ng katotohanan ang mga kondisyong itinakda ng Diyos bago pa itatag ang sanlibutan; samakatuwid, ang masasamang gawa na, kung gagawin ng mga tao, ay itinakda Niyang magpapahintulot na sila ay pinsalain ng pinuno ng kasamaan, at gayundin ang mabubuting gawa na dahil dito ay itinakda Niyang ang mga nanampalataya sa Kanya bilang kanilang Manggagamot ay mapagagaling ang kanilang mga katawan at mailalagay sa kaligtasan ang kanilang mga kaluluwa.</q></p>
+<h3>Kabanata VII. Ang Dalawang Landas</h3><p><q>Ngayong nalalaman ko ang mabubuti at masasamang gawaing ito, inilalahad ko sa inyo na wari'y dalawang landas, at ipapakita ko kung alin ang dinaraanan ng mga napapahamak at alin ang dinaraanan ng mga naliligtas sa patnubay ng Diyos. Ang landas ng mga napapahamak ay maluwang at napakadulas—pinapahamak sila nito nang hindi sila pinahihirapan; ngunit ang landas ng mga naliligtas ay makitid at baku-bako, at sa wakas ay inililigtas nito, hindi nang walang malaking pagpapagal, ang mga naglakbay dito. At ang dalawang landas na ito ay pinangungunahan ng kawalan ng pananampalataya at ng pananampalataya. Ang mga naglalakbay sa landas ng kawalan ng pananampalataya ay yaong mga pinili ang kasiyahan at dahil dito ay kinalimutan ang araw ng paghuhukom, ginagawa ang hindi kalugod-lugod sa Diyos, walang malasakit na iligtas ang kanilang mga kaluluwa sa pamamagitan ng salita, at hindi taimtim na hinahanap ang sarili nilang ikabubuti. Tunay na hindi nila nalalaman na ang mga pasiya ng Diyos ay hindi tulad ng mga pasiya ng tao; sapagkat una sa lahat, alam Niya ang mga pag-iisip ng lahat ng tao, at kailangang magbigay-sulit ang lahat hindi lamang sa kanilang mga gawa kundi pati sa kanilang mga pag-iisip. At higit na magaan ang kasalanan ng mga nagsisikap umunawa ng mabuti ngunit nagkakamali kaysa sa mga hindi man lamang nagsisikap na hanapin ang mabubuting bagay. Sapagkat kinalugdan ng Diyos na ang nagkakamali sa kanyang pagkaunawa tungkol sa mabuti, ayon sa tinatawag ng mga tao na pagkakamali, ay maligtas matapos maparusahan nang bahagya. Ngunit ang mga hindi man lamang nagmalasakit na alamin ang mas mabuting daan, kahit nakagawa pa sila ng di-mabilang na ibang mabubuting gawa, kung hindi sila tumayo sa paglilingkod na Siya mismo ang nagtakda, ay mapararatangan ng kawalang-malasakit, parurusahan nang mabigat, at lubusang mapapahamak.</q></p>
+<h3>Kabanata VIII. Ang Paglilingkod na Itinakda ng Diyos</h3><p><q>At ito ang paglilingkod na Kanyang itinakda: sambahin Siya lamang at magtiwala lamang sa Propeta ng katotohanan; magpabautismo para sa kapatawaran ng mga kasalanan, at sa pamamagitan ng dalisay na bautismong ito ay maipanganak na muli sa Diyos sa pamamagitan ng tubig na nagliligtas; umiwas sa hapag ng mga demonyo, samakatuwid, sa pagkaing inihandog sa mga diyus-diyosan, sa mga patay na hayop, sa mga hayop na nasakal o nahuli ng mababangis na hayop, at sa dugo; huwag nang mamuhay sa karumihan; maghugas pagkatapos ng pakikipagtalik; at ang mga babae naman ay sumunod sa batas ng paglilinis; maging mahinahon ang lahat, masikap sa mabubuting gawa, umiiwas sa paggawa ng masama, umaasa sa buhay na walang hanggan mula sa makapangyarihan-sa-lahat na Diyos, at humihingi sa pamamagitan ng panalangin at patuloy na pagsusumamo upang makamtan nila ito.</q> Ganiyan din ang payo ni Pedro sa mga taga-Sidon. At sa loob ng ilang araw ay marami ang nagsisi at sumampalataya, at sila ay pinagaling. At matapos magtatag si Pedro ng isang iglesya at magtalaga bilang obispo ng isa sa mga matatandang kasama niya, nilisan niya ang Sidon.</p>
+<h3>Kabanata IX. Sinalakay ni Simon si Pedro</h3><p>Pagdating na pagdating niya sa Beirut ay nagkaroon ng lindol; at ang mga tao, na nagtakbuhan kay Pedro, ay nagsabi, <q>Tulungan mo kami, sapagkat natatakot kaming lahat ay lubusang mapahamak.</q> Pagkatapos ay nangahas si Simon, kasama sina Appion, Anubion, Athenodorus, at ang iba pa niyang mga kasama, na sumigaw sa mga tao laban kay Pedro sa harap ng lahat: <q>Tumakas kayo sa taong ito, mga kaibigan! Isa siyang salamangkero; maniwala kayo sa amin, siya ang dahilan ng lindol na ito. Siya rin ang nagpadala sa atin ng mga karamdamang ito upang takutin tayo, na para bang siya mismo ang Diyos.</q> At marami pang ganitong maling paratang ang ibinato ni Simon at ng kanyang mga kaibigan laban kay Pedro, na para bang kaya nitong gumawa ng mga bagay na higit sa kapangyarihan ng tao. Ngunit nang bigyan siya ng mga tao ng sandaling katahimikan, bahagyang tumawa si Pedro nang buong tapang at sinabi, <q>Mga kaibigan, inaamin kong kaya kong gawin, kung loloobin ng Diyos, ang sinasabi ng mga taong ito; at higit pa riyan, handa ako, kung hindi ninyo pinaniniwalaan ang aking sinasabi, na baligtarin ang inyong lungsod mula itaas hanggang ibaba.</q></p>
+<h3>Kabanata X. Pinalayas si Simon</h3><p>At natakot ang mga tao at nangakong gagawin ang anumang iuutos niya. <q>Kaya huwag ni isa sa inyo,</q> sabi ni Pedro, <q>ang makipag-usap sa mga mangkukulam na ito o magkaroon ng anumang pakikipag-ugnayan sa kanila.</q> At nang marinig ng mga tao ang maikli ngunit malinaw na utos na ito, kumuha sila ng mga pamalo at hinabol ang mga iyon hanggang sa lubusan nilang mapalayas sa bayan. At lumapit ang mga maysakit at mga inaalihan ng demonyo at nagpatirapa sa paanan ni Pedro. Nang makita niya ang lahat ng ito, at dahil nais niyang alisin ang kanilang takot, sinabi niya sa kanila:—</p>
+<h3>Kabanata XI. Ang Daan ng Kaligtasan</h3><p><q>Kung kaya kong magpasimula ng mga lindol at gawin ang lahat ng nais ko, tinitiyak ko sa inyo na hindi ko pupuksain si Simon at ang kanyang mga kaibigan—sapagkat hindi ako isinugo upang puksain ang mga tao—kundi gagawin ko siyang kaibigan ko upang hindi na niya, sa pamamagitan ng kanyang mga paninirang-puri laban sa aking pangangaral ng katotohanan, hadlangan ang kaligtasan ng marami. Ngunit kung paniniwalaan ninyo ako, siya mismo ay isang salamangkero; siya ay isang maninirang-puri; siya ay tagapaglingkod ng kasamaan sa mga hindi nakaaalam ng katotohanan. Kaya may kapangyarihan siyang magdala ng mga karamdaman sa mga makasalanan, sapagkat ang mga makasalanan mismo ang tumutulong sa kanyang kapangyarihan laban sa kanila. Ngunit ako ay lingkod ng Diyos na Maylikha ng lahat ng bagay at alagad ng Kanyang Propeta na nasa Kanyang kanang kamay. Kaya ako, bilang Kanyang apostol, ay nangangaral ng katotohanan: upang maglingkod sa Mabuti ay itinataboy ko ang mga karamdaman, sapagkat ako ang Kanyang ikalawang sugo, yamang nauuna ang karamdaman at pagkatapos ay dumarating ang kagalingan. Sa pamamagitan ng masamang salamangkero na iyon ay dinapuan kayo ng karamdaman dahil tumalikod kayo sa Diyos. Sa pamamagitan ko, kung mananampalataya kayo sa Kanya, kayo ay gagaling; at sa ganitong paraan, matapos ninyong maranasan na Siya ay makapangyarihan, maaari kayong bumaling sa mabubuting gawa at mailigtas ang inyong mga kaluluwa.</q></p>
+<h3>Kabanata XII. Pumunta si Pedro sa Byblus at Tripolis</h3><p>Habang sinasabi niya ang mga bagay na ito, silang lahat ay lumuhod sa paanan niya. At siya, na itinaas ang kanyang mga kamay sa langit, ay nanalangin sa Diyos at pinagaling silang lahat sa pamamagitan lamang ng kanyang payak na panalangin. At hindi siya nanatili nang maraming araw sa Beirut; ngunit matapos niyang sanayin ang marami sa paglilingkod sa iisang Diyos, bautismuhan sila, at magtalaga sa kanila ng isang obispo mula sa mga matatandang kasama niya, pumunta siya sa Byblus. At nang makarating siya roon at malaman niyang hindi naghintay si Simon kahit isang araw kundi agad na nagtungo sa Tripolis, nanatili lamang siya roon nang ilang araw; at matapos niyang pagalingin ang hindi kakaunti at sanayin sila sa mga Kasulatan, sinundan niya ang landas ni Simon patungong Tripolis, sapagkat mas pinili niyang habulin ito kaysa tumakas mula rito.</p>
 
+</section>
 
-              <hr>
-              <button class="richblue"><A Href="../index.html">BACK</A></button>                  
-    </div>
+  <hr>
+</div>
+
 <script src="../../../DocumentOutline.js"></script>
+
 <script>
-  let outline = new DocumentOutline();
-</script>
-<script>
-try {
-  fetch(new Request("../../../pagead2.googlesyndication.com/pagead/js/f.txt", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-    return true;
-  }).catch(function(e) {
-    var carbonScript = document.createElement("script");
-    carbonScript.src = "../../../cdn.carbonads.com/carbon544e.js?serve=CE7DC2JW&amp;placement=wwwcssscriptcom";
-    carbonScript.id = "_carbonads_js";
-    document.getElementById("carbon-block").appendChild(carbonScript);
+(function () {
+  'use strict';
+
+  const englishHeader = document.getElementById('englishHeader');
+  const tagalogHeader = document.getElementById('tagalogHeader');
+  const englishContent = document.getElementById('englishContent');
+  const tagalogContent = document.getElementById('tagalogContent');
+  const languageToggle = document.getElementById('languageToggle');
+
+  let currentLanguage = 'en';
+
+  function renderLanguage() {
+    const isTagalog = currentLanguage === 'tl';
+
+    englishHeader.hidden = isTagalog;
+    englishContent.hidden = isTagalog;
+
+    tagalogHeader.hidden = !isTagalog;
+    tagalogContent.hidden = !isTagalog;
+
+    languageToggle.textContent = isTagalog
+      ? 'English Version'
+      : 'Tagalog Version';
+
+    document.documentElement.lang = isTagalog ? 'tl' : 'en';
+    languageToggle.setAttribute(
+      'aria-label',
+      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
+    );
+  }
+
+  languageToggle.addEventListener('click', function () {
+    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    renderLanguage();
   });
-} catch (error) {
-  console.log(error);
-}
+
+  // Initial state only.
+  renderLanguage();
+
+  // IMPORTANT: initialize the old site's outline script only once.
+  // Recreating DocumentOutline during every language switch can repeatedly
+  // modify the DOM and eventually cause content to disappear.
+  if (typeof DocumentOutline !== 'undefined') {
+    try {
+      window.sacredWritingsOutline = new DocumentOutline();
+    } catch (error) {
+      console.warn('Document outline initialization skipped:', error);
+    }
+  }
+})();
 </script>
+
+
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+(function () {
+  const root = document.documentElement;
+  const zoomIn = document.getElementById('textZoomIn');
+  const zoomOut = document.getElementById('textZoomOut');
+  const zoomReset = document.getElementById('textZoomReset');
+  const zoomLabel = document.getElementById('textZoomLabel');
 
-  ga('create', 'UA-46156385-1', 'cssscript.com');
-  ga('send', 'pageview');
+  let scale = 1;
+  const minScale = 0.85;
+  const maxScale = 2.00;
+  const step = 0.15;
 
+  function applyTextScale() {
+    scale = Math.max(minScale, Math.min(maxScale, scale));
+    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
+    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  }
+
+  zoomIn.addEventListener('click', function () {
+    scale += step;
+    applyTextScale();
+  });
+
+  zoomOut.addEventListener('click', function () {
+    scale -= step;
+    applyTextScale();
+  });
+
+  zoomReset.addEventListener('click', function () {
+    scale = 1;
+    applyTextScale();
+  });
+
+  applyTextScale();
+})();
 </script>
-</body>
 
+</body>
 </html>

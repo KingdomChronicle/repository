@@ -1,96 +1,306 @@
 <!doctype html>
-<html>
-
-<!-- Mirrored from www.cssscript.com/demo/collapsible-side-table-of-contents/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Mar 2024 08:54:17 GMT -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Introductory Epistles Part 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<title>Sacred Writings</title>
+
 <link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../../../outline.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
- <style>
+<link rel="stylesheet" href="../../../outline.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<style>
   body { background-color: #fafafa; line-height: 1.6; }
-  html,* { font-family: 'Inter'; }
+  html, * { font-family: 'Inter'; }
   p { font-size: 1.25rem; }
+
+  .language-only[hidden] {
+    display: none !important;
+  }
+  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
+  :root {
+    --reader-font-scale: 1;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  body > div,
+  .language-only,
+  #englishContent,
+  #tagalogContent {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #englishContent p,
+  #tagalogContent p {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: calc(1.25rem * var(--reader-font-scale));
+    line-height: 1.65;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #englishContent h2, #tagalogContent h2,
+  #englishContent h3, #tagalogContent h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, table, pre {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  .reader-zoom-controls {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem 0;
+    background: #fafafa;
+  }
+
+  .reader-zoom-controls button {
+    min-width: 3.2rem;
+    min-height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .reader-zoom-label {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 .75rem;
+    }
+  }
+
 </style>
 </head>
 
 <body>
-  <div>
-        
+<div>
 
-        <center>
-          <h1>Sacred Writing</h1>
-          <p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p>
-        </center>
-        <center>
-          <a href="../Filipino/17. SacredWriting - Introductory Epistles Part 2 (Fil).html"><button type="button" class="btn btn-secondary w-100">Tagalog Version</button></a>
-        </center>
-        
+  <!-- =========================================================
+       SINGLE-FILE ENGLISH / TAGALOG PAGE
+       IMPORTANT:
+       DocumentOutline is initialized only once.
+       Language switching only toggles the hidden attribute.
+       ========================================================= -->
 
-                    
-        <h2>Epistle of Peter to James</h2><p>Clement to James, the lord, and the bishop of bishops, who rules Jerusalem, the holy church of the Hebrews, and the churches everywhere excellently founded by the providence of God, with the elders and deacons, and the rest of the brethren, peace be always.</p><h3>Chapter I. Peter's Martyrdom</h3><p>Be it known to you, my lord, that Simon, who, for the sake of the true faith, and the most sure foundation of his doctrine, was set apart to be the foundation of the Church, and for this end was by Jesus Himself, with His truthful mouth, named Peter, the first-fruits of our Lord, the first of the apostles; to whom first the Father revealed the Son; whom the Christ, with good reason, blessed; the called, and elect, and associate at table and in the journeyings <em>of Christ;</em> the excellent and approved disciple, who, as being fittest of all, was commanded to enlighten the darker part of the world, namely the West, and was enabled to accomplish it,—and to what extent do I lengthen my discourse, not wishing to indicate what is sad, which yet of necessity, though reluctantly, I must tell you,—he himself, by reason of his immense love towards men, having come as far as Rome, clearly and publicly testifying, in opposition to the wicked one who withstood him, that there is to be a good King over all the world, while saving men by his God-inspired doctrine, himself, by violence, exchanged this present existence for life.</p><h3>Chapter II. Ordination of Clement</h3><p>But about that time, when he was about to die, the brethren being assembled together, he suddenly seized my hand, and rose up, and said in presence of the church: <q>Hear me, brethren and fellow-servants. Since, as I have been taught by the Lord and Teacher Jesus Christ, whose apostle I am, the day of my death is approaching, I lay hands upon this Clement as your bishop; and to him I entrust my chair of discourse, even to him who has journeyed with me from the beginning to the end, and thus has heard all my homilies—who, in a word, having had a share in all my trials, has been found stedfast in the faith; whom I have found, above all others, pious, philanthropic, pure, learned, chaste, good, upright, large-hearted, and striving generously to bear the ingratitude of some of the catechumens. Wherefore I communicate to him the power of binding and loosing, so that with respect to everything which he shall ordain in the earth, it shall be decreed in the heavens. For he shall bind what ought to be bound, and loose what ought to be loosed, as knowing the role of the Church. Therefore hear him, as knowing that he who grieves the president of the truth, sins against Christ, and offends the Father of all. Wherefore he shall not live; and therefore it becomes him who presides to hold the place of a physician, and not to cherish the rage of an irrational beast.</q></p><h3>Chapter III. Nolo Episcopari</h3><p>While he thus spoke, I knelt to him, and entreated him, declining the honour and the authority of the chair. But he answered: <q>Concerning this matter do not ask me; for it has seemed to me to be good that thus it be, and all the more if you decline it. For this chair has not need of a presumptuous man, ambitious of occupying it, but of one pious in conduct and deeply skilled in the word <em>of God.</em> But show me a better <em>than yourself,</em> who has travelled more with me, and has heard more of my discourses, and has learned better the regulations of the Church, and I shall not force you to do well against your will. But it will not be in your power to show me your superior; for you are the choice first-fruits of the multitudes saved through me. However, consider this further, that if you do not undertake the administration of the Church, through fear of the danger of sin, you may be sure that you sin more, when you have it in your power to help the godly, who are, as it were, at sea and in danger, and will not do so, providing only for your own interest, and not for the common advantage of all. But that it behooves you altogether to undertake the danger, while I do not cease to ask it of you for the help of all, you well understand. The sooner, therefore, you consent, so much the sooner will you relieve me from anxiety.</q></p><h3>Chapter IV. The Recompense of the Reward</h3><p><q>But I myself also, O Clement, know the griefs and anxieties, and dangers and reproaches, that are appointed you from the uninstructed multitudes; and these you will be able to bear nobly, looking to the great reward of patience bestowed on you by God. But also consider this fairly with me: When has Christ need of your aid? Now, when the wicked one has sworn war against His bride; or in the time to come, when He shall reign victorious, having no need of further help? Is it not evident to any one who has even the least understanding, that it is now? Therefore with all good-will hasten in the time of the present necessity to do battle on the side of this good King, whose character it is to give great rewards after victory. Therefore take the oversight gladly; and all the more in good time, because you have learned from me the administration of the Church, for the safety of the brethren who have taken refuge with us.</q></p><h3>Chapter V. A Charge</h3><p><q>However, I wish, in the presence of all, to remind you, for the sake of all, of the things belonging to the administration. It becomes you, living without reproach, with the greatest earnestness to shake off all the cares of life, being neither a surety, nor an advocate, nor involved in any other secular business. For Christ does not wish to appoint you either a judge or an arbitrator in business, or negotiator of the secular affairs of the present life, lest, being confined to the present cares of men, you should not have leisure by the word of truth to separate the good among men from the bad. But let the disciples perform these offices to one another, and not withdraw <em>you</em> from the discourses which are able to save. For as it is wicked for you to undertake secular cares, and to omit the doing of what you have been commanded to do, so it is sin for every layman, if they do not stand by one another even in secular necessities. And if all do not understand to take order that you be without care in respect of the things in which you ought to be, let them learn it from the deacons; that you may have the care of the Church always, in order both to your administering it well, and to your holding forth the words of truth.</q></p><h3>Chapter VI. The Duty of a Bishop</h3><p><q>Now, if you were occupied with secular cares, you should deceive both yourself and your hearers. For not being able, on account of occupation, to point out the things that are advantageous, both you should be punished, as not having taught what was profitable, and they, not having learned, should perish by reason of ignorance. Wherefore do you indeed preside over them without occupation, so as to send forth seasonably the words that are able to save them; and so let them listen to you, knowing that whatever the ambassador of the truth shall bind upon earth is bound also in heaven, and what he shall loose is loosed. But you shall bind what ought to be bound, and loose what ought to be loosed. And these, and such like, are the things that relate to you as president.</q></p><h3>Chapter VII. Duties of Presbyters</h3><p><q>And with respect to the presbyters, take these <em>instructions</em>. Above all things, let them join the young betimes in marriage, anticipating the entanglements of youthful lusts. But neither let them neglect the marriage of those who are already old; for lust is vigorous even in some old men. Lest, therefore, fornication find a place among you, and bring upon you a very pestilence, take precaution, and search, lest at any time the fire of adultery be secretly kindled among you. For adultery is a very terrible thing, even such that it holds the second place in respect of punishment, the first being assigned to those who are in error, even although they be chaste. Wherefore do you, as elders of the Church, exercise the spouse of Christ to chastity (by the spouse I mean the body of the Church); for if she be apprehended to be chaste by her royal Bridegroom, she shall obtain the greatest honour; and you, as wedding guests, shall receive great commendation. But if she be caught having sinned, she herself indeed shall be cast out; and you shall suffer punishment, if at any time her sin has been through your negligence.</q></p><h3>Chapter VIII. <q>Do Good Unto All?</q></h3><p><q>Wherefore above all things be careful about chastity; for fornication has been marked out as a bitter thing in the estimation of God. But there are many forms of fornication, as also Clement himself will explain to you. The first is adultery, that a man should not enjoy his own wife alone, or a woman not enjoy her own husband alone. If any one be chaste, he is able also to be philanthropic, on account of which he shall obtain eternal mercy. For as adultery is a great evil, so philanthropy is the greatest good. Wherefore love all your brethren with grave and compassionate eyes, performing to orphans the part of parents, to widows that of husbands, affording them sustenance with all kindliness, arranging marriages for those who are in their prime, and for those who are without a profession, the means of necessary support through employment; giving work to the artificer, and alms to the incapable.</q></p><h3>Chapter IX. <q>Let Brotherly Love Continue.</q></h3><p><q>But I know that ye will do these things if you fix love into your minds; and for its entrance there is one only fit means, viz., the common partaking of food. Wherefore see to it that ye be frequently one another's guests, as you are able, that you may not fail of it. For it is the cause of well-doing, and well-doing of salvation. Therefore all of you present your provisions in common to all your brethren in God, knowing that, giving temporal things, you shall receive eternal things. Much more feed the hungry, and give drink to the thirsty, and clothing to the naked; visit the sick; showing yourselves to those who are in prison, help them as you are able, and receive strangers into your houses with all alacrity. However, not to speak in detail, philanthropy will teach you to do everything that is good, as misanthropy suggests ill-doing to those who will not be saved.</q></p><h3>Chapter X. <q>Whatsoever Things are Honest.</q></h3><p><q>Let the brethren who have causes to be settled not be judged by the secular authorities; but let them by all means be reconciled by the elders of the church, yielding ready obedience to them. Moreover, also, flee avarice, inasmuch as it is able, under pretext of temporal gain, to deprive you of eternal blessings. Carefully keep your balances, your measures, your weights, and the things belonging to your traffic, just. Be faithful with respect to your trusts. Moreover, you will persevere in doing these things, and things similar to these, until the end, if you have in your hearts an ineradicable remembrance of the judgment that is from God. For who would sin, being persuaded that at the end of life there is a judgment appointed of the righteous God, who only now is long-suffering and good, that the good may in future enjoy for ever unspeakable blessings; but the sinners being found as evil, shall obtain an eternity of unspeakable punishment. And, indeed, that these things are so, it would be reasonable to doubt, were it not that the Prophet of the truth has said and sworn that it shall be.</q></p><h3>Chapter XI. Doubts to Be Satisfied</h3><p><q>Wherefore, being disciples of the true Prophet, laying aside double-mindedness, from which comes ill-doing, eagerly undertake well-doing. But if any of you doubt concerning the things which I have said are to be, let him confess it without shame, if he cares for his own soul, and he shall be satisfied by the president. But if he has believed rightly, let his conversation be with confidence, as fleeing from the great fire of condemnation, and entering into the eternal good kingdom of God.</q></p><h3>Chapter XII. Duties of Deacons</h3><p><q>Moreover let the deacons of the church, going about with intelligence, be as eyes to the bishop, carefully inquiring into the doings of each member of the church, <em>ascertaining</em> who is about to sin, in order that, being arrested with admonition by the president, he may haply not accomplish the sin. Let them check the disorderly, that they may not desist from assembling to hear the discourses, so that they may be able to counteract by the word of truth those anxieties that fall upon the heart from every side, by means of worldly casualties and evil communications; for if they long remain fallow, they become fuel for the fire. And let them learn who are suffering under bodily disease, and let them bring them to the notice of the multitude who do not know of them, that they may visit them, and supply their wants according to the judgment of the president. Yea, though they do this without his knowledge, they do nothing amiss. These things, then, and things like to these, let the deacons attend to.</q></p><h3>Chapter XIII. Duties of Catechists</h3><p><q>Let the catechists instruct, being first instructed; for it is a work relating to the souls of men. For the teacher of the word must accommodate himself to the various judgments of the learners. The catechists must therefore be learned, and unblameable, of much experience, and approved, as you will know that Clement is, who is to be your instructor after me. For it were too much for me now to go into details. However, if ye be of one mind, you shall be able to reach the haven of rest, where is the peaceful city of the great King.</q></p><h3>Chapter XIV. The Vessel of the Church</h3><p><q>For the whole business of the Church is like unto a great ship, bearing through a violent storm men who are of many places, and who desire to inhabit the city of the good kingdom. Let, therefore, God be your shipmaster; and let the pilot be likened to Christ, the mate to the bishop, and the sailors to the deacons, the midshipmen to the catechists, the multitude of the brethren to the passengers, the world to the sea; the foul winds to temptations, persecutions, and dangers; and all manner of afflictions to the waves; the land winds and their squalls to the discourses of deceivers and false prophets; the promontories and rugged rocks to the judges in high places threatening terrible things; the meetings of two seas, and the wild places, to unreasonable men and those who doubt of the promises of truth. Let hypocrites be regarded as like to pirates. Moreover, account the strong whirlpool, and the Tartarean Charybdis, and murderous wrecks, and deadly founderings, to be nought but sins. In order, therefore, that, sailing with a fair wind, you may safely reach the haven of the hoped-for city, pray so as to be heard. But prayers become audible by good deeds.</q></p><h3>Chapter XV. Incidents of the Voyage</h3><p><q>Let therefore the passengers remain quiet, sitting in their own places, lest by disorder they occasion rolling or careening. Let the midshipmen give heed to the fare. Let the deacons neglect nothing with which they are entrusted; let the presbyters, like sailors, studiously arrange what is needful for each one. Let the bishop, as the mate, wakefully ponder the words of the pilot alone. Let Christ, even the Saviour, be loved as the pilot, and alone believed in the matters of which He speaks; and let all pray to God for a prosperous voyage. Let those sailing expect every tribulation, as travelling over a great and troubled sea, the world: sometimes, indeed, disheartened, persecuted, dispersed, hungry, thirsty, naked, hemmed in; and, again, sometimes united, congregated, at rest; but also sea-sick, giddy, vomiting, that is, confessing sins, like disease-producing bile,—I mean the sins proceeding from bitterness, and the evils accumulated from disorderly lusts, by the confession of which, as by vomiting, you are relieved of your disease, attaining healthful safety by means of carefulness.</q></p><h3>Chapter XVI. The Bishop's Labours and Reward</h3><p><q>But know all of you that the bishop labours more than you all; because each of you suffers his own affliction, but he his own and that of every one. Wherefore, O Clement, preside as a helper to every one according to your ability, being careful of the cares of all. Whence I know that in your undertaking the administration, I do not confer, but receive, a favour. But take courage and bear it generously, as knowing that God will recompense you when you enter the haven of rest, the greatest of blessings, a reward that cannot be taken from you, in proportion as you have undertaken more labour for the safety of all. So that, if many of the brethren should hate you on account of your lofty righteousness, their hatred shall nothing hurt you, but the love of the righteous God shall greatly benefit you. Therefore endeavour to shake off the praise that arises from injustice, and to attain the profitable praise that is from Christ on account of righteous administration.</q></p><div><div></div></div><br>
+  <!-- ENGLISH SITE HEADER -->
+  <div id="englishHeader" class="language-only">
+    <center>
+      <h1>Sacred Writing</h1>
+      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+    </center>
+  </div>
+
+  <!-- TAGALOG SITE HEADER -->
+  <div id="tagalogHeader" class="language-only" hidden>
+    <center>
+      <h1>Mga Sagradong Sulatin</h1>
+      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
+    </center>
+  </div>
+
+  <!-- ONE SHARED TRANSLATION BUTTON -->
+
+  <center class="reader-zoom-controls" aria-label="Text size controls">
+  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
+  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
+  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
+  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
+</center>
+  <center>
+    <button id="languageToggle"
+            type="button"
+            class="btn btn-secondary w-100"
+            aria-live="polite">
+      Tagalog Version
+    </button>
+  </center>
 
 
-<!-------------------------------NOTES ABOUT THE BOOK ------------------------------->
-
- <!------
-
------>
 
 
-<!-- Goodgle ads script -->
-                <div class="css-script-ads" style="margin:30px auto"><div id="carbon-block"></div>
-                      <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-                  <!-- CSSScript Demo Page -->
-                      <ins class="adsbygoogle"
-                          style="display:inline-block;width:728px;height:90px"
-                          data-ad-client="ca-pub-2783044520727903"
-                          data-ad-slot="3025259193"></ins>
-                      <script>
-                      (adsbygoogle = window.adsbygoogle || []).push({});
-                      </script>
-                </div>
+  <!-- ENGLISH CONTENT -->
+  <section id="englishContent" class="language-only" data-language="en">
+<h2>Epistle of Peter to James</h2><p>Clement to James, the lord, and the bishop of bishops, who rules Jerusalem, the holy church of the Hebrews, and the churches everywhere excellently founded by the providence of God, with the elders and deacons, and the rest of the brethren, peace be always.</p><h3>Chapter I. Peter's Martyrdom</h3><p>Be it known to you, my lord, that Simon, who, for the sake of the true faith, and the most sure foundation of his doctrine, was set apart to be the foundation of the Church, and for this end was by Jesus Himself, with His truthful mouth, named Peter, the first-fruits of our Lord, the first of the apostles; to whom first the Father revealed the Son; whom the Christ, with good reason, blessed; the called, and elect, and associate at table and in the journeyings <em>of Christ;</em> the excellent and approved disciple, who, as being fittest of all, was commanded to enlighten the darker part of the world, namely the West, and was enabled to accomplish it,—and to what extent do I lengthen my discourse, not wishing to indicate what is sad, which yet of necessity, though reluctantly, I must tell you,—he himself, by reason of his immense love towards men, having come as far as Rome, clearly and publicly testifying, in opposition to the wicked one who withstood him, that there is to be a good King over all the world, while saving men by his God-inspired doctrine, himself, by violence, exchanged this present existence for life.</p><h3>Chapter II. Ordination of Clement</h3><p>But about that time, when he was about to die, the brethren being assembled together, he suddenly seized my hand, and rose up, and said in presence of the church: <q>Hear me, brethren and fellow-servants. Since, as I have been taught by the Lord and Teacher Jesus Christ, whose apostle I am, the day of my death is approaching, I lay hands upon this Clement as your bishop; and to him I entrust my chair of discourse, even to him who has journeyed with me from the beginning to the end, and thus has heard all my homilies—who, in a word, having had a share in all my trials, has been found stedfast in the faith; whom I have found, above all others, pious, philanthropic, pure, learned, chaste, good, upright, large-hearted, and striving generously to bear the ingratitude of some of the catechumens. Wherefore I communicate to him the power of binding and loosing, so that with respect to everything which he shall ordain in the earth, it shall be decreed in the heavens. For he shall bind what ought to be bound, and loose what ought to be loosed, as knowing the role of the Church. Therefore hear him, as knowing that he who grieves the president of the truth, sins against Christ, and offends the Father of all. Wherefore he shall not live; and therefore it becomes him who presides to hold the place of a physician, and not to cherish the rage of an irrational beast.</q></p><h3>Chapter III. Nolo Episcopari</h3><p>While he thus spoke, I knelt to him, and entreated him, declining the honour and the authority of the chair. But he answered: <q>Concerning this matter do not ask me; for it has seemed to me to be good that thus it be, and all the more if you decline it. For this chair has not need of a presumptuous man, ambitious of occupying it, but of one pious in conduct and deeply skilled in the word <em>of God.</em> But show me a better <em>than yourself,</em> who has travelled more with me, and has heard more of my discourses, and has learned better the regulations of the Church, and I shall not force you to do well against your will. But it will not be in your power to show me your superior; for you are the choice first-fruits of the multitudes saved through me. However, consider this further, that if you do not undertake the administration of the Church, through fear of the danger of sin, you may be sure that you sin more, when you have it in your power to help the godly, who are, as it were, at sea and in danger, and will not do so, providing only for your own interest, and not for the common advantage of all. But that it behooves you altogether to undertake the danger, while I do not cease to ask it of you for the help of all, you well understand. The sooner, therefore, you consent, so much the sooner will you relieve me from anxiety.</q></p><h3>Chapter IV. The Recompense of the Reward</h3><p><q>But I myself also, O Clement, know the griefs and anxieties, and dangers and reproaches, that are appointed you from the uninstructed multitudes; and these you will be able to bear nobly, looking to the great reward of patience bestowed on you by God. But also consider this fairly with me: When has Christ need of your aid? Now, when the wicked one has sworn war against His bride; or in the time to come, when He shall reign victorious, having no need of further help? Is it not evident to any one who has even the least understanding, that it is now? Therefore with all good-will hasten in the time of the present necessity to do battle on the side of this good King, whose character it is to give great rewards after victory. Therefore take the oversight gladly; and all the more in good time, because you have learned from me the administration of the Church, for the safety of the brethren who have taken refuge with us.</q></p><h3>Chapter V. A Charge</h3><p><q>However, I wish, in the presence of all, to remind you, for the sake of all, of the things belonging to the administration. It becomes you, living without reproach, with the greatest earnestness to shake off all the cares of life, being neither a surety, nor an advocate, nor involved in any other secular business. For Christ does not wish to appoint you either a judge or an arbitrator in business, or negotiator of the secular affairs of the present life, lest, being confined to the present cares of men, you should not have leisure by the word of truth to separate the good among men from the bad. But let the disciples perform these offices to one another, and not withdraw <em>you</em> from the discourses which are able to save. For as it is wicked for you to undertake secular cares, and to omit the doing of what you have been commanded to do, so it is sin for every layman, if they do not stand by one another even in secular necessities. And if all do not understand to take order that you be without care in respect of the things in which you ought to be, let them learn it from the deacons; that you may have the care of the Church always, in order both to your administering it well, and to your holding forth the words of truth.</q></p><h3>Chapter VI. The Duty of a Bishop</h3><p><q>Now, if you were occupied with secular cares, you should deceive both yourself and your hearers. For not being able, on account of occupation, to point out the things that are advantageous, both you should be punished, as not having taught what was profitable, and they, not having learned, should perish by reason of ignorance. Wherefore do you indeed preside over them without occupation, so as to send forth seasonably the words that are able to save them; and so let them listen to you, knowing that whatever the ambassador of the truth shall bind upon earth is bound also in heaven, and what he shall loose is loosed. But you shall bind what ought to be bound, and loose what ought to be loosed. And these, and such like, are the things that relate to you as president.</q></p><h3>Chapter VII. Duties of Presbyters</h3><p><q>And with respect to the presbyters, take these <em>instructions</em>. Above all things, let them join the young betimes in marriage, anticipating the entanglements of youthful lusts. But neither let them neglect the marriage of those who are already old; for lust is vigorous even in some old men. Lest, therefore, fornication find a place among you, and bring upon you a very pestilence, take precaution, and search, lest at any time the fire of adultery be secretly kindled among you. For adultery is a very terrible thing, even such that it holds the second place in respect of punishment, the first being assigned to those who are in error, even although they be chaste. Wherefore do you, as elders of the Church, exercise the spouse of Christ to chastity (by the spouse I mean the body of the Church); for if she be apprehended to be chaste by her royal Bridegroom, she shall obtain the greatest honour; and you, as wedding guests, shall receive great commendation. But if she be caught having sinned, she herself indeed shall be cast out; and you shall suffer punishment, if at any time her sin has been through your negligence.</q></p><h3>Chapter VIII. <q>Do Good Unto All?</q></h3><p><q>Wherefore above all things be careful about chastity; for fornication has been marked out as a bitter thing in the estimation of God. But there are many forms of fornication, as also Clement himself will explain to you. The first is adultery, that a man should not enjoy his own wife alone, or a woman not enjoy her own husband alone. If any one be chaste, he is able also to be philanthropic, on account of which he shall obtain eternal mercy. For as adultery is a great evil, so philanthropy is the greatest good. Wherefore love all your brethren with grave and compassionate eyes, performing to orphans the part of parents, to widows that of husbands, affording them sustenance with all kindliness, arranging marriages for those who are in their prime, and for those who are without a profession, the means of necessary support through employment; giving work to the artificer, and alms to the incapable.</q></p><h3>Chapter IX. <q>Let Brotherly Love Continue.</q></h3><p><q>But I know that ye will do these things if you fix love into your minds; and for its entrance there is one only fit means, viz., the common partaking of food. Wherefore see to it that ye be frequently one another's guests, as you are able, that you may not fail of it. For it is the cause of well-doing, and well-doing of salvation. Therefore all of you present your provisions in common to all your brethren in God, knowing that, giving temporal things, you shall receive eternal things. Much more feed the hungry, and give drink to the thirsty, and clothing to the naked; visit the sick; showing yourselves to those who are in prison, help them as you are able, and receive strangers into your houses with all alacrity. However, not to speak in detail, philanthropy will teach you to do everything that is good, as misanthropy suggests ill-doing to those who will not be saved.</q></p><h3>Chapter X. <q>Whatsoever Things are Honest.</q></h3><p><q>Let the brethren who have causes to be settled not be judged by the secular authorities; but let them by all means be reconciled by the elders of the church, yielding ready obedience to them. Moreover, also, flee avarice, inasmuch as it is able, under pretext of temporal gain, to deprive you of eternal blessings. Carefully keep your balances, your measures, your weights, and the things belonging to your traffic, just. Be faithful with respect to your trusts. Moreover, you will persevere in doing these things, and things similar to these, until the end, if you have in your hearts an ineradicable remembrance of the judgment that is from God. For who would sin, being persuaded that at the end of life there is a judgment appointed of the righteous God, who only now is long-suffering and good, that the good may in future enjoy for ever unspeakable blessings; but the sinners being found as evil, shall obtain an eternity of unspeakable punishment. And, indeed, that these things are so, it would be reasonable to doubt, were it not that the Prophet of the truth has said and sworn that it shall be.</q></p><h3>Chapter XI. Doubts to Be Satisfied</h3><p><q>Wherefore, being disciples of the true Prophet, laying aside double-mindedness, from which comes ill-doing, eagerly undertake well-doing. But if any of you doubt concerning the things which I have said are to be, let him confess it without shame, if he cares for his own soul, and he shall be satisfied by the president. But if he has believed rightly, let his conversation be with confidence, as fleeing from the great fire of condemnation, and entering into the eternal good kingdom of God.</q></p><h3>Chapter XII. Duties of Deacons</h3><p><q>Moreover let the deacons of the church, going about with intelligence, be as eyes to the bishop, carefully inquiring into the doings of each member of the church, <em>ascertaining</em> who is about to sin, in order that, being arrested with admonition by the president, he may haply not accomplish the sin. Let them check the disorderly, that they may not desist from assembling to hear the discourses, so that they may be able to counteract by the word of truth those anxieties that fall upon the heart from every side, by means of worldly casualties and evil communications; for if they long remain fallow, they become fuel for the fire. And let them learn who are suffering under bodily disease, and let them bring them to the notice of the multitude who do not know of them, that they may visit them, and supply their wants according to the judgment of the president. Yea, though they do this without his knowledge, they do nothing amiss. These things, then, and things like to these, let the deacons attend to.</q></p><h3>Chapter XIII. Duties of Catechists</h3><p><q>Let the catechists instruct, being first instructed; for it is a work relating to the souls of men. For the teacher of the word must accommodate himself to the various judgments of the learners. The catechists must therefore be learned, and unblameable, of much experience, and approved, as you will know that Clement is, who is to be your instructor after me. For it were too much for me now to go into details. However, if ye be of one mind, you shall be able to reach the haven of rest, where is the peaceful city of the great King.</q></p><h3>Chapter XIV. The Vessel of the Church</h3><p><q>For the whole business of the Church is like unto a great ship, bearing through a violent storm men who are of many places, and who desire to inhabit the city of the good kingdom. Let, therefore, God be your shipmaster; and let the pilot be likened to Christ, the mate to the bishop, and the sailors to the deacons, the midshipmen to the catechists, the multitude of the brethren to the passengers, the world to the sea; the foul winds to temptations, persecutions, and dangers; and all manner of afflictions to the waves; the land winds and their squalls to the discourses of deceivers and false prophets; the promontories and rugged rocks to the judges in high places threatening terrible things; the meetings of two seas, and the wild places, to unreasonable men and those who doubt of the promises of truth. Let hypocrites be regarded as like to pirates. Moreover, account the strong whirlpool, and the Tartarean Charybdis, and murderous wrecks, and deadly founderings, to be nought but sins. In order, therefore, that, sailing with a fair wind, you may safely reach the haven of the hoped-for city, pray so as to be heard. But prayers become audible by good deeds.</q></p><h3>Chapter XV. Incidents of the Voyage</h3><p><q>Let therefore the passengers remain quiet, sitting in their own places, lest by disorder they occasion rolling or careening. Let the midshipmen give heed to the fare. Let the deacons neglect nothing with which they are entrusted; let the presbyters, like sailors, studiously arrange what is needful for each one. Let the bishop, as the mate, wakefully ponder the words of the pilot alone. Let Christ, even the Saviour, be loved as the pilot, and alone believed in the matters of which He speaks; and let all pray to God for a prosperous voyage. Let those sailing expect every tribulation, as travelling over a great and troubled sea, the world: sometimes, indeed, disheartened, persecuted, dispersed, hungry, thirsty, naked, hemmed in; and, again, sometimes united, congregated, at rest; but also sea-sick, giddy, vomiting, that is, confessing sins, like disease-producing bile,—I mean the sins proceeding from bitterness, and the evils accumulated from disorderly lusts, by the confession of which, as by vomiting, you are relieved of your disease, attaining healthful safety by means of carefulness.</q></p><h3>Chapter XVI. The Bishop's Labours and Reward</h3><p><q>But know all of you that the bishop labours more than you all; because each of you suffers his own affliction, but he his own and that of every one. Wherefore, O Clement, preside as a helper to every one according to your ability, being careful of the cares of all. Whence I know that in your undertaking the administration, I do not confer, but receive, a favour. But take courage and bear it generously, as knowing that God will recompense you when you enter the haven of rest, the greatest of blessings, a reward that cannot be taken from you, in proportion as you have undertaken more labour for the safety of all. So that, if many of the brethren should hate you on account of your lofty righteousness, their hatred shall nothing hurt you, but the love of the righteous God shall greatly benefit you. Therefore endeavour to shake off the praise that arises from injustice, and to attain the profitable praise that is from Christ on account of righteous administration.</q></p>
+  </section>
 
+  <!-- TAGALOG CONTENT -->
+  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
+<h2>Sulat ni Pedro kay Santiago</h2>
+<p>Si Clemente kay Santiago, ang panginoon at obispo ng mga obispo, na namamahala sa Jerusalem, sa banal na iglesya ng mga Hebreo, at sa mga iglesyang saanman ay mahusay na naitatag sa pamamagitan ng kalooban ng Diyos, kasama ang mga matatanda at mga diyakono, at ang iba pang mga kapatid: sumainyo nawa palagi ang kapayapaan.</p>
+<h3>Kabanata I. Ang Pagkamartir ni Pedro</h3>
+<p>Ipinababatid ko sa iyo, aking panginoon, na si Simon, na alang-alang sa tunay na pananampalataya at sa lubos na matibay na saligan ng kanyang aral ay itinalaga upang maging saligan ng Iglesya, at dahil dito ay mismong pinangalanang Pedro ni Jesus sa Kanyang tapat na bibig—ang unang bunga ng ating Panginoon, ang una sa mga apostol; ang unang pinahayagan ng Ama tungkol sa Anak; ang pinagpala ni Cristo nang may mabuting dahilan; ang tinawag, hinirang, at naging kasama sa hapag at sa mga paglalakbay <em>ni Cristo;</em> ang dakila at subok na alagad, na, sapagkat siya ang pinakaangkop sa lahat, ay inutusang magbigay-liwanag sa mas madilim na bahagi ng daigdig, samakatuwid ay sa Kanluran, at binigyan ng kakayahang magawa iyon—at bakit ko pa pahahabain ang aking pananalita, gayong ayaw kong banggitin ang malungkot na bagay na kailangan ko pa ring sabihin sa iyo, kahit labag sa aking kalooban?—siya mismo, dahil sa kanyang napakalaking pag-ibig sa mga tao, nang makarating hanggang Roma, ay malinaw at hayagang nagpatotoo, laban sa masamang kumakalaban sa kanya, na magkakaroon ng isang mabuting Hari sa buong daigdig; at habang inililigtas niya ang mga tao sa pamamagitan ng kanyang aral na kinasihan ng Diyos, siya mismo, sa pamamagitan ng karahasan, ay ipinagpalit ang kasalukuyang pag-iral na ito sa buhay.</p>
+<h3>Kabanata II. Ang Pag-orden kay Clemente</h3>
+<p>Ngunit nang panahong iyon, nang malapit na siyang mamatay at nagkakatipon ang mga kapatid, bigla niyang hinawakan ang aking kamay, tumayo, at sinabi sa harap ng iglesya: <q>Pakinggan ninyo ako, mga kapatid at kapwa-lingkod. Yamang, ayon sa itinuro sa akin ng Panginoon at Guro na si Jesu-Cristo, na ang apostol ay ako, ay nalalapit na ang araw ng aking kamatayan, ipinatong ko ang aking mga kamay kay Clementeng ito bilang inyong obispo; at sa kanya ko ipinagkakatiwala ang aking upuan ng pagtuturo—sa kanya na naglakbay na kasama ko mula sa simula hanggang sa wakas at sa gayon ay nakarinig ng lahat ng aking mga homiliya; na, sa madaling sabi, ay nakibahagi sa lahat ng aking mga pagsubok at natagpuang matatag sa pananampalataya; na, higit sa lahat ng iba, ay natagpuan kong maka-Diyos, mapagmalasakit sa mga tao, dalisay, marunong, malinis sa asal, mabuti, matuwid, maluwag ang kalooban, at bukas-palad na nagsisikap magtiis sa kawalang-utang-na-loob ng ilan sa mga katekumen. Kaya ibinibigay ko sa kanya ang kapangyarihang magbigkis at magkalag, upang anuman ang kanyang itakda sa lupa ay pagtibayin sa langit. Sapagkat bibigkisin niya ang dapat bigkisin at kakalagin ang dapat kalagin, bilang isang nakaaalam sa papel ng Iglesya. Kaya pakinggan ninyo siya, sapagkat dapat ninyong malaman na ang nagpapalungkot sa namumuno sa katotohanan ay nagkakasala laban kay Cristo at lumalabag sa Ama ng lahat. Dahil dito ay hindi siya mabubuhay; kaya ang namumuno ay nararapat gumanap na parang manggagamot at huwag mag-alaga ng poot na gaya ng sa isang hayop na walang katuwiran.</q></p>
+<h3>Kabanata III. Ayaw Kong Maging Obispo</h3>
+<p>Habang sinasabi niya ang mga ito, lumuhod ako sa harap niya at nakiusap, tinatanggihan ang karangalan at kapangyarihan ng upuan. Ngunit sumagot siya: <q>Huwag mo akong pakiusapan tungkol dito; sapagkat minabuti kong maging ganito, lalo na kung tinatanggihan mo ito. Hindi kailangan ng upuang ito ang isang mapangahas na taong sabik na angkinin ito, kundi ang isang maka-Diyos sa asal at lubhang bihasa sa salita <em>ng Diyos.</em> Ngunit magpakita ka sa akin ng isang higit na mabuti <em>kaysa sa iyo,</em> na higit na naglakbay kasama ko, higit na nakarinig ng aking mga pahayag, at higit na natutuhan ang mga tuntunin ng Iglesya, at hindi kita pipilitin na gumawa ng mabuti laban sa iyong kalooban. Ngunit hindi mo maipakikita sa akin ang higit sa iyo; sapagkat ikaw ang piling unang bunga ng maraming naligtas sa pamamagitan ko. Isaalang-alang mo rin ito: kung hindi mo tatanggapin ang pangangasiwa sa Iglesya dahil sa takot sa panganib ng pagkakasala, makatitiyak kang lalo kang nagkakasala kapag nasa kapangyarihan mong tulungan ang mga maka-Diyos na para bang nasa dagat at nasa panganib, ngunit ayaw mo itong gawin, sapagkat ang sarili mong kapakanan lamang ang iniingatan mo at hindi ang kabutihang panlahat. Nauunawaan mong lubos na kailangan mong tanggapin ang panganib na ito, yamang hindi ako tumitigil sa paghiling nito sa iyo para sa kapakanan ng lahat. Kaya habang mas maaga kang pumapayag, mas maaga mo akong mapapawi sa pagkabalisa.</q></p>
+<h3>Kabanata IV. Ang Kapalit na Gantimpala</h3>
+<p><q>Ngunit ako rin mismo, O Clemente, ay nakaaalam sa mga dalamhati at pagkabalisa, mga panganib at panlalait, na naghihintay sa iyo mula sa mga taong hindi naturuan; at matitiis mo ang mga ito nang marangal habang nakatingin sa malaking gantimpala ng pagtitiis na ipinagkakaloob sa iyo ng Diyos. Ngunit pag-isipan mo rin ito nang patas kasama ko: kailan kailangan ni Cristo ang iyong tulong? Ngayon ba, kapag ang masamang iyon ay nanumpa ng pakikidigma laban sa Kanyang kasintahang babae; o sa panahong darating, kapag naghahari na Siya bilang matagumpay at hindi na nangangailangan ng anumang tulong? Hindi ba malinaw sa sinumang may kahit kaunting pang-unawa na ngayon iyon? Kaya buong kusang-loob kang magmadali sa panahon ng kasalukuyang pangangailangan upang makipaglaban sa panig ng mabuting Haring ito, na ang likas na ugali ay magbigay ng malalaking gantimpala pagkatapos ng tagumpay. Kaya malugod mong tanggapin ang pangangasiwa; at lalo na sa napapanahong sandaling ito, sapagkat natutuhan mo sa akin ang pangangasiwa sa Iglesya, para sa kaligtasan ng mga kapatid na nagkubli sa piling natin.</q></p>
+<h3>Kabanata V. Isang Tagubilin</h3>
+<p><q>Gayunman, nais kong, sa harap ng lahat at alang-alang sa lahat, ipaalaala sa iyo ang mga bagay na nauukol sa pangangasiwa. Nararapat sa iyo, habang namumuhay nang walang kapintasan, na buong sigasig na iwaksi ang lahat ng alalahanin sa buhay, na hindi maging tagapanagot, ni tagapagtanggol, ni masangkot sa anumang iba pang sekular na gawain. Sapagkat hindi nais ni Cristo na italaga ka bilang hukom o tagapamagitan sa mga negosyo, ni tagapangasiwa sa mga sekular na usapin ng kasalukuyang buhay, upang hindi ka mabihag ng mga pangkasalukuyang alalahanin ng mga tao at mawalan ng panahon, sa pamamagitan ng salita ng katotohanan, na ibukod ang mabuti sa masasama sa gitna ng mga tao. Sa halip, gawin ng mga alagad ang mga tungkuling ito para sa isa't isa, at huwag nilang ilayo <em>ikaw</em> sa mga pahayag na nakapagliligtas. Sapagkat kung masama para sa iyo na akuin ang mga sekular na alalahanin at pabayaan ang ipinag-utos sa iyong gawin, gayundin ay kasalanan para sa bawat layko kung hindi sila magtutulungan kahit sa mga sekular na pangangailangan. At kung hindi nauunawaan ng lahat na kailangan nilang isaayos ang mga bagay upang mawalan ka ng alalahanin hinggil sa mga bagay na hindi mo dapat pasanin, matutuhan nila ito mula sa mga diyakono; upang palagi mong mapangalagaan ang Iglesya, kapwa sa mahusay na pangangasiwa rito at sa pagpapahayag ng mga salita ng katotohanan.</q></p>
+<h3>Kabanata VI. Ang Tungkulin ng Isang Obispo</h3>
+<p><q>Kung abala ka sa mga sekular na alalahanin, malilinlang mo kapwa ang iyong sarili at ang iyong mga tagapakinig. Sapagkat dahil sa pagkaabala ay hindi mo maituro ang mga kapaki-pakinabang na bagay; kaya ikaw ay parurusahan dahil hindi mo itinuro ang kapaki-pakinabang, at sila naman, dahil hindi nila natutuhan, ay mapapahamak dahil sa kamangmangan. Kaya mamuno ka sa kanila nang malaya sa gayong pagkaabala, upang maipahayag mo sa tamang panahon ang mga salitang makapagliligtas sa kanila; at makinig sila sa iyo, na nalalamang anuman ang ibigkis sa lupa ng sugo ng katotohanan ay nakabigkis din sa langit, at anuman ang kanyang kalagin ay nakakalag. Ngunit bibigkisin mo ang dapat bigkisin at kakalagin ang dapat kalagin. Ang mga ito, at iba pang katulad nito, ang mga bagay na nauukol sa iyo bilang namumuno.</q></p>
+<h3>Kabanata VII. Mga Tungkulin ng mga Presbitero</h3>
+<p><q>At tungkol naman sa mga presbitero, tanggapin mo ang mga <em>tagubiling ito</em>. Higit sa lahat, ipakasal nila nang maaga ang mga kabataan, bago pa sila masangkot sa mga pita ng kabataan. Ngunit huwag din nilang pabayaan ang pag-aasawa ng mga matatanda na; sapagkat malakas pa rin ang pita maging sa ilang matatandang lalaki. Kaya upang hindi magkaroon ng lugar sa inyo ang pakikiapid at magdala sa inyo ng isang tunay na salot, mag-ingat kayo at magsiyasat, baka lihim na magningas sa inyo ang apoy ng pangangalunya. Sapagkat napakabigat ng pangangalunya, anupat ikalawa ito sa tindi ng kaparusahan, samantalang ang unang lugar ay nakatalaga sa mga nasa kamalian, kahit sila ay malinis sa asal. Kaya kayo, bilang mga matatanda ng Iglesya, ay sanayin sa kalinisan ang kabiyak ni Cristo—at sa kabiyak ay tinutukoy ko ang katawan ng Iglesya; sapagkat kung matagpuan siyang malinis ng kanyang maharlikang Kasintahang-Lalaki, tatanggap siya ng pinakadakilang karangalan; at kayo, bilang mga panauhin sa kasalan, ay tatanggap ng malaking papuri. Ngunit kung mahuli siyang nagkasala, siya mismo ay itatakwil; at kayo ay parurusahan kung ang kanyang kasalanan ay minsang naganap dahil sa inyong kapabayaan.</q></p>
+<h3>Kabanata VIII. <q>Gumawa ng Mabuti sa Lahat?</q></h3>
+<p><q>Kaya higit sa lahat ay pag-ingatan ninyo ang kalinisan sa asal; sapagkat ang pakikiapid ay itinuring na isang mapait na bagay sa paningin ng Diyos. Ngunit maraming anyo ang pakikiapid, gaya rin ng ipaliliwanag sa inyo mismo ni Clemente. Ang una ay pangangalunya: na ang lalaki ay hindi masiyahan sa sarili niyang asawa lamang, o ang babae sa sarili niyang asawa lamang. Kung ang isang tao ay malinis sa asal, kaya rin niyang maging mapagmalasakit sa kapwa, at dahil dito ay tatanggap siya ng walang hanggang awa. Sapagkat kung malaking kasamaan ang pangangalunya, ang pag-ibig sa kapwa naman ang pinakadakilang kabutihan. Kaya mahalin ninyo ang lahat ng inyong mga kapatid nang may marangal at mahabaging pagtingin; gampanan ninyo sa mga ulila ang papel ng mga magulang, at sa mga balo ang sa mga asawa; tustusan ninyo sila nang may buong kabaitan; isaayos ang pag-aasawa ng mga nasa wastong gulang, at para sa mga walang hanapbuhay ay maglaan ng kinakailangang ikabubuhay sa pamamagitan ng trabaho; bigyan ng gawain ang manggagawa at limos ang walang kakayahang maghanapbuhay.</q></p>
+<h3>Kabanata IX. <q>Magpatuloy ang Pag-ibig sa mga Kapatid.</q></h3>
+<p><q>Ngunit alam kong gagawin ninyo ang mga bagay na ito kung itatatag ninyo ang pag-ibig sa inyong mga isip; at may iisang angkop na paraan upang makapasok ito, samakatuwid ay ang sama-samang pagkain. Kaya tiyakin ninyong madalas kayong maging panauhin ng isa't isa ayon sa inyong kakayahan, upang hindi ninyo ito mapabayaan. Sapagkat ito ang sanhi ng paggawa ng mabuti, at ang paggawa ng mabuti ay sanhi ng kaligtasan. Kaya ibahagi ninyong lahat ang inyong mga panustos sa lahat ng inyong mga kapatid sa Diyos, na nalalamang sa pagbibigay ng mga bagay na pansamantala ay tatanggap kayo ng mga bagay na walang hanggan. Higit sa lahat, pakainin ang nagugutom, painumin ang nauuhaw, damitan ang hubad; dalawin ang maysakit; magpakita kayo sa mga nasa bilangguan at tulungan sila ayon sa inyong kakayahan; at tanggapin ninyo sa inyong mga tahanan ang mga dayuhan nang buong kasiglahan. Gayunman, upang hindi ko na isa-isahin ang lahat, ang pag-ibig sa kapwa ang magtuturo sa inyo na gawin ang lahat ng mabuti, gaya ng pagkapoot sa kapwa ang nagtutulak sa paggawa ng masama sa mga ayaw maligtas.</q></p>
+<h3>Kabanata X. <q>Anumang mga Bagay na Kagalang-galang.</q></h3>
+<p><q>Ang mga kapatid na may mga usaping kailangang ayusin ay huwag hatulan ng mga sekular na awtoridad; sa halip, sa lahat ng paraan ay pagkasunduin sila ng mga matatanda ng iglesya, at agad silang sumunod sa mga ito. Bukod dito, layuan din ninyo ang kasakiman, sapagkat sa pagkukunwari ng pansamantalang pakinabang ay kaya nitong agawin sa inyo ang mga pagpapalang walang hanggan. Ingatan ninyong maging makatarungan ang inyong mga timbangan, mga panukat, mga pabigat, at ang lahat ng nauukol sa inyong kalakalan. Maging tapat kayo sa mga bagay na ipinagkatiwala sa inyo. Magpapatuloy kayo sa paggawa ng mga ito at ng mga katulad nito hanggang sa wakas kung nasa inyong mga puso ang di-mabuburang alaala ng paghuhukom na mula sa Diyos. Sapagkat sino ang magkakasala kung kumbinsido siyang sa wakas ng buhay ay may itinakdang paghuhukom ng matuwid na Diyos, na sa ngayon ay matiisin at mabuti upang sa hinaharap ay tamasahin ng mabubuti magpakailanman ang di-maipahayag na mga pagpapala, samantalang ang mga makasalanan, kapag natagpuang masama, ay tatanggap ng walang hanggang di-maipahayag na kaparusahan? At tunay na makatuwirang pag-alinlanganan kung gayon nga ang mga ito, kung hindi lamang sinabi at isinumpa ng Propeta ng katotohanan na mangyayari ang mga ito.</q></p>
+<h3>Kabanata XI. Mga Pag-aalinlangang Dapat Malutas</h3>
+<p><q>Kaya, bilang mga alagad ng tunay na Propeta, iwaksi ninyo ang pag-aalinlangang may dalawang isip, na pinagmumulan ng paggawa ng masama, at buong sigasig ninyong gawin ang mabuti. Ngunit kung may sinuman sa inyo na nag-aalinlangan tungkol sa mga bagay na sinabi kong mangyayari, ipahayag niya iyon nang walang hiya, kung pinahahalagahan niya ang sarili niyang kaluluwa, at bibigyan siya ng kasiyahan ng namumuno. Ngunit kung tama ang kanyang paniniwala, mamuhay siya nang may pagtitiwala, na para bang tumatakas mula sa malaking apoy ng paghatol at pumapasok sa mabuti at walang hanggang kaharian ng Diyos.</q></p>
+<h3>Kabanata XII. Mga Tungkulin ng mga Diyakono</h3>
+<p><q>Bukod dito, ang mga diyakono ng iglesya, habang maingat na umiikot, ay maging parang mga mata ng obispo, masusing sinisiyasat ang mga ginagawa ng bawat kasapi ng iglesya, <em>alamin</em> kung sino ang malapit nang magkasala, upang kapag napigil siya ng babala ng namumuno ay baka hindi na niya maisagawa ang kasalanan. Sawayin nila ang mga magugulo upang hindi sila tumigil sa pagtitipon upang makinig sa mga pahayag, nang sa gayon ay mapaglabanan nila sa pamamagitan ng salita ng katotohanan ang mga pagkabalisa na sumasalakay sa puso mula sa lahat ng panig dahil sa mga pangyayari sa mundo at masasamang pakikipag-usap; sapagkat kapag matagal na nananatiling hindi nalilinang ang mga iyon, nagiging panggatong sila sa apoy. Alamin din nila kung sino ang dumaranas ng sakit sa katawan, at ipaalam nila ito sa karamihan na hindi nakaaalam tungkol sa kanila, upang madalaw sila at matugunan ang kanilang mga pangangailangan ayon sa pasiya ng namumuno. Oo, kahit gawin nila ito nang hindi niya nalalaman, wala silang ginagawang mali. Ang mga bagay na ito, at ang mga katulad nito, ang asikasuhin ng mga diyakono.</q></p>
+<h3>Kabanata XIII. Mga Tungkulin ng mga Katekista</h3>
+<p><q>Magturo ang mga katekista, matapos muna silang maturuan; sapagkat ito ay gawaing nauukol sa mga kaluluwa ng mga tao. Ang guro ng salita ay kailangang umangkop sa iba't ibang paghatol ng mga nag-aaral. Kaya ang mga katekista ay dapat marunong, walang kapintasan, maraming karanasan, at subok—gaya ng malalaman ninyong si Clemente, na siyang magtuturo sa inyo pagkatapos ko. Sobra na para sa akin ngayon ang isa-isahin ang mga detalye. Gayunman, kung kayo ay may iisang pag-iisip, makararating kayo sa daungan ng kapahingahan, kung saan naroon ang mapayapang lungsod ng dakilang Hari.</q></p>
+<h3>Kabanata XIV. Ang Sasakyang-Dagat ng Iglesya</h3>
+<p><q>Sapagkat ang buong gawain ng Iglesya ay tulad ng isang malaking barko na nagdadala, sa gitna ng marahas na bagyo, ng mga taong nagmula sa maraming lugar at nagnanais manirahan sa lungsod ng mabuting kaharian. Kaya ang Diyos ang maging punong tagapangasiwa ng inyong barko; si Cristo ay itulad sa timonel, ang obispo sa katuwang na opisyal, ang mga diyakono sa mga mandaragat, ang mga katekista sa mga tauhang nasa gitnang kubyerta, ang karamihan ng mga kapatid sa mga pasahero, at ang sanlibutan sa dagat; ang masasamang hangin sa mga tukso, pag-uusig, at panganib; at ang lahat ng uri ng paghihirap sa mga alon; ang mga hanging mula sa lupa at ang kanilang mga bugso sa mga pahayag ng mga mandaraya at bulaang propeta; ang mga tangway at matatarik na bato sa mga hukom na nasa matataas na katungkulan na nagbabanta ng kakila-kilabot na mga bagay; ang pagsasalubong ng dalawang dagat at ang mga mapanganib na lugar sa mga taong walang katuwiran at sa mga nag-aalinlangan sa mga pangako ng katotohanan. Ituring ang mga mapagkunwari na gaya ng mga pirata. Bukod dito, ituring ninyo ang malakas na ipo-ipo, ang Tartarean Charybdis, ang nakamamatay na mga pagkawasak ng barko, at ang nakamamatay na paglubog bilang walang iba kundi mga kasalanan. Kaya, upang sa paglalayag na may mabuting hangin ay ligtas kayong makarating sa daungan ng inaasahang lungsod, manalangin kayo sa paraang kayo ay maririnig. Ngunit ang mga panalangin ay nagiging maririnig sa pamamagitan ng mabubuting gawa.</q></p>
+<h3>Kabanata XV. Mga Pangyayari sa Paglalayag</h3>
+<p><q>Kaya manatiling tahimik ang mga pasahero, nakaupo sa kani-kanilang lugar, upang hindi sila maging sanhi ng matinding pag-ugoy o pagtagilid dahil sa kaguluhan. Bigyang-pansin ng mga tauhang nasa gitnang kubyerta ang mga panustos. Huwag pabayaan ng mga diyakono ang anumang ipinagkatiwala sa kanila; ang mga presbitero, gaya ng mga mandaragat, ay buong ingat na isaayos ang kailangan ng bawat isa. Ang obispo, bilang katuwang na opisyal, ay laging gising na magnilay sa mga salita ng timonel lamang. Ibigin si Cristo, ang Tagapagligtas, bilang timonel, at Siya lamang ang paniwalaan tungkol sa mga bagay na Kanyang sinasabi; at manalangin ang lahat sa Diyos para sa isang matagumpay na paglalayag. Asahan ng mga naglalayag ang bawat uri ng paghihirap, sapagkat naglalakbay sila sa ibabaw ng isang malaki at magulong dagat—ang sanlibutan: kung minsan ay nanghihina, inuusig, nagkakawatak-watak, nagugutom, nauuhaw, hubad, at nasisikipan; at kung minsan naman ay nagkakaisa, nagtitipon, at nagpapahinga; ngunit kung minsan din ay nahihilo sa dagat, umiikot ang ulo, at sumusuka—na ang ibig sabihin ay ipinahahayag ang mga kasalanan, gaya ng apdo na nagdudulot ng sakit. Ang tinutukoy ko ay ang mga kasalanang nagmumula sa kapaitan at ang mga kasamaang naipon mula sa magulong mga pita; sa pagtatapat ng mga ito, na gaya ng pagsusuka, gumagaan kayo mula sa inyong karamdaman at nakararating sa malusog na kaligtasan sa pamamagitan ng pag-iingat.</q></p>
+<h3>Kabanata XVI. Ang mga Pagpapagal at Gantimpala ng Obispo</h3>
+<p><q>Ngunit alamin ninyong lahat na higit na nagpapagal ang obispo kaysa sa inyong lahat; sapagkat ang bawat isa sa inyo ay nagdurusa ng sarili niyang paghihirap, ngunit siya ay nagdurusa kapwa ng sarili niya at ng sa bawat isa. Kaya, O Clemente, mamuno ka bilang katuwang ng bawat isa ayon sa iyong kakayahan, at pangalagaan ang mga alalahanin ng lahat. Dahil dito ay nalalaman kong sa pagtanggap mo sa pangangasiwa ay hindi ako nagbibigay sa iyo ng pabor, kundi ako ang tumatanggap nito. Ngunit lakasan mo ang iyong loob at pasanin ito nang bukas-palad, na nalalamang gagantimpalaan ka ng Diyos kapag pumasok ka sa daungan ng kapahingahan—ang pinakadakila sa mga pagpapala, isang gantimpalang hindi maaalis sa iyo—ayon sa dami ng pagpapagal na iyong inako para sa kaligtasan ng lahat. Kaya kahit kamuhian ka ng marami sa mga kapatid dahil sa iyong mataas na katuwiran, hindi ka mapipinsala ng kanilang poot, ngunit lubos kang pakikinabangan ng pag-ibig ng matuwid na Diyos. Kaya sikapin mong iwaksi ang papuring nagmumula sa kawalang-katarungan at makamtan ang kapaki-pakinabang na papuri na mula kay Cristo dahil sa matuwid na pangangasiwa.</q></p>
+  </section>
 
+  <hr>
+</div>
 
-              <hr>
-              <button class="richblue"><A Href="../index.html">BACK</A></button>                  
-    </div>
 <script src="../../../DocumentOutline.js"></script>
+
 <script>
-  let outline = new DocumentOutline();
-</script>
-<script>
-try {
-  fetch(new Request("../../../pagead2.googlesyndication.com/pagead/js/f.txt", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-    return true;
-  }).catch(function(e) {
-    var carbonScript = document.createElement("script");
-    carbonScript.src = "../../../cdn.carbonads.com/carbon544e.js?serve=CE7DC2JW&amp;placement=wwwcssscriptcom";
-    carbonScript.id = "_carbonads_js";
-    document.getElementById("carbon-block").appendChild(carbonScript);
+(function () {
+  'use strict';
+
+  const englishHeader = document.getElementById('englishHeader');
+  const tagalogHeader = document.getElementById('tagalogHeader');
+  const englishContent = document.getElementById('englishContent');
+  const tagalogContent = document.getElementById('tagalogContent');
+  const languageToggle = document.getElementById('languageToggle');
+
+  let currentLanguage = 'en';
+
+  function renderLanguage() {
+    const isTagalog = currentLanguage === 'tl';
+
+    englishHeader.hidden = isTagalog;
+    englishContent.hidden = isTagalog;
+
+    tagalogHeader.hidden = !isTagalog;
+    tagalogContent.hidden = !isTagalog;
+
+    languageToggle.textContent = isTagalog
+      ? 'English Version'
+      : 'Tagalog Version';
+
+    document.documentElement.lang = isTagalog ? 'tl' : 'en';
+    languageToggle.setAttribute(
+      'aria-label',
+      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
+    );
+  }
+
+  languageToggle.addEventListener('click', function () {
+    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    renderLanguage();
   });
-} catch (error) {
-  console.log(error);
-}
+
+  // Initial state only.
+  renderLanguage();
+
+  // IMPORTANT: initialize the old site's outline script only once.
+  // Recreating DocumentOutline during every language switch can repeatedly
+  // modify the DOM and eventually cause content to disappear.
+  if (typeof DocumentOutline !== 'undefined') {
+    try {
+      window.sacredWritingsOutline = new DocumentOutline();
+    } catch (error) {
+      console.warn('Document outline initialization skipped:', error);
+    }
+  }
+})();
 </script>
+
+
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+(function () {
+  const root = document.documentElement;
+  const zoomIn = document.getElementById('textZoomIn');
+  const zoomOut = document.getElementById('textZoomOut');
+  const zoomReset = document.getElementById('textZoomReset');
+  const zoomLabel = document.getElementById('textZoomLabel');
 
-  ga('create', 'UA-46156385-1', 'cssscript.com');
-  ga('send', 'pageview');
+  let scale = 1;
+  const minScale = 0.85;
+  const maxScale = 2.00;
+  const step = 0.15;
 
+  function applyTextScale() {
+    scale = Math.max(minScale, Math.min(maxScale, scale));
+    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
+    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  }
+
+  zoomIn.addEventListener('click', function () {
+    scale += step;
+    applyTextScale();
+  });
+
+  zoomOut.addEventListener('click', function () {
+    scale -= step;
+    applyTextScale();
+  });
+
+  zoomReset.addEventListener('click', function () {
+    scale = 1;
+    applyTextScale();
+  });
+
+  applyTextScale();
+})();
 </script>
-</body>
 
+</body>
 </html>
