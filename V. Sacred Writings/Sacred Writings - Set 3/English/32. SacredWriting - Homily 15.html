@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<title>Sacred Writings</title>
+
+<link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../outline.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<style>
+  body { background-color: #fafafa; line-height: 1.6; }
+  html, * { font-family: 'Inter'; }
+  p { font-size: 1.25rem; }
+
+  .language-only[hidden] {
+    display: none !important;
+  }
+
+  /* Render-safe fallback: visible language content must remain visible even
+     when external site scripts/styles are unavailable in a compiler/preview. */
+  .language-only:not([hidden]) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  body { color: #212529; }
+  body > div { display: block !important; visibility: visible !important; opacity: 1 !important; }
+  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
+  :root {
+    --reader-font-scale: 1;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  body > div,
+  .language-only,
+  #englishContent,
+  #tagalogContent {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #englishContent p,
+  #tagalogContent p {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: calc(1.25rem * var(--reader-font-scale));
+    line-height: 1.65;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  #englishContent h2, #tagalogContent h2,
+  #englishContent h3, #tagalogContent h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, table, pre {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  .reader-zoom-controls {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem 0;
+    background: #fafafa;
+  }
+
+  .reader-zoom-controls button {
+    min-width: 3.2rem;
+    min-height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .reader-zoom-label {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 .75rem;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+<div>
+
+  <!-- =========================================================
+       SINGLE-FILE ENGLISH / TAGALOG PAGE
+       IMPORTANT:
+       Reader controls are self-contained and do not depend on external outline scripts.
+       Language switching only toggles the hidden attribute.
+       ========================================================= -->
+
+  <!-- ENGLISH SITE HEADER -->
+  <div id="englishHeader" class="language-only">
+    <center>
+      <h1>Sacred Writing</h1>
+      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+    </center>
+  </div>
+
+  <!-- TAGALOG SITE HEADER -->
+  <div id="tagalogHeader" class="language-only" hidden>
+    <center>
+      <h1>Mga Sagradong Sulatin</h1>
+      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
+    </center>
+  </div>
+
+  <!-- ONE SHARED TRANSLATION BUTTON -->
+
+  <center class="reader-zoom-controls" aria-label="Text size controls">
+  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
+  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
+  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
+  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
+</center>
+  <center>
+    <button id="languageToggle"
+            type="button"
+            class="btn btn-secondary w-100"
+            aria-live="polite">
+      Tagalog Version
+    </button>
+  </center>
+
+
+
+
+  <!-- ENGLISH CONTENT -->
+  <section id="englishContent" class="language-only" data-language="en">
+<h3>Chapter I. Peter Wishes to Convert Faustus</h3><p>At break of day our father, with our mother and his three sons, entered the place where Peter was, and accosting him, sat down. Then we also did the same at his request; and Peter looking at our father, said: <q>I am anxious that you should become of the same mind as your wife and children, in order that here you may live along with them, and in the other world, after the separation of the soul from the body, you will continue to be with them free from sorrow. For does it not grieve you exceedingly that you should not associate with each other?</q> And my father said: <q>Most assuredly.</q> And Peter said: <q>If, then, separation from each other here gives you pain, and if without doubt the penalty awaits you that after death you should not be with each other, how much greater will your grief be that you, a wise man, should be separated from your own family on account of your opinions? They too, must feel the more distressed from the consciousness that eternal punishment awaits you because you entertain different opinions from theirs, and deny the established truth.</q></p><h3>Chapter II. Reason for Listening to Peter's Arguments</h3><p>Our father said: <q>But it is not the case, my very dear friend, that souls are punished in Hades, for the soul is dissolved into air as soon as it leaves the body.</q> And Peter said: <q>Until we convince you in regard to this point, answer me, does it not appear to you that you are not grieved as having no faith in a <em>future</em> punishment, but they who have full faith in it must be vexed in regard to you?</q> And our father said: <q>You speak sense.</q> And Peter said: <q>Why, then, will you not free them from the greatest grief they can have in regard to you by agreeing to their religion, not, I mean, through dread, but through kindly feeling, listening and judging about what is said by me, whether it be so or not? And if the truth is as we state it, then here you will enjoy life with those who are dearest to you, and in the other world you will have rest with them; but if, in examining the arguments, you show that what is stated by us is a fictitious story, you will thus be doing good service, for you will have your friends on your side, and you will put an end to their leaning upon false hopes, and you will free them from false fears.</q></p><h3>Chapter III. Obstacles to Faith</h3><p>And our father said: <q>There is evidently much reason in what you say.</q> And Peter said: <q>What is it, then, that prevents you from coming to our faith? Tell me, that we may begin our discussion with it. For many are the hindrances. The faithful are hindered by occupation with merchandise, or public business, or the cultivation of the soil, or cares, and such like; the unbelievers, of whom you also are one, are hindered by ideas such as that the gods, which do not exist, really exist, or that all things are subject to Genesis, or chance, or that souls are mortal, or that our doctrines are false because there is no providence.</q></p><h3>Chapter IV. Providence Seen in the Events of the Life of Faustus and His Family</h3><p><q>But I maintain, from what has happened to you, that all things are managed by the providence of God, and that your separation from your family for so many years was providential; for since, if they had been with you, they perhaps would not have listened to the doctrines of the true religion, it was arranged that your children should travel with their mother, should be shipwrecked, should be supposed to have perished, and should be sold; moreover, that they should be educated in the learning of the Greeks, especially in the atheistic doctrines, in order that, as being acquainted with them, they might be the better able to refute them; and in addition to this, that they should become attached to the true religion, and be enabled to be united with me, so as to help me in my preaching; furthermore, that their brother Clement should meet in the same place, and that thus his mother should be recognised, and through her cure should be fully convinced of the right worship of God; that after no long interval the twins should recognise and be recognised, and the other day should fall in with you, and that you should receive back your own. I do not think, then, that such a speedy filling in of circumstances, coming as it were from all quarters, so as to accomplish one design, could have happened without the direction of Providence.</q></p><h3>Chapter V. Difference Between the True Religion and Philosophy</h3><p>And our father began to say: <q>Do not suppose, my dearest Peter, that I am not thinking of the doctrines preached by you. I was thinking of them. But during the past night, when Clement urged me earnestly to give in my adhesion to the truth preached by you, I at last answered, 'Why should I? For what new commandment can any one give more than what the ancients urged us to obey?' And he, with a gentle smile, said, 'There is a great difference, father, between the doctrines of the true religion and those of philosophy; for the true religion receives its proof from prophecy, while philosophy, furnishing us with beautiful sentences, seems to present its proofs from conjecture.' On saying this, he took an instance, and set before us the doctrine of philanthropy, which you had explained to him, which rather appeared to me to be very unjust, and I shall tell you how. He alleged that it was right to present to him who strikes you on the one cheek the other also, and to give to him who takes away your cloak your tunic also, and to go two miles with him who compels you to go one, and such like.</q></p><h3>Chapter VI. The Love of Man</h3><p>And Peter answered: <q>You have deemed unjust what is most just. If you are inclined, will you listen to me?</q> And my father said: <q>With all my heart.</q> And Peter said: <q>What is your opinion? Suppose that there were two kings, enemies to each other, and having their countries cut off from each other; and suppose that some one of the subjects of one of them were to be caught in the country of the other, and to incur the penalty of death on this account: now if he were let off from the punishment by receiving a blow instead of death, is it not plain that he who let him off is a lover of man?</q> And our father said: <q>Most certainly.</q> And Peter said: <q>Now suppose that this same person were to steal from some one something belonging to him or to another; and if when caught he were to pay double, instead of suffering the punishment that was due to him, namely, paying four times the amount, and being also put to death, as having been caught in the territories of the enemy; is it not your opinion that he who accepts double, and lets him off from the penalty of death, is a lover of man?</q> And our father said: <q>He certainly seems so.</q> And Peter said: <q>Why then? Is it not the duty of him who is in the kingdom of another, and that, too, a hostile and wicked monarch, to be pleasing to all for the sake of life, and when force is applied to him, to yield still more, to accost those who do not accost him, to reconcile enemies, not to quarrel with those who are angry, to give his own property freely to all who ask, and such like?</q> And our father said: <q>He should with reason endure all things rather, if he prefers life to them.</q></p><h3>Chapter VII. The Explanation of a Parable; The Present and the Future Life</h3><p>And Peter said: <q>Are not those, then, who you said received injustice, themselves transgressors, inasmuch as they are in the kingdom of the other, and is it not by overreaching that they have obtained all they possess? While those who are thought to act unjustly are conferring a favour on each subject of the hostile kingdom, so far as they permit him to have property. For these possessions belong to those who have chosen the present. And they are so far kind as to permit the others to live. This, then, is the parable; now listen to the actual truth. The prophet of the truth who appeared <em>on earth</em> taught us that the Maker and God of all gave two kingdoms to two, good and evil; granting to the evil the sovereignty over the present world along with law, so that he, <em>it</em>, should have the right to punish those who act unjustly; but to the good He gave the eternal to come. But He made each man free with the power to give himself up to whatsoever he prefers, either to the present evil or the future good. Those men who choose the present have power to be rich, to revel in luxury, to indulge in pleasures, and to do whatever they can. For they will possess none of the future goods. But those who have determined to accept the blessings of the future reign have no right to regard as their own the things that are here, since they belong to a foreign king, with the exception only of water and bread, and those things procured with sweat to maintain life (for it is not lawful for them to commit suicide), and also one garment, for they are not permitted to go naked on account of the all-seeing Heaven.</q></p><h3>Chapter VIII. The Present and the Future</h3><p><q>If, then, you wish to have an accurate account of the matter, listen. Those of whom you said a little before that they receive injustice, rather act unjustly themselves; for they who have chosen the future blessings, live along with the bad in the present world, having many enjoyments the same as the bad,—such as life itself, light, bread, water, clothing, and others of a like nature. But they who are thought by you to act unjustly, shall not live with the good men in the coming age.</q> And our father replied to this: <q>Now when you have convinced me that those who act unjustly suffer injustice themselves, while those who suffer injustice have by far the advantage, the whole affair seems to me still more the most unjust of transactions; for those who seem to act unjustly grant many things to those who have chosen the future blessings, but those who seem to receive injustice do themselves commit injustice, because they do not give in the other world, to those who have given them blessings here, the same advantages which these gave to them.</q> And Peter said: <q>This is not unjust at all, because each one has the power to choose the present or the future goods, whether they be small or great. He who chooses by his own individual judgment and wish, receives no injustice,—I mean, not even should his choice rest on what is small, since the great lay within his choice, as in fact did also the small.</q> And our father said: <q>You are right; for it has been said by one of the wise men of the Greeks, 'The blame rests with those who chose—God is blameless.'&nbsp;</q></p><h3>Chapter IX. Possessions are Transgressions</h3><p><q>Will you be so good as to explain this matter also? I remember Clement saying to me, that we suffer injuries and afflictions for the forgiveness of our sins.</q> Peter said: <q>This is quite correct. For we, who have chosen the future things, in so far as we possess more goods than these, whether they be clothing, or food or drink, or any other thing, possess sins, because we ought not to have anything, as I explained to you a little ago. To all of us possessions are sins. The deprivation of these, in whatever way it may take place, is the removal of sins.</q> And our father said: <q>That seems reasonable, as you explained that these were the two boundary lines of the two kings, and that it was in the power of each to choose whatever he wished of what was under their authority. But why are the afflictions sent, or do we suffer them justly?</q> And Peter said: <q>Most justly; for since the boundary line of the saved is, as I said, that no one should possess anything, but since many have many possessions, or in other words sins, for this reason the exceeding love of God sends afflictions on those who do not act in purity of heart, that on account of their having some measure of the love of God, they might, by temporary inflictions, be saved from eternal punishments.</q></p><h3>Chapter X. Poverty Not Necessarily Righteous</h3><p>And our father said: <q>How then is this? Do we not see many impious men poor? Then do these belong to the saved on this account?</q> And Peter said: <q>Not at all; for that poverty is not acceptable which longs for what it ought not. So that some are rich as far as their choice goes, though poor in actual wealth, and they are punished because they desire to have more. But one is not unquestionably righteous because he happens to be poor. For he can be a beggar as far as actual wealth is concerned, but he may desire and even do what above everything he ought not to do. Thus he may worship idols, or be a blasphemer or fornicator, or he may live indiscriminately, or perjure himself, or lie, or live the life of an unbeliever. But our teacher pronounced the faithful poor blessed; and he did so, not because they had given anything, for they had nothing, but because they were not to be condemned, as having done no sin, simply because they gave no alms, because they had nothing to give.</q> And our father said: <q>In good truth all seems to go right as far as the subject of discussion is concerned; wherefore I have resolved to listen to the whole of your argument in regular order.</q></p><h3>Chapter XI. Exposition of the True Religion Promised</h3><p>And Peter said: <q>Since, then, you are eager henceforth to learn what relates to our religion, I ought to explain it in order, beginning with God Himself, and showing that we ought to call Him alone God, and that we neither ought to speak of the others as gods nor deem them such, and that he who acts contrary to this will be punished eternally, as having shown the greatest impiety to Him who is the Lord of all.</q> And saying this, he laid his hands on those who were vexed by afflictions, and were diseased, and possessed by demons; and, praying, he healed them, and dismissed the multitudes. And then entering in this way, he partook of his usual food, and went to sleep.</p>
+</section>
+
+  <!-- TAGALOG CONTENT -->
+  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
+<h3>Kabanata I. Nais ni Pedro na Mapagbago si Faustus</h3><p>Pagsapit ng bukang-liwayway, pumasok ang aming ama kasama ang aming ina at ang kanyang tatlong anak sa lugar na kinaroroonan ni Pedro, at matapos siyang batiin ay umupo. Pagkatapos ay ginawa rin namin iyon sa kanyang kahilingan; at tumingin si Pedro sa aming ama at sinabi: <q>Nais kong magkaroon ka ng kaparehong pag-iisip ng iyong asawa at mga anak, upang dito ay mamuhay kang kasama nila, at sa kabilang sanlibutan, pagkatapos mahiwalay ang kaluluwa sa katawan, ay patuloy kang makasama nila nang malaya sa dalamhati. Sapagkat hindi ba lubha kang nalulungkot na hindi kayo makasama-sama?</q> At sinabi ng aking ama: <q>Tiyak na tiyak.</q> At sinabi ni Pedro: <q>Kung gayon, kung ang pagkakahiwalay ninyo rito ay nagbibigay sa iyo ng sakit, at kung walang alinlangang naghihintay sa iyo ang kaparusahan na pagkatapos ng kamatayan ay hindi mo sila makakasama, gaano kalaki ang magiging dalamhati mo na ikaw, isang taong marunong, ay mahihiwalay sa sarili mong pamilya dahil sa iyong mga paniniwala? Sila rin ay lalong malulungkot dahil alam nilang naghihintay sa iyo ang walang hanggang kaparusahan sapagkat iba ang iyong mga paniniwala sa kanila at itinatanggi mo ang itinatag na katotohanan.</q></p><h3>Kabanata II. Dahilan Upang Pakinggan ang mga Pangangatwiran ni Pedro</h3><p>Sinabi ng aming ama: <q>Ngunit hindi totoo, pinakamamahal kong kaibigan, na pinarurusahan ang mga kaluluwa sa Hades, sapagkat ang kaluluwa ay nalulusaw sa hangin sa sandaling iwan nito ang katawan.</q> Sinabi ni Pedro: <q>Hangga't hindi ka pa namin nakukumbinsi tungkol sa puntong ito, sagutin mo ako: hindi ba waring hindi ka nalulungkot sapagkat wala kang pananampalataya sa <em>darating</em> na kaparusahan, samantalang silang lubos na naniniwala rito ay kinakailangang mabahala tungkol sa iyo?</q> At sinabi ng aming ama: <q>May katwiran ang sinasabi mo.</q> Sinabi ni Pedro: <q>Bakit, kung gayon, hindi mo sila palayain mula sa pinakamalaking dalamhating maaari nilang maranasan tungkol sa iyo sa pamamagitan ng pagsang-ayon sa kanilang relihiyon—hindi ko ibig sabihin dahil sa takot, kundi dahil sa mabuting kalooban—na makinig at humatol kung ang mga sinasabi ko ay totoo o hindi? At kung ang katotohanan ay gaya ng sinasabi namin, dito ay matatamasa mo ang buhay kasama ng mga pinakamamahal mo, at sa kabilang sanlibutan ay magkakaroon ka ng kapahingahan kasama nila; ngunit kung sa pagsusuri sa mga pangangatwiran ay maipakita mong kathang-isip lamang ang sinasabi namin, makagagawa ka rin ng mabuting paglilingkod, sapagkat mapapasaiyo ang iyong mga kaibigan, matatapos ang kanilang pagkapit sa huwad na mga pag-asa, at mapalalaya mo sila mula sa huwad na mga takot.</q></p><h3>Kabanata III. Mga Hadlang sa Pananampalataya</h3><p>At sinabi ng aming ama: <q>Malinaw na maraming katwiran ang sinasabi mo.</q> Sinabi ni Pedro: <q>Ano, kung gayon, ang humahadlang sa iyo na lumapit sa aming pananampalataya? Sabihin mo sa akin upang doon natin simulan ang ating talakayan. Sapagkat marami ang mga hadlang. Ang mga mananampalataya ay nahahadlangan ng pagiging abala sa pangangalakal, o mga gawaing pampubliko, o pagsasaka, o mga alalahanin at mga katulad nito; ang mga hindi naniniwala, na kabilang ka rin, ay nahahadlangan ng mga kaisipang gaya ng paniniwalang tunay na umiiral ang mga diyos na hindi naman umiiral, o na ang lahat ng bagay ay saklaw ng Genesis, o ng pagkakataon, o na mortal ang mga kaluluwa, o na huwad ang aming mga aral dahil walang providensiya.</q></p><h3>Kabanata IV. Ang Providensiya na Nakikita sa mga Pangyayari sa Buhay ni Faustus at ng Kanyang Pamilya</h3><p><q>Ngunit pinaninindigan ko, mula sa nangyari sa iyo, na ang lahat ng bagay ay pinamamahalaan ng providensiya ng Diyos at na may layunin ng providensiya ang pagkakahiwalay mo sa iyong pamilya sa napakaraming taon. Sapagkat kung nakasama mo sila, marahil ay hindi nila pinakinggan ang mga aral ng tunay na relihiyon; kaya isinaayos na maglakbay ang iyong mga anak kasama ang kanilang ina, mawasak sa barko, ipalagay na napahamak, at maipagbili. Bukod dito, isinaayos na maturuan sila sa karunungan ng mga Griyego, lalo na sa mga aral na walang Diyos, upang dahil pamilyar sila sa mga iyon ay higit nilang magawang pabulaanan ang mga iyon; at dagdag pa rito, na mahikayat sila sa tunay na relihiyon at magawang makiisa sa akin upang tulungan ako sa aking pangangaral. Higit pa rito, na makatagpo sa iisang lugar ang kanilang kapatid na si Clemente, at sa gayon ay makilala ang kanyang ina, at sa pamamagitan ng paggaling niya ay lubos siyang makumbinsi tungkol sa wastong pagsamba sa Diyos; na makalipas ang hindi mahabang panahon ay magkakilala ang kambal at makilala rin ng iba, at noong isang araw ay makatagpo ka nila at mabawi mo ang sarili mong pamilya. Kaya hindi ko iniisip na ang gayong mabilis na pagkakabuo ng mga pangyayari, na para bang nagmula sa lahat ng panig upang tuparin ang iisang layunin, ay maaaring mangyari nang walang pamamahala ng Providensiya.</q></p><h3>Kabanata V. Pagkakaiba ng Tunay na Relihiyon at Pilosopiya</h3><p>At nagsimulang magsalita ang aming ama: <q>Huwag mong ipalagay, pinakamamahal kong Pedro, na hindi ko pinag-iisipan ang mga aral na ipinapangaral mo. Pinag-isipan ko ang mga iyon. Ngunit kagabi, nang taimtim akong hikayatin ni Clemente na kumapit sa katotohanang ipinapangaral mo, sa wakas ay sumagot ako, ‘Bakit ko gagawin? Anong bagong utos ang maibibigay ng sinuman na higit pa sa ipinayo ng mga sinauna na sundin natin?’ At siya, na banayad na ngumiti, ay nagsabi, ‘May malaking pagkakaiba, ama, sa pagitan ng mga aral ng tunay na relihiyon at ng pilosopiya; sapagkat ang tunay na relihiyon ay tumatanggap ng patunay nito mula sa propesiya, samantalang ang pilosopiya, bagaman nagbibigay sa atin ng magagandang pananalita, ay waring inilalahad ang mga patunay nito mula sa haka-haka.’ Pagkasabi nito, kumuha siya ng isang halimbawa at inilatag sa amin ang aral ng pagmamahal sa tao na ipinaliwanag mo sa kanya, na sa halip ay waring lubhang di-makatarungan sa akin, at sasabihin ko sa iyo kung paano. Sinabi niyang matuwid na iharap sa humahampas sa iyo sa isang pisngi ang kabila rin, at ibigay sa kumukuha ng iyong balabal ang iyong tunika rin, at maglakad nang dalawang milya kasama ng pumipilit sa iyong lumakad ng isa, at mga katulad nito.</q></p><h3>Kabanata VI. Ang Pag-ibig sa Tao</h3><p>At sumagot si Pedro: <q>Itinuring mong di-makatarungan ang pinakamarapat sa katarungan. Kung nais mo, pakikinggan mo ba ako?</q> At sinabi ng aking ama: <q>Nang buong puso.</q> Sinabi ni Pedro: <q>Ano ang palagay mo? Ipagpalagay na may dalawang hari na magkaaway, at magkahiwalay ang kanilang mga bansa; at ipagpalagay na ang isa sa mga nasasakupan ng isa ay mahuli sa bansa ng kabila at dahil dito ay masentensiyahan ng kamatayan. Ngayon, kung palalayain siya mula sa kaparusahan sa pamamagitan ng pagtanggap ng isang hampas kapalit ng kamatayan, hindi ba malinaw na ang nagpalaya sa kanya ay mapagmahal sa tao?</q> At sinabi ng aming ama: <q>Tiyak na tiyak.</q> Sinabi ni Pedro: <q>Ngayon ipagpalagay na ang tao ring ito ay magnakaw mula sa isang tao ng bagay na pag-aari niya o ng iba; at kung kapag nahuli siya ay pagbayarin nang doble sa halip na pagdusahan ang kaparusahang nararapat sa kanya—samakatuwid, magbayad nang apat na ulit at patayin din, yamang nahuli siya sa teritoryo ng kaaway—hindi ba sa palagay mo ang tumatanggap ng doble at nagpapalaya sa kanya mula sa kaparusahang kamatayan ay mapagmahal sa tao?</q> At sinabi ng aming ama: <q>Tiyak na waring gayon siya.</q> Sinabi ni Pedro: <q>Bakit nga? Hindi ba tungkulin ng taong nasa kaharian ng iba, at lalo na ng isang kaaway at masamang monarka, na sikaping maging kalugud-lugod sa lahat alang-alang sa kanyang buhay, at kapag ginamitan siya ng puwersa ay lalo pang magbigay-daan, bumati sa mga hindi bumabati sa kanya, makipagkasundo sa mga kaaway, huwag makipagtalo sa mga nagagalit, malayang ibigay ang sarili niyang pag-aari sa lahat ng humihingi, at mga katulad nito?</q> At sinabi ng aming ama: <q>May katwiran siyang tiisin ang lahat ng bagay kung mas pinahahalagahan niya ang buhay kaysa sa mga iyon.</q></p><h3>Kabanata VII. Paliwanag sa Isang Talinghaga; Ang Kasalukuyan at ang Darating na Buhay</h3><p>Sinabi ni Pedro: <q>Hindi ba, kung gayon, ang mga sinabi mong ginagawan ng di-makatarungan ay sila mismong mga lumalabag, yamang nasa kaharian sila ng iba, at hindi ba sa pag-angkin nang lampas sa nararapat nila nakuha ang lahat ng taglay nila? Samantala, ang mga inaakalang gumagawa ng di-makatarungan ay nagkakaloob ng pabor sa bawat nasasakupan ng kaaway na kaharian hanggang sa antas na pinahihintulutan nila siyang magkaroon ng ari-arian. Sapagkat ang mga ari-ariang ito ay nauukol sa mga pumili sa kasalukuyan. At mabait pa sila hanggang sa antas na pinahihintulutan nilang mabuhay ang iba. Ito, kung gayon, ang talinghaga; ngayon ay pakinggan mo ang aktuwal na katotohanan. Itinuro sa amin ng propeta ng katotohanan na nagpakita <em>sa lupa</em> na ang Manlilikha at Diyos ng lahat ay nagbigay ng dalawang kaharian sa dalawa, sa mabuti at sa masama; ipinagkaloob Niya sa masama ang paghahari sa kasalukuyang sanlibutan kasama ng kautusan, upang siya, <em>ito</em>, ay magkaroon ng karapatang parusahan ang mga gumagawa ng di-matuwid; ngunit sa mabuti ay ibinigay Niya ang darating na walang hanggan. Ngunit ginawa Niyang malaya ang bawat tao, na may kapangyarihang ibigay ang sarili sa alinmang piliin niya—sa kasalukuyang masama o sa darating na mabuti. Ang mga taong pumipili sa kasalukuyan ay may kapangyarihang maging mayaman, magpakasasa sa karangyaan, magpakalugod sa mga kasiyahan, at gawin ang anumang kaya nila. Sapagkat wala silang tataglayin sa mga darating na mabubuting bagay. Ngunit ang mga nagpasiyang tanggapin ang mga pagpapala ng darating na paghahari ay walang karapatang ituring na sarili nila ang mga bagay na naririto, yamang ang mga ito ay nauukol sa isang banyagang hari, maliban lamang sa tubig at tinapay at sa mga bagay na nakukuha sa pawis upang mapanatili ang buhay—sapagkat hindi sila pinahihintulutang magpakamatay—at isa ring kasuotan, sapagkat hindi sila pinahihintulutang maglakad nang hubad dahil sa Langit na nakakakita sa lahat.</q></p><h3>Kabanata VIII. Ang Kasalukuyan at ang Darating</h3><p><q>Kung gayon, kung nais mo ng isang tumpak na salaysay tungkol sa bagay na ito, makinig ka. Ang mga sinabi mong kani-kanina lamang na ginagawan ng di-makatarungan ay sa halip sila mismong gumagawa ng di-makatarungan; sapagkat ang mga pumili sa darating na mga pagpapala ay namumuhay kasama ng masasama sa kasalukuyang sanlibutan at nagtatamasa ng maraming bagay na katulad ng sa masasama—gaya ng mismong buhay, liwanag, tinapay, tubig, kasuotan, at iba pang katulad nito. Ngunit ang mga inaakala mong gumagawa ng di-makatarungan ay hindi mamumuhay kasama ng mabubuting tao sa darating na kapanahunan.</q> At sumagot ang aming ama: <q>Ngayon na nakumbinsi mo akong ang mga gumagawa ng di-makatarungan ay sila mismong dumaranas ng di-katarungan, samantalang ang mga dumaranas ng di-katarungan ang higit na nakikinabang, lalo pang waring sa akin ang buong bagay ay pinakadi-makatarungang kasunduan; sapagkat ang mga waring gumagawa ng di-makatarungan ay nagbibigay ng maraming bagay sa mga pumili ng darating na mga pagpapala, ngunit ang mga waring ginagawan ng di-makatarungan ay sila mismo ang gumagawa ng di-katarungan sapagkat sa kabilang sanlibutan ay hindi nila ibinibigay sa mga nagbigay sa kanila ng mga pagpapala rito ang kaparehong mga pakinabang na ibinigay sa kanila ng mga iyon.</q> At sinabi ni Pedro: <q>Hindi ito di-makatarungan, sapagkat may kapangyarihan ang bawat isa na piliin ang kasalukuyan o ang darating na mga kabutihan, maliit man o malaki. Ang pumipili ayon sa sarili niyang pasiya at kalooban ay hindi ginagawan ng di-makatarungan—ang ibig kong sabihin, kahit ang pinili niya ay ang maliit, sapagkat nasa loob din ng kanyang pagpili ang dakila, gaya ng maliit.</q> At sinabi ng aming ama: <q>Tama ka; sapagkat sinabi ng isa sa marurunong na Griyego, ‘Ang sisi ay nasa mga pumili—walang sala ang Diyos.’</q></p><h3>Kabanata IX. Ang mga Ari-arian ay mga Paglabag</h3><p><q>Maaari mo bang ipaliwanag din ang bagay na ito? Naaalala kong sinabi sa akin ni Clemente na dumaranas tayo ng mga pinsala at paghihirap para sa kapatawaran ng ating mga kasalanan.</q> Sinabi ni Pedro: <q>Lubos na tama iyon. Sapagkat tayong pumili sa darating na mga bagay, hanggang sa antas na nagtataglay tayo ng higit pang mga ari-arian kaysa sa mga ito—maging kasuotan, pagkain o inumin, o anumang ibang bagay—ay nagtataglay ng mga kasalanan, sapagkat hindi tayo dapat magkaroon ng anuman, gaya ng ipinaliwanag ko sa iyo kani-kanina lamang. Para sa ating lahat, ang mga ari-arian ay mga kasalanan. Ang pagkakait sa atin ng mga iyon, sa anumang paraang mangyari, ay pag-aalis ng mga kasalanan.</q> At sinabi ng aming ama: <q>Waring makatuwiran iyon, yamang ipinaliwanag mong ito ang dalawang hangganan ng dalawang hari at nasa kapangyarihan ng bawat isa na piliin ang anumang nais niya mula sa nasasakupan ng mga iyon. Ngunit bakit ipinadadala ang mga paghihirap, o matuwid ba nating dinaranas ang mga iyon?</q> Sinabi ni Pedro: <q>Lubos na matuwid; sapagkat yamang ang hangganan ng mga inililigtas ay, gaya ng sinabi ko, na walang sinuman ang dapat magtaglay ng anuman, ngunit marami ang maraming ari-arian—o sa ibang salita, mga kasalanan—dahil dito ang labis na pag-ibig ng Diyos ay nagpapadala ng mga paghihirap sa mga hindi kumikilos nang may kadalisayan ng puso, upang dahil may ilang sukat sila ng pag-ibig sa Diyos ay mailigtas sila sa pamamagitan ng pansamantalang mga kaparusahan mula sa walang hanggang mga kaparusahan.</q></p><h3>Kabanata X. Ang Kahirapan ay Hindi Awtomatikong Katuwiran</h3><p>At sinabi ng aming ama: <q>Paano nga ito? Hindi ba nakikita nating maraming lapastangang tao ang dukha? Kung gayon, kabilang ba sila sa mga inililigtas dahil lamang dito?</q> Sinabi ni Pedro: <q>Hindi kailanman; sapagkat hindi katanggap-tanggap ang kahirapang naghahangad ng hindi dapat hangarin. Kaya ang ilan ay mayaman ayon sa kanilang pagpili kahit dukha sa aktuwal na yaman, at pinarurusahan sila dahil nais nilang magkaroon ng higit. Hindi rin tiyak na matuwid ang isang tao dahil lamang nagkataong dukha siya. Sapagkat maaari siyang pulubi ayon sa aktuwal na yaman ngunit maaaring magnasa at gumawa pa nga ng higit sa lahat ng hindi niya dapat gawin. Kaya maaaring sumamba siya sa mga diyus-diyosan, o maging mamumusong o mapakiapid, o mamuhay nang walang pagtatangi, o manumpa nang kasinungalingan, o magsinungaling, o mamuhay bilang isang hindi naniniwala. Ngunit ipinahayag ng aming Guro na mapalad ang mahihirap na mananampalataya; at ginawa Niya iyon hindi dahil may naibigay sila, sapagkat wala silang anuman, kundi dahil hindi sila dapat hatulan na para bang nagkasala sila dahil lamang hindi sila nagbigay ng limos, yamang wala silang maibibigay.</q> At sinabi ng aming ama: <q>Sa katotohanan ay waring maayos ang lahat hinggil sa paksang tinatalakay; kaya nagpasiya akong pakinggan ang kabuuan ng iyong pangangatwiran ayon sa wastong pagkakasunod-sunod.</q></p><h3>Kabanata XI. Ipinangako ang Paglalahad ng Tunay na Relihiyon</h3><p>At sinabi ni Pedro: <q>Yamang sabik ka na ngayong matutuhan ang nauukol sa aming relihiyon, nararapat kong ipaliwanag iyon nang maayos, simula sa Diyos mismo, at ipakita na Siya lamang ang dapat nating tawaging Diyos, at hindi natin dapat tawaging mga diyos ang iba ni ituring silang gayon, at na ang kumikilos laban dito ay parurusahan nang walang hanggan bilang nagpakita ng pinakadakilang kawalang-kabanalan sa Kanya na Panginoon ng lahat.</q> At pagkasabi nito, ipinatong niya ang kanyang mga kamay sa mga pinahihirapan ng mga paghihirap, may mga karamdaman, at sinasapian ng mga demonyo; at sa pananalangin ay pinagaling niya sila at pinaalis ang karamihan. Pagkatapos ay pumasok siya sa ganitong paraan, kumain ng kanyang karaniwang pagkain, at natulog.</p>
+</section>
+
+  <hr>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishHeader = document.getElementById('englishHeader');
+  const tagalogHeader = document.getElementById('tagalogHeader');
+  const englishContent = document.getElementById('englishContent');
+  const tagalogContent = document.getElementById('tagalogContent');
+  const languageToggle = document.getElementById('languageToggle');
+
+  let currentLanguage = 'en';
+
+  function renderLanguage() {
+    const isTagalog = currentLanguage === 'tl';
+
+    englishHeader.hidden = isTagalog;
+    englishContent.hidden = isTagalog;
+
+    tagalogHeader.hidden = !isTagalog;
+    tagalogContent.hidden = !isTagalog;
+
+    languageToggle.textContent = isTagalog
+      ? 'English Version'
+      : 'Tagalog Version';
+
+    document.documentElement.lang = isTagalog ? 'tl' : 'en';
+    languageToggle.setAttribute(
+      'aria-label',
+      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
+    );
+  }
+
+  languageToggle.addEventListener('click', function () {
+    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    renderLanguage();
+  });
+
+  // Initial state only.
+  renderLanguage();
+
+})();
+</script>
+
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const zoomIn = document.getElementById('textZoomIn');
+  const zoomOut = document.getElementById('textZoomOut');
+  const zoomReset = document.getElementById('textZoomReset');
+  const zoomLabel = document.getElementById('textZoomLabel');
+
+  let scale = 1;
+  const minScale = 0.85;
+  const maxScale = 2.00;
+  const step = 0.15;
+
+  function applyTextScale() {
+    scale = Math.max(minScale, Math.min(maxScale, scale));
+    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
+    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  }
+
+  zoomIn.addEventListener('click', function () {
+    scale += step;
+    applyTextScale();
+  });
+
+  zoomOut.addEventListener('click', function () {
+    scale -= step;
+    applyTextScale();
+  });
+
+  zoomReset.addEventListener('click', function () {
+    scale = 1;
+    applyTextScale();
+  });
+
+  applyTextScale();
+})();
+</script>
+
+</body>
+</html>
