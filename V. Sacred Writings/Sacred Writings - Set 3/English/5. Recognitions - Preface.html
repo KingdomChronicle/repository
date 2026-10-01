@@ -1,279 +1,1316 @@
 <!doctype html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <title>Sacred Writings</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
 
-<link href="../../../jquery.app/sticky.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.gstatic.com/">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../../outline.css">
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous">
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
 
-<style>
-  body { background-color: #fafafa; line-height: 1.6; }
-  html, * { font-family: 'Inter'; }
-  p { font-size: 1.25rem; }
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
 
-  .language-only[hidden] {
-    display: none !important;
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
   }
-  /* MOBILE REFLOW TEXT ZOOM TEST v2 */
-  :root {
-    --reader-font-scale: 1;
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
   }
 
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
     overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
   }
 
   body {
-    box-sizing: border-box;
-  }
-
-  body > div,
-  .language-only,
-  #englishContent,
-  #tagalogContent {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
+    margin: 0;
     min-width: 0;
-  }
-
-  #englishContent p,
-  #tagalogContent p {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    font-size: calc(1.25rem * var(--reader-font-scale));
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
     line-height: 1.65;
-    white-space: normal;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
     overflow-wrap: anywhere;
-    word-break: normal;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
   }
 
-  #englishContent h2, #tagalogContent h2,
-  #englishContent h3, #tagalogContent h3 {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-  }
+  .reader-controls-placeholder { height: 0; }
 
-  img, video, iframe, table, pre {
-    max-width: 100%;
-  }
-
-  img, video {
-    height: auto;
-  }
-
-  .reader-zoom-controls {
-    position: sticky;
-    top: 0;
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
     z-index: 1000;
-    display: flex;
-    gap: .5rem;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
     width: 100%;
-    max-width: 100%;
-    padding: .5rem 0;
-    background: #fafafa;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
   }
 
-  .reader-zoom-controls button {
-    min-width: 3.2rem;
-    min-height: 2.6rem;
-    font-size: 1.05rem;
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
   }
 
-  .reader-zoom-label {
-    font-size: .9rem;
-    white-space: nowrap;
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
   }
 
-  @media (max-width: 768px) {
-    body {
-      padding: 0 .75rem;
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
     }
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
 </style>
 </head>
-
 <body>
 <div>
-
-  <!-- =========================================================
-       SINGLE-FILE ENGLISH / TAGALOG PAGE
-       IMPORTANT:
-       DocumentOutline is initialized only once.
-       Language switching only toggles the hidden attribute.
-       ========================================================= -->
-
-  <!-- ENGLISH SITE HEADER -->
-  <div id="englishHeader" class="language-only">
-    <center>
-      <h1>Sacred Writing</h1>
-      <p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
-    </center>
-  </div>
-
-  <!-- TAGALOG SITE HEADER -->
-  <div id="tagalogHeader" class="language-only" hidden>
-    <center>
-      <h1>Mga Sagradong Sulatin</h1>
-      <p class="SCQoute"><i>"Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito,<br>hindi sa kung sino ang sumulat nito."</i></p>
-    </center>
-  </div>
-
-  <!-- ONE SHARED TRANSLATION BUTTON -->
-
-  <center class="reader-zoom-controls" aria-label="Text size controls">
-  <button type="button" class="btn btn-secondary" id="textZoomOut" aria-label="Bawasan ang laki ng text">A−</button>
-  <span class="reader-zoom-label" id="textZoomLabel">Text 100%</span>
-  <button type="button" class="btn btn-secondary" id="textZoomIn" aria-label="Palakihin ang text">A+</button>
-  <button type="button" class="btn btn-secondary" id="textZoomReset" aria-label="Ibalik sa normal ang laki ng text">Reset</button>
-</center>
-  <center>
-    <button id="languageToggle"
-            type="button"
-            class="btn btn-secondary w-100"
-            aria-live="polite">
-      Tagalog Version
-    </button>
-  </center>
-
-
-
-
-  <!-- ENGLISH CONTENT -->
-  <section id="englishContent" class="language-only" data-language="en">
-    <h2>Preface</h2>
-    <p><i>“And I intreat thee also, true yoke-fellow, help those women which laboured with me in the gospel, with <b>Clement</b> also, and with other my fellowlabourers, whose names are in the book of life.” - Philippians 4:3 KJV (King James Version)</i></p>
-    <h3>Written by Rufinus of Aquileia, and addressed to Bishop Gaudentius</h3>
-    <p>To you, indeed, O Gaudentius, you choice glory of our doctors, belongs such vigour of mind, yea, such grace of the Spirit, that whatever you say even in the course of your daily preaching, whatever you deliver in the church, ought to be preserved in books, and handed down to posterity for their instruction. But we, whom slenderness of wit renders less ready, and now old age renders slow and inactive, though after many delays, yet at length present to you the work which once the virgin Sylvia of venerable memory enjoined upon us, that we should render Clement into our language, and you afterwards by hereditary right demanded of us; and thus we contribute to the use and profit of our people, no small spoil, as I think, taken from the libraries of the Greeks, so that we may feed with foreign nourishment those whom we cannot with our own. For foreign things usually seem both more pleasant, and sometimes also more profitable. In short, almost everything is foreign that brings healing to our bodies, that opposes diseases, and neutralizes poisons. For Judæa sends us <em>Lacryma balsami</em>, Crete <em>Coma dictamni</em>, Arabia her flower of spices, India reaps her crop of spikenard; which, although they reach us in a somewhat more broken condition than when they leave their native fields, yet retain entire the sweetness of their odour and their healing virtue. Receive therefore, my soul, Clement returning to you; receive him now in a Roman dress. And wonder not if haply the florid countenance of eloquence appear less in him than usual. It matters not, provided the sense tastes the same. Therefore we transport foreign merchandise into our country with much labour. And I know not with how grateful countenances my countrymen welcome me, bringing to them the rich spoils of Greece, and unlocking hidden treasures of wisdom with the key of our language. But may God grant your prayers, that no unlucky eye nor any livid aspect may meet us, lest, by an extreme kind of prodigy, while those from whom he is taken do not envy, yet those upon whom he is bestowed should repine. Truly it is right to point out the plan of our translation to you, who have read these works also in Greek, lest haply in some parts you may think the order of translation not kept. I suppose you are aware that there are two editions in Greek of this work of Clement — the ᾿Αναγνώσεις, that is, <em>Recognitions;</em> and that there are two collections of books, differing in some points, but in many <em>containing</em> the same narrative. In short, the last part of this work, in which is the relation concerning the transformation of Simon, is contained in one of the collections, but is not at all in the other. There are also in both collections some dissertations concerning the Unbegotten God and the Begotten, and on some other subjects, which, to say nothing more, are beyond our comprehension. These, therefore, as being beyond our powers, I have chosen to reserve for others, rather than to produce in an imperfect state. But in the rest, we have given our endeavour, so far as we could, not to vary either from the sentiments or even from the language and modes of expression; and this, although it renders the style of the narrative less ornate, yet it makes it more faithful. The epistle in which the same Clement, writing to James the Lord's brother, informs him of the death of Peter, and that he had left him his successor in his chair and teaching, and in which also the whole subject of church order is treated, I have not prefixed to this work, both because it is of later date, and because I have already translated and published it. But I do not think it out of place to explain here what in that letter will perhaps seem to some to be inconsistent. For some ask, Since Linus and Cletus were bishops in the city of Rome before this Clement, how could Clement himself, writing to James, say that the chair of teaching was handed over to him by Peter? Now of this we have heard this explanation, that Linus and Cletus were indeed bishops in the city of Rome before Clement, but during the lifetime of Peter: that is, that they undertook the care of the episcopate, and that he fulfilled the office of apostleship; as is found also to have been the case at Cæsarea, where, when he himself was present, he yet had Zacchæus, ordained by himself, as bishop. And in this way both statements will appear to be true, both that these bishops are reckoned before Clement, and yet that Clement received the teacher's seat on the death of Peter. But now let us see how Clement, writing to James the Lord's brother, begins his narrative.</p>
-  </section>
-
-  <!-- TAGALOG CONTENT -->
-  <section id="tagalogContent" class="language-only" data-language="tl" hidden>
-    <h2>Preface</h2>
-    <p><i>“At ikaw, aking tapat na kasama, tulungan mo ang mga babaing ito. Sila'y kasama kong naglingkod sa pagpapalaganap ng Magandang Balita, kasama ni <b>Clemente</b> at ng iba ko pang mga kamanggagawa na ang mga pangalan ay nakasulat sa aklat ng buhay.” - Filipos 4:3 MBB (Magandang Balita Biblia)</i></p>
-    <h3>Isinulat ni Rufinus ng Aquileia, at inihandog kay Obispo Gaudentius</h3>
-    <p>Sa iyo nga, O Gaudentius, ikaw na natatanging karangalan ng ating mga guro, ay taglay ang gayong sigla ng pag-iisip, oo, ang gayong biyaya ng Espiritu, na anuman ang sabihin mo maging sa karaniwan mong pang-araw-araw na pangangaral, anuman ang ituro mo sa iglesia, ay nararapat na maingatan sa mga aklat at maipamana sa mga susunod na salinlahi upang sila'y maturuan. Ngunit kami, na dahil sa kakulangan ng talas ng isip ay hindi gaanong mabilis gumawa, at ngayo'y pinabagal at pinahina pa ng katandaan, matapos ang maraming pagkaantala, ay sa wakas inihaharap sa iyo ang gawaing minsang ipinagbilin sa amin ng birheng si Sylvia, na kagalang-galang ang alaala: na isalin namin si Clemente sa ating wika. Pagkatapos, dahil sa karapatang minana mo, hiniling mo rin ito sa amin; at sa ganitong paraan ay nakapag-aambag kami para sa kapakinabangan at ikabubuti ng ating mga kababayan ng, sa palagay ko, hindi maliit na kayamanang kinuha mula sa mga aklatan ng mga Griyego, upang mapakain namin sa pagkaing mula sa iba ang mga hindi namin mapakain mula sa sarili naming panustos. Sapagkat ang mga bagay na mula sa ibang lupain ay karaniwang waring higit na kaaya-aya, at kung minsan ay higit ding kapaki-pakinabang. Sa madaling salita, halos lahat ng nagbibigay ng kagalingan sa ating katawan, lumalaban sa mga karamdaman, at pumapawi sa bisa ng mga lason ay nagmumula sa ibang lupain. Sapagkat ipinadadala sa atin ng Judea ang <em>Lacryma balsami</em>, ng Creta ang <em>Coma dictamni</em>, ng Arabia ang kanyang bulaklak ng mga sangkap na mabango, at inaani naman ng India ang kanyang pananim na nardo; at bagaman dumarating sa atin ang mga ito na medyo mas sira kaysa noong umalis sila sa kanilang sariling lupain, nananatili pa ring buo ang tamis ng kanilang halimuyak at ang bisa ng kanilang pagpapagaling. Kaya tanggapin mo, mahal kong kaibigan, si Clemente na nagbabalik sa iyo; tanggapin mo siya ngayon na nakadamit Romano. At huwag kang magtaka kung sakaling ang karaniwang maningning na anyo ng kanyang pananalita ay hindi gaanong makita sa kanya. Hindi iyon mahalaga, basta't nananatiling pareho ang lasa ng diwa nito. Kaya naman, sa kabila ng matinding pagsisikap, dinadala namin sa ating bayan ang mga kalakal mula sa ibang lupain. At hindi ko alam kung gaano kasayang sasalubungin ako ng aking mga kababayan habang dinadala ko sa kanila ang mayamang kayamanan ng Grecia at binubuksan ang mga nakatagong kayamanan ng karunungan sa pamamagitan ng susi ng ating wika. Ngunit nawa'y ipagkaloob ng Diyos, dahil sa iyong mga panalangin, na walang masamang mata ni mapanibughuing tingin ang sumalubong sa amin, upang hindi mangyari ang isang lubhang kakatwang kabalintunaan: na samantalang hindi naiinggit ang mga taong pinagmulan ng bagay na ito, ang mga pinagkalooban naman nito ang siyang maghinanakit. Tunay na nararapat kong ipaliwanag sa iyo ang paraan ng aming pagsasalin, yamang nabasa mo rin ang mga akdang ito sa Griyego, upang hindi mo isipin na sa ilang bahagi ay hindi namin sinunod ang pagkakasunod-sunod sa pagsasalin. Sa palagay ko'y alam mo na may dalawang edisyon sa Griyego ng akdang ito ni Clemente—ang ᾿Αναγνώσεις, samakatuwid ay ang <em>Recognitions;</em> at may dalawang kalipunan ng mga aklat na nagkakaiba sa ilang bagay ngunit sa maraming bahagi ay <em>naglalaman</em> ng iisang salaysay. Sa madaling salita, ang huling bahagi ng akdang ito, kung saan isinasalaysay ang tungkol sa pagbabago ng anyo ni Simon, ay matatagpuan sa isa sa mga kalipunan ngunit wala naman sa kabila. Mayroon ding ilang pagtalakay sa dalawang kalipunan tungkol sa Diyos na Hindi Ipinanganak at sa Ipinanganak, at tungkol sa ilan pang mga paksa na, sa madaling salita, ay lampas sa aming kakayahang maunawaan. Kaya dahil ang mga ito ay lampas sa aming kakayahan, minabuti kong ipaubaya ang mga iyon sa iba kaysa ilabas ang mga ito nang hindi ganap. Ngunit sa iba pang bahagi, ginawa namin ang lahat ng aming makakaya upang, hangga't maaari, hindi lumihis maging sa mga kaisipan o maging sa wika at paraan ng pagpapahayag; at bagaman dahil dito ay hindi gaanong maringal ang estilo ng salaysay, nagiging higit naman itong tapat sa orihinal. Ang liham kung saan ang mismong si Clemente, sa pagsulat kay Santiago na kapatid ng Panginoon, ay ipinabatid sa kanya ang pagkamatay ni Pedro at na iniwan siya ni Pedro bilang kahalili sa kanyang luklukan at pagtuturo, at kung saan tinatalakay rin ang buong usapin tungkol sa kaayusan ng iglesia, ay hindi ko inilagay sa unahan ng akdang ito, kapwa dahil mas huli itong isinulat at dahil naisalin at nailathala ko na ito. Ngunit sa palagay ko'y hindi naman wala sa lugar na ipaliwanag dito ang isang bagay sa liham na iyon na maaaring isipin ng ilan na hindi magkakatugma. Sapagkat itinatanong ng ilan: Yamang sina Linus at Cletus ay mga obispo sa lungsod ng Roma bago si Clemente, paano nasabi mismo ni Clemente, nang sumulat siya kay Santiago, na ipinagkatiwala sa kanya ni Pedro ang luklukan ng pagtuturo? Tungkol dito, narinig namin ang ganitong paliwanag: na sina Linus at Cletus ay tunay ngang mga obispo sa lungsod ng Roma bago si Clemente, ngunit noong nabubuhay pa si Pedro; ibig sabihin, sila ang nangasiwa sa tungkulin ng pagkaobispo, samantalang ginagampanan naman ni Pedro ang tungkulin ng pagkaapostol. Ganito rin ang makikitang nangyari sa Cesarea, kung saan, kahit naroon mismo si Pedro, si Zaqueo, na siya mismo ang nag-orden, ang nagsilbing obispo. Sa ganitong paraan, kapwa lumilitaw na totoo ang dalawang pahayag: na ang mga obispong ito ay ibinibilang na nauna kay Clemente, at gayundin na tinanggap ni Clemente ang luklukan ng guro nang mamatay si Pedro. Ngunit ngayon ay tingnan natin kung paano sinimulan ni Clemente ang kanyang salaysay nang sumulat siya kay Santiago na kapatid ng Panginoon.</p>
-  </section>
-
-  <hr>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect">
+<option value="">Chapter</option>
+</select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
 </div>
-
-<script src="../../../DocumentOutline.js"></script>
-
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView">
+<div class="sacred-heading">
+<h1 class="sacred-title">Sacred Writing</h1>
+<p class="SCQoute">"Every writings must be evaluated based on the truths they contain."</p>
+</div>
+<h2>Preface</h2>
+<p><i>“And I intreat thee also, true yoke-fellow, help those women which laboured with me in the gospel, with <b>Clement</b> also, and with other my fellowlabourers, whose names are in the book of life.” - Philippians 4:3 KJV (King James Version)</i></p>
+<h3>Written by Rufinus of Aquileia, and addressed to Bishop Gaudentius</h3>
+<p>To you, indeed, O Gaudentius, you choice glory of our doctors, belongs such vigour of mind, yea, such grace of the Spirit, that whatever you say even in the course of your daily preaching, whatever you deliver in the church, ought to be preserved in books, and handed down to posterity for their instruction. But we, whom slenderness of wit renders less ready, and now old age renders slow and inactive, though after many delays, yet at length present to you the work which once the virgin Sylvia of venerable memory enjoined upon us, that we should render Clement into our language, and you afterwards by hereditary right demanded of us; and thus we contribute to the use and profit of our people, no small spoil, as I think, taken from the libraries of the Greeks, so that we may feed with foreign nourishment those whom we cannot with our own.</p>
+<p>For foreign things usually seem both more pleasant, and sometimes also more profitable. In short, almost everything is foreign that brings healing to our bodies, that opposes diseases, and neutralizes poisons. For Judæa sends us <em>Lacryma balsami</em>, Crete <em>Coma dictamni</em>, Arabia her flower of spices, India reaps her crop of spikenard; which, although they reach us in a somewhat more broken condition than when they leave their native fields, yet retain entire the sweetness of their odour and their healing virtue.</p>
+<p>Receive therefore, my soul, Clement returning to you; receive him now in a Roman dress. And wonder not if haply the florid countenance of eloquence appear less in him than usual. It matters not, provided the sense tastes the same. Therefore we transport foreign merchandise into our country with much labour. And I know not with how grateful countenances my countrymen welcome me, bringing to them the rich spoils of Greece, and unlocking hidden treasures of wisdom with the key of our language. But may God grant your prayers, that no unlucky eye nor any livid aspect may meet us, lest, by an extreme kind of prodigy, while those from whom he is taken do not envy, yet those upon whom he is bestowed should repine.</p>
+<p>Truly it is right to point out the plan of our translation to you, who have read these works also in Greek, lest haply in some parts you may think the order of translation not kept. I suppose you are aware that there are two editions in Greek of this work of Clement — the ᾿Αναγνώσεις, that is, <em>Recognitions;</em> and that there are two collections of books, differing in some points, but in many <em>containing</em> the same narrative. In short, the last part of this work, in which is the relation concerning the transformation of Simon, is contained in one of the collections, but is not at all in the other.</p>
+<p>There are also in both collections some dissertations concerning the Unbegotten God and the Begotten, and on some other subjects, which, to say nothing more, are beyond our comprehension. These, therefore, as being beyond our powers, I have chosen to reserve for others, rather than to produce in an imperfect state. But in the rest, we have given our endeavour, so far as we could, not to vary either from the sentiments or even from the language and modes of expression; and this, although it renders the style of the narrative less ornate, yet it makes it more faithful.</p>
+<p>The epistle in which the same Clement, writing to James the Lord's brother, informs him of the death of Peter, and that he had left him his successor in his chair and teaching, and in which also the whole subject of church order is treated, I have not prefixed to this work, both because it is of later date, and because I have already translated and published it. But I do not think it out of place to explain here what in that letter will perhaps seem to some to be inconsistent. For some ask, Since Linus and Cletus were bishops in the city of Rome before this Clement, how could Clement himself, writing to James, say that the chair of teaching was handed over to him by Peter?</p>
+<p>Now of this we have heard this explanation, that Linus and Cletus were indeed bishops in the city of Rome before Clement, but during the lifetime of Peter: that is, that they undertook the care of the episcopate, and that he fulfilled the office of apostleship; as is found also to have been the case at Cæsarea, where, when he himself was present, he yet had Zacchæus, ordained by himself, as bishop. And in this way both statements will appear to be true, both that these bishops are reckoned before Clement, and yet that Clement received the teacher's seat on the death of Peter. But now let us see how Clement, writing to James the Lord's brother, begins his narrative.</p>
+</section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView">
+<div class="sacred-heading">
+<h1 class="sacred-title">Mga Sagradong Sulatin</h1>
+<p class="SCQoute">“Ang lahat ng sulatin ay dapat suriin batay sa mga katotohanang taglay nito.”</p>
+</div>
+<h2>Preface</h2>
+<p><em>“At nakikiusap din ako sa iyo, tapat kong kasama, tulungan mo ang mga babaing iyon na nagpagal kasama ko sa ebanghelyo, kasama rin si <b>Clemente</b> at ang iba ko pang mga kamanggagawa, na ang mga pangalan ay nasa aklat ng buhay.” — Filipos 4:3 KJV (King James Version)</em></p>
+<h3>Isinulat ni Rufinus ng Aquileia, at inihandog kay Obispo Gaudentius</h3>
+<p>Sa iyo, O Gaudentius—ikaw na natatanging karangalan ng ating mga guro—naroon ang gayong sigla ng isip, oo, ang gayong biyaya ng Espiritu, na anuman ang sabihin mo, maging sa karaniwang takbo ng iyong araw-araw na pangangaral, at anuman ang ituro mo sa iglesia, ay nararapat maingatan sa mga aklat at maipamana sa mga susunod na salinlahi upang sila’y maturuan. Kami naman, na dahil sa kapos na talino ay hindi gaanong handa at ngayo’y lalo pang pinabagal at pinahina ng katandaan, ay sa wakas—matapos ang maraming pagkaantala—inihahandog sa iyo ang gawaing minsang ipinagbilin sa amin ng birheng si Sylvia, na kagalang-galang ang alaala: na isalin namin si Clemente sa ating wika. Pagkaraan, hiningi mo rin ito sa amin bilang karapatang minana mo. Sa ganitong paraan, sa palagay ko, nakapag-aambag kami sa pakinabang ng ating mga kababayan ng hindi maliit na samsam mula sa mga aklatan ng mga Griyego, upang mapakain namin ng pagkaing mula sa ibang lupain ang mga hindi namin kayang pakainin mula sa sarili nating panustos.</p>
+<p>Karaniwan ngang mas kaaya-aya ang mga bagay na galing sa ibang lupain, at kung minsan ay mas kapaki-pakinabang pa. Sa katunayan, halos lahat ng ginagamit upang pagalingin ang ating katawan, labanan ang mga sakit, at pawalang-bisa ang mga lason ay nagmumula sa ibang lupain. Mula sa Judea ay dumarating sa atin ang <em>Lacryma balsami</em>; mula sa Creta, ang <em>Coma dictamni</em>; mula sa Arabia, ang bulaklak ng mga pabango nito; at mula sa India, ang ani nitong nardo. Bagaman dumarating sa atin ang mga ito na medyo mas napinsala kaysa noong lisanin nila ang sarili nilang lupain, nananatiling buo ang tamis ng kanilang halimuyak at ang bisa nilang magpagaling.</p>
+<p>Kaya, O kaluluwa ko, tanggapin mo si Clemente sa kanyang pagbabalik sa iyo; tanggapin mo siya ngayon na nakadamit Romano. Huwag kang magtaka kung sakaling hindi na gaanong maringal ang mabulaklak na anyo ng kanyang pananalita. Hindi iyon mahalaga, basta nananatili ang parehong lasa ng diwa. Sa malaking pagpapagal namin dinadala sa ating bayan ang mga kalakal mula sa ibang lupain. Hindi ko alam kung gaano kasayang sasalubungin ako ng aking mga kababayan habang dala ko sa kanila ang mayamang samsam ng Grecia at binubuksan ang mga nakatagong kayamanan ng karunungan sa pamamagitan ng susi ng ating wika. Ngunit nawa’y ipagkaloob ng Diyos, bilang tugon sa iyong mga panalangin, na walang masamang mata ni mapanibughuing mukha ang sumalubong sa amin; baka mangyari ang isang lubhang kakatwang kabalintunaan: na ang mga Griyegong pinagkunan natin kay Clemente ay hindi naiinggit, ngunit ang mga kababayan nating pinagkalooban natin ng kanyang salin ang siya pang maghinanakit.</p>
+<p>Talagang nararapat kong ipaliwanag sa iyo ang paraan ng aming pagsasalin, yamang nabasa mo rin ang mga akdang ito sa Griyego, upang hindi mo isipin na sa ilang bahagi ay hindi namin sinunod ang pagkakasunud-sunod ng salin. Alam mo marahil na may dalawang edisyong Griyego ng akdang ito ni Clemente—ang ᾿Αναγνώσεις, ibig sabihin, <em>Recognitions</em>—at may dalawang kalipunan ng mga aklat na nagkakaiba sa ilang punto ngunit sa maraming bahagi ay <em>iisa ang salaysay</em>. Halimbawa, ang huling bahagi ng akdang ito, na nagsasalaysay tungkol sa pagbabagong-anyo ni Simon, ay nasa isa sa mga kalipunan ngunit wala sa kabila.</p>
+<p>Mayroon ding sa dalawang kalipunan na ilang pagtalakay tungkol sa Diyos na Hindi Ipinanganak at sa Ipinanganak, at tungkol sa iba pang mga paksa na, sa madaling salita, ay lampas sa aming pagkaunawa. Dahil hindi iyon kaya ng aming kakayahan, minabuti kong ipaubaya ang mga bahaging iyon sa iba kaysa ilabas ang mga ito nang hindi ganap. Sa iba pang bahagi, ginawa namin ang lahat ng aming makakaya upang huwag lumihis sa mga kaisipan, ni maging sa wika at paraan ng pagpapahayag ng orihinal. Bagaman dahil dito ay hindi gaanong maringal ang estilo ng salaysay, nagiging higit naman itong tapat.</p>
+<p>Ang liham kung saan si Clemente mismo, sa pagsulat kay Santiago na kapatid ng Panginoon, ay ipinababatid ang pagkamatay ni Pedro at na iniwan siya ni Pedro bilang kahalili sa kanyang luklukan at pagtuturo, at kung saan tinatalakay din ang buong usapin ng kaayusan ng iglesia, ay hindi ko inilagay sa unahan ng akdang ito. Dalawa ang dahilan: mas huli itong naisulat, at naisalin at nailathala ko na rin ito. Gayunman, hindi yata wala sa lugar na ipaliwanag dito ang isang bagay sa liham na iyon na maaaring magmukhang salungat sa ilan. Itinatanong ng ilan: kung sina Linus at Cletus ay naging mga obispo sa lungsod ng Roma bago si Clemente, paano nasabi ni Clemente mismo, sa pagsulat kay Santiago, na ipinagkaloob sa kanya ni Pedro ang luklukan ng pagtuturo?</p>
+<p>Narinig namin ang ganitong paliwanag: tunay ngang naging mga obispo sa lungsod ng Roma sina Linus at Cletus bago si Clemente, ngunit habang buhay pa si Pedro. Ibig sabihin, sila ang nangasiwa sa pagkaobispo, samantalang ginampanan ni Pedro ang tungkulin ng pagkaapostol. Ganiyan din ang makikitang nangyari sa Cesarea: kahit naroon mismo si Pedro, si Zaqueo, na siya mismo ang nagtalaga, ang nanunungkulan bilang obispo. Sa ganitong paraan, kapwa nagiging totoo ang dalawang pahayag: na ibinibilang sina Linus at Cletus na mga obispong nauna kay Clemente, at gayunman ay tinanggap ni Clemente ang luklukan ng guro pagkamatay ni Pedro. Ngayon naman, tingnan natin kung paano sinisimulan ni Clemente ang kanyang salaysay sa liham niya kay Santiago na kapatid ng Panginoon.</p>
+</section>
+<hr/>
+</div>
 <script>
 (function () {
   'use strict';
 
-  const englishHeader = document.getElementById('englishHeader');
-  const tagalogHeader = document.getElementById('tagalogHeader');
-  const englishContent = document.getElementById('englishContent');
-  const tagalogContent = document.getElementById('tagalogContent');
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
   const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
 
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
   let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
 
-  function renderLanguage() {
-    const isTagalog = currentLanguage === 'tl';
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
 
-    englishHeader.hidden = isTagalog;
-    englishContent.hidden = isTagalog;
-
-    tagalogHeader.hidden = !isTagalog;
-    tagalogContent.hidden = !isTagalog;
-
-    languageToggle.textContent = isTagalog
-      ? 'English Version'
-      : 'Tagalog Version';
-
-    document.documentElement.lang = isTagalog ? 'tl' : 'en';
-    languageToggle.setAttribute(
-      'aria-label',
-      isTagalog ? 'Switch to English Version' : 'Lumipat sa Tagalog Version'
-    );
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
   }
 
-  languageToggle.addEventListener('click', function () {
-    currentLanguage = currentLanguage === 'en' ? 'tl' : 'en';
-    renderLanguage();
-  });
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
 
-  // Initial state only.
-  renderLanguage();
-
-  // IMPORTANT: initialize the old site's outline script only once.
-  // Recreating DocumentOutline during every language switch can repeatedly
-  // modify the DOM and eventually cause content to disappear.
-  if (typeof DocumentOutline !== 'undefined') {
-    try {
-      window.sacredWritingsOutline = new DocumentOutline();
-    } catch (error) {
-      console.warn('Document outline initialization skipped:', error);
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
     }
   }
-})();
-</script>
 
-
-<script>
-(function () {
-  const root = document.documentElement;
-  const zoomIn = document.getElementById('textZoomIn');
-  const zoomOut = document.getElementById('textZoomOut');
-  const zoomReset = document.getElementById('textZoomReset');
-  const zoomLabel = document.getElementById('textZoomLabel');
-
-  let scale = 1;
-  const minScale = 0.85;
-  const maxScale = 2.00;
-  const step = 0.15;
-
-  function applyTextScale() {
-    scale = Math.max(minScale, Math.min(maxScale, scale));
-    root.style.setProperty('--reader-font-scale', scale.toFixed(2));
-    zoomLabel.textContent = 'Text ' + Math.round(scale * 100) + '%';
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
   }
 
-  zoomIn.addEventListener('click', function () {
-    scale += step;
-    applyTextScale();
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+\d+/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+\d+/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
   });
 
-  zoomOut.addEventListener('click', function () {
-    scale -= step;
-    applyTextScale();
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
   });
 
-  zoomReset.addEventListener('click', function () {
-    scale = 1;
-    applyTextScale();
-  });
-
-  applyTextScale();
+  measureToolbarOrigin();
 })();
 </script>
-
 </body>
 </html>
