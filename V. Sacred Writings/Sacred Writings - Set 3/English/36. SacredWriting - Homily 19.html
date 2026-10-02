@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 19</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Simon Undertakes to Prove that the Creator of the World is Not Blameless</option><option value="1">Chapter II. The Existence of the Devil Affirmed</option><option value="2">Chapter III. Peter Refuses to Discuss Certain Questions in Regard to the Devil</option><option value="3">Chapter IV. Suppositions in Regard to the Devil's Origin</option><option value="4">Chapter V. God Not Deserving of Blame in Permitting the Existence of the Devil</option><option value="5">Chapter VI. Peter Accuses Simon of Being Worse Than the Devil</option><option value="6">Chapter VII. Peter Suspects Simon of Not Believing Even in a God</option><option value="7">Chapter VIII. Peter Undertakes to Discuss the Devil's Origin</option><option value="8">Chapter IX. Theories in Regard to the Origin of the Devil</option><option value="9">Chapter X. The Absolute God Entirely Incomprehensible by Man</option><option value="10">Chapter XI. The Application of the Attributes of Man to God</option><option value="11">Chapter XII. God Produced the Wicked One, But Not Evil</option><option value="12">Chapter XIII. God the Maker of the Devil</option><option value="13">Chapter XIV. Is Matter Eternal?</option><option value="14">Chapter XV. Sin the Cause of Evil</option><option value="15">Chapter XVI. Why the Wicked One is Entrusted with Power</option><option value="16">Chapter XVII. The Devil Has Not Equal Power with God</option><option value="17">Chapter XVIII. Is the Devil a Relation?</option><option value="18">Chapter XIX. Some Actions Really Wicked</option><option value="19">Chapter XX. Pain and Death the Result of Sin</option><option value="20">Chapter XXI. The Uses of Lust, Anger, Grief</option><option value="21">Chapter XXII. Sins of Ignorance</option><option value="22">Chapter XXIII. The Inequalities of Lot in Human Life</option><option value="23">Chapter XXIV. Simon Rebuked by Faustus</option><option value="24">Chapter XXV. Simon Retires; Sophonias Asks Peter to State His Real Opinions in Regard to Evil</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Simon Undertakes to Prove that the Creator of the World is Not Blameless</h3><p>The next day Peter came forth earlier than usual; and seeing Simon with many others waiting for him, he saluted the multitude, and began to discourse. But no sooner did he begin than Simon interrupted him, and said: <q>Pass by these long introductions of yours, and answer directly the questions I put to you. Since I perceive that you (as I know from what I heard at the beginning, that you have no other purpose, than by every contrivance to show that the Creator himself is alone the blameless God),—since, as I said, I perceive that you have such a decided desire to maintain this, that you venture to declare to be false some portions of the Scriptures that clearly speak against him, for this reason I have determined today to prove that it is impossible that he, being the Creator of all, should be blameless. But thus proof I can now begin, if you reply to the questions which I put to you.</q></p><h3>Chapter II. The Existence of the Devil Affirmed</h3><p><q>Do you maintain that there is any prince of evil or not? For if you say that there is not, I can prove to you from many statements, and those too of your teacher, that there is; but if you honestly allow that the evil one exists, then I shall speak in accordance with this belief.</q> And Peter said: <q>It is impossible for me to deny the assertion of my Teacher. Wherefore I allow that the evil one exists, because my Teacher, who spoke the truth in all things, has frequently asserted that he exists. For instance, then, he acknowledges that he conversed with Him, and tempted Him for forty days. And I know that He has said somewhere else, 'If Satan casts out Satan, he is divided against himself: how then is his kingdom to stand?' And He pointed out that He saw the evil one like lightning falling down from heaven. And elsewhere He said, 'He who sowed the bad seed is the devil.' And again, 'Give no pretext to the evil one.' Moreover, in giving advice, He said, 'Let your yea be yea, and your nay nay; for what is more than these is of the evil one.' Also, in the prayer which He delivered to us, we have it said, 'Deliver us from the evil one.' And in another place, He promised that He would say to those who are impious, 'Go into outer darkness, which the Father prepared for the devil and his angels.' And not to prolong this statement further, I know that my Teacher often said that there is an evil one. Wherefore I also agree in thinking that he exists. If, then, in future you have anything to say in accordance with this belief, say it, as you promised.</q></p><h3>Chapter III. Peter Refuses to Discuss Certain Questions in Regard to the Devil</h3><p>And Simon said: <q>Since, then, you have honestly confessed, on the testimony of the Scriptures, that the evil one exists, state to us how he has come into existence, if indeed he has come into existence, and by whom, and why.</q> And Peter said: <q>Pardon me, Simon, if I do not dare to affirm what has not been written. But if you say that it has been written, prove it. But if, since it has not been written, you cannot prove it, why should we run risk in stating our opinions in regard to what has not been written? For if we discourse too daringly in regard to God, it is either because we do not believe that we shall be judged, or that we shall be judged only in respect to that which we do, but not also in regard to what we believe and speak.</q> But Simon, understanding that Peter referred to his own madness, said: <q>Permit me to run the risk; but do not you make what you assert to be blasphemy a pretext for retiring. For I perceive that you wish to withdraw, in order that you may escape refutation before the masses, sometimes as if you were afraid to listen to blasphemies, and at other times by maintaining that, as nothing has been written as to how, and by whom, and why the evil one came into existence, we ought not to dare to assert more than the Scripture. Wherefore also as a pious man you affirm this only, that he exists. But by these contrivances you deceive yourself, not knowing that, if it is blasphemy to inquire accurately regarding the evil one, the blame rests with me, the accuser, and not with you, the defender of God. And if the subject inquired into is not in Scripture, and on this account you do not wish to inquire into it, there are some satisfactory methods which can prove to you what is sought not less effectively than the Scriptures. For instance, must it not be the case that the evil one, who you assert exists, is either originated or unoriginated?</q></p><h3>Chapter IV. Suppositions in Regard to the Devil's Origin</h3><p>And Peter said: <q>It must be so.</q> And Simon: <q>Therefore, if he is originated, he has been made by that very God who made all things, being either born as an animal, or sent forth substantially, and resulting from an external mixture <em>of elements</em>. For either the matter, being living or lifeless, from which he was made was outside of Him, or he came into being through God Himself, or through his own self, or he resulted from things non-existent, or he is a mere relative thing, or he always existed. Having thus, as I think, clearly, pointed out all the possible ways by which we may find him, in going along some one of these we must find him. We must therefore go along each one of these in search of his origin; and when we find him who is his author, we must perceive that he is to blame. Or how does the matter seem to you?</q></p><h3>Chapter V. God Not Deserving of Blame in Permitting the Existence of the Devil</h3><p>And Peter said: <q>It is my opinion that, even if it be evident that he was made by God, the Creator who made him should not be blamed; for it might perchance be found that the service he performs was an absolute necessity. But if, on the other hand, it should be proved that he was not created, inasmuch as he existed for ever, not even is the Creator to be blamed in this respect, since He is better than all <em>others</em>, even if He has not been able to put an end to a being who had no beginning, because his nature did not admit of it; or if, being able, He does not make away with him, deeming it unjust to put an end to that which did not receive a beginning, and pardoning that which was by nature wicked, because he could not have become anything else, even if he were to wish to do so. But if, wishing to do good, He is not able, even in this case He is good in that He has the will, though He has not the power; and while He has not the power, He is yet the most powerful of all, in that the power is not left to another. But if there is some other that is able, and yet does not accomplish it, it must be allowed that, in so far as, being able, he does not accomplish it, he is wicked in not putting an end to him, as if he took pleasure in the deeds done by him. But if not even he is able, then he is better who, though unable, is yet not unwilling to benefit us according to his ability.</q></p><h3>Chapter VI. Peter Accuses Simon of Being Worse Than the Devil</h3><p>And Simon said: <q>When you have discussed all the subjects which I have laid before you, I shall show you the cause of evil. Then I shall also reply to what you have now said, and prove that that God whom you affirm to be blameless is blameable.</q> And Peter said: <q>Since I perceive from what you say at the commencement that you are striving after nothing else than to subject God, as being the author of evil, to blame, I have resolved to go along with you all the ways you like, and to prove that God is entirely free from blame.</q> And Simon said: <q>You say this as loving God, whom you suppose you know; but you are not right.</q> And Peter said: <q>But you, as being wicked, and hating God whom you have not known, utter blasphemous words.</q> And Simon said: <q>Remember that you have likened me to the author of evil.</q> And Peter said: <q>I confess it, I was wrong in comparing you to the evil one; for I was compelled to do so, because I have not found one who is your equal, or worse than you. For this reason I likened you to the evil one; for you happen to be much more wicked than the author of evil. For no one can prove that the evil one spoke against God; but all of us who are present see you speaking daringly against Him.</q> And Simon said: <q>He who seeks the truth ought not to gratify any one in any respect contrary to what is really true. For why does he make the inquiry at all? Why, I ask? For I am not also able, laying aside the accurate investigation of things, to spend all my time in the praise of that God whom I do not know.</q></p><h3>Chapter VII. Peter Suspects Simon of Not Believing Even in a God</h3><p>And Peter said: <q>You are not so blessed as to praise Him, nor indeed can you do such a good deed as this; for then you would be full of Him. For thus said our Teacher, who always spoke the truth: 'Out of the abundance of the heart the mouth speaks.' Whence you, abounding in evil purposes, through ignorance speak against the only good God. And not yet suffering what you deserve to suffer for the words which you have dared to utter, you either imagine that there will be no judgment, or perchance you think that there is not even a God. Whence, not comprehending such long-suffering as His, you are moving on to still greater madness.</q> And Simon said: <q>Do not imagine that you will frighten me into not investigating the truth of your examples. For I am so eager for the truth, that for its sake I will not shrink from undergoing danger. If, then, you have anything to say in regard to the propositions made by me at the commencement, say it now.</q></p><h3>Chapter VIII. Peter Undertakes to Discuss the Devil's Origin</h3><p>And Peter said: <q>Since you compel us, after we have made accurate investigations into the contrivances of God, to venture to state them, and that, too, to men who are not able to comprehend thoroughly the contrivances of their fellow-men, for the sake at least of those who are present, I, instead of remaining silent—a course which would be most pious—shall discuss the subjects of which you wish me to speak. I agree with you in believing that there is a prince of evil, of whose origin the Scripture has ventured to say nothing either true or false. But let us follow out the inquiry in many ways, as to how he has come into existence, if it is the fact that he has come into existence; and of the opinions which present themselves, let us select that which is most reverential, since in the case of probable opinions, that one is assumed with confidence which <em>is based on the principle</em> that we ought to attribute to God that which is more reverential; and all the more so, if, when all other suppositions are removed, there still remains one which is adequate and involves less danger. But I promise you, before I proceed with the investigation, that every method in the investigation can show that God alone is blameless.</q></p><h3>Chapter IX. Theories in Regard to the Origin of the Devil</h3><p><q>But, as you said, if the evil one is created either he has been begotten as an animal, or he has been sent forth substantially by Him, or he has been compounded externally, or his will has arisen through composition; or it happened that he came into existence from things non-existent, without composition and the will of God; or he has been made by God from that which in no manner and nowhere exists; or the matter, being lifeless or living, from which he has arisen was outside of God; or he fashioned himself, or he was made by God, or he is a relative thing, or he ever existed: for we cannot say that he does not exist, since we have agreed in thinking that he does exist.</q> And Simon said: <q>Well have you distinguished all the methods of accounting for his existence in a summary manner. Now it is my part to examine these various ideas, and to show that the Creator is blameable. But it is your business to prove, as you promised, that he is free from all blame. But I wonder if you will be able. For, first, if the devil has been begotten from God as an animal, the vice which is his is accordingly the same as that of him who sends him forth.</q> And Peter said: <q>Not at all. For we see many men who are good the fathers of wicked children, and others who are wicked the fathers of good children, and others again who are wicked producing both good <em>and wicked</em> children, and others who are good having both wicked and good children. For instance, the first man who was created produced the unrighteous Cain and the righteous Abel.</q> To this Simon said: <q>You are acting foolishly, in using human examples when discoursing about God.</q> And Peter said: <q>Speak you, then, to us about God without using human examples, and yet so that what you say can be understood; but you are not able to do so.</q></p><h3>Chapter X. The Absolute God Entirely Incomprehensible by Man</h3><p><q>For instance, then, what did you say in the beginning? If the wicked one has been begotten of God, being of the same substance as He, then God is wicked. But when I showed you, from the example which you yourself adduced, that wicked beings come from good, and good from wicked, you did not admit the argument, for you said that the example was a human one. Wherefore I now do not admit that the term 'being begotten' can be used with reference to God; for it is characteristic of man, and not of God, to beget. Not only so; but God cannot be good or evil, just or unjust. Nor indeed can He have intelligence, or life, or any of the other attributes which can exist in man; for all these are peculiar to man. And if we must not, in our investigations in regard to God, give Him the good attributes which belong to man, it is not possible for us to have any thought or make any statement in regard to God; but all we can do is to investigate One point alone,—namely, what is His will which He has Himself allowed us to apprehend, in order that, being judged, we might be without excuse in regard to those laws which we have not observed, though we knew them.</q></p><h3>Chapter XI. The Application of the Attributes of Man to God</h3><p>And Simon, hearing this, said: <q>You will not force me through shame to remain silent in regard to His substance, and to inquire into His will alone. For it is possible both to think and to speak of His substance. I mean from the good attributes that belong to man. For instance, life and death are attributes of man; but death is not an attribute of God, but life, and eternal life. Furthermore, men may be both evil and good; but God can be only incomparably good. And, not to prolong the subject too much, the better attributes of man are eternal attributes of God.</q> And Peter said: <q>Tell me, Simon, is it an attribute of man to beget evil and good, and to do evil and good?</q> And Simon said: <q>It is.</q> And Peter said: <q>Since you made this assertion, we must assign the better attributes of man to God; and so, while men beget evil and good, God can beget good only; and while men do evil and good, God rejoices only in doing good. Thus, with regard <em>to God</em>, we must either not predicate any of the attributes of man and be silent, or it is reasonable that we should assign the best of the good attributes to Him. And thus He alone is the cause of all good things.</q></p><h3>Chapter XII. God Produced the Wicked One, But Not Evil</h3><p>And Simon said: <q>If, then, God is the cause only of what is good, what else can we think than that some other principle begot the evil one; or is evil unbegotten?</q> And Peter said: <q>No other power begot the wicked one, nor is evil unbegotten, as I shall show in the conclusion; for now my object is to prove, as I promised in the commencement, that God is blameless in every respect. We have granted, then, that God possesses in an incomparable way the better attributes that belong to men. Wherefore also it is possible for Him to have been the producer of the four substances,—heat, I mean, and cold, moist and dry. These, as being at first simple and unmixed, were naturally indifferent in their desire; but being produced by God, and mixed externally, they would naturally become a living being, possessing the free choice to destroy those who are evil. And thus, since all things have been begotten from Him, the wicked one is from no other source. Nor has he derived his evil from the God who has created all things (with whom it is impossible that evil should exist), because the substances were produced by Him in a state of indifference, and carefully separated from each other; and when they were externally blended through his art, there arose through volition the desire for the destruction of the evil ones. But the good cannot be destroyed by the evil that arose, even though it should wish to do so: for it exercises its power only against those who sin. Ignorant, then, of the character of each, he makes his attempt against him, and convicting him, he punishes him.</q> And Simon said: <q>God being able to mingle the elements, and to make His mixtures so as to produce any dispositions that He may wish, why did He not make the composition of each such as that it would prefer what is good?</q></p><h3>Chapter XIII. God the Maker of the Devil</h3><p>And Peter said: <q>Now indeed our object is to show how and by whom the evil one came into being, since he did come into being; but we shall show if he came into being blamelessly, when we have finished the subject now in hand. Then I shall show how and on account of what he came into being, and I shall fully convince you that his Creator is blameless. We said, then, that the four substances were produced by God. And thus, through the volition of Him who mingled them, arose, as He wished, the choice of evils. For if it had arisen contrary to His determination, or from some other substance or cause, then God would not have had firmness of will: for perchance, even though He should not wish it, leaders of evil might continually arise, who would war against His wishes. But it is impossible that this should be the case. For no living being, and especially one capable of giving guidance, can arise from accident: for everything that is produced must be produced by some one.</q></p><h3>Chapter XIV. Is Matter Eternal?</h3><p>And Simon said: <q>But what if matter, being coeval with Him, and possessing equal power, produces as His foe leaders who hinder His wishes?</q> And Peter said: <q>If matter is eternal, then it is the foe of no one: for that which exists for ever is impassible, and what is impassible is blessed; but what is blessed cannot be receptive of hatred, since, on account of its eternal creation, it does not fear that it will be deprived of anything. But how does not matter rather love the Creator, when it evidently sends forth its fruits to nourish all who are made by Him? And how does it not fear Him as superior, as trembling through earthquakes it confesses, and as, though its billows ran high, yet, when the Teacher was sailing on it and commanded a calm, it immediately obeyed and became still? What! Did not the demons go out through fear and respect for Him, and others of them desired to enter into swine; but they first entreated Him before going, plainly because they had no power to enter even into swine without His permission?</q></p><h3>Chapter XV. Sin the Cause of Evil</h3><p>And Simon said: <q>But what if, being lifeless, it possesses a nature capable of producing what is evil and what is good?</q> And Peter said: <q>According to this statement, it is neither good nor evil, because it does not act by free choice, being lifeless and insensible. Wherefore it is possible to perceive distinctly in this matter, how, being lifeless, it produces as if it were living; and being insensible, it yet plainly fashions artistic shapes both in animals and plants.</q> And Simon said: <q>What! If God Himself gave it life, is not He, then, the cause of the evils which it produces?</q> And Peter said: <q>If God gave it life according to His own will, then it is His Spirit that produces it, and no longer is it anything hostile to God, or of equal power with Him; or it is impossible that everything made by Him is made according as He wishes. But you will say, He Himself is the cause of evil, since He Himself produces the evils through it. What sort, then, are the evils of which you speak? Poisonous serpents and deadly plants, or demons, or any other of those things that can disturb men?—which things would not have been injurious had not man sinned, for which reason death came in. For if man were sinless, the poison of serpents would have no effect, nor the activities of injurious plants, nor would there be the disturbances of demons, nor would man naturally have any other suffering; but losing his immortality on account of his sin, he has become, as I said, capable of every suffering. But if you say, Why, then, was the nature of man made at the beginning capable of death? I tell you, because of free-will; for if we were not capable of death, we could not, as being immortal, be punished on account of our voluntary sin. And thus, on account of our freedom from suffering, righteousness would be still more weakened if we were wicked by choice; for those who should have evil purposes could not be punished, on account of their being incapable of suffering. </q></p><h3>Chapter XVI. Why the Wicked One is Entrusted with Power</h3><p>And Simon said to this: <q>I have one thing more to say in regard to the wicked one. Assuredly, since God made him out of nothing, he is in this respect wicked, especially since he was able to make him good, by giving him at his creation a nature in no way capable of selecting wickedness.</q> And Peter said: <q>The statement that He created him out of nothing, with a power of choice, is like the statement we have made above, that, having made such a constitution as can rejoice in evils, He Himself appears to be the cause of what took place. But since there is one explanation of both statements, we shall show afterwards why it was that He made him rejoice in the destruction of the wicked.</q> And Simon said: <q>If he made the angels also voluntary agents, and the wicked one departed from a state of righteousness, why has he been honoured with a post of command? Is it not plain that he who thus honoured him takes pleasure in the wicked, in that he has thus honoured him?</q> And Peter said: <q>If God set him by law, when he rebelled, to rule over those who were like him, ordering him to inflict punishment on those who sin, He is not unjust. But if it be the case that He has honoured him even after his revolt, He who honoured him saw beforehand his usefulness; for the honour is temporary, and it is right that the wicked should be ruled by the wicked one, and that sinners should be punished by him.</q></p><h3>Chapter XVII. The Devil Has Not Equal Power with God</h3><p>And Simon said: <q>If, then, he exists for ever, is not the fact of the sole government <em>of God</em> thus destroyed, since there is another power, namely, that concerned with matter, which rules along with Him?</q> And Peter said: <q>If they are different in their substances, they are different also in their powers, and the superior rules the inferior. But if they are of the same substance, then they are equal in power, and they are in like manner good or bad. But it is plain that they are not equal in power; for the Creator put matter into that shape of a world into which He willed to put it. Is it then at all possible to maintain that it always existed, being a substance; and is not matter, as it were, the storehouse of God? For it is not possible to maintain that there was a time when God possessed nothing, but He always was the only ruler of it. Wherefore also He is an eternal sole ruler; and on this account it would justly be said to belong to Him who exists, and rules, and is <em>eternal</em>.</q> And Simon said: <q>What then? Did the wicked one make himself? And was God good in such a way, that, knowing he would be the cause of evil, he yet did not destroy him at his origination, when he could have been destroyed, as not yet being perfectly made? For if he came into being suddenly and complete, then on that account he is at war with the Creator, as having come suddenly into being, possessed of equal power with him.</q></p><h3>Chapter XVIII. Is the Devil a Relation?</h3><p>And Peter said: <q>What you state is impossible; for if he came into existence by degrees, He could have cut him off as a foe by His own free choice. And knowing beforehand that he was coming into existence, He would not have allowed him as a good, had He not known that by reason of him what was useful was being brought into existence. And he could not have come into existence suddenly, complete, of his own power. For he who did not exist could not fashion himself; and he neither could become complete out of nothing, nor could any one justly say that he had substance, so as always to be equal in power if he were begotten.</q> And Simon said: <q>Is he then a mere relation, and in this way wicked? —being injurious, as water is injurious to fire, but good for the seasonably thirsty land; as iron is good for the cultivation of the land, but bad for murders; and lust is not evil in respect of marriage, but bad in respect of adultery; as murder is an evil, but good for the murderer so far as his purpose is concerned; and cheating is an evil, but pleasant to the man who cheats; and other things of a like character are good and bad in like manner. In this way, neither is evil, nor good; for the one produces the other. For does not that which seems to be done injuriously rejoice the doer, but punish the sufferer? And though it seems unjust that a man should, out of self-love, gratify himself by every means in his power, to whom, on the other hand, does it not seem unjust that a man should suffer severe punishments at the hand of a just judge for having loved himself?</q></p><h3>Chapter XIX. Some Actions Really Wicked</h3><p>And Peter said: <q>A man ought to punish himself through self-restraint, when his lust wishes to hurry on to the injury of another, knowing <em>that</em> the wicked one can destroy the wicked, for he has received power over them from the beginning. And not yet is this an evil to those who have done evil; but that their souls should remain punished after the destruction, you are right in thinking to be really harsh, though the man who has been fore-ordained for evil should say that it is right. Wherefore, as I said, we ought to avoid doing injury to another for the sake of a short lived pleasure, that we may not involve ourselves in eternal punishment for the sake of a little pleasure.</q> And Simon said: <q>Is it the case, then, that there is nothing either bad or good by nature, but the difference arises through law and custom? <em>For is it not</em> the habit of the Persians to marry their own mothers, sisters and daughters, while marriage with other women is prohibited as most barbarous? Wherefore, if it is not settled what things are evil, it is not possible for all to look forward to the judgment of God.</q> And Peter said: <q>This cannot hold; for it is plain to all that cohabitation with mothers is abominable, even though the Persians, who are a mere fraction of the whole, should under the effects of a bad custom fail to see the iniquity of their abominable conduct. Thus also the Britons publicly cohabit in the sight of all, and are not ashamed; and some men eat the flesh of others, and feel no disgust; and others eat the flesh of dogs; and others practice other unmentionable deeds. Thus, then we ought not to form our judgments with a perception which through habit has been perverted from its natural action. For to be murdered is an evil, even if all were to deny it; for no one wishes to suffer it himself, and in the case of theft no one rejoices at his own punishment. If, then, no one were at all ever to confess that these are sins, it is right even then to look forward of necessity to a judgment in regard to sins.</q> When Peter said this, Simon answered: <q>Does this, then, seem to you to be the truth in regard to the wicked one? Tell me.</q></p><h3>Chapter XX. Pain and Death the Result of Sin</h3><p>And Peter said: <q>We remember that our Lord and Teacher, commanding us, said, 'Keep the mysteries for me and the sons of my house.' Wherefore also He explained to His disciples privately the mysteries of the kingdom of heaven. But to you who do battle with us, and examine into nothing else but our statements, whether they be true or false, it would be impious to state the hidden <em>truths</em>. But that none of the bystanders may imagine that I am contriving excuses, because I am unable to reply to the assertions made by you, I shall answer you by first putting the question, If there had been a state of painlessness, what is the meaning of the statement, 'The evil one was?'</q> And Simon said: <q>The words have no meaning.</q> And Peter: <q>Is then evil the same as pain and death?</q> And Simon: <q>It seems so.</q> And Peter said: <q>Evil, then, does not exist always, yea, it cannot even exist at all substantially; for pain and death belong to the class of accidents, neither of which can co-exist with abiding strength. For what is pain but the interruption of harmony? And what is death but the separation of soul from body? There is therefore no pain when there is harmony. For death does not even at all belong to those things which substantially exist: for death is nothing, as I said, but the separation of soul from body; and when this takes place, the body, which is by nature incapable of sensation, is dissolved; but the soul, being capable of sensation, remains in life and exists substantially. Hence, when there is harmony there is no pain, no death, no, not even deadly plants nor poisonous reptiles, nor anything of such a nature that its end is death. And hence, where immortality reigns, all things will appear to have been made with reason. And this will be the case when, on account of righteousness, man becomes immortal through the prevalence of the peaceful reign of Christ, when his composition will be so well arranged as not <em>to give rise</em> to sharp impulses; and his knowledge, moreover, will be unerring, so as that he shall not <em>mistake</em> evil for good; and he will suffer no pain, so that he will not be mortal.</q></p><h3>Chapter XXI. The Uses of Lust, Anger, Grief</h3><p>And Simon said: <q>You were right in saying this; but in the present world does not man seem to you to be capable of every kind of affection,—as, for instance, of lust, anger, grief, and the like?</q> And Peter said: <q>Yes, these belong to the things that are accidental, not to those that always exist, and it will be found that they now occur with advantage to the soul. For lust has, by the will of Him who created all things well, been made to arise within the living being, that, led by it to intercourse, he may increase humanity, from a selection of which a multitude of superior beings arise who are fit for eternal life. But if it were not for lust, no one would trouble himself with intercourse with his wife; but now, for the sake of pleasure, and, as it were, gratifying himself, man carries out His will. Now, if a man uses lust for lawful marriage, he does not act impiously; but if he rushes to adultery, he acts impiously, and he is punished because he makes a bad use of a good ordinance. And in the same way, anger has been made by God to be lighted up naturally within us, in order that we may be induced by it to ward off injuries. Yet if any one indulges it without restraint, he acts unjustly; but if he uses it within due bounds, he does what is right. Moreover, we are capable of grief, that we may be moved with sympathy at the death of relatives, of a wife, or children, or brothers, or parents, or friends, or some others, since, if we were not capable of sympathy, we should be inhuman. In like manner, all the other affections will be found to be adapted for us, if at least the reason for their existence be considered.</q></p><h3>Chapter XXII. Sins of Ignorance</h3><p>And Simon: <q>Why is it, then, that some die prematurely, and periodical diseases arise; and that there are, moreover, attacks of demons, and of madness, and all other kinds of afflictions which can greatly punish?</q> And Peter said: <q>Because men, following their own pleasure in all things, cohabit without observing the proper times; and thus the deposition of seed, taking place unseasonably, naturally produces a multitude of evils. For they ought to reflect, that as a season has been fixed suitable for planting and sowing, so days have been appointed as appropriate for cohabitation, which are carefully to be observed. Accordingly some one well instructed in the doctrines taught by Moses, finding fault with the people for their sins, called them sons of the new moons and the sabbaths. Yet in the beginning of the world men lived long, and had no diseases. But when through carelessness they neglected the observation of the proper times, then the sons in succession cohabiting through ignorance at times when they ought not, place their children under innumerable afflictions. Whence our Teacher, when we inquired of Him in regard to the man who was blind from his birth, and recovered his sight, if this man sinned, or his parents, that he should be born blind, answered, 'Neither did he sin at all, nor his parents, but that the power of God might be made manifest through him in healing the sins of ignorance.' And, in truth, such afflictions arise because of ignorance; as, for instance, by not knowing when one ought to cohabit with his wife, as if she be pure from her discharge. Now the afflictions which you mentioned before are the result of ignorance, and not, assuredly, of any wickedness that has been perpetrated. Moreover, give me the man who sins not, and I will show you the man who suffers not; and you will find that he not only does not allow himself, but that he is able to heal others. For instance, Moses, on account of his piety, continued free from suffering all his life, and by his prayers he healed the Egyptians when they suffered on account of their sins.</q></p><h3>Chapter XXIII. The Inequalities of Lot in Human Life</h3><p>And Simon said: <q>Let me grant that this is the case: does not the inequality of lot amongst men seem to you most unjust? For one is in penury, another is rich; one is sick, another is in good health: and there are innumerable differences of a like character in human life.</q> And Peter said: <q>Do you not perceive, Simon, that you are again shooting your observations beyond the mark? For while we were discussing evil, you have made a digression, and introduced the question of the anomalies that appear in this world. But I shall speak even to this point. The world is an instrument artistically contrived, that for the male who is to exist eternally, the female may bear eternal righteous sons. Now they could not have been rendered perfectly pious here, had there been no needy ones for them to help. In like manner there are the sick, that they may have objects for their care. And the other afflictions admit of a like explanation.</q> And Simon said: <q>Are not those in humble circumstances unfortunate? For they are subjected to distress, that others may be made righteous.</q> And Peter said: <q>If their humiliation were eternal, their misfortune would be very great. But the humiliations and exaltations of men take place according to lot; and he who is not pleased with his lot can appeal, and by trying his case according to law, he can exchange his mode of life for another.</q> And Simon said: <q>What do you mean by this lot and this appeal?</q> And Peter said: <q>You are now demanding the exposition of another topic; but if you permit me, we can show you how, being born again, and changing your origin, and living according to law, you will obtain eternal salvation.</q></p><h3>Chapter XXIV. Simon Rebuked by Faustus</h3><p>And Simon hearing this, said: <q>Do not imagine that, when I, while questioning you, agreed with you in each topic, I went to the next, as being fully assured of the truth of the previous; but I appeared to yield to your ignorance, that you might go on to the next topic, in order that, becoming acquainted with the whole range of your ignorance, I might condemn you, not through mere conjecture, but from full knowledge. Allow me now to retire for three days, and I shall come back and show that you know nothing.</q> When Simon said this, and was on the point of going out, my father said: <q>Listen to me, Simon, for a moment, and then go wherever you like. I remember that in the beginning, before the discussion, you accused me of being prejudiced, though as yet you had no experience of me. But now, having heard you discuss in turn, and judging that Peter has the advantage, and now assigning to him the merit of speaking the truth, do I appear to you to judge correctly, and with knowledge; or is it not so? For if you should say that I have judged correctly, but do not agree, then you are plainly prejudiced, inasmuch as you do not wish to agree, after confessing your defeat. But if I was not correct in maintaining that Peter has the advantage in the discussion, do you convince us how we have not judged correctly, or you will cease to discuss with him before all, since you will always be defeated and agree, and in consequence your own soul will suffer pain, condemned as you will be, and in disgrace, through your own conscience, even if you do not feel shame before all the listeners as the greatest torture; for we have seen you conquered, in fact, and we have heard your own lips confess it. Finally, therefore, I am of opinion that you will not return to the discussion, as you promised; but that you may seem not to have been defeated, you have promised, when going away, that you will return.</q></p><h3>Chapter XXV. Simon Retires; Sophonias Asks Peter to State His Real Opinions in Regard to Evil</h3><p>And Simon hearing this, gnashed his teeth for rage, and went away in silence. But Peter (for a considerable portion of the day still remained) laid his hands on the large multitude to heal them; and having dismissed them, went into the house with his more intimate friends, and sat down. And one of his attendants, of the name of Sophonias, said: <q>Blessed is God, O Peter, who selected you and instructed you for the comfort of the good. For, in truth, you discussed with Simon with dignity and great patience. But we beg of you to discourse to us of evil; for we expect that you will state to us your own genuine belief in regard to it,—not, however at the present moment, but tomorrow, if it seems good to you: for we spare you, because of the fatigue you feel on account of your discussion.</q> And Peter said: <q>I wish you to know, that he who does anything with pleasure, finds rest in the very toils themselves; but he who does not do what he wishes, is rendered exceedingly weary by the very rest he takes. Wherefore you confer on me a great rest when you make me discourse on topics which please me.</q> Content, then, with his disposition, and sparing him on account of his fatigue, we requested him to put the discussion off till the night, when it was his custom to discourse to his genuine friends. And partaking of salt, we turned to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Sinikap ni Simon na Patunayang Hindi Walang-Sala ang Manlilikha ng Sanlibutan</h3><p>Kinabukasan ay lumabas si Pedro nang mas maaga kaysa karaniwan; at nang makita niyang naghihintay sa kanya si Simon kasama ng marami pang iba, binati niya ang karamihan at nagsimulang magsalita. Ngunit halos kasisimula pa lamang niya nang putulin siya ni Simon at sabihin: <q>Laktawan mo na ang mahahaba mong pambungad at sagutin nang tuwiran ang mga tanong ko. Yamang nakikita ko—at nalalaman ko rin mula sa narinig ko sa simula—na wala kang ibang layunin kundi ipakita sa lahat ng paraan na ang Manlilikha mismo ang tanging Diyos na walang sala; yamang, gaya ng sinabi ko, nakikita kong gayon katatag ang hangarin mong panindigan ito na nangangahas kang tawaging huwad ang ilang bahagi ng mga Kasulatang malinaw na nagsasalita laban sa Kanya, dahil dito ay nagpasiya akong patunayan ngayong araw na imposibleng Siya, bilang Manlilikha ng lahat, ay maging walang sala. Ngunit masisimulan ko lamang ang patunay na ito kung sasagutin mo ang mga tanong na ihaharap ko sa iyo.</q></p><h3>Kabanata II. Pinagtibay ang Pag-iral ng Diyablo</h3><p><q>Pinaninindigan mo bang may isang pinuno ng kasamaan o wala? Sapagkat kung sasabihin mong wala, mapatutunayan ko sa iyo mula sa maraming pahayag—at maging mula sa mga salita ng iyong guro—na mayroon. Ngunit kung tapat mong aaminin na umiiral ang masama, magsasalita ako ayon sa paniniwalang iyon.</q> Sinabi ni Pedro: <q>Imposible kong itanggi ang pahayag ng aking Guro. Kaya inaamin kong umiiral ang masama, sapagkat ang aking Guro, na nagsalita ng katotohanan sa lahat ng bagay, ay madalas na nagpahayag na umiiral siya. Halimbawa, kinilala Niyang nakipag-usap siya sa Kanya at tinukso Siya sa loob ng apatnapung araw. At alam kong sinabi Niya sa ibang lugar, ‘Kung pinalalayas ni Satanas si Satanas, nahahati siya laban sa kanyang sarili; paano kung gayon mananatili ang kanyang kaharian?’ Ipinahayag din Niyang nakita Niya ang masama na parang kidlat na bumabagsak mula sa langit. At sa ibang lugar ay sinabi Niya, ‘Ang naghasik ng masamang binhi ay ang diyablo.’ At muli, ‘Huwag kayong magbigay ng pagkakataon sa masama.’ Sa pagbibigay ng payo ay sinabi rin Niya, ‘Ang inyong oo ay maging oo at ang inyong hindi ay maging hindi; sapagkat ang higit pa rito ay mula sa masama.’ At sa panalanging ibinigay Niya sa amin ay sinasabing, ‘Iligtas Mo kami mula sa masama.’ Sa isa pang lugar ay ipinangako Niyang sasabihin sa mga di-maka-Diyos, ‘Humayo kayo sa panlabas na kadiliman na inihanda ng Ama para sa diyablo at sa kanyang mga anghel.’ At upang hindi na pahabain pa ang pahayag, alam kong madalas sabihin ng aking Guro na may isang masama. Kaya sumasang-ayon akong umiiral siya. Kung mayroon ka ngayong masasabi ayon sa paniniwalang ito, sabihin mo, gaya ng ipinangako mo.</q></p><h3>Kabanata III. Tumanggi si Pedro na Talakayin ang Ilang Tanong tungkol sa Diyablo</h3><p>At sinabi ni Simon: <q>Yamang tapat mong inamin, ayon sa patotoo ng mga Kasulatan, na umiiral ang masama, sabihin mo sa amin kung paano siya nagsimulang umiral—kung siya nga’y nagsimulang umiral—at sa pamamagitan nino, at bakit.</q> Sinabi ni Pedro: <q>Patawarin mo ako, Simon, kung hindi ako mangangahas magpatibay ng hindi nasusulat. Ngunit kung sinasabi mong nasusulat iyon, patunayan mo. At kung hindi mo mapatutunayan sapagkat hindi nasusulat, bakit natin ilalagay sa panganib ang ating sarili sa pagsasabi ng sariling palagay tungkol sa hindi nasusulat? Sapagkat kung magsasalita tayo nang napakapangahas tungkol sa Diyos, alinman sa hindi tayo naniniwalang hahatulan tayo, o iniisip nating hahatulan lamang tayo sa ating ginagawa at hindi rin sa ating pinaniniwalaan at sinasabi.</q> Ngunit nang maunawaan ni Simon na ang kanyang sariling kahibangan ang tinutukoy ni Pedro, sinabi niya: <q>Hayaan mong ako ang sumuong sa panganib; ngunit huwag mong gawing dahilan sa pag-urong ang tinatawag mong kalapastanganan. Nakikita kong nais mong umiwas upang makatakas sa pagpapabulaan sa harap ng mga tao—minsan sa pagkukunwaring natatakot kang makarinig ng mga kalapastanganan, at kung minsan sa pagsasabing, yamang walang nasusulat kung paano, sa pamamagitan nino, at bakit nagsimulang umiral ang masama, hindi tayo dapat mangahas magsabi nang higit sa Kasulatan. Kaya bilang isang maka-Diyos na tao ay ito lamang ang pinagtitibay mo: na umiiral siya. Ngunit sa ganitong mga paraan ay nililinlang mo ang iyong sarili. Hindi mo nauunawaang kung kalapastanganang siyasatin nang masusi ang tungkol sa masama, nasa akin, na nag-aakusa, ang sisi at hindi sa iyo na nagtatanggol sa Diyos. At kung wala sa Kasulatan ang tinatanong kaya ayaw mong saliksikin, may mga kasiya-siyang paraan upang patunayan ang hinahanap na hindi gaanong mabisa kaysa sa mga Kasulatan. Halimbawa, hindi ba kailangang ang masamang pinaninindigan mong umiiral ay alinman sa nagkaroon ng pinagmulan o walang pinagmulan?</q></p><h3>Kabanata IV. Mga Palagay tungkol sa Pinagmulan ng Diyablo</h3><p>Sinabi ni Pedro: <q>Kailangang gayon nga.</q> Sinabi ni Simon: <q>Kung gayon, kung siya’y nagkaroon ng pinagmulan, ginawa siya ng mismong Diyos na gumawa ng lahat ng bagay—alinman sa ipinanganak na gaya ng isang hayop, inilabas bilang isang hiwalay na sangkap, o nabuo mula sa panlabas na paghahalo <em>ng mga elemento</em>. Sapagkat alinman sa ang materyang pinagmulan niya—buhay man o walang buhay—ay nasa labas ng Diyos; o nagsimula siyang umiral sa pamamagitan ng Diyos mismo; o sa pamamagitan ng sarili niya; o nagmula siya sa mga bagay na hindi umiiral; o isa lamang siyang bagay na umiiral dahil sa ugnayan; o lagi na siyang umiiral. Yamang, sa palagay ko, malinaw kong naisaad ang lahat ng posibleng paraan upang matukoy natin siya, kailangang sa pagsunod sa isa sa mga iyon ay matagpuan natin siya. Kaya dapat nating siyasatin ang bawat isa upang malaman ang kanyang pinagmulan; at kapag natagpuan natin kung sino ang may-akda niya, mauunawaan nating siya ang dapat sisihin. O ano ang palagay mo rito?</q></p><h3>Kabanata V. Hindi Nararapat Sisihin ang Diyos sa Pagpapahintulot na Umiral ang Diyablo</h3><p>Sinabi ni Pedro: <q>Sa palagay ko, kahit maliwanag na siya’y ginawa ng Diyos, hindi dapat sisihin ang Manlilikha na gumawa sa kanya; sapagkat maaaring mapatunayang lubos na kinakailangan ang paglilingkod na ginagawa niya. Ngunit kung mapatunayang hindi siya nilikha sapagkat lagi na siyang umiiral, hindi rin dapat sisihin ang Manlilikha dahil dito, yamang Siya’y higit na mabuti kaysa sa lahat ng <em>iba</em>, kahit hindi Niya kayang wakasan ang isang nilalang na walang simula dahil hindi ipinahihintulot iyon ng kalikasan nito; o kung kaya Niya ngunit hindi Niya winawakasan, marahil ay itinuturing Niyang di-makatarungang wakasan ang hindi tumanggap ng simula at pinatatawad ang likas na masama sapagkat hindi ito maaaring maging iba kahit gustuhin pa nito. Ngunit kung nais Niyang gumawa ng mabuti ngunit hindi Niya kaya, maging sa ganitong kalagayan ay mabuti Siya dahil taglay Niya ang kalooban kahit wala ang kapangyarihan; at bagaman wala sa Kanya ang gayong kapangyarihan, Siya pa rin ang pinakamakapangyarihan sa lahat, sapagkat wala rin iyon sa iba. Ngunit kung may ibang may kakayahan at hindi ginagawa iyon, dapat amining sa sukat na kaya niya ngunit hindi niya ginagawa, masama siya dahil hindi niya winawakasan ang masama na para bang nalulugod siya sa mga gawa nito. At kung hindi rin kaya ng iba, mas mabuti pa rin Siya na bagaman hindi kaya ay hindi naman ayaw tumulong sa atin ayon sa Kanyang kakayahan.</q></p><h3>Kabanata VI. Inakusahan ni Pedro si Simon na Mas Masama pa Kaysa sa Diyablo</h3><p>Sinabi ni Simon: <q>Kapag natalakay mo na ang lahat ng paksang inilatag ko, ipapakita ko sa iyo ang sanhi ng kasamaan. Saka ko rin sasagutin ang sinabi mo ngayon at patutunayang ang Diyos na sinasabi mong walang sala ay may sala.</q> Sinabi ni Pedro: <q>Yamang nakikita ko mula sa sinabi mo sa simula na wala kang ibang pinagsisikapang gawin kundi ipataw sa Diyos ang sisi bilang may-akda ng kasamaan, nagpasiya akong sundan ka sa lahat ng paraang nais mo at patunayang ang Diyos ay lubusang walang sala.</q> Sinabi ni Simon: <q>Sinasabi mo iyan dahil iniibig mo ang Diyos na inaakala mong nakikilala mo, ngunit hindi ka tama.</q> Sinabi ni Pedro: <q>Ikaw naman, dahil masama ka at napopoot sa Diyos na hindi mo nakikilala, ay bumibigkas ng mga salitang lumalapastangan.</q> Sinabi ni Simon: <q>Tandaan mong inihambing mo ako sa may-akda ng kasamaan.</q> Sinabi ni Pedro: <q>Inaamin kong nagkamali ako sa paghahambing sa iyo sa masama; napilitan lamang akong gawin iyon dahil wala akong natagpuang kapantay mo o mas masama pa sa iyo. Kaya inihambing kita sa masama; ngunit lumalabas na higit kang masama kaysa sa may-akda ng kasamaan. Sapagkat walang makapagpapatunay na nagsalita ang masama laban sa Diyos; ngunit kaming lahat na naririto ay nakikita kang buong tapang na nagsasalita laban sa Kanya.</q> Sinabi ni Simon: <q>Ang naghahanap ng katotohanan ay hindi dapat magbigay-lugod kaninuman sa anumang paraang salungat sa tunay na katotohanan. Sapagkat bakit pa siya magsisiyasat? Bakit, tanong ko? Hindi ko rin kayang isantabi ang masusing pagsisiyasat sa mga bagay at ubusin ang lahat ng aking panahon sa pagpupuri sa Diyos na hindi ko naman nakikilala.</q></p><h3>Kabanata VII. Pinaghinalaan ni Pedro na Hindi Naniniwala si Simon Maging sa Diyos</h3><p>Sinabi ni Pedro: <q>Hindi ka gayon kapalad upang purihin Siya, ni kaya mong gumawa ng gayong mabuting gawa; sapagkat kung gayon ay mapupuno ka Niya. Sapagkat ganito ang sinabi ng ating Guro na laging nagsasalita ng katotohanan: ‘Mula sa kasaganaan ng puso ay nagsasalita ang bibig.’ Kaya ikaw, na punô ng masasamang layunin, ay dahil sa kamangmangan ay nagsasalita laban sa tanging mabuting Diyos. At dahil hindi mo pa dinaranas ang nararapat mong danasin sa mga salitang buong tapang mong binigkas, alinman sa iniisip mong walang magiging paghuhukom, o marahil ay iniisip mong wala man lamang Diyos. Kaya sa hindi pag-unawa sa gayong pagtitiis Niya, lalo ka pang sumusulong sa higit na kahibangan.</q> Sinabi ni Simon: <q>Huwag mong isipin na matatakot mo ako upang huwag siyasatin ang katotohanan ng iyong mga halimbawa. Gayon ako kasabik sa katotohanan na alang-alang dito ay hindi ako uurong kahit sa panganib. Kaya kung mayroon kang masasabi tungkol sa mga panukalang inilatag ko sa simula, sabihin mo ngayon.</q></p><h3>Kabanata VIII. Sinimulan ni Pedro na Talakayin ang Pinagmulan ng Diyablo</h3><p>Sinabi ni Pedro: <q>Yamang pinipilit mo kaming, matapos ang masusing pagsisiyasat sa mga kaayusan ng Diyos, ay mangahas magsalita tungkol sa mga iyon—at gawin pa ito sa harap ng mga taong hindi man lamang lubusang nakauunawa sa mga kaayusan ng kapwa tao—alang-alang sa mga naririto, sa halip na manatiling tahimik, na siyang pinaka-maka-Diyos sanang gawin, tatalakayin ko ang mga paksang nais mong marinig. Sumasang-ayon akong may isang pinuno ng kasamaan, na tungkol sa kanyang pinagmulan ay walang pinangahasang sabihin ang Kasulatan, totoo man o huwad. Ngunit sundan natin ang pagsisiyasat sa maraming paraan kung paano siya nagsimulang umiral, kung tunay na nagsimula nga siyang umiral; at mula sa mga palagay na lumilitaw ay piliin natin ang pinaka-magalang sa Diyos, sapagkat sa mga palagay na malamang ngunit hindi tiyak, may katuwirang tanggapin nang may pagtitiwala yaong <em>nakabatay sa simulain</em> na dapat nating iukol sa Diyos ang higit na magalang na palagay; lalo na kung, matapos alisin ang lahat ng ibang palagay, may isang natitira na sapat at may mas kaunting panganib. Ngunit bago ko ipagpatuloy ang pagsisiyasat, ipinapangako kong sa bawat paraang susuriin natin ay maipakikitang ang Diyos lamang ang lubusang walang sala.</q></p><h3>Kabanata IX. Mga Teorya tungkol sa Pinagmulan ng Diyablo</h3><p><q>Ngunit, gaya ng sinabi mo, kung nilikha ang masama, alinman sa ipinanganak siya na gaya ng isang hayop, o inilabas Niya bilang isang hiwalay na sangkap, o nabuo sa panlabas na paghahalo, o lumitaw ang kanyang kalooban sa pamamagitan ng pagkakabuo; o nangyaring nagsimula siyang umiral mula sa mga bagay na hindi umiiral, nang walang paghahalo at nang hindi kalooban ng Diyos; o ginawa siya ng Diyos mula sa bagay na sa anumang paraan at saanman ay hindi umiiral; o ang materyang pinagmulan niya—walang buhay man o buhay—ay nasa labas ng Diyos; o hinubog niya ang sarili niya, o ginawa siya ng Diyos, o isa lamang siyang bagay na umiiral dahil sa ugnayan, o lagi na siyang umiiral. Sapagkat hindi natin masasabi na hindi siya umiiral, yamang nagkasundo na tayong iniisip na umiiral siya.</q> Sinabi ni Simon: <q>Mahusay mong ibinuod at pinag-iba ang lahat ng paraan ng pagpapaliwanag sa kanyang pag-iral. Ngayon ay tungkulin kong suriin ang iba’t ibang palagay na ito at ipakitang may sala ang Manlilikha. Tungkulin mo namang patunayan, gaya ng ipinangako mo, na Siya’y malaya sa lahat ng sisi. Ngunit nagtataka ako kung magagawa mo. Sapagkat una, kung ang diyablo ay ipinanganak mula sa Diyos gaya ng isang hayop, ang kasamaang nasa kanya ay magiging kapareho ng sa nagsilang sa kanya.</q> Sinabi ni Pedro: <q>Hindi gayon. Sapagkat nakikita nating maraming mabubuting lalaki ang nagiging ama ng masasamang anak, at maraming masasamang lalaki ang nagiging ama ng mabubuting anak; at may masasamang ama ring nagkakaroon ng kapwa mabuti <em>at masamang</em> mga anak, at mga mabuting ama na nagkakaroon din ng kapwa masama at mabuting mga anak. Halimbawa, ang unang taong nilikha ay nagkaanak ng di-matuwid na si Cain at ng matuwid na si Abel.</q> Sinabi ni Simon: <q>Hangalan ang ginagawa mo sa paggamit ng mga halimbawang pantao habang nagsasalita tungkol sa Diyos.</q> Sinabi ni Pedro: <q>Kung gayon, magsalita ka sa amin tungkol sa Diyos nang hindi gumagamit ng mga halimbawang pantao at gawin mo pa ring nauunawaan ang iyong sinasabi—ngunit hindi mo magagawa.</q></p><h3>Kabanata X. Ang Ganap na Diyos ay Lubusang Hindi Mauunawaan ng Tao</h3><p><q>Halimbawa, ano ang sinabi mo sa simula? Kung ang masama ay ipinanganak mula sa Diyos at iisang sangkap sa Kanya, kung gayon masama ang Diyos. Ngunit nang ipakita ko sa iyo, mula sa halimbawang ikaw mismo ang naglatag, na ang masasama ay maaaring magmula sa mabuti at ang mabuti sa masama, hindi mo tinanggap ang pangangatwiran dahil sinabi mong pantao ang halimbawa. Kaya ngayon ay hindi ko rin tatanggapin na ang salitang ‘ipinanganak’ ay maaaring gamitin hinggil sa Diyos; sapagkat katangian iyon ng tao, hindi ng Diyos. Hindi lamang iyon: hindi rin maaaring tawaging mabuti o masama, matuwid o di-matuwid ang Diyos sa gayunding paraang pantao. Ni masasabi rin na mayroon Siyang pagkaunawa, buhay, o alinman sa ibang katangiang umiiral sa tao, sapagkat ang mga iyon ay katangian ng tao. At kung sa ating pagsisiyasat tungkol sa Diyos ay hindi natin dapat iukol sa Kanya ang mabubuting katangiang nasa tao, hindi tayo makapag-iisip o makapagsasalita ng anuman tungkol sa Diyos. Ang tanging masisiyasat natin ay kung ano ang Kanyang kalooban na Siya mismo ang nagpahintulot sa ating maunawaan, upang sa paghatol sa atin ay wala tayong maidadahilan tungkol sa mga kautusang hindi natin sinunod bagaman alam natin ang mga iyon.</q></p><h3>Kabanata XI. Paglalapat ng mga Katangian ng Tao sa Diyos</h3><p>Nang marinig ito ni Simon, sinabi niya: <q>Hindi mo ako mapipilit dahil lamang sa hiya na manahimik tungkol sa Kanyang sangkap at siyasatin lamang ang Kanyang kalooban. Sapagkat posible kapwa na mag-isip at magsalita tungkol sa Kanyang sangkap—mula sa mabubuting katangiang taglay ng tao. Halimbawa, kapwa buhay at kamatayan ay mga katangian ng tao; ngunit ang kamatayan ay hindi katangian ng Diyos, kundi buhay at buhay na walang hanggan. Bukod dito, ang mga tao ay maaaring maging masama o mabuti, ngunit ang Diyos ay maaari lamang maging walang-kapantay na mabuti. At upang hindi pahabain ang paksa, ang mas mabubuting katangian ng tao ay mga walang-hanggang katangian ng Diyos.</q> Sinabi ni Pedro: <q>Sabihin mo sa akin, Simon, katangian ba ng tao ang magsilang ng masama at mabuti, at gumawa ng masama at mabuti?</q> Sinabi ni Simon: <q>Oo.</q> Sinabi ni Pedro: <q>Yamang pinagtibay mo ito, kailangan nating iukol sa Diyos ang mas mabubuting katangian ng tao; at kung ang mga tao ay nagsisilang ng masama at mabuti, ang Diyos ay maaari lamang magsilang ng mabuti; at kung ang mga tao ay gumagawa ng masama at mabuti, ang Diyos ay nalulugod lamang sa paggawa ng mabuti. Kaya hinggil <em>sa Diyos</em>, alinman sa huwag tayong mag-ukol sa Kanya ng anumang katangian ng tao at manahimik, o makatuwirang iukol natin sa Kanya ang pinakamainam sa mabubuting katangian. At sa gayon Siya lamang ang sanhi ng lahat ng mabubuting bagay.</q></p><h3>Kabanata XII. Ginawa ng Diyos ang Masama, Ngunit Hindi ang Kasamaan</h3><p>Sinabi ni Simon: <q>Kung gayon, kung ang Diyos ang sanhi lamang ng mabuti, ano pa ang maiisip natin kundi na ibang simulain ang nagsilang sa masama, o na ang kasamaan ay walang pinagmulan?</q> Sinabi ni Pedro: <q>Walang ibang kapangyarihang nagsilang sa masama, ni walang pinagmulan ang kasamaan, gaya ng ipapakita ko sa huli; sapagkat sa ngayon ang layunin ko ay patunayan, gaya ng ipinangako ko sa simula, na ang Diyos ay walang sala sa lahat ng bagay. Pinagkasunduan natin, kung gayon, na taglay ng Diyos sa walang-kapantay na paraan ang mas mabubuting katangiang taglay ng mga tao. Kaya posible ring Siya ang gumawa ng apat na sangkap—ang ibig kong sabihin ay init, lamig, basa, at tuyo. Yamang sa simula ay payak at hindi magkakahalo, likas na walang kinikilingang pagnanasa ang mga iyon; ngunit nang gawin ng Diyos at paghaluin sa panlabas, likas na mabubuo mula sa mga iyon ang isang buhay na nilalang na may malayang pagpiling wasakin ang masasama. At sa gayon, yamang ang lahat ng bagay ay nagmula sa Kanya, wala nang ibang pinagmulan ang masama. Hindi rin niya tinanggap ang kanyang kasamaan mula sa Diyos na lumikha ng lahat ng bagay—sapagkat imposibleng manahan ang kasamaan sa Kanya—dahil ang mga sangkap ay ginawa Niya nang walang kinikilingan at maingat na magkakahiwalay; at nang ang mga iyon ay paghaluin sa panlabas sa pamamagitan ng Kanyang karunungan, lumitaw sa pamamagitan ng kalooban ang pagnanasang wasakin ang masasama. Ngunit hindi kayang wasakin ng masamang lumitaw ang mabuti kahit naisin pa nito; sapagkat ang kapangyarihan nito ay laban lamang sa mga nagkakasala. Hindi niya nalalaman ang kalagayan ng bawat isa; kaya sinusubok niya ang tao at, kapag napatunayang may sala, pinarurusahan niya.</q> Sinabi ni Simon: <q>Kung kayang paghaluin ng Diyos ang mga elemento at buuin ang mga iyon upang makalikha ng anumang disposisyong nais Niya, bakit hindi Niya ginawa ang pagkakabuo ng bawat isa na likas na pipili sa mabuti?</q></p><h3>Kabanata XIII. Ang Diyos ang Gumawa sa Diyablo</h3><p>Sinabi ni Pedro: <q>Sa ngayon, ang layunin natin ay ipakita kung paano at sa pamamagitan nino nagsimulang umiral ang masama, yamang nagsimula nga siyang umiral. Ngunit ipapakita natin kung nagsimula siyang umiral nang walang pagkakasala sa bahagi ng gumawa sa kanya kapag natapos natin ang kasalukuyang paksa. Saka ko ipapakita kung paano at bakit siya nagsimulang umiral, at lubos kitang kukumbinsihing walang sala ang kanyang Manlilikha. Sinabi natin, kung gayon, na ang apat na sangkap ay ginawa ng Diyos. At sa ganitong paraan, sa pamamagitan ng kalooban Niya na naghalo sa mga iyon, lumitaw—ayon sa Kanyang layunin—ang pagpili ng mga kasamaan. Sapagkat kung lumitaw iyon laban sa Kanyang pasiya, o mula sa ibang sangkap o sanhi, kung gayon hindi magiging matatag ang kalooban ng Diyos; sapagkat maaaring, kahit ayaw Niya, ay patuloy na lumitaw ang mga pinuno ng kasamaan na lalaban sa Kanyang kalooban. Ngunit imposibleng gayon ang mangyari. Walang buhay na nilalang—lalo na yaong may kakayahang mamuno—ang maaaring lumitaw dahil lamang sa pagkakataon; sapagkat ang bawat bagay na nalilikha ay kailangang likhain ng isang gumagawa.</q></p><h3>Kabanata XIV. Walang Hanggan ba ang Materya?</h3><p>Sinabi ni Simon: <q>Ngunit paano kung ang materya, na kasabay Niyang umiiral mula pa sa walang simula at may kapantay na kapangyarihan, ay lumilikha bilang Kanyang kaaway ng mga pinunong humahadlang sa Kanyang mga kalooban?</q> Sinabi ni Pedro: <q>Kung walang hanggan ang materya, hindi ito kaaway ng sinuman; sapagkat ang laging umiiral ay hindi nasasaktan, at ang hindi nasasaktan ay pinagpala; ngunit ang pinagpala ay hindi maaaring tumanggap ng pagkapoot, sapagkat dahil sa walang-hanggang pag-iral nito ay hindi nito kinatatakutang maagawan ng anuman. Sa halip, paanong hindi iibigin ng materya ang Manlilikha, yamang malinaw nitong inilalabas ang mga bunga nito upang pakainin ang lahat ng ginawa Niya? At paanong hindi nito kinatatakutan Siya bilang nakahihigit, yamang sa pagyanig nito sa mga lindol ay para bang ipinahahayag nito iyon, at kahit mataas ang mga alon nito, nang naglalayag doon ang Guro at nag-utos na tumahimik, agad itong sumunod at humupa? Ano! Hindi ba lumabas ang mga demonyo dahil sa takot at paggalang sa Kanya, at ang iba ay nagnanais pumasok sa mga baboy ngunit nakiusap muna sa Kanya bago pumasok, malinaw sapagkat wala silang kapangyarihang pumasok kahit sa mga baboy nang walang Kanyang pahintulot?</q></p><h3>Kabanata XV. Ang Kasalanan ang Sanhi ng Kasamaan</h3><p>Sinabi ni Simon: <q>Ngunit paano kung, bagaman walang buhay, taglay ng materya ang kalikasang kayang magluwal kapwa ng masama at mabuti?</q> Sinabi ni Pedro: <q>Ayon sa pahayag na ito, hindi ito mabuti ni masama, sapagkat hindi ito kumikilos sa malayang pagpili, yamang wala itong buhay at pandama. Kaya malinaw na makikita rito kung paanong bagaman wala itong buhay ay para bang lumilikha itong gaya ng buhay, at bagaman walang pandama ay malinaw itong humuhubog ng masining na mga anyo kapwa sa mga hayop at halaman.</q> Sinabi ni Simon: <q>Ano! Kung ang Diyos mismo ang nagbigay rito ng buhay, hindi ba Siya ang sanhi ng mga kasamaang iniluluwal nito?</q> Sinabi ni Pedro: <q>Kung binigyan ito ng Diyos ng buhay ayon sa sarili Niyang kalooban, kung gayon ang Kanyang Espiritu ang gumagawa sa pamamagitan nito, at hindi na ito anumang kaaway ng Diyos o kapantay Niya sa kapangyarihan. Kung hindi, magiging imposibleng sabihing ang lahat ng ginawa Niya ay ginawa ayon sa Kanyang kalooban. Ngunit sasabihin mong Siya mismo ang sanhi ng kasamaan sapagkat sa pamamagitan nito ay Siya rin ang lumilikha ng mga kasamaang iyon. Anong uri ba ng kasamaan ang tinutukoy mo? Mga makamandag na ahas at nakamamatay na halaman, mga demonyo, o alinman sa mga bagay na maaaring manggulo sa tao? Ang mga iyon ay hindi sana nakapinsala kung hindi nagkasala ang tao, na siyang dahilan kung bakit pumasok ang kamatayan. Sapagkat kung walang kasalanan ang tao, hindi sana tatalab ang lason ng mga ahas, ni makapipinsala ang mga halaman, ni magkakaroon ng panggugulo ng mga demonyo, ni likas na daranas ang tao ng anumang pagdurusa. Ngunit dahil nawala ang kanyang kawalang-kamatayan sanhi ng kasalanan, naging kaya na niyang dumanas ng lahat ng paghihirap. At kung sasabihin mo, Bakit sa simula ay nilikha ang kalikasan ng tao na may kakayahang mamatay? Sasabihin ko sa iyo: dahil sa malayang kalooban. Sapagkat kung hindi tayo maaaring mamatay, bilang mga walang kamatayan ay hindi tayo maparurusahan dahil sa kusang kasalanan. At sa gayon, kung hindi tayo makadaranas ng anumang sakit, lalo pang manghihina ang katuwiran kung pipiliin nating maging masama; sapagkat ang mga may masasamang layunin ay hindi maparurusahan dahil wala silang kakayahang magdusa.</q></p><h3>Kabanata XVI. Bakit Ipinagkatiwala sa Masama ang Kapangyarihan</h3><p>Sinabi ni Simon: <q>May isa pa akong sasabihin tungkol sa masama. Tiyak, yamang ginawa siya ng Diyos mula sa wala, sa bagay na ito ay masama ang Diyos, lalo na’t kaya Niyang gawin siyang mabuti sa pamamagitan ng pagbibigay sa kanya sa paglikha ng isang kalikasang hindi kailanman makapipili ng kasamaan.</q> Sinabi ni Pedro: <q>Ang pahayag na nilikha Niya siya mula sa wala na may kapangyarihang pumili ay katulad ng sinabi natin kanina: kung ginawa Niya ang isang pagkakabuo na kayang malugod sa kasamaan, waring Siya mismo ang sanhi ng nangyari. Ngunit yamang iisa ang paliwanag sa dalawang pahayag, ipapakita natin pagkatapos kung bakit Niya ginawa siyang malugod sa pagkapuksa ng masasama.</q> Sinabi ni Simon: <q>Kung ginawa rin Niyang may malayang pagpili ang mga anghel, at lumihis ang masama mula sa katuwiran, bakit siya pinarangalan ng isang tungkuling mamahala? Hindi ba malinaw na ang nagparangal sa kanya nang gayon ay nalulugod sa masasama dahil pinarangalan niya siya?</q> Sinabi ni Pedro: <q>Kung, nang maghimagsik siya, inilagay siya ng Diyos sa ilalim ng kautusan upang mamahala sa mga katulad niya at inutusan siyang magpataw ng kaparusahan sa mga nagkakasala, hindi di-makatarungan ang Diyos. Ngunit kung pinarangalan pa rin siya kahit pagkatapos ng kanyang paghihimagsik, ang Nagparangal sa kanya ay paunang nakita ang kanyang magiging pakinabang; sapagkat pansamantala lamang ang karangalang iyon, at angkop na pamahalaan ng masama ang masasama at parusahan niya ang mga makasalanan.</q></p><h3>Kabanata XVII. Hindi Kapantay ng Diyos sa Kapangyarihan ang Diyablo</h3><p>Sinabi ni Simon: <q>Kung gayon, kung lagi siyang umiiral, hindi ba nawawasak ang tanging paghahari <em>ng Diyos</em>, yamang may isa pang kapangyarihan—yaong nauukol sa materya—na kasabay Niyang namamahala?</q> Sinabi ni Pedro: <q>Kung magkaiba sila sa sangkap, magkaiba rin sila sa kapangyarihan at ang nakahihigit ang namamahala sa nakabababa. Ngunit kung iisa ang kanilang sangkap, magiging magkapantay sila sa kapangyarihan at pareho ring mabuti o masama. Ngunit malinaw na hindi sila magkapantay sa kapangyarihan, sapagkat inilagay ng Manlilikha ang materya sa anyo ng sanlibutang nais Niyang ibigay rito. Kaya maaari bang panindigang lagi itong umiiral bilang isang sangkap; at hindi ba ang materya ay para bang imbakan ng Diyos? Hindi maaaring sabihing may panahong walang anumang taglay ang Diyos; sa halip, Siya ang lagi at tanging namamahala rito. Kaya Siya rin ang walang-hanggang nag-iisang Hari; at dahil dito makatuwirang sabihing ang materya ay nauukol sa Kanya na umiiral, namamahala, at <em>walang hanggan</em>.</q> Sinabi ni Simon: <q>Ano kung gayon? Ginawa ba ng masama ang sarili niya? At gayon ba kabuti ang Diyos na, bagaman alam Niyang siya ang magiging sanhi ng kasamaan, ay hindi Niya siya winasak sa simula pa lamang ng pagbuo sa kanya, nang maaari pa siyang wasakin bago maging ganap? Sapagkat kung bigla siyang umiral na ganap, dahil dito ay nakikipagdigma siya sa Manlilikha, yamang bigla siyang umiral na may kapantay na kapangyarihan.</q></p><h3>Kabanata XVIII. Isa Lamang Bang Ugnayang Bagay ang Diyablo?</h3><p>Sinabi ni Pedro: <q>Imposible ang sinasabi mo; sapagkat kung unti-unti siyang nagkaroon ng pag-iral, maaari sana Siyang pumili na putulin siya bilang kaaway. At yamang pauna Niyang nalalamang siya’y darating sa pag-iral, hindi Niya sana siya pahihintulutang manatili bilang isang mabuting bagay kung hindi Niya alam na dahil sa kanya ay may kapaki-pakinabang na bagay na magaganap. Hindi rin maaaring bigla siyang umiral na ganap sa sarili niyang kapangyarihan. Sapagkat ang hindi umiiral ay hindi maaaring humubog sa sarili; hindi rin siya maaaring maging ganap mula sa wala, ni makatarungang sabihin na mayroon siyang sangkap na lagi nang kapantay sa kapangyarihan kung siya’y ipinanganak.</q> Sinabi ni Simon: <q>Kung gayon, isa lamang ba siyang bagay na umiiral dahil sa ugnayan, at sa ganitong paraan ay masama—nakapipinsala gaya ng tubig sa apoy ngunit mabuti sa lupang nauuhaw sa tamang panahon; gaya ng bakal na mabuti para sa pagsasaka ngunit masama sa pagpatay; at gaya ng pagnanasa na hindi masama sa pag-aasawa ngunit masama sa pangangalunya? Gaya rin ng pagpatay na masama, ngunit sa pumatay ay mabuti ayon sa layuning nais niyang matupad; at pandaraya na masama ngunit nakalulugod sa nandaraya; at ang iba pang mga bagay na ganito ay kapwa mabuti at masama. Sa ganitong paraan, wala talagang likas na masama o mabuti, sapagkat ang isa ay lumilikha ng kabila. Hindi ba yaong waring ginagawang nakapipinsala ay ikinatutuwa ng gumagawa ngunit nagpaparusa sa nagdurusa? At bagaman waring di-makatarungan na ang isang tao, dahil sa pag-ibig sa sarili, ay bigyang-lugod ang sarili sa lahat ng paraang kaya niya, kanino naman hindi waring di-makatarungan na ang isang tao ay dumanas ng mabibigat na kaparusahan mula sa isang matuwid na hukom dahil lamang inibig niya ang sarili?</q></p><h3>Kabanata XIX. May mga Gawaing Tunay na Masama</h3><p>Sinabi ni Pedro: <q>Dapat parusahan ng isang tao ang sarili sa pamamagitan ng pagpipigil kapag nais siyang hatakin ng pagnanasa upang saktan ang iba, sapagkat alam niyang <em>ang</em> masama ay kayang lipulin ang masasama; sa simula pa lamang ay tumanggap siya ng kapangyarihan laban sa kanila. At hindi pa ito kasamaan sa mga gumawa ng masama; ngunit na manatiling pinarurusahan ang kanilang mga kaluluwa pagkatapos ng pagkawasak—tama kang isipin na tunay iyong mabigat, bagaman ang taong itinalaga sa masama ay maaaring magsabing tama iyon. Kaya, gaya ng sinabi ko, dapat nating iwasang saktan ang iba alang-alang sa panandaliang kalayawan, upang huwag nating ilagay ang sarili sa walang-hanggang kaparusahan alang-alang sa kaunting kalayawan.</q> Sinabi ni Simon: <q>Kung gayon, wala bang anumang likas na masama o mabuti, at ang pagkakaiba ay mula lamang sa kautusan at kaugalian? <em>Sapagkat hindi ba</em> kaugalian ng mga Persiano na pakasalan ang sarili nilang mga ina, kapatid na babae, at mga anak na babae, samantalang ipinagbabawal na napakabarbaro ang pag-aasawa sa ibang mga babae? Kaya kung hindi tiyak kung aling mga bagay ang masama, hindi maaaring asahan ng lahat ang paghuhukom ng Diyos.</q> Sinabi ni Pedro: <q>Hindi maaaring manatili ang pangangatwirang ito; sapagkat malinaw sa lahat na kasuklam-suklam ang pakikipagtalik sa mga ina, kahit ang mga Persiano, na maliit lamang na bahagi ng sangkatauhan, ay dahil sa masamang kaugalian ay hindi na makita ang kasamaan ng kasuklam-suklam nilang gawain. Gayon din, hayagang nakikipagtalik ang mga Briton sa paningin ng lahat at hindi nahihiya; may mga taong kumakain ng laman ng kapwa tao at hindi nasusuklam; ang iba’y kumakain ng laman ng aso; at ang iba pa’y nagsasagawa ng mga gawang hindi mabanggit. Kaya hindi natin dapat ibatay ang ating mga paghatol sa pandamang binaluktot ng kaugalian mula sa likas nitong pagkilos. Sapagkat masama ang patayin kahit itanggi iyon ng lahat; walang sinuman ang nagnanais na mangyari iyon sa sarili niya, at sa pagnanakaw ay walang nagagalak sa kaparusahang dumarating sa kanya. Kung gayon, kahit walang sinuman ang umaming mga kasalanan ang mga ito, makatarungan pa ring asahan ang paghuhukom hinggil sa mga kasalanan.</q> Nang sabihin ito ni Pedro, sumagot si Simon: <q>Kung gayon, ito ba ang itinuturing mong katotohanan tungkol sa masama? Sabihin mo sa akin.</q></p><h3>Kabanata XX. Ang Sakit at Kamatayan ay Bunga ng Kasalanan</h3><p>Sinabi ni Pedro: <q>Natatandaan naming iniutos ng ating Panginoon at Guro: ‘Ingatan ninyo para sa Akin at sa mga anak ng Aking sambahayan ang mga hiwaga.’ Kaya ipinaliwanag din Niya nang palihim sa Kanyang mga alagad ang mga hiwaga ng kaharian ng langit. Ngunit sa iyo, na nakikipaglaban sa amin at walang ibang sinusuri kundi kung totoo o huwad ang aming mga pahayag, magiging di-maka-Diyos ang pagsasabi ng mga nakatagong <em>katotohanan</em>. Gayunman, upang walang isa sa mga naririto ang mag-isip na gumagawa lamang ako ng dahilan dahil hindi ko kayang sagutin ang iyong mga pahayag, sasagot ako sa pamamagitan muna ng isang tanong: Kung may kalagayang walang sakit, ano ang kahulugan ng pahayag na, ‘Umiiral ang masama’?</q> Sinabi ni Simon: <q>Walang kahulugan ang mga salitang iyon.</q> Sinabi ni Pedro: <q>Kung gayon, ang kasamaan ba ay kapareho ng sakit at kamatayan?</q> Sinabi ni Simon: <q>Gayon ang wari.</q> Sinabi ni Pedro: <q>Kung gayon, hindi laging umiiral ang kasamaan; oo, hindi man lamang ito maaaring umiral bilang isang sangkap. Sapagkat ang sakit at kamatayan ay kabilang sa mga pangyayaring hindi likas na palaging umiiral, at hindi maaaring magsabay ang alinman sa mga iyon sa nananatiling lakas. Ano ba ang sakit kundi pagkasira ng pagkakatugma? At ano ang kamatayan kundi paghihiwalay ng kaluluwa at katawan? Kaya walang sakit kapag may pagkakatugma. Ang kamatayan ay hindi kabilang sa mga bagay na umiiral bilang sangkap; sapagkat ang kamatayan ay wala nang iba kundi paghihiwalay ng kaluluwa sa katawan. Kapag nangyari ito, ang katawan, na likas na walang pandama sa sarili, ay nalulusaw; ngunit ang kaluluwa, na may pandama, ay nananatiling buhay at umiiral bilang sangkap. Kaya kapag may pagkakatugma, walang sakit, walang kamatayan, at wala ring mga nakamamatay na halaman, makamandag na reptilya, o anumang bagay na ang wakas ay kamatayan. Kaya kung saan naghahari ang kawalang-kamatayan, makikitang may katuwiran ang pagkalikha ng lahat ng bagay. At mangyayari ito kapag dahil sa katuwiran ay maging walang kamatayan ang tao sa paghahari ng mapayapang kaharian ni Cristo, kung kailan ang kanyang pagkakabuo ay magiging napakahusay na hindi ito <em>magbubunga</em> ng matitinding bugso; at ang kanyang kaalaman ay magiging walang kamalian upang hindi niya <em>mapagkamalan</em> ang masama na mabuti; at hindi siya makararanas ng sakit, kaya hindi siya mamamatay.</q></p><h3>Kabanata XXI. Mga Gamit ng Pagnanasa, Galit, at Kalungkutan</h3><p>Sinabi ni Simon: <q>Tama ang sinabi mo; ngunit sa kasalukuyang sanlibutan, hindi ba para sa iyo ay may kakayahan ang tao sa lahat ng uri ng damdamin—gaya ng pagnanasa, galit, kalungkutan, at mga katulad nito?</q> Sinabi ni Pedro: <q>Oo. Ang mga ito ay kabilang sa mga pangyayaring hindi palaging umiiral, at makikitang sa kasalukuyan ay may pakinabang ang mga ito sa kaluluwa. Sapagkat ang pagnanasa, ayon sa kalooban Niya na lumikha nang mabuti sa lahat ng bagay, ay inilagay sa buhay na nilalang upang, sa paghimok nito tungo sa pagtatalik, dumami ang sangkatauhan; at mula sa kanila ay mapili ang maraming nakahihigit na nilalang na karapat-dapat sa buhay na walang hanggan. Kung wala ang pagnanasa, walang sinumang mag-aabala sa pakikipagtalik sa kanyang asawa; ngunit ngayon, alang-alang sa kalayawan at na para bang binibigyang-lugod ang sarili, naisasagawa ng tao ang Kanyang kalooban. Kung ginagamit ng isang tao ang pagnanasa sa lehitimong pag-aasawa, hindi siya kumikilos nang di-maka-Diyos; ngunit kung sumugod siya sa pangangalunya, kumikilos siyang di-maka-Diyos at pinarurusahan dahil ginamit niya nang masama ang isang mabuting kaayusan. Sa gayunding paraan, likas na pinasiklab ng Diyos sa loob natin ang galit upang mahikayat tayong itaboy ang mga pinsala. Ngunit kung pababayaan ito ng isang tao nang walang pagpipigil, kumikilos siya nang di-makatarungan; kung gagamitin niya iyon sa wastong hangganan, ginagawa niya ang tama. May kakayahan din tayong malungkot upang mahikayat tayong makiramay sa pagkamatay ng mga kamag-anak—asawa, mga anak, kapatid, magulang, kaibigan, o iba pa—sapagkat kung wala tayong kakayahang makiramay, magiging di-makatao tayo. Sa gayunding paraan, makikitang ang lahat ng iba pang damdamin ay angkop sa atin kapag isinaalang-alang ang dahilan ng kanilang pag-iral.</q></p><h3>Kabanata XXII. Mga Kasalanang Dulot ng Kamangmangan</h3><p>Sinabi ni Simon: <q>Kung gayon, bakit may ilang namamatay nang wala sa panahon, may mga sakit na pana-panahong dumarating, at mayroon ding mga pagsalakay ng mga demonyo, pagkabaliw, at lahat ng iba pang uri ng kapighatiang labis na nagpapahirap?</q> Sinabi ni Pedro: <q>Sapagkat ang mga tao, sa pagsunod sa sarili nilang kalayawan sa lahat ng bagay, ay nakikipagtalik nang hindi sinusunod ang mga wastong panahon; kaya ang paglalagak ng binhi sa di-angkop na panahon ay likas na nagbubunga ng napakaraming kasamaan. Dapat nilang pag-isipan na kung paanong may panahon na angkop sa pagtatanim at paghahasik, may mga araw ding itinakdang angkop sa pagtatalik at dapat maingat na sundin. Kaya isang taong lubos na tinuruan sa mga aral ni Moises, sa pagsaway sa bayan dahil sa kanilang mga kasalanan, ay tinawag silang mga anak ng mga bagong buwan at mga Sabbath. Gayunman, sa pasimula ng sanlibutan ay mahaba ang buhay ng mga tao at wala silang mga sakit. Ngunit nang dahil sa kapabayaan ay hindi na nila sinusunod ang mga wastong panahon, ang mga sumunod na salinlahi, dahil sa kamangmangan, ay nakikipagtalik sa mga panahong hindi dapat at inilalagay ang kanilang mga anak sa ilalim ng di-mabilang na kapighatian. Kaya nang tanungin namin ang ating Guro tungkol sa lalaking bulag mula pa sa kapanganakan na nakakita muli—kung siya ba o ang kanyang mga magulang ang nagkasala kaya siya ipinanganak na bulag—sumagot Siya: ‘Hindi siya nagkasala ni ang kanyang mga magulang, kundi upang maipakita sa kanya ang kapangyarihan ng Diyos sa pagpapagaling sa mga kasalanang dulot ng kamangmangan.’ At tunay ngang ang gayong mga kapighatian ay nagmumula sa kamangmangan, gaya ng hindi pagkaalam kung kailan nararapat makipagtalik sa asawa, halimbawa kung malinis na ba siya mula sa kanyang pagdurugo. Kaya ang mga kapighatiang binanggit mo ay bunga ng kamangmangan, hindi ng anumang sinadyang kasamaan. Bukod dito, dalhin mo sa akin ang taong hindi nagkakasala at ipapakita ko sa iyo ang taong hindi nagdurusa; at makikita mong hindi lamang niya naiiwasan ang pagdurusa kundi kaya rin niyang magpagaling ng iba. Halimbawa, dahil sa kabanalan ni Moises ay nanatili siyang malaya sa pagdurusa sa buong buhay niya, at sa pamamagitan ng kanyang mga panalangin ay pinagaling niya ang mga Ehipsiyo nang magdusa sila dahil sa kanilang mga kasalanan.</q></p><h3>Kabanata XXIII. Hindi Pantay na Kalagayan ng mga Tao sa Buhay</h3><p>Sinabi ni Simon: <q>Ipagpalagay kong gayon nga. Ngunit hindi ba para sa iyo ay lubhang di-makatarungan ang hindi pantay na kalagayan ng mga tao? Ang isa’y dukha at ang isa’y mayaman; ang isa’y maysakit at ang isa’y malusog; at di-mabilang ang mga pagkakaibang gaya nito sa buhay ng tao.</q> Sinabi ni Pedro: <q>Hindi mo ba napapansin, Simon, na muli mong inililihis ang iyong mga puna lampas sa paksa? Samantalang tinatalakay natin ang kasamaan, lumihis ka at ipinasok ang tanong tungkol sa mga di-pagkakapantay na nakikita sa sanlibutang ito. Gayunman, sasagutin ko rin ito. Ang sanlibutan ay isang kasangkapang masining na inayos upang para sa lalaking mabubuhay magpakailanman ay makapagsilang ang babae ng mga anak na matuwid at walang hanggan. Hindi sila maaaring maging ganap na maka-Diyos rito kung walang mga nangangailangan na kanilang matutulungan. Gayundin, may mga maysakit upang magkaroon sila ng mga taong mapangangalagaan. At may katulad na paliwanag sa iba pang mga kapighatian.</q> Sinabi ni Simon: <q>Kung gayon, hindi ba kaawa-awa ang mga nasa mababang kalagayan? Sila’y inilalagay sa kagipitan upang maging matuwid ang iba.</q> Sinabi ni Pedro: <q>Kung walang hanggan ang kanilang kahihiyan, napakalaki nga ng kanilang kasawiang-palad. Ngunit ang pagpapakababa at pagtataas sa mga tao ay nangyayari ayon sa kanilang bahagi; at ang hindi nasisiyahan sa kanyang bahagi ay maaaring umapela at, sa paghaharap ng kanyang kaso ayon sa kautusan, mapalitan ang kanyang paraan ng pamumuhay ng iba.</q> Sinabi ni Simon: <q>Ano ang ibig mong sabihin sa bahaging ito at sa pag-apela?</q> Sinabi ni Pedro: <q>Humihingi ka ngayon ng paliwanag sa isa pang paksa; ngunit kung pahihintulutan mo ako, maipapakita namin sa iyo kung paano, sa muling kapanganakan, pagbabago ng iyong pinagmulan, at pamumuhay ayon sa kautusan, makakamit mo ang walang-hanggang kaligtasan.</q></p><h3>Kabanata XXIV. Sinaway ni Faustus si Simon</h3><p>Nang marinig ito ni Simon, sinabi niya: <q>Huwag mong isipin na sa bawat paksang tinatanong kita at tila sumasang-ayon ako sa iyo bago ako lumipat sa susunod ay lubos na akong nakatitiyak sa katotohanan ng nauna. Nagkunwari lamang akong nagpapaubaya sa iyong kamangmangan upang makapagpatuloy ka sa susunod na paksa, nang sa gayon, matapos kong makilala ang buong lawak ng iyong kamangmangan, ay mahatulan kita hindi sa haka-haka lamang kundi mula sa ganap na kaalaman. Pahintulutan mo akong umalis nang tatlong araw; babalik ako at ipapakitang wala kang nalalaman.</q> Nang sabihin ito ni Simon at paalis na sana, sinabi ng aking ama: <q>Makinig ka sa akin sandali, Simon, at pagkatapos ay humayo ka saan mo ibig. Naaalala kong sa simula, bago ang talakayan, inakusahan mo akong may kinikilingan bagaman wala ka pang karanasan sa akin. Ngunit ngayon, matapos kayong marinig na halinhinang makipagtalakayan at matapos kong hatulang mas nakahihigit si Pedro at ibigay ngayon sa kanya ang pagkilalang nagsasalita siya ng katotohanan, sa palagay mo ba’y tama at may kaalaman ang aking paghatol, o hindi? Sapagkat kung sasabihin mong tama ang aking paghatol ngunit hindi ka sumasang-ayon, malinaw na ikaw ang may kinikilingan, yamang ayaw mong sumang-ayon kahit inamin mong natalo ka. Ngunit kung mali ako sa pagsasabing nakahihigit si Pedro sa talakayan, kumbinsihin mo kami kung paano mali ang aming paghatol; kung hindi, itigil mo na ang pakikipagtalakayan sa kanya sa harap ng lahat, sapagkat lagi kang matatalo at mapipilitang sumang-ayon. Dahil dito ay pahihirapan ang sarili mong kaluluwa, hinatulan at napahiya ng sarili mong budhi, kahit hindi mo madama ang hiya sa harap ng lahat ng nakikinig bilang pinakamabigat na pahirap; sapagkat nakita naming natalo ka sa katotohanan at narinig naming inamin iyon ng sarili mong mga labi. Kaya sa wakas ay palagay kong hindi ka na babalik sa talakayan gaya ng ipinangako mo; ngunit upang hindi magmukhang natalo, nang umalis ka ay nangako kang babalik.</q></p><h3>Kabanata XXV. Umalis si Simon; Hiniling ni Sophonias kay Pedro na Ilahad ang Kanyang Tunay na mga Paniniwala tungkol sa Kasamaan</h3><p>Nang marinig ito ni Simon, nagngitngit siya sa galit at tahimik na umalis. Ngunit si Pedro—yamang malaki pa ang natitirang bahagi ng araw—ay ipinatong ang kanyang mga kamay sa napakaraming tao upang pagalingin sila; at matapos silang paalisin, pumasok siya sa bahay kasama ang kanyang pinakamalalapit na kaibigan at naupo. Isa sa kanyang mga tagapaglingkod, na nagngangalang Sophonias, ang nagsabi: <q>Pagpalain ang Diyos, O Pedro, na pumili at nagturo sa iyo para sa kaaliwan ng mabubuti. Tunay ngang may dangal at malaking pagtitiis kang nakipagtalakayan kay Simon. Ngunit nakikiusap kami na talakayin mo sa amin ang tungkol sa kasamaan; sapagkat umaasa kaming ilalahad mo sa amin ang sarili mong tunay na paniniwala tungkol dito—hindi ngayon mismo kundi bukas, kung mamarapatin mo; sapagkat nais ka naming pagbigyan dahil sa pagod na nadarama mo mula sa iyong pakikipagtalakayan.</q> Sinabi ni Pedro: <q>Nais kong malaman ninyo na ang taong gumagawa nang may kasiyahan ay nakatatagpo ng pahinga sa mismong pagpapagal; ngunit ang taong hindi ginagawa ang nais niya ay lubhang napapagod maging sa mismong pahingang kinukuha niya. Kaya malaking pahinga ang ibinibigay ninyo sa akin kapag hinihiling ninyong magsalita ako tungkol sa mga paksang kinalulugdan ko.</q> Nasiyahan kami sa kanyang saloobin; gayunman, dahil nais pa rin naming pagbigyan siya dahil sa pagod, hiniling naming ipagpaliban ang talakayan hanggang gabi, na siyang nakaugalian niyang oras ng pakikipag-usap sa tunay niyang mga kaibigan. At matapos kumain ng kaunting asin, kami’y humiga upang matulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

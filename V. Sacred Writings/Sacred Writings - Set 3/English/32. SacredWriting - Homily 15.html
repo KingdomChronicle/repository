@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 15</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Peter Wishes to Convert Faustus</option><option value="1">Chapter II. Reason for Listening to Peter's Arguments</option><option value="2">Chapter III. Obstacles to Faith</option><option value="3">Chapter IV. Providence Seen in the Events of the Life of Faustus and His Family</option><option value="4">Chapter V. Difference Between the True Religion and Philosophy</option><option value="5">Chapter VI. The Love of Man</option><option value="6">Chapter VII. The Explanation of a Parable; The Present and the Future Life</option><option value="7">Chapter VIII. The Present and the Future</option><option value="8">Chapter IX. Possessions are Transgressions</option><option value="9">Chapter X. Poverty Not Necessarily Righteous</option><option value="10">Chapter XI. Exposition of the True Religion Promised</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Peter Wishes to Convert Faustus</h3><p>At break of day our father, with our mother and his three sons, entered the place where Peter was, and accosting him, sat down. Then we also did the same at his request; and Peter looking at our father, said: <q>I am anxious that you should become of the same mind as your wife and children, in order that here you may live along with them, and in the other world, after the separation of the soul from the body, you will continue to be with them free from sorrow. For does it not grieve you exceedingly that you should not associate with each other?</q> And my father said: <q>Most assuredly.</q> And Peter said: <q>If, then, separation from each other here gives you pain, and if without doubt the penalty awaits you that after death you should not be with each other, how much greater will your grief be that you, a wise man, should be separated from your own family on account of your opinions? They too, must feel the more distressed from the consciousness that eternal punishment awaits you because you entertain different opinions from theirs, and deny the established truth.</q></p><h3>Chapter II. Reason for Listening to Peter's Arguments</h3><p>Our father said: <q>But it is not the case, my very dear friend, that souls are punished in Hades, for the soul is dissolved into air as soon as it leaves the body.</q> And Peter said: <q>Until we convince you in regard to this point, answer me, does it not appear to you that you are not grieved as having no faith in a <em>future</em> punishment, but they who have full faith in it must be vexed in regard to you?</q> And our father said: <q>You speak sense.</q> And Peter said: <q>Why, then, will you not free them from the greatest grief they can have in regard to you by agreeing to their religion, not, I mean, through dread, but through kindly feeling, listening and judging about what is said by me, whether it be so or not? And if the truth is as we state it, then here you will enjoy life with those who are dearest to you, and in the other world you will have rest with them; but if, in examining the arguments, you show that what is stated by us is a fictitious story, you will thus be doing good service, for you will have your friends on your side, and you will put an end to their leaning upon false hopes, and you will free them from false fears.</q></p><h3>Chapter III. Obstacles to Faith</h3><p>And our father said: <q>There is evidently much reason in what you say.</q> And Peter said: <q>What is it, then, that prevents you from coming to our faith? Tell me, that we may begin our discussion with it. For many are the hindrances. The faithful are hindered by occupation with merchandise, or public business, or the cultivation of the soil, or cares, and such like; the unbelievers, of whom you also are one, are hindered by ideas such as that the gods, which do not exist, really exist, or that all things are subject to Genesis, or chance, or that souls are mortal, or that our doctrines are false because there is no providence.</q></p><h3>Chapter IV. Providence Seen in the Events of the Life of Faustus and His Family</h3><p><q>But I maintain, from what has happened to you, that all things are managed by the providence of God, and that your separation from your family for so many years was providential; for since, if they had been with you, they perhaps would not have listened to the doctrines of the true religion, it was arranged that your children should travel with their mother, should be shipwrecked, should be supposed to have perished, and should be sold; moreover, that they should be educated in the learning of the Greeks, especially in the atheistic doctrines, in order that, as being acquainted with them, they might be the better able to refute them; and in addition to this, that they should become attached to the true religion, and be enabled to be united with me, so as to help me in my preaching; furthermore, that their brother Clement should meet in the same place, and that thus his mother should be recognised, and through her cure should be fully convinced of the right worship of God; that after no long interval the twins should recognise and be recognised, and the other day should fall in with you, and that you should receive back your own. I do not think, then, that such a speedy filling in of circumstances, coming as it were from all quarters, so as to accomplish one design, could have happened without the direction of Providence.</q></p><h3>Chapter V. Difference Between the True Religion and Philosophy</h3><p>And our father began to say: <q>Do not suppose, my dearest Peter, that I am not thinking of the doctrines preached by you. I was thinking of them. But during the past night, when Clement urged me earnestly to give in my adhesion to the truth preached by you, I at last answered, 'Why should I? For what new commandment can any one give more than what the ancients urged us to obey?' And he, with a gentle smile, said, 'There is a great difference, father, between the doctrines of the true religion and those of philosophy; for the true religion receives its proof from prophecy, while philosophy, furnishing us with beautiful sentences, seems to present its proofs from conjecture.' On saying this, he took an instance, and set before us the doctrine of philanthropy, which you had explained to him, which rather appeared to me to be very unjust, and I shall tell you how. He alleged that it was right to present to him who strikes you on the one cheek the other also, and to give to him who takes away your cloak your tunic also, and to go two miles with him who compels you to go one, and such like.</q></p><h3>Chapter VI. The Love of Man</h3><p>And Peter answered: <q>You have deemed unjust what is most just. If you are inclined, will you listen to me?</q> And my father said: <q>With all my heart.</q> And Peter said: <q>What is your opinion? Suppose that there were two kings, enemies to each other, and having their countries cut off from each other; and suppose that some one of the subjects of one of them were to be caught in the country of the other, and to incur the penalty of death on this account: now if he were let off from the punishment by receiving a blow instead of death, is it not plain that he who let him off is a lover of man?</q> And our father said: <q>Most certainly.</q> And Peter said: <q>Now suppose that this same person were to steal from some one something belonging to him or to another; and if when caught he were to pay double, instead of suffering the punishment that was due to him, namely, paying four times the amount, and being also put to death, as having been caught in the territories of the enemy; is it not your opinion that he who accepts double, and lets him off from the penalty of death, is a lover of man?</q> And our father said: <q>He certainly seems so.</q> And Peter said: <q>Why then? Is it not the duty of him who is in the kingdom of another, and that, too, a hostile and wicked monarch, to be pleasing to all for the sake of life, and when force is applied to him, to yield still more, to accost those who do not accost him, to reconcile enemies, not to quarrel with those who are angry, to give his own property freely to all who ask, and such like?</q> And our father said: <q>He should with reason endure all things rather, if he prefers life to them.</q></p><h3>Chapter VII. The Explanation of a Parable; The Present and the Future Life</h3><p>And Peter said: <q>Are not those, then, who you said received injustice, themselves transgressors, inasmuch as they are in the kingdom of the other, and is it not by overreaching that they have obtained all they possess? While those who are thought to act unjustly are conferring a favour on each subject of the hostile kingdom, so far as they permit him to have property. For these possessions belong to those who have chosen the present. And they are so far kind as to permit the others to live. This, then, is the parable; now listen to the actual truth. The prophet of the truth who appeared <em>on earth</em> taught us that the Maker and God of all gave two kingdoms to two, good and evil; granting to the evil the sovereignty over the present world along with law, so that he, <em>it</em>, should have the right to punish those who act unjustly; but to the good He gave the eternal to come. But He made each man free with the power to give himself up to whatsoever he prefers, either to the present evil or the future good. Those men who choose the present have power to be rich, to revel in luxury, to indulge in pleasures, and to do whatever they can. For they will possess none of the future goods. But those who have determined to accept the blessings of the future reign have no right to regard as their own the things that are here, since they belong to a foreign king, with the exception only of water and bread, and those things procured with sweat to maintain life (for it is not lawful for them to commit suicide), and also one garment, for they are not permitted to go naked on account of the all-seeing Heaven.</q></p><h3>Chapter VIII. The Present and the Future</h3><p><q>If, then, you wish to have an accurate account of the matter, listen. Those of whom you said a little before that they receive injustice, rather act unjustly themselves; for they who have chosen the future blessings, live along with the bad in the present world, having many enjoyments the same as the bad,—such as life itself, light, bread, water, clothing, and others of a like nature. But they who are thought by you to act unjustly, shall not live with the good men in the coming age.</q> And our father replied to this: <q>Now when you have convinced me that those who act unjustly suffer injustice themselves, while those who suffer injustice have by far the advantage, the whole affair seems to me still more the most unjust of transactions; for those who seem to act unjustly grant many things to those who have chosen the future blessings, but those who seem to receive injustice do themselves commit injustice, because they do not give in the other world, to those who have given them blessings here, the same advantages which these gave to them.</q> And Peter said: <q>This is not unjust at all, because each one has the power to choose the present or the future goods, whether they be small or great. He who chooses by his own individual judgment and wish, receives no injustice,—I mean, not even should his choice rest on what is small, since the great lay within his choice, as in fact did also the small.</q> And our father said: <q>You are right; for it has been said by one of the wise men of the Greeks, 'The blame rests with those who chose—God is blameless.' </q></p><h3>Chapter IX. Possessions are Transgressions</h3><p><q>Will you be so good as to explain this matter also? I remember Clement saying to me, that we suffer injuries and afflictions for the forgiveness of our sins.</q> Peter said: <q>This is quite correct. For we, who have chosen the future things, in so far as we possess more goods than these, whether they be clothing, or food or drink, or any other thing, possess sins, because we ought not to have anything, as I explained to you a little ago. To all of us possessions are sins. The deprivation of these, in whatever way it may take place, is the removal of sins.</q> And our father said: <q>That seems reasonable, as you explained that these were the two boundary lines of the two kings, and that it was in the power of each to choose whatever he wished of what was under their authority. But why are the afflictions sent, or do we suffer them justly?</q> And Peter said: <q>Most justly; for since the boundary line of the saved is, as I said, that no one should possess anything, but since many have many possessions, or in other words sins, for this reason the exceeding love of God sends afflictions on those who do not act in purity of heart, that on account of their having some measure of the love of God, they might, by temporary inflictions, be saved from eternal punishments.</q></p><h3>Chapter X. Poverty Not Necessarily Righteous</h3><p>And our father said: <q>How then is this? Do we not see many impious men poor? Then do these belong to the saved on this account?</q> And Peter said: <q>Not at all; for that poverty is not acceptable which longs for what it ought not. So that some are rich as far as their choice goes, though poor in actual wealth, and they are punished because they desire to have more. But one is not unquestionably righteous because he happens to be poor. For he can be a beggar as far as actual wealth is concerned, but he may desire and even do what above everything he ought not to do. Thus he may worship idols, or be a blasphemer or fornicator, or he may live indiscriminately, or perjure himself, or lie, or live the life of an unbeliever. But our teacher pronounced the faithful poor blessed; and he did so, not because they had given anything, for they had nothing, but because they were not to be condemned, as having done no sin, simply because they gave no alms, because they had nothing to give.</q> And our father said: <q>In good truth all seems to go right as far as the subject of discussion is concerned; wherefore I have resolved to listen to the whole of your argument in regular order.</q></p><h3>Chapter XI. Exposition of the True Religion Promised</h3><p>And Peter said: <q>Since, then, you are eager henceforth to learn what relates to our religion, I ought to explain it in order, beginning with God Himself, and showing that we ought to call Him alone God, and that we neither ought to speak of the others as gods nor deem them such, and that he who acts contrary to this will be punished eternally, as having shown the greatest impiety to Him who is the Lord of all.</q> And saying this, he laid his hands on those who were vexed by afflictions, and were diseased, and possessed by demons; and, praying, he healed them, and dismissed the multitudes. And then entering in this way, he partook of his usual food, and went to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Nais ni Pedro na Mapaniwala si Faustus</h3><p>Pagsikat ng araw, pumasok ang aming ama kasama ang aming ina at kaming tatlong anak sa kinaroroonan ni Pedro; matapos siyang batiin ay naupo sila. Sa kanyang pakiusap ay naupo rin kami. Tiningnan ni Pedro ang aming ama at sinabi: <q>Sabik akong magkaisa ang inyong isip ng iyong asawa at mga anak, upang dito ay mamuhay kang kasama nila, at sa kabilang sanlibutan, pagkatapos mahiwalay ang kaluluwa sa katawan, ay patuloy kang makasama nila nang walang dalamhati. Hindi ba lubhang masakit sa iyo na hindi kayo nagkakasundo sa isa't isa?</q> Sumagot ang aming ama: <q>Tunay nga.</q> Sinabi ni Pedro: <q>Kung gayon, kung masakit sa iyo ang pagkakahiwalay ninyo rito, at kung walang pagsalang naghihintay sa iyo ang kaparusahang pagkamatay mo ay hindi mo sila makakasama, gaano pa kalaki ang magiging dalamhati mo na ikaw, isang marunong na tao, ay mawalay sa sarili mong pamilya dahil sa iyong mga palagay? At lalo rin silang malulungkot sapagkat nalalaman nilang naghihintay sa iyo ang walang-hanggang kaparusahan dahil iba ang paniniwala mo kaysa sa kanila at itinatanggi mo ang itinatag na katotohanan.</q></p><h3>Kabanata II. Dahilan upang Pakinggan ang mga Pangangatwiran ni Pedro</h3><p>Sinabi ng aming ama: <q>Ngunit hindi naman totoo, mahal kong kaibigan, na pinarurusahan ang mga kaluluwa sa Hades; sapagkat pagkalabas ng kaluluwa sa katawan ay natutunaw ito sa hangin.</q> At sinabi ni Pedro: <q>Hanggang hindi ka namin nakukumbinsi tungkol dito, sagutin mo muna ako: hindi ba't ikaw ay hindi nalulungkot sapagkat wala kang pananampalataya sa <em>darating</em> na kaparusahan, samantalang ang mga lubos na naniniwala rito ay kailangang mabagabag tungkol sa iyo?</q> Sumagot ang aming ama: <q>May katuwiran ang sinasabi mo.</q> At sinabi ni Pedro: <q>Bakit, kung gayon, hindi mo alisin sa kanila ang pinakamalaking dalamhating maaari nilang madama tungkol sa iyo sa pamamagitan ng pakikiayon sa kanilang relihiyon—hindi dahil sa takot, kundi dahil sa mabuting kalooban—sa pakikinig at paghatol kung totoo o hindi ang aking sasabihin? At kung tunay ang katotohanan ayon sa sinasabi namin, dito ay masisiyahan kang mamuhay kasama ng pinakamamahal mo, at sa kabilang sanlibutan ay mamamahinga kang kasama nila; ngunit kung sa pagsusuri mo sa mga pangangatwiran ay mapatutunayang kathang-isip lamang ang sinasabi namin, makagagawa ka rin ng mabuti, sapagkat mapapanig sa iyo ang iyong mga kaibigan, matatapos ang pagkapit nila sa huwad na pag-asa, at mapalalaya mo sila mula sa huwad na mga takot.</q></p><h3>Kabanata III. Mga Hadlang sa Pananampalataya</h3><p>At sinabi ng aming ama: <q>Malinaw na may malaking katuwiran sa sinasabi mo.</q> Sinabi ni Pedro: <q>Ano, kung gayon, ang humahadlang sa iyo na lumapit sa aming pananampalataya? Sabihin mo sa akin upang doon natin simulan ang ating talakayan. Sapagkat marami ang mga hadlang. Ang mga sumasampalataya ay nahahadlangan ng pangangalakal, pampublikong gawain, pagsasaka, mga alalahanin, at mga katulad nito; ngunit ang mga hindi sumasampalataya, na isa ka rin, ay nahahadlangan ng mga kaisipang gaya ng pag-aakalang tunay na umiiral ang mga diyos na hindi naman umiiral, o na ang lahat ay sakop ng Genesis, o ng pagkakataon, o na namamatay ang mga kaluluwa, o na huwad ang aming mga aral sapagkat walang pagkalinga.</q></p><h3>Kabanata IV. Nakikita ang Pagkalinga sa mga Pangyayari sa Buhay ni Faustus at ng Kanyang Pamilya</h3><p><q>Ngunit mula sa mga nangyari sa iyo, pinaninindigan kong ang lahat ng bagay ay pinamamahalaan ng pagkalinga ng Diyos, at na ang pagkakahiwalay mo sa iyong pamilya nang napakaraming taon ay ayon sa pagkalinga. Sapagkat kung nanatili sila sa iyo, marahil ay hindi nila pakikinggan ang mga aral ng tunay na relihiyon. Kaya inayos na maglakbay ang iyong mga anak kasama ng kanilang ina, mawasak ang barko, mapagkamalang namatay sila, at maipagbili; at higit pa rito, maturuan sila sa karunungan ng mga Griyego, lalo na sa mga aral na walang-Diyos, upang sa pagkakilala nila sa mga iyon ay lalo nilang mapabulaanan ang mga iyon. Bukod dito, inayos na mapalapit sila sa tunay na relihiyon at maisama sa akin upang makatulong sa aking pangangaral; na ang kanilang kapatid na si Clemente ay makatagpo rin sa iisang lugar; na sa gayon ay makilala ang kanyang ina, at sa pamamagitan ng paggaling nito ay lubos na makumbinsi tungkol sa wastong pagsamba sa Diyos; na makalipas ang hindi mahabang panahon ay magkakilala ang kambal at makilala rin sila; at noong isang araw ay makatagpo nila ikaw at matanggap mo muli ang sarili mong pamilya. Hindi ko iniisip na ang gayon kabilis na pagtutugma ng mga pangyayari mula sa iba't ibang panig upang maisakatuparan ang iisang layunin ay maaaring mangyari nang walang pamamahala ng Pagkalinga.</q></p><h3>Kabanata V. Pagkakaiba ng Tunay na Relihiyon at Pilosopiya</h3><p>Nagsimulang magsalita ang aming ama: <q>Huwag mong isipin, mahal kong Pedro, na hindi ko pinag-iisipan ang mga aral na ipinapangaral mo. Pinag-isipan ko ang mga iyon. Ngunit kagabi, nang taimtim akong hikayatin ni Clemente na yumakap sa katotohanang ipinangangaral mo, sa wakas ay sumagot ako, ‘Bakit ko gagawin iyon? Anong bagong kautusan ang maibibigay ninuman na higit sa ipinag-uutos ng mga sinauna?’ At siya, na banayad na ngumiti, ay nagsabi, ‘Malaki ang pagkakaiba, ama, sa pagitan ng mga aral ng tunay na relihiyon at ng pilosopiya; sapagkat ang tunay na relihiyon ay tumatanggap ng patunay mula sa hula, samantalang ang pilosopiya, bagaman naghaharap sa atin ng magagandang kasabihan, ay tila nagbabatay ng mga patunay nito sa haka-haka.’ Pagkasabi nito, kumuha siya ng isang halimbawa at inilahad sa amin ang aral tungkol sa pagmamahal sa tao na ipinaliwanag mo sa kanya, na sa halip ay tila lubhang di-makatarungan sa akin; at sasabihin ko sa iyo kung paano. Sinabi niyang tama raw na iharap ang kabilang pisngi sa sumampal sa isa, ibigay ang tunika sa kumuha ng balabal, lumakad nang dalawang milya kasama ng pumilit sa iyo ng isang milya, at mga katulad nito.</q></p><h3>Kabanata VI. Pagmamahal sa Tao</h3><p>Sumagot si Pedro: <q>Itinuring mong di-makatarungan ang pinakatarungan. Kung nais mo, pakikinggan mo ba ako?</q> Sinabi ng aming ama: <q>Buong puso.</q> Sinabi ni Pedro: <q>Ano ang palagay mo? Ipagpalagay nating may dalawang hari na magkaaway, at magkahiwalay ang kani-kanilang mga kaharian; at may isang sakop ng isa na nahuli sa lupain ng kabila at dahil dito ay nahatulan ng kamatayan. Kung palalayain siya mula sa kaparusahang iyon sa pamamagitan ng isang hampas sa halip na kamatayan, hindi ba malinaw na mapagmahal sa tao ang nagpalaya sa kanya?</q> Sumagot ang aming ama: <q>Tiyak.</q> Sinabi ni Pedro: <q>Ngayon ipagpalagay mong ang taong ito rin ay nagnakaw ng anumang pag-aari ng iba; at nang mahuli ay pinagbabayad lamang ng doble, sa halip na tiisin ang nararapat na kaparusahan—apat na ulit ang halaga at kamatayan pa dahil nahuli siya sa teritoryo ng kaaway—hindi ba mapagmahal sa tao ang tumanggap ng doble at nagpalaya sa kanya mula sa kamatayan?</q> Sinabi ng aming ama: <q>Gayon nga ang wari.</q> At sinabi ni Pedro: <q>Kung gayon, hindi ba tungkulin ng isang taong nasa kaharian ng iba, lalo na ng isang kaaway at masamang hari, na maging kalugud-lugod sa lahat alang-alang sa buhay; na kapag pinipilit ay magbigay pa nang higit, bumati sa hindi bumabati sa kanya, makipagkasundo sa mga kaaway, huwag makipagtalo sa mga galit, maluwag na ibigay ang sariling ari-arian sa humihingi, at gumawa ng mga katulad nito?</q> Sumagot ang aming ama: <q>Makatuwirang tiisin niya ang lahat ng bagay kung higit niyang pinahahalagahan ang buhay kaysa sa mga iyon.</q></p><h3>Kabanata VII. Paliwanag ng Isang Talinghaga; Ang Kasalukuyan at Darating na Buhay</h3><p>Sinabi ni Pedro: <q>Kung gayon, hindi ba yaong mga sinabi mong tumatanggap ng kawalang-katarungan ay sila ring mga lumalabag, yamang nasa kaharian sila ng iba at sa pamamagitan ng panlalamang ay nakuha ang lahat ng kanilang pag-aari? Samantala, yaong inaakalang gumagawa ng di-makatarungan ay nagbibigay pa ng pabor sa bawat sakop ng kaaway hangga't pinahihintulutan nila itong magmay-ari. Sapagkat ang mga pag-aari na ito ay nauukol sa mga pumili sa kasalukuyan. At sa ganitong lawak ay mabuti pa sila sapagkat pinahihintulutan nilang mabuhay ang iba. Ito ang talinghaga; ngayon pakinggan mo ang tunay na kalagayan. Itinuro sa atin ng Propeta ng katotohanan na nagpakita <em>sa lupa</em> na ang Manlilikha at Diyos ng lahat ay nagbigay ng dalawang kaharian sa dalawa—sa mabuti at sa masama—na ibinigay sa masama ang paghahari sa kasalukuyang sanlibutan kasama ng kautusan, upang <em>siya</em> ay magkaroon ng karapatang parusahan ang mga gumagawa ng di-makatarungan; ngunit sa mabuti ay ibinigay Niya ang darating na walang-hanggang kaharian. At ginawa Niyang malaya ang bawat tao upang maibigay niya ang sarili sa alinmang piliin niya—sa kasalukuyang masama o sa darating na mabuti. Ang mga pumipili sa kasalukuyan ay may kapangyarihang yumaman, mamuhay sa karangyaan, magpakasasa sa kalayawan, at gawin ang kaya nila, sapagkat wala silang magiging bahagi sa mabubuting bagay sa hinaharap. Ngunit ang mga nagpasiyang tanggapin ang mga pagpapala ng darating na paghahari ay walang karapatang ituring na kanila ang mga bagay na narito, sapagkat nauukol ang mga ito sa isang dayuhang hari—maliban lamang sa tubig at tinapay, sa mga bagay na natamo sa pawis upang mapanatili ang buhay (sapagkat hindi sila pinahihintulutang magpakamatay), at sa isang kasuotan, sapagkat hindi sila pinahihintulutang maghubad dahil nakikita sila ng langit na nakakakita sa lahat.</q></p><h3>Kabanata VIII. Ang Kasalukuyan at ang Hinaharap</h3><p><q>Kung nais mong magkaroon ng tumpak na paliwanag, makinig ka. Yaong mga sinabi mong tumatanggap ng kawalang-katarungan ay sa katunayan sila pa ang gumagawa nito; sapagkat ang mga pumili sa mga pagpapala sa hinaharap ay naninirahan kasama ng masasama sa kasalukuyang sanlibutan at nakikibahagi sa maraming pakinabang na taglay din ng masasama—gaya ng buhay mismo, liwanag, tinapay, tubig, kasuotan, at mga katulad nito. Ngunit yaong mga inaakala mong gumagawa ng di-makatarungan ay hindi maninirahan kasama ng mabubuti sa darating na panahon.</q> Sumagot ang aming ama: <q>Ngayong nakumbinsi mo akong yaong gumagawa ng di-makatarungan ay sila ring dumaranas ng kawalang-katarungan, samantalang ang mga inaakalang nagdurusa ay malaki pa ang kalamangan, lalo pang waring pinakadi-makatarungan ang buong usapin sa akin. Sapagkat ang mga inaakalang gumagawa ng di-makatarungan ay nagbibigay ng maraming bagay sa mga pumili sa mga pagpapala sa hinaharap, ngunit ang mga inaakalang tumatanggap ng kawalang-katarungan ay sila namang gumagawa ng di-makatarungan sapagkat hindi nila ibinibigay sa kabilang sanlibutan sa mga nagbigay sa kanila ng mabubuting bagay rito ang gayunding mga pakinabang na ibinigay sa kanila rito.</q> At sinabi ni Pedro: <q>Hindi iyan di-makatarungan, sapagkat ang bawat isa ay may kapangyarihang pumili sa kasalukuyan o sa darating na mabubuting bagay, maliit man o malaki. Ang pumipili sa pamamagitan ng sarili niyang paghatol at kagustuhan ay hindi tumatanggap ng kawalang-katarungan—kahit pa ang piliin niya ay maliit—sapagkat nasa pagpili rin niya ang dakila, gaya ring nasa pagpili niya ang maliit.</q> At sinabi ng aming ama: <q>Tama ka; sapagkat sinabi ng isa sa mga pantas ng mga Griyego: ‘Nasa mga pumili ang sisi—walang sala ang Diyos.’</q></p><h3>Kabanata IX. Ang mga Ari-arian ay mga Paglabag</h3><p><q>Maari mo bang ipaliwanag din ito? Natatandaan kong sinabi sa akin ni Clemente na tumatanggap tayo ng mga pinsala at paghihirap para sa kapatawaran ng ating mga kasalanan.</q> Sinabi ni Pedro: <q>Tumpak iyon. Sapagkat tayong pumili sa mga bagay sa hinaharap, hangga't nagtataglay tayo nang higit sa mga kinakailangang ito—maging kasuotan, pagkain, inumin, o anumang bagay—ay nagtataglay ng mga kasalanan, sapagkat hindi sana tayo dapat magkaroon ng anuman, gaya ng ipinaliwanag ko kanina. Para sa ating lahat, ang mga ari-arian ay mga kasalanan. Ang pagkawala ng mga iyon, sa anumang paraan, ay pag-aalis ng mga kasalanan.</q> Sinabi ng aming ama: <q>Makatuwiran iyon, yamang ipinaliwanag mong ang mga ito ang dalawang hangganan ng dalawang hari at nasa kapangyarihan ng bawat isa na pumili sa alinmang nais niya sa sakop ng kanilang kapangyarihan. Ngunit bakit ipinadadala ang mga paghihirap, o bakit tayo makatarungang dumaranas ng mga iyon?</q> Sinabi ni Pedro: <q>Lubos na makatarungan; sapagkat yamang ang hangganan ng mga maliligtas ay, gaya ng sinabi ko, na walang sinuman ang dapat magmay-ari ng anuman, ngunit marami ang may maraming pag-aari—o sa ibang salita, maraming kasalanan—dahil dito, sa labis na pag-ibig ng Diyos ay ipinadadala ang mga paghihirap sa mga hindi kumikilos nang may dalisay na puso, upang dahil mayroon pa silang sukat ng pag-ibig sa Diyos ay maligtas sila, sa pamamagitan ng pansamantalang kaparusahan, mula sa mga walang-hanggang kaparusahan.</q></p><h3>Kabanata X. Hindi Awtomatikong Matuwid ang Mahirap</h3><p>At sinabi ng aming ama: <q>Paano naman ito? Hindi ba natin nakikitang marami ring di-maka-Diyos ang mahirap? Dahil ba rito ay kabilang sila sa maliligtas?</q> Sinabi ni Pedro: <q>Hindi; sapagkat hindi katanggap-tanggap ang kahirapang naghahangad sa hindi nararapat hangarin. Kaya may ilan na mayaman ayon sa kanilang pagpili bagaman mahirap sa aktuwal na pag-aari, at pinarurusahan sila sapagkat nagnanais silang magkaroon pa nang higit. Hindi rin tiyak na matuwid ang isang tao dahil lamang nagkataong mahirap siya. Maaari siyang maging pulubi sa aktuwal na pag-aari ngunit maghangad at gumawa pa nga ng mga bagay na higit sa lahat ay hindi niya dapat gawin. Maaaring sumamba siya sa mga diyus-diyosan, lumapastangan, makiapid, mamuhay nang walang pagpipigil, manumpa nang huwad, magsinungaling, o mamuhay bilang hindi sumasampalataya. Ngunit idineklara ng ating Guro na pinagpala ang mahihirap na sumasampalataya; at hindi Niya sinabi iyon dahil may ibinigay sila, sapagkat wala silang anumang maibibigay, kundi sapagkat hindi sila mahahatulan na parang nagkasala dahil lamang wala silang naibigay na limos, sapagkat wala naman silang maibibigay.</q> At sinabi ng aming ama: <q>Sa katunayan, tila lubos na maayos ang lahat hinggil sa paksang tinatalakay; kaya nagpasiya akong pakinggan ang buong pangangatwiran mo ayon sa wastong pagkakasunod.</q></p><h3>Kabanata XI. Ipinangakong Paglalahad ng Tunay na Relihiyon</h3><p>At sinabi ni Pedro: <q>Yamang sabik ka nang matutuhan ang mga bagay na nauukol sa aming relihiyon, nararapat kong ipaliwanag ang mga iyon ayon sa kaayusan, na nagsisimula sa Diyos mismo at ipinakikitang Siya lamang ang nararapat tawaging Diyos; hindi natin dapat tawaging mga diyos ang iba ni ituring silang gayon, at ang gumagawa ng salungat dito ay parurusahan nang walang hanggan sapagkat ipinakita niya ang pinakadakilang kawalang-galang sa Kanya na Panginoon ng lahat.</q> Pagkasabi nito, ipinatong niya ang kanyang mga kamay sa mga pinahihirapan ng mga kapighatian, maysakit, at sinasapian ng mga demonyo; at sa pananalangin ay pinagaling niya sila at pinaalis ang mga karamihan. Pagkatapos ay pumasok siya, kinain ang kanyang nakaugaliang pagkain, at natulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

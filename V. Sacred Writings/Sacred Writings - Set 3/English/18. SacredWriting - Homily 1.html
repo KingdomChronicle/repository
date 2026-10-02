@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 1</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Boyish Questionings</option><option value="1">Chapter II. Good Out of Evil</option><option value="2">Chapter III. Perplexity</option><option value="3">Chapter IV. More Perplexity</option><option value="4">Chapter V. A Resolution</option><option value="5">Chapter VI. Tidings from Judæa</option><option value="6">Chapter VII. The Gospel in Rome</option><option value="7">Chapter VIII. Departure from Rome</option><option value="8">Chapter IX. Preaching of Barnabas</option><option value="9">Chapter X. Cavils of the Philosophers</option><option value="10">Chapter XI. Clement's Zeal</option><option value="11">Chapter XII. Clement's Rebuke of the People</option><option value="12">Chapter XIII. Clement Instructed by Barnabas</option><option value="13">Chapter XIV. Departure of Barnabas</option><option value="14">Chapter XV. Introduction to Peter</option><option value="15">Chapter XVI. Peter's Salutation</option><option value="16">Chapter XVII. Questions Propounded</option><option value="17">Chapter XVIII. Causes of Ignorance</option><option value="18">Chapter XIX. The True Prophet</option><option value="19">Chapter XX. Peter's Satisfaction with Clement</option><option value="20">Chapter XXI. Unalterable Conviction</option><option value="21">Chapter XXII. Thanksgiving</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Boyish Questionings</h3><p>I Clement, being a Roman citizen, even from my earliest youth was able to live chastely, my mind from my boyhood drawing away the lust that was in me to dejection and distress. For I had a habit of reasoning—how originating I know not—making frequent cogitations concerning death: When I die, shall I neither exist, nor shall any one ever have any remembrance of me, while boundless time bears all things of all men into forgetfulness? And shall I then be without being, or acquaintance with those who are; neither knowing nor being known, neither having been nor being? And has the world ever been made? And was there anything before it was made? For if it has been always, it shall also continue to be; but if it has been made, it shall also be dissolved. And after its dissolution, shall there ever be anything again, unless, perhaps, silence and forgetfulness? Or perhaps something shall be which is not possible now to conceive.</p><h3>Chapter II. Good Out of Evil</h3><p>As I pondered without ceasing these and such like questions—I know not whence arising—I had such bitter grief, that, becoming pale, I wasted away; and, what was most terrible, if at any time I wished to drive away this meditation as unprofitable, my suffering became all the more severe; and I grieved over this, not knowing that I had a fair inmate, even my thought, which was to be to me the cause of a blessed immortality, as I afterwards knew by experience, and gave thanks to God, the Lord of all. For it was by this thought, which at first afflicted me, that I was compelled to come to the search and the finding of things; and then I pitied those whom at first, through ignorance, I ventured to call blessed.</p><h3>Chapter III. Perplexity</h3><p>From my boyhood, then, being involved in such reasonings, in order to learn something definite, I used to resort to the schools of the philosophers. But nought else did I see than the setting up and the knocking down of doctrines, and strifes, and seeking for victory, and the arts of syllogisms, and the skill of assumptions; and sometimes one <em>opinion</em> prevailed,—as, for example, that the soul is immortal, and sometimes that it is mortal. If, therefore, at any time the doctrine prevailed that it is immortal, I was glad; and when the doctrine prevailed that it is mortal, I was grieved. And again, I was the more disheartened because I could not establish either doctrine to my satisfaction. However, I perceived that the opinions on subjects under discussion are taken as true or false, according to their defenders, and do not appear as they really are. Perceiving, therefore, now that the acceptance does not depend on the real nature of the subjects discussed, but that opinions are proved to be true or false, according to ability of those who defend them, I was still more than ever at a loss in regard of things. Wherefore I groaned from the depth of my soul. For neither was I able to establish anything, nor could I shake off the consideration of such things, though, as I said before, I wished it. For although I frequently charged myself to be at peace, in some way or other thoughts on these subjects, accompanied with a feeling of pleasure, would come into my mind.</p><h3>Chapter IV. More Perplexity</h3><p>And again, living in doubt, I said to myself, Why do I labour in vain, when the matter is clear, that if I lose existence when I die, it is not fitting that I should distress myself now while I do exist? Wherefore I shall reserve my grief till that <em>day</em>, when, ceasing to exist, I shall not be affected with grief. But if I am to exist, what does it profit me now to distress myself gratuitously? And immediately after this another reasoning assailed me; for I said, Shall I not have something worse to suffer then than that which distresses me now, if I have not lived piously; and shall I not be delivered over, according to the doctrines of some philosophers, to Pyriphlegethon and Tartarus, like Sisyphus, or Tityus, or Ixion, or Tantalus, and be punished for ever in Hades? But again I replied, saying: But there are no such things as these. Yet again I said: But if there be? Therefore, said I, since the matter is uncertain, the safer plan is for me rather to live piously. But how shall I be able, for the sake of righteousness, to subdue bodily pleasures, looking, as I do, to an uncertain hope? But I am neither fully persuaded what is that righteous thing that is pleasing to God, nor do I know whether the soul is immortal or mortal. Neither can I find any well-established doctrine, nor can I abstain from such debatings.</p><h3>Chapter V. A Resolution</h3><p>What, then, am I to do, unless this? I shall go into Egypt, and I shall become friendly with the hierophants of the shrines, and with the prophets; and I shall seek and find a magician, and persuade him with large bribes to effect the calling up of a soul, which is called necromancy, as if I were going to inquire of it concerning some business. And the inquiry shall be for the purpose of learning whether the soul is immortal. But the answer of the soul that it is immortal shall not give me the knowledge from its speaking or my hearing, but only from its being seen; so that, seeing it with my very eyes, I may have a self-sufficient and fit assurance, from the very fact of its appearing, that it exists; and never again shall the uncertain words of hearing be able to overturn the things which the eyes have made their own. However, I submitted this very plan to a certain companion who was a philosopher; and he counselled me not to venture upon it, and that on many accounts. <q>For if,</q> said he, <q>the soul shall not listen to the magician, you will live with an evil conscience, as having acted against the laws which forbid the doing of these things. But if it shall listen to him, then, besides your living with an evil conscience, I think that matters of piety will not be promoted to you on account of your making this attempt. For they say that the Deity is angry with those who disturb souls after their release from the body.</q> And I, when I heard this, became indeed more backward to undertake such a thing, but I did not abandon my original plan; but I was distressed, as being hindered in the execution of it.</p><h3>Chapter VI. Tidings from Judæa</h3><p>And, not to discuss such matters to you in a long speech, while I was occupied with such reasonings and doings, a certain report, taking its rise in the spring-time, in the reign of Tiberius Cæsar, gradually grew everywhere, and ran through the world as truly the good tidings of God, being unable to stifle the counsel of God in silence. Therefore it everywhere became greater and louder, saying that a certain One in Judæa, beginning in the spring season, was preaching to the Jews the kingdom of the invisible God, and saying that whoever of them would reform his manner of living should enjoy it. And in order that He might be believed that He uttered these things full of the Godhead, He wrought many wonderful miracles and signs by His mere command, as having received power from God. For He made the deaf to hear, the blind to see, the lame to walk, raised up the bowed down, drove away every disease, put to flight every demon; and even scabbed lepers, by only looking on Him from a distance, were sent away cured by Him; and the dead being brought to Him, were raised; and there was nothing which He could not do. And as time advanced, so much the greater, through the arrival of more persons, and the stronger grew—I say not now the report, but—the truth of the thing; for now at length there were meetings in various places for consultation and inquiry as to who He might be that had appeared, and what was His purpose.</p><h3>Chapter VII. The Gospel in Rome</h3><p>And then in the same year, in the autumn season, a certain one, standing in a public place, cried and said, <q>Men of Rome, hearken. The Son of God has come in Judæa, proclaiming eternal life to all who will, if they shall live according to the counsel of the Father, who has sent Him. Wherefore change your manner of life from the worse to the better, from things temporal to things eternal; for know ye that there is one God, who is in heaven, whose world ye unrighteously dwell in before His righteous eyes. But if ye be changed, and live according to His counsel, then, being born into the other world, and becoming eternal, ye shall enjoy His unspeakable good things. But if ye be unbelieving, your souls, after the dissolution of the body, shall be thrown into the place of fire, where, being punished eternally, they shall repent of their unprofitable deeds. For every one, the term of repentance is the present life.</q> I therefore, when I heard these things, was grieved, because no one among so great multitudes, hearing such an announcement, said: I shall go into Judæa, that I may know if this man who tells us these things speaks the truth, that the Son of God has come into Judæa, for the sake of a good and eternal hope, revealing the will of the Father who sent Him. For it is no small matter which they say that He preaches: for He asserts that the souls of some, being <em>themselves</em> immortal, shall enjoy eternal good things; and that those of others, being thrown into unquenchable fire, shall be punished forever.</p><h3>Chapter VIII. Departure from Rome</h3><p>While I spoke thus concerning others, I also lectured myself, saying, Why do I blame others, being myself guilty of the very same crime of heedlessness? But I shall hasten into Judæa, having first arranged my affairs. And when I had thus made up my mind, there occurred a long time of delay, my worldly affairs being difficult to arrange. Therefore, meditating further on the nature of life, that by involving men in hope it lays snares for those who are making haste, yea, and how much time I had been robbed of while tossed by hopes, and that we men die while thus occupied, I left all my affairs as they were, and sped to Portus; and coming to the harbour, and being taken on board a ship, I was borne by adverse winds to Alexandria instead of Judæa; and being detained there by stress of weather, I consorted with the philosophers, and told them about the rumour and the sayings of him who had appeared in Rome. And they answered that indeed they knew nothing of him who had appeared in Rome; but concerning Him who was born in Judæa, and who was said by the report to be the Son of God, they had heard from many who had come from thence, and had learned respecting all the wonderful things that He did with a word.</p><h3>Chapter IX. Preaching of Barnabas</h3><p>And when I said that I wished I could meet with some one of those who had seen Him, they immediately brought me to one, saying, <q>There is one here who not only is acquainted with Him, but is also of that country, a Hebrew, by name Barnabas, who says that he himself is one of His disciples; and hereabouts he resides, and readily announces to those who will the terms of His promise.</q> Then I went with them; and when I came, I stood listening to his words with the crowd that stood round him; and I perceived that he was speaking the truth not with dialectic art, but was setting forth simply and without preparation what he had heard and seen the manifested Son of God do and say. And even from the crowd who stood around him he produced many witnesses of the miracles and discourses which he narrated.</p><h3>Chapter X. Cavils of the Philosophers</h3><p>But while the multitudes were favourably disposed towards the things that he so artlessly spoke, the philosophers, impelled by their worldly learning, set upon laughing at him and making sport of him, upbraiding and reproaching him with excessive presumption, making use of the great armoury of syllogisms. But he set aside their babbling, and did not enter into their subtle questioning, but without embarrassment went on with what he was saying. And then one of them asked, Wherefore it was that a gnat, although it be so small, and has six feet, has wings also; while an elephant, the largest of beasts, is wingless, and has but four feet? But he, after the question had been put, resuming his discourse, which had been interrupted, as though he had answered the question, resumed his original discourse, only making use of this preface after each interruption: We have a commission only to tell you the words and the wondrous doings of Him who sent us; and instead of logical demonstration, we present to you many witnesses from amongst yourselves who stand by, whose faces I remember, as living images. These sufficient testimonies it is left to your choice to submit to, or to disbelieve. But I shall not cease to declare unto you what is for your profit; for to be silent were to me a loss, and to disbelieve is ruin to you. But indeed I could give answers to your frivolous questions, if you asked them through love of truth. But the reason of the different structure of the gnat and elephant it is not fitting to tell to those who are ignorant of the God of all.</p><h3>Chapter XI. Clement's Zeal</h3><p>When he said this, they all, as in concert, set up a shout of laughter, trying to silence him and put him out, as a barbarous madman. But I, seeing this, and seized, I know not how, with enthusiasm, could no longer keep silence with righteous indignation, but boldly cried out, saying, <q>Well has God ordained that His counsel should be incapable of being received by you, foreseeing you to be unworthy, as appears manifestly to such of those who are now present as have minds capable of judging. For whereas now heralds of His counsel have been sent forth, not making a show of grammatical art, but setting forth His will in simple and inartificial words, so that whosoever hear can understand what is spoken, and not with any invidious feeling, as though unwilling to offer it to all; you come here, and besides your not understanding what is for your advantage, to your own injury you laugh at the truth, which, to your condemnation, consorts with the barbarians, and which you will not entertain when it visits you, by reason of your wickedness and the plainness of its words, lest you be convicted of being merely lovers of words, and not lovers of truth and lovers of wisdom. How long will you be learning to speak, who have not the power of speech? For many sayings of yours are not worth one word. What, then, will your Grecian multitude say, being of one mind, if, as he says, there shall be a judgment? <q>Why, O God, did You not proclaim to us Your counsel?</q> Shall you not, if you be thought worthy of an answer at all, be told this? <q>I, knowing before the foundation of the world all characters that were to be, acted towards each one by anticipation according to his deserts without making it known; but wishing to give full assurance to those who have fled to me that this is so, and to explain why from the beginning, and in the first ages, I did not suffer my counsel to be publicly proclaimed; I now, in the end of the world, have sent heralds to proclaim my will, and they are insulted and flouted by those who will not be benefited, and who wilfully reject my friendship. Oh, great wrong! The preachers are exposed to danger even to the loss of life, and that by the men who are called to salvation.</q></q></p><h3>Chapter XII. Clement's Rebuke of the People</h3><p><q>And this wrongful treatment of my heralds would have been against all from the beginning, if from the beginning the unworthy had been called to salvation. For that which is now done wrongfully by these men serves to the vindication of my righteous foreknowledge, that it was well that I did not choose from the beginning to expose uselessly to public contempt the word which is worthy of honour; but determined to suppress it, as being honourable, not indeed from those who were worthy from the beginning—for to them also I imparted it—but from those, and such as those, unworthy, as you see them to be,—those who hate me, and who will not love themselves. And now, give over laughing at this man, and hear me with respect to his announcement, or let any one of the hearers who pleases answer. And do not bark like vicious dogs, deafening with disorderly clamour the ears of those who would be saved, ye unrighteous and God-haters, and perverting the saving method to unbelief. How shall you be able to obtain pardon, who scorn him who is sent to speak to you of the Godhead of God? And this you do towards a man whom you ought to have received on account of his good-will towards you, even if he did not speak truth.</q></p><h3>Chapter XIII. Clement Instructed by Barnabas</h3><p>While I spoke these words, and others to the same effect, there arose a great excitement among the crowd; and some as pitying Barnabas, sympathized with me; but others, being senseless, terribly gnashed their teeth against me. But, as the evening had already come, I took Barnabas by the hand, and by force conducted him, against his will, to my lodging, and constrained him to remain there, lest some one might lay hands on him. And having spent several days, and instructed me briefly in the true doctrine, as well as he could in a few days, he said that he should hasten into Judæa for the observance of the festival, and also because he wished for the future to consort with those of his own nation.</p><h3>Chapter XIV. Departure of Barnabas</h3><p>But it plainly appeared to me that he was disconcerted. For when I said to him, <q>Only set forth to me the words which you have heard of the Man who has appeared, and I will adorn them with my speech, and preach the counsel of God; and if you do so, within a few days I will sail with you, for I greatly desire to go to the land of Judæa, and perhaps I shall dwell with you all my life;</q>—when he heard this, he answered: <q>If you wish to inquire into our affairs, and to learn what is for your advantage, sail with me at once. But if you will not, I shall now give you directions to my house, and that of those whom you wish <em>to meet</em>, that when you choose to come you may find us. For I shall set out tomorrow for my home.</q> And when I saw that he could not be prevailed upon, I went with him as far as the harbour; and having learned of him the directions which he had promised to give me for finding the dwellings, I said to him, <q>Were it not that tomorrow I am to recover a debt that is due to me, I should straightway set sail with you. But I shall soon overtake you.</q> And having said this, and having given him in charge to those who commanded the ship, I returned grieving, remembering him as an excellent and dear friend.</p><h3>Chapter XV. Introduction to Peter</h3><p>But having spent <em>some</em> days, and not having been able to recover the whole debt, for the sake of speed I neglected the balance, as being a hindrance, and myself also set sail for Judæa, and in fifteen days arrived at Cæsarea Stratonis. And when I had landed, and was seeking for a lodging, I learned that one named Peter, who was the most esteemed disciple of the Man who had appeared in Judæa, and had done signs and wonders, was going to have a verbal controversy next day with Simon, a Samaritan of Gitthi. When I heard this, I begged to be shown his lodging; and as soon as I learned it, I stood before the door. And those who were in the house, seeing me, discussed the question who I was, and whence I had come. And, behold, Barnabas came out; and as soon as he saw me he embraced me, rejoicing greatly, and weeping. And he took me by the hand, and conducted me to where Peter was, saying to me, <q>This is Peter, of whom I told you as being the greatest in the wisdom of God, and I have spoken to him of you continually. Therefore enter freely, for I have told him your excellent qualities, without falsehood; and, at the same time, have disclosed to him your intention, so that he himself also is desirous to see you. Therefore I offer him a great gift when by my hands I present you to him.</q> Thus saying, he presented me, and said, <q>This, O Peter, is Clement.</q></p><h3>Chapter XVI. Peter's Salutation</h3><p>Then the blessed man, springing forward as soon as he heard my name, kissed me; and making me sit down, straightway said, <q>You acted nobly in entertaining Barnabas, a herald of the truth, to the honour of the living God, being magnanimously not ashamed, nor fearing the resentment of the rude multitude. Blessed shall you be. For as you thus with all honour entertained the ambassador of the truth, so also truth herself shall constitute you, who are a stranger, a citizen of her own city. And thus you shall greatly rejoice, because you have now lent a small favour; I mean the kindness of good words. You shall be heir of blessings which are both eternal and cannot possibly be taken from you. And do not trouble yourself to detail to me your manner of life; for the veracious Barnabas has detailed to us everything relating to you, making favourable mention of you almost every day. And in order that I may tell to you briefly, as to a genuine friend, what is in hand, travel with us, unless anything hinders you, partaking of the words of truth which I am going to speak from city to city, as far as Rome itself. And if you wish <em>to say</em> anything, speak on.</q></p><h3>Chapter XVII. Questions Propounded</h3><p>Then I set forth my purpose from the beginning, and how I had spent myself upon difficult questions, and all the things that I disclosed to you at the outset, so that I need not write the same things again. Then I said, <q>I hold myself in readiness to journey with you; for this, I know not how, I gladly wish. However, I wish first to be convinced concerning the truth, that I may know whether the soul is mortal or immortal; and whether, if it is eternal, it is to be judged concerning the things which it has done here. Also, whether there is anything that is righteous and well-pleasing to God; and whether the world was made, and for what end it was made; and whether it shall be dissolved; and if it shall be dissolved, whether it shall be made better, or shall not be at all.</q> And not to mention them in detail, I said that I wished to learn these things, and things consequent upon these. And to this he answered: <q>I shall shortly convey to you, O Clement, the knowledge of the things that are; and even now listen.</q></p><h3>Chapter XVIII. Causes of Ignorance</h3><p><q>The will of God has been <em>kept</em> in obscurity in many ways. In the first place, there is evil instruction, wicked association, terrible society, unseemly discourses, wrongful prejudice. Thereby is error, then fearlessness, unbelief, fornication, covetousness, vainglory; and ten thousand other such evils, filling the world as a quantity of smoke fills a house, have obscured the sight of the men inhabiting the world, and have not suffered them to look up and become acquainted with God the Creator from the delineation <em>of Himself which He has given</em>, and to know what is pleasing to Him. Wherefore it behooves the lovers of truth, crying out inwardly from their breasts, to call for aid, with truth-loving reason, that some one living within the house which is filled with smoke may approach and open the door, so that the light of the sun which is without may be admitted into the house, and the smoke of the fire which is within may be driven out.</q></p><h3>Chapter XIX. The True Prophet</h3><p><q>Now the Man who is the helper I call the true Prophet; and He alone is able to enlighten the souls of men, so that with our own eyes we may be able to see the way of eternal salvation. But otherwise it is impossible, as you also know, since you said a little while ago that every doctrine is set up and pulled down, and the same is thought true or false, according to the power of him who advocates it; so that doctrines do not appear as they are, but take the appearance of being or not being truth or falsehood from those who advocate them. On this account the whole business of religion needed a true prophet, that he might tell us things that are, as they are, and how we must believe concerning all things. So that it is first necessary to test the prophet by every prophetic sign, and having ascertained that he is true, thereafter to believe him in every thing, and not to sit in judgment upon his several sayings, but to receive them as certain, being accepted indeed by seeming faith, yet by sure judgment. For by our initial proof, and by strict inquiry on every side, all things are received with right reason. Wherefore before all things it is necessary to seek after the true Prophet, because without Him it is impossible that any certainty can come to men.</q></p><h3>Chapter XX. Peter's Satisfaction with Clement</h3><p>And, at the same time, he satisfied me by expounding to me who He is, and how He is found, and holding Him forth to me as truly to be found, showing that the truth is more manifest to the ear by the discourse of the prophet than things that are seen with the eye; so that I was astonished, and wondered that no one sees those things which are sought after by all, though they lie before him. However, having written this discourse concerning the Prophet by his order, he caused the volume to be dispatched to you from Cæsarea Stratonis, saying that he had a charge from you to send his discourses and his acts year by year. Thus, on the very first day, beginning only concerning the prophet of the truth, he confirmed me in every respect; and then he spoke thus: <q>Henceforth give heed to the discussions that take place between me and those on the other side; and even if I come off at a disadvantage, I am not afraid of your ever doubting of the truth that has been delivered to you, knowing well that I seem to be beaten, but not the doctrine that has been delivered to us by the Prophet. However, I hope not to come off in our inquiries at a disadvantage with men who have understanding—I mean lovers of truth, who are able to know what discourses are specious, artificial, and pleasant, and what are unartificial and simple, trusting only to the truth <em>that is conveyed</em> through them.</q></p><h3>Chapter XXI. Unalterable Conviction</h3><p>When he had thus spoken, I answered: <q>Now do I thank God; for as I wished to be convinced, so He has vouchsafed to me. However, so far as concerns me, be you so far without anxiety that I shall never doubt; so much so, that if you yourself should ever wish to remove me from the prophetic doctrine, you should not be able, so well do I know what I have received. And do not think that it is a great thing that I promise you that I shall never doubt; for neither I myself, nor any man who has heard your discourse concerning the Prophet, can ever doubt of the true doctrine, having first heard and understood what is the truth of the prophetic announcement. Wherefore have confidence in the God-willed dogma; for every art of wickedness has been conquered. For against prophecy, neither arts of discourses, nor tricks of sophisms, nor syllogisms, nor any other contrivance, can prevail anything; that is, if he who has heard the true Prophet really is desirous of truth, and does not give heed to anything else under pretext of truth. So that, my lord Peter, be not disconcerted, as though you had presented the greatest good to a senseless person; for you have presented it to one sensible of the favour, and who cannot be seduced from the truth that has been committed to him. For I know that it is one of those things which one wishes to receive quickly, and not to attain slowly. Therefore I know that I should not despise, on account of the quickness <em>with which I have got it</em>, what has been committed to me, what is incomparable, and what alone is safe.</q></p><h3>Chapter XXII. Thanksgiving</h3><p>When I had thus spoken, Peter said: <q>I give thanks to God, both for your salvation and for my satisfaction. For I am truly pleased to know that you apprehend what is the greatness of prophecy. Since, then, as you say, if I myself should ever wish—which God forbid—to transfer you to another doctrine, I shall not be able to persuade you, begin from tomorrow to attend upon me in the discussions with the adversaries. And tomorrow I have one with Simon Magus.</q> And having spoken thus, and he himself having partaken of food in private, he ordered me also to partake; and having blessed the food, and having given thanks after being satisfied, and having given me an account of this matter, he went on to say: <q>May God grant you in all things to be made like unto me, and having been baptized, to partake of the same table with me.</q> And having thus spoken, he enjoined me to go to rest; for now indeed my bodily nature demanded sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Mga Tanong Noong Kabataan</h3><p>Ako, si Clemente, na isang mamamayang Romano, ay nakapamuhay nang may kalinisan mula pa sa pinakamaagang panahon ng aking kabataan, sapagkat mula pagkabata ay inilalayo na ng aking isip ang pagnanasa sa loob ko tungo sa kalungkutan at pagkabagabag. Nakaugalian kong mangatwiran—hindi ko alam kung saan ito nagmula—at madalas akong mag-isip tungkol sa kamatayan: Kapag namatay ako, mawawala na ba ako sa pag-iral, at wala na bang sinuman ang kailanman makaaalala sa akin, samantalang dinadala ng walang-hanggang panahon sa pagkalimot ang lahat ng bagay ng lahat ng tao? At ako ba noon ay mawawalan ng pag-iral o pakikipagkilala sa mga umiiral—hindi nakakakilala ni nakikilala, na para bang hindi kailanman nabuhay o umiral? At ang sanlibutan ba ay minsang nilikha? Mayroon bang anuman bago ito nilikha? Sapagkat kung ito ay palaging umiiral, magpapatuloy din itong umiral; ngunit kung ito ay nilikha, ito rin ay mawawasak. At matapos itong mawasak, magkakaroon pa kaya muli ng anuman—maliban marahil sa katahimikan at pagkalimot? O baka mayroong bagay na hindi pa natin kayang maisip ngayon.</p><h3>Kabanata II. Mabuting Nagmula sa Masama</h3><p>Habang walang tigil kong pinagninilayan ang mga ito at mga katulad na tanong—na hindi ko alam kung saan nagmumula—napakatindi ng aking dalamhati anupa’t namutla ako at nangayayat. At ang pinakamasaklap, kapag sinisikap kong itaboy ang ganitong pagninilay bilang walang pakinabang, lalo lamang tumitindi ang aking paghihirap. Nagdalamhati ako dahil dito, hindi ko nalalaman na mayroon pala akong mabuting nananahan sa loob ko—ang mismong pag-iisip ko—na magiging sanhi para sa akin ng isang pinagpalang kawalang-kamatayan, gaya ng kalaunan ay nalaman ko sa karanasan at ipinagpasalamat ko sa Diyos, ang Panginoon ng lahat. Sapagkat ang pag-iisip na ito, na noong una’y nagpapahirap sa akin, ang siyang nagtulak sa akin na maghanap at makasumpong ng mga bagay; at pagkatapos ay naawa ako sa mga taong noong una, dahil sa aking kamangmangan, ay nangahas akong tawaging mapapalad.</p><h3>Kabanata III. Pagkalito</h3><p>Mula pagkabata, habang nababalot ako ng ganitong mga pangangatwiran, pumupunta ako sa mga paaralan ng mga pilosopo upang matutuhan ang isang bagay na tiyak. Ngunit wala akong nakita kundi ang pagtatayo at pagbuwag ng mga aral, mga pagtatalo, paghahangad na manaig, mga sining ng silohismo, at husay sa pagbuo ng mga pagpapalagay. Kung minsan ay isang <em>pananaw</em> ang nanaig—halimbawa, na ang kaluluwa ay walang kamatayan—at kung minsan naman ay ang pananaw na ito’y namamatay. Kaya kapag nanaig ang aral na ang kaluluwa ay walang kamatayan, natutuwa ako; ngunit kapag nanaig ang aral na ito’y namamatay, nalulungkot ako. Lalo pa akong pinanghihinaan ng loob dahil hindi ko mapagtibay ang alinman sa dalawang aral sa paraang sapat para sa akin. Gayunman, napansin ko na ang mga pananaw tungkol sa mga paksang pinag-uusapan ay tinatanggap bilang totoo o mali ayon sa husay ng mga tagapagtanggol nito, sa halip na lumitaw ayon sa tunay nitong kalikasan. Nang makita kong ang pagtanggap sa isang pananaw ay hindi nakasalalay sa tunay na kalagayan ng paksang pinag-uusapan kundi sa kakayahan ng mga nagtatanggol nito na patunayang tila totoo o mali ang isang opinyon, lalo akong nalito kaysa dati tungkol sa mga bagay na ito. Kaya napabuntong-hininga ako mula sa kaibuturan ng aking kaluluwa. Wala akong mapagtibay, at hindi ko rin maalis sa isip ang pag-iisip tungkol sa mga bagay na ito, bagaman, gaya ng sinabi ko, nais kong gawin iyon. Sapagkat kahit madalas kong utusan ang sarili kong manahimik, sa kung anong paraan ay bumabalik sa aking isip ang mga pag-iisip tungkol sa mga paksang ito, na may kaakibat pang isang uri ng kasiyahan.</p><h3>Kabanata IV. Lalong Pagkalito</h3><p>At muli, habang nabubuhay sa pag-aalinlangan, sinabi ko sa sarili ko: Bakit ako nagpapakahirap nang walang kabuluhan, samantalang malinaw na kung mawawala ang aking pag-iral kapag namatay ako, hindi nararapat na pahirapan ko ang sarili ko ngayon habang umiiral pa ako? Kaya ipagpapaliban ko ang aking dalamhati hanggang sa <em>araw</em> na iyon, kung kailan, sa paghinto ng aking pag-iral, hindi na rin ako maaapektuhan ng kalungkutan. Ngunit kung patuloy akong iiral, ano ang mapapala ko sa pagpapahirap ko ngayon sa sarili nang walang dahilan? Kaagad namang sumalakay sa akin ang isa pang pangangatwiran. Sinabi ko: Hindi kaya may mas masahol pa akong pagdurusahan noon kaysa sa nagpapahirap sa akin ngayon, kung hindi ako namuhay nang maka-Diyos? At hindi kaya ako, ayon sa mga aral ng ilang pilosopo, ay ibibigay sa Pyriphlegethon at Tartarus, gaya nina Sisyphus, Tityus, Ixion, o Tantalus, at parurusahan magpakailanman sa Hades? Ngunit muli akong sumagot sa sarili: Wala namang gayong mga bagay. Pagkatapos ay muli kong sinabi: Ngunit paano kung mayroon? Kaya sinabi ko, dahil hindi tiyak ang bagay na ito, mas ligtas para sa akin na mamuhay nang maka-Diyos. Ngunit paano ko mapasusuko, alang-alang sa katuwiran, ang mga pita ng katawan kung ang inaasahan ko ay hindi tiyak? Hindi rin ako lubos na kumbinsido kung ano ang bagay na matuwid at kalugud-lugod sa Diyos, at hindi ko alam kung ang kaluluwa ay walang kamatayan o namamatay. Wala rin akong matagpuang matibay na aral, at hindi ko mapigilang makipagtalo tungkol sa mga bagay na ito.</p><h3>Kabanata V. Isang Pasya</h3><p>Ano, kung gayon, ang gagawin ko kundi ito? Pupunta ako sa Ehipto at makikipagkaibigan sa mga hierophant ng mga dambana at sa mga propeta. Maghahanap ako ng isang salamangkero at hihikayatin siya sa pamamagitan ng malaking bayad na tumawag ng isang kaluluwa mula sa mga patay—ang tinatawag na nekromansiya—na para bang may itatanong lamang akong isang bagay dito. Ang itatanong ko ay upang malaman kung ang kaluluwa ay walang kamatayan. Ngunit ang sagot ng kaluluwa na ito’y walang kamatayan ay hindi magbibigay sa akin ng kaalaman dahil lamang narinig ko itong magsalita; ang kaalaman ay manggagaling sa mismong pagkakita ko rito. Sa gayon, kapag nakita ko ito ng sarili kong mga mata, magkakaroon ako ng sapat at angkop na katiyakan mula sa mismong katotohanang ito’y nagpakita at umiiral; at hindi na muling maibabagsak ng di-tiyak na mga salitang naririnig ang bagay na napatunayan na ng mga mata. Gayunman, sinabi ko ang planong ito sa isang kasama kong pilosopo, at pinayuhan niya akong huwag itong tangkain, sa maraming dahilan. <q>Sapagkat kung,</q> sabi niya, <q>hindi susunod ang kaluluwa sa salamangkero, mamumuhay kang may masamang budhi dahil kumilos ka laban sa mga batas na nagbabawal sa gayong mga gawain. Ngunit kung susunod ito sa kanya, bukod sa mamumuhay kang may masamang budhi, sa palagay ko’y hindi ka rin susulong sa kabanalan dahil sa ginawa mong pagtatangkang ito. Sapagkat sinasabi nilang nagagalit ang Diyos sa mga nanggugulo sa mga kaluluwa matapos mahiwalay ang mga ito sa katawan.</q> Nang marinig ko ito, higit nga akong nag-atubiling isagawa ang gayong bagay, ngunit hindi ko pa rin tinalikuran ang aking orihinal na plano. Sa halip, nabagabag ako dahil nahahadlangan akong maisakatuparan iyon.</p><h3>Kabanata VI. Mga Balita mula sa Judea</h3><p>At upang hindi na humaba ang aking pagsasalaysay tungkol sa gayong mga bagay, habang abala ako sa mga ganitong pangangatwiran at gawain, may isang balitang nagsimulang kumalat noong tagsibol, sa paghahari ni Tiberius Caesar. Unti-unti itong lumaganap sa lahat ng dako at umabot sa buong sanlibutan bilang tunay na mabuting balita ng Diyos, sapagkat hindi maaaring ikubli sa katahimikan ang layunin ng Diyos. Kaya lalo itong lumaki at lumakas saanman. Sinasabi ng balita na may Isang nasa Judea na, simula noong tagsibol, ay nangangaral sa mga Judio tungkol sa kaharian ng di-nakikitang Diyos, at nagsasabing ang sinumang magbabago ng paraan ng pamumuhay ay makatatamasa nito. At upang paniwalaan na ang Kanyang mga sinasabi ay puspos ng pagka-Diyos, gumawa Siya ng maraming kahanga-hangang himala at tanda sa pamamagitan lamang ng Kanyang utos, sapagkat tumanggap Siya ng kapangyarihan mula sa Diyos. Pinadinig Niya ang mga bingi, pinakita ang mga bulag, pinalakad ang mga pilay, itinuwid ang mga nakayuko, inalis ang bawat sakit, pinalayas ang bawat demonyo; maging ang mga ketonging natatakpan ng langib, na tumitingin lamang sa Kanya mula sa malayo, ay pinauuwi Niyang magaling; at ang mga patay na dinadala sa Kanya ay muling binubuhay. Walang bagay na hindi Niya magawa. Habang lumilipas ang panahon at dumarami ang mga taong dumarating, lalo pang lumalaki at tumitibay—hindi na lamang ang balita, kundi ang katotohanan ng pangyayari. Sa wakas ay nagkaroon na ng mga pagtitipon sa iba’t ibang lugar upang pag-usapan at siyasatin kung sino ang lumitaw na iyon at kung ano ang Kanyang layunin.</p><h3>Kabanata VII. Ang Ebanghelyo sa Roma</h3><p>At sa taon ding iyon, pagsapit ng taglagas, may isang taong tumayo sa isang pampublikong lugar at sumigaw: <q>Mga taga-Roma, makinig kayo. Dumating na sa Judea ang Anak ng Diyos, na naghahayag ng buhay na walang hanggan sa lahat ng nagnanais nito, kung mamumuhay sila ayon sa kalooban ng Ama na nagsugo sa Kanya. Kaya baguhin ninyo ang inyong paraan ng pamumuhay—mula sa masama tungo sa mabuti, mula sa mga bagay na panandalian tungo sa mga bagay na walang hanggan. Alamin ninyo na iisa ang Diyos na nasa langit, at sa Kanyang sanlibutan kayo namumuhay nang di-matuwid sa harap ng Kanyang matuwid na mga mata. Ngunit kung kayo’y magbabago at mamumuhay ayon sa Kanyang kalooban, pagkapanganak ninyo sa kabilang sanlibutan at pagkamit ng buhay na walang hanggan, tatamasahin ninyo ang Kanyang di-mailarawang mabubuting bagay. Ngunit kung hindi kayo maniniwala, ang inyong mga kaluluwa, matapos mawasak ang katawan, ay itatapon sa lugar ng apoy. Doon, habang pinarurusahan magpakailanman, pagsisisihan ninyo ang inyong walang-pakinabang na mga gawa. Sapagkat para sa bawat isa, ang takdang panahon ng pagsisisi ay ang kasalukuyang buhay.</q> Nang marinig ko ang mga bagay na ito, nalungkot ako sapagkat sa napakaraming taong nakarinig sa gayong pahayag ay wala man lamang nagsabi: Pupunta ako sa Judea upang malaman kung nagsasabi ng totoo ang taong ito na nagsasabing dumating na sa Judea ang Anak ng Diyos alang-alang sa isang mabuti at walang-hanggang pag-asa, na inihahayag ang kalooban ng Ama na nagsugo sa Kanya. Sapagkat hindi maliit na bagay ang sinasabing Kanyang ipinangangaral: ipinahayag Niya na ang mga kaluluwa ng ilan, na <em>mismo</em> ay walang kamatayan, ay tatamasahin ang walang-hanggang mabubuting bagay; samantalang ang iba, na itatapon sa apoy na hindi mapapatay, ay parurusahan magpakailanman.</p><h3>Kabanata VIII. Pag-alis mula sa Roma</h3><p>Habang ganito ang sinasabi ko tungkol sa iba, pinagsabihan ko rin ang sarili ko: Bakit ko sinisisi ang iba gayong ako mismo ay nagkasala rin ng gayunding kapabayaan? Ngunit magmamadali akong pumunta sa Judea matapos ko munang ayusin ang aking mga gawain. Nang mapagpasyahan ko ito, matagal akong naantala dahil mahirap ayusin ang aking mga gawain sa sanlibutan. Kaya lalo kong pinag-isipan ang likas na kalagayan ng buhay—kung paanong sa pamamagitan ng pag-akit sa mga tao sa mga pag-asa ay naglalagay ito ng mga bitag sa mga nagmamadali, kung gaano karaming panahon ang ninakaw sa akin habang itinataboy ako ng mga pag-asang ito, at kung paanong tayong mga tao ay namamatay habang abala sa mga ganitong bagay. Iniwan ko ang aking mga gawain sa kalagayang kinaroroonan ng mga iyon at nagmadali patungong Portus. Pagdating ko sa daungan at pagsakay sa isang barko, dinala ako ng salungat na hangin sa Alexandria sa halip na sa Judea. Dahil pinigil ako roon ng masamang panahon, nakisama ako sa mga pilosopo at ikinuwento sa kanila ang balita at ang mga sinabi ng taong lumitaw sa Roma. Sumagot sila na wala nga silang alam tungkol sa taong lumitaw sa Roma; ngunit tungkol sa Kanya na ipinanganak sa Judea at ayon sa balita ay Anak ng Diyos, marami na silang narinig mula sa mga taong nanggaling doon, at nalaman nila ang tungkol sa lahat ng kahanga-hangang bagay na ginawa Niya sa pamamagitan lamang ng isang salita.</p><h3>Kabanata IX. Pangangaral ni Bernabe</h3><p>Nang sabihin kong nais kong makatagpo sana ng isa sa mga nakakita sa Kanya, agad nila akong dinala sa isang tao at sinabi: <q>May isang narito na hindi lamang nakakakilala sa Kanya kundi taga-roon din—isang Hebreo na ang pangalan ay Bernabe. Sinasabi niyang siya mismo ay isa sa Kanyang mga alagad. Dito lamang siya sa paligid naninirahan, at maluwag niyang ipinahahayag sa sinumang nagnanais makinig ang mga tuntunin ng Kanyang pangako.</q> Kaya sumama ako sa kanila. Pagdating ko, tumayo ako at nakinig sa kanyang mga salita kasama ng maraming taong nakapaligid sa kanya. Napansin kong sinasabi niya ang katotohanan hindi sa pamamagitan ng sining ng dialektika, kundi simple at walang paghahandang inilalahad ang mga narinig at nakita niyang ginawa at sinabi ng nahayag na Anak ng Diyos. Mula pa nga sa mga taong nakapaligid sa kanya ay nagharap siya ng maraming saksi tungkol sa mga himala at mga pahayag na kanyang isinasalaysay.</p><h3>Kabanata X. Mga Pagtutol ng mga Pilosopo</h3><p>Ngunit habang mabuti ang pagtanggap ng karamihan sa mga bagay na simple niyang sinasabi, ang mga pilosopo, na inuudyukan ng kanilang makamundong karunungan, ay nagsimulang pagtawanan at gawing katatawanan siya. Pinagsabihan at nilait nila siya dahil umano sa labis na kapangahasan, gamit ang malawak nilang sandatahan ng mga silohismo. Ngunit isinantabi niya ang kanilang walang-kabuluhang pagdaldal at hindi pumasok sa kanilang mapanlinlang na pagtatanong; sa halip ay walang pagkabalisa niyang ipinagpatuloy ang kanyang sinasabi. Pagkatapos ay may isa sa kanila na nagtanong kung bakit ang isang niknik, bagaman napakaliit at may anim na paa, ay mayroon pang mga pakpak, samantalang ang elepante, na pinakamalaki sa mga hayop, ay walang pakpak at apat lamang ang paa. Matapos itanong iyon, ipinagpatuloy niya ang naputol niyang pahayag na para bang nasagot na niya ang tanong, at sa bawat pagkagambala ay ganito lamang ang kanyang paunang tugon: Kami ay inatasan lamang na sabihin sa inyo ang mga salita at kahanga-hangang gawa Niya na nagsugo sa amin. Sa halip na lohikal na patunay, inihaharap namin sa inyo ang maraming saksi mula mismo sa inyong kalagitnaan na naririto, na ang mga mukha ay natatandaan ko na parang mga buhay na larawan. Nasa inyo na kung tatanggapin ninyo ang sapat na mga patotoong ito o hindi paniniwalaan ang mga iyon. Ngunit hindi ako titigil sa pagpapahayag sa inyo ng makabubuti sa inyo; sapagkat ang pananahimik ay kawalan para sa akin, at ang hindi paniniwala ay kapahamakan para sa inyo. Maibibigay ko naman ang sagot sa inyong mga walang-kabuluhang tanong kung itinatanong ninyo ang mga iyon dahil sa pag-ibig sa katotohanan. Ngunit hindi nararapat ipaliwanag sa mga hindi kumikilala sa Diyos ng lahat ang dahilan ng magkaibang kayarian ng niknik at ng elepante.</p><h3>Kabanata XI. Kasigasigan ni Clemente</h3><p>Nang sabihin niya ito, sabay-sabay silang humalakhak at sinikap siyang patahimikin at paalisin, na para bang isa siyang baliw na barbaro. Ngunit nang makita ko ito, at hindi ko malaman kung paano, ay napuspos ako ng sigasig. Hindi ko na napigil ang aking sarili at, taglay ang matuwid na galit, buong tapang akong sumigaw: <q>Mabuti ang pagkakaayos ng Diyos na hindi ninyo matanggap ang Kanyang layunin, sapagkat nakita Niyang hindi kayo karapat-dapat, gaya ng malinaw na nakikita ng mga naririto na may isip na marunong humatol. Ngayon ay nagsugo Siya ng mga tagapagpahayag ng Kanyang layunin na hindi nagpapakitang-gilas sa sining ng gramatika kundi naglalahad ng Kanyang kalooban sa payak at walang-palamuting mga salita upang maunawaan ng sinumang makarinig ang sinasabi, at hindi dahil sa anumang inggit na para bang ayaw nilang ialok iyon sa lahat. Ngunit dumarating kayo rito at, bukod sa hindi ninyo nauunawaan ang makabubuti sa inyo, ay tinatawanan ninyo ang katotohanan sa ikapipinsala ninyo. Ang katotohanang ito, sa inyong kahatulan, ay kasama ng mga barbaro; at kapag ito’y dumadalaw sa inyo ay ayaw ninyo itong tanggapin dahil sa inyong kasamaan at dahil payak ang mga salita nito, baka mapatunayan kayong mga umiibig lamang sa mga salita at hindi sa katotohanan at karunungan. Hanggang kailan kayo mag-aaral magsalita gayong wala naman kayong tunay na kapangyarihan ng pananalita? Sapagkat marami sa inyong mga sinasabi ay hindi katumbas ng isang makabuluhang salita. Kung gayon, ano ang sasabihin ng inyong karamihang Griyego na magkakaisa ng pag-iisip kung, gaya ng sinasabi niya, magkakaroon ng paghuhukom? <q>Bakit, O Diyos, hindi Mo ipinahayag sa amin ang Iyong layunin?</q> At kung ituturing man kayong karapat-dapat na sagutin, hindi ba ito ang sasabihin sa inyo? <q>Ako, na bago pa itatag ang sanlibutan ay alam na ang lahat ng uri ng taong lilitaw, ay kumilos nang pauna sa bawat isa ayon sa nararapat sa kanya nang hindi iyon ipinahahayag. Ngunit upang lubos na matiyak ng mga tumakas patungo sa Akin na gayon nga ito, at upang ipaliwanag kung bakit mula sa simula at sa mga unang panahon ay hindi Ko hinayaang ipahayag sa madla ang Aking layunin, ngayon sa wakas ng sanlibutan ay nagsugo Ako ng mga tagapagpahayag upang ipahayag ang Aking kalooban. Ngunit sila’y iniinsulto at nililibak ng mga ayaw makinabang at sadyang tumatanggi sa Aking pakikipagkaibigan. Kay laking kawalang-katarungan! Ang mga mangangaral ay inilalagay sa panganib hanggang sa mawalan ng buhay, at ginagawa ito ng mismong mga taong tinatawag tungo sa kaligtasan.</q></q></p><h3>Kabanata XII. Pagsaway ni Clemente sa mga Tao</h3><p><q>At ang maling pagtrato na ito sa Aking mga tagapagpahayag ay nangyari sana laban sa lahat mula pa sa simula kung mula pa sa simula ay tinawag na tungo sa kaligtasan ang mga hindi karapat-dapat. Ang maling ginagawa ngayon ng mga taong ito ay nagsisilbing patunay sa katuwiran ng Aking kaalamang pauna—na mabuti ngang hindi Ko piniling ilantad mula sa simula sa walang-kabuluhang pampublikong paghamak ang salitang karapat-dapat parangalan. Sa halip ay ipinasiya Kong ikubli iyon, dahil ito’y marangal, hindi mula sa mga karapat-dapat mula pa sa simula—sapagkat ibinahagi Ko rin iyon sa kanila—kundi mula sa mga gaya ng nakikita ninyong hindi karapat-dapat: mga napopoot sa Akin at ayaw mahalin maging ang kanilang sarili. Ngayon, tumigil na kayo sa pagtawa sa taong ito at pakinggan ninyo nang may paggalang ang kanyang pahayag, o hayaang sumagot ang sinumang nakikinig na nagnanais sumagot. Huwag kayong tumahol na parang mababangis na aso, na sa magulong sigawan ay binibingi ang mga tainga ng mga nagnanais maligtas, kayong mga di-matuwid at napopoot sa Diyos, at inililihis ninyo tungo sa kawalan ng pananampalataya ang paraan ng kaligtasan. Paano kayo makatatanggap ng kapatawaran kung hinahamak ninyo ang isinugo upang magsalita sa inyo tungkol sa pagka-Diyos ng Diyos? At ginagawa ninyo ito sa isang taong dapat sana ninyong tanggapin dahil sa kanyang mabuting hangarin para sa inyo, kahit pa hindi siya nagsasalita ng katotohanan.</q></p><h3>Kabanata XIII. Tinuruan ni Bernabe si Clemente</h3><p>Habang sinasabi ko ang mga salitang ito at iba pang gayong mga bagay, nagkaroon ng malaking pagkakagulo sa karamihan. Ang ilan, na naaawa kay Bernabe, ay nakiramay sa akin; ngunit ang iba, na walang katinuan, ay galit na galit at nagngalit ng kanilang mga ngipin laban sa akin. Ngunit dahil gabi na, hinawakan ko sa kamay si Bernabe at, kahit labag sa kanyang kalooban, ay sapilitan ko siyang dinala sa aking tinutuluyan at pinilit na manatili roon upang walang sinumang makasakit sa kanya. Makalipas ang ilang araw, matapos niya akong turuan nang maikli tungkol sa tunay na aral sa abot ng kanyang makakaya sa loob ng maikling panahong iyon, sinabi niyang kailangan niyang magmadali patungong Judea upang tuparin ang pagdiriwang at dahil nais niyang mula noon ay makasama ang mga kababayan niya.</p><h3>Kabanata XIV. Pag-alis ni Bernabe</h3><p>Ngunit malinaw kong nakitang nababagabag siya. Sapagkat nang sabihin ko sa kanya, <q>Ilahad mo lamang sa akin ang mga salitang narinig mo mula sa Taong nahayag, at pagagandahin ko ang mga iyon sa pamamagitan ng aking pananalita at ipangangaral ko ang layunin ng Diyos. Kung gagawin mo iyon, sa loob ng ilang araw ay maglalayag akong kasama mo, sapagkat lubos kong ninanais pumunta sa lupain ng Judea, at marahil ay maninirahan akong kasama ninyo habambuhay,</q> nang marinig niya ito ay sumagot siya: <q>Kung nais mong siyasatin ang aming mga gawain at matutuhan ang makabubuti sa iyo, maglayag ka ngayon kasama ko. Ngunit kung ayaw mo, ibibigay ko ngayon sa iyo ang mga direksiyon patungo sa aking bahay at sa bahay ng mga taong nais mong <em>makatagpo</em>, upang kapag pinili mong pumunta ay matagpuan mo kami. Sapagkat bukas ay aalis na ako pauwi.</q> Nang makita kong hindi ko siya mahikayat, sinamahan ko siya hanggang sa daungan. Matapos kong matutuhan mula sa kanya ang mga direksiyong ipinangako niyang ibigay sa akin upang matagpuan ang mga tahanan, sinabi ko sa kanya, <q>Kung hindi lamang ako bukas sisingil ng isang utang na dapat bayaran sa akin, sasabay na sana ako agad sa iyo sa paglalayag. Ngunit aabutan din kita sa lalong madaling panahon.</q> Pagkasabi ko nito, at matapos ko siyang ipagkatiwala sa mga namamahala sa barko, bumalik akong nagdadalamhati, na inaalala siya bilang isang napakabuti at mahal na kaibigan.</p><h3>Kabanata XV. Pagpapakilala kay Pedro</h3><p>Ngunit matapos lumipas ang <em>ilang</em> araw at hindi ko pa rin mabawi ang buong utang, alang-alang sa pagmamadali ay pinabayaan ko na ang natitirang halaga bilang isang hadlang at naglayag din ako patungong Judea. Makalipas ang labinlimang araw ay dumating ako sa Caesarea Stratonis. Pagbaba ko sa pampang at habang naghahanap ng matutuluyan, nalaman kong may isang nagngangalang Pedro, na siyang pinakakilalang alagad ng Taong nahayag sa Judea at gumawa ng mga tanda at himala, na makikipagtalo nang pasalita kinabukasan kay Simon, isang Samaritano mula sa Gitthi. Nang marinig ko ito, nakiusap akong ituro sa akin ang kanyang tinutuluyan. Nang malaman ko iyon, tumayo ako sa harap ng pinto. Nang makita ako ng mga nasa bahay, pinag-usapan nila kung sino ako at kung saan ako nanggaling. At narito, lumabas si Bernabe. Pagkakita niya sa akin ay niyakap niya ako, lubhang nagalak, at umiyak. Hinawakan niya ako sa kamay at dinala sa kinaroroonan ni Pedro, at sinabi sa akin: <q>Ito si Pedro, na sinabi kong pinakadakila sa karunungan ng Diyos, at lagi kitang ikinukuwento sa kanya. Kaya pumasok ka nang malaya, sapagkat sinabi ko sa kanya nang walang kasinungalingan ang iyong mahuhusay na katangian at, kasabay nito, ay ipinaalam ko rin sa kanya ang iyong hangarin, kaya nais din niyang makita ka. Kaya isang dakilang kaloob ang inihaharap ko sa kanya kapag sa pamamagitan ng aking mga kamay ay inihaharap kita sa kanya.</q> Pagkasabi nito, iniharap niya ako at sinabi, <q>Pedro, ito si Clemente.</q></p><h3>Kabanata XVI. Pagbati ni Pedro</h3><p>Pagkarinig ng pinagpalang lalaki sa pangalan ko, agad siyang tumayo, lumapit, at hinalikan ako. Pinaupo niya ako at kaagad na sinabi: <q>Marangal ang ginawa mo nang tanggapin mo si Bernabe, isang tagapagpahayag ng katotohanan, bilang pagpaparangal sa buhay na Diyos, nang may dakilang-loob na hindi ka nahiya ni natakot sa galit ng magaspang na karamihan. Pagpapalain ka. Sapagkat kung paanong buong dangal mong tinanggap ang sugo ng katotohanan, gayon din ang mismong katotohanan ay gagawin kang mamamayan ng kanyang sariling lungsod, ikaw na isang dayuhan. At lubos kang magagalak dahil ngayon ay nagpahiram ka lamang ng maliit na pabor—ang ibig kong sabihin ay ang kabutihan ng mabubuting salita. Magiging tagapagmana ka ng mga pagpapalang walang hanggan at hindi kailanman maaagaw sa iyo. Huwag mo ring pagurin ang sarili mo sa pagsasalaysay sa akin ng paraan ng iyong pamumuhay, sapagkat ikinuwento na sa amin ng mapagkakatiwalaang Bernabe ang lahat tungkol sa iyo, at halos araw-araw ay mabuti ang kanyang pagbanggit sa iyo. At upang sabihin ko sa iyo nang maikli, bilang sa isang tunay na kaibigan, kung ano ang nasa harap natin, maglakbay kang kasama namin kung walang humahadlang sa iyo, at makibahagi sa mga salita ng katotohanan na sasabihin ko sa bawat lungsod hanggang sa Roma mismo. At kung mayroon kang nais <em>sabihin</em>, magsalita ka.</q></p><h3>Kabanata XVII. Mga Inilahad na Tanong</h3><p>Pagkatapos ay isinalaysay ko ang aking layunin mula pa sa simula, kung paanong ginugol ko ang sarili ko sa mahihirap na tanong, at ang lahat ng bagay na sinabi ko sa inyo sa pasimula, upang hindi ko na muling isulat ang mga iyon. Pagkatapos ay sinabi ko: <q>Handa akong maglakbay na kasama mo, sapagkat sa paraang hindi ko maipaliwanag ay malugod ko itong ninanais. Gayunman, nais ko munang makumbinsi tungkol sa katotohanan, upang malaman ko kung ang kaluluwa ay namamatay o walang kamatayan; at kung ito ay walang hanggan, kung hahatulan ba ito tungkol sa mga bagay na ginawa nito rito. Nais ko ring malaman kung mayroon ngang bagay na matuwid at kalugud-lugod sa Diyos; kung ang sanlibutan ay nilikha at kung para saan ito nilikha; kung ito ba ay mawawasak; at kung mawawasak ito, kung gagawin ba itong mas mabuti o tuluyan nang mawawala.</q> At nang hindi ko na isa-isahin ang lahat, sinabi kong nais kong matutuhan ang mga bagay na ito at ang mga kaugnay nito. Sumagot siya: <q>Sa maikling panahon, O Clemente, ipaaabot ko sa iyo ang kaalaman tungkol sa mga bagay na tunay na umiiral; at ngayon pa lamang, makinig ka.</q></p><h3>Kabanata XVIII. Mga Sanhi ng Kamangmangan</h3><p><q>Ang kalooban ng Diyos ay <em>nananatiling</em> natatakpan sa maraming paraan. Una, nariyan ang masamang pagtuturo, masamang pakikisama, mapanganib na lipunan, kahiya-hiyang mga pananalita, at maling pagkiling. Mula sa mga ito ay nagmumula ang pagkakamali, kawalan ng takot, kawalan ng pananampalataya, pakikiapid, kasakiman, kapalaluan; at sampung libo pang katulad na kasamaan. Ang mga ito, na pumupuno sa sanlibutan gaya ng makapal na usok na pumupuno sa isang bahay, ay nagpalabo sa paningin ng mga taong naninirahan sa sanlibutan at hindi sila hinayaang tumingala at makilala ang Diyos na Manlilikha mula sa paglalarawang <em>ibinigay Niya tungkol sa Kanyang sarili</em>, at malaman kung ano ang kalugud-lugod sa Kanya. Kaya nararapat sa mga umiibig sa katotohanan na, habang sumisigaw mula sa kaibuturan ng kanilang dibdib, ay humingi ng tulong sa pamamagitan ng pangangatwirang umiibig sa katotohanan, upang may isang taong nasa loob ng bahay na puno ng usok na lumapit at magbukas ng pinto. Sa gayon ay makapapasok sa bahay ang liwanag ng araw mula sa labas at maitataboy palabas ang usok ng apoy na nasa loob.</q></p><h3>Kabanata XIX. Ang Tunay na Propeta</h3><p><q>Ang Taong tumutulong ay tinatawag kong tunay na Propeta; at Siya lamang ang makapagbibigay-liwanag sa mga kaluluwa ng mga tao upang sa sarili nating mga mata ay makita natin ang daan tungo sa walang-hanggang kaligtasan. Kung hindi sa Kanya, imposible ito, gaya ng alam mo rin, sapagkat sinabi mo kanina lamang na ang bawat aral ay itinatayo at ibinabagsak, at ang iisang bagay ay itinuturing na totoo o mali ayon sa kakayahan ng nagtatanggol nito. Kaya hindi lumilitaw ang mga aral ayon sa kung ano talaga ang mga ito; sa halip, nagkakaroon ang mga ito ng anyong totoo o mali ayon sa mga taong nagtatanggol sa mga iyon. Dahil dito, ang buong usapin ng relihiyon ay nangailangan ng isang tunay na propeta na magsasabi sa atin ng mga bagay ayon sa kung ano talaga ang mga iyon at kung paano tayo dapat maniwala tungkol sa lahat ng bagay. Kaya kailangan munang subukin ang propeta sa pamamagitan ng bawat tanda ng isang propeta; at kapag natiyak nang siya ay tunay, saka siya dapat paniwalaan sa lahat ng bagay. Hindi na dapat maupo bilang hukom sa bawat isa niyang pahayag, kundi tanggapin ang mga iyon bilang tiyak—na tinatanggap nga sa pamamagitan ng pananampalatayang tila simple, ngunit nakabatay sa matibay na paghatol. Sapagkat sa pamamagitan ng ating paunang pagsubok at mahigpit na pagsisiyasat mula sa lahat ng panig, ang lahat ng bagay ay tinatanggap nang may wastong katuwiran. Kaya higit sa lahat ay kailangang hanapin ang tunay na Propeta, sapagkat kung wala Siya ay imposibleng magkaroon ang mga tao ng anumang katiyakan.</q></p><h3>Kabanata XX. Kasiyahan ni Pedro kay Clemente</h3><p>Kasabay nito, binigyan niya ako ng kasiyahan sa pamamagitan ng pagpapaliwanag kung sino Siya at kung paano Siya matatagpuan, at ipinakita niya sa akin na Siya ay tunay na matatagpuan. Ipinakita rin niyang higit na maliwanag sa pandinig ang katotohanan sa pamamagitan ng pahayag ng propeta kaysa sa mga bagay na nakikita ng mata. Namangha ako at nagtaka kung bakit walang nakakakita sa mga bagay na hinahanap ng lahat, gayong nasa harap lamang nila ang mga iyon. Gayunman, matapos kong isulat sa kanyang utos ang pahayag na ito tungkol sa Propeta, ipinadala niya sa iyo ang balumbon mula sa Caesarea Stratonis, sapagkat sinabi niyang may tagubilin siyang mula sa iyo na ipadala taon-taon ang kanyang mga pahayag at mga gawa. Kaya sa mismong unang araw, bagaman tungkol lamang sa propeta ng katotohanan ang kanyang sinimulang ipaliwanag, pinagtibay niya ako sa lahat ng bagay. Pagkatapos ay sinabi niya: <q>Mula ngayon, bigyang-pansin mo ang mga talakayang magaganap sa pagitan ko at ng mga kabilang panig. Kahit pa tila mapahina ako sa isang pagtatalo, hindi ako natatakot na pagdudahan mo kailanman ang katotohanang naipasa sa iyo, sapagkat alam mong maaaring magmukhang natalo ako ngunit hindi ang aral na ibinigay sa atin ng Propeta. Gayunman, umaasa akong hindi ako mapapahina sa ating mga pagsisiyasat kapag kaharap ko ang mga taong may pagkaunawa—ang ibig kong sabihin ay mga umiibig sa katotohanan, na kayang malaman kung alin sa mga pananalita ang mapag-anyong kapani-paniwala, masining at kaaya-aya, at alin ang walang palamuti at payak, na umaasa lamang sa katotohanang <em>ipinaaabot</em> sa pamamagitan ng mga iyon.</q></p><h3>Kabanata XXI. Di-Nababagong Paninindigan</h3><p>Pagkasabi niya nito, sumagot ako: <q>Ngayon ay nagpapasalamat ako sa Diyos; sapagkat kung paanong nais kong makumbinsi, gayon Niya ipinagkaloob iyon sa akin. Tungkol sa akin, huwag ka nang mag-alala na ako’y magdududa kailanman. Ganoon katatag ang aking pagkaunawa sa aking tinanggap, anupa’t kahit ikaw mismo balang araw ay magnanais na ilayo ako sa aral ng propeta, hindi mo ako magagawa. At huwag mong isipin na malaking bagay ang ipinangangako kong hindi ako magdududa kailanman; sapagkat hindi ako, ni sinumang taong nakarinig ng iyong pahayag tungkol sa Propeta, ay maaaring magduda sa tunay na aral matapos muna niyang marinig at maunawaan kung ano ang katotohanan ng pahayag ng propeta. Kaya magkaroon ka ng tiwala sa aral na ayon sa kalooban ng Diyos, sapagkat nadaig na ang bawat sining ng kasamaan. Laban sa propesiya, walang kapangyarihan ang mga sining ng pananalita, mga daya ng mga sopista, mga silohismo, o anumang ibang pakana—kung ang nakarinig sa tunay na Propeta ay tunay na nagnanais ng katotohanan at hindi nagbibigay-pansin sa iba pang bagay na nagpapanggap lamang na katotohanan. Kaya, panginoon kong Pedro, huwag kang mabagabag na para bang iniharap mo ang pinakadakilang kabutihan sa isang taong walang unawa; sapagkat ibinigay mo iyon sa isang taong nakauunawa sa pabor na natanggap niya at hindi maililihis mula sa katotohanang ipinagkatiwala sa kanya. Sapagkat alam kong isa ito sa mga bagay na ninanais tanggapin agad, hindi yaong nararating lamang nang dahan-dahan. Kaya alam kong hindi ko dapat hamakin, dahil lamang sa bilis <em>ng pagkakatanggap ko rito</em>, ang ipinagkatiwala sa akin—isang bagay na walang kapantay at siyang tanging ligtas.</q></p><h3>Kabanata XXII. Pasasalamat</h3><p>Pagkasabi ko nito, sinabi ni Pedro: <q>Nagpapasalamat ako sa Diyos, kapwa para sa iyong kaligtasan at para sa aking kasiyahan. Tunay akong nagagalak na malaman mong nauunawaan mo ang kadakilaan ng propesiya. Kaya, gaya ng sinabi mo, kung ako mismo balang araw—na huwag nawang mangyari—ay magnanais na ilipat ka sa ibang aral, hindi kita mahihikayat. Mula bukas, magsimula kang sumama sa akin sa mga pakikipagtalakayan sa mga kalaban. At bukas ay mayroon akong pakikipagtalakayan kay Simon Magus.</q> Pagkasabi nito, siya mismo ay kumain nang sarilinan at inutusan din akong kumain. Matapos niyang basbasan ang pagkain at magpasalamat nang siya’y mabusog, at matapos niyang ipaliwanag sa akin ang bagay na ito, nagpatuloy siya: <q>Ipagkaloob nawa ng Diyos na sa lahat ng bagay ay maging katulad ka sa akin, at matapos mabautismuhan ay makibahagi ka sa iisang hapag kasama ko.</q> Pagkasabi nito, inutusan niya akong magpahinga, sapagkat sa oras na iyon ay hinihingi na ng aking katawan ang pagtulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

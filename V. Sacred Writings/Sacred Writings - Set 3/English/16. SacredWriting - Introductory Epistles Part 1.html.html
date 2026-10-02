@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Introductory Epistles Part 1</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Section</option><option value="0">Epistle</option><option value="1">Chapter I</option><option value="2">Chapter II</option><option value="3">Chapter III</option><option value="4">Chapter IV</option><option value="5">Chapter V</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h2>Epistle of Peter to James</h2><p>Peter to James, the lord and bishop of the holy Church, under the Father of all, through Jesus Christ, wishes peace always.</p><h3>Chapter I. Doctrine of Reserve</h3><p>Knowing, my brother, your eager desire after that which is for the advantage of us all, I beg and beseech you not to communicate to any one of the Gentiles the books of my preachings which I sent to you, nor to any one of our own tribe before trial; but if any one has been proved and found worthy, then to commit them to him, after the manner in which Moses delivered <em>his books</em> to the Seventy who succeeded to his chair. Wherefore also the fruit of that caution appears even till now. For his countrymen keep the same rule of monarchy and polity everywhere, being unable in any way to think otherwise, or to be led out of the way of the much-indicating Scriptures. For, according to the rule delivered to them, they endeavour to correct the discordances of the Scriptures, if any one, haply not knowing the traditions, is confounded at the various utterances of the prophets. Wherefore they charge no one to teach, unless he has first learned how the Scriptures must be used. And thus they have amongst them one God, one law, one hope.</p><h3>Chapter II. Misrepresentation of Peter's Doctrine</h3><p>In order, therefore, that the like may also happen to those among us as to these Seventy, give the books of my preachings to our brethren, with the like mystery of initiation, that they may indoctrinate those who wish to take part in teaching; for if it be not so done, our word of truth will be rent into many opinions. And this I know, not as being a prophet, but as already seeing the beginning of this very evil. For some from among the Gentiles have rejected my legal preaching, attaching themselves to certain lawless and trifling preaching of the man who is my enemy. And these things some have attempted while I am still alive, to transform my words by certain various interpretations, in order to the dissolution of the law; as though I also myself were of such a mind, but did not freely proclaim it, which God forbid! For such a thing were to act in opposition to the law of God which was spoken by Moses, and was borne witness to by our Lord in respect of its eternal continuance; for thus he spoke: <q>The heavens and the earth shall pass away, but one jot or one tittle shall in no wise pass from the law.</q> And this He has said, that all things might come to pass. But these men, professing, I know not how, to know my mind, undertake to explain my words, which they have heard of me, more intelligently than I who spoke them, telling their catechumens that this is my meaning, which indeed I never thought of. But if, while I am still alive, they dare thus to misrepresent me, how much more will those who shall come after me dare to do so!</p><h3>Chapter III. Initiation</h3><p>Therefore, that no such thing may happen, for this end I have prayed and besought you not to communicate the books of my preaching which I have sent you to any one, whether of our own nation or of another nation, before trial; but if any one, having been tested, has been found worthy, then to hand them over to him, according to the initiation of Moses, by which he delivered <em>his books</em> to the Seventy who succeeded to his chair; in order that thus they may keep the faith, and everywhere deliver the rule of truth, explaining all things after our tradition; lest being themselves dragged down by ignorance, being drawn into error by conjectures after their mind, they bring others into the like pit of destruction. Now the things that seemed good to me, I have fairly pointed out to you; and what seems good to you, do you, my lord, becomingly perform. Farewell.</p><h3>Chapter IV. An Adjuration Concerning the Receivers of the Book</h3><p>1. Therefore James, having read the epistle, sent for the elders; and having read it to them, said: <q>Our Peter has strictly and becomingly charged us concerning the establishing of the truth, that we should not communicate the books of his preachings, which have been sent to us, to any one at random, but to one who is good and religious, and who wishes to teach, and who is circumcised, and faithful. And these are not all to be committed to him at once; that, if he be found injudicious in the first, the others may not be entrusted to him. Wherefore let him be proved not less than six years. And then according to the initiation of Moses, he <em>that is to deliver the books</em> should bring him to a river or a fountain, which is living water, where the regeneration of the righteous takes place, and should make him, not swear—for that is not lawful—but to stand by the water and adjure, as we ourselves, when we were re-generated, were made to do for the sake of not sinning.</q></p><p>2. <q>And let him say: 'I take to witness heaven, earth, water, in which all things are comprehended, and in addition to all these, that air also which pervades all things, and without which I cannot breathe, that I shall always be obedient to him who gives me the books of the preachings; and those same books which he may give me, I shall not communicate to any one in any way, either by writing them, or giving them in writing, or giving them to a writer, either myself or by another, or through any other initiation, or trick, or method, or by keeping them carelessly, or placing them before <em>any one,</em> or granting him permission <em>to see them,</em> or in any way or manner whatsoever communicating them to another; unless I shall ascertain one to be worthy, as I myself have been judged, or even more so, and that after a probation of not less than six years; but to one who is religious and good, chosen to teach, as I have received them, so I will commit them, doing these things also according to the will of my bishop.</q></p><p>3. <q>'But otherwise, though he were my son or my brother, or my friend, or otherwise in any way pertaining to me by kindred, if he be unworthy, that I will not vouchsafe the favour to him, as is not meet; and I shall neither be terrified by plot nor mollified by gifts. But if even it should ever seem to me that the books of the preachings given to me are not true, I shall not so communicate them, but shall give them back. And when I go abroad, I shall carry them with me, whatever of them I happen to possess. But if I be not minded to carry them about with me, I shall not suffer them to be in my house, but shall deposit them with my bishop, having the same faith, and setting out from the same persons <em>as myself. </em>But if it befall me to be sick, and in expectation of death, and if I be childless, I shall act in the same manner. But if I die having a son who is not worthy, or not yet capable, I shall act in the same manner. For I shall deposit them with my bishop, in order that if my son, when he grows up, be worthy of the trust, he may give them to him as his father's bequest, according to the terms of this engagement.</q></p><p>4. <q>'And that I shall thus do, I again call to witness heaven, earth, water, in which all things are enveloped, and in addition to all these, the all-pervading air, without which I cannot breathe, that I shall always be obedient to him who gives me these books of the preachings, and shall observe in all things as I have engaged, or even something more. To me, therefore, keeping this covenant, there shall be a part with the holy ones; but to me doing anything contrary to what I have covenanted, may the universe be hostile to me, and the all-pervading ether, and the God who is over all, to whom none is superior, than whom none is greater. But if even I should come to the acknowledgment of another God, I now swear by him also, be he or be he not, that I shall not do otherwise. And in addition to all these things, if I shall lie, I shall be accursed living and dying, and shall be punished with everlasting punishment.</q></p><p><q>And after this, let him partake of bread and salt with him who commits them to him.</q></p><h3>Chapter V. The Adjuration Accepted</h3><p>James having thus spoken, the elders were in an agony of terror. Therefore James, perceiving that they were greatly afraid, said: <q>Hear me, brethren and fellow-servants. If we should give the books to all indiscriminately, and they should be corrupted by any daring men, or be perverted by interpretations, as you have heard that some have already done, it will remain even for those who really seek the truth, always to wander in error. Wherefore it is better that they should be with us, and that we should communicate them with all the fore-mentioned care to those who wish to live piously, and to save others. But if any one, after taking this adjuration, shall act otherwise, he shall with good reason incur eternal punishment. For why should not he who is the cause of the destruction of others not be destroyed himself?</q> The elders, therefore, being pleased with the sentiments of James exclaimed, <q>Blessed be He who, as foreseeing all things, has graciously appointed you as our bishop;</q> and when they had said this, we all rose up, and prayed to the Father and God of all, to whom be glory forever. Amen.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h2>Liham ni Pedro kay Santiago</h2><p>Si Pedro kay Santiago, panginoon at obispo ng banal na Iglesia, sa ilalim ng Ama ng lahat, sa pamamagitan ni Jesu-Cristo, ay laging bumabati ng kapayapaan.</p><h3>Kabanata I. Aral ng Maingat na Pag-iingat</h3><p>Batid ko, kapatid ko, ang matindi mong pagnanais sa bagay na makabubuti sa ating lahat. Kaya hinihiling at isinasamo ko sa iyo na huwag mong ipamahagi sa sinumang Hentil ang mga aklat ng aking mga pangangaral na ipinadala ko sa iyo, ni sa sinuman sa sarili nating lahi bago siya masubok. Ngunit kung ang isang tao ay nasubok na at napatunayang karapat-dapat, saka mo lamang ipagkatiwala sa kanya ang mga iyon, ayon sa paraan ng pagbibigay ni Moises ng <em>kanyang mga aklat</em> sa Pitumpung humalili sa kanyang luklukan. Ang bunga ng gayong pag-iingat ay nakikita hanggang ngayon. Sapagkat saanman naroroon ang kanyang mga kababayan ay pinanghahawakan nila ang iisang tuntunin ng pamamahala at kaayusan, kaya hindi sila basta napapaisip nang iba o nalilihis mula sa mga Kasulatang may maraming ipinahihiwatig. Ayon sa tuntuning ipinasa sa kanila, sinisikap nilang ituwid ang waring mga hindi pagkakatugma sa mga Kasulatan kapag may isang taong, dahil hindi niya alam ang mga tradisyon, ay nalilito sa iba’t ibang pahayag ng mga propeta. Kaya wala silang inaatasang magturo hangga’t hindi muna nito natututuhan kung paano dapat gamitin ang mga Kasulatan. Sa gayon, mayroon sa kanila ang iisang Diyos, iisang kautusan, at iisang pag-asa.</p><h3>Kabanata II. Maling Paglalarawan sa Aral ni Pedro</h3><p>Kaya upang mangyari rin sa atin ang tulad ng nangyari sa Pitumpung iyon, ibigay mo ang mga aklat ng aking mga pangangaral sa ating mga kapatid na may gayunding maingat na pagtatalaga, upang maturuan nila ang mga nagnanais makibahagi sa pagtuturo. Kung hindi ito gagawin, mahahati ang ating salita ng katotohanan sa maraming magkakaibang palagay. Alam ko ito hindi dahil ako’y isang propeta, kundi dahil nakikita ko na ang pasimula ng mismong kasamaang ito. Sapagkat may ilan mula sa mga Hentil na tumanggi sa aking pangangaral tungkol sa kautusan at kumapit sa isang labag-sa-kautusan at walang-kabuluhang pangangaral ng taong kaaway ko. Habang buhay pa ako ay sinikap na ng ilan na baguhin ang aking mga salita sa pamamagitan ng iba’t ibang pagpapakahulugan upang pawalang-bisa ang kautusan, na para bang ganoon din ang aking isip ngunit hindi ko lamang hayagang ipinahahayag—na huwag nawang mangyari! Sapagkat ang gayong bagay ay pagsalungat sa kautusan ng Diyos na sinalita sa pamamagitan ni Moises at pinatotohanan ng ating Panginoon hinggil sa walang-hanggang pananatili nito. Ganito ang sinabi Niya: <q>Ang langit at lupa ay lilipas, ngunit ni isang kudlit ni isang tuldok man ay hindi lilipas sa kautusan.</q> Sinabi Niya ito upang ang lahat ng bagay ay maganap. Ngunit ang mga taong ito, na hindi ko malaman kung paano nag-aangking alam nila ang aking isip, ay nangangahas na ipaliwanag sa kanilang mga katekumeno ang mga salitang narinig nila sa akin na para bang higit nilang nauunawaan iyon kaysa sa akin na nagsalita. Sinasabi nilang ito raw ang kahulugan ko, gayong hindi ko kailanman inisip iyon. Kung habang buhay pa ako ay nangangahas na silang ilarawan nang mali ang aking sinabi, gaano pa kaya ang gagawin ng mga darating pagkatapos ko!</p><h3>Kabanata III. Pagtatalaga</h3><p>Kaya upang hindi mangyari ang gayong bagay, ito ang dahilan kung bakit nanalangin at nakiusap ako sa iyo na huwag mong ibigay sa sinuman ang mga aklat ng aking pangangaral na ipinadala ko sa iyo—maging sa sarili nating bansa o sa ibang bansa—bago siya masubok. Ngunit kung matapos subukin ay napatunayang karapat-dapat ang isang tao, saka mo ipagkatiwala sa kanya ang mga iyon, ayon sa pagtatalaga ni Moises nang ibigay niya ang <em>kanyang mga aklat</em> sa Pitumpung humalili sa kanyang luklukan. Sa ganitong paraan ay mapananatili nila ang pananampalataya at maipapahayag saanman ang tuntunin ng katotohanan, na ipinaliliwanag ang lahat ayon sa tradisyong tinanggap natin. Kung hindi, baka dahil sa kanilang sariling kamangmangan ay mahila sila pababa, iligaw ng mga haka ng sarili nilang isip, at dalhin din ang iba sa gayunding hukay ng kapahamakan. Naipaliwanag ko nang maayos sa iyo ang mga bagay na sa palagay ko’y mabuti. Ikaw naman, panginoon ko, ay gawin nang nararapat ang sa palagay mo’y mabuti. Paalam.</p><h3>Kabanata IV. Isang Panunumpa ng Pananagutan para sa mga Tatanggap ng Aklat</h3><p>1. Pagkabasa ni Santiago sa liham, ipinatawag niya ang matatanda at binasa iyon sa kanila. Pagkatapos ay sinabi niya: <q>Mahigpit at nararapat tayong pinagbilinan ng ating Pedro tungkol sa pagtatatag ng katotohanan: huwag nating ibigay nang basta-basta sa kaninuman ang mga aklat ng kanyang mga pangangaral na ipinadala sa atin, kundi sa isang taong mabuti at maka-Diyos, nagnanais magturo, tuli, at tapat. At hindi dapat ipagkatiwala sa kanya nang sabay-sabay ang lahat ng mga aklat; upang kung mapatunayang kulang siya sa wastong paghatol sa una, hindi na ipagkatiwala sa kanya ang iba. Kaya dapat siyang subukin nang hindi bababa sa anim na taon. Pagkatapos, ayon sa pagtatalaga ni Moises, ang <em>magbibigay ng mga aklat</em> ay dapat magdala sa kanya sa isang ilog o bukal na may buhay na tubig, kung saan nagaganap ang muling kapanganakan ng mga matuwid. Hindi siya dapat pasumpain—sapagkat hindi iyon nararapat—kundi patayuin sa tabi ng tubig at papanagutin sa pamamagitan ng isang solemneng pahayag, gaya ng ginawa sa atin nang tayo’y muling ipanganak, upang huwag tayong magkasala.</q></p><p>2. <q>At sabihin niya: ‘Tinatawag kong saksi ang langit, lupa, at tubig, na kinaroroonan ng lahat ng bagay, at bukod sa mga ito ang hangin na lumalaganap sa lahat at kung wala iyon ay hindi ako makahihinga: palagi akong magiging masunurin sa taong nagbibigay sa akin ng mga aklat ng mga pangangaral. At ang mismong mga aklat na ibibigay niya sa akin ay hindi ko ipababatid sa kaninuman sa anumang paraan—hindi sa pamamagitan ng pagsusulat ko mismo, pagbibigay ng nakasulat na sipi, pagpapasulat sa iba, sa sarili kong pagkilos o sa pamamagitan ng ibang tao; hindi sa anumang ibang pagtatalaga, daya, paraan, kapabayaan sa pag-iingat, paglalagay ng mga aklat sa harap ng <em>sinuman,</em> pagbibigay ng pahintulot <em>na makita ang mga iyon,</em> o sa alinmang paraan ng pagpapabatid sa iba. Maliban lamang kung matiyak kong ang isang tao ay karapat-dapat, gaya ng paghatol sa akin o higit pa rito, at matapos siyang subukin nang hindi bababa sa anim na taon. Sa isang taong maka-Diyos at mabuti, pinili upang magturo, ay ipagkakatiwala ko ang mga iyon gaya ng pagkakatanggap ko sa mga iyon, at gagawin ko rin ito ayon sa kalooban ng aking obispo.</q></p><p>3. <q>‘Ngunit kung hindi siya karapat-dapat, kahit siya pa ang aking anak, kapatid, kaibigan, o kamag-anak sa anumang paraan, hindi ko ipagkakaloob sa kanya ang pabor na iyon, sapagkat hindi nararapat. Hindi ako matatakot sa anumang pakana ni mapalalambot ng mga regalo. At kung dumating man ang panahong sa tingin ko ay hindi totoo ang mga aklat ng pangangaral na ibinigay sa akin, hindi ko pa rin ipababatid ang mga iyon sa iba; sa halip ay ibabalik ko ang mga iyon. Kapag naglalakbay ako sa ibang lugar, dadalhin ko ang anumang aklat na nasa akin. Ngunit kung ayaw kong dalhin ang mga iyon, hindi ko hahayaang manatili ang mga iyon sa aking bahay; ilalagak ko ang mga iyon sa aking obispo, na may parehong pananampalataya at nagmula sa parehong mga tao <em>na pinagmulan ko.</em> Kung ako’y magkasakit at umasa nang mamamatay, at wala akong anak, gagawin ko rin iyon. Kung mamatay akong may anak ngunit hindi siya karapat-dapat o hindi pa handa, gayon din ang gagawin ko. Ilalagak ko ang mga aklat sa aking obispo upang, kung paglaki ng aking anak ay maging karapat-dapat siya sa pagtitiwala, maibigay ng obispo ang mga iyon sa kanya bilang mana mula sa kanyang ama, ayon sa mga tuntunin ng pananagutang ito.</q></p><p>4. <q>‘At bilang patunay na gagawin ko ito, muli kong tinatawag na saksi ang langit, lupa, at tubig na bumabalot sa lahat ng bagay, at bukod sa mga ito ang hangin na lumalaganap sa lahat at kung wala iyon ay hindi ako makahihinga: palagi akong magiging masunurin sa taong nagbibigay sa akin ng mga aklat ng mga pangangaral at tutuparin ko sa lahat ng bagay ang aking ipinangako, o higit pa rito. Kung tutuparin ko ang tipang ito, magkaroon nawa ako ng bahagi kasama ng mga banal. Ngunit kung gagawa ako ng anuman laban sa aking ipinangako, maging laban nawa sa akin ang sansinukob, ang eter na lumalaganap sa lahat, at ang Diyos na nasa ibabaw ng lahat, na walang nakahihigit at walang mas dakila. At kung dumating man ako sa pagkilala sa ibang Diyos, isinusumpa ko rin ngayon sa kanya, umiiral man siya o hindi, na hindi ako kikilos nang iba. Bukod sa lahat ng ito, kung magsisinungaling ako, sumpain nawa ako habang nabubuhay at kapag namatay, at tumanggap ng walang-hanggang kaparusahan.</q></p><p><q>Pagkatapos nito, hayaang makibahagi siya sa tinapay at asin kasama ng taong nagkakatiwala sa kanya ng mga aklat.</q></p><h3>Kabanata V. Tinanggap ang Panunumpa ng Pananagutan</h3><p>Pagkasabi nito ni Santiago, lubhang natakot ang matatanda. Nang makita ni Santiago ang tindi ng kanilang takot, sinabi niya: <q>Makinig kayo sa akin, mga kapatid at kapwa-lingkod. Kung ibibigay natin ang mga aklat sa lahat nang walang pagtatangi, at sirain iyon ng mga mapangahas na tao o pilipitin sa pamamagitan ng mga pagpapakahulugan—gaya ng narinig ninyong ginawa na ng ilan—ang mga tunay na naghahanap ng katotohanan ay patuloy lamang na maliligaw. Kaya higit na mabuti na manatili sa atin ang mga aklat at ipagkatiwala lamang natin ang mga iyon, na taglay ang lahat ng nabanggit na pag-iingat, sa mga nagnanais mamuhay nang maka-Diyos at magligtas din ng iba. Ngunit kung ang isang tao, matapos tanggapin ang pananagutang ito, ay kumilos nang salungat dito, makatarungan lamang na mapasa kanya ang walang-hanggang kaparusahan. Sapagkat bakit hindi mapapahamak ang taong naging sanhi ng kapahamakan ng iba?</q> Nalugod ang matatanda sa sinabi ni Santiago at sumigaw: <q>Purihin Siya na, sapagkat nakikita Niya nang pauna ang lahat ng bagay, ay buong biyayang nagtalaga sa iyo bilang aming obispo.</q> Pagkasabi nila nito, tumayo kaming lahat at nanalangin sa Ama at Diyos ng lahat, na sa Kanya ang kaluwalhatian magpakailanman. Amen.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

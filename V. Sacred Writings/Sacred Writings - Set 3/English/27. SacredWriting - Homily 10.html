@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 10</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. The Third Day in Tripolis</option><option value="1">Chapter II. Ignorance and Error</option><option value="2">Chapter III. Man the Lord of All</option><option value="3">Chapter IV. Faith and Duty</option><option value="4">Chapter V. The Fear of God</option><option value="5">Chapter VI. Restoration of the Divine Image</option><option value="6">Chapter VII. Unprofitableness of Idols</option><option value="7">Chapter VIII. No Gods Which are Made with Hands</option><option value="8">Chapter IX. Eyes Have They, But They See Not.</option><option value="9">Chapter X. Idolatry a Delusion of the Serpent</option><option value="10">Chapter XI. Why the Serpent Tempts to Sin</option><option value="11">Chapter XII. Ignorantia Neminem Excusat</option><option value="12">Chapter XIII. Condemnation of the Ignorant</option><option value="13">Chapter XIV. Polytheistic Illustration</option><option value="14">Chapter XV. Its Inconclusiveness</option><option value="15">Chapter XVI. Gods of the Egyptians</option><option value="16">Chapter XVII. The Egyptians' Defence of Their System</option><option value="17">Chapter XVIII. Answer to the Egyptians</option><option value="18">Chapter XIX. God's Peculiar Attribute</option><option value="19">Chapter XX. Neither the World Nor Any of Its Parts Can Be God</option><option value="20">Chapter XXI. Idols Not Animated by the Divine Spirit</option><option value="21">Chapter XXII. Confutation of Idol-Worship</option><option value="22">Chapter XXIII. Folly of Idolatry</option><option value="23">Chapter XXIV. Impotence of Idols</option><option value="24">Chapter XXV. Servants Become Masters</option><option value="25">Chapter XXVI. The Sick Healed</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. The Third Day in Tripolis</h3><p>Therefore on the third day in Tripolis, Peter rose early and went into the garden, where there was a great water-reservoir, into which a full stream of water constantly flowed. There having bathed, and then having prayed, he sat down; and perceiving us sitting around and eagerly observing him, as wishing to hear something from him, he said:—</p><h3>Chapter II. Ignorance and Error</h3><p><q>There seems to me to be a great difference between the ignorant and the erring. For the ignorant man seems to me to be like a man who does not wish to set out for a richly stored city, through his not knowing the excellent things that are there; but the erring man to be like one who has learned indeed the good things that are in the city, but who has forsaken the highway in proceeding towards it, and so has wandered. Thus, therefore, it seems to me that there is a great difference between those who worship idols and those who are faulty in the worship of God. For they who worship idols are ignorant of eternal life, and therefore they do not desire it; for what they do not know, they cannot love. But those who have chosen to worship one God, and who have learned of the eternal life given to the good, if they either believe or do anything different from what is pleasing to God, are like to those who have gone out from the city of punishment, and are desirous to come to the well-stored city, and on the road have strayed from the right path.</q></p><h3>Chapter III. Man the Lord of All</h3><p>While he was thus discoursing to us, there entered one of our people, who had been appointed to make the following announcement to him, and said: <q>My lord Peter, there are great multitudes standing before the doors.</q> With his consent, therefore, a great multitude entered. Then he rose up, and stood on the basis, as he had done the day before; and having saluted them in religious fashion, he said: <q>God having formed the heaven and the earth, and having made all things in them, as the true Prophet has said to us, man, being made after the image and likeness of God, was appointed to be ruler and lord of things, I say, in air and earth and water, as may be known from the very fact that by his intelligence he brings down the creatures that are in the air, and brings up those that are in the deep, hunts those that are on the earth, and that although they are much greater in strength than he; I mean elephants, and lions, and such like.</q></p><h3>Chapter IV. Faith and Duty</h3><p><q>While, therefore, he was righteous, he was also superior to all sufferings, as being unable by his immortal body to have any experience of pain; but when he sinned, as I showed you yesterday and the day before, becoming as it were the servant of sin, he became subject to all sufferings, being by a righteous judgment deprived of all excellent things. For it was not reasonable, the Giver having been forsaken, that the gifts should remain with the ungrateful. Whence, of His abundant mercy, in order to our receiving, with the first, also future blessings, He sent His Prophet. And the Prophet has given in charge to us to tell you what you ought to think, and what to do. Choose, therefore; and this is in your power. What, therefore, you ought to think is this, to worship the God who made all things; whom if you receive in your minds, you shall receive from Him, along with the first excellent things, also the future eternal blessings.</q></p><h3>Chapter V. The Fear of God</h3><p><q>Therefore you shall be able to persuade yourselves with respect to the things that are profitable, if, like charmers, you say to the horrible serpent which lurks in your heart, 'The Lord God you shall fear, and Him alone you shall serve.' On every account it is advantageous to fear Him alone, not as an unjust, but as a righteous God. For one fears an unjust being, lest he be wrongfully destroyed, but a righteous one, lest he be caught in sin and punished. You can therefore, by fear towards Him, be freed from many hurtful fears. For if you do not fear the one Lord and Maker of all, you shall be the slaves of all evils to your own hurt, I mean of demons and diseases, and of everything that can in any way hurt you.</q></p><h3>Chapter VI. Restoration of the Divine Image</h3><p><q>Therefore approach with confidence to God, you who at first were made to be rulers and lords of all things: ye who have His image in your bodies, have in like manner the likeness of His judgment in your minds. Since, then, by acting like irrational animals, you have lost the soul of man from your soul, becoming like swine, you are the prey of demons. If, therefore, you receive the law of God, you become men. For it cannot be said to irrational animals, 'You shall not kill, you shall not commit adultery, you shall not steal,' and so forth. Therefore do not refuse, when invited, to return to your first nobility; for it is possible, if ye be conformed to God by good works. And being accounted to be sons by reason of your likeness to Him, you shall be reinstated as lords of all.</q></p><h3>Chapter VII. Unprofitableness of Idols</h3><p><q>Begin, then, to divest yourselves of the injurious fear of vain idols, that you may escape unrighteous bondage. For they have become your masters, who even as servants are unprofitable to you. I speak of the material of the lifeless images, which are of no use to you as far as service is concerned. For they neither hear nor see nor feel, nor can they be moved. For is there any one of you who would like to see as they see, and to hear as they hear, and to feel as they feel, and to be moved as they are? God forbid that such a wrong should be done to any man bearing the image of God, though he have lost His likeness.</q></p><h3>Chapter VIII. No Gods Which are Made with Hands</h3><p><q>Therefore reduce your gods of gold and silver, or any other material, to their original nature; I mean into cups and basins and all other utensils, such as may be useful to you for service; and those good things which were given you at first shall be able to be restored. But perhaps you will say, The laws of the emperors do not permit us to do this. You say well that it is the law, and not the power of the vain idols themselves, which is nothing. How, then, have ye regarded them as gods, who are avenged by human laws, guarded by dogs, kept by multitudes?—and that if they are of gold, or silver, or brass. For those of wood or earthenware are preserved by their worthlessness, because no man desires to steal a wooden or earthenware god! So that your gods are exposed to danger in proportion to the value of the material of which they are made. How, then, can they be gods, which are stolen, molten, weighed, guarded?</q></p><h3>Chapter IX. Eyes Have They, But They See Not.</h3><p><q>Oh the minds of wretched men, who fear things deader than dead men! For I cannot call them even dead, which have never lived, unless they are the tombs of ancient men. For sometimes a person, visiting unknown places, does not know whether the temples which he sees are monuments of dead men, or whether they belong to the so-called gods; but on inquiring and hearing that they belong to the gods, he worships, without being ashamed that if he had not learned on inquiring, he would have passed them by as the monuments of a dead man, on account of the strictness of the resemblance. However, it is not necessary that I should adduce much proof in regard to such superstition. For it is easy for any one who pleases to understand that it, <em>an idol</em>, is nothing, unless there be any one who does not see. However, now at least hear that it does not hear, and understand that it does not understand. For the hands of a man who is dead made it. If, then, the maker is dead, how can it be that which was made by him shall not be dissolved? Why, then, do you worship the work of a mortal which is altogether senseless? Whereas those who have reason do not worship animals, nor do they seek to propitiate the elements which have been made by God,—I mean the heaven, the sun, the moon, lightning, the sea, and all things in them,—rightly judging not to worship the things that He has made, but to reverence the Maker and Sustainer of them. For in this they themselves also rejoice, that no one ascribes to them the honour that belongs to their Maker.</q></p><h3>Chapter X. Idolatry a Delusion of the Serpent</h3><p><q>For His alone is the excellent glory of being alone uncreated, while all else is created. As, therefore, it is the prerogative of the uncreated to be God, so whatever is created is not God indeed. Before all things, therefore, you ought to consider the evil-working suggestion of the deceiving serpent that is in you, which seduces you by the promise of better reason, creeping from your brain to your spinal marrow, and setting great value upon deceiving you. </q></p><h3>Chapter XI. Why the Serpent Tempts to Sin</h3><p><q>For he knows the original law, that if he bring you to the persuasion of the so-called gods, so that you sin against the one good of monarchy, your overthrow becomes a gain to him. And that for this reason, because he being condemned eats earth, he has power to eat him who through sin being dissolved into earth, has become earth, your souls going into his belly of fire. In order, therefore, that you may suffer these things, he suggests every thought to your hurt.</q></p><h3>Chapter XII. Ignorantia Neminem Excusat</h3><p><q>For all the deceitful conceptions against the monarchy are sown in your mind by him to your hurt. First, that you may not hear the discourses of piety, and so drive away ignorance, which is the occasion of evils, he ensnares you by a pretence of knowledge, giving in the first instance, and using throughout this presumption, which is to think and to be unhappily advised, that if any one do not hear the word of piety, he is not subject to judgments. Wherefore also some, being thus deceived, are not willing to hear, that they may be ignorant, not knowing that ignorance is of itself a sufficient deadly drug. For if any one should take a deadly drug in ignorance, does he not die? So naturally sins destroy the sinner, though he commit them in ignorance of what is right.</q></p><h3>Chapter XIII. Condemnation of the Ignorant</h3><p><q>But if judgment follows upon disobedience to instruction, much more shall God destroy those who will not undertake His worship. For he who will not learn, lest that should make him subject to judgment, is already judged as knowing, for he knew what he will not hear; so that imagination avails nothing as an apology in presence of the heart-knowing God. Wherefore avoid that cunning thought suggested by the serpent to your minds. But if any one end this life in real ignorance, this charge will lie against him, that, having lived so long, he did not know who was the bestower of the food supplied to him: and as a senseless, and ungrateful, and very unworthy servant, he is rejected from the kingdom of God.</q></p><h3>Chapter XIV. Polytheistic Illustration</h3><p><q>Again, the terrible serpent suggests this supposition to you, to think and to say that very thing which most of you do say; viz., We know that there is one Lord of all, but there also are gods. For in like manner as there is one Cæsar, but he has under him procurators, proconsuls, prefects, commanders of thousands, and of hundreds, and of tens; in the same way, there being one great God, as there is one Cæsar, there also, after the manner of inferior powers, are gods, inferior indeed to Him, but ruling over us. Hear, therefore, ye who have been led away by this conception as by a terrible poison—I mean the evil conception of this illustration—that you may know what is good and what is evil. For you do not yet see it, nor do you look into the things that you utter.</q></p><h3>Chapter XV. Its Inconclusiveness</h3><p><q>For if you say that, after the manner of Cæsar, God has subordinate powers—those, namely, which are called gods—you do not thus go by your illustration. For if you went by it, you must of necessity know that it is not lawful to give the name of Cæsar to another, whether he be consul, or prefect, or captain, or any one else, and that he who gives such a name shall not live, and he who takes it shall be cut off. Thus, according to your own illustration, the name of God must not be given to another; and he who is tempted either to take or give it is destroyed. Now, if this insult of a man induces punishment, much more they who call others gods shall be subject to eternal punishment, as insulting God. And with good reason; because you subject to all the insult that you can the name which it was committed to you to honour, in order to His monarchy. For God is not properly His name; but you having in the meantime received it, insult what has been given you, that it may be accounted as done against the real name, according as you use that. But you subject it to every kind of insult.</q></p><h3>Chapter XVI. Gods of the Egyptians</h3><p><q>Therefore you ringleaders among the Egyptians, boasting of meteorology, and promising to judge the natures of the stars, by reason of the evil opinion lurking in them, subjected that name to all manner of dishonour as far as in them lay. For some of them taught the worship of an ox called Apis, some that of a he-goat, some of a cat, some of a serpent; yea, even of a fish, and of onions, and rumblings in the stomach, and common sewers, and members of irrational animals, and to myriads of other base abominations <em>they gave the name of god</em>.</q></p><h3>Chapter XVII. The Egyptians' Defence of Their System</h3><p>On Peter's saying this, the surrounding multitude laughed. Then Peter said to the laughing multitude: <q>You laugh at their proceedings, not knowing that you are yourselves much more objects of ridicule to them. But you laugh at one another's proceedings; for, being led by evil custom into deceit, you do not see your own. But I admit that you have reason to laugh at the idols of the Egyptians, since they, being rational, worship irrational animals, and these altogether dying. But listen to what they say when they deride you. We, they say, though we worship dying creatures, yet still such as have once had life: but you reverence things that never lived. And in addition to this, they say, We wish to honour the form of the one God, but we cannot find out what it is, and so we choose to give honour to every form. And so, making some such statements as these, they think that they judge more rightly than you do.</q></p><h3>Chapter XVIII. Answer to the Egyptians</h3><p><q>Wherefore answer them thus: You lie, for you do not worship these things in honour of the true God, for then all of you would worship every form; not as ye do. For those of you who suppose the onion to be the divinity, and those who worship rumblings in the stomach, contend with one another; and thus all in like manner preferring some one thing, revile those that are preferred by others. And with diverse judgments, one reverences one and another of the limbs of the same animal. Moreover, those of them who still have a breath of right reason, being ashamed of the manifest baseness, attempt to drive these things into allegories, wishing by another vagary to establish their deadly error. But we should confute the allegories, if we were there, the foolish passion for which has prevailed to such an extent as to constitute a great disease of the understanding. For it is not necessary to apply a plaster to a whole part of the body, but to a diseased part. Since then, you, by your laughing at the Egyptians, show that you are not affected with their disease, with respect to your own disease it were reasonable I should afford to you a present cure of your own malady.</q></p><h3>Chapter XIX. God's Peculiar Attribute</h3><p><q>He who would worship God ought before all things to know what alone is peculiar to the nature of God, which cannot pertain to another, that, looking at His peculiarity, and not finding it in any other, he may not be seduced into ascribing godhead to another. But this is peculiar to God, that He alone is, as the Maker of all, so also the best of all. That which makes is indeed superior in power to that which is made; that which is boundless is superior in magnitude to that which is bounded: in respect of beauty, that which is comeliest; in respect of happiness, that which is most blessed; in respect of understanding, that which is most perfect. And in like manner, in other respects, He has incomparably the pre-eminence. Since then, as I said, this very thing, viz., to be the best of all, is peculiar to God, and the all-comprehending world was made by Him, none of the things made by Him can come into equal comparison with Him.</q></p><h3>Chapter XX. Neither the World Nor Any of Its Parts Can Be God</h3><p><q>But the world, not being incomparable and unsurpassable, and altogether in all respects without defect, cannot be God. But if the whole world cannot be God, in respect of its having been made, how much more should not its parts be reasonably called God; I mean the parts that are by you called gods, being made of gold and silver, brass and stone, or of any other material whatsoever; and they constructed by mortal hand. However, let us further see how the terrible serpent through man's mouth poisons those who are seduced by his solicitations.</q></p><h3>Chapter XXI. Idols Not Animated by the Divine Spirit</h3><p><q>For many say, We do not worship the gold or the silver, the wood or the stone, of the objects of our worship. For we also know that these are nothing but lifeless matter, and the art of mortal man. But the spirit that dwells in them, that we call God. Behold the immorality of those who speak thus! For when that which appears is easily proved to be nothing, they have recourse to the invisible, as not being able to be convicted in respect of what is non-apparent. However, they agree with us in part, that one half of their images is not God, but senseless matter. It remains for them to show how we are to believe that these images have a divine spirit. But they cannot prove to us that it is so, for it is not so; and we do not believe them <em>when they say that they</em> have seen it. We shall afford them proofs that they have not a divine spirit, that lovers of truth, hearing the refutation of the thought that they are animated, may turn away from the hurtful delusion.</q></p><h3>Chapter XXII. Confutation of Idol-Worship</h3><p><q>In the first place, indeed, if you worship them as being animated, why do you also worship the sepulchres of memorable men of old, who confessedly had no divine spirit? Thus you do not at all speak truth respecting this. But if your objects of worship were really animated, they would move of themselves; they would have a voice; they would shake off the spiders that are on them; they would thrust forth those that wish to surprise and to steal them; they would easily capture those who pilfer the offerings. But now they do none of these things, but are guarded, like culprits, and especially the more costly of them, as we have already said. But what? Is it not so, that the rulers demand of you imposts and taxes on their account, as if you were greatly benefited by them? But what? Have they not often been taken as plunder by enemies, and been broken and scattered? And do not the priests, more than the outside worshippers, carry off many of the offerings, thus acknowledging the uselessness of their worship?</q></p><h3>Chapter XXIII. Folly of Idolatry</h3><p><q>Nay, it will be said; but they are detected by their foresight. It is false; for how many of them have not been detected? And if on account of the capture of some it be said that they have power, it is a mistake. For of those who rob tombs, some are found out and some escape; but it is not by the power of the dead that those who are apprehended are detected. And such ought to be our conclusion with respect to those who steal and pilfer the gods. But it will be said, The gods that are in them take no care of their images. Why, then, do you tend them, wiping them, and washing them, and scouring them, crowning them, and sacrificing to them? Wherefore agree with me that you act altogether without right reason. For as you lament over the dead, so you sacrifice and make libations to your gods.</q></p><h3>Chapter XXIV. Impotence of Idols</h3><p><q>Nor yet is that in harmony with the illustration of Cæsar, and of the powers under him, to call them administrators; whereas you take all care of them, as I said, tending your images in every respect. For they, having no power, do nothing. Wherefore tell us what do they administer? What do they of that sort which rulers in different places do? And what influence do they exert, as the stars of God? Do they show anything like the sun, or do you light lamps before them? Are they able to bring showers, as the clouds bring rain,—they which cannot even move themselves, unless men carry them? Do they make the earth fruitful to your labours, these to whom you supply sacrifices? Thus they can do nothing.</q></p><h3>Chapter XXV. Servants Become Masters</h3><p><q>But if they were able to do something, you should not be right in calling them gods: for it is not right to call the elements gods, by which good things are supplied; but only Him who orders them, to accomplish all things for our use, and who commands them to be serviceable to man,—Him alone we call God in propriety of speech, whose beneficence you do not perceive, but permit those elements to rule over you which have been assigned to you as your servants. And why should I speak of the elements, when you not only have made and do worship lifeless images, but deign to be subject to them in all respects as servants? Wherefore, by reason of your erroneous judgments, you have become subject to demons. However, by acknowledgment of God Himself, by good deeds you can again become masters, and command the demons as slaves, and as sons of God be constituted heirs of the eternal kingdom.</q></p><h3>Chapter XXVI. The Sick Healed</h3><p>Having said this, he ordered the demoniacs, and those taken with diseases, to be brought to him; and when they were brought, he laid his hands on them, and prayed, and dismissed them healed, reminding them and the rest of the multitude to attend upon him there every day that he should discourse. Then, when the others had withdrawn, Peter bathed in the reservoir that was there, with those who pleased; and then ordering a table to be spread on the ground under the thick foliage of the trees, for the sake of shade, he ordered us each to recline, according to our worth; and thus we partook of food. Therefore having blessed and having given thanks to God for the enjoyment, according to the accustomed faith of the Hebrews; and there being still a long time before us, he permitted us to ask him questions about whatever we pleased; and thus, though there were twenty of us putting questions to him all round, he satisfied every one. And now evening having descended, we all went with him into the largest apartment of the lodging, and there we all slept.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Ang Ikatlong Araw sa Tripolis</h3><p>Kaya sa ikatlong araw sa Tripolis, maagang bumangon si Pedro at nagtungo sa hardin, kung saan naroon ang isang malaking imbakan ng tubig na patuloy na dinadaluyan ng saganang agos. Matapos maligo roon at manalangin, naupo siya; at nang mapansin niyang nakaupo kami sa paligid niya at taimtim na nakamasid, na para bang nais makarinig ng anumang sasabihin niya, sinabi niya:—</p><h3>Kabanata II. Kamangmangan at Pagkaligaw</h3><p><q>Para sa akin ay malaki ang pagkakaiba ng taong mangmang at ng taong naliligaw. Ang mangmang ay para bang isang taong ayaw maglakbay patungo sa isang lungsod na sagana sa kayamanan sapagkat hindi niya alam ang mahuhusay na bagay na naroon; ngunit ang naliligaw ay tulad ng isang taong nalaman na nga ang mabubuting bagay na nasa lungsod, ngunit sa pagpunta roon ay iniwan ang pangunahing daan at naligaw. Gayon din, para sa akin ay may malaking pagkakaiba sa pagitan ng mga sumasamba sa mga diyus-diyosan at ng mga nagkakamali sa pagsamba sa Diyos. Ang mga sumasamba sa mga diyus-diyosan ay mangmang tungkol sa buhay na walang hanggan, kaya hindi nila ito ninanais; sapagkat hindi nila maiibig ang hindi nila kilala. Ngunit yaong mga pumiling sumamba sa iisang Diyos at natutuhan ang tungkol sa buhay na walang hanggan na ibinibigay sa mabubuti, kung naniniwala sila o gumagawa ng anumang naiiba sa kalugud-lugod sa Diyos, ay gaya ng mga lumabas mula sa lungsod ng kaparusahan at nagnanais makarating sa lungsod na sagana, ngunit habang nasa daan ay lumihis mula sa tamang landas.</q></p><h3>Kabanata III. Ang Tao Bilang Panginoon ng Lahat</h3><p>Habang nagsasalita siya sa amin nang ganito, pumasok ang isa sa aming mga kasama na inatasang magbigay ng sumusunod na ulat at sinabi: <q>Panginoon kong Pedro, napakaraming tao ang nakatayo sa harap ng mga pintuan.</q> Sa pahintulot niya, pumasok ang malaking karamihan. Pagkatapos ay tumayo siya at tumindig sa patungan, gaya ng ginawa niya noong nakaraang araw; at matapos silang batiin sa maka-Diyos na paraan, sinabi niya: <q>Nang likhain ng Diyos ang langit at lupa at gawin ang lahat ng naroon, gaya ng sinabi sa atin ng tunay na Propeta, ang tao, na nilikhang ayon sa larawan at wangis ng Diyos, ay itinalagang maging tagapamahala at panginoon ng mga nilalang—ang ibig kong sabihin ay yaong nasa himpapawid, lupa, at tubig. Makikita ito sa mismong katotohanang sa pamamagitan ng kanyang talino ay napabababa niya ang mga nilalang na nasa himpapawid, naiaahon ang mga nasa kailaliman, at nahuhuli ang mga nasa lupa, bagaman higit na malakas kaysa sa kanya ang mga iyon—ang ibig kong sabihin ay mga elepante, leon, at mga katulad nito.</q></p><h3>Kabanata IV. Pananampalataya at Tungkulin</h3><p><q>Samakatuwid, habang siya ay matuwid, nakahihigit din siya sa lahat ng pagdurusa, sapagkat sa kanyang katawang walang kamatayan ay hindi siya makararanas ng sakit. Ngunit nang magkasala siya, gaya ng ipinakita ko sa inyo kahapon at noong isang araw, at maging parang alipin ng kasalanan, napasailalim siya sa lahat ng pagdurusa, sapagkat sa matuwid na paghatol ay inalis sa kanya ang lahat ng mahuhusay na bagay. Sapagkat hindi makatwirang manatili sa taong walang utang na loob ang mga kaloob matapos niyang talikuran ang Nagbigay. Kaya dahil sa Kanyang saganang awa, upang muli nating matanggap hindi lamang ang mga unang pagpapala kundi pati ang mga pagpapalang darating, isinugo Niya ang Kanyang Propeta. At iniutos ng Propeta sa amin na sabihin sa inyo kung ano ang nararapat ninyong isipin at gawin. Kaya pumili kayo; sapagkat nasa kapangyarihan ninyo ito. Ang nararapat ninyong isipin ay ito: sambahin ang Diyos na gumawa ng lahat ng bagay; at kung tatanggapin ninyo Siya sa inyong mga isip, tatanggapin ninyo mula sa Kanya, kasama ng mga unang mahuhusay na bagay, pati ang darating na mga pagpapalang walang hanggan.</q></p><h3>Kabanata V. Ang Takot sa Diyos</h3><p><q>Kaya magagawa ninyong hikayatin ang sarili tungkol sa mga bagay na kapaki-pakinabang kung, gaya ng mga tagapagpaamo, sasabihin ninyo sa kakila-kilabot na ahas na nagkukubli sa inyong puso: ‘Ang Panginoon mong Diyos ang iyong katakutan, at Siya lamang ang iyong paglilingkuran.’ Sa lahat ng bagay ay kapaki-pakinabang na Siya lamang ang katakutan—hindi bilang isang di-makatarungan kundi bilang isang matuwid na Diyos. Sapagkat ang tao ay natatakot sa isang di-makatarungan baka siya’y mapuksa nang walang dahilan; ngunit sa isang matuwid ay natatakot siya baka mahuling nagkakasala at maparusahan. Kaya sa pamamagitan ng takot sa Kanya ay maaari kayong mapalaya mula sa maraming nakapipinsalang takot. Sapagkat kung hindi ninyo katatakutan ang iisang Panginoon at Manlilikha ng lahat, magiging mga alipin kayo ng lahat ng kasamaan sa sarili ninyong kapahamakan—ang ibig kong sabihin ay ng mga demonyo, mga karamdaman, at lahat ng bagay na maaaring makapinsala sa inyo.</q></p><h3>Kabanata VI. Pagpapanumbalik ng Larawan ng Diyos</h3><p><q>Kaya lumapit kayo nang may pagtitiwala sa Diyos, kayong sa pasimula ay ginawang mga tagapamahala at panginoon ng lahat ng bagay; kayong nagtataglay ng Kanyang larawan sa inyong mga katawan at, sa gayunding paraan, ng wangis ng Kanyang paghatol sa inyong mga isip. Ngunit nang kumilos kayong gaya ng mga hayop na walang katuwiran, nawala sa inyong kaluluwa ang kaluluwa ng tao at naging gaya kayo ng mga baboy, kaya naging biktima kayo ng mga demonyo. Kung gayon, kung tatanggapin ninyo ang kautusan ng Diyos, muli kayong magiging mga tao. Sapagkat hindi masasabi sa mga hayop na walang katuwiran, ‘Huwag kang papatay, huwag kang mangangalunya, huwag kang magnanakaw,’ at iba pa. Kaya huwag kayong tumanggi, kapag inaanyayahan, na bumalik sa inyong unang karangalan; sapagkat posible iyon kung makikiayon kayo sa Diyos sa pamamagitan ng mabubuting gawa. At kapag ibinilang kayong mga anak dahil sa inyong pagkawangis sa Kanya, muli kayong ilalagay bilang mga panginoon ng lahat.</q></p><h3>Kabanata VII. Kawalang-Pakinabang ng mga Diyus-diyosan</h3><p><q>Kaya simulan ninyong hubarin ang mapaminsalang takot sa mga walang-saysay na diyus-diyosan upang makatakas kayo sa di-matuwid na pagkaalipin. Sapagkat naging mga panginoon ninyo yaong, maging bilang mga alipin, ay walang pakinabang sa inyo. Tinutukoy ko ang materyal ng mga larawang walang buhay, na walang silbi sa paglilingkod sa inyo. Hindi sila nakaririnig, nakakikita, nakadarama, ni nakakikilos. Mayroon ba sa inyo na magnanais makakita gaya ng kanilang pagkakita, makarinig gaya ng kanilang pagkarinig, makadama gaya ng kanilang pagdama, at kumilos gaya ng kanilang pagkilos? Huwag nawang mangyari ang gayong kasamaan sa sinumang taong nagtataglay ng larawan ng Diyos, bagaman nawala niya ang Kanyang wangis.</q></p><h3>Kabanata VIII. Walang Diyus-diyosang Gawa ng mga Kamay</h3><p><q>Kaya ibalik ninyo ang inyong mga diyos na ginto at pilak, o anumang ibang materyal, sa kanilang unang kalikasan—ang ibig kong sabihin, gawing mga saro, palanggana, at iba pang kagamitang mapakikinabangan ninyo sa paglilingkod—at maibabalik sa inyo ang mabubuting bagay na unang ibinigay sa inyo. Ngunit marahil ay sasabihin ninyo, ‘Hindi pinahihintulutan ng mga batas ng mga emperador na gawin namin ito.’ Tama ang sabi ninyo na batas ang pumipigil, at hindi ang kapangyarihan ng mga walang-saysay na diyus-diyosan mismo, sapagkat wala silang kapangyarihan. Paano ninyo, kung gayon, itinuring na mga diyos yaong ipinaghihiganti ng mga batas ng tao, binabantayan ng mga aso, at iniingatan ng maraming tao—lalo na kung ang mga iyon ay ginto, pilak, o tanso? Sapagkat ang mga kahoy o luwad ay napangangalagaan dahil sa kawalan ng halaga, yamang walang taong nagnanais magnakaw ng diyos na kahoy o luwad! Kaya ang panganib sa inyong mga diyos ay ayon sa halaga ng materyal na pinag-gawaan sa kanila. Paano magiging mga diyos yaong ninanakaw, tinutunaw, tinitimbang, at binabantayan?</q></p><h3>Kabanata IX. May mga Mata Sila, Ngunit Hindi Nakakikita</h3><p><q>O kaawa-awang mga isip ng tao, na natatakot sa mga bagay na mas patay pa kaysa sa mga patay! Sapagkat hindi ko man sila matatawag na patay, yamang hindi naman sila kailanman nabuhay, maliban kung sila ang mga libingan ng mga sinaunang tao. Kung minsan, ang isang taong dumadalaw sa di-kilalang lugar ay hindi nakaaalam kung ang mga templong nakikita niya ay mga bantayog ng mga patay o pag-aari ng mga tinatawag na diyos; ngunit nang magtanong siya at marinig na para sa mga diyos ang mga iyon, sumasamba siya, nang hindi nahihiya na kung hindi niya nalaman iyon sa pagtatanong ay nadaanan sana niya ang mga iyon bilang mga bantayog ng isang patay, dahil napakalaki ng pagkakahawig. Gayunman, hindi na kailangang magharap pa ako ng maraming patunay tungkol sa gayong pamahiin. Sapagkat madali para sa sinumang nais umunawa na ang isang <em>diyus-diyosan</em> ay walang halaga, maliban na lamang kung may taong hindi nakakakita. Ngunit kahit ngayon man lamang ay dinggin ninyo na hindi ito nakaririnig, at unawain ninyong hindi ito nakauunawa. Sapagkat ginawa ito ng mga kamay ng isang taong mamamatay. Kung gayon, kung namatay ang gumawa, paano hindi malulusaw ang bagay na ginawa niya? Bakit ninyo sinasamba ang gawa ng isang mortal na lubos na walang pakiramdam? Samantalang ang mga may katuwiran ay hindi sumasamba sa mga hayop, ni naghahangad na payapain ang mga elementong ginawa ng Diyos—ang ibig kong sabihin ay ang langit, araw, buwan, kidlat, dagat, at lahat ng naroon—sapagkat tama nilang hinahatulan na hindi dapat sambahin ang mga bagay na Kanyang ginawa kundi igalang ang Manlilikha at Tagapagpanatili ng mga iyon. Sapagkat maging ang mga ito ay nagagalak na walang nag-uukol sa kanila ng karangalang nauukol sa kanilang Manlilikha.</q></p><h3>Kabanata X. Ang Pagsamba sa mga Diyus-diyosan ay Panlilinlang ng Ahas</h3><p><q>Sapagkat sa Kanya lamang ang dakilang kaluwalhatian ng pagiging tanging hindi nilikha, samantalang ang lahat ng iba pa ay nilikha. Kaya kung ang pagiging hindi nilikha ang natatanging katangian ng Diyos, anumang nilikha ay hindi tunay na Diyos. Kaya higit sa lahat ay dapat ninyong suriin ang masamang mungkahi ng mapanlinlang na ahas na nasa loob ninyo, na nang-aakit sa inyo sa pangakong may mas mabuting pangangatwiran, gumagapang mula sa inyong utak hanggang sa gulugod, at lubhang nagsisikap na malinlang kayo.</q></p><h3>Kabanata XI. Kung Bakit Tinutukso ng Ahas ang Tao sa Kasalanan</h3><p><q>Sapagkat alam niya ang unang kautusan: kapag nahikayat niya kayong sumampalataya sa mga tinatawag na diyos at sa gayon ay magkasala laban sa iisang mabuting pamamahala, ang inyong kapahamakan ay nagiging pakinabang niya. At ito ang dahilan: yamang siya’y hinatulang kumain ng lupa, may kapangyarihan siyang lamunin ang taong sa pamamagitan ng kasalanan ay nalusaw tungo sa lupa at naging lupa, samantalang ang inyong mga kaluluwa ay napupunta sa kanyang tiyan ng apoy. Upang mangyari sa inyo ang mga bagay na ito, iminungkahi niya ang bawat kaisipang makapipinsala sa inyo.</q></p><h3>Kabanata XII. Hindi Nakapagpapawalang-sala ang Kamangmangan</h3><p><q>Sapagkat lahat ng mapanlinlang na kuru-kuro laban sa iisang pamamahala ng Diyos ay inihahasik niya sa inyong isip upang kayo’y mapinsala. Una, upang hindi ninyo marinig ang mga aral ng kabanalan at sa gayon ay mapaalis ang kamangmangan—na siyang pinagmumulan ng masasamang bagay—binibitag niya kayo sa pagkukunwari ng kaalaman. Ibinibigay niya sa pasimula at patuloy na ginagamit ang palalong palagay na ito: ang isipin, sa kapahamakan ng sarili, na kung hindi marinig ng isang tao ang salita ng kabanalan ay hindi siya mapapasailalim sa paghuhukom. Kaya ang ilan, palibhasa’y nalinlang nang ganito, ay ayaw makinig upang manatiling mangmang, hindi nalalamang ang kamangmangan mismo ay sapat nang nakamamatay na lason. Sapagkat kung ang isang tao ay uminom ng nakamamatay na lason nang hindi niya nalalaman, hindi ba siya mamamatay? Gayon din, likas na winawasak ng mga kasalanan ang nagkakasala, kahit gawin niya ang mga iyon nang hindi nalalaman ang tama.</q></p><h3>Kabanata XIII. Hatol sa mga Mangmang</h3><p><q>Ngunit kung ang paghuhukom ay sumusunod sa pagsuway sa pagtuturo, lalo pang lilipulin ng Diyos ang mga taong ayaw man lamang tanggapin ang Kanyang pagsamba. Sapagkat ang taong ayaw matuto upang hindi siya mapasailalim sa paghuhukom ay nahatulan na na para bang nakaaalam, sapagkat alam niya kung ano ang ayaw niyang pakinggan; kaya walang saysay ang gayong palagay bilang dahilan sa harap ng Diyos na nakakakilala sa puso. Kaya iwasan ninyo ang tusong kaisipang ipinapasok ng ahas sa inyong isip. Ngunit kung ang isang tao ay magwakas ng buhay na tunay na mangmang, ito ang magiging paratang laban sa kanya: na sa kabila ng napakahaba niyang buhay ay hindi niya nakilala kung sino ang Nagkaloob ng pagkaing ipinagkaloob sa kanya. Kaya bilang isang alipin na walang pakiramdam, walang utang na loob, at lubhang di-karapat-dapat, itinataboy siya mula sa kaharian ng Diyos.</q></p><h3>Kabanata XIV. Halimbawa ng Maraming Diyos</h3><p><q>Muli, ipinapasok sa inyo ng kakila-kilabot na ahas ang palagay na ito upang isipin at sabihin ninyo yaong karaniwang sinasabi ng marami sa inyo: ‘Alam naming iisa ang Panginoon ng lahat, ngunit mayroon ding mga diyos. Sapagkat gaya ng iisang Caesar na may mga procurator, proconsul, prefect, mga pinuno ng libu-libo, daan-daan, at sampu-sampu sa ilalim niya, gayon din, bagaman iisa ang dakilang Diyos gaya ng iisang Caesar, mayroon ding mga diyos bilang nakabababang kapangyarihan—mas mababa nga sa Kanya ngunit namamahala sa atin.’ Kaya makinig kayo, kayong nadala ng kuru-kurong ito na para bang ng isang kakila-kilabot na lason—ang ibig kong sabihin ay ng masamang pangangatwirang ito—upang malaman ninyo kung ano ang mabuti at masama. Sapagkat hindi pa ninyo iyon nakikita, ni sinusuri ang mga salitang inyong sinasabi.</q></p><h3>Kabanata XV. Hindi Napatutunayan ng Halimbawang Iyon ang Kanilang Palagay</h3><p><q>Sapagkat kung sinasabi ninyong gaya ni Caesar ay may mga kapangyarihang nakapailalim sa Diyos—yaong tinatawag na mga diyos—hindi ninyo tunay na sinusunod ang sarili ninyong halimbawa. Sapagkat kung susundin ninyo iyon, dapat ninyong kilalanin na hindi pinahihintulutang tawaging Caesar ang iba, maging consul man siya, prefect, kapitan, o sinuman; at ang nagbibigay sa iba ng gayong pangalan ay hindi mabubuhay, at ang tumatanggap nito ay puputulin. Kaya ayon sa sarili ninyong halimbawa, hindi rin dapat ibigay ang pangalan ng Diyos sa iba; at sinumang matuksong tanggapin o ibigay iyon ay mapapahamak. Kung ang gayong paghamak sa isang tao ay may kaparusahan, lalo pang mapapasailalim sa walang-hanggang kaparusahan ang mga tumatawag sa iba na mga diyos, sapagkat nilalapastangan nila ang Diyos. At may mabuting dahilan: sapagkat isinasailalim ninyo sa lahat ng uri ng paghamak ang pangalang ipinagkatiwala sa inyo upang parangalan bilang kaugnay ng Kanyang iisang pamamahala. Sapagkat ang ‘Diyos’ ay hindi ang Kanyang tunay at wastong pangalan; ngunit yamang pansamantala ninyong tinanggap ang pangalang ito, ang paghamak ninyo sa ibinigay sa inyo ay ibinibilang na paghamak laban sa tunay na pangalan ayon sa paraan ng inyong paggamit nito. Ngunit isinasailalim ninyo ito sa bawat uri ng kahihiyan.</q></p><h3>Kabanata XVI. Mga Diyos ng mga Ehipsiyo</h3><p><q>Kaya kayong mga nangunguna sa mga Ehipsiyo, na ipinagmamalaki ang kaalaman tungkol sa mga bagay sa himpapawid at nangangakong mahuhusgahan ang kalikasan ng mga bituin, dahil sa masamang palagay na nakatago sa kanila ay isinailalim ang pangalang iyon sa lahat ng uri ng kahihiyan hangga’t kaya nila. Sapagkat itinuro ng ilan sa kanila ang pagsamba sa isang bakang tinatawag na Apis, ng iba sa isang lalaking kambing, ng iba sa isang pusa, ng iba sa isang ahas; oo, maging sa isang isda, sa mga sibuyas, sa mga ugong ng tiyan, sa mga karaniwang imburnal, at sa mga sangkap ng mga hayop na walang katuwiran; at sa di-mabilang pang ibang mabababang kasuklam-suklam ay <em>ibinigay nila ang pangalan ng diyos</em>.</q></p><h3>Kabanata XVII. Depensa ng mga Ehipsiyo sa Kanilang Sistema</h3><p>Nang sabihin ito ni Pedro, nagtawanan ang karamihang nakapaligid. Pagkatapos ay sinabi ni Pedro sa mga tumatawa: <q>Pinagtatawanan ninyo ang kanilang mga gawain, ngunit hindi ninyo alam na mas lalo naman kayong katatawanan para sa kanila. Ang totoo, pinagtatawanan lamang ninyo ang gawain ng isa’t isa; sapagkat dahil sa masamang kaugaliang umaakay sa panlilinlang, hindi ninyo nakikita ang sarili ninyong kalagayan. Inaamin kong may dahilan kayong pagtawanan ang mga diyus-diyosan ng mga Ehipsiyo, sapagkat sila na may katuwiran ay sumasamba sa mga hayop na walang katuwiran, at sa mga hayop pang namamatay. Ngunit pakinggan ninyo ang sinasabi nila kapag kayo naman ang kanilang kinukutya. ‘Kami,’ sabi nila, ‘bagaman sumasamba sa mga nilikhang namamatay, ay sumasamba naman sa mga bagay na minsang nagkaroon ng buhay; ngunit kayo ay gumagalang sa mga bagay na kailanman ay hindi nabuhay.’ At idinaragdag pa nila: ‘Nais naming parangalan ang anyo ng iisang Diyos, ngunit hindi namin matuklasan kung ano iyon; kaya pinipili naming parangalan ang bawat anyo.’ Sa pagsasabi ng mga ganitong bagay, iniisip nilang higit na tama ang kanilang paghatol kaysa sa inyo.</q></p><h3>Kabanata XVIII. Sagot sa mga Ehipsiyo</h3><p><q>Kaya sagutin ninyo sila nang ganito: ‘Nagsisinungaling kayo, sapagkat hindi ninyo sinasamba ang mga bagay na ito bilang parangal sa tunay na Diyos; kung gayon sana, sasambahin ninyong lahat ang bawat anyo, hindi gaya ng ginagawa ninyo ngayon. Sapagkat yaong sa inyo na nag-aakalang banal ang sibuyas at yaong sumasamba sa mga ugong ng tiyan ay nagtatalo sa isa’t isa; at sa ganitong paraan, bawat isa’y pumipili ng isang bagay at nilalait ang pinili ng iba. At sa sari-saring paghatol, ang isa’y gumagalang sa isang sangkap at ang isa naman sa ibang sangkap ng iisang hayop.’ Higit pa rito, yaong ilan sa kanila na may nalalabing bahagyang wastong pangangatwiran, dahil nahihiya sa hayagang kababaan, ay nagsisikap ipaliwanag ang mga ito sa pamamagitan ng mga alegorya, na nagnanais sa pamamagitan ng isa pang likong paraan na patatagin ang kanilang nakamamatay na kamalian. Ngunit kung naroon tayo, mapabubulaanan natin ang mga alegoryang iyon, na ang hangal na pagkahumaling dito ay lumala hanggang maging malaking karamdaman ng pag-iisip. Sapagkat hindi kinakailangang lagyan ng panapal ang bahaging malusog, kundi ang bahaging may sakit. Kaya yamang sa pagtawa ninyo sa mga Ehipsiyo ay ipinakikita ninyong hindi kayo dinapuan ng kanilang karamdaman, makatuwirang sa sarili ninyong karamdaman ko ibigay ang lunas na angkop sa inyo.</q></p><h3>Kabanata XIX. Natatanging Katangian ng Diyos</h3><p><q>Ang taong nagnanais sumamba sa Diyos ay dapat, higit sa lahat, malaman kung ano lamang ang natatangi sa kalikasan ng Diyos at hindi maaaring mapasaiba, upang sa pagtingin niya sa katangiang ito at sa hindi pagkakatagpo nito sa sinumang iba ay hindi siya maakit na mag-ukol ng pagka-Diyos sa iba. Ito ang natatangi sa Diyos: Siya lamang, bilang Manlilikha ng lahat, ang pinakamabuti rin sa lahat. Ang gumagawa ay higit na makapangyarihan kaysa sa ginawang bagay; ang walang hangganan ay higit na dakila kaysa sa may hangganan; sa kagandahan, yaong pinakamaganda; sa kaligayahan, yaong pinakapalad; sa pagkaunawa, yaong pinakaganap. At gayon din sa lahat ng iba pang bagay, Siya ang walang kapantay na nangunguna. Kaya, gaya ng sinabi ko, yamang ang mismong pagiging pinakamabuti sa lahat ay natatangi sa Diyos, at ang sanlibutang sumasaklaw sa lahat ay ginawa Niya, walang anumang ginawa Niya ang maaaring maihambing sa Kanya bilang kapantay.</q></p><h3>Kabanata XX. Hindi Maaaring Maging Diyos ang Sanlibutan o Anumang Bahagi Nito</h3><p><q>Ngunit ang sanlibutan, yamang hindi walang kapantay at hindi di-malalampasan, at hindi rin lubos na walang kakulangan sa lahat ng bagay, ay hindi maaaring maging Diyos. At kung ang buong sanlibutan ay hindi maaaring maging Diyos dahil ito’y nilikha, lalo nang hindi makatwirang tawaging Diyos ang mga bahagi nito—ang ibig kong sabihin ay yaong mga tinatawag ninyong mga diyos, na yari sa ginto, pilak, tanso, bato, o anumang ibang materyal, at ginawa ng kamay ng mga mortal. Gayunman, tingnan pa natin kung paano nilalason ng kakila-kilabot na ahas, sa pamamagitan ng bibig ng tao, yaong mga nahihikayat ng kanyang mga pang-uudyok.</q></p><h3>Kabanata XXI. Ang mga Diyus-diyosan ay Hindi Pinananahanan ng Banal na Espiritu</h3><p><q>Sapagkat marami ang nagsasabi: ‘Hindi namin sinasamba ang ginto o pilak, kahoy o bato, ng mga bagay na aming sinasamba. Alam din naming ang mga ito ay walang iba kundi materyal na walang buhay at gawa ng mortal na tao. Ngunit ang espiritung nananahan sa mga iyon ang tinatawag naming Diyos.’ Tingnan ninyo ang kasamaan ng mga nagsasalita nang ganito! Sapagkat kapag madaling napatunayang walang halaga ang nakikitang bagay, tumatakbo sila sa di-nakikita, sapagkat hindi sila madaling mapabulaanan tungkol sa hindi nakikita. Gayunman, bahagya silang sumasang-ayon sa atin na kalahati ng kanilang mga larawan ay hindi Diyos kundi materyal na walang pakiramdam. Ang natitira sa kanila ay patunayan kung bakit natin dapat paniwalaang may banal na espiritung nananahan sa mga larawang ito. Ngunit hindi nila mapatutunayan iyon, sapagkat hindi naman totoo; at hindi namin sila pinaniniwalaan <em>kapag sinasabi nilang nakita nila iyon</em>. Magbibigay kami ng mga patunay na wala silang banal na espiritu, upang ang mga umiibig sa katotohanan, kapag narinig ang pagpapabulaan sa palagay na may buhay ang mga ito, ay tumalikod sa mapaminsalang panlilinlang.</q></p><h3>Kabanata XXII. Pagpapabulaan sa Pagsamba sa mga Diyus-diyosan</h3><p><q>Una, kung sinasamba ninyo sila sapagkat iniisip ninyong may buhay sila, bakit sinasamba rin ninyo ang mga libingan ng mga kilalang tao noong unang panahon na aminado namang walang banal na espiritu? Kaya hindi totoo ang sinasabi ninyo tungkol dito. Ngunit kung tunay ngang may buhay ang mga bagay na sinasamba ninyo, kusang kikilos ang mga iyon; magkakaroon sila ng tinig; maaalis nila ang mga sapot ng gagamba sa kanilang sarili; maitataboy nila ang mga nagnanais sumunggab at magnakaw sa kanila; madali nilang mahuhuli ang mga nagnanakaw ng mga handog. Ngunit wala silang ginagawa sa mga ito; sa halip ay binabantayan sila na gaya ng mga bilanggo, lalo na yaong higit na mahalaga, gaya ng sinabi na natin. Ano pa? Hindi ba naniningil sa inyo ang mga pinuno ng mga buwis at bayarin dahil sa mga ito, na para bang malaki ang pakinabang ninyo sa kanila? Ano pa? Hindi ba maraming beses na silang nabihag bilang samsam ng mga kaaway, nabasag, at nagkawatak-watak? At hindi ba ang mga pari, higit pa sa mga mananambang nasa labas, ang kumukuha ng marami sa mga handog, na sa gayon ay kinikilalang walang pakinabang ang kanilang pagsamba?</q></p><h3>Kabanata XXIII. Kahangalan ng Pagsamba sa mga Diyus-diyosan</h3><p><q>Ngunit sasabihin: ‘Napatutunayan naman ang kanilang kapangyarihan dahil nahuhuli nila ang ilan sa pamamagitan ng kanilang paunang kaalaman.’ Mali iyon; sapagkat gaano karami ang hindi nahuhuli? At kung dahil sa pagkakahuli ng ilan ay sinasabing may kapangyarihan sila, mali ang pangangatwiran. Sapagkat sa mga nagnanakaw sa mga libingan, ang ilan ay nahuhuli at ang iba’y nakatatakas; ngunit hindi kapangyarihan ng mga patay ang nakatutuklas sa mga nahuhuli. Gayon din dapat ang ating pasya tungkol sa mga nagnanakaw at kumukuha ng mga diyus-diyosan. Ngunit sasabihin: ‘Ang mga diyos na nasa loob nila ay walang pakialam sa kanilang mga larawan.’ Kung gayon, bakit ninyo sila inaalagaan—pinupunasan, hinuhugasan, kinikiskis, pinuputungan, at hinahandugan? Kaya sumang-ayon kayo sa akin na lubos kayong kumikilos nang walang wastong katuwiran. Sapagkat kung paanong nananaghoy kayo sa mga patay, gayon din kayo naghahandog at nagbubuhos ng handog sa inyong mga diyos.</q></p><h3>Kabanata XXIV. Kawalang-Kakayahan ng mga Diyus-diyosan</h3><p><q>Hindi rin tugma sa halimbawa tungkol kay Caesar at sa mga kapangyarihang nasa ilalim niya na tawagin ninyong mga tagapangasiwa ang mga ito, samantalang kayo pa ang lubos na nag-aalaga sa kanila, gaya ng sinabi ko, at nag-aasikaso sa inyong mga larawan sa lahat ng bagay. Sapagkat wala silang kapangyarihan at wala silang ginagawa. Kaya sabihin ninyo sa amin: ano ang pinangangasiwaan nila? Ano ang ginagawa nila na katulad ng ginagawa ng mga pinunong namamahala sa iba’t ibang lugar? At anong impluwensiya ang kanilang ginagamit na gaya ng mga bituin ng Diyos? Nagpapakita ba sila ng anumang gaya ng araw, o kayo pa ang nagsisindi ng mga ilawan sa harap nila? Nakapagdadala ba sila ng ulan gaya ng mga ulap—sila na hindi man lamang makakilos maliban kung buhatin ng tao? Pinamumunga ba nila ang lupa dahil sa inyong paggawa—sila na kayo pa ang nagbibigay ng mga hain? Kaya wala silang magagawa.</q></p><h3>Kabanata XXV. Ang mga Alipin ay Naging mga Panginoon</h3><p><q>Ngunit kahit may magagawa sila, hindi pa rin magiging tama na tawagin silang mga diyos. Sapagkat hindi nararapat tawaging mga diyos ang mga elementong sa pamamagitan nila ay ibinibigay ang mabubuting bagay, kundi Siya lamang na nag-uutos sa mga iyon upang maisagawa ang lahat para sa ating kapakinabangan at nag-aatas na maglingkod ang mga iyon sa tao. Siya lamang ang wastong tinatawag nating Diyos. Ngunit hindi ninyo nakikita ang Kanyang kabutihan; sa halip ay pinahihintulutan ninyong pagharian kayo ng mga elementong itinalaga upang maging mga lingkod ninyo. At bakit pa ako magsasalita tungkol sa mga elemento, samantalang hindi lamang kayo gumagawa at sumasamba sa mga larawang walang buhay, kundi nagpapasakop pa sa mga iyon sa lahat ng paraan bilang mga alipin? Kaya dahil sa mali ninyong mga paghatol ay napasailalim kayo sa mga demonyo. Gayunman, sa pagkilala mismo sa Diyos at sa paggawa ng mabuti ay maaari kayong muling maging mga panginoon, mag-utos sa mga demonyo na parang mga alipin, at bilang mga anak ng Diyos ay maitalagang mga tagapagmana ng walang-hanggang kaharian.</q></p><h3>Kabanata XXVI. Pinagaling ang mga Maysakit</h3><p>Pagkasabi niya nito, iniutos niyang dalhin sa kanya ang mga sinasapian ng mga demonyo at yaong mga dinapuan ng mga karamdaman. Nang dalhin sila, ipinatong niya ang kanyang mga kamay sa kanila, nanalangin, at pinauwi silang mga gumaling, habang pinaaalalahanan sila at ang iba pang karamihan na dumalo sa kanya roon araw-araw habang siya’y nagtuturo. Pagkatapos, nang makaalis na ang iba, naligo si Pedro sa imbakan ng tubig na naroon kasama ng sinumang nagnanais. Pagkatapos ay ipinahanda niya ang isang hapag sa lupa sa ilalim ng makapal na mga dahon ng mga puno upang may lilim at iniutos niyang mahiga ang bawat isa sa amin ayon sa aming kalagayan; at sa gayon ay kumain kami. Matapos niyang pagpalain at pasalamatan ang Diyos para sa tinamasa naming pagkain ayon sa nakaugaliang pananampalataya ng mga Hebreo, at yamang mahaba pa ang oras na natitira sa amin, pinahintulutan niya kaming magtanong tungkol sa anumang nais namin. Kaya bagaman dalawampu kaming nakapaligid sa kanya at nagtatanong, nasagot niya ang bawat isa. At nang dumating na ang gabi, lahat kami ay sumama sa kanya sa pinakamalaking silid ng tuluyan at doon natulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

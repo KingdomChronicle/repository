@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 9</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Peter's Discourse Resumed</option><option value="1">Chapter II. Monarchy and Polyarchy</option><option value="2">Chapter III. Family of Noe</option><option value="3">Chapter IV. Zoroaster</option><option value="4">Chapter V. Hero-Worship</option><option value="5">Chapter VI. Fire-Worship</option><option value="6">Chapter VII. Sacrificial Orgies</option><option value="7">Chapter VIII. The Best Merchandise</option><option value="8">Chapter IX. How Demons Get Power Over Men</option><option value="9">Chapter X. How They are to Be Expelled</option><option value="10">Chapter XI. Unbelief the Demon's Stronghold</option><option value="11">Chapter XII. Theory of Disease</option><option value="12">Chapter XIII. Deceits of the Demons</option><option value="13">Chapter XIV. More Tricks</option><option value="14">Chapter XV. Test of Idols</option><option value="15">Chapter XVI. Powers of the Demons</option><option value="16">Chapter XVII. Reasons Why Their Deceits are Not Detected</option><option value="17">Chapter XVIII. Props of the System</option><option value="18">Chapter XIX. Privileges of the Baptized</option><option value="19">Chapter XX. Not Almost, But Altogether Such as I Am.</option><option value="20">Chapter XXI. The Demons Subject to the Believer</option><option value="21">Chapter XXII. Rather Rejoice.</option><option value="22">Chapter XXIII. The Sick Healed</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Peter's Discourse Resumed</h3><p>Therefore on the next day, Peter going out with his companions, and coming to the former place, and taking his stand, proceeded to say: <q>God having cut off by water all the impious men of old, having found one alone amongst them all that was pious, caused him to be saved in an ark, with his three sons and their wives. Whence may be perceived that it is His nature not to care for a multitude of wicked, nor to be indifferent to the salvation of one pious. Therefore the greatest impiety of all is forsaking the sole Lord of all, and worshipping many, who are no gods, as if they were gods.</q></p><h3>Chapter II. Monarchy and Polyarchy</h3><p><q>If, therefore, while I expound and show you that this is the greatest sin, which is able to destroy you all, it occur to your mind that you are not destroyed, being great multitudes, you are deceived. For you have the example of the old world deluged. And yet their sin was much less than that which is chargeable against you. For they were wicked with respect to their equals, murdering or committing adultery. But you are wicked against the God of all, worshipping lifeless images instead of Him or along with Him, and attributing His divine name to every kind of senseless matter. In the first place, therefore, you are unfortunate in not knowing the difference between monarchy and polyarchy—that monarchy, on the one hand, is productive of concord, but polyarchy is effective of wars. For unity does not fight with itself, but multitude has occasion of undertaking battle one against another.</q></p><h3>Chapter III. Family of Noe</h3><p><q>Therefore straightway after the flood, Noe continued to live three hundred and fifty years with the multitude of his descendants in concord, being a king according to the image of the one God. But after his death many of his descendants were ambitious of the kingdom, and being eager to reign, each one considered how it might be effected; and one attempted it by war, another by deceit, another by persuasion, and one in one way and another in another; one of whom was of the family of Ham, whose descendant was Mestren, from whom the tribes of the Egyptians and Babylonians and Persians were multiplied.</q></p><h3>Chapter IV. Zoroaster</h3><p><q>Of this family there was born in due time a certain one, who took up with magical practices, by name Nebrod, who chose, giant-like, to devise things in opposition to God. Him the Greeks have called Zoroaster. He, after the deluge, being ambitious of sovereignty, and being a great magician, by magical arts compelled the world-guiding star of the wicked one who now rules, to the bestowal of the sovereignty <em>as a gift</em> from him. But he, being a prince, and having authority over him who compelled him, wrathfully poured out the fire of the kingdom, that he might both bring to allegiance, and might punish him who at first constrained him.</q></p><h3>Chapter V. Hero-Worship</h3><p><q>Therefore the magician Nebrod, being destroyed by this lightning falling on earth from heaven, for this circumstance had his name changed to Zoroaster, on account of the living (ζῶσαν) stream of the star (ἀστέρος) being poured upon him. But the unintelligent amongst the men who then were, thinking that through the love of God his soul had been sent for by lightning, buried the remains of his body, and honoured his burial-place with a temple among the Persians, where the descent of the fire occurred, and worshipped him as a god. By this example also, others there bury those who die by lightning as beloved of God, and honour them with temples, and erect statues of the dead in their own forms. Thence, in like manner, the rulers in different places were emulous <em>of like honour</em>, and very many of them honoured the tombs of those who were beloved of them, though not dying by lightning, with temples and statues, and lighted up altars, and ordered them to be adored as gods. And long after, by the lapse of time, they were thought by posterity to be really gods.</q></p><h3>Chapter VI. Fire-Worship</h3><p><q>Thus, in this fashion, there ensued many partitions of the one original kingdom. The Persians, first taking coals from the lightning which fell from heaven, preserved them by ordinary fuel, and honouring the heavenly fire as a god, were honoured by the fire itself with the first kingdom, as its first worshippers. After them the Babylonians, stealing coals from the fire that was there, and conveying it safely to their own home, and worshipping it, they themselves also reigned in order. And the Egyptians, acting in like manner, and calling the fire in their own dialect Phthaë, which is translated Hephaistus or Osiris, he who first reigned amongst them is called by its name. Those also who reigned in different places, acting in this fashion, and making an image, and kindling altars in honour of fire, most of them were excluded from the kingdom.</q></p><h3>Chapter VII. Sacrificial Orgies</h3><p><q>But they did not cease to worship images, by reason of the evil intelligence of the magicians, who found excuses for them, which had power to constrain them to the foolish worship. For, establishing this things by magical ceremonies, they assigned them feasts from sacrifices, libations, flutes, and shoutings, by means of which senseless men, being deceived, and their kingdom being taken from them, yet did not desist from the worship that they had taken up with. To such an extent did they prefer error, on account of its pleasantness, before truth. They also howl after their sacrificial surfeit, their soul from the depth, as it were by dreams, forewarning them of the punishment that is to befall such deeds of theirs.</q></p><h3>Chapter VIII. The Best Merchandise</h3><p><q>Many forms of worship, then, having passed away in the world, we come, bringing to you, as good merchantmen, the worship that has been handed down to us from our fathers, and preserved; showing you, as it were, the seeds of plants, and placing them under your judgment and in your power. Choose that which seems good unto you. If, therefore, ye choose our wares, not only shall ye be able to escape demons, and the sufferings which are inflicted by demons, but yourselves also putting them to flight, and having them reduced to make supplication to you, shall for ever enjoy future blessings.</q></p><h3>Chapter IX. How Demons Get Power Over Men</h3><p><q>Since, on the other hand, you are oppressed by strange sufferings inflicted by demons, on your removal from the body you shall have your souls also punished for ever; not indeed by God's inflicting vengeance, but because such is the judgment of evil deeds. For the demons, having power by means of the food given to them, are admitted into your bodies by your own hands; and lying hid there for a long time, they become blended with your souls. And through the carelessness of those who think not, or even wish not, to help themselves, upon the dissolution of their bodies, their souls being united to the demon, are of necessity borne by it into whatever places it pleases. And what is most terrible of all, when at the end of all things the demon is first consigned to the purifying fire, the soul which is mixed with it is under the necessity of being horribly punished, and the demon of being pleased. For the soul, being made of light, and not capable of bearing the heterogeneous flame of fire, is tortured; but the demon, being in the substance of his own kind, is greatly pleased, becoming the strong chain of the soul that he has swallowed up.</q></p><h3>Chapter X. How They are to Be Expelled</h3><p><q>But the reason why the demons delight in entering into men's bodies is this. Being spirits, and having desires after meats and drinks, and sexual pleasures, but not being able to partake of these by reason of their being spirits, and wanting organs fitted for their enjoyment, they enter into the bodies of men, in order that, getting organs to minister to them, they may obtain the things that they wish, whether it be meat, by means of men's teeth, or sexual pleasure, by means of men's members. Hence, in order to the putting of demons to flight, the most useful help is abstinence, and fasting, and suffering of affliction. For if they enter into men's bodies for the sake of sharing <em>pleasures</em>, it is manifest that they are put to flight by suffering. But inasmuch as some, being of a more malignant kind, remain by the body that is undergoing punishment, though they are punished with it, therefore it is needful to have recourse to God by prayers and petitions, refraining from every occasion of impurity, that the hand of God may touch him for his cure, as being pure and faithful.</q></p><h3>Chapter XI. Unbelief the Demon's Stronghold</h3><p><q>But it is necessary in our prayers to acknowledge that we have had recourse to God, and to bear witness, not to the apathy, but to the slowness of the demon. For all things are done to the believer, nothing to the unbeliever. Therefore the demons themselves, knowing the amount of faith of those of whom they take possession, measure their stay proportionately. Wherefore they stay permanently with the unbelieving, tarry for a while with the weak in faith; but with those who thoroughly believe, and who do good, they cannot remain even for a moment. For the soul being turned by faith, as it were, into the nature of water, quenches the demon as a spark of fire. The labour, therefore, of every one is to be solicitous about the putting to flight of his own demon. For, being mixed up with men's souls, they suggest to every one's mind desires after what things they please, in order that he may neglect his salvation.</q></p><h3>Chapter XII. Theory of Disease</h3><p><q>Whence many, not knowing how they are influenced, consent to the evil thoughts suggested by the demons, as if they were the reasoning of their own souls. Wherefore they become less active to come to those who are able to save them, and do not know that they themselves are held captive by the deceiving demons. Therefore the demons who lurk in their souls induce them to think that it is not a demon that is distressing them, but a bodily disease, such as some acrid matter, or bile, or phlegm, or excess of blood, or inflammation of a membrane, or something else. But even if this were so, the case would not be altered of its being a kind of demon. For the universal and earthly soul, which enters on account of all kinds of food, being taken to excess by over-much food, is itself united to the spirit, as being cognate, which is the soul of man; and the material part of the food being united to the body, is left as a dreadful poison to it. Wherefore in all respects moderation is excellent.</q></p><h3>Chapter XIII. Deceits of the Demons</h3><p><q>But some of the maleficent demons deceive in another way. For at first they do not even show their existence, in order that care may not be taken against them; but in due time, by means of anger, love, or some other affection, they suddenly injure the body, by sword, or halter, or precipice, or something else, and at last bring to punishment the deceived souls of those who have been mixed up with them, as we said, withdrawing into the purifying fire. But others, who are deceived in another way, do not approach us, being seduced by the instigations of maleficent demons, as if they suffered these things at the hands of the gods themselves, on account of their neglect of them, and were able to reconcile them by sacrifices, and that it is not needful to come to us, but rather to flee from and hate us. And at the same time they hate and flee from those who have greater compassion for them, and who follow after them in order to do good to them.</q></p><h3>Chapter XIV. More Tricks</h3><p><q>Therefore shunning and hating us they are deceived, not knowing how it happens that they devise things opposed to their health. For neither can we compel them against their will to incline towards health, since now we have no such power over them, nor are they able of themselves to understand the evil instigation of the demon; for they know not whence these evil instigations are suggested to them. And these are they whom the demons affright, appearing in such forms as they please. And sometimes they prescribe remedies for those who are diseased, and thus they receive divine honours from those who have previously been deceived. And they conceal from many that they are demons, but not from us, who know their mystery, and why they do these things, changing themselves in dreams against those over whom they have power; and why they terrify some, and give oracular responses to others, and demand sacrifices from them, and command them to eat with them, that they may swallow up their souls.</q></p><h3>Chapter XV. Test of Idols</h3><p><q>For as dire serpents draw sparrows to them by their breath, so also these draw to their own will those who partake of their table, being mixed up with their understanding by means of food and drink, changing themselves in dreams according to the forms of the images, that they may increase error. For the image is neither a living creature, nor has it a divine spirit, but the demon that appeared abused the form. How many, in like manner, have been seen by others in dreams; and when they have met one another when awake, and compared them with what they saw in their dream, they have not accorded: so that the dream is not a manifestation, but is either the production of a demon or of the soul, giving forms to present fears and desire. For the soul, being struck with fear, conceives forms in dreams. But if you think that images, as being alive, can accomplish such things, place them on a beam accurately balanced, and place an equipoise in the other scale, then ask them to become either heavier or lighter: and if this be done, then they are alive. But it does not so happen. But if it were so, this would not prove them to be gods. For this might be accomplished by the finger of the demon. Even maggots move, yet they are not called gods.</q></p><h3>Chapter XVI. Powers of the Demons</h3><p><q>But that the soul of each man embodies the forms of demons after his own preconceptions, and that those who are called gods do not appear, is manifest from the fact that they do not appear to the Jews. But some one will say, How then do they give oracular responses, forecasting future things? This also is false. But suppose it were true, this does not prove them to be gods; for it does not follow, if anything prophesies, that it is a god. For pythons prophesy, yet they are cast out by us as demons, and put to flight. But some one will say, They work cures for some persons. It is false. But suppose it were true, this is no proof of Godhead; for physicians also heal many, yet are not gods. But, says one, physicians do not completely heal those of whom they take charge, but these heal oracularly. But the demons know the remedies that are suited to each disease. Wherefore, being skilful physicians, and able to cure those diseases which can be cured by men, and also being prophets, and knowing when each disease is healed of itself, they so arrange their remedies that they may gain the credit of producing the cure.</q></p><h3>Chapter XVII. Reasons Why Their Deceits are Not Detected</h3><p><q>For why do they oracularly foretell cures after a long time? And why, if they are almighty, do they not effect cures without administering any medicine? And for what reason do they prescribe remedies to some of those who pray to them, while to some, and it may be more suitable cases, they give no response? Thus, whenever a cure is going to take place spontaneously, they promise, in order that they may get the credit of the cure; and others, having been sick, and having prayed, and having recovered spontaneously, attributed the cure to those whom they had invoked, and make offerings to them. Those, however, who, after praying, have failed, are not able to offer their sacrifices. But if the relatives of the dead, or any of their children, inquired into the losses, you would find the failures to be more than the successes. But no one who has been taken in by them is willing to exhibit an accusation against them, through shame or fear; but, on the other hand, they conceal the crimes which they believe them to be guilty of.</q></p><h3>Chapter XVIII. Props of the System</h3><p><q>And how many also falsify the responses given and the cures effected by them, and confirm them with an oath! And how many give themselves up to them for hire, undertaking falsely to suffer certain things, and thus proclaiming their suffering, and being restored by remedial means, they say that they oracularly promised them healing, in order that they may assign as the cause the senseless worship! And how many of these things were formerly done by magical art, in the way of interpreting dreams, and divining! Yet in course of time these things have disappeared. And how many are there now, who, wishing to obtain such things, make use of charms! However, though a thing be prophetical or healing, it is not divine.</q></p><h3>Chapter XIX. Privileges of the Baptized</h3><p><q>For God is almighty. For He is good and righteous, now long-suffering to all, that those who will, repenting of the evils which they have done, and living well, may receive a worthy reward in the day in which all things are judged. Wherefore now begin to obey God by reason of good knowledge, and to oppose your evil lusts and thoughts, that you may be able to recover the original saving worship which was committed to humanity. For thus shall blessings straightway spring up to you, which, when you receive, you will thenceforth quit the trial of evils. But give thanks to the Giver; being kings for ever of unspeakable good things, with the King of peace. But in the present life, washing in a flowing river, or fountain, or even in the sea, with the thrice-blessed invocation, you shall not only be able to drive away the spirits which lurk in you; but yourselves no longer sinning, and undoubtingly believing God, you shall drive out evil spirits and dire demons, with terrible diseases, from others. And sometimes they shall flee when you but look on them. For they know those who have given themselves up to God. Wherefore, honouring them, they flee affrighted, as you saw yesterday, how, when after the address I delayed praying for those who were suffering these maladies, through respect towards the worship they cried out, not being able to endure it for a short hour.</q></p><h3>Chapter XX. Not Almost, But Altogether Such as I Am.</h3><p><q>Do not then suppose that we do not fear demons on this account, that we are of a different nature <em>from you</em>. For we are of the same nature, but not of the same worship. Wherefore, being not only much but altogether superior to you, we do not grudge you becoming such <em>as we are</em>; but, on the other hand, counsel you, knowing that all these <em>demons</em> beyond measure honour and fear those who are reconciled to God.</q></p><h3>Chapter XXI. The Demons Subject to the Believer</h3><p><q>For, in like manner as the soldiers who are put under one of Cæsar's captains know to honour him who has received authority on account of him who gave it, so that the commanders say to this one, Come, and he comes, and to another, Go, and he goes; so also he who has given himself to God, being faithful, is heard when he only speaks to demons and diseases; and the demons give place, though they be much stronger than they who command them. For with unspeakable power God subjects the mind of every one to whom He pleases. For as many captains, with whole camps and cities, fear Cæsar, who is but a man, every one's heart being eager to honour the image of all for the will of God, all things being enslaved by fear, do not know the cause; so also all disease-producing spirits, being awed in some natural way, honour and flee from him who has had recourse to God, and who carries right faith as His image in his heart.</q></p><h3>Chapter XXII. Rather Rejoice.</h3><p><q>But still, though all demons, with all diseases, flee before you, you are not to rejoice in this only, but in that, through grace, your names, as of the ever-living, are written in heaven. Thus also the Divine Holy Spirit rejoices because man has overcome death; for the putting of the demons to flight makes for the safety of another. But this we say, not as denying that we ought to help others, but that we ought not to be inflated by this and neglect ourselves. It happens, also, that the demons flee before some wicked men by reason of the honoured name, and both he who expels the demon and he who witnesses it are deceived: he who expels him, as if he were honoured on account of righteousness, not knowing the wickedness of the demon. For he has at once honoured the name, and by his flight has brought the wicked man into a thought of his righteousness, and so deceived him away from repentance. But the looker-on, associating with the expeller as a pious man, hastens to a like manner of life, and is ruined. Sometimes also they pretend to flee before adjurations not made in the name of God, that they may deceive men, and destroy them whom they will.</q></p><h3>Chapter XXIII. The Sick Healed</h3><p><q>This then we would have you know, that unless any one of his own accord give himself over as a slave to demons, as I said before, the demon has no power against him. Choosing, therefore, to worship one God, and refraining from the table of demons, and undertaking chastity with philanthropy and righteousness, and being baptized with the thrice-blessed invocation for the remission of sins, and devoting yourselves as much as you can to the perfection of purity, you can escape everlasting punishment, and be constituted heirs of eternal blessings.</q></p><p>Having thus spoken, he ordered those to approach who were distressed with diseases; and thus many approached, having come together through the experience of those who had been healed yesterday. And he having laid his hands upon them and prayed, and immediately healed them, and having charged them and the others to come earlier, he bathed and partook of food, and went to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Ipinagpatuloy ni Pedro ang Kanyang Talumpati</h3><p>Kaya nang sumunod na araw, lumabas si Pedro kasama ng kanyang mga kasama, pumunta sa dating lugar, tumayo, at nagsimulang magsalita: <q>Nang lipulin ng Diyos sa pamamagitan ng tubig ang lahat ng di-maka-Diyos noong unang panahon, nakasumpong Siya sa kanilang lahat ng iisang taong maka-Diyos at iniligtas ito sa isang daong kasama ng tatlo niyang anak na lalaki at ng kani-kanilang mga asawa. Mula rito ay makikitang likas sa Kanya na huwag bigyang-halaga ang dami ng masasama at huwag pabayaan ang kaligtasan ng kahit isang maka-Diyos. Kaya ang pinakadakilang kawalang-galang sa lahat ay ang talikuran ang nag-iisang Panginoon ng lahat at sambahin bilang mga diyos ang marami na hindi naman mga diyos.</q></p><h3>Kabanata II. Iisang Pamamahala at Maraming Pamamahala</h3><p><q>Kaya habang ipinapaliwanag at ipinakikita ko sa inyo na ito ang pinakadakilang kasalanan na makapupuksa sa inyong lahat, kung pumasok sa isip ninyo na hindi kayo mapupuksa dahil napakarami ninyo, nalilinlang kayo. Nasa harap ninyo ang halimbawa ng sinaunang sanlibutang nilunod ng baha. Gayunman, higit na magaan ang kasalanan nila kaysa sa maipaparatang sa inyo. Sapagkat naging masasama sila laban sa mga kapwa nila tao, sa pagpatay o pangangalunya. Ngunit kayo ay gumagawa ng kasamaan laban sa Diyos ng lahat, na sumasamba sa mga larawang walang buhay sa halip na sa Kanya o kasabay Niya, at ibinibigay ang Kanyang banal na pangalan sa bawat uri ng walang-isip na bagay. Kaya una sa lahat, kapus-palad kayo dahil hindi ninyo nalalaman ang pagkakaiba ng iisang pamamahala at maraming pamamahala: ang iisang pamamahala ay nagbubunga ng pagkakasundo, ngunit ang maraming pamamahala ay nagbubunga ng mga digmaan. Sapagkat ang iisa ay hindi nakikipaglaban sa sarili, ngunit sa karamihan ay may pagkakataong ang isa’y makipagdigma laban sa isa.</q></p><h3>Kabanata III. Ang Sambahayan ni Noe</h3><p><q>Kaya kaagad pagkatapos ng baha, nabuhay pa si Noe nang tatlong daan at limampung taon kasama ang napakarami niyang mga inapo nang may pagkakasundo, bilang isang haring ayon sa larawan ng iisang Diyos. Ngunit pagkamatay niya, marami sa kanyang mga inapo ang naghangad ng kaharian at, sa kasabikang maghari, bawat isa ay nag-isip kung paano niya iyon makakamit: ang isa sa pamamagitan ng digmaan, ang isa sa pandaraya, ang isa sa panghihikayat, at ang iba sa iba’t ibang paraan. Isa sa kanila ay mula sa angkan ni Ham; ang inapo niya ay si Mestren, na mula sa kanya ay dumami ang mga lipi ng mga Ehipsiyo, Babilonio, at Persiano.</q></p><h3>Kabanata IV. Zoroaster</h3><p><q>Mula sa angkang ito, sa takdang panahon, ay ipinanganak ang isang nagngangalang Nebrod na nahumaling sa mga gawaing mahika at, gaya ng isang higante, ay piniling magbalak ng mga bagay laban sa Diyos. Tinawag siya ng mga Griyego na Zoroaster. Pagkatapos ng baha, dahil sa paghahangad niyang maghari at sapagkat isa siyang makapangyarihang salamangkero, sa pamamagitan ng mahika ay pinilit niya ang bituing namamahala sa sanlibutan ng masamang naghahari ngayon na ipagkaloob sa kanya ang kapangyarihang maghari <em>bilang kaloob</em>. Ngunit ang isang iyon, bilang isang pinuno at may kapangyarihan sa taong pumilit sa kanya, ay galit na ibinuhos ang apoy ng kaharian upang kapwa mapasunod at maparusahan ang unang pumilit sa kanya.</q></p><h3>Kabanata V. Pagsamba sa mga Bayani</h3><p><q>Kaya nang mapuksa ang salamangkero na si Nebrod ng kidlat na bumagsak mula sa langit patungo sa lupa, dahil sa pangyayaring ito ay napalitan ang kanyang pangalan at tinawag siyang Zoroaster, sapagkat ang buhay (zōsan) na agos ng bituin (asteros) ay ibinuhos sa kanya. Ngunit ang mga taong walang pang-unawa noon, sa pag-aakalang dahil sa pag-ibig ng Diyos ay tinawag ng kidlat ang kanyang kaluluwa, ay inilibing ang nalabi sa kanyang katawan at pinarangalan ang kanyang libingan sa mga Persiano sa pamamagitan ng isang templo sa lugar na binagsakan ng apoy, at sinamba siya bilang isang diyos. Sa halimbawang ito, ang iba roon ay naglilibing din sa mga namatay sa kidlat bilang mga minamahal ng Diyos, pinararangalan sila ng mga templo, at nagtatayo ng mga larawan ng mga patay ayon sa sarili nilang anyo. Mula noon, sa gayunding paraan, ang mga pinuno sa iba’t ibang lugar ay naghangad ng <em>gayunding karangalan</em>, at napakarami sa kanila ang nagparangal sa mga libingan ng mga minamahal nila—kahit hindi namatay sa kidlat—sa pamamagitan ng mga templo at mga estatwa; nagsindi sila ng mga altar at iniutos na sambahin ang mga iyon bilang mga diyos. At makalipas ang mahabang panahon, dahil sa pagdaan ng mga salinlahi, inakala ng mga sumunod na henerasyon na tunay ngang mga diyos sila.</q></p><h3>Kabanata VI. Pagsamba sa Apoy</h3><p><q>Sa ganitong paraan ay nagkaroon ng maraming pagkakahati-hati mula sa unang iisang kaharian. Ang mga Persiano, na unang kumuha ng mga baga mula sa kidlat na bumagsak mula sa langit, ay pinanatili ang mga iyon sa pamamagitan ng karaniwang gatong; at sa pagpaparangal sa makalangit na apoy bilang isang diyos, sila naman ay pinarangalan ng apoy sa pamamagitan ng unang kaharian bilang mga unang sumamba rito. Pagkatapos nila, ang mga Babilonio, na nagnakaw ng mga baga mula sa apoy na naroon at maingat na dinala ang mga iyon sa sarili nilang lupain at sinamba ang mga iyon, ay sila namang sumunod na naghari. At ang mga Ehipsiyo, na gumawa rin ng gayon at tinawag ang apoy sa sarili nilang wika na Phthaë—na isinasaling Hephaistus o Osiris—ay tumawag sa unang naghari sa kanila ayon sa pangalan nito. Gayundin, yaong mga naghari sa iba’t ibang lugar, na kumilos sa ganitong paraan, gumawa ng larawan at nagsindi ng mga altar bilang parangal sa apoy, ay karamihang naalis sa kaharian.</q></p><h3>Kabanata VII. Mga Kasayahang Panghain</h3><p><q>Ngunit hindi sila tumigil sa pagsamba sa mga larawan dahil sa masamang talino ng mga salamangkero, na gumawa ng mga dahilan para sa mga iyon na may kapangyarihang pilitin silang manatili sa hangal na pagsamba. Sapagkat sa pamamagitan ng mga seremonyang mahiwaga ay pinagtibay nila ang mga bagay na ito at nagtalaga para sa mga iyon ng mga kapistahang may mga hain, handog na inumin, plauta, at sigawan. Sa pamamagitan ng mga ito ay nalinlang ang mga taong walang pang-unawa at, kahit nawala sa kanila ang kanilang kaharian, hindi pa rin nila tinalikuran ang pagsambang kanilang niyakap. Gayon na lamang nila pinili ang kamalian kaysa sa katotohanan dahil sa kasiyahang ibinibigay nito. At pagkatapos ng kanilang labis na pagpapakasasa sa mga hain ay humahagulgol sila, na para bang ang kanilang kaluluwa, mula sa kaibuturan at wari’y sa pamamagitan ng mga panaginip, ay nagbababala sa kanila tungkol sa kaparusahang darating dahil sa gayong mga gawa.</q></p><h3>Kabanata VIII. Ang Pinakamainam na Kalakal</h3><p><q>Kaya matapos lumipas sa sanlibutan ang maraming anyo ng pagsamba, lumalapit kami sa inyo gaya ng mabubuting mangangalakal, dala ang pagsambang ipinamana sa amin ng aming mga ninuno at napanatili hanggang ngayon. Ipinakikita namin iyon sa inyo na para bang mga binhi ng halaman at inilalagay sa ilalim ng inyong paghatol at kapangyarihan. Piliin ninyo ang tila mabuti sa inyo. Kaya kung pipiliin ninyo ang aming kalakal, hindi lamang kayo makatatakas sa mga demonyo at sa mga pagdurusang ipinapataw nila; kayo mismo ang makapagpapalayas sa kanila at makapagpapasamo sa kanila sa inyo, at magpakailanman ninyong tatamasahin ang mga pagpapala sa hinaharap.</q></p><h3>Kabanata IX. Kung Paano Nagkakaroon ng Kapangyarihan ang mga Demonyo sa mga Tao</h3><p><q>Ngunit yamang pinahihirapan kayo ng mga kakaibang pagdurusang ipinapataw ng mga demonyo, kapag nahiwalay na kayo sa katawan ay parurusahan din magpakailanman ang inyong mga kaluluwa—hindi dahil naghihiganti ang Diyos, kundi sapagkat gayon ang hatol sa masasamang gawa. Sapagkat ang mga demonyo, na nagkakaroon ng kapangyarihan sa pamamagitan ng pagkaing ibinibigay sa kanila, ay pinahihintulutang pumasok sa inyong mga katawan sa pamamagitan mismo ng inyong mga kamay; at matapos magkubli roon nang mahabang panahon, nahahalo sila sa inyong mga kaluluwa. At dahil sa kapabayaan ng mga taong hindi nag-iisip o ayaw man lamang tumulong sa kanilang sarili, kapag nalusaw ang kanilang mga katawan, ang kanilang mga kaluluwa, yamang nakaugnay na sa demonyo, ay napipilitang dalhin nito saanman nito maibigan. At ang pinakakakila-kilabot sa lahat, sa wakas ng lahat ng bagay, kapag unang ipinadala ang demonyo sa naglilinis na apoy, ang kaluluwang nahalo rito ay napipilitang dumanas ng kakila-kilabot na kaparusahan, samantalang nalulugod ang demonyo. Sapagkat ang kaluluwa, na yari sa liwanag at hindi kayang tiisin ang apoy na naiiba sa kanyang kalikasan, ay pinahihirapan; ngunit ang demonyo, yamang nasa sangkap na kauri ng sarili nito, ay lubhang nasisiyahan at nagiging matibay na tanikala ng kaluluwang nilamon nito.</q></p><h3>Kabanata X. Kung Paano Sila Palalayasin</h3><p><q>Ngunit ito ang dahilan kung bakit nasisiyahan ang mga demonyong pumasok sa mga katawan ng tao. Bilang mga espiritu, naghahangad sila ng pagkain, inumin, at seksuwal na kalayawan; ngunit dahil mga espiritu sila at walang mga sangkap ng katawan na angkop upang tamasahin ang mga iyon, pumapasok sila sa mga katawan ng tao upang, sa pagkakaroon ng mga sangkap na maglilingkod sa kanila, makamit nila ang kanilang ninanais—pagkain sa pamamagitan ng mga ngipin ng tao, o seksuwal na kalayawan sa pamamagitan ng mga sangkap ng tao. Kaya upang mapalayas ang mga demonyo, ang pinakamabisang tulong ay pagpipigil, pag-aayuno, at pagtitiis ng paghihirap. Sapagkat kung pumapasok sila sa mga katawan ng tao upang makibahagi sa mga <em>kalayawan</em>, malinaw na napalalayas sila sa pamamagitan ng paghihirap. Ngunit dahil ang ilan na higit na malupit ang uri ay nananatili sa katawan na dumaranas ng kaparusahan, bagaman sila man ay naparurusahan kasama nito, kailangan kung gayon na dumulog sa Diyos sa pamamagitan ng mga panalangin at pagsusumamo, umiwas sa bawat pagkakataon ng karumihan, upang ang kamay ng Diyos ay humipo sa kanya para sa kanyang kagalingan bilang isang taong dalisay at tapat.</q></p><h3>Kabanata XI. Ang Kawalan ng Pananampalataya ang Kuta ng Demonyo</h3><p><q>Ngunit sa ating mga panalangin ay kailangang kilalanin nating dumulog tayo sa Diyos at magpatotoo, hindi sa kawalang-pakialam kundi sa pagkaantala ng demonyo. Sapagkat nagagawa ang lahat para sa sumasampalataya, ngunit wala para sa hindi sumasampalataya. Kaya ang mga demonyo mismo, yamang alam ang antas ng pananampalataya ng mga taong kanilang sinasapian, ay sinusukat ang tagal ng pananatili nila ayon dito. Dahil dito, nananatili silang tuluyan sa mga hindi sumasampalataya, nagtatagal nang kaunti sa mga mahina ang pananampalataya, ngunit sa mga lubos na naniniwala at gumagawa ng mabuti ay hindi sila makapananatili kahit isang saglit. Sapagkat ang kaluluwa, na dahil sa pananampalataya ay para bang naging likas na gaya ng tubig, ay pumapatay sa demonyo gaya ng isang kislap ng apoy. Kaya tungkulin ng bawat isa na magsikap upang mapalayas ang sarili niyang demonyo. Sapagkat kapag nahalo sila sa mga kaluluwa ng tao, nagmumungkahi sila sa isip ng bawat isa ng mga pagnanasang ayon sa anumang maibigan nila upang mapabayaan niya ang kanyang kaligtasan.</q></p><h3>Kabanata XII. Teorya tungkol sa Karamdaman</h3><p><q>Dahil dito, marami ang hindi nakaaalam kung paano sila naiimpluwensiyahan at sumasang-ayon sa masasamang kaisipang ipinapasok ng mga demonyo, na para bang mga pangangatwiran iyon ng sarili nilang kaluluwa. Kaya hindi sila gaanong nagsisikap lumapit sa mga makapagliligtas sa kanila at hindi nila nalalamang sila mismo ay bihag ng mga mapanlinlang na demonyo. Kaya ang mga demonyong nagkukubli sa kanilang mga kaluluwa ay humihikayat sa kanila na isipin na hindi demonyo ang nagpapahirap sa kanila kundi isang karamdaman ng katawan—gaya ng ilang matapang na sangkap, apdo, plema, labis na dugo, pamamaga ng isang lamad, o iba pang bagay. Ngunit kahit pa gayon nga, hindi nito binabago ang katotohanang isa pa rin itong uri ng demonyo. Sapagkat ang pangkalahatan at makalupang kaluluwa, na pumapasok dahil sa lahat ng uri ng pagkain at nagiging labis dahil sa sobrang pagkain, ay siya ring nakikipag-isa sa espiritu bilang kauri nito—iyon ay, sa kaluluwa ng tao; samantalang ang materyal na bahagi ng pagkain, kapag naisa sa katawan, ay naiiwan dito bilang isang kakila-kilabot na lason. Kaya sa lahat ng bagay ay pinakamainam ang pagpipigil.</q></p><h3>Kabanata XIII. Mga Pandaraya ng mga Demonyo</h3><p><q>Ngunit ang ilan sa masasamang demonyo ay nanlilinlang sa ibang paraan. Sa simula ay hindi man lamang nila ipinakikita na naroroon sila upang walang pag-iingat na gawin laban sa kanila; ngunit sa takdang panahon, sa pamamagitan ng galit, pag-ibig, o ibang damdamin, bigla nilang sinasaktan ang katawan sa pamamagitan ng tabak, lubid na pambigti, bangin, o iba pang bagay, at sa wakas ay dinadala sa kaparusahan ang mga nalinlang na kaluluwang nahalo sa kanila, gaya ng sinabi natin, habang sila naman ay umaalis patungo sa naglilinis na apoy. Ngunit ang iba, na nalilinlang sa ibang paraan, ay hindi lumalapit sa atin sapagkat nahihikayat sila ng mga udyok ng masasamang demonyo na isipin na ang mga bagay na ito ay dinaranas nila mula mismo sa mga diyos dahil pinabayaan nila ang mga iyon, at na mapapapayapa nila ang mga iyon sa pamamagitan ng mga hain; kaya iniisip nilang hindi nila kailangang lumapit sa atin kundi dapat tayong layuan at kapootan. At kasabay nito ay kinapopootan at iniiwasan nila ang mga taong higit na naaawa sa kanila at humahabol sa kanila upang gawan sila ng mabuti.</q></p><h3>Kabanata XIV. Iba Pang mga Panlilinlang</h3><p><q>Kaya sa pag-iwas at pagkapoot nila sa atin ay nalilinlang sila, na hindi nalalaman kung bakit sila bumubuo ng mga bagay na salungat sa sarili nilang kalusugan. Sapagkat hindi natin sila mapipilit laban sa kanilang kalooban na humilig sa kagalingan, yamang wala tayong gayong kapangyarihan sa kanila; at hindi rin nila kayang maunawaan sa sarili nila ang masamang udyok ng demonyo, sapagkat hindi nila alam kung saan nagmumula ang masasamang mungkahing ito. Sila yaong tinatakot ng mga demonyo, na nagpapakita sa anumang anyong kanilang maibigan. Kung minsan ay nagrereseta pa sila ng mga lunas para sa mga maysakit at sa gayon ay tumatanggap ng banal na karangalan mula sa mga dati nang nalinlang. Sa marami ay ikinukubli nilang sila’y mga demonyo, ngunit hindi sa amin, na nakaaalam ng kanilang hiwaga: kung bakit nila ginagawa ang mga bagay na ito, kung bakit nag-iiba sila ng anyo sa mga panaginip laban sa mga taong nasa ilalim ng kanilang kapangyarihan, kung bakit tinatakot nila ang ilan, nagbibigay ng mga sagot na tila orakulo sa iba, humihingi ng mga hain sa kanila, at inuutusang makisalo sa pagkain upang malunok nila ang kanilang mga kaluluwa.</q></p><h3>Kabanata XV. Pagsubok sa mga Diyus-diyosan</h3><p><q>Sapagkat kung paanong hinihila ng mababangis na ahas ang mga maya sa pamamagitan ng kanilang hininga, gayon din hinihila ng mga ito sa sarili nilang kalooban ang mga nakikisalo sa kanilang hapag, na humahalo sa kanilang pag-iisip sa pamamagitan ng pagkain at inumin at nag-iiba ng anyo sa mga panaginip ayon sa mga anyo ng mga larawan upang lalo pang palakihin ang kamalian. Sapagkat ang larawan ay hindi isang nilalang na may buhay ni may banal na espiritu; ang demonyong nagpakita lamang ang gumamit nang mapanlinlang sa anyo nito. Gayundin, ilan na ba ang nakita ng iba sa kanilang mga panaginip na, nang magkita sila habang gising at ihambing ang mga iyon sa nakita nila sa panaginip, ay hindi nagkatugma? Kaya ang panaginip ay hindi isang tunay na pagpapakita; ito ay alinman sa gawa ng isang demonyo o ng kaluluwa na nagbibigay ng anyo sa kasalukuyang takot at pagnanasa. Sapagkat ang kaluluwa, kapag tinamaan ng takot, ay lumilikha ng mga anyo sa panaginip. Ngunit kung iniisip ninyong ang mga larawan, bilang mga bagay na buhay, ay kayang gumawa ng gayong mga bagay, ilagay ninyo ang mga iyon sa isang timbangan na eksaktong pantay at maglagay ng katumbas na bigat sa kabilang panig; pagkatapos ay hilingin ninyong maging mas mabigat o mas magaan ang mga iyon. Kung magagawa nila iyon, saka sila buhay. Ngunit hindi iyon nangyayari. At kahit mangyari pa, hindi nito mapatutunayang mga diyos sila; sapagkat maaari iyong gawin ng daliri ng demonyo. Maging ang mga uod ay gumagalaw, ngunit hindi sila tinatawag na mga diyos.</q></p><h3>Kabanata XVI. Mga Kapangyarihan ng mga Demonyo</h3><p><q>Ngunit malinaw na ang kaluluwa ng bawat tao ang nagbibigay-katawan sa mga anyo ng mga demonyo ayon sa sarili niyang mga naunang palagay, at hindi tunay na nagpapakita yaong mga tinatawag na diyos, sapagkat hindi sila nagpapakita sa mga Judio. Ngunit may magsasabi: Kung gayon, paano sila nagbibigay ng mga sagot na tila orakulo at naghuhula ng mga bagay na darating? Mali rin ito. Ngunit ipagpalagay nating totoo iyon—hindi pa rin nito pinatutunayang mga diyos sila; sapagkat hindi sumusunod na kung may isang bagay na nanghuhula ay diyos na iyon. Ang mga espiritung manghuhula ay nanghuhula rin, ngunit itinataboy natin sila bilang mga demonyo at napalalayas sila. Ngunit may magsasabi: Nagpapagaling sila ng ilang tao. Mali iyon. Ngunit ipagpalagay nating totoo—hindi pa rin iyon patunay ng pagka-Diyos; sapagkat maraming pinagagaling ang mga manggagamot ngunit hindi sila mga diyos. Ngunit, sabi ng isa, hindi lubusang napagagaling ng mga manggagamot ang mga inaalagaan nila, samantalang ang mga ito ay nagpapagaling sa paraang orakular. Ngunit alam ng mga demonyo ang mga lunas na angkop sa bawat karamdaman. Kaya bilang mahuhusay na manggagamot, kaya nilang gamutin ang mga karamdamang kaya ring gamutin ng mga tao; at bilang mga manghuhula, alam nila kung kailan kusa nang gagaling ang bawat karamdaman. Kaya inaayos nila ang kanilang mga lunas upang sa kanila mapunta ang karangalan ng pagpapagaling.</q></p><h3>Kabanata XVII. Kung Bakit Hindi Nahahalata ang Kanilang mga Panlilinlang</h3><p><q>Sapagkat bakit sila nanghuhula ng paggaling pagkatapos ng mahabang panahon? At kung makapangyarihan sila sa lahat, bakit hindi nila pagalingin ang mga maysakit nang walang ibinibigay na gamot? At bakit sa ilan sa mga nananalangin sa kanila ay nagbibigay sila ng mga lunas, samantalang sa iba—na maaaring higit pang angkop na gamutin—ay wala silang ibinibigay na sagot? Kaya tuwing kusang gagaling ang isang karamdaman, nangangako silang gagaling iyon upang sa kanila mapunta ang karangalan ng pagpapagaling. At ang iba, matapos magkasakit, manalangin, at saka kusang gumaling, ay iniuukol ang paggaling sa mga tinawag nila at naghahandog sa kanila. Ngunit yaong mga nanalangin ngunit hindi gumaling ay hindi na makapaghahandog ng kanilang mga hain. At kung sisiyasatin ng mga kamag-anak ng mga namatay, o ng kanilang mga anak, ang mga naging kabiguan, matutuklasan ninyong higit na marami ang kabiguan kaysa tagumpay. Gayunman, walang sinumang nalinlang nila ang handang magharap ng paratang laban sa kanila dahil sa hiya o takot; sa halip, ikinukubli nila ang mga kasalanang pinaniniwalaan nilang ginawa ng mga iyon.</q></p><h3>Kabanata XVIII. Mga Sandigan ng Sistemang Ito</h3><p><q>At ilan din ang nagsisinungaling tungkol sa mga tugong ibinigay at mga pagpapagaling na diumano’y ginawa nila, at pinagtitibay pa iyon sa pamamagitan ng panunumpa! At ilan ang nagpapaupa sa kanilang sarili para sa mga gawaing ito, na nagkukunwaring dumaranas ng ilang bagay, saka hayagang ipinakikita ang kanilang pagdurusa at, matapos kunwari’y gumaling sa pamamagitan ng mga lunas, ay sinasabing ipinangako sa kanila nang pauna ang paggaling upang maituro nila ang walang-isip na pagsamba bilang sanhi! At ilan sa gayong mga bagay ang dating ginagawa sa pamamagitan ng mahika—sa pagpapakahulugan ng mga panaginip at panghuhula! Gayunman, sa paglipas ng panahon ay nawala ang mga bagay na ito. At ilan ngayon ang naghahangad magkaroon ng gayong mga bagay sa pamamagitan ng paggamit ng mga anting-anting! Ngunit kahit pa ang isang bagay ay manghula o magpagaling, hindi iyon dahil dito ay banal.</q></p><h3>Kabanata XIX. Mga Pribilehiyo ng mga Nabautismuhan</h3><p><q>Sapagkat makapangyarihan sa lahat ang Diyos. Siya ay mabuti at matuwid, at ngayo’y matiisin sa lahat upang ang mga nagnanais, sa pagsisisi sa masasamang ginawa nila at sa mabuting pamumuhay, ay makatanggap ng karapat-dapat na gantimpala sa araw na hahatulan ang lahat ng bagay. Kaya magsimula na kayong sumunod sa Diyos sa pamamagitan ng wastong kaalaman at labanan ang masasama ninyong pagnanasa at kaisipan, upang maibalik ninyo ang unang pagsambang nagliligtas na ipinagkatiwala sa sangkatauhan. Sa gayon ay agad na sisibol sa inyo ang mga pagpapala; at kapag natanggap ninyo ang mga iyon, mula noon ay malalampasan ninyo ang pagsubok ng masasamang bagay. Ngunit magpasalamat kayo sa Nagbibigay, yamang magiging mga hari kayo magpakailanman ng di-maipahayag na mabubuting bagay kasama ng Hari ng kapayapaan. At sa kasalukuyang buhay, sa paghuhugas sa umaagos na ilog, bukal, o maging sa dagat, kalakip ang tatlong-ulit na pinagpalang pagtawag, hindi lamang ninyo mapalalayas ang mga espiritung nagkukubli sa inyo; kayo rin, kung hindi na magkakasala at walang pag-aalinlangang maniniwala sa Diyos, ay makapagpapalayas ng masasamang espiritu at mababangis na demonyo, kasama ng kakila-kilabot na mga karamdaman, mula sa iba. At kung minsan ay tatakas sila kahit tingnan lamang ninyo sila. Sapagkat kilala nila yaong mga nagtalaga ng sarili sa Diyos. Kaya, sa pagpaparangal sa kanila, tumatakas silang natatakot—gaya ng nakita ninyo kahapon: nang matapos ang talumpati ay ipinagpaliban ko nang kaunti ang pananalangin para sa mga dumaranas ng mga karamdamang ito, sumigaw sila dahil sa paggalang sa pagsamba, sapagkat hindi nila kayang tiisin iyon kahit sa maikling oras.</q></p><h3>Kabanata XX. Hindi Halos, Kundi Lubos na Gaya Ko</h3><p><q>Kaya huwag ninyong isipin na hindi kami natatakot sa mga demonyo dahil iba ang aming kalikasan <em>sa inyo</em>. Sapagkat iisa ang ating kalikasan, ngunit hindi iisa ang ating pagsamba. Kaya yamang hindi lamang malaki kundi lubos ang aming kalamangan sa inyo, hindi namin ipinagkakait na maging <em>gaya namin</em> kayo; sa halip ay pinapayuhan namin kayo, sapagkat nalalaman naming ang lahat ng mga <em>demonyong</em> ito ay lubhang nagpaparangal at natatakot sa mga taong nakipagkasundo sa Diyos.</q></p><h3>Kabanata XXI. Nasasakop ng Mananampalataya ang mga Demonyo</h3><p><q>Sapagkat kung paanong ang mga kawal na inilagay sa ilalim ng isa sa mga kapitan ni Caesar ay marunong gumalang sa taong tumanggap ng kapangyarihan dahil sa nagbigay nito—anupa’t sinasabi ng mga pinuno sa isa, ‘Halika,’ at siya’y lumalapit, at sa isa naman, ‘Humayo ka,’ at siya’y humahayo—gayon din ang taong nagtalaga ng sarili sa Diyos at nananatiling tapat ay dinirinig kapag nagsasalita lamang siya sa mga demonyo at mga karamdaman; at ang mga demonyo ay umaalis, bagaman higit silang malakas kaysa sa mga nag-uutos sa kanila. Sapagkat sa pamamagitan ng di-maipahayag na kapangyarihan ay pinasasakop ng Diyos ang isip ng bawat isa ayon sa Kanyang kalooban. Sapagkat kung paanong maraming kapitan, kasama ang buong mga hukbo at mga lungsod, ay natatakot kay Caesar na isa lamang tao, samantalang ang puso ng bawat isa ay sabik na parangalan ang larawan ng lahat ayon sa kalooban ng Diyos at ang lahat ng bagay, na inalipin ng takot, ay hindi nalalaman ang sanhi, gayon din ang lahat ng espiritung nagdudulot ng karamdaman, na sa likas na paraan ay nasisindak, ay nagpaparangal at tumatakas mula sa taong dumulog sa Diyos at nagdadala sa kanyang puso ng wastong pananampalataya bilang Kanyang larawan.</q></p><h3>Kabanata XXII. Sa Halip ay Magalak</h3><p><q>Ngunit kahit tumatakas sa harap ninyo ang lahat ng demonyo kasama ng lahat ng karamdaman, huwag lamang dito kayo magalak, kundi sa katotohanang sa pamamagitan ng biyaya ay nakasulat sa langit ang inyong mga pangalan bilang mga taong nabubuhay magpakailanman. Gayundin, nagagalak ang Banal na Espiritu ng Diyos sapagkat dinaig ng tao ang kamatayan; sapagkat ang pagpapalayas sa mga demonyo ay para sa kaligtasan ng ibang tao. Ngunit sinasabi namin ito hindi upang itangging dapat tayong tumulong sa iba, kundi upang hindi tayo magmataas dahil dito at pabayaan ang sarili natin. Nangyayari rin na ang mga demonyo ay tumatakas sa harap ng ilang masasamang tao dahil sa pinararangalan nilang pangalan, at kapwa nalilinlang ang nagpapalayas ng demonyo at ang nakasaksi: ang nagpapalayas ay nalilinlang na para bang pinararangalan siya dahil sa kanyang katuwiran, sapagkat hindi niya nalalaman ang kasamaan ng demonyo. Sapagkat sabay na pinarangalan ng demonyo ang pangalan at, sa kanyang pagtakas, itinanim sa masamang tao ang pag-iisip na siya’y matuwid, at sa gayon ay inilayo siya sa pagsisisi. Samantala, ang nakasaksi, sa pakikisama sa nagpapalayas na para bang isa itong maka-Diyos na tao, ay nagmamadaling tumulad sa gayong paraan ng pamumuhay at napapahamak. Kung minsan din ay nagkukunwari silang tumatakas sa harap ng mga panunumpang hindi naman ginagawa sa pangalan ng Diyos, upang malinlang nila ang mga tao at mapuksa ang mga nais nilang wasakin.</q></p><h3>Kabanata XXIII. Pinagaling ang mga Maysakit</h3><p><q>Kaya nais naming malaman ninyo ito: maliban kung kusang ibigay ng isang tao ang sarili bilang alipin ng mga demonyo, gaya ng sinabi ko na, walang kapangyarihan ang demonyo laban sa kanya. Kaya kung pipiliin ninyong sambahin ang iisang Diyos, umiwas sa hapag ng mga demonyo, isagawa ang kalinisan kasabay ng pag-ibig sa kapwa at katuwiran, magpabautismo kalakip ang tatlong-ulit na pinagpalang pagtawag para sa kapatawaran ng mga kasalanan, at italaga ang inyong sarili hangga’t makakaya sa kasakdalan ng kadalisayan, makatatakas kayo sa walang-hanggang kaparusahan at maitatalaga bilang mga tagapagmana ng mga pagpapalang walang hanggan.</q></p><p>Pagkasabi niya nito, iniutos niyang lumapit ang mga pinahihirapan ng mga karamdaman. Marami ang lumapit, sapagkat nagkatipon sila dahil sa karanasan ng mga pinagaling noong nakaraang araw. Ipinatong niya ang kanyang mga kamay sa kanila at nanalangin, at agad silang pinagaling. Pagkatapos ay inutusan niya sila at ang iba pang mga tao na dumating nang mas maaga; saka siya naligo, kumain, at natulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

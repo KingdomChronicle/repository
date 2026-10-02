@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 14</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Mattidia is Baptized in the Sea</option><option value="1">Chapter II. The Reason of Peter's Lateness</option><option value="2">Chapter III. The Old Man Does Not Believe in God or Providence</option><option value="3">Chapter IV. Peter's Arguments Against Genesis</option><option value="4">Chapter V. Practical Refutation of Genesis</option><option value="5">Chapter VI. The Old Man Opposes His Personal Experience to the Argument of Peter</option><option value="6">Chapter VII. The Old Man Tells His Story</option><option value="7">Chapter VIII. The Old Man Gives Information in Regard to Faustus the Father of Clement</option><option value="8">Chapter IX. Faustus Himself Appears</option><option value="9">Chapter X. Faustus Explains His Narrative to Peter</option><option value="10">Chapter XI. Discussion on Genesis</option><option value="11">Chapter XII. Clement Undertakes the Discussion</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Mattidia is Baptized in the Sea</h3><p>Much earlier than usual Peter awoke, and came to us, and awaking us, said: <q>Let Faustinus and Faustinianus, along with Clement and the household, accompany me, that we may go to some sheltered spot by the sea, and there be able to baptize her without attracting observation.</q> Accordingly, when we had come to the sea-shore, he baptized her between some rocks, which supplied a place at once free from wind and dust. But we brothers, along with our brother and some others, retired because of the women and bathed, and coming again to the women, we took them along with us, and thus we went to a secret place and prayed. Then Peter, on account of the multitude, sent the women on before, ordering them to go to their lodging by another way, and he permitted us alone of the men to accompany our mother and the rest of the women. We went then to our lodging, and while waiting for Peter's arrival, we conversed with each other. Peter came several hours after, and breaking the bread for the Eucharist, and putting salt upon it, he gave it first to our mother, and, after her, to us her sons. And thus we took food along with her and blessed God.</p><h3>Chapter II. The Reason of Peter's Lateness</h3><p>Then, at length, Peter seeing that the multitude had entered, sat down, and bidding us sit down beside him, he related first of all why he had sent us on before him after the baptism, and why he himself had been late in returning. He said that the following was the reason: <q>At the time that you came up,</q> he says, <q>an old man, a workman, entered along with you, concealing himself out of curiosity. He had watched us before, as he himself afterwards confessed, in order to see what we were doing when we entered into the sheltered place, and then he came out secretly and followed us. And coming up to me at a convenient place, and addressing me, he said, 'For a long time I have been following you and wishing to talk with you, but I was afraid that you might be angry with me, as if I were instigated by curiosity; but now I shall tell you, if you please, what I think is the truth.' And I replied, 'Tell us what you think is good, and we shall approve your conduct, even should what you say not be really good, since with a good purpose you have been anxious to state what you deem to be good.'</q></p><h3>Chapter III. The Old Man Does Not Believe in God or Providence</h3><p><q>The old man began to speak as follows: 'When I saw you after you had bathed in the sea retire into the secret place, I went up and secretly watched what might be your object in entering into a secret place, and when I saw you pray, I retired; but taking pity on you, I waited that I might speak with you when you came out, and prevail on you not to be led astray. For there is neither God nor providence; but all things are subject to Genesis. Of this I am fully assured in consequence of what I have myself endured, having for a long time made a careful study of the science. Do not therefore be deceived, my child. For whether you pray or not, you must endure what is assigned to you by Genesis. For if prayers could have done anything or any good, I myself should now be in better circumstances. And now, unless my needy garments mislead you, you will not refuse to believe what I say. I was once in affluent circumstances; I sacrificed much to the gods, I gave liberally to the needy; and yet, though I prayed and acted piously, I was not able to escape my destiny.' And I said: 'What are the calamities you have endured?' And he answered: 'I need not tell you now; perhaps at the end you shall learn who I am, and who are my parents, and into what straitened circumstances I have fallen. But at present I wish you to become fully assured that everything is subject to Genesis.'</q></p><h3>Chapter IV. Peter's Arguments Against Genesis</h3><p><q>And I said: 'If all things are subject to Genesis, and you are fully convinced that this is the case, your thoughts and advice are contrary to your own opinion. For if it is impossible even to think in opposition to Genesis, why do you toil in vain, advising me to do what cannot be done? Yea, moreover, even if Genesis subsists, do not make haste to prevail on me not to worship Him who is also Lord of the stars, by whose wish that a thing should not take place, that thing becomes an impossibility. For always that which is subject must obey that which rules. As far, however, as the worship of the common gods is concerned, that is superfluous, if Genesis has sway. For neither does anything happen contrary to what seems good to fate, nor are they themselves able to do anything, since they are subject to their own universal Genesis. If Genesis exists, there is this objection to it, that that which is not first has the rule; or, <em>in other words</em>, the uncreated cannot be subject, for the uncreated, as being uncreated, has nothing that is older than itself.' </q></p><h3>Chapter V. Practical Refutation of Genesis</h3><p><q>While we were thus talking, a great multitude gathered round us. And then I looked to the multitude, and said: 'I and my tribe have had handed down to us from our ancestors the worship of God, and we have a commandment to give no heed to Genesis, I mean to the science of astrology; and therefore I gave no attention to it. For this reason I have no skill in astrology, but I shall state that in which I have skill. Since I am unable to refute Genesis by an appeal to the science which relates to Genesis, I wish to prove in another way that the affairs of this world are managed by a providence, and that each one will receive reward or punishment according to his actions. Whether he shall do so now or hereafter, is a matter of no consequence to me; all I affirm is, that each one without doubt will reap the fruit of his deeds. The proof that there is no Genesis is this. If any one of you present has been deprived of eyes, or has his hand maimed, or his foot lame, or some other part of the body wrong, and if it is utterly incurable, and entirely beyond the range of the medical profession,—a case, indeed, which not even the astrologers profess to cure, for no such cure has taken place within the lapse of a vast period,—yet I praying to God will cure it, although it could never have been set right by Genesis. Since this is so, do not they sin who blaspheme the God that fashioned all things?' And the old man answered: 'Is it then blasphemy to say that all things are subject to Genesis?' And I replied: 'Most certainly it is. For if all the sins of men, and all their acts of impiety and licentiousness, owe their origin to the stars, and if the stars have been appointed by God to do this work, so as to be the efficient causes of all evils, then the sins of all are traced up to Him who placed Genesis in the stars.'</q></p><h3>Chapter VI. The Old Man Opposes His Personal Experience to the Argument of Peter</h3><p><q>And the old man answered: 'You have spoken truly, and yet, notwithstanding all your incomparable demonstration, I am prevented from yielding assent by my own personal knowledge. For I was an astrologer, and dwelt first at Rome; and then forming a friendship with one who was of the family of Cæsar, I ascertained accurately the genesis of himself and his wife. And tracing their history, I find all the deeds actually accomplished in exact accordance with their genesis, and therefore I cannot yield to your argument. For the arrangement of her genesis was that which makes women commit adultery, fall in love with their own slaves, and perish abroad in the water. And this actually took place; for she fell in love with her own slave, and not being able to bear the reproach, she fled with him, hurried to a foreign land, shared his bed, and perished in the sea.'</q></p><h3>Chapter VII. The Old Man Tells His Story</h3><p><q>And I answered: 'How then do you know that she who fled and took up her residence in a foreign land married the slave, and marrying him died?' And the old man said: 'I am quite sure that this is true, not indeed that she married him, for I did not know even that she fell in love with him; but after her departure, a brother of her husband's told me the whole story of her passion, and how he acted as an honourable man, and did not, as being his brother, wish to pollute his couch, and how she the wretched woman (for she is not blameable, inasmuch as she was compelled to do and suffer all this in consequence of Genesis) longed for him, and yet stood in awe of him and his reproaches, and how she devised a dream, whether true or false I cannot tell; for he stated that she said, <q>Some one in a vision stood by me, and ordered me to leave the city of the Romans immediately with my children.</q> But her husband being anxious that she should be saved with his sons, sent them immediately to Athens for their education, accompanied by their mother and slaves, while he kept the third and youngest son with himself, for he who gave the warning in the dream permitted this son to remain with his father. And when a long time had elapsed, during which he received no letters from her, he himself sent frequently to Athens, and at length took me, as the truest of all his friends, and went in search of her. And much did I exert myself along with him in the course of our travels with all eagerness; for I remembered that, in the old times of his prosperity, he had given me a share of all he had and loved me above all his friends. At length we set sail from Rome itself, and so we arrived in these parts of Syria, and we landed at Seleucia, and not many days after we had landed he died of a broken heart. But I came here, and have procured my livelihood from that day till this by the work of my hands.'</q></p><h3>Chapter VIII. The Old Man Gives Information in Regard to Faustus the Father of Clement</h3><p><q>When the old man had thus spoken, I knew from what he said that the old man who he stated had died, was no other than your father. I did not wish, however, to communicate your circumstances to him until I should confer with you. But I ascertained where his lodging was, and I pointed out mine to him; and to make sure <em>that my conjecture was right</em>, I put this one question to him: 'What was the name of the old man?' And he said, 'Faustus.' 'And what were the names of his twin sons?' And he answered, 'Faustinus and Faustinianus.' 'What was the name of the third son?' He said, 'Clement.' 'What was their mother's name?' He said, 'Mattidia.' Accordingly, from compassion, I shed tears along with him, and, dismissing the multitudes, I came to you, in order that I might take counsel with you after we had partaken of food together. But I did not wish to disclose the matter to you before we had partaken of food, lest perchance you should be overcome by sorrow, and continue sad on the day of baptism, when even angels rejoice.</q> At these statements of Peter we all fell a weeping along with our mother. But he beholding us in tears, said: <q>Now let each one of you, through fear of God, bear bravely what has been said: for certainly it was not today that your father died, but long ago, as you conjecturing said.</q></p><h3>Chapter IX. Faustus Himself Appears</h3><p>When Peter said this, our mother could no longer endure it, but cried out, <q>Alas! My husband! loving us, you died by your own decision, while we are still alive, see the light, and have just partaken of food.</q> This one scream had not yet ceased, when, lo! The old man came in, and at the same time wishing to inquire into the cause of the cry, he looked on the woman and said, <q>What does this mean? Whom do I see?</q> And going up to her, and looking at her, and being looked at more carefully, he embraced her. But they were like to die through the sudden joy, and wishing to speak to each other, they could not get the power in consequence of their unsatisfied joy, for they were seized with speechlessness. But not long after, our mother said to him: <q>I now have you, Faustus, in every way the dearest being to me. How then are you alive, when we heard a short time ago that you were dead? But these are our sons, Faustinus, Faustinianus, and Clement.</q> And when she said this, we all three fell on him, and kissed him, and in rather an indistinct way we recalled his form to our memory.</p><h3>Chapter X. Faustus Explains His Narrative to Peter</h3><p>Peter seeing this, said: <q>Are you Faustus, the husband of this woman, and the father of her children?</q> And he said: <q>I am.</q> And Peter said: <q>How, then, did you relate to me your own history as if it were another's; telling me of your toils, and sorrow, and burial?</q> And our father answered: <q>Being of the family of Cæsar, and not wishing to be discovered, I devised the narrative in another's name, in order that it might not be perceived who I was. For I knew that, if I were recognised, the governors in the place would learn this, and recall me to gratify Cæsar, and would bestow upon me that former prosperity to which I had formerly bidden adieu with all the resolution I could summon. For I could not give myself up to a luxurious life when I had pronounced the strongest condemnation on myself, because I believed that I had been the cause of death to those who were loved by me.</q></p><h3>Chapter XI. Discussion on Genesis</h3><p>And Peter said: <q>You did this according to your resolution. But in regard to Genesis, were you merely playing a part when you affirmed it, or were you in earnest in asserting that it existed?</q> Our father said: <q>I will not speak falsely to you. I was in earnest when I maintained that Genesis existed. For I am not uninitiated in the science; on the contrary, I associated with one who is the best of the astrologers, an Egyptian of the name of Annubion, who became my friend in the commencement of my travels, and disclosed to me the death of my wife and children.</q> And Peter said: <q>Are you not now convinced by facts, that the doctrine of Genesis has no firm foundation?</q> And my father answered: <q>I must lay before you all the ideas that occur to my mind, that listening to them I may understand your refutation of them. I know, indeed, that astrologers both make many mistakes, and frequently speak the truth. I suspect, therefore, that they speak the truth so far as they are accurately acquainted with the science, and that their mistakes are the result of ignorance; so that I conjecture that the science has a firm foundation, but that the astrologers themselves speak what is false solely on account of ignorance, because they cannot know all things with absolute accuracy.</q> And Peter answered: <q>Consider whether their speaking of the truth is not accidental, and whether they do not make their declarations without knowing the matters accurately. For it must by all means happen that, when many prophecies are uttered, some of them should come true.</q> And the old man said: <q>How, then, is it possible to be fully convinced of this, whether the science of Genesis has a sure foundation or not?</q></p><h3>Chapter XII. Clement Undertakes the Discussion</h3><p>When both were silent, I said: <q>Since I know accurately the science, but our lord and our father are not in this condition, I should like if Annubion himself were here, to have a discussion with him in the presence of my father. For thus would the matter be able to become public, when one practically acquainted with the subject has held the discussion with one equally informed.</q> And our father answered: <q>Where, then, is it possible to fall in with Annubion?</q> And Peter said: <q>In Antioch, for I learn that Simon Magus is there, whose inseparable companion Annubion is. When, then, we go there, if we come upon them, the discussion can take place.</q> And so, when we had discussed many subjects, and rejoiced at the recognition and given thanks to God, evening came down upon us, and we turned to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Binautismuhan si Mattidia sa Dagat</h3><p>Mas maaga kaysa karaniwan ay nagising si Pedro at lumapit sa amin; ginising niya kami at sinabi: <q>Sina Faustinus at Faustinianus, kasama si Clemente at ang sambahayan, ay sumama sa akin upang pumunta tayo sa isang tagong lugar sa tabi ng dagat at doon natin siya mabautismuhan nang hindi napapansin.</q> Kaya nang makarating kami sa dalampasigan, binautismuhan niya siya sa pagitan ng ilang bato na nagsilbing lugar na ligtas kapwa sa hangin at alikabok. Ngunit kaming magkakapatid, kasama ang aming kapatid at ilan pang iba, ay lumayo dahil sa mga babae at naligo; pagkatapos ay bumalik kami sa mga babae, isinama sila, at nagtungo kami sa isang lihim na lugar upang manalangin. Pagkatapos, dahil sa dami ng mga tao, pinauna ni Pedro ang mga babae at inutusan silang bumalik sa kanilang tutuluyan sa ibang daan; kami lamang sa mga lalaki ang pinahintulutan niyang sumama sa aming ina at sa iba pang mga babae. Kaya nagtungo kami sa aming tutuluyan at habang hinihintay ang pagdating ni Pedro ay nag-usap-usap kami. Dumating si Pedro makalipas ang ilang oras at, matapos magputol ng tinapay para sa Eukaristiya at lagyan iyon ng asin, ibinigay muna niya sa aming ina at pagkatapos ay sa amin na kanyang mga anak. Sa gayon ay kumain kaming kasama niya at pinagpala ang Diyos.</p><h3>Kabanata II. Dahilan ng Pagkaantala ni Pedro</h3><p>Sa wakas, nang makita ni Pedro na nakapasok na ang karamihan, naupo siya at pinaupo kami sa tabi niya. Una niyang isinalaysay kung bakit niya kami pinauna pagkatapos ng bautismo at kung bakit siya natagalan sa pagbabalik. Sinabi niyang ito ang dahilan: <q>Nang umaalis kayo,</q> sabi niya, <q>may isang matandang manggagawa na kasabay ninyong pumasok at nagtago dahil sa pag-uusisa. Bago pa man iyon ay minamasdan na niya kami, gaya ng inamin niya kalaunan, upang makita kung ano ang ginagawa namin kapag pumapasok sa tagong lugar; pagkatapos ay palihim siyang lumabas at sinundan kami. Nang maabutan niya ako sa isang angkop na lugar, kinausap niya ako at sinabi, ‘Matagal na kitang sinusundan at nais kitang makausap, ngunit natatakot akong baka magalit ka sa akin na para bang inuudyukan lamang ako ng pag-uusisa. Ngunit ngayon, kung mamarapatin mo, sasabihin ko sa iyo ang inaakala kong katotohanan.’ At sumagot ako, ‘Sabihin mo sa amin ang inaakala mong mabuti, at pahahalagahan namin ang iyong ginawa kahit hindi tunay na mabuti ang sasabihin mo, sapagkat sa mabuting layunin ay ninais mong ipahayag ang inaakala mong mabuti.’</q></p><h3>Kabanata III. Hindi Naniniwala ang Matanda sa Diyos o sa Pagkalinga</h3><p><q>Nagsimulang magsalita ang matanda nang ganito: Nang makita kitang, pagkatapos maligo sa dagat, ay pumunta sa isang tagong lugar, lumapit ako at palihim na minanmanan kung ano ang layunin ninyo. Nang makita kong nananalangin kayo, umalis ako; ngunit dahil naawa ako sa inyo, naghintay ako upang makausap kayo paglabas ninyo at mahikayat na huwag kayong malinlang. Sapagkat walang Diyos ni pagkalinga; ang lahat ng bagay ay nasasakop ng Genesis. Lubos akong nakatitiyak rito dahil sa mga bagay na ako mismo ang nagdanas at dahil matagal kong pinag-aralan nang maingat ang agham na ito. Kaya huwag kang malinlang, anak ko. Manalangin ka man o hindi, kailangan mong tiisin ang itinakda sa iyo ng Genesis. Sapagkat kung may magagawa o maitutulong ang mga panalangin, mas maayos sana ang kalagayan ko ngayon. At maliban kung malinlang ka ng maralita kong pananamit, hindi mo tatanggihan ang sinasabi ko. Dati akong sagana sa buhay; marami akong inihain sa mga diyos at maluwag akong nagbigay sa mga nangangailangan. Gayunman, kahit ako’y nanalangin at namuhay nang maka-Diyos, hindi ko natakasan ang itinakda sa akin. At sinabi ko: Ano ang mga kapahamakang dinanas mo? Sumagot siya: Hindi ko kailangang sabihin sa iyo ngayon. Marahil sa huli ay malalaman mo kung sino ako, kung sino ang aking mga magulang, at kung paano ako nahulog sa ganitong kahirapan. Ngunit sa ngayon, nais kong lubos kang maniwala na ang lahat ng bagay ay sakop ng Genesis.</q></p><h3>Kabanata IV. Mga Pangangatwiran ni Pedro Laban sa Genesis</h3><p>At sinabi ko: <q>Kung ang lahat ng bagay ay sakop ng Genesis at lubos kang kumbinsido rito, salungat sa sarili mong paniniwala ang iyong mga iniisip at payo. Sapagkat kung imposibleng mag-isip man lamang laban sa Genesis, bakit ka nagpapagal nang walang saysay sa pagpapayo sa akin na gawin ang hindi maaaring gawin? Higit pa rito, kahit pa umiiral ang Genesis, huwag kang magmadaling hikayatin akong huwag sambahin Siya na Panginoon din ng mga bituin, sapagkat kapag niloob Niyang huwag mangyari ang isang bagay ay nagiging imposible iyon. Sapagkat ang nasasakupan ay kailangang sumunod sa namamahala. Tungkol naman sa pagsamba sa karaniwang mga diyos, wala na iyong saysay kung ang Genesis ang naghahari. Sapagkat walang mangyayaring salungat sa itinatakda ng tadhana, at maging sila mismo ay walang magagawa yamang sakop sila ng iisang pangkalahatang Genesis. Kung umiiral ang Genesis, narito ang pagtutol laban dito: hindi maaaring maghari ang hindi una; o <em>sa ibang salita</em>, ang hindi nilikha ay hindi maaaring mapasailalim, sapagkat bilang hindi nilikha ay wala itong nauna o mas matanda kaysa rito.</q></p><h3>Kabanata V. Praktikal na Pagpapabulaan sa Genesis</h3><p><q>Habang nag-uusap kami nang ganito, napakaraming tao ang nagtipon sa paligid namin. Tumingin ako sa karamihan at sinabi: Sa akin at sa aking lahi ay ipinamana mula sa aming mga ninuno ang pagsamba sa Diyos, at mayroon kaming utos na huwag pansinin ang Genesis—ang ibig kong sabihin ay ang agham ng astrolohiya—kaya hindi ko ito pinag-aralan. Dahil dito, wala akong kasanayan sa astrolohiya; ngunit sasabihin ko ang bagay na alam ko. Yamang hindi ko mapabubulaanan ang Genesis sa pamamagitan ng mismong agham tungkol sa Genesis, nais kong patunayan sa ibang paraan na ang mga gawain ng sanlibutang ito ay pinamamahalaan ng pagkalinga at na bawat isa ay tatanggap ng gantimpala o kaparusahan ayon sa kanyang mga gawa. Kung matatanggap niya iyon ngayon o sa hinaharap ay hindi mahalaga sa aking pangangatwiran; ang pinagtitibay ko lamang ay tiyak na aanihin ng bawat isa ang bunga ng kanyang mga gawa. At ito ang patunay na walang Genesis: kung may sinuman sa inyong naririto na nawalan ng mga mata, napinsala ang kamay, pilay ang paa, o may ibang bahagi ng katawan na mali at lubos nang hindi magamot at lampas sa kakayahan ng medisina—isang kalagayang maging ang mga astrologo ay hindi nangangakong mapagagaling, sapagkat walang gayong paggaling na nangyari sa napakahabang panahon—ako, sa pananalangin sa Diyos, ay pagagalingin iyon, bagaman ayon sa Genesis ay hindi na maaaring maituwid. Kung gayon nga, hindi ba nagkakasala ang mga lumalapastangan sa Diyos na lumalang ng lahat ng bagay? At sumagot ang matanda: Kalapastanganan ba, kung gayon, ang sabihing ang lahat ng bagay ay sakop ng Genesis? Sumagot ako: Tiyak. Sapagkat kung ang lahat ng kasalanan ng tao at lahat ng kanilang kawalang-galang at kahalayan ay nagmumula sa mga bituin, at kung itinalaga ng Diyos ang mga bituin upang gawin ito at sa gayon ay maging mabisang sanhi ng lahat ng kasamaan, kung gayon ang mga kasalanan ng lahat ay iniuugnay sa Kanya na naglagay ng Genesis sa mga bituin.</q></p><h3>Kabanata VI. Iniharap ng Matanda ang Kanyang Sariling Karanasan Laban sa Pangangatwiran ni Pedro</h3><p>At sumagot ang matanda: <q>Totoo ang sinabi mo; gayunman, sa kabila ng napakahusay mong patunay, pinipigilan akong sumang-ayon ng sarili kong personal na kaalaman. Sapagkat dati akong astrologo at nanirahan muna sa Roma. Nakipagkaibigan ako roon sa isang lalaking kabilang sa pamilya ni Caesar at lubos kong natukoy ang genesis niya at ng kanyang asawa. Nang sundan ko ang kasaysayan nila, nakita kong ang lahat ng nangyari ay lubos na tumugma sa kanilang genesis; kaya hindi ako makasang-ayon sa iyong pangangatwiran. Sapagkat ang ayos ng kanyang genesis ay yaong naghahatid sa mga babae sa pangangalunya, sa pag-ibig sa sarili nilang mga alipin, at sa pagkamatay sa ibang lupain sa tubig. At gayon nga ang nangyari: umibig siya sa sariling alipin at, dahil hindi niya matiis ang kahihiyan, tumakas kasama nito, nagpunta sa ibang lupain, nakipisan sa higaan nito, at namatay sa dagat.</q></p><h3>Kabanata VII. Isinalaysay ng Matanda ang Kanyang Kuwento</h3><p>At sumagot ako: <q>Kung gayon, paano mo nalaman na ang babaeng tumakas at nanirahan sa ibang lupain ay nagpakasal sa alipin at, matapos itong pakasalan, ay namatay?</q> Sinabi ng matanda: <q>Lubos akong nakatitiyak na totoo ito—hindi nga na pinakasalan niya ang alipin, sapagkat hindi ko man lamang nalaman noon na umibig siya rito; ngunit pagkatapos niyang umalis, sinabi sa akin ng kapatid ng kanyang asawa ang buong kuwento ng kanyang pagnanasa at kung paanong kumilos siya bilang isang marangal na lalaki at, bilang kapatid, ay ayaw dungisan ang higaan ng kanyang kapatid. Sinabi rin niya kung paanong ang kaawa-awang babae—na hindi masisisi, yamang napilitan siyang gawin at tiisin ang lahat ng ito dahil sa Genesis—ay nagnasa sa kanya ngunit natakot din sa kanya at sa kanyang mga pagsaway; at kung paanong gumawa siya ng isang panaginip, kung tunay man o hindi ay hindi ko alam. Sapagkat sinabi niyang sinabi ng babae, “May isang tumayo sa tabi ko sa isang pangitain at iniutos na agad kong lisanin ang lungsod ng mga Romano kasama ng aking mga anak.” Ngunit ang kanyang asawa, dahil sabik na maligtas siya kasama ng kanilang mga anak, ay agad silang ipinadala sa Athens upang mag-aral, kasama ang kanilang ina at mga alipin; samantalang pinanatili niya sa sarili ang ikatlo at pinakabatang anak, sapagkat pinahintulutan iyon ng nagbigay ng babala sa panaginip. At nang lumipas ang mahabang panahon na walang natatanggap na liham mula sa kanya, madalas siyang nagpadala sa Athens; at sa huli ay isinama niya ako, bilang pinakatapat sa lahat ng kanyang mga kaibigan, at umalis upang hanapin siya. Labis akong nagsikap kasama niya sa aming mga paglalakbay nang buong sigasig; sapagkat naalala kong noong mga araw ng kanyang kasaganaan ay ibinahagi niya sa akin ang lahat ng mayroon siya at minahal ako nang higit sa lahat ng kaibigan. Sa huli ay naglayag kami mula mismo sa Roma at nakarating sa mga bahaging ito ng Syria; dumaong kami sa Seleucia, at makalipas ang ilang araw mula nang dumaong kami ay namatay siya dahil sa wasak na puso. Ngunit ako’y dumating dito at mula noon hanggang ngayon ay nabubuhay sa paggawa ng aking mga kamay.</q></p><h3>Kabanata VIII. Nagbigay ang Matanda ng Impormasyon tungkol kay Faustus, Ama ni Clemente</h3><p><q>Nang magsalita nang ganito ang matanda, naunawaan ko mula sa kanyang sinabi na ang matandang sinasabing namatay ay walang iba kundi ang inyong ama. Gayunman, ayaw kong sabihin sa kanya ang tungkol sa inyong kalagayan hangga’t hindi ko muna kayo nakakausap. Ngunit nalaman ko kung saan siya nanunuluyan at itinuro ko rin sa kanya kung saan ako nanunuluyan; at upang matiyak <em>na tama ang aking hinala</em>, iisa lamang ang itinanong ko sa kanya: Ano ang pangalan ng matanda? At sinabi niya: Faustus. At ano ang mga pangalan ng kanyang kambal na mga anak? Sumagot siya: Faustinus at Faustinianus. Ano ang pangalan ng ikatlong anak? Sinabi niya: Clemente. Ano ang pangalan ng kanilang ina? Sinabi niya: Mattidia. Kaya dahil sa habag ay napaluha rin akong kasama niya; at matapos kong paalisin ang karamihan ay pumunta ako sa inyo upang makipagsangguni sa inyo pagkatapos nating kumain. Ngunit ayaw kong sabihin ito sa inyo bago tayo kumain, baka madaig kayo ng dalamhati at manatiling malungkot sa araw ng bautismo, samantalang maging ang mga anghel ay nagagalak.</q> Sa mga sinabi ni Pedro ay nagsiiyak kaming lahat kasama ng aming ina. Ngunit nang makita niya kaming lumuluha, sinabi niya: <q>Ngayon, bawat isa sa inyo, dahil sa takot sa Diyos, ay magtiis nang may tapang sa narinig ninyo; sapagkat tiyak na hindi ngayon namatay ang inyong ama, kundi matagal na, gaya ng inyong ipinapalagay.</q></p><h3>Kabanata IX. Nagpakita Mismo si Faustus</h3><p>Nang sabihin ito ni Pedro, hindi na nakapagpigil ang aming ina at sumigaw: <q>Ay! Aking asawa! Dahil sa pagmamahal mo sa amin, namatay ka sa sarili mong pasya, samantalang kami’y buhay pa, nakikita ang liwanag, at katatapos lamang kumain.</q> Hindi pa man natatapos ang sigaw na ito nang, narito, pumasok ang matanda. Habang nais niyang alamin ang dahilan ng pag-iyak, tumingin siya sa babae at sinabi: <q>Ano ang ibig sabihin nito? Sino ang nakikita ko?</q> Lumapit siya sa kanya, tiningnan siyang mabuti, at nang masuri rin siya ng babae ay niyakap niya ito. Ngunit halos mamatay silang dalawa sa biglang kagalakan; nais nilang magsalita sa isa’t isa ngunit hindi nila magawa dahil sa labis na galak at para silang nawalan ng tinig. Hindi nagtagal, sinabi ng aming ina sa kanya: <q>Ngayon ay muli kitang taglay, Faustus, ikaw na pinakamamahal sa akin sa lahat. Paano ka buhay, samantalang kani-kanina lamang ay narinig naming patay ka? Ngunit narito ang ating mga anak—sina Faustinus, Faustinianus, at Clemente.</q> Pagkasabi niya nito, kaming tatlo ay yumakap sa kanya, hinalikan siya, at bagaman malabo, unti-unti naming naalala ang kanyang anyo.</p><h3>Kabanata X. Ipinaliwanag ni Faustus kay Pedro ang Kanyang Salaysay</h3><p>Nang makita ito ni Pedro, sinabi niya: <q>Ikaw ba si Faustus, ang asawa ng babaeng ito at ama ng kanyang mga anak?</q> Sumagot siya: <q>Ako nga.</q> At sinabi ni Pedro: <q>Kung gayon, bakit mo isinalaysay sa akin ang sarili mong kasaysayan na para bang tungkol iyon sa ibang tao—ang iyong mga paghihirap, dalamhati, at kamatayan?</q> Sumagot ang aming ama: <q>Sapagkat kabilang ako sa pamilya ni Caesar at ayaw kong makilala, gumawa ako ng salaysay sa pangalan ng ibang tao upang hindi mahalata kung sino ako. Alam kong kung makikilala ako, malalaman iyon ng mga gobernador dito at ipatatawag nila akong pabalik upang bigyang-kasiyahan si Caesar; at ibabalik nila sa akin ang dating kasaganaan na buong tatag ko nang tinalikuran. Sapagkat hindi ko kayang muling ibigay ang sarili sa marangyang pamumuhay matapos kong hatulan nang napakabigat ang sarili ko, sapagkat naniwala akong ako ang naging sanhi ng kamatayan ng mga minamahal ko.</q></p><h3>Kabanata XI. Talakayan tungkol sa Genesis</h3><p>At sinabi ni Pedro: <q>Ginawa mo iyon ayon sa iyong pasya. Ngunit tungkol sa Genesis, nagkukunwari ka lamang ba nang sabihin mong umiiral iyon, o taimtim mo ba iyong pinaninindigan?</q> Sinabi ng aming ama: <q>Hindi ako magsisinungaling sa iyo. Taimtim kong pinanindigan na umiiral ang Genesis. Sapagkat hindi ako mangmang sa agham na iyon; sa halip, nakisalamuha ako sa pinakamahusay sa mga astrologo, isang Ehipsiyong nagngangalang Annubion, na naging kaibigan ko sa simula ng aking mga paglalakbay at siyang nagsabi sa akin tungkol sa kamatayan ng aking asawa at mga anak.</q> At sinabi ni Pedro: <q>Hindi ka pa ba nakukumbinsi ng mga pangyayari mismo na walang matatag na saligan ang aral tungkol sa Genesis?</q> Sumagot ang aming ama: <q>Kailangan kong ilatag sa iyo ang lahat ng kaisipang pumapasok sa isip ko upang, sa pakikinig sa mga iyon, maunawaan ko ang iyong pagpapabulaan. Alam kong maraming pagkakamali ang mga astrologo at madalas din silang magsabi ng totoo. Kaya pinaghihinalaan kong nagsasabi sila ng totoo hangga’t wasto ang kanilang pagkaunawa sa agham, at na ang kanilang mga pagkakamali ay bunga ng kamangmangan. Kaya iniisip kong may matatag na saligan ang agham mismo, ngunit nagsasalita nang mali ang mga astrologo dahil lamang sa kanilang kamangmangan, yamang hindi nila kayang malaman ang lahat nang lubos na tumpak.</q> Sumagot si Pedro: <q>Isaalang-alang mo kung hindi aksidente lamang ang pagsasabi nila ng totoo at kung hindi sila naghahayag nang hindi tunay na nalalaman ang mga bagay. Sapagkat kapag maraming hula ang binibigkas, kailangan talagang may ilan sa mga iyon na magkatotoo.</q> At sinabi ng matanda: <q>Paano, kung gayon, lubos nating matitiyak kung may matatag na saligan ang agham ng Genesis o wala?</q></p><h3>Kabanata XII. Inako ni Clemente ang Talakayan</h3><p>Nang manahimik silang dalawa, sinabi ko: <q>Yamang lubos kong nalalaman ang agham na ito, samantalang ang ating panginoon at ang ating ama ay hindi nasa gayong kalagayan, nanaisin kong narito mismo si Annubion upang makipagtalakayan ako sa kanya sa harap ng aking ama. Sa ganitong paraan ay maaaring maging hayag sa lahat ang usapin, kapag ang isang tunay na bihasa sa paksa ay nakipagtalakayan sa isang kapantay niyang may kaalaman.</q> At sumagot ang aming ama: <q>Saan, kung gayon, maaaring matagpuan si Annubion?</q> Sinabi ni Pedro: <q>Sa Antioquia; sapagkat nalaman kong naroon si Simon Magus, at si Annubion ay palagi niyang kasama. Kaya kapag pumunta tayo roon, kung matagpuan natin sila, maaaring maganap ang talakayan.</q> At matapos naming mapag-usapan ang marami pang bagay, magalak sa aming pagkakakilanlan, at magpasalamat sa Diyos, sumapit ang gabi at nagtungo kami upang matulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

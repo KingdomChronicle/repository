@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Introductory Epistles Part 2 — WORKING CHECKPOINT</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter 1</option><option value="1">Chapter 2</option><option value="2">Chapter 3</option><option value="3">Chapter 4</option><option value="4">Chapter 5</option><option value="5">Chapter 6</option><option value="6">Chapter 7</option><option value="7">Chapter 8</option><option value="8">Chapter 9</option><option value="9">Chapter 10</option><option value="10">Chapter 11</option><option value="11">Chapter 12</option><option value="12">Chapter 13</option><option value="13">Chapter 14</option><option value="14">Chapter 15</option><option value="15">Chapter 16</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- WORKING CHECKPOINT: Tagalog epistle attribution h2 blocked by source contradiction pending Human act. -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h2>Epistle of Clement to James</h2><p>Clement to James, the lord, and the bishop of bishops, who rules Jerusalem, the holy church of the Hebrews, and the churches everywhere excellently founded by the providence of God, with the elders and deacons, and the rest of the brethren, peace be always.</p><h3>Chapter I. Peter's Martyrdom</h3><p>Be it known to you, my lord, that Simon, who, for the sake of the true faith, and the most sure foundation of his doctrine, was set apart to be the foundation of the Church, and for this end was by Jesus Himself, with His truthful mouth, named Peter, the first-fruits of our Lord, the first of the apostles; to whom first the Father revealed the Son; whom the Christ, with good reason, blessed; the called, and elect, and associate at table and in the journeyings <em>of Christ;</em> the excellent and approved disciple, who, as being fittest of all, was commanded to enlighten the darker part of the world, namely the West, and was enabled to accomplish it,—and to what extent do I lengthen my discourse, not wishing to indicate what is sad, which yet of necessity, though reluctantly, I must tell you,—he himself, by reason of his immense love towards men, having come as far as Rome, clearly and publicly testifying, in opposition to the wicked one who withstood him, that there is to be a good King over all the world, while saving men by his God-inspired doctrine, himself, by violence, exchanged this present existence for life.</p><h3>Chapter II. Ordination of Clement</h3><p>But about that time, when he was about to die, the brethren being assembled together, he suddenly seized my hand, and rose up, and said in presence of the church: <q>Hear me, brethren and fellow-servants. Since, as I have been taught by the Lord and Teacher Jesus Christ, whose apostle I am, the day of my death is approaching, I lay hands upon this Clement as your bishop; and to him I entrust my chair of discourse, even to him who has journeyed with me from the beginning to the end, and thus has heard all my homilies—who, in a word, having had a share in all my trials, has been found stedfast in the faith; whom I have found, above all others, pious, philanthropic, pure, learned, chaste, good, upright, large-hearted, and striving generously to bear the ingratitude of some of the catechumens. Wherefore I communicate to him the power of binding and loosing, so that with respect to everything which he shall ordain in the earth, it shall be decreed in the heavens. For he shall bind what ought to be bound, and loose what ought to be loosed, as knowing the role of the Church. Therefore hear him, as knowing that he who grieves the president of the truth, sins against Christ, and offends the Father of all. Wherefore he shall not live; and therefore it becomes him who presides to hold the place of a physician, and not to cherish the rage of an irrational beast.</q></p><h3>Chapter III. Nolo Episcopari</h3><p>While he thus spoke, I knelt to him, and entreated him, declining the honour and the authority of the chair. But he answered: <q>Concerning this matter do not ask me; for it has seemed to me to be good that thus it be, and all the more if you decline it. For this chair has not need of a presumptuous man, ambitious of occupying it, but of one pious in conduct and deeply skilled in the word <em>of God.</em> But show me a better <em>than yourself,</em> who has travelled more with me, and has heard more of my discourses, and has learned better the regulations of the Church, and I shall not force you to do well against your will. But it will not be in your power to show me your superior; for you are the choice first-fruits of the multitudes saved through me. However, consider this further, that if you do not undertake the administration of the Church, through fear of the danger of sin, you may be sure that you sin more, when you have it in your power to help the godly, who are, as it were, at sea and in danger, and will not do so, providing only for your own interest, and not for the common advantage of all. But that it behooves you altogether to undertake the danger, while I do not cease to ask it of you for the help of all, you well understand. The sooner, therefore, you consent, so much the sooner will you relieve me from anxiety.</q></p><h3>Chapter IV. The Recompense of the Reward</h3><p><q>But I myself also, O Clement, know the griefs and anxieties, and dangers and reproaches, that are appointed you from the uninstructed multitudes; and these you will be able to bear nobly, looking to the great reward of patience bestowed on you by God. But also consider this fairly with me: When has Christ need of your aid? Now, when the wicked one has sworn war against His bride; or in the time to come, when He shall reign victorious, having no need of further help? Is it not evident to any one who has even the least understanding, that it is now? Therefore with all good-will hasten in the time of the present necessity to do battle on the side of this good King, whose character it is to give great rewards after victory. Therefore take the oversight gladly; and all the more in good time, because you have learned from me the administration of the Church, for the safety of the brethren who have taken refuge with us.</q></p><h3>Chapter V. A Charge</h3><p><q>However, I wish, in the presence of all, to remind you, for the sake of all, of the things belonging to the administration. It becomes you, living without reproach, with the greatest earnestness to shake off all the cares of life, being neither a surety, nor an advocate, nor involved in any other secular business. For Christ does not wish to appoint you either a judge or an arbitrator in business, or negotiator of the secular affairs of the present life, lest, being confined to the present cares of men, you should not have leisure by the word of truth to separate the good among men from the bad. But let the disciples perform these offices to one another, and not withdraw <em>you</em> from the discourses which are able to save. For as it is wicked for you to undertake secular cares, and to omit the doing of what you have been commanded to do, so it is sin for every layman, if they do not stand by one another even in secular necessities. And if all do not understand to take order that you be without care in respect of the things in which you ought to be, let them learn it from the deacons; that you may have the care of the Church always, in order both to your administering it well, and to your holding forth the words of truth.</q></p><h3>Chapter VI. The Duty of a Bishop</h3><p><q>Now, if you were occupied with secular cares, you should deceive both yourself and your hearers. For not being able, on account of occupation, to point out the things that are advantageous, both you should be punished, as not having taught what was profitable, and they, not having learned, should perish by reason of ignorance. Wherefore do you indeed preside over them without occupation, so as to send forth seasonably the words that are able to save them; and so let them listen to you, knowing that whatever the ambassador of the truth shall bind upon earth is bound also in heaven, and what he shall loose is loosed. But you shall bind what ought to be bound, and loose what ought to be loosed. And these, and such like, are the things that relate to you as president.</q></p><h3>Chapter VII. Duties of Presbyters</h3><p><q>And with respect to the presbyters, take these <em>instructions</em>. Above all things, let them join the young betimes in marriage, anticipating the entanglements of youthful lusts. But neither let them neglect the marriage of those who are already old; for lust is vigorous even in some old men. Lest, therefore, fornication find a place among you, and bring upon you a very pestilence, take precaution, and search, lest at any time the fire of adultery be secretly kindled among you. For adultery is a very terrible thing, even such that it holds the second place in respect of punishment, the first being assigned to those who are in error, even although they be chaste. Wherefore do you, as elders of the Church, exercise the spouse of Christ to chastity (by the spouse I mean the body of the Church); for if she be apprehended to be chaste by her royal Bridegroom, she shall obtain the greatest honour; and you, as wedding guests, shall receive great commendation. But if she be caught having sinned, she herself indeed shall be cast out; and you shall suffer punishment, if at any time her sin has been through your negligence.</q></p><h3>Chapter VIII. <q>Do Good Unto All?</q></h3><p><q>Wherefore above all things be careful about chastity; for fornication has been marked out as a bitter thing in the estimation of God. But there are many forms of fornication, as also Clement himself will explain to you. The first is adultery, that a man should not enjoy his own wife alone, or a woman not enjoy her own husband alone. If any one be chaste, he is able also to be philanthropic, on account of which he shall obtain eternal mercy. For as adultery is a great evil, so philanthropy is the greatest good. Wherefore love all your brethren with grave and compassionate eyes, performing to orphans the part of parents, to widows that of husbands, affording them sustenance with all kindliness, arranging marriages for those who are in their prime, and for those who are without a profession, the means of necessary support through employment; giving work to the artificer, and alms to the incapable.</q></p><h3>Chapter IX. <q>Let Brotherly Love Continue.</q></h3><p><q>But I know that ye will do these things if you fix love into your minds; and for its entrance there is one only fit means, viz., the common partaking of food. Wherefore see to it that ye be frequently one another's guests, as you are able, that you may not fail of it. For it is the cause of well-doing, and well-doing of salvation. Therefore all of you present your provisions in common to all your brethren in God, knowing that, giving temporal things, you shall receive eternal things. Much more feed the hungry, and give drink to the thirsty, and clothing to the naked; visit the sick; showing yourselves to those who are in prison, help them as you are able, and receive strangers into your houses with all alacrity. However, not to speak in detail, philanthropy will teach you to do everything that is good, as misanthropy suggests ill-doing to those who will not be saved.</q></p><h3>Chapter X. <q>Whatsoever Things are Honest.</q></h3><p><q>Let the brethren who have causes to be settled not be judged by the secular authorities; but let them by all means be reconciled by the elders of the church, yielding ready obedience to them. Moreover, also, flee avarice, inasmuch as it is able, under pretext of temporal gain, to deprive you of eternal blessings. Carefully keep your balances, your measures, your weights, and the things belonging to your traffic, just. Be faithful with respect to your trusts. Moreover, you will persevere in doing these things, and things similar to these, until the end, if you have in your hearts an ineradicable remembrance of the judgment that is from God. For who would sin, being persuaded that at the end of life there is a judgment appointed of the righteous God, who only now is long-suffering and good, that the good may in future enjoy for ever unspeakable blessings; but the sinners being found as evil, shall obtain an eternity of unspeakable punishment. And, indeed, that these things are so, it would be reasonable to doubt, were it not that the Prophet of the truth has said and sworn that it shall be.</q></p><h3>Chapter XI. Doubts to Be Satisfied</h3><p><q>Wherefore, being disciples of the true Prophet, laying aside double-mindedness, from which comes ill-doing, eagerly undertake well-doing. But if any of you doubt concerning the things which I have said are to be, let him confess it without shame, if he cares for his own soul, and he shall be satisfied by the president. But if he has believed rightly, let his conversation be with confidence, as fleeing from the great fire of condemnation, and entering into the eternal good kingdom of God.</q></p><h3>Chapter XII. Duties of Deacons</h3><p><q>Moreover let the deacons of the church, going about with intelligence, be as eyes to the bishop, carefully inquiring into the doings of each member of the church, <em>ascertaining</em> who is about to sin, in order that, being arrested with admonition by the president, he may haply not accomplish the sin. Let them check the disorderly, that they may not desist from assembling to hear the discourses, so that they may be able to counteract by the word of truth those anxieties that fall upon the heart from every side, by means of worldly casualties and evil communications; for if they long remain fallow, they become fuel for the fire. And let them learn who are suffering under bodily disease, and let them bring them to the notice of the multitude who do not know of them, that they may visit them, and supply their wants according to the judgment of the president. Yea, though they do this without his knowledge, they do nothing amiss. These things, then, and things like to these, let the deacons attend to.</q></p><h3>Chapter XIII. Duties of Catechists</h3><p><q>Let the catechists instruct, being first instructed; for it is a work relating to the souls of men. For the teacher of the word must accommodate himself to the various judgments of the learners. The catechists must therefore be learned, and unblameable, of much experience, and approved, as you will know that Clement is, who is to be your instructor after me. For it were too much for me now to go into details. However, if ye be of one mind, you shall be able to reach the haven of rest, where is the peaceful city of the great King.</q></p><h3>Chapter XIV. The Vessel of the Church</h3><p><q>For the whole business of the Church is like unto a great ship, bearing through a violent storm men who are of many places, and who desire to inhabit the city of the good kingdom. Let, therefore, God be your shipmaster; and let the pilot be likened to Christ, the mate to the bishop, and the sailors to the deacons, the midshipmen to the catechists, the multitude of the brethren to the passengers, the world to the sea; the foul winds to temptations, persecutions, and dangers; and all manner of afflictions to the waves; the land winds and their squalls to the discourses of deceivers and false prophets; the promontories and rugged rocks to the judges in high places threatening terrible things; the meetings of two seas, and the wild places, to unreasonable men and those who doubt of the promises of truth. Let hypocrites be regarded as like to pirates. Moreover, account the strong whirlpool, and the Tartarean Charybdis, and murderous wrecks, and deadly founderings, to be nought but sins. In order, therefore, that, sailing with a fair wind, you may safely reach the haven of the hoped-for city, pray so as to be heard. But prayers become audible by good deeds.</q></p><h3>Chapter XV. Incidents of the Voyage</h3><p><q>Let therefore the passengers remain quiet, sitting in their own places, lest by disorder they occasion rolling or careening. Let the midshipmen give heed to the fare. Let the deacons neglect nothing with which they are entrusted; let the presbyters, like sailors, studiously arrange what is needful for each one. Let the bishop, as the mate, wakefully ponder the words of the pilot alone. Let Christ, even the Saviour, be loved as the pilot, and alone believed in the matters of which He speaks; and let all pray to God for a prosperous voyage. Let those sailing expect every tribulation, as travelling over a great and troubled sea, the world: sometimes, indeed, disheartened, persecuted, dispersed, hungry, thirsty, naked, hemmed in; and, again, sometimes united, congregated, at rest; but also sea-sick, giddy, vomiting, that is, confessing sins, like disease-producing bile,—I mean the sins proceeding from bitterness, and the evils accumulated from disorderly lusts, by the confession of which, as by vomiting, you are relieved of your disease, attaining healthful safety by means of carefulness.</q></p><h3>Chapter XVI. The Bishop's Labours and Reward</h3><p><q>But know all of you that the bishop labours more than you all; because each of you suffers his own affliction, but he his own and that of every one. Wherefore, O Clement, preside as a helper to every one according to your ability, being careful of the cares of all. Whence I know that in your undertaking the administration, I do not confer, but receive, a favour. But take courage and bear it generously, as knowing that God will recompense you when you enter the haven of rest, the greatest of blessings, a reward that cannot be taken from you, in proportion as you have undertaken more labour for the safety of all. So that, if many of the brethren should hate you on account of your lofty righteousness, their hatred shall nothing hurt you, but the love of the righteous God shall greatly benefit you. Therefore endeavour to shake off the praise that arises from injustice, and to attain the profitable praise that is from Christ on account of righteous administration.</q></p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h2 data-source-gate="ATTRIBUTION_CONFLICT_PENDING_HUMAN">Liham ni Clemente kay Santiago</h2><p>Si Clemente kay Santiago, ang panginoon at obispo ng mga obispo, na namamahala sa Jerusalem, sa banal na Iglesia ng mga Hebreo, at sa mga iglesiang saanman ay mahusay na itinatag sa pamamagitan ng providensiya ng Diyos, kasama ang mga matatanda at mga diyakono at ang iba pang mga kapatid: sumainyo nawa lagi ang kapayapaan.</p><h3>Kabanata I. Pagkamartir ni Pedro</h3><p>Ipinaaalam ko sa iyo, panginoon ko, na si Simon—na dahil sa tunay na pananampalataya at sa pinakamatibay na saligan ng kanyang aral ay itinalagang maging pundasyon ng Iglesia, at dahil dito ay si Jesus mismo, sa Kanyang tapat na bibig, ang tumawag sa kanya na Pedro—ang unang bunga ng ating Panginoon, ang una sa mga apostol; siya na unang pinahayagan ng Ama tungkol sa Anak; siya na makatuwirang pinagpala ng Cristo; tinawag, hinirang, kasalo sa hapag at kasama sa mga paglalakbay <em>ni Cristo;</em> ang dakila at subok na alagad na, bilang pinakanararapat sa lahat, ay inutusang liwanagan ang mas madilim na bahagi ng sanlibutan, samakatuwid ang Kanluran, at binigyan ng kakayahang maisakatuparan iyon. At bakit ko pa pinahahaba ang aking salaysay, gayong ayaw kong banggitin ang malungkot na bagay na, bagaman labag sa aking kalooban, ay kailangan kong sabihin sa iyo? Dahil sa napakalaki niyang pag-ibig sa mga tao, nakarating siya hanggang Roma at malinaw at hayagang nagpatotoo laban sa masamang sumalungat sa kanya na magkakaroon ng isang mabuting Hari sa buong sanlibutan. Habang inililigtas niya ang mga tao sa pamamagitan ng aral na kinasihan ng Diyos, siya mismo, sa pamamagitan ng karahasan, ay lumipat mula sa kasalukuyang pag-iral tungo sa buhay.</p><h3>Kabanata II. Pagtatalaga kay Clemente</h3><p>Ngunit nang panahong iyon, nang malapit na siyang mamatay at nagkakatipon ang mga kapatid, bigla niyang hinawakan ang aking kamay, tumayo, at sinabi sa harap ng Iglesia: <q>Makinig kayo sa akin, mga kapatid at kapwa-lingkod. Yamang itinuro sa akin ng Panginoon at Guro na si Jesu-Cristo, na ako’y Kanyang apostol, na papalapit na ang araw ng aking kamatayan, ipinatong ko ang aking mga kamay kay Clemente bilang inyong obispo; at sa kanya ko ipinagkakatiwala ang aking luklukan ng pagtuturo. Siya ang naglakbay na kasama ko mula sa pasimula hanggang sa wakas at sa gayon ay nakarinig ng lahat ng aking mga homiliya. Sa madaling salita, nakibahagi siya sa lahat ng aking mga pagsubok at napatunayang matatag sa pananampalataya. Higit sa lahat ng iba ay nakita ko siyang maka-Diyos, mapagmahal sa kapwa, malinis, may pinag-aralan, dalisay sa asal, mabuti, matuwid, bukas-palad, at buong-tapang na nagsisikap tiisin ang kawalang-utang-na-loob ng ilan sa mga katekumen. Kaya ibinibigay ko sa kanya ang kapangyarihang magbigkis at magkalag, upang ang anumang itatakda niya sa lupa ay pagtibayin sa langit. Sapagkat bibigkisin niya ang dapat bigkisin at kakalagin ang dapat kalagin, yamang alam niya ang gampanin ng Iglesia. Kaya pakinggan ninyo siya, na nalalamang ang nagpapalungkot sa namumuno sa katotohanan ay nagkakasala laban kay Cristo at lumalapastangan sa Ama ng lahat. Dahil dito ay hindi siya mabubuhay. Kaya ang namumuno ay nararapat gumanap bilang manggagamot at hindi magkimkim ng galit na gaya ng isang hayop na walang katuwiran.</q></p><h3>Kabanata III. Nolo Episcopari</h3><p>Habang nagsasalita siya nang gayon, lumuhod ako sa harap niya at nakiusap, na tinatanggihan ang karangalan at kapangyarihan ng luklukan. Ngunit sumagot siya: <q>Huwag mo akong pakiusapan tungkol dito; sapagkat minabuti kong maging ganito, at lalo pa nga dahil tinatanggihan mo ito. Hindi kailangan ng luklukang ito ang isang mapangahas na taong ambisyosong umupo rito, kundi isang taong maka-Diyos ang asal at lubhang bihasa sa salita <em>ng Diyos.</em> Ngunit ipakita mo sa akin ang isang higit na mabuti <em>kaysa sa iyo,</em> na mas matagal na naglakbay na kasama ko, higit na nakarinig ng aking mga talumpati, at higit na natutuhan ang mga tuntunin ng Iglesia; at hindi kita pipiliting gumawa ng mabuti laban sa iyong kalooban. Ngunit hindi mo maipakikita sa akin ang isang nakahihigit sa iyo, sapagkat ikaw ang piling unang bunga mula sa napakaraming naligtas sa pamamagitan ko. Isaalang-alang mo rin ito: kung dahil sa takot na magkasala ay ayaw mong tanggapin ang pamamahala sa Iglesia, makatitiyak kang higit kang nagkakasala kapag nasa kapangyarihan mong tulungan ang mga maka-Diyos na waring nasa dagat at nanganganib, ngunit ayaw mo, sapagkat sarili mo lamang ang iniingatan mo at hindi ang kapakanan ng lahat. Nauunawaan mong dapat mong harapin ang panganib na ito, yamang hindi ako tumitigil sa paghiling sa iyo alang-alang sa kapakanan ng lahat. Kaya habang mas maaga kang pumapayag, mas maaga mo rin akong mapalalaya sa pagkabalisa.</q></p><h3>Kabanata IV. Ang Kapalit na Gantimpala</h3><p><q>Ngunit ako rin, O Clemente, ay nakaaalam sa mga dalamhati, pagkabalisa, panganib, at panlalait na naghihintay sa iyo mula sa mga taong hindi naturuan. Mapagtitiisan mo ang mga iyon nang marangal kung titingnan mo ang dakilang gantimpalang ipinagkakaloob sa iyo ng Diyos dahil sa pagtitiis. Pag-isipan mo rin ito nang makatarungan kasama ko: kailan kailangan ni Cristo ang iyong tulong? Ngayon ba, habang ipinahayag ng masama ang pakikipagdigma laban sa Kanyang kasintahang babae, o sa panahong darating, kapag naghahari na Siya bilang matagumpay at hindi na nangangailangan ng tulong? Hindi ba malinaw sa sinumang may kahit kaunting pagkaunawa na ngayon ang panahon? Kaya buong kusang-loob kang magmadali sa kasalukuyang pangangailangan upang lumaban sa panig ng mabuting Haring ito, na ang likas ay magbigay ng dakilang gantimpala matapos ang tagumpay. Kaya tanggapin mo nang may galak ang pangangasiwa, at lalo na sa angkop na panahong ito, sapagkat natutuhan mo sa akin ang pamamahala sa Iglesia para sa kaligtasan ng mga kapatid na nanganlong sa atin.</q></p><h3>Kabanata V. Isang Tagubilin</h3><p><q>Gayunman, sa harap ng lahat, nais kitang paalalahanan alang-alang sa lahat tungkol sa mga bagay na nauukol sa pamamahala. Yamang namumuhay kang walang kapintasan, nararapat mong buong-sikap na iwaksi ang lahat ng alalahanin sa buhay: huwag kang maging tagapanagot, tagapagtanggol sa usaping legal, ni masangkot sa iba pang gawaing sekular. Hindi ka nais italaga ni Cristo bilang hukom, tagapamagitan sa mga usapin, o tagapamahala ng mga sekular na gawain sa kasalukuyang buhay; sapagkat kapag nabihag ka ng mga kasalukuyang alalahanin ng mga tao, mawawalan ka ng panahon upang sa pamamagitan ng salita ng katotohanan ay maihiwalay ang mabuti sa masama sa gitna ng mga tao. Hayaan ang mga alagad na gawin sa isa’t isa ang mga tungkuling iyon at huwag nilang ilayo <em>ikaw</em> sa mga talumpating makapagliligtas. Sapagkat kung masama para sa iyo na akuin ang mga sekular na alalahanin at pabayaan ang iniutos sa iyong gawin, kasalanan din para sa bawat karaniwang mananampalataya kung hindi sila magtutulungan maging sa mga pangangailangang sekular. At kung hindi nauunawaan ng lahat na dapat nilang ayusin ang mga bagay upang malaya ka sa mga alalahaning hindi dapat mong pasan, matutuhan nila iyon sa mga diyakono; upang lagi mong mapangalagaan ang Iglesia, mapamahalaan ito nang maayos, at maipahayag ang mga salita ng katotohanan.</q></p><h3>Kabanata VI. Tungkulin ng Isang Obispo</h3><p><q>Kung abala ka sa mga sekular na alalahanin, kapwa mo maililigaw ang iyong sarili at ang mga nakikinig sa iyo. Sapagkat kung dahil sa pagkaabala ay hindi mo maituturo ang mga bagay na kapaki-pakinabang, mapaparusahan ka dahil hindi mo itinuro ang makabubuti; at sila naman, dahil hindi natuto, ay mapapahamak dahil sa kamangmangan. Kaya pamunuan mo sila nang hindi ginagambala ng ibang gawain, upang maibigay mo sa tamang panahon ang mga salitang makapagliligtas sa kanila. Makinig naman sila sa iyo, na nalalamang anumang bigkisin sa lupa ng sugo ng katotohanan ay nabibigkis din sa langit, at anumang kalagin niya ay nakakalag. Ngunit bibigkisin mo ang dapat bigkisin at kakalagin ang dapat kalagin. Ang mga ito at ang mga katulad nito ang mga bagay na nauukol sa iyo bilang namumuno.</q></p><h3>Kabanata VII. Mga Tungkulin ng mga Presbitero</h3><p><q>Tungkol naman sa mga presbitero, tanggapin mo ang mga <em>tagubiling</em> ito. Higit sa lahat, ipakasal nila nang maaga ang mga kabataan upang maagapan ang pagkakagapos sa mga pita ng kabataan. Ngunit huwag din nilang pabayaan ang pag-aasawa ng matatanda na, sapagkat maging sa ilang matatandang lalaki ay malakas pa ang pita. Kaya upang hindi magkaroon ng puwang sa inyo ang pakikiapid at magdala ng waring salot, mag-ingat kayo at magsiyasat upang hindi lihim na magliyab sa gitna ninyo ang apoy ng pangangalunya. Sapagkat lubhang kakila-kilabot ang pangangalunya, anupa’t ikalawa ito sa bigat ng kaparusahan; ang una ay para sa mga nasa kamalian, kahit pa malinis sila sa asal. Kaya kayo, bilang matatanda ng Iglesia, ay sanayin sa kalinisan ang kasintahang babae ni Cristo—at sa kasintahang babae ay tinutukoy ko ang katawan ng Iglesia. Kung masumpungan siyang malinis ng kanyang maharlikang Nobyo, tatanggap siya ng pinakadakilang karangalan; at kayo, bilang mga panauhin sa kasalan, ay tatanggap ng malaking papuri. Ngunit kung mahuli siyang nagkasala, siya nga ay itatakwil; at kayo rin ay mapaparusahan kung ang kanyang kasalanan ay naganap dahil sa inyong kapabayaan.</q></p><h3>Kabanata VIII. <q>Gumawa ng Mabuti sa Lahat?</q></h3><p><q>Kaya higit sa lahat ay ingatan ninyo ang kalinisan, sapagkat ang pakikiapid ay itinuring na isang mapait na bagay sa paningin ng Diyos. Ngunit maraming anyo ang pakikiapid, gaya ng ipaliliwanag din sa inyo ni Clemente. Ang una ay pangangalunya: kapag ang isang lalaki ay hindi nasisiyahan sa sarili niyang asawa lamang, o ang isang babae sa sarili niyang asawa lamang. Kung ang isang tao ay malinis sa asal, kaya rin niyang maging mapagmahal sa kapwa, at dahil dito ay tatanggap siya ng walang-hanggang awa. Sapagkat kung ang pangangalunya ay isang malaking kasamaan, ang pagmamahal sa kapwa naman ang pinakadakilang kabutihan. Kaya mahalin ninyo ang lahat ng inyong mga kapatid nang may marangal at mahabaging pagtingin: gampanan ninyo sa mga ulila ang tungkulin ng mga magulang, at sa mga balo ang tungkulin ng mga asawa; tustusan ninyo sila nang buong kabaitan; isaayos ang pag-aasawa ng mga nasa wastong gulang; at para sa mga walang hanapbuhay, humanap ng paraan upang matustusan ang kanilang pangangailangan sa pamamagitan ng trabaho. Bigyan ng trabaho ang manggagawa at limos ang hindi kayang magtrabaho.</q></p><h3>Kabanata IX. <q>Manatili ang Pag-ibig sa mga Kapatid.</q></h3><p><q>Ngunit alam kong gagawin ninyo ang mga bagay na ito kung matatag ninyong ilalagay ang pag-ibig sa inyong mga isip; at iisa ang angkop na paraan upang makapasok ito—ang sama-samang pagkain. Kaya tiyakin ninyong, hangga’t kaya ninyo, ay madalas kayong maging panauhin ng isa’t isa upang hindi ninyo ito mawala. Sapagkat ito ang nagbubunga ng paggawa ng mabuti, at ang paggawa ng mabuti ay humahantong sa kaligtasan. Kaya ibahagi ninyong lahat sa lahat ng inyong mga kapatid sa Diyos ang inyong mga panustos, na nalalamang sa pagbibigay ninyo ng mga bagay na pansamantala ay tatanggap kayo ng mga bagay na walang hanggan. Higit sa lahat, pakainin ang nagugutom, painumin ang nauuhaw, at damitan ang hubad; dalawin ang maysakit; humarap sa mga nasa bilangguan at tulungan sila ayon sa inyong kakayahan; at tanggapin sa inyong mga tahanan ang mga dayuhan nang buong sigasig. Ngunit upang hindi ko na isa-isahin ang lahat, ang pagmamahal sa kapwa ang magtuturo sa inyo na gawin ang bawat mabuti, gaya ng pagkapoot sa kapwa na nag-uudyok sa kasamaan sa mga ayaw maligtas.</q></p><h3>Kabanata X. <q>Anumang Bagay na Marangal.</q></h3><p><q>Ang mga kapatid na may mga usaping kailangang lutasin ay huwag magpahatol sa mga sekular na awtoridad; sa halip, sa lahat ng paraan ay ipagkasundo sila ng mga matatanda ng Iglesia, at maging handa silang sumunod sa mga ito. Bukod dito, layuan ninyo ang kasakiman, sapagkat sa pagkukunwaring naghahangad lamang ng pansamantalang pakinabang ay kaya nitong agawin sa inyo ang walang-hanggang mga pagpapala. Ingatan ninyong maging matuwid ang inyong mga timbangan, panukat, panimbang, at lahat ng gamit sa pangangalakal. Maging tapat kayo sa anumang ipinagkatiwala sa inyo. Magpapatuloy kayo sa paggawa ng mga ito at ng mga katulad nito hanggang wakas kung taglay ninyo sa puso ang hindi mabuburang alaala ng paghuhukom ng Diyos. Sapagkat sino ang magkakasala kung kumbinsido siyang sa wakas ng buhay ay may itinakdang paghuhukom ang matuwid na Diyos—Siya na sa kasalukuyan ay matiisin at mabuti—upang sa hinaharap ang mabubuti ay magtamasa magpakailanman ng di-maipahayag na mga pagpapala, samantalang ang mga makasalanan, kapag napatunayang masama, ay tumanggap ng walang-hanggang di-maipahayag na kaparusahan? Makatuwiran sanang pag-alinlanganan kung tunay ang mga bagay na ito, kung hindi sinabi at pinanumpaan ng Propeta ng katotohanan na mangyayari ang mga iyon.</q></p><h3>Kabanata XI. Dapat Lutasin ang mga Pag-aalinlangan</h3><p><q>Kaya, bilang mga alagad ng tunay na Propeta, iwaksi ninyo ang pag-aalinlangang hati ang isip, na pinagmumulan ng paggawa ng masama, at buong-siglang isagawa ang mabuti. Ngunit kung may sinuman sa inyo na nag-aalinlangan tungkol sa mga bagay na sinabi kong mangyayari, aminin niya iyon nang walang hiya, kung pinahahalagahan niya ang sarili niyang kaluluwa, at bibigyan siya ng kasagutan ng namumuno. Ngunit kung tama ang kanyang pananampalataya, mamuhay siya nang may pagtitiwala, na para bang tumatakas mula sa malaking apoy ng paghatol at pumapasok sa walang-hanggang mabuting kaharian ng Diyos.</q></p><h3>Kabanata XII. Mga Tungkulin ng mga Diyakono</h3><p><q>Ang mga diyakono ng Iglesia naman ay kumilos nang may pagkaunawa at maging parang mga mata ng obispo. Maingat nilang siyasatin ang ginagawa ng bawat kaanib ng Iglesia, <em>alamin</em> kung sino ang malapit nang magkasala, upang kung maagapan siya ng paalala ng namumuno ay baka hindi na niya maisagawa ang kasalanan. Sawayin nila ang mga magugulo upang hindi sila tumigil sa pagtitipon upang makinig sa mga talumpati; sa gayon, sa pamamagitan ng salita ng katotohanan ay malalabanan nila ang mga pagkabalisa na mula sa lahat ng panig ay bumabagsak sa puso dahil sa mga pangyayaring makamundo at masasamang pakikipag-ugnayan. Sapagkat kung matagal na mapabaya ang mga iyon, magiging panggatong sila sa apoy. Alamin din nila kung sino ang dumaranas ng karamdaman sa katawan at ipabatid ang mga iyon sa mga kapatid na hindi nakaaalam, upang madalaw sila at matustusan ang kanilang mga pangangailangan ayon sa pasiya ng namumuno. Oo, kahit gawin nila ito nang hindi niya nalalaman, wala silang ginagawang masama. Ang mga ito at ang mga katulad nito ang dapat asikasuhin ng mga diyakono.</q></p><h3>Kabanata XIII. Mga Tungkulin ng mga Katekista</h3><p><q>Ang mga katekista ay magturo matapos muna silang maturuan, sapagkat ang gawaing ito ay nauukol sa mga kaluluwa ng tao. Ang tagapagturo ng salita ay kailangang umangkop sa magkakaibang kakayahang humatol ng mga nag-aaral. Kaya ang mga katekista ay dapat may kaalaman, walang kapintasan, maraming karanasan, at subok—gaya ng malalaman ninyong si Clemente, na magiging tagapagturo ninyo pagkatapos ko. Napakahaba kung isa-isahin ko ngayon ang lahat. Gayunman, kung nagkakaisa kayo ng isip, mararating ninyo ang daungan ng kapahingahan, kung saan naroroon ang mapayapang lungsod ng dakilang Hari.</q></p><h3>Kabanata XIV. Ang Barko ng Iglesia</h3><p><q>Sapagkat ang buong gawain ng Iglesia ay maihahambing sa isang malaking barko na nagdadala, sa gitna ng isang marahas na bagyo, ng mga taong nagmula sa maraming lugar at nagnanais manirahan sa lungsod ng mabuting kaharian. Kaya ang Diyos ang maging panginoon ng barko; ang piloto ay ihalintulad kay Cristo, ang katuwang na namamahala sa obispo, ang mga mandaragat sa mga diyakono, ang mga tauhan sa gitna ng barko sa mga katekista, ang karamihan ng mga kapatid sa mga pasahero, at ang sanlibutan sa dagat. Ang masasamang hangin ay ang mga tukso, pag-uusig, at panganib; ang lahat ng uri ng kapighatian ay ang mga alon; ang mga hanging mula sa lupa at ang biglaang hagupit ng mga iyon ay ang mga talumpati ng mga manlilinlang at bulaang propeta; ang mga tangos at matatarik na bato ay ang mga hukom sa matataas na katungkulan na nagbabanta ng kakila-kilabot na mga bagay; at ang mga tagpuan ng dalawang dagat at mga mapanganib na pook ay ang mga taong walang katuwiran at yaong nag-aalinlangan sa mga pangako ng katotohanan. Ituring ninyong mga pirata ang mga mapagkunwari. Ang malakas na ipuipo, ang Tartarean Charybdis, ang mga mapamaslang na pagkawasak ng barko, at ang nakamamatay na paglubog ay huwag ninyong ituring na iba kundi mga kasalanan. Kaya upang sa tulong ng mabuting hangin ay ligtas ninyong marating ang daungan ng lungsod na inyong inaasahan, manalangin kayo sa paraang diringgin. Ngunit ang mga panalangin ay nagiging karapat-dapat dinggin sa pamamagitan ng mabubuting gawa.</q></p><h3>Kabanata XV. Mga Pangyayari sa Paglalayag</h3><p><q>Kaya ang mga pasahero ay manatiling payapa at maupo sa kani-kanilang lugar upang hindi nila, sa pamamagitan ng kaguluhan, mapaugoy o mapatagilid ang barko. Ang mga tauhan sa gitna ng barko ay mag-ingat sa mga panustos. Huwag pabayaan ng mga diyakono ang anumang ipinagkatiwala sa kanila; at ang mga presbitero, gaya ng mga mandaragat, ay masikap na isaayos ang kailangan ng bawat isa. Ang obispo, bilang katuwang na namamahala sa barko, ay buong-puyat na pag-isipan ang mga salita ng piloto lamang. Ibigin si Cristo, ang Tagapagligtas, bilang piloto at Siya lamang ang paniwalaan tungkol sa mga bagay na Kanyang sinasabi; at manalangin ang lahat sa Diyos para sa isang maunlad na paglalayag. Ang mga naglalayag ay umasa sa bawat uri ng kapighatian, sapagkat naglalakbay sila sa ibabaw ng isang malaki at magulong dagat—ang sanlibutan: kung minsan ay pinanghihinaan ng loob, inuusig, nagkakawatak-watak, nagugutom, nauuhaw, hubad, at nasisikipan; at kung minsan naman ay nagkakaisa, nagtitipon, at nagpapahinga. Maaari rin silang mahilo at magsuka dahil sa pagkahilo sa dagat—samakatuwid, magpahayag ng mga kasalanan na gaya ng apdong nagdudulot ng karamdaman. Ang tinutukoy ko ay ang mga kasalanang nagmumula sa kapaitan at ang mga kasamaang naipon mula sa magulong mga pita. Sa pamamagitan ng pagpapahayag sa mga iyon, na gaya ng pagsusuka, napapawi ang inyong karamdaman at sa maingat na pamumuhay ay nakararating kayo sa ligtas at mabuting kalagayan.</q></p><h3>Kabanata XVI. Mga Paghihirap at Gantimpala ng Obispo</h3><p><q>Ngunit alamin ninyong lahat na higit na nagpapagal ang obispo kaysa sa inyong lahat, sapagkat ang bawat isa sa inyo ay nagdadala ng sarili niyang kapighatian, samantalang dinadala niya kapwa ang sarili niya at ang sa bawat isa. Kaya, O Clemente, mamuno ka bilang katulong ng bawat isa ayon sa iyong kakayahan at pagmalasakitan ang mga alalahanin ng lahat. Dahil dito, alam kong sa pagtanggap mo sa pamamahala ay hindi ako ang nagbibigay sa iyo ng pabor; ako ang tumatanggap nito. Ngunit magpakatatag ka at buong-generosong pasanin ito, na nalalamang gagantimpalaan ka ng Diyos kapag pumasok ka sa daungan ng kapahingahan. Tatanggap ka ng pinakadakilang mga pagpapala—isang gantimpalang hindi maaalis sa iyo—ayon sa laki ng paggawa na inako mo para sa kaligtasan ng lahat. Kaya kahit kapootan ka ng marami sa mga kapatid dahil sa mataas mong pamantayan ng katuwiran, hindi ka mapipinsala ng kanilang poot; sa halip, lubha kang makikinabang sa pag-ibig ng matuwid na Diyos. Kaya pagsikapan mong iwaksi ang papuring nagmumula sa kawalang-katarungan at kamtin ang kapaki-pakinabang na papuring nagmumula kay Cristo dahil sa matuwid na pamamahala.</q></p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

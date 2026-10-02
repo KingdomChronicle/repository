@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 18</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Simon Maintains that the Framer of the World is Not the Highest God</option><option value="1">Chapter II. Definition of Goodness and Justice</option><option value="2">Chapter III. God Both Good and Just</option><option value="3">Chapter IV. The Unrevealed God</option><option value="4">Chapter V. Peter Doubts Simon's Honesty</option><option value="5">Chapter VI. The Nature of Revelation</option><option value="6">Chapter VII. Simon Confesses His Ignorance</option><option value="7">Chapter VIII. The Work of Revelation Belongs to the Son Alone</option><option value="8">Chapter IX. How Simon Bears His Exposure</option><option value="9">Chapter X. Peter's Reply to Simon</option><option value="10">Chapter XI. Simon Professes to Utter His Real Sentiments</option><option value="11">Chapter XII. Simon's Opinions Expounded by Peter</option><option value="12">Chapter XIII. Peter's Explanation of the Passage</option><option value="13">Chapter XIV. Simon Refuted</option><option value="14">Chapter XV. Matthew 11:25 Discussed</option><option value="15">Chapter XVI. These Things Hidden Justly from the Wise</option><option value="16">Chapter XVII. The Way to the Kingdom Not Concealed from the Israelites</option><option value="17">Chapter XVIII Isaiah 1:3 Explained</option><option value="18">Chapter XIX. Misconception of God in the Old Testament</option><option value="19">Chapter XX. Some Parts of the Old Testament Written to Try Us</option><option value="20">Chapter XXI. Simon's Astonishment at Peter's Treatment of the Scriptures</option><option value="21">Chapter XXII. Peter Worships One God</option><option value="22">Chapter XXIII. Simon Retires</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Simon Maintains that the Framer of the World is Not the Highest God</h3><p>At break of day, when Peter went forth to discourse, Simon anticipated him, and said: <q>When I went away yesterday, I promised to you to return today, and in a discussion show that he who framed the world is not the highest God, but that the highest God is another who alone is good, and who has remained unknown up to this time. At once, then, state to me whether you maintain that the framer of the world is the same as the lawgiver or not? If, then, he is the lawgiver, he is just; but if he is just, he is not good. But if he is not good, then it was another that Jesus proclaimed, when he said, 'Do not call me good; for one is good, the Father who is in the heavens.' Now a lawgiver cannot be both just and good, for these qualities do not harmonize.</q> And Peter said: <q>First tell us what are the actions which in your opinion constitute a person good, and what are those which constitute him just, in order that thus we may address our words to the same mark.</q> And Simon said: <q>Do you state first what in your opinion is goodness, and what justice.</q></p><h3>Chapter II. Definition of Goodness and Justice</h3><p>And Peter said: <q>That I may not waste my time in contentious discussions, while I make the fair demand that you should give answers to my propositions, I shall myself answer those questions which I put, as is your wish. I then affirm that the man who bestows <em>goods</em> is good, just as I see the Framer of the world doing when He gives the sun to the good, and the rain to the just and unjust.</q> And Simon said: <q>It is most unjust that he should give the same things to the just and the unjust.</q> And Peter said: <q>Do you, then, in your turn state to us what course of conduct would constitute Him good.</q> And Simon said: <q>It is you that must state this.</q> And Peter said: <q>I will. He who gives the same things to the good and just, and also to the evil and unjust, is not even just according to you; but you would with reason call Him just if He gave goods to the good and evils to the evil. What course of conduct, then, would He adopt, if He does not adopt the plan of giving things temporal to the evil, if perchance they should be converted, and things eternal to the good, if at least they remain <em>good?</em> And thus by giving to all, but by gratifying the more excellent, His justice is good; and all the more long-suffering in this, that to sinners who repent He freely grants forgiveness of their sins, and to those who have acted well He assigns even eternal life. But judging at last, and giving to each one what he deserves, He is just. If, then, this is right, confess it; but if it appears to you not to be right, refute it.</q></p><h3>Chapter III. God Both Good and Just</h3><p>And Simon said: <q>I said once for all, 'Every lawgiver, looking to justice, is just.'</q> And Peter said: <q>If it is the part of him who is good not to lay down a law, but of him who is just to lay down a law, in this way the Framer of the world is both good and just. He is good, inasmuch as it is plain that He did not lay down a law in writing from the times of Adam to Moses; but inasmuch as He had a written law from Moses to the present times, He is just also.</q> And Simon said: <q>Prove to me from the utterances of your teacher that it is within the power of the same man to be good and just; for to me it seems impossible that the lawgiver who is good should also be just.</q> And Peter said: <q>I shall explain to you how goodness itself is just. Our teacher Himself first said to the Pharisee who asked Him, 'What shall I do to inherit eternal life?' 'Do not call me good; for one is good, even the Father who is in the heavens;' and straightway He introduced these words, 'But if you shall wish to enter into life, keep the commandments.' And when he said, 'What commandments?' He pointed him to those of the law. Now He would not, if He were indicating some other good being, have referred him to the commandments of the Just One. That indeed justice and goodness are different I allow, but you do not know that it is within the power of the same being to be good and just. For He is good, in that He is now long-suffering with the penitent, and welcomes them; but just, when acting as judge He will give to every one according to his deserts.</q></p><h3>Chapter IV. The Unrevealed God</h3><p>And Simon said: <q>How, then, if the framer of the world, who also fashioned Adam, was known, and known too by those who were just according to the law, and moreover by the just and unjust, and the whole world, does your teacher, coming after all these, say, 'No one has known the Father but the Son, even as no one knows the Son but the Father, and those to whom the Son may wish to reveal Him?' But he would not have made this statement, had he not proclaimed a Father who was still unrevealed, whom the law speaks of as the highest, and who has not given any utterance either good or bad (as Jeremiah testifies in the Lamentations ); who also, limiting the nations to seventy languages, according to the number of the sons of Israel who entered Egypt, and according to the boundaries of these nations, gave to his own Son, who is also called Lord, and who brought into order the heaven and the earth, the Hebrews as his portion, and defined him to be God of gods, that is, of the gods who received the other nations as their portions. Laws, therefore, proceeded from all the so-called gods to their own divisions, which consist of the other nations. In like manner also from the Son of the Lord of all came forth the law which is established among the Hebrews. And this state of matters was determined on, that if any one should seek refuge in the law of any one, he should belong to the division of him whose law he undertook to obey. No one knew the highest Father, who was unrevealed, just as they did not know that his Son was his Son. Accordingly at this moment you yourself, in assigning the special attributes of the unrevealed Most High to the Son, do not know that he is the Son, being the Father of Jesus, who with you is called the Christ.</q></p><h3>Chapter V. Peter Doubts Simon's Honesty</h3><p>When Simon had made these statements, Peter said to him: <q>Can you call to witness that these are your beliefs that being Himself,—I do not mean Him whom you speak of now as being unrevealed, but Him in whom you believe, though you do not confess Him? For you are talking nonsense when you define one thing in stead of another. Wherefore, if you call Him to witness that you believe what you say, I shall answer you. But if you continue discussing with me what you do not believe, you compel me to strike the empty air.</q> And Simon said: <q>It is from some of your own disciples that I have heard <em>that this is the truth</em>.</q> And Peter said: <q>Do not bear false witness?</q> And Simon said: <q>Do not rebuke me, most insolent man.</q> And Peter said: <q>So long as you do not tell who it was who said so, <em>I affirm that</em> you are a liar.</q> And Simon said: <q>Suppose that I myself have got up these doctrines, or that I heard them from some other, give me your answer to them. For if they cannot be overturned, then I have learned that this is the truth.</q> And Peter said: <q>If it is a human invention, I will not reply to it; but if you are held fast by the supposition that it is the truth, acknowledge to me that this is the case, and I can then myself say something in regard to the matter.</q> And Simon said: <q>Once for all, then, these doctrines seem to me to be true. Give me your reply, if you have anything to say against them.</q></p><h3>Chapter VI. The Nature of Revelation</h3><p>And Peter said: <q>If this is the case, you are acting most impiously. For if it belongs to the Son, who arranged heaven and earth, to reveal His unrevealed Father to whomsoever He wishes, you are, as I said, acting most impiously in revealing Him to those to whom He has not revealed Him.</q> And Simon said: <q>But he himself wishes me to reveal him.</q> And Peter said: <q>You do not understand what I mean, Simon. But listen and understand. When it is said that the Son will reveal Him to whom He wishes, it is meant that such an one is to learn of Him not by instruction, but by revelation only. For it is revelation when that which lies secretly veiled in all the hearts of men is revealed <em>unveiled</em> by His <em>God's</em> own will without any utterance. And thus knowledge comes to one, not because he has been instructed, but because he has understood. And yet the person who understands it cannot demonstrate it to another, since he did not himself receive it by instruction; nor can he reveal it, since he is not himself the Son, unless he maintains that he is himself the Son. But you are not the standing Son. For if you were the Son, assuredly you would know those who are worthy of such a revelation. But you do not know them. For if you knew them, you would do as they do who know.</q></p><h3>Chapter VII. Simon Confesses His Ignorance</h3><p>And Simon said: <q>I confess I have not understood what you mean by the expression, 'You would do as they do who know.'</q> And Peter said: <q>If you have not understood it, then you cannot know the mind of every one; and if you are ignorant of this, then you do not know those who are worthy of the revelation. You are not the Son, for the Son knows. Wherefore He reveals <em>Him</em> to whomsoever He wishes, because they are worthy.</q> And Simon said: <q>Be not deceived. I know those who are worthy, and I am not the Son. And yet I have not understood what meaning you attach to the words, 'He reveals <em>Him</em> to whomsoever He wishes.' But I said that I did not understand it, not because I did not know it, but because I knew that those who were present did not understand it, in order that you may state it more distinctly, so that they may perceive what are the reasons why we are carrying on this discussion.</q> And Peter said: <q>I cannot state the matter more clearly: explain what meaning you have attached to the words.</q> And Simon said: <q>There is no necessity why I should state your opinions.</q> And Peter said: <q>You evidently, Simon, do not understand it, and yet you do not wish to confess, that you may not be detected in your ignorance, and thus be proved not to be the standing Son. For you hint this, though you do not wish to state it plainly; and, indeed, I who am not a prophet, but a disciple of the true Prophet, know well from the hints you have given what your wishes are. For you, though you do not understand even what is distinctly said, wish to call yourself son in opposition to us.</q> And Simon said: <q>I will remove every pretext from you. I confess I do not understand what can be the meaning of the statement, 'The Son reveals <em>Him</em> to whomsoever He wishes.' State therefore what is its meaning more distinctly.</q></p><h3>Chapter VIII. The Work of Revelation Belongs to the Son Alone</h3><p>And Peter said: <q>Since, at least in appearance, you have confessed that you do not understand it, reply to the question I put to you, and you will learn the meaning of the statement. Tell me, do you maintain that the Son, whoever he be, is just, or that he is not just?</q> And Simon said: <q>I maintain that he is most just.</q> And Peter said: <q>Seeing He is just, why does He not make the revelation to all, but only to those to whom He wishes?</q> And Simon said: <q>Because, being just, he wishes to make the revelation only to the worthy.</q> And Peter said: <q>Must He not therefore know the mind of each one, in order that He may make the revelation to the worthy?</q> And Simon said: <q>Of course he must.</q> And Peter said: <q>With reason, therefore, has the work of giving the revelation been confined to Him alone, for He alone knows the mind of every one; and it has not been given to you, who are not able to understand even that which is stated by us.</q></p><h3>Chapter IX. How Simon Bears His Exposure</h3><p>When Peter said this, the multitudes applauded. But Simon, being thus exposed, blushed through shame, and rubbing his forehead, said: <q>Well, then, do they declare that I, a magician, yea, even I who syllogize, am conquered by Peter? It is not so. But if one should syllogize, though carried away and conquered, he still retains the truth that is in him. For the weakness in the defender is not identical with the truth in the conquered man. But I assure you that I have judged all those who are bystanders worthy to know the unrevealed Father. Wherefore, because I publicly reveal him to them, you yourself, through envy, are angry with me who wish to confer a benefit on them.</q></p><h3>Chapter X. Peter's Reply to Simon</h3><p>And Peter said: <q>Since you have thus spoken to please the multitudes who are present, I shall speak to them, not to please them, but to tell them the truth. Tell me how you know all those who are present to be worthy, when not even one of them agreed with your exposition of the subject; for the giving of applause to me in opposition to you is not the act of those who agree with you, but of those who agree with me, to whom they gave the applause for having spoken the truth. But since God, who is just, judges the mind of each one—a doctrine which you affirm to be true—He would not have wished this to be given through the left hand to those on the right hand, exactly as the man who receives anything from a robber is himself guilty. So that, on this account, He did not wish them to receive what is brought by you; but they are to receive the revelation through the Son, who has been set apart for this work. For to whom is it reasonable that the Father should give a revelation, but to His only Son, because He knows Him to be worthy of such a revelation? And so this is a matter which one cannot teach or be taught, but it must be revealed by the ineffable hand to him who is worthy to know it.</q></p><h3>Chapter XI. Simon Professes to Utter His Real Sentiments</h3><p>And Simon said: It contributes much to victory, if the man who wars uses his own weapons; for what one loves he can in real earnest defend, and that which is defended with genuine earnestness has no ordinary power in it. Wherefore in future I shall lay before you my real opinions. I maintain that there is some unrevealed power, unknown to all, even to the Creator himself, as Jesus himself has also declared, though he did not know what he said. For when one talks a great deal he sometimes hits the truth, not knowing what he is saying. I am referring to the statement which he uttered, 'No one knows the Father.' And Peter said: <q>Do not any longer profess that you know His doctrines.</q> And Simon said: <q>I do not profess to believe his doctrines; but I am discussing points in which he was by accident right.</q> And Peter said: <q>Not to give you any pretext for escape, I shall carry on the discussion with you in the way you wish. At the same time, I call all to witness that you do not yet believe the statement which you just now made. For I know your opinions. And in order that you may not imagine that I am not speaking the truth, I shall expound your opinions, that you may know that you are discussing with one who is well acquainted with them.</q></p><h3>Chapter XII. Simon's Opinions Expounded by Peter</h3><p><q>We, Simon, do not assert that from the great power, which is also called the dominant power, two angels were sent forth, the one to create the world, the other to give the law; nor that each one when he came proclaimed himself, on account of what he had done, as the sole creator; nor that there is one who stands, will stand, and is opposed. Learn how you disbelieve even in respect to this subject. If you say that there is an unrevealed power, that power is full of ignorance. For it did not foreknow the ingratitude of the angels who were sent by it.</q> And Simon became exceedingly angry with Peter for saying this, and interrupted his discourse, saying: <q>What nonsense is this you speak, you daring and most impudent of men, revealing plainly before the multitudes the secret doctrines, so that they can be easily learned?</q> And Peter said: <q>Why do you grudge that the present audience should receive benefit?</q> And Simon said: <q>Do you then allow that such knowledge is a benefit?</q> And Peter said: <q>I allow it: for the knowledge of a false doctrine is beneficial, inasmuch as you do not fall into it because of ignorance.</q> And Simon said: <q>You are evidently not able to reply to the propositions I laid before you. I maintain that even your teacher affirms that there is some Father unrevealed.</q></p><h3>Chapter XIII. Peter's Explanation of the Passage</h3><p>And Peter said: <q>I shall reply to that which you wish me to speak of,—namely, the passage, 'No one knows the Father but the Son, nor does any one know the Son but the Father, and they to whom the Son may wish to reveal Him.' First, then, I am astonished that, while this statement admits of countless interpretations, you should have chosen the very dangerous position of maintaining that the statement is made in reference to the ignorance of the Creator (Demiurge), and all who are under him. For, first, the statement can apply to all the Jews who think that David is the father of Christ, and that Christ himself is his son, and do not know that He is the Son of God. Wherefore it is appropriately said, 'No one knows the Father,' since, instead of God, they affirmed David to be His father; and the additional remark, that no one knows even the Son, is quite correct, since they did not know that He was the Son. The statement also, 'to whomsoever the Son may wish to reveal Him,' is also correct; for He being the Son from the beginning, was alone appointed to give the revelation to those to whom He wishes to give it. And thus the first man (protoplast) Adam must have heard of Him; and Enoch, who pleased <em>God</em>, must have known Him; and Noah, the righteous one, must have become acquainted with Him; and Abraam His friend must have understood Him; and Isaac must have perceived Him; and Jacob, who wrestled with Him, must have believed in Him; and the revelation must have been given to all among the people who were worthy.</q></p><h3>Chapter XIV. Simon Refuted</h3><p><q>But if, as you say, it will be possible to know Him, because He is now revealed to all through Jesus, are you not stating what is most unjust, when you say that these men did not know Him, who were the seven pillars of the world, and who were able to please the most just God, and that so many now from all nations who were impious know Him in every respect? Were not those who were superior to every one not deemed worthy to know Him? And how can that be good which is not just? Unless you wish to give the name of 'good,' not to him who does good to those who act justly, but to him who loves the unjust, even though they do not believe, and reveals to them the secrets which he would not reveal to the just. But such conduct is befitting neither in one who is good nor just, but in one who has come to hate the pious. Are not you, Simon, the standing one, who have the boldness to make these statements which never have been so made before?</q></p><h3>Chapter XV. Matthew 11:25 Discussed</h3><p>And Simon, being vexed at this, said: <q>Blame your own teacher, who said, 'I thank You, Lord of heaven and earth, that what was concealed from the wise, You have revealed to suckling babes.'</q> And Peter said: <q>This is not the way in which the statement was made; but I shall speak of it as if it had been made in the way that has seemed good to you. Our Lord, even if He had made this statement, 'What was concealed from the wise, the Father revealed to babes,' could not even thus be thought to point out another God and Father in addition to Him who created the world. For it is possible that the concealed things of which He spoke may be those of the Creator (Demiurge) himself; because Isaiah says, 'I will open my mouth in parables, and I will belch forth things concealed from the foundation of the world.' Do you allow, then, that the prophet was not ignorant of the things concealed, which Jesus says were concealed from the wise, but revealed to babes? And how was the Creator (Demiurge) ignorant of them, if his prophet Isaiah was not ignorant of them? But our Jesus did not in reality say 'what was concealed,' but He said what seems a harsher statement; for He said, ' <em>You have concealed these things from the wise</em>, and hast revealed them to sucking babes.' Now the word 'You have concealed' implies that they had once been known to them; for the key of the kingdom of heaven, that is, the knowledge of the secrets, lay with them.</q></p><h3>Chapter XVI. These Things Hidden Justly from the Wise</h3><p><q>And do not say He acted impiously towards the wise in hiding these things from them. Far be such a supposition from us. For He did not act impiously; but since they hid the knowledge of the kingdom, and neither themselves entered nor allowed those who wished to enter, on this account, and justly, inasmuch as they hid the ways from those who wished, were in like manner the secrets hidden from them, in order that they themselves might experience what they had done to others, and with what measure they had measured, an equal measure might be meted out to them. For to him who is worthy to know, is due that which he does not know; but from him who is not worthy, even should he seem to have anything it is taken away, even if he be wise in other matters; and it is given to the worthy, even should they be babes as far as the times of their discipleship are concerned.</q></p><h3>Chapter XVII. The Way to the Kingdom Not Concealed from the Israelites</h3><p><q>But if one shall say nothing was concealed from the sons of Israel, because it is written, 'Nothing escaped your notice, O Israel (for do not say, O Jacob, The way is hid from me),' he ought to understand that the things that belong to the kingdom had been hid from them, but that the way that leads to the kingdom, that is, the mode of life, had not been hid from them. Wherefore it is that He says, 'For say not that the way has been hid from me.' But by the way is meant the mode of life; for Moses says, 'Behold, I have set before your face the way of life and the way of death.' And the Teacher spoke in harmony with this: 'Enter ye through the strait and narrow way, through which ye shall enter into life.' And somewhere else, when one asked Him, 'What shall I do to inherit eternal life?' He pointed out to him the commandments of the law.</q></p><h3>Chapter XVIII Isaiah 1:3 Explained</h3><p><q>From the circumstance that Isaiah said, in the person of God, 'But Israel has not known me, and the people has not understood me,' it is not to be inferred that Isaiah indicated another God besides Him who is known; but he meant that the known God was in another sense unknown, because the people sinned, being ignorant of the just character of the known God, and imagined that they would not be punished by the good God. Wherefore, after he said, 'But Israel has not known me, and the people has not understood me,' he adds, 'Alas! A sinful nation, a people laden with sins.' For, not being afraid, in consequence of their ignorance of His justice, as I said, they became laden with sins, supposing that He was merely good, and would not therefore punish them for their sins.</q></p><h3>Chapter XIX. Misconception of God in the Old Testament</h3><p><q>And some sinned thus, on account of imagining that there would be no judgment because of His goodness. But others took an opposite course. For, supposing the expressions of the Scriptures which are against God, and are unjust and false, to be true, they did not know His real divinity and power. Therefore, in the belief that He was ignorant and rejoiced in murder, and let off the wicked in consequence of the gifts of sacrifices; yea, moreover, that He deceived and spoke falsely, and did every thing that is unjust, they themselves did things like to what their God did, and thus sinning, asserted that they were acting piously. Wherefore it was impossible for them to change to the better, and when warned they took no heed. For they were not afraid, since they became like their God through such actions.</q></p><h3>Chapter XX. Some Parts of the Old Testament Written to Try Us</h3><p><q>But one might with good reason maintain that it was with reference to those who thought Him to be such that the statement was made, 'No one knows the Father but the Son, as no one knows even the Son, but the Father.' And reasonably. For if they had known, they would not have sinned, by trusting to the books written against God, really for the purpose of trying. But somewhere also He says, wishing to exhibit the cause of their error more distinctly to them, 'On this account ye do err, not knowing the true things of the Scriptures, on which account you are ignorant also of the power of God.' Wherefore every man who wishes to be saved must become, as the Teacher said, a judge of the books written to try us. For thus He spoke: 'Become experienced bankers.' Now the need of bankers arises from the circumstance that the spurious is mixed up with the genuine.</q></p><h3>Chapter XXI. Simon's Astonishment at Peter's Treatment of the Scriptures</h3><p>When Peter said this, Simon pretended to be utterly astonished at what was said in regard to the Scriptures; and as if in great agitation, he said: <q>Far be it from me, and those who love me, to listen to your discourses. And, indeed, as long as I did not know that you held these opinions in regard to the Scriptures, I endured you, and discussed with you; but now I retire. Indeed, I ought at the first to have withdrawn, because I heard you say, 'I, for my part, believe no one who says anything against Him who created the world, neither angels, nor prophets, nor Scriptures, nor priests, nor teachers, nor any one else, even though one should work signs and miracles, even though he should lighten brilliantly in the air, or should make a revelation through visions or through dreams.' Who, then, can succeed in changing your mind, whether well or ill, so as that you should hold opinions different from what you have determined on, seeing that you abide so persistently and immoveably in your own decision?</q></p><h3>Chapter XXII. Peter Worships One God</h3><p>When Simon said this, and was going to depart, Peter said: <q>Listen to this one other remark, and then go where you like.</q> Whereupon Simon turned back and remained, and Peter said: <q>I know how you were then astonished when you heard me say, 'Whosoever says anything whatever against God who created the world, I do not believe him.' But listen now to something additional, and greater than this. If God who created the world has in reality such a character as the Scriptures assign Him, and if somehow or other He is incomparably wicked, more wicked than either the Scriptures were able to represent Him, or any other can even conceive Him to be, nevertheless I shall not give up worshipping Him alone, and doing His will. For I wish you to know and to be convinced, that he who has not affection for his own Creator, can never have it towards another. And if he has it towards another, he has it contrary to nature, and he is ignorant that he has this passion for the unjust from the evil one. Nor will he be able to retain even it stedfastly. And, indeed, if there is another above the Creator (Demiurge), he will welcome me, since he is good, all the more that I love my own Father; and he will not welcome you, as he knows that you have abandoned your own natural Creator: for I do not call Him Father, influenced by a greater hope, and not caring for what is reasonable. Thus, even if you find one who is superior to Him, he knows that you will one day abandon him; and the more so that he has not been your father, since you have abandoned Him who was really your Father.</q></p><h3>Chapter XXIII. Simon Retires</h3><p><q>But you will say, 'He knows that there is no other above him, and on this account he cannot be abandoned.' Thanks, then, to there being no other; but He knows that the state of your mind is one inclined to ingratitude. But if, knowing you to be ungrateful, He welcomes you, and knowing me to be grateful, He does not receive me, He is inconsiderate, according to your own assertion, and does not act reasonably. And thus, Simon, you are not aware that you are the servant of wickedness.</q> And Simon answered: <q>Whence, then, has evil arisen? Tell us.</q> And Peter said: <q>Since today you were the first to go out, and you declared that you would not in future listen to me as being a blasphemer, come tomorrow, if indeed you wish to learn, and I shall explain the matter to you, and I will permit you to ask me any questions you like, without any dispute.</q> And Simon said: <q>I shall do as shall seem good to me.</q> And saying this, he went away. Now, none of those who entered along with him went out along with him; but, falling at Peter's feet, they begged that they might be pardoned for having been carried away with Simon, and on repenting, to be welcomed. But Peter, admitting those persons who repented, and the rest of the multitudes, laid his hands upon them, praying, and healing those who were sick amongst them; and thus dismissing them, he urged them to return early about dawn. And saying this, and going in with his intimate friends, he made the usual preparations for immediate repose, for it was now evening.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Pinaninindigan ni Simon na ang Humubog sa Sanlibutan ay Hindi ang Kataas-taasang Diyos</h3><p>Pagsikat ng araw, nang lumabas si Pedro upang magsalita, inunahan siya ni Simon at sinabi: <q>Nang umalis ako kahapon, ipinangako kong babalik ako ngayon at sa isang talakayan ay ipapakita kong ang humubog sa sanlibutan ay hindi ang kataas-taasang Diyos, kundi ibang Diyos ang kataas-taasan, na Siya lamang ang mabuti at nanatiling hindi nakikilala hanggang ngayon. Kaya sabihin mo agad sa akin kung pinaninindigan mong ang humubog sa sanlibutan ay siya ring tagapagbigay ng kautusan o hindi. Kung siya ang tagapagbigay ng kautusan, siya ay matuwid; ngunit kung matuwid siya, hindi siya mabuti. At kung hindi siya mabuti, ibang Diyos ang ipinahayag ni Jesus nang sabihin Niya, ‘Huwag mo Akong tawaging mabuti; sapagkat iisa ang mabuti, ang Ama na nasa langit.’ Ang tagapagbigay ng kautusan ay hindi maaaring kapwa matuwid at mabuti, sapagkat hindi magkatugma ang mga katangiang ito.</q> Sinabi ni Pedro: <q>Sabihin mo muna sa amin kung anong mga gawa, sa palagay mo, ang bumubuo sa isang taong mabuti at kung anong mga gawa ang bumubuo sa kanya bilang matuwid, upang sa gayon ay tumukoy sa iisang bagay ang ating mga salita.</q> Sinabi ni Simon: <q>Ikaw muna ang magsabi kung ano, sa palagay mo, ang kabutihan at ano ang katarungan.</q></p><h3>Kabanata II. Kahulugan ng Kabutihan at Katarungan</h3><p>Sinabi ni Pedro: <q>Upang hindi ko sayangin ang oras sa mapagtalong usapan, bagaman makatarungan kong hinihinging sagutin mo ang aking mga tanong, ako na mismo ang sasagot sa mga tanong na ibinato ko, ayon sa gusto mo. Pinagtitibay ko, kung gayon, na mabuti ang taong nagkakaloob ng <em>mabubuting bagay</em>, gaya ng nakikita kong ginagawa ng Humubog sa sanlibutan kapag ibinibigay Niya ang araw sa mabuti at ang ulan sa matuwid at di-matuwid.</q> Sinabi ni Simon: <q>Napakadi-makatarungan na ibigay niya ang magkaparehong bagay sa matuwid at di-matuwid.</q> Sinabi ni Pedro: <q>Kung gayon, ikaw naman ang magsabi sa amin kung anong paraan ng pagkilos ang bubuo sa Kanya bilang mabuti.</q> Sinabi ni Simon: <q>Ikaw ang dapat magsabi niyan.</q> Sinabi ni Pedro: <q>Gagawin ko. Ang nagbibigay ng magkaparehong bagay sa mabuti at matuwid, gayundin sa masama at di-matuwid, ayon sa iyo ay hindi man lamang matuwid; ngunit makatuwiran mong tatawagin Siyang matuwid kung ibibigay Niya ang mabubuting bagay sa mabuti at masasamang bagay sa masama. Kung gayon, anong paraan ang gagawin Niya kung hindi Niya ipagkakaloob ang pansamantalang mga bagay sa masasama sakaling magsisi sila, at ang mga walang-hanggang bagay sa mabubuti kung mananatili silang <em>mabuti</em>? Sa pagbibigay sa lahat ngunit higit na pagpapala sa mas mahusay, ang Kanyang katarungan ay mabuti; at lalo itong matiisin sapagkat malaya Niyang pinatatawad ang mga makasalanang nagsisisi, at sa mga gumawa nang mabuti ay ibinibigay maging ang buhay na walang hanggan. Ngunit sa huli, sa paghatol at pagbibigay sa bawat isa ayon sa nararapat sa kanya, Siya ay matuwid. Kung tama ito, aminin mo; ngunit kung hindi, pabulaanan mo.</q></p><h3>Kabanata III. Ang Diyos ay Kapwa Mabuti at Matuwid</h3><p>Sinabi ni Simon: <q>Sinabi ko na minsan para sa lahat: ‘Bawat tagapagbigay ng kautusan, dahil nakatuon sa katarungan, ay matuwid.’</q> Sinabi ni Pedro: <q>Kung tungkulin ng mabuti ang hindi magbigay ng kautusan at ng matuwid ang magbigay nito, sa ganitong paraan ang Humubog sa sanlibutan ay kapwa mabuti at matuwid. Mabuti Siya sapagkat malinaw na mula kay Adan hanggang kay Moises ay hindi Siya nagbigay ng nakasulat na kautusan; ngunit yamang mula kay Moises hanggang sa kasalukuyan ay mayroon Siyang nakasulat na kautusan, Siya rin ay matuwid.</q> Sinabi ni Simon: <q>Patunayan mo sa akin mula sa mga salita ng iyong guro na nasa kapangyarihan ng iisang nilalang ang maging mabuti at matuwid; sapagkat para sa akin ay imposible na ang tagapagbigay ng kautusang mabuti ay maging matuwid din.</q> Sinabi ni Pedro: <q>Ipapaliwanag ko sa iyo kung paanong ang mismong kabutihan ay matuwid. Ang ating Guro mismo ay unang nagsabi sa Fariseong nagtanong sa Kanya, ‘Ano ang gagawin ko upang magmana ng buhay na walang hanggan?’ — ‘Huwag mo Akong tawaging mabuti; sapagkat iisa ang mabuti, ang Ama na nasa langit.’ At agad Niyang idinugtong: ‘Ngunit kung nais mong pumasok sa buhay, tuparin mo ang mga utos.’ Nang itanong, ‘Anong mga utos?’ itinuro Niya ang mga utos ng kautusan. Kung ibang mabuting nilalang ang tinutukoy Niya, hindi sana Niya itinuro ang mga utos ng Matuwid. Inaamin kong magkaiba ang katarungan at kabutihan, ngunit hindi mo nauunawaang nasa kapangyarihan ng iisang nilalang ang maging kapwa mabuti at matuwid. Sapagkat mabuti Siya sa kasalukuyan dahil matiisin Siya sa mga nagsisisi at tinatanggap sila; ngunit matuwid Siya sapagkat bilang Hukom ay ibibigay Niya sa bawat isa ang ayon sa kanyang gawa.</q></p><h3>Kabanata IV. Ang Hindi Inihayag na Diyos</h3><p>Sinabi ni Simon: <q>Kung gayon, kung ang humubog sa sanlibutan—na humubog din kay Adan—ay kilala, at kilala ng mga matuwid ayon sa kautusan, ng matuwid at di-matuwid, at ng buong sanlibutan, bakit sinabi ng iyong guro, na dumating pagkatapos nilang lahat, ‘Walang nakakilala sa Ama maliban sa Anak, gaya rin ng walang nakakilala sa Anak maliban sa Ama at sa mga taong nais ihayag ng Anak sa kanila’? Hindi sana Niya sinabi ito kung hindi Siya nagpapahayag ng isang Ama na nananatiling hindi inihayag—na tinutukoy ng kautusan bilang Kataas-taasan at hindi nagbigay ng anumang pahayag, mabuti man o masama, gaya ng pinatototohanan ni Jeremias sa Mga Panaghoy. Siya rin, na hinati ang mga bansa sa pitumpung wika ayon sa bilang ng mga anak ni Israel na pumasok sa Ehipto, at ayon sa mga hangganan ng mga bansang iyon ay ibinigay sa sariling Anak—na tinatawag ding Panginoon at siyang nag-ayos ng langit at lupa—ang mga Hebreo bilang Kanyang bahagi, at itinakda siyang Diyos ng mga diyos, ibig sabihin, ng mga diyos na tumanggap sa ibang mga bansa bilang kani-kanilang bahagi. Kaya mula sa lahat ng tinatawag na mga diyos ay nagmula ang mga kautusan para sa kani-kanilang mga bahagi, na binubuo ng ibang mga bansa. Gayundin, mula sa Anak ng Panginoon ng lahat ay nagmula ang kautusang itinatag sa mga Hebreo. At itinakda ang ganitong kaayusan: sinumang dumulog sa kautusan ng isa ay mapabilang sa bahagi niya na ang kautusan ay pinili niyang sundin. Walang nakakilala sa kataas-taasang Ama na hindi inihayag, gaya ring hindi nila alam na ang Kanyang Anak ay Anak Niya. Kaya sa sandaling ito, ikaw mismo, sa pag-uukol sa Anak ng mga natatanging katangian ng hindi inihayag na Kataas-taasan, ay hindi nakaaalam na Siya ang Anak, yamang Siya ang Ama ni Jesus na tinatawag ninyong Cristo.</q></p><h3>Kabanata V. Nagduda si Pedro sa Katapatan ni Simon</h3><p>Nang sabihin ni Simon ang mga bagay na ito, sinabi ni Pedro sa kanya: <q>Matatawag mo bang saksi na ito nga ang mga paniniwala mo—ang mismong Nilalang na iyon? Hindi ko ibig sabihin ang sinasabi mo ngayong hindi inihayag, kundi Siya na tunay mong pinaniniwalaan bagaman hindi mo Siya ipinagtatapat. Sapagkat walang kabuluhan ang iyong sinasabi kapag isang bagay ang iyong tinutukoy sa halip ng iba. Kaya kung tatawagin mo Siyang saksi na naniniwala ka sa sinasabi mo, sasagutin kita. Ngunit kung patuloy kang makikipagtalakayan tungkol sa mga bagay na hindi mo naman pinaniniwalaan, pinipilit mo akong humampas sa hangin.</q> Sinabi ni Simon: <q>Mula sa ilan sa sarili mong mga alagad ay narinig kong <em>ito ang katotohanan</em>.</q> Sinabi ni Pedro: <q>Huwag kang magsinungaling na saksi.</q> Sinabi ni Simon: <q>Huwag mo akong sawayin, ikaw na napakayabang na tao.</q> Sinabi ni Pedro: <q>Hangga’t hindi mo sinasabi kung sino ang nagsabi niyan, <em>pinaninindigan kong</em> sinungaling ka.</q> Sinabi ni Simon: <q>Ipagpalagay mong ako mismo ang bumuo ng mga aral na ito o narinig ko sa iba; sagutin mo ang mga iyon. Sapagkat kung hindi mapabubulaanan, matututuhan kong ito ang katotohanan.</q> Sinabi ni Pedro: <q>Kung gawa lamang ng tao, hindi ko sasagutin; ngunit kung mahigpit kang nakakapit sa palagay na ito ang katotohanan, aminin mo sa akin at saka ako makapagsasalita tungkol dito.</q> Sinabi ni Simon: <q>Kung gayon, minsan para sa lahat: para sa akin ay tunay ang mga aral na ito. Sagutin mo ako kung mayroon kang masasabi laban sa mga iyon.</q></p><h3>Kabanata VI. Kalikasan ng Paghahayag</h3><p>Sinabi ni Pedro: <q>Kung gayon ang kalagayan, lubha kang kumikilos nang di-maka-Diyos. Sapagkat kung sa Anak na nag-ayos ng langit at lupa nauukol ang paghahayag ng Kanyang hindi inihayag na Ama sa sinumang nais Niya, kumikilos kang lubhang di-maka-Diyos sa paghahayag sa Kanya sa mga taong hindi Niya pinaghayagan.</q> Sinabi ni Simon: <q>Ngunit Siya mismo ang nagnanais na ihayag ko Siya.</q> Sinabi ni Pedro: <q>Hindi mo nauunawaan ang ibig kong sabihin, Simon. Ngunit makinig ka at umunawa. Kapag sinasabing ihahayag Siya ng Anak sa sinumang nais Niya, ang ibig sabihin ay matututuhan Siya ng taong iyon hindi sa pamamagitan ng pagtuturo kundi sa pamamagitan lamang ng paghahayag. Sapagkat paghahayag iyon kapag ang lihim na nakatakip sa lahat ng puso ng tao ay inilalantad nang <em>walang takip</em> sa pamamagitan ng sariling kalooban ng <em>Diyos</em>, nang walang anumang binibigkas na salita. Sa gayon dumarating ang kaalaman hindi dahil naturuan ang tao kundi dahil nakaunawa siya. Ngunit ang nakaunawa ay hindi maaaring patunayan iyon sa iba, sapagkat hindi niya mismo tinanggap iyon sa pamamagitan ng pagtuturo; ni maihahayag niya iyon, sapagkat hindi siya ang Anak—maliban kung ipaninindigan niyang siya mismo ang Anak. Ngunit hindi ikaw ang Anak na nananatili. Sapagkat kung ikaw ang Anak, tiyak na makikilala mo yaong mga karapat-dapat sa gayong paghahayag. Ngunit hindi mo sila nakikilala; sapagkat kung nakikilala mo sila, gagawin mo ang ginagawa ng mga nakaaalam.</q></p><h3>Kabanata VII. Inamin ni Simon ang Kanyang Kamangmangan</h3><p>Sinabi ni Simon: <q>Inaamin kong hindi ko naunawaan ang ibig mong sabihin sa pananalitang, ‘Gagawin mo ang ginagawa ng mga nakaaalam.’</q> Sinabi ni Pedro: <q>Kung hindi mo iyon naunawaan, hindi mo makikilala ang isip ng bawat isa; at kung mangmang ka rito, hindi mo nakikilala yaong mga karapat-dapat sa paghahayag. Hindi ikaw ang Anak, sapagkat alam ng Anak. Kaya inihahayag Niya <em>Siya</em> sa sinumang nais Niya, sapagkat karapat-dapat sila.</q> Sinabi ni Simon: <q>Huwag kang malinlang. Nakikilala ko yaong mga karapat-dapat, at hindi ako ang Anak. Gayunman, hindi ko naunawaan kung anong kahulugan ang ibinibigay mo sa mga salitang, ‘Inihahayag Niya <em>Siya</em> sa sinumang nais Niya.’ Ngunit sinabi kong hindi ko iyon naunawaan hindi dahil hindi ko alam, kundi dahil alam kong hindi iyon nauunawaan ng mga naririto, upang mailahad mo nang mas malinaw at maunawaan nila kung bakit natin isinasagawa ang talakayang ito.</q> Sinabi ni Pedro: <q>Hindi ko na maipapahayag nang mas malinaw; ipaliwanag mo kung anong kahulugan ang ikinakabit mo sa mga salita.</q> Sinabi ni Simon: <q>Hindi kinakailangang ako ang maglahad ng iyong mga palagay.</q> Sinabi ni Pedro: <q>Maliwanag, Simon, na hindi mo iyon nauunawaan ngunit ayaw mong umamin upang hindi mahayag ang iyong kamangmangan at mapatunayang hindi ikaw ang Anak na nananatili. Ipinahihiwatig mo ito bagaman ayaw mong sabihin nang hayagan; at ako, na hindi propeta kundi alagad ng tunay na Propeta, ay alam mula sa iyong mga pahiwatig kung ano ang nais mo. Bagaman hindi mo nauunawaan kahit ang malinaw na sinabi, nais mong tawagin ang sarili mong anak na salungat sa amin.</q> Sinabi ni Simon: <q>Aalisin ko sa iyo ang lahat ng dahilan. Inaamin kong hindi ko nauunawaan ang maaaring kahulugan ng pahayag na, ‘Inihahayag ng Anak <em>Siya</em> sa sinumang nais Niya.’ Kaya sabihin mo nang mas malinaw ang kahulugan nito.</q></p><h3>Kabanata VIII. Sa Anak Lamang Nauukol ang Gawain ng Paghahayag</h3><p>Sinabi ni Pedro: <q>Yamang kahit sa anyo man lamang ay inamin mong hindi mo iyon nauunawaan, sagutin mo ang tanong ko at matututuhan mo ang kahulugan ng pahayag. Sabihin mo sa akin: pinaninindigan mo bang ang Anak, sino man Siya, ay matuwid o hindi?</q> Sinabi ni Simon: <q>Pinaninindigan kong Siya ay lubos na matuwid.</q> Sinabi ni Pedro: <q>Yamang Siya’y matuwid, bakit hindi Niya ginagawa ang paghahayag sa lahat kundi sa mga nais lamang Niya?</q> Sinabi ni Simon: <q>Sapagkat bilang matuwid ay nais Niyang ihayag iyon sa karapat-dapat lamang.</q> Sinabi ni Pedro: <q>Kung gayon, hindi ba kailangan Niyang malaman ang isip ng bawat isa upang maibigay Niya ang paghahayag sa karapat-dapat?</q> Sinabi ni Simon: <q>Siyempre.</q> Sinabi ni Pedro: <q>Makatuwiran, kung gayon, na sa Kanya lamang inilaan ang gawain ng pagbibigay ng paghahayag, sapagkat Siya lamang ang nakaaalam ng isip ng bawat isa; at hindi iyon ibinigay sa iyo, na hindi man lamang makauunawa sa malinaw naming sinasabi.</q></p><h3>Kabanata IX. Kung Paano Hinarap ni Simon ang Pagkakalantad sa Kanya</h3><p>Nang sabihin ito ni Pedro, pumalakpak ang mga tao. Ngunit si Simon, na sa gayon ay nalantad, ay namula sa hiya at kinuskos ang kanyang noo, na sinasabi: <q>Kung gayon, ipinahahayag ba nilang ako, isang salamangkero—oo, ako mismong gumagamit ng silohismo—ay nadaig ni Pedro? Hindi gayon. Sapagkat kahit ang isang gumagamit ng silohismo ay matangay at madaig, nananatili pa rin sa kanya ang katotohanang taglay niya. Ang kahinaan ng tagapagtanggol ay hindi kapareho ng katotohanan sa taong natalo. Ngunit tinitiyak ko sa inyo na hinatulan kong karapat-dapat ang lahat ng naririto upang makilala ang hindi inihayag na Ama. Kaya yamang hayagan ko Siyang inihahayag sa kanila, ikaw mismo, dahil sa inggit, ay nagagalit sa akin na nagnanais silang makinabang.</q></p><h3>Kabanata X. Tugon ni Pedro kay Simon</h3><p>Sinabi ni Pedro: <q>Yamang nagsalita ka nang gayon upang palugdan ang mga taong naririto, magsasalita ako sa kanila hindi upang palugdan sila kundi upang sabihin ang katotohanan. Sabihin mo sa akin kung paano mo nalalamang karapat-dapat ang lahat ng naririto, samantalang wala ni isa sa kanila ang sumang-ayon sa iyong paglalahad ng paksa. Sapagkat ang palakpak na ibinigay nila sa akin laban sa iyo ay hindi gawa ng mga sumasang-ayon sa iyo kundi ng mga sumasang-ayon sa akin, sapagkat sa akin nila ibinigay ang palakpak dahil nagsalita ako ng katotohanan. Ngunit yamang ang Diyos, na matuwid, ay humahatol sa isip ng bawat isa—isang aral na pinaninindigan mong totoo—hindi Niya nanaising ibigay sa mga nasa kanan sa pamamagitan ng kaliwang kamay ang gayong bagay, gaya ng taong tumatanggap ng anumang bagay mula sa magnanakaw ay nagiging may sala rin. Kaya dahil dito ay hindi Niya ninais na tanggapin nila ang dala mo; sa halip ay tatanggapin nila ang paghahayag sa pamamagitan ng Anak na ibinukod para sa gawaing ito. Sapagkat kanino pa makatuwirang ibigay ng Ama ang paghahayag kundi sa Kanyang bugtong na Anak, yamang alam Niyang karapat-dapat Siya rito? Kaya ito ay bagay na hindi maituturo ni matututuhan sa karaniwang paraan; dapat itong ihayag ng di-maipahayag na kamay sa taong karapat-dapat makaalam nito.</q></p><h3>Kabanata XI. Ipinahayag ni Simon na Sasabihin Niya ang Kanyang Tunay na mga Paniniwala</h3><p>At sinabi ni Simon: Malaki ang naitutulong sa tagumpay kapag sariling sandata ang ginagamit ng nakikipaglaban; sapagkat ang iniibig ng isang tao ay maipagtatanggol niya nang buong katapatan, at ang ipinagtatanggol nang may tunay na sigasig ay may di-karaniwang kapangyarihan. Kaya mula ngayon ay ilalahad ko sa iyo ang tunay kong mga palagay. Pinaninindigan kong may isang kapangyarihang hindi inihayag at hindi kilala ng lahat, maging ng mismong Manlilikha, gaya rin ng ipinahayag ni Jesus, bagaman hindi Niya alam ang Kanyang sinasabi. Sapagkat kapag nagsasalita nang marami ang isang tao, kung minsan ay tinatamaan niya ang katotohanan nang hindi nalalaman ang sinasabi niya. Ang tinutukoy ko ay ang pahayag Niyang, ‘Walang nakakakilala sa Ama.’ Sinabi ni Pedro: <q>Huwag mo nang ipagpilitang alam mo ang Kanyang mga aral.</q> Sinabi ni Simon: <q>Hindi ko sinasabing pinaniniwalaan ko ang Kanyang mga aral; tinatalakay ko lamang ang mga puntong nagkataong tama Siya.</q> Sinabi ni Pedro: <q>Upang hindi ka magkaroon ng anumang dahilan upang tumakas, makikipagtalakayan ako sa iyo sa paraang nais mo. Kasabay nito, tinatawag kong saksi ang lahat na hindi mo pa pinaniniwalaan ang pahayag na kasasabi mo lamang. Sapagkat alam ko ang iyong mga palagay. At upang hindi mo isipin na hindi ako nagsasabi ng totoo, ilalahad ko ang iyong mga palagay upang malaman mong nakikipagtalakayan ka sa isang taong lubos na nakaaalam ng mga iyon.</q></p><h3>Kabanata XII. Inilahad ni Pedro ang mga Paniniwala ni Simon</h3><p><q>Kami, Simon, ay hindi naninindigan na mula sa dakilang kapangyarihan—na tinatawag ding nangingibabaw na kapangyarihan—ay isinugo ang dalawang anghel, ang isa upang likhain ang sanlibutan at ang isa upang ibigay ang kautusan; ni na bawat isa, pagdating niya, ay ipinahayag ang sarili bilang tanging manlilikha dahil sa kanyang ginawa; ni na may isang nananatili, mananatili, at sumasalungat. Matutuhan mo kung paano ka hindi naniniwala maging sa usaping ito. Kung sinasabi mong may isang kapangyarihang hindi inihayag, ang kapangyarihang iyon ay punô ng kamangmangan, sapagkat hindi nito paunang nalaman ang kawalang-utang-na-loob ng mga anghel na isinugo nito.</q> Labis na nagalit si Simon kay Pedro dahil sa sinabi niya at pinutol ang kanyang pagsasalita: <q>Anong kahibangan ang sinasabi mo, ikaw na mapangahas at napakawalanghiya, na hayagang inilalantad sa harap ng karamihan ang mga lihim na aral upang madali nilang matutuhan?</q> Sinabi ni Pedro: <q>Bakit mo ipinagkakait na makinabang ang mga naririto?</q> Sinabi ni Simon: <q>Kung gayon, inaamin mong kapaki-pakinabang ang ganitong kaalaman?</q> Sinabi ni Pedro: <q>Inaamin ko; sapagkat kapaki-pakinabang ang kaalaman sa maling aral upang hindi ka mahulog dito dahil sa kamangmangan.</q> Sinabi ni Simon: <q>Maliwanag na hindi mo kayang sagutin ang mga panukalang inilatag ko. Pinaninindigan kong maging ang iyong guro ay nagsasabing may isang Amang hindi inihayag.</q></p><h3>Kabanata XIII. Paliwanag ni Pedro sa Talata</h3><p>Sinabi ni Pedro: <q>Sasagutin ko ang nais mong pag-usapan—ang talatang, ‘Walang nakakakilala sa Ama maliban sa Anak, ni walang nakakakilala sa Anak maliban sa Ama at sa mga taong nais ihayag sa kanila ng Anak ang Ama.’ Una, namamangha ako na samantalang napakaraming posibleng pakahulugan sa pahayag na ito, pinili mo ang napakapanganib na palagay na tumutukoy ito sa kamangmangan ng Manlilikha at ng lahat ng nasa ilalim niya. Sapagkat una, maaaring tumukoy ang pahayag sa lahat ng Judiong nag-iisip na si David ang ama ni Cristo at si Cristo ang anak niya, at hindi nila alam na Siya ang Anak ng Diyos. Kaya angkop na sinabing, ‘Walang nakakakilala sa Ama,’ sapagkat sa halip na Diyos ay itinuring nilang si David ang Kanyang ama; at tama ring idagdag na walang nakakakilala sa Anak, sapagkat hindi nila nalalamang Siya ang Anak. Tama rin ang pahayag na, ‘sa sinumang nais ihayag Siya ng Anak’; sapagkat bilang Anak mula pa sa pasimula, Siya lamang ang itinalaga upang magbigay ng paghahayag sa mga nais Niyang pagbigyan. Kaya tiyak na narinig Siya ng unang taong si Adan; nakilala Siya ni Enoc na kinalugdan ng <em>Diyos</em>; nakilala Siya ni Noe na matuwid; naunawaan Siya ni Abraham na Kanyang kaibigan; nakita Siya ni Isaac; naniwala sa Kanya si Jacob na nakipagbuno sa Kanya; at ipinagkaloob ang paghahayag sa lahat ng karapat-dapat sa bayan.</q></p><h3>Kabanata XIV. Pinabulaanan si Simon</h3><p><q>Ngunit kung, gaya ng sinasabi mo, ngayon lamang Siya maaaring makilala sapagkat inihahayag na Siya sa lahat sa pamamagitan ni Jesus, hindi ba napakadi-makatarungan ng sinasabi mo kapag ipinagpapalagay mong hindi Siya nakilala ng mga taong iyon—ang pitong haligi ng sanlibutan—na nagawang kalugdan ang pinakamatwid na Diyos, samantalang napakaraming di-maka-Diyos ngayon mula sa lahat ng bansa ang lubos na nakakakilala sa Kanya? Hindi ba yaong mga nakahihigit sa lahat ay itinuring na hindi karapat-dapat makakilala sa Kanya? At paano magiging mabuti ang hindi matuwid? Maliban kung nais mong tawaging ‘mabuti’ hindi ang gumagawa ng mabuti sa mga kumikilos nang matuwid kundi ang umiibig sa mga di-matuwid, kahit hindi sila sumasampalataya, at inihahayag sa kanila ang mga lihim na hindi Niya inihayag sa mga matuwid. Ngunit ang gayong kilos ay hindi angkop sa mabuti ni sa matuwid, kundi sa isang napoot sa mga maka-Diyos. Hindi ba ikaw, Simon, ang tinatawag na nananatili, na may lakas ng loob na magsabi ng mga pahayag na hindi kailanman sinabi nang gayon noon?</q></p><h3>Kabanata XV. Tinalakay ang Mateo 11:25</h3><p>At si Simon, na nainis dito, ay nagsabi: <q>Ang sarili mong guro ang sisihin mo, na nagsabi: ‘Nagpapasalamat Ako sa Iyo, Panginoon ng langit at lupa, na ang itinago sa marurunong ay inihayag Mo sa mga sanggol.’</q> Sinabi ni Pedro: <q>Hindi gayon ang pagkakasabi ng pahayag; ngunit tatalakayin ko ito na para bang sinabi iyon ayon sa paraang gusto mong unawain. Kahit sinabi ng ating Panginoon, ‘Ang itinago sa marurunong ay inihayag ng Ama sa mga sanggol,’ hindi pa rin maaaring isipin na tumutukoy Siya sa ibang Diyos at Ama bukod sa lumikha ng sanlibutan. Maaaring ang mga bagay na itinago na tinutukoy Niya ay yaong sa mismong Manlilikha; sapagkat sinabi ni Isaias, ‘Bubuksan ko ang aking bibig sa mga talinghaga at ilalabas ko ang mga bagay na itinago mula pa sa pagkakatatag ng sanlibutan.’ Inaamin mo ba, kung gayon, na hindi mangmang ang propeta sa mga bagay na itinago—yaong sinasabi ni Jesus na itinago sa marurunong ngunit inihayag sa mga sanggol? At paano magiging mangmang ang Manlilikha tungkol sa mga iyon kung hindi mangmang ang Kanyang propetang si Isaias? Ngunit sa katotohanan ay hindi sinabi ng ating Jesus na ‘ang itinago’; mas mabigat pa ang Kanyang sinabi: ‘<em>Itinago Mo ang mga bagay na ito sa marurunong</em>, at inihayag Mo sa mga sanggol.’ Ang salitang ‘Itinago Mo’ ay nagpapahiwatig na minsan ay nalalaman nila ang mga iyon; sapagkat nasa kanila ang susi ng kaharian ng langit, ibig sabihin, ang kaalaman sa mga lihim.</q></p><h3>Kabanata XVI. Makatarungang Itinago ang mga Bagay na Ito sa Marurunong</h3><p><q>At huwag mong sabihing kumilos Siya nang di-maka-Diyos laban sa marurunong sa pagtatago ng mga bagay na ito sa kanila. Malayo sa atin ang gayong palagay. Hindi Siya kumilos nang di-maka-Diyos; ngunit yamang itinago nila ang kaalaman sa kaharian at hindi sila mismo pumasok ni pinahintulutan ang mga nagnanais pumasok, dahil dito at makatarungan lamang, yamang itinago nila ang mga daan sa mga nagnanais, ang mga lihim ay itinago rin sa kanila upang maranasan nila ang ginawa nila sa iba, at sa sukat na ginamit nila ay gayunding sukat ang ibigay sa kanila. Sapagkat sa karapat-dapat makaalam ay nararapat ibigay ang hindi niya nalalaman; ngunit sa hindi karapat-dapat, kahit tila mayroon siyang anumang bagay ay aalisin iyon sa kanya, kahit marunong pa siya sa ibang mga bagay; at ibibigay iyon sa karapat-dapat, kahit mga sanggol pa sila kung susukatin sa tagal ng kanilang pagiging alagad.</q></p><h3>Kabanata XVII. Hindi Itinago sa mga Israelita ang Daan Patungo sa Kaharian</h3><p><q>Ngunit kung sasabihin ng sinuman na walang itinago sa mga anak ni Israel sapagkat nasusulat, ‘Walang nakalampas sa iyong pansin, O Israel (sapagkat huwag mong sabihin, O Jacob, Nakatago sa akin ang daan),’ dapat niyang maunawaan na ang mga bagay na nauukol sa kaharian ay itinago sa kanila, ngunit ang daang patungo sa kaharian—ibig sabihin, ang paraan ng pamumuhay—ay hindi itinago sa kanila. Kaya sinabi, ‘Huwag mong sabihin na nakatago sa akin ang daan.’ At ang ‘daan’ ay nangangahulugang paraan ng pamumuhay; sapagkat sinabi ni Moises, ‘Narito, inilagay ko sa harap ninyo ang daan ng buhay at ang daan ng kamatayan.’ At sang-ayon dito ay sinabi ng Guro, ‘Pumasok kayo sa makipot at makitid na daan na patungo sa buhay.’ At sa ibang lugar, nang tanungin Siya ng isa, ‘Ano ang gagawin ko upang magmana ng buhay na walang hanggan?’ itinuro Niya rito ang mga utos ng kautusan.</q></p><h3>Kabanata XVIII Ipinaliwanag ang Isaias 1:3</h3><p><q>Mula sa sinabi ni Isaias sa katauhan ng Diyos, ‘Ngunit hindi Ako nakilala ng Israel, at hindi Ako naunawaan ng bayan,’ hindi dapat ipalagay na ibang Diyos ang tinutukoy ni Isaias bukod sa kilala na. Ang ibig niyang sabihin ay ang kilalang Diyos ay sa ibang diwa ay hindi nakilala, sapagkat nagkasala ang bayan dahil hindi nila naunawaan ang matuwid na katangian ng kilalang Diyos at inakala nilang hindi sila parurusahan ng mabuting Diyos. Kaya matapos niyang sabihin, ‘Ngunit hindi Ako nakilala ng Israel, at hindi Ako naunawaan ng bayan,’ idinugtong niya, ‘Ay! Isang makasalanang bansa, bayang nabibigatan ng mga kasalanan.’ Sapagkat dahil hindi sila natatakot, bunga ng kanilang kamangmangan sa Kanyang katarungan, gaya ng sinabi ko, napabigatan sila ng mga kasalanan, sa pag-aakalang Siya’y mabuti lamang at samakatuwid ay hindi sila parurusahan dahil sa kanilang mga kasalanan.</q></p><h3>Kabanata XIX. Maling Pagkaunawa sa Diyos sa Lumang Tipan</h3><p><q>At ang ilan ay nagkasala sa ganitong paraan dahil inakala nilang walang magiging paghuhukom dahil sa Kanyang kabutihan. Ngunit ang iba ay nagpunta sa kabaligtarang landas. Sapagkat sa pag-aakalang totoo ang mga pahayag sa mga Kasulatan na laban sa Diyos at di-makatarungan at huwad, hindi nila nakilala ang Kanyang tunay na pagka-Diyos at kapangyarihan. Kaya dahil naniwala silang Siya’y mangmang, nalulugod sa pagpatay, pinawawalang-sala ang masasama dahil sa mga handog na hain, nanlilinlang, nagsasalita nang huwad, at gumagawa ng lahat ng di-makatarungan, sila mismo ay gumawa ng mga bagay na katulad ng inaakala nilang ginagawa ng kanilang Diyos at, habang nagkakasala, ay ipinahayag na maka-Diyos ang kanilang ginagawa. Dahil dito, imposible silang magbago tungo sa mas mabuti; at kapag binabalaan ay hindi nila pinapansin. Sapagkat hindi sila natatakot, yamang sa gayong mga gawa ay inakala nilang naging katulad sila ng kanilang Diyos.</q></p><h3>Kabanata XX. Ang Ilang Bahagi ng Lumang Tipan ay Isinulat upang Subukin Tayo</h3><p><q>Ngunit makatuwirang sabihin ng isa na tungkol sa mga taong nag-isip sa Kanya nang gayon sinabi ang pahayag na, ‘Walang nakakakilala sa Ama maliban sa Anak, gaya rin ng walang nakakakilala sa Anak maliban sa Ama.’ At makatuwiran iyon. Sapagkat kung tunay nilang nakilala Siya, hindi sila sana nagkasala sa pagtitiwala sa mga aklat na isinulat laban sa Diyos na sa katotohanan ay para sa layuning subukin sila. At sa ibang lugar, upang higit na malinaw na ipakita sa kanila ang dahilan ng kanilang kamalian, sinabi Niya: ‘Dahil dito kayo nagkakamali—hindi ninyo nalalaman ang mga tunay na bagay sa mga Kasulatan, kaya hindi rin ninyo nalalaman ang kapangyarihan ng Diyos.’ Kaya ang bawat taong nagnanais maligtas ay kailangang maging, gaya ng sinabi ng Guro, tagasuri ng mga aklat na isinulat upang subukin tayo. Sapagkat sinabi Niya: ‘Maging bihasang mga tagapagpalit ng salapi.’ Ang pangangailangan sa mga tagapagpalit ay nagmumula sa katotohanang nahahalo ang huwad sa tunay.</q></p><h3>Kabanata XXI. Pagkamangha ni Simon sa Pagtrato ni Pedro sa mga Kasulatan</h3><p>Nang sabihin ito ni Pedro, nagkunwari si Simon na lubhang namangha sa sinabi tungkol sa mga Kasulatan; at na para bang labis na nabalisa, sinabi niya: <q>Malayo sa akin, at sa mga umiibig sa akin, ang makinig sa iyong mga talumpati. Habang hindi ko pa alam na taglay mo ang gayong mga palagay tungkol sa mga Kasulatan, tiniis kita at nakipagtalakayan sa iyo; ngunit ngayon ay aalis na ako. Sa katunayan, dapat sana’y noon pa ako umalis nang marinig kitang sabihin, ‘Ako, sa ganang akin, ay hindi naniniwala sa sinumang magsabi ng anumang laban sa Kanya na lumikha ng sanlibutan—maging mga anghel, propeta, Kasulatan, pari, guro, o sinumang iba—kahit gumawa pa siya ng mga tanda at himala, kahit lumiwanag siya nang maningning sa himpapawid, o magbigay ng paghahayag sa pamamagitan ng mga pangitain o panaginip.’ Kung gayon, sino pa ang makapagpapabago sa iyong isip, sa mabuti man o masama, upang magkaroon ka ng ibang palagay kaysa sa napagpasyahan mo na, yamang gayon katatag at hindi matinag ang iyong paninindigan?</q></p><h3>Kabanata XXII. Sumasamba si Pedro sa Iisang Diyos</h3><p>Nang sabihin ito ni Simon at aalis na sana, sinabi ni Pedro: <q>Pakinggan mo pa ang isa pang pahayag na ito, at pagkatapos ay humayo ka saan mo ibig.</q> Bumalik si Simon at nanatili. Sinabi ni Pedro: <q>Alam ko kung gaano ka namangha nang marinig mo akong sabihin, ‘Sinumang magsabi ng anumang laban sa Diyos na lumikha sa sanlibutan ay hindi ko pinaniniwalaan.’ Ngunit pakinggan mo ngayon ang isang bagay na higit pa rito. Kung ang Diyos na lumikha sa sanlibutan ay tunay na may gayong katangian gaya ng inilalarawan sa Kanya ng mga Kasulatan, at kung sa anumang paraan ay Siya’y walang-kapantay na masama—mas masama kaysa kayang ilarawan ng mga Kasulatan o isipin ng sinuman—gayunman ay hindi ko tatalikuran ang pagsamba sa Kanya lamang ni ang paggawa ng Kanyang kalooban. Sapagkat nais kong malaman mo at kumbinsido ka na ang taong walang pagmamahal sa sarili niyang Manlilikha ay hindi kailanman magkakaroon ng tunay na pagmamahal sa iba. At kung mayroon siyang pagmamahal sa iba, salungat iyon sa kalikasan at hindi niya nalalamang ang damdaming iyon sa di-matuwid ay mula sa masama. Hindi rin niya mapananatili iyon nang matatag. At kung may ibang higit sa Manlilikha, tatanggapin niya ako sapagkat siya’y mabuti, lalo na dahil iniibig ko ang sarili kong Ama; at hindi ka niya tatanggapin, sapagkat alam niyang tinalikuran mo ang likas mong Manlilikha. Hindi ko Siya tinatawag na Ama dahil sa pag-asa sa higit na malaking gantimpala at kawalang-pakialam sa makatwiran. Kaya kahit makatagpo ka ng higit sa Kanya, alam niyang balang araw ay tatalikuran mo rin siya—lalo na’t hindi mo siya naging ama, yamang tinalikuran mo Siya na tunay mong Ama.</q></p><h3>Kabanata XXIII. Umalis si Simon</h3><p><q>Ngunit sasabihin mo, ‘Alam niyang wala nang iba sa itaas niya at dahil dito ay hindi siya maaaring talikuran.’ Kung gayon, salamat na wala nang iba; ngunit alam Niya na ang kalagayan ng iyong isip ay nakahilig sa kawalang-utang-na-loob. At kung, sa pagkaalam Niyang wala kang utang na loob, ay tatanggapin ka Niya, ngunit sa pagkaalam Niyang mapagpasalamat ako ay hindi Niya ako tatanggapin, Siya’y kumikilos nang walang pag-iisip ayon sa sarili mong pahayag at hindi makatwiran. Kaya, Simon, hindi mo nalalamang ikaw ay lingkod ng kasamaan.</q> Sumagot si Simon: <q>Kung gayon, saan nagmula ang kasamaan? Sabihin mo sa amin.</q> Sinabi ni Pedro: <q>Yamang ngayong araw ikaw ang unang lumabas at ipinahayag mong hindi ka na makikinig sa akin bilang isang lumalapastangan, bumalik ka bukas kung tunay mong nais matuto, at ipaliliwanag ko sa iyo ang bagay na ito; pahihintulutan kitang itanong ang anumang nais mo nang walang pagtatalo.</q> Sinabi ni Simon: <q>Gagawin ko ang anumang tila mabuti sa akin.</q> Pagkasabi nito, umalis siya. Ngunit wala ni isa sa mga pumasok na kasama niya ang lumabas na kasama niya. Sa halip, nagpatirapa sila sa paanan ni Pedro at nakiusap na patawarin sila sa pagkadala kay Simon at tanggapin sila matapos magsisi. Tinanggap ni Pedro ang mga nagsisi at ang nalalabing karamihan, ipinatong ang kanyang mga kamay sa kanila, nanalangin, at pinagaling ang mga maysakit sa kanila. Pagkatapos ay pinaalis niya sila at hinimok na bumalik nang maaga pagsikat ng araw. Pagkasabi nito, pumasok siya kasama ng kanyang malalapit na kaibigan at gumawa ng karaniwang paghahanda upang agad magpahinga, sapagkat gabi na.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

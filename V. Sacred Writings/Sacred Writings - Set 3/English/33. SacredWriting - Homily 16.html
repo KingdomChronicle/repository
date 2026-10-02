@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 16</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Simon Wishes to Discuss with Peter the Unity of God</option><option value="1">Chapter II. The Same Subject Continued</option><option value="2">Chapter III. The Mode of the Discussion</option><option value="3">Chapter IV. The Prejudices of Faustus Rather on the Side of Simon Than on that of Peter</option><option value="4">Chapter V. Peter Commences the Discussion</option><option value="5">Chapter VI. Simon Appeals to the Old Testament to Prove that There are Many Gods</option><option value="6">Chapter VII. Peter Appeals to the Old Testament to Prove the Unity of God</option><option value="7">Chapter VIII. Simon and Peter Continue the Discussion</option><option value="8">Chapter IX. Simon Tries to Show that the Scriptures Contradict Themselves</option><option value="9">Chapter X. Peter's Explanation of the Apparent Contradictions of Scripture</option><option value="10">Chapter XI. Genesis 1:26 appealed to by Simon</option><option value="11">Chapter XII. Peter's Explanation of the Passage</option><option value="12">Chapter XIII. The Contradictions of the Scriptures Intended to Try Those Who Read Them</option><option value="13">Chapter XIV. Other Beings Called Gods</option><option value="14">Chapter XV. Christ Not God, But the Son of God</option><option value="15">Chapter XVI. The Unbegotten and the Begotten Necessarily Different from Each Other</option><option value="16">Chapter XVII. The Nature of God</option><option value="17">Chapter XVIII. The Name of God</option><option value="18">Chapter XIX. The Shape of God in Man</option><option value="19">Chapter XX. The Character of God</option><option value="20">Chapter XXI. Simon Promises to Appeal to the Teaching of Christ; Peter Dismisses the Multitudes</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Simon Wishes to Discuss with Peter the Unity of God</h3><p>At break of day Peter went out, and reaching the place where he was wont to discourse, he saw a great multitude assembled. At the very time when he was going to discourse, one of his deacons entered, and said: <q>Simon has come from Antioch, starting as soon as it was evening, having learned that you promised to speak on the unity of God; and he is ready, along with Athenodorus the Epicurean, to come to hear your speech, in order that he may publicly oppose all the arguments ever adduced by you for the unity of God.</q> Just as the deacon said this, lo! Simon himself entered, accompanied by Athenodorus and some other friends. And before Peter spoke at all, he took the first word, and said:—</p><h3>Chapter II. The Same Subject Continued</h3><p><q>I heard that you promised yesterday to Faustus to prove this day, giving out your arguments in regular order, and beginning with Him who is Lord of the universe, that we ought to say that He alone is God, and that we ought neither to say nor to think that there are other gods, because he that acts contrary to this will be punished eternally. But, above all, I am truly amazed at your madness in hoping to convert a wise man, and one far advanced in years, to your state of mind. But you will not succeed in your designs; and all the more that I am present, and can thoroughly refute your false arguments. For perhaps, if I had not been present, the wise old man might have been led astray, because he has no critical acquaintance with the books publicly believed in amongst the Jews. At present I shall omit much, in order that I may the more speedily refute that which you have promised to prove. Wherefore begin to speak what you promised to say before us, who know the Scriptures. But if, fearing our refutation, you are unwilling to fulfil your promise in our presence, this of itself will be sufficient proof that you are wrong, because you did venture to speak in the presence of those who know the Scriptures. And now, why should I wait till you tell me, when I have a most satisfactory witness of your promise in the old man who is present?</q> And, saying this, he looked to my father, and said: <q>Tell me, most excellent of all men, is not this the man who promised to prove to you today that God is one, and that we ought not to say or think that there is any other god, and that he who acts contrary to this will be punished eternally, as committing the most heinous sin? Do you, then, refuse to reply to me?</q></p><h3>Chapter III. The Mode of the Discussion</h3><p>And our father said: <q>Well might you have demanded testimony from me, Simon, if Peter had first denied <em>that he had made the promise</em>. But now I shall feel no shame in saying what I am bound to say. I think that you wish to enter on the discussion inflamed with anger. Now this is a state of mind in which it is improper for you to speak and for us to listen to you; for we are no longer being helped on to the truth. but we are watching the progress of a contest. And now, having learned from Hellenic culture how those who seek <em>the truth</em> ought to act, I shall remind you. Let each of you give an exposition of his own opinion, and let the right of speech pass from the one to the other. For if Peter alone should wish to expound his thought, but you should be silent as to yours, it is possible that some argument adduced by you might crush both your and his opinion; and both of you, though defeated by this argument, would not appear defeated, but only the one who expounded his opinion; while he who did not expound his, though equally defeated, would not appear defeated, but would even be thought to have conquered.</q> And Simon answered: <q>I will do as you say; but I am afraid lest you do not turn out a truth-loving judge, as you have been already prejudiced by his arguments.</q></p><h3>Chapter IV. The Prejudices of Faustus Rather on the Side of Simon Than on that of Peter</h3><p>Our father answered: <q>Do not compel me to agree with you without any exercise of my judgment in order that I may seem to be a truth-loving judge; but if you wish me to tell you the truth, my prepossessions are rather the side of your opinions.</q> And Simon said: <q>How is this the case, when you do not know what my opinions are?</q> And our father said: <q>It is easy to know this, and I will tell you how. You promised that you would convict Peter of error in maintaining the unity of God; but if one undertakes to convict of error him who maintains the unity of God, it is perfectly plain that he, as being in the right, does not hold the same opinion. For if he holds the same opinion as the man who is thoroughly in error, then he himself is in error; but if he gives his proofs holding opposite opinions, then he is in the right. Not well then do you assert that he who maintains the unity of God is wrong, unless you believe that there are many gods. Now I maintain that there are many gods. Holding, therefore, the same opinion as you before the discussion, I am prepossessed rather in your favour. For this reason you ought to have no anxiety in regard to me, but Peter ought, for I still hold opinions contrary to his. And so after your discussion I hope that, as a truth-loving judge, who has stripped himself of his prepossessions, I shall agree to that doctrine which gains the victor.</q> When my father said this, a murmur of applause burst insensibly from the multitudes because my father had thus spoken.</p><h3>Chapter V. Peter Commences the Discussion</h3><p>Peter then said: <q>I am ready to do as the umpire of our discussion has said; and straight-way without any delay I shall set forth my opinion in regard to God. I then assert that there is one God who made the heavens and the earth, and all things that are in them. And it is not right to say or to think that there is any other.</q> And Simon said: <q>But I maintain that the Scriptures believed in amongst the Jews say that there are many gods, and that God is not angry at this, because He has Himself spoken of many gods in His Scriptures.</q></p><h3>Chapter VI. Simon Appeals to the Old Testament to Prove that There are Many Gods</h3><p><q>For instance, in the very first words of the law, He evidently speaks of them as being like even unto Himself. For thus it is written, that, when the first man received a commandment from God to eat of every tree that was in the garden, but not to eat of the tree of the knowledge of good and evil, the serpent having persuaded them by means of the woman, through the promise that they would become gods, made them look up; and then, when they had thus looked up, God said, 'Behold, Adam has become as one of us.' When, then, the serpent said, 'You shall be as gods,' he plainly speaks in the belief that gods exist; all the more as God also added His testimony, saying, 'Behold, Adam has become as one of us.' The serpent, then, who said that there are many gods, did not speak falsely. Again, the scripture, 'You shall not revile the gods, nor curse the rulers of your people,' points out many gods whom it does not wish even to be cursed. But it is also somewhere else written, 'Did another god dare to enter and take him a nation from the midst of another nation, as did I the Lord God?' When He says, 'Did another God dare?' He speaks on the supposition that other gods exist. And elsewhere: 'Let the gods that have not made the heavens and the earth perish;' as if those who had made them were not to perish. And in another place, when it says, 'Take heed to yourself lest you go and serve other gods whom your fathers knew not,' it speaks as if other gods existed whom they were not to follow. And again: 'The names of other gods shall not ascend upon your lips.' Here it mentions many gods whose names it does not wish to be uttered. And again it is written, 'Your God is the Lord, He is God of gods.' And again: 'Who is like unto You, O Lord, among the Gods?' And again: 'God is Lord of gods.' And again: 'God stood in the assembly of gods: He judges among the gods.' Wherefore I wonder how, when there are so many passages in writing which testify that there are many gods, you have asserted that we ought neither to say nor to think that there are many. Finally, if you have anything to say against what has been spoken so distinctly, say it in the presence of all.</q></p><h3>Chapter VII. Peter Appeals to the Old Testament to Prove the Unity of God</h3><p>And Peter said: <q>I shall reply briefly to what you have said. The law, which frequently speaks of gods, itself says to the Jewish multitude, 'Behold, the heaven of heavens is the Lord's your God, with all that therein is;' implying that, even if there are gods, they are under Him, that is, under the God of the Jews. And again: 'The Lord your God, He is God in heaven above, and upon the earth beneath, and there is none other except Him.' And somewhere else the Scripture says to the Jewish multitude, 'The Lord your God is God of gods;' so that, even if there are gods, they are under the God of the Jews. And somewhere else the Scripture says in regard to Him, God, the great and true, who regards not persons, nor takes reward, He executes the judgment of the fatherless and widow.' The Scripture, in calling the God of the Jews great and true, and executing judgment, marked out the others as small, and not true. But also somewhere else the Scripture says, 'As I live, says the Lord, there is no other God but me. I am the first, I am after this; except me there is no God.' And again: 'You shall fear the Lord your God, and Him only shall you serve.' And again: 'Hear, O Israel, the Lord your God is one Lord.' And many passages besides seal with an oath that God is one, and except Him there is no God. Whence I wonder how, when so many passages testify that there is one God, you say that there are many.</q></p><h3>Chapter VIII. Simon and Peter Continue the Discussion</h3><p>And Simon said: <q>My original stipulation with you was that I should prove from the Scriptures that you were wrong in maintaining that we ought not to speak of many gods.</q> Accordingly I adduced many written passages to show that the divine Scriptures themselves speak of many gods. And Peter said: <q>Those very Scriptures which speak of many gods, also exhorted us, saying, 'The names of other gods shall not ascend upon your lips.' Thus, Simon, I did not speak contrary to what was written.</q> And Simon said: <q>Do you, Peter, listen to what I have to say. You seem to me to sin in speaking against them, when the Scripture says, 'You shall not revile <em>the gods</em>, nor curse the rulers of your people.'</q> And Peter said: <q>I am not sinning, Simon, in pointing out their destruction according to the Scriptures; for thus it is written: 'Let the gods who did not make the heavens and the earth perish.' And He said thus, not as though some had made the heavens and were not to perish, as you interpreted the passage. For it is plainly declared that He who made them is one in the very first part of Scripture: 'In the beginning God created the heaven and the earth. And it did not say, 'the gods.' And somewhere else it says, 'And the firmament shows His handiwork.' And in another place it is written, 'The heavens themselves shall perish, but You shall remain forever.'</q></p><h3>Chapter IX. Simon Tries to Show that the Scriptures Contradict Themselves</h3><p>And Simon said: <q>I adduced clear passages from the Scriptures to prove that there are many gods; and you, in reply, brought forward as many or more from the same Scriptures, showing that God is one, and He the God of the Jews. And when I said that we ought not to revile gods, you proceeded to show that He who created is one, because those who did not create will perish. And in reply to my assertion that we ought to maintain that there are gods, because the Scriptures also say so, you showed that we ought not to utter their names, because the same Scripture tells us not to utter the names of other gods. Since, then, these very Scriptures say at one time that there are many gods, and at another that there is only one; and sometimes that they ought not to be reviled, and at other times that they ought; what conclusion ought we to come to in consequence of this, but that the Scriptures themselves lead us astray?</q></p><h3>Chapter X. Peter's Explanation of the Apparent Contradictions of Scripture</h3><p>And Peter said: <q>They do not lead astray, but convict and bring to light the evil disposition against God which lurks like a serpent in each one. For the Scriptures lie before each one like many divers types. Each one, then, has his own disposition like wax, and examining the Scriptures and finding everything in them, he moulds his idea of God according to his wish, laying upon them, as I said, his own disposition, which is like wax. Since, then, each one finds in the Scriptures whatever opinion he wishes to have in regard to God, for this reason he, <em>Simon</em>, moulds from them the forms of many gods, while we moulded the form of Him who truly exists, coming to the knowledge of the true type from our own shape. For assuredly the soul within us is clothed with His image for immortality. If I abandon the parent of this soul, it also will abandon me to just judgment, making known the injustice by the very act of daring; and as coming from one who is just, it will justly abandon me; and so, as far as the soul is concerned, I shall, after punishment, be destroyed, having abandoned the help that comes from it. But if there is another god, first let him put on another form, another shape, in order that by the new shape of the body I may recognise the new god. But if he should change the shape, does he thereby change the substance of the soul? But if he should change it also, then I am no longer myself, having become another both in shape and in substance. Let him, therefore, create others, if there is another. But there is not. For if there had been, he would have created. But since he has not created, then let him, as nonexistent, leave him who is really existent. For he is nobody, except only in the opinion of Simon. I do not accept of any other god but Him alone who created me.</q></p><h3>Chapter XI. Genesis 1:26 appealed to by Simon</h3><p>And Simon said: <q>Since I see that you frequently speak of the God who created you, learn from me how you are impious even to him. For there are evidently two who created, as the Scripture says: 'And God said, Let us make man in our image, after our likeness.' Now 'let us make,' implies two or more; certainly not one only.</q></p><h3>Chapter XII. Peter's Explanation of the Passage</h3><p>And Peter answered: <q>One is He who said to His Wisdom, 'Let us make a man.' But His Wisdom was that with which He Himself always rejoiced as with His own spirit. It is united as soul to God, but it is extended by Him, as hand, fashioning the universe. On this account, also, one man was made, and from him went forth also the female. And being a unity generically, it is yet a duality, for by expansion and contraction the unity is thought to be a duality. So that I act rightly in offering up all the honour to one God as to parents.</q> And Simon said: <q>What then? Even if the Scriptures say that there are other gods, will you not accept the opinion?</q></p><h3>Chapter XIII. The Contradictions of the Scriptures Intended to Try Those Who Read Them</h3><p>And Peter answered: <q>If the Scriptures or prophets speak of gods, they do so to try those who hear. For thus it is written: 'If there arise among you a prophet, giving signs and wonders, and that sign and wonder shall then come to pass, and he say to you, Let us go after and worship other gods which your fathers have not known, ye shall not hearken to the words of that prophet; let your hands be among the first to stone him. For he has tried to turn you from the Lord your God. But if you say in your heart, How did he do that sign or wonder? You shall surely know that he who tried you, tried you to see if you fear the Lord your God.' The words 'he who tried you, tried you,' have reference to the earliest times; but it appears to be otherwise after the removal to Babylon. For God, who knows all things, would not, as can be proved by many arguments, try in order that He Himself might know, for He fore-knows all things. But, if you like, let us discuss this point, and I shall show that God foreknows. But it has been proved that the opinion is false that He does not know, and that this was written to try us. Thus we, Simon, can be led astray neither by the Scriptures nor by any one else; nor are we deceived into the admission of many gods, nor do we agree to any statement that is made against God.</q></p><h3>Chapter XIV. Other Beings Called Gods</h3><p><q>For we ourselves also know that angels are called gods by the Scriptures,—as, for instance, He who spoke at the bush, and wrestled with Jacob,—and the name is likewise applied to Him who is born Emmanuel, and who is called the mighty God. Yea, even Moses became a god to Pharaoh, though in reality he was a man. The same is the case also with the idols of the Gentiles. But we have but one God, one who made creation and arranged the universe, whose Son is the Christ. Obeying Christ, we learn to know what is false from the Scriptures. Moreover, being furnished by our ancestors with the truths of the Scriptures, we know that there is only one who has made the heavens and the earth, the God of the Jews, and of all who choose to worship Him. Our fathers, with pious thought, setting down a fixed belief in Him as the true God, handed down this belief to us, that we may know that if anything is said against God, it is a falsehood. I shall add this remark over and above what I need say: If the case be not as I have said, then may I, and all who love the truth, incur danger in regard to the praise of the God who made us.</q></p><h3>Chapter XV. Christ Not God, But the Son of God</h3><p>When Simon heard this, he said: <q>Since you say that we ought not to believe even the prophet that gives signs and wonders if he say that there is another god, and that you know that he even incurs the penalty of death, therefore your teacher also was with reason cut off for having given signs and wonders.</q> And Peter answered: <q>Our Lord neither asserted that there were gods except the Creator of all, nor did He proclaim Himself to be God, but He with reason pronounced blessed him who called Him the Son of that God who has arranged the universe.</q> And Simon answered: <q>Does it not seem to you, then, that he who comes from God is God?</q> And Peter said: <q>Tell us how this is possible; for we cannot affirm this, because we did not hear it from Him.</q></p><h3>Chapter XVI. The Unbegotten and the Begotten Necessarily Different from Each Other</h3><p><q>In addition to this, it is the peculiarity of the Father not to have been begotten, but of the Son to have been begotten; but what is begotten cannot be compared with that which is unbegotten or self-begotten.</q> And Simon said: <q>Is it not the same on account of its origin?</q> And Peter said: <q>He who is not the same in all respects as some one, cannot have all the same appellations applied to him as that person.</q> And Simon said: <q>This is to assert, not to prove.</q> And Peter said: <q>Why, do you not see that if the one happens to be self-begotten or unbegotten, they cannot be called the same; nor can it be asserted of him who has been begotten that he is of the same substance as he is who has begotten him? Learn this also: The bodies of men have immortal souls, which have been clothed with the breath of God; and having come forth from God, they are of the same substance, but they are not gods. But if they are gods, then in this way the souls of all men, both those who have died, and those who are alive, and those who shall come into being, are gods. But if in a spirit of controversy you maintain that these also are gods, what great matter is it, then, for Christ to be called God? For He has only what all have.</q></p><h3>Chapter XVII. The Nature of God</h3><p><q>We call Him God whose peculiar attributes cannot belong to the nature of any other; for, as He is called the Unbounded because He is boundless on every side, it must of necessity be the case that it is no other one's peculiar attribute to be called unbounded, as another cannot in like manner be boundless. But if any one says that it is possible, he is wrong; for two things boundless on every side cannot co-exist, for the one is bounded by the other. Thus it is in the nature of things that the unbegotten is one. But if he possesses a figure, even in this case the figure is one and incomparable. Wherefore He is called the Most High, because, being higher than all, He has the universe subject to Him.</q></p><h3>Chapter XVIII. The Name of God</h3><p>And Simon said: <q>Is this word 'God' His ineffable name, which all use, because you maintain so strongly in regard to a name that it cannot be given to another?</q> And Peter said: <q>I know that this is not His ineffable name, but one which is given by agreement among men; but if you give it to another, you will also assign to this other that which is not used; and that, too, deliberately. The name which is used is the forerunner of that which is not used. In this way insolence is attributed even to that which has not yet been spoken, just as honour paid to that which is known is handed on to that which has not yet been known.</q></p><h3>Chapter XIX. The Shape of God in Man</h3><p>And Simon said: <q>I should like to know, Peter, if you really believe that the shape of man has been moulded after the shape of God.</q> And Peter said: <q>I am really quite certain, Simon, that this is the case.</q> And Simon said: <q>How can death dissolve the body, impressed as it has thus been with the greatest seal?</q> And Peter said: <q>It is the shape of the just God. When, then, the body begins to act unjustly, the form which is in it takes to flight, and thus the body is dissolved, by the shape disappearing, in order that an unjust body may not have the shape of the just God. The dissolution, however, does not take place in regard to the seal, but in regard to the sealed body. But that which is sealed is not dissolved without Him who sealed it. And thus it is not permitted to die without judgment.</q> And Simon said: <q>What necessity was there to give the shape of such a being to man, who was raised from the earth?</q> And Peter said: <q>This was done because of the love of God, who made man. For while, as far as substance is concerned, all things are superior to the flesh of man,—I mean the ether, the sun, the moon, the stars, the air, the water, the fire—in a word, all the other things which have been made for the service of man,—yet, though superior in substance, they willingly endure to serve the inferior in substance, because of the shape of the superior. For as they who honour the clay image of a king have paid honour to the king himself, whose shape the clay happens to have, so the whole creation with joy serves man, who is made from earth, looking to the honour thus paid to God.</q></p><h3>Chapter XX. The Character of God</h3><p><q>Behold, then, the character of that God to whom you, Simon, wish to persuade us to be ungrateful, and the earth continues to bear you, perhaps wishing to see who will venture to entertain similar opinions to yours. For you were the first to dare what no other dared: you were the first to utter what we first heard. We first and alone have seen the boundless long-suffering of God in bearing with such great impiety as yours, and that God no other than the Creator of the world, against whom you have dared to act impiously. And yet openings of the earth took not place, and fire was not sent down from heaven and went not forth to burn up men, and rain was not poured out, and a multitude of beasts was not sent from the thickets, and upon us ourselves the destructive wrath of God did not begin to show itself, on account of one who sinned the sin, as it were, of spiritual adultery, which is worse than the carnal. For it is not God the Creator of heaven and earth that in former times punished sins, since now, when He is blasphemed in the highest degree, He would inflict the severest punishment. But, on the contrary, He is long-suffering, calls to repentance, having the arrows which end in the destruction of the impious laid up in His treasures, which He will discharge like living animals when He shall sit down to give judgment to those that are His. Wherefore let us fear the just God, whose shape the body of man bears for honour.</q></p><h3>Chapter XXI. Simon Promises to Appeal to the Teaching of Christ; Peter Dismisses the Multitudes</h3><p>When Peter said this, Simon answered: <q>Since I see you skilfully hinting that what is written in the books against the framer <em>of the world</em> does not happen to be true, tomorrow I shall show, from the discourses of your teacher, that he asserted that the framer <em>of the world</em> was not the highest God.</q> And when Simon said this, he went out. But Peter said to the assembled multitudes: <q>If Simon can do no other injury to us in regard to God, he at least prevents you from listening to the words that can purify the soul.</q> On Peter saying this, much whispering arose amongst the crowds, saying, <q>What necessity is there for permitting him to come in here, and utter his blasphemies against God?</q> And Peter heard, and said, <q>Would that the doctrines against God which are intended to try men went no further than Simon! For there will be, as the Lord said, false apostles, false prophets, heresies, desires for supremacy, who, as I conjecture, finding their beginning in Simon, who blasphemes God, will work together in the assertion of the same opinions against God as those of Simon.</q> And saying this with tears, he summoned the multitudes to him by his hand; and when they came, he laid his hands upon them and prayed, and then dismissed them, telling them to come at an earlier hour next day. Saying this, and groaning, he entered and went to sleep, without taking food.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Nais ni Simon na Talakayin kay Pedro ang Kaisahan ng Diyos</h3><p>Pagsikat ng araw, lumabas si Pedro at nagtungo sa lugar na karaniwan niyang pinagtuturuan; nakita niyang nagkatipon ang napakaraming tao. Nang magsisimula na sana siyang magsalita, pumasok ang isa sa kanyang mga diakono at sinabi: <q>Dumating si Simon mula sa Antioquia, umalis siya roon pagsapit pa lamang ng gabi nang mabalitaan niyang ipinangako mong magsalita tungkol sa kaisahan ng Diyos; at handa siyang dumalo kasama si Athenodorus na Epicureo upang pakinggan ang iyong talumpati at hayagang salungatin ang lahat ng pangangatwirang inilahad mo tungkol sa kaisahan ng Diyos.</q> Kasabay ng pagsasalita ng diakono, narito, pumasok mismo si Simon na kasama si Athenodorus at ilan pang mga kaibigan. At bago pa man magsalita si Pedro, siya na ang unang nagsalita at sinabi:—</p><h3>Kabanata II. Ipinagpatuloy ang Gayunding Paksa</h3><p><q>Nabalitaan kong ipinangako mo kahapon kay Faustus na ngayong araw ay patutunayan mo, sa maayos na pagkakasunod ng iyong mga pangangatwiran at nagsisimula sa Kanya na Panginoon ng sansinukob, na Siya lamang ang dapat nating tawaging Diyos at na hindi tayo dapat magsabi ni mag-isip na may iba pang mga diyos, sapagkat ang kumikilos nang salungat dito ay parurusahan magpakailanman. Ngunit higit sa lahat, tunay akong namamangha sa iyong kahibangan na umasa kang mababago mo ang isip ng isang marunong at matanda nang lalaki upang umayon sa iyo. Ngunit hindi ka magtatagumpay sa iyong balak, lalo na ngayong narito ako at lubusan kong mapabubulaanan ang iyong huwad na mga pangangatwiran. Sapagkat marahil, kung wala ako rito, maaaring mailigaw ang marunong na matanda dahil wala siyang mapanuring kaalaman sa mga aklat na hayagang pinaniniwalaan ng mga Judio. Sa ngayon ay palalampasin ko ang marami upang mas mabilis kong mapabulaanan ang ipinangako mong patutunayan. Kaya magsimula kang magsalita ng ipinangako mong sabihin sa harap naming nakaaalam ng mga Kasulatan. Ngunit kung dahil sa takot na mapabulaanan namin ay ayaw mong tuparin ang iyong pangako sa aming harapan, iyon mismo ay sapat nang patunay na mali ka, sapagkat nangahas kang magsalita noon sa harap ng mga nakaaalam ng mga Kasulatan. At ngayon, bakit pa ako maghihintay na sabihin mo sa akin, samantalang mayroon akong napakahusay na saksi sa iyong pangako—ang matandang naririto?</q> Pagkasabi nito, tumingin siya sa aking ama at sinabi: <q>Sabihin mo sa akin, pinakamarangal sa mga tao, hindi ba ito ang taong nangakong patutunayan sa iyo ngayong araw na iisa ang Diyos, na hindi tayo dapat magsabi ni mag-isip na may iba pang diyos, at na ang kumikilos nang salungat dito ay parurusahan magpakailanman sapagkat gumagawa siya ng pinakamasamang kasalanan? Tatanggi ka bang sumagot sa akin?</q></p><h3>Kabanata III. Paraan ng Talakayan</h3><p>At sinabi ng aming ama: <q>May katuwiran sana ang paghingi mo sa akin ng patotoo, Simon, kung itinanggi muna ni Pedro <em>na ginawa niya ang pangako</em>. Ngunit ngayon ay hindi ako mahihiyang sabihin ang nararapat kong sabihin. Sa palagay ko’y nais mong pumasok sa talakayan na nag-aalab sa galit. Hindi angkop na magsalita ka sa gayong kalagayan ng isip ni na makinig kami sa iyo; sapagkat hindi na tayo tinutulungan patungo sa katotohanan, kundi pinanonood na lamang natin ang takbo ng isang paligsahan. Kaya yamang natutuhan ko mula sa kulturang Griyego kung paano nararapat kumilos ang mga naghahanap ng <em>katotohanan</em>, ipaaalala ko ito sa inyo. Ilahad ng bawat isa sa inyo ang sarili niyang palagay, at halinhinan kayong magsalita. Sapagkat kung si Pedro lamang ang maglalahad ng kanyang kaisipan at mananahimik ka tungkol sa iyo, maaaring may isang pangangatwirang ilahad mo na gigiba kapwa sa palagay mo at sa kanya; at bagaman kapwa kayo nadaig ng pangangatwirang iyon, hindi kayong dalawa ang lilitaw na natalo kundi ang naglahad lamang ng kanyang palagay. Samantalang ang hindi naglahad ng sarili niyang palagay, bagaman nadaig din, ay hindi lilitaw na talunan at maaari pang isipin na nagwagi.</q> Sumagot si Simon: <q>Gagawin ko ang sinabi mo; ngunit natatakot akong baka hindi ka maging hukom na umiibig sa katotohanan, yamang nahikayat ka na ng kanyang mga pangangatwiran.</q></p><h3>Kabanata IV. Ang mga Paunang Paniniwala ni Faustus ay Higit na Nasa Panig ni Simon kaysa kay Pedro</h3><p>Sumagot ang aming ama: <q>Huwag mo akong piliting sumang-ayon sa iyo nang hindi ginagamit ang sarili kong paghatol upang lamang magmukha akong hukom na umiibig sa katotohanan. Ngunit kung nais mong sabihin ko ang totoo, ang aking mga paunang paniniwala ay higit na nasa panig ng iyong mga palagay.</q> Sinabi ni Simon: <q>Paano mangyayari iyon kung hindi mo alam ang mga palagay ko?</q> Sinabi ng aming ama: <q>Madaling malaman iyon, at sasabihin ko kung paano. Nangako kang patutunayang mali si Pedro sa paninindigang iisa ang Diyos; ngunit kung may nagsisikap patunayang mali ang naninindigan sa kaisahan ng Diyos, malinaw na siya, bilang naniniwalang tama ang sarili, ay hindi kapareho ng palagay ng taong itinuturing niyang mali. Sapagkat kung kapareho niya ang palagay ng lubusang nagkakamali, siya man ay nagkakamali; ngunit kung nagbibigay siya ng mga patunay habang may salungat na palagay, itinuturing niyang tama ang sarili. Kaya hindi mo wastong masasabi na mali ang naninindigan sa kaisahan ng Diyos maliban kung naniniwala kang maraming diyos. Ako naman ay naninindigang maraming diyos. Kaya dahil kapareho ko na ang iyong palagay bago pa ang talakayan, mas nakahilig ang aking paunang paniniwala sa iyo. Dahil dito, wala kang dapat ipag-alala tungkol sa akin; si Pedro ang dapat mag-alala, sapagkat hanggang ngayon ay salungat pa rin sa kanya ang aking mga palagay. Kaya umaasa akong pagkatapos ng inyong talakayan, bilang hukom na umiibig sa katotohanan at humubad na sa sariling pagkiling, sasang-ayon ako sa aral na magtatagumpay.</q> Nang sabihin ito ng aking ama, kusang sumiklab mula sa karamihan ang mahinang ugong ng pagsang-ayon dahil sa kanyang sinabi.</p><h3>Kabanata V. Sinimulan ni Pedro ang Talakayan</h3><p>Pagkatapos ay sinabi ni Pedro: <q>Handa akong gawin ang sinabi ng tagahatol ng ating talakayan; at agad, nang walang pagkaantala, ilalahad ko ang aking palagay tungkol sa Diyos. Pinagtitibay ko na iisa ang Diyos na gumawa ng langit at lupa at ng lahat ng bagay na naroroon. At hindi tama na magsabi o mag-isip na may iba pa.</q> Sinabi ni Simon: <q>Ngunit pinaninindigan kong sinasabi ng mga Kasulatang pinaniniwalaan ng mga Judio na maraming diyos, at hindi nagagalit ang Diyos dahil dito, sapagkat Siya mismo ay nagsalita tungkol sa maraming diyos sa Kanyang mga Kasulatan.</q></p><h3>Kabanata VI. Umapela si Simon sa Lumang Tipan upang Patunayang Maraming Diyos</h3><p><q>Halimbawa, sa mismong unang mga salita ng kautusan ay malinaw Niyang sinasalita ang tungkol sa kanila na para bang kapantay pa Niya. Sapagkat nasusulat na nang tumanggap ang unang tao ng utos mula sa Diyos na kumain mula sa bawat punongkahoy sa halamanan ngunit huwag kumain mula sa punongkahoy ng pagkakilala sa mabuti at masama, hinikayat sila ng ahas sa pamamagitan ng babae, na nangangakong magiging mga diyos sila, at pinatingin sila paitaas; pagkatapos, nang tumingin sila nang gayon, sinabi ng Diyos, ‘Narito, si Adan ay naging gaya ng isa sa atin.’ Kaya nang sabihin ng ahas, ‘Kayo’y magiging gaya ng mga diyos,’ malinaw na nagsalita ito sa paniniwalang may mga diyos; lalo na nang idagdag pa ng Diyos ang Kanyang patotoo, na sinasabi, ‘Narito, si Adan ay naging gaya ng isa sa atin.’ Kung gayon, ang ahas na nagsabing maraming diyos ay hindi nagsalita nang huwad. Muli, ang kasulatang, ‘Huwag ninyong lapastanganin ang mga diyos ni sumpain ang mga pinuno ng inyong bayan,’ ay tumutukoy sa maraming diyos na ayaw nitong sumpain man lamang. Nasusulat din sa ibang lugar, ‘May iba bang diyos na nangahas pumasok at kumuha para sa sarili ng isang bansa mula sa gitna ng ibang bansa, gaya ng ginawa Ko, ang Panginoong Diyos?’ Sa pagsasabing, ‘May iba bang Diyos na nangahas?’ ipinapalagay Niyang may iba pang mga diyos. At sa ibang dako: ‘Mapuksa ang mga diyos na hindi gumawa ng langit at lupa’—na para bang hindi mapupuksa yaong mga gumawa ng mga iyon. At sa isa pang lugar, nang sabihin, ‘Mag-ingat ka baka humayo ka at maglingkod sa ibang mga diyos na hindi nakilala ng iyong mga ninuno,’ nagsasalita ito na para bang may ibang mga diyos na hindi nila dapat sundin. At muli: ‘Huwag mabigkas sa inyong mga labi ang mga pangalan ng ibang mga diyos.’ Dito ay binabanggit ang maraming diyos na ayaw nitong banggitin ang mga pangalan. At muli ay nasusulat, ‘Ang iyong Diyos ang Panginoon, Siya ang Diyos ng mga diyos.’ At muli: ‘Sino ang gaya Mo, O Panginoon, sa gitna ng mga Diyos?’ At muli: ‘Ang Diyos ay Panginoon ng mga diyos.’ At muli: ‘Tumayo ang Diyos sa kapulungan ng mga diyos; humahatol Siya sa gitna ng mga diyos.’ Kaya namamangha ako kung paanong, samantalang napakaraming nakasulat na talata ang nagpapatotoong maraming diyos, pinaninindigan mong hindi tayo dapat magsabi ni mag-isip na marami sila. Sa wakas, kung mayroon kang masasabi laban sa napakalinaw na mga sinabi, sabihin mo sa harap ng lahat.</q></p><h3>Kabanata VII. Umapela si Pedro sa Lumang Tipan upang Patunayang Iisa ang Diyos</h3><p>At sinabi ni Pedro: <q>Maikli kong sasagutin ang iyong sinabi. Ang kautusan na madalas magsalita tungkol sa mga diyos ay siya ring nagsasabi sa karamihan ng mga Judio, ‘Narito, sa Panginoon ninyong Diyos ang langit ng mga langit, kasama ng lahat ng naroroon’; ipinahihiwatig nito na kahit may mga diyos, nasa ilalim sila Niya—ibig sabihin, nasa ilalim ng Diyos ng mga Judio. At muli: ‘Ang Panginoon ninyong Diyos, Siya ang Diyos sa langit sa itaas at sa lupa sa ibaba, at wala nang iba maliban sa Kanya.’ At sa ibang lugar ay sinasabi ng Kasulatan sa karamihan ng mga Judio, ‘Ang Panginoon ninyong Diyos ang Diyos ng mga diyos’; kaya kahit may mga diyos, nasa ilalim sila ng Diyos ng mga Judio. At sa ibang lugar ay sinasabi ng Kasulatan tungkol sa Kanya, ‘Ang Diyos, ang dakila at tunay, na hindi nagtatangi ng tao ni tumatanggap ng gantimpala, ay naghahatol para sa ulila at balo.’ Sa pagtawag sa Diyos ng mga Judio na dakila at tunay at tagapaghukom, itinangi ng Kasulatan ang iba bilang maliliit at hindi tunay. Ngunit sa ibang lugar ay sinasabi rin ng Kasulatan, ‘Buhay Ako, sabi ng Panginoon, walang ibang Diyos maliban sa Akin. Ako ang una, Ako rin pagkatapos nito; maliban sa Akin ay walang Diyos.’ At muli: ‘Katakutan mo ang Panginoon mong Diyos, at Siya lamang ang iyong paglingkuran.’ At muli: ‘Dinggin mo, O Israel, ang Panginoon mong Diyos ay iisang Panginoon.’ At marami pang ibang talata ang para bang nanunumpang iisa ang Diyos at wala nang Diyos maliban sa Kanya. Kaya namamangha ako kung paanong, samantalang napakaraming talata ang nagpapatotoong iisa ang Diyos, sinasabi mong marami sila.</q></p><h3>Kabanata VIII. Ipinagpatuloy nina Simon at Pedro ang Talakayan</h3><p>At sinabi ni Simon: <q>Ang una kong itinakda sa iyo ay patunayan mula sa mga Kasulatan na mali ka sa paninindigang hindi tayo dapat magsalita tungkol sa maraming diyos.</q> Kaya naglahad ako ng maraming nakasulat na talata upang ipakitang ang banal na mga Kasulatan mismo ay nagsasalita tungkol sa maraming diyos. At sinabi ni Pedro: <q>Yaon mismong mga Kasulatang nagsasalita tungkol sa maraming diyos ang nagpaalala rin sa atin, na sinasabi, ‘Huwag mabigkas sa inyong mga labi ang mga pangalan ng ibang mga diyos.’ Kaya, Simon, hindi ako nagsalita laban sa nasusulat.</q> Sinabi ni Simon: <q>Makinig ka, Pedro, sa sasabihin ko. Para sa akin ay nagkakasala ka sa pagsasalita laban sa kanila, samantalang sinasabi ng Kasulatan, ‘Huwag ninyong lapastanganin <em>ang mga diyos</em>, ni sumpain ang mga pinuno ng inyong bayan.’</q> Sinabi ni Pedro: <q>Hindi ako nagkakasala, Simon, sa pagtukoy sa kanilang pagkapuksa ayon sa mga Kasulatan; sapagkat ganito ang nasusulat: ‘Mapuksa ang mga diyos na hindi gumawa ng langit at lupa.’ At sinabi Niya ito hindi na para bang may ilang gumawa ng langit at hindi mapupuksa, gaya ng pakahulugan mo sa talata. Sapagkat malinaw na ipinahahayag na iisa ang gumawa sa mismong unang bahagi ng Kasulatan: ‘Sa pasimula nilikha ng Diyos ang langit at lupa.’ Hindi nito sinabi, ‘ng mga diyos.’ At sa ibang lugar ay sinasabi, ‘Ipinahahayag ng kalawakan ang gawa ng Kanyang mga kamay.’ At sa isa pang lugar ay nasusulat, ‘Ang mga langit mismo ay mapapahamak, ngunit Ikaw ay mananatili magpakailanman.’</q></p><h3>Kabanata IX. Sinikap ni Simon na Ipakitang Nagkakasalungatan ang mga Kasulatan</h3><p>At sinabi ni Simon: <q>Naglahad ako mula sa mga Kasulatan ng malinaw na mga talata upang patunayang maraming diyos; at bilang sagot, nagharap ka ng kasingdami o higit pang talata mula rin sa mga Kasulatang iyon upang ipakitang iisa ang Diyos at Siya ang Diyos ng mga Judio. At nang sabihin kong hindi natin dapat lapastanganin ang mga diyos, ipinakita mong iisa ang Manlilikha sapagkat mapapahamak yaong mga hindi lumikha. At bilang tugon sa aking paninindigang dapat nating kilalaning may mga diyos dahil sinasabi rin ito ng mga Kasulatan, ipinakita mong hindi natin dapat bigkasin ang kanilang mga pangalan sapagkat sinasabi rin ng Kasulatan na huwag banggitin ang mga pangalan ng ibang mga diyos. Kung gayon, yamang ang mismong mga Kasulatang ito kung minsan ay nagsasabing maraming diyos at sa ibang pagkakataon ay iisa lamang; kung minsan ay sinasabing hindi sila dapat lapastanganin at sa ibang pagkakataon ay dapat silang lapastanganin, ano pa ang dapat nating ipasiya kundi na ang mga Kasulatan mismo ang nagliligaw sa atin?</q></p><h3>Kabanata X. Paliwanag ni Pedro sa mga Tila Pagkakasalungat ng Kasulatan</h3><p>At sinabi ni Pedro: <q>Hindi sila nagliligaw; sa halip ay hinahatulan at inilalantad nila ang masamang saloobing laban sa Diyos na nagkukubli na parang ahas sa bawat isa. Sapagkat nakalatag sa harap ng bawat tao ang mga Kasulatan na parang maraming magkakaibang hulma. Ang bawat isa naman ay may sariling disposisyong gaya ng pagkit; kaya sa pagsusuri sa mga Kasulatan at pagkakatagpo roon ng lahat ng bagay, hinuhubog niya ang kanyang palagay tungkol sa Diyos ayon sa sarili niyang pagnanais, na inilalapat sa mga iyon, gaya ng sinabi ko, ang sariling disposisyong tulad ng pagkit. Kaya yamang natatagpuan ng bawat isa sa mga Kasulatan ang anumang palagay na nais niyang taglayin tungkol sa Diyos, dahil dito, si <em>Simon</em> ay humuhubog mula sa mga iyon ng mga anyo ng maraming diyos, samantalang kami ay humuhubog ng anyo Niya na tunay na umiiral, sapagkat nakikilala namin ang tunay na hulma mula sa sarili naming anyo. Sapagkat tiyak na ang kaluluwang nasa loob natin ay binihisan ng Kanyang larawan para sa kawalang-kamatayan. Kung tatalikuran ko ang pinagmulan ng kaluluwang ito, tatalikuran din ako nito ayon sa matuwid na paghatol, na inilalantad ang kawalang-katarungan sa mismong katapangan ng gawa; at yamang nagmumula ito sa Isa na matuwid, makatarungang tatalikuran ako nito. Kaya hinggil sa kaluluwa, pagkatapos ng kaparusahan, mapapahamak ako sapagkat tinalikuran ko ang tulong na nagmumula rito. Ngunit kung may isa pang diyos, magsuot muna siya ng ibang anyo at ibang hugis upang sa bagong hugis ng katawan ay makilala ko ang bagong diyos. Ngunit kung babaguhin niya ang hugis, mababago ba niya dahil dito ang sangkap ng kaluluwa? At kung babaguhin din niya iyon, hindi na ako ang dating ako, sapagkat naging iba na ako kapwa sa hugis at sangkap. Kaya kung mayroon pang ibang diyos, lumikha siya ng iba. Ngunit wala. Sapagkat kung mayroon, lilikha sana siya. At yamang hindi siya lumikha, kung gayon bilang hindi umiiral ay hayaan niyang manatili ang tunay na umiiral. Sapagkat wala siyang pagkatao maliban lamang sa palagay ni Simon. Hindi ako tumatanggap ng ibang Diyos kundi Siya lamang na lumikha sa akin.</q></p><h3>Kabanata XI. Umapela si Simon sa Genesis 1:26</h3><p>At sinabi ni Simon: <q>Yamang nakikita kong madalas kang magsalita tungkol sa Diyos na lumikha sa iyo, matutuhan mo sa akin kung paanong ikaw mismo ay di-maka-Diyos maging sa Kanya. Sapagkat malinaw na dalawa ang lumikha, gaya ng sinasabi ng Kasulatan: ‘At sinabi ng Diyos, Gawin natin ang tao ayon sa ating larawan, ayon sa ating wangis.’ Ngayon, ang ‘gawin natin’ ay nagpapahiwatig ng dalawa o higit pa; tiyak na hindi lamang isa.</q></p><h3>Kabanata XII. Paliwanag ni Pedro sa Talata</h3><p>Sumagot si Pedro: <q>Iisa ang nagsabi sa Kanyang Karunungan, ‘Gawin natin ang tao.’ Ngunit ang Kanyang Karunungan ay yaong lagi Niyang ikinagagalak gaya ng sarili Niyang espiritu. Nakikiisa iyon sa Diyos na gaya ng kaluluwa, ngunit inilalawig Niya na gaya ng kamay na humuhubog sa sansinukob. Dahil dito, iisang lalaki rin ang nilikha at mula sa kanya ay lumabas ang babae. At bagaman iisa ayon sa uri, ito’y dalawa rin; sapagkat sa paglawak at pag-urong ay iniisip ang kaisahan bilang dalawahan. Kaya tama ang ginagawa ko sa pag-aalay ng lahat ng karangalan sa iisang Diyos na gaya sa mga magulang.</q> At sinabi ni Simon: <q>Ano kung gayon? Kahit sabihin ng mga Kasulatan na may iba pang mga diyos, hindi mo ba tatanggapin ang palagay na iyon?</q></p><h3>Kabanata XIII. Ang mga Pagkakasalungat ng Kasulatan ay Nilayon upang Subukin ang mga Bumababasa</h3><p>Sumagot si Pedro: <q>Kung magsalita man ang mga Kasulatan o mga propeta tungkol sa mga diyos, ginagawa nila iyon upang subukin ang mga nakikinig. Sapagkat ganito ang nasusulat: ‘Kung may bumangon sa gitna ninyo na propeta na nagbibigay ng mga tanda at kababalaghan, at pagkatapos ay mangyari ang tanda o kababalaghang iyon at sabihin niya sa inyo, Tayo’y sumunod at sumamba sa ibang mga diyos na hindi nakilala ng inyong mga ninuno, huwag ninyong pakinggan ang mga salita ng propetang iyon; mauna ang inyong mga kamay sa pagbato sa kanya. Sapagkat sinikap niyang ilayo kayo sa Panginoon ninyong Diyos. Ngunit kung sasabihin mo sa iyong puso, Paano niya nagawa ang tanda o kababalaghang iyon? Tiyak mong malalaman na ang sumubok sa iyo ay sumubok upang makita kung natatakot ka sa Panginoon mong Diyos.’ Ang mga salitang ‘ang sumubok sa iyo ay sumubok’ ay tumutukoy sa pinakamaagang panahon; ngunit tila iba ang kalagayan pagkatapos ng paglipat sa Babilonia. Sapagkat ang Diyos na nakaaalam ng lahat ng bagay ay hindi, gaya ng mapatutunayan sa maraming pangangatwiran, susubok upang Siya mismo ang makaalam, sapagkat pauna Niyang nalalaman ang lahat. Ngunit kung nais mo, talakayin natin ang puntong ito at ipapakita kong may paunang kaalaman ang Diyos. Gayunman, napatunayan nang mali ang palagay na hindi Siya nakaaalam at na ito’y isinulat upang subukin tayo. Kaya kami, Simon, ay hindi maililigaw ng mga Kasulatan ni ng sinumang iba; hindi rin kami nalilinlang upang kilalaning maraming diyos, ni sumasang-ayon kami sa anumang pahayag na laban sa Diyos.</q></p><h3>Kabanata XIV. Iba Pang mga Nilalang na Tinatawag na mga Diyos</h3><p><q>Sapagkat alam din naming ang mga anghel ay tinatawag na mga diyos ng mga Kasulatan—gaya, halimbawa, Niya na nagsalita sa palumpong at nakipagbuno kay Jacob—at ang pangalang ito ay inilalapat din sa Kanya na ipinanganak na Emmanuel at tinatawag na Makapangyarihang Diyos. Oo, maging si Moises ay naging diyos kay Faraon, bagaman sa katotohanan ay tao siya. Gayon din ang mga diyus-diyosan ng mga Hentil. Ngunit iisa lamang ang aming Diyos—Siya na gumawa ng nilikha at nag-ayos ng sansinukob—at ang Kanyang Anak ay ang Cristo. Sa pagsunod kay Cristo, natututuhan naming makilala mula sa mga Kasulatan ang huwad. Bukod dito, yamang ipinagkaloob sa amin ng aming mga ninuno ang mga katotohanan ng mga Kasulatan, alam naming iisa lamang ang gumawa ng langit at lupa—ang Diyos ng mga Judio at ng lahat ng pumipiling sumamba sa Kanya. Ang aming mga ninuno, sa maka-Diyos na pag-iisip, ay nagtakda ng matatag na pananampalataya sa Kanya bilang tunay na Diyos at ipinasa sa amin ang paniniwalang ito upang malaman naming kung may anumang sabihin laban sa Diyos, iyon ay kasinungalingan. Idaragdag ko pa ito nang higit sa kinakailangan kong sabihin: Kung hindi gayon ang kalagayan gaya ng sinabi ko, mapahamak nawa ako at ang lahat ng umiibig sa katotohanan hinggil sa pagpupuri sa Diyos na lumikha sa atin.</q></p><h3>Kabanata XV. Si Cristo ay Hindi Diyos, Kundi Anak ng Diyos</h3><p>Nang marinig ito ni Simon, sinabi niya: <q>Yamang sinasabi mong hindi natin dapat paniwalaan kahit ang propetang gumagawa ng mga tanda at kababalaghan kung sabihin niyang may ibang diyos, kung gayon makatuwiran ding pinatay ang iyong guro dahil gumawa siya ng mga tanda at kababalaghan.</q> Sumagot si Pedro: <q>Hindi kailanman ipinahayag ng ating Panginoon na may mga diyos maliban sa Manlilikha ng lahat; ni ipinahayag Niya ang Kanyang sarili na Diyos. Sa halip, makatuwiran Niyang tinawag na pinagpala ang taong tumawag sa Kanya na Anak ng Diyos na nag-ayos ng sansinukob.</q> Sumagot si Simon: <q>Hindi ba, kung gayon, para sa iyo ay Diyos ang nagmumula sa Diyos?</q> Sinabi ni Pedro: <q>Sabihin mo sa amin kung paano magiging posible iyon; sapagkat hindi namin ito mapagtitibay dahil hindi namin narinig iyon mula sa Kanya.</q></p><h3>Kabanata XVI. Ang Hindi Ipinanganak at ang Ipinanganak ay Kailangang Magkaiba sa Isa’t Isa</h3><p><q>Bukod dito, natatangi sa Ama ang hindi ipinanganak, samantalang sa Anak ang ipinanganak; ngunit ang ipinanganak ay hindi maihahambing sa hindi ipinanganak o sa nagmula sa sarili.</q> Sinabi ni Simon: <q>Hindi ba pareho iyon dahil sa pinagmulan?</q> Sinabi ni Pedro: <q>Ang hindi kapareho ng iba sa lahat ng bagay ay hindi maaaring tawagin sa lahat ng gayunding katawagan na ibinibigay sa taong iyon.</q> Sinabi ni Simon: <q>Iyan ay isang pahayag lamang, hindi patunay.</q> Sinabi ni Pedro: <q>Bakit, hindi mo ba nakikita na kung ang isa ay nagmula sa sarili o hindi ipinanganak, hindi sila maaaring tawaging pareho; ni masasabi tungkol sa ipinanganak na kapareho niya ang sangkap ng nagsilang sa kanya? Matutuhan mo rin ito: ang mga katawan ng tao ay may mga kaluluwang walang kamatayan na binihisan ng hininga ng Diyos; at yamang nagmula sila sa Diyos, iisa ang kanilang sangkap, ngunit hindi sila mga diyos. Ngunit kung mga diyos sila, kung gayon sa ganitong paraan ay mga diyos din ang mga kaluluwa ng lahat ng tao—yaong mga namatay na, yaong mga buhay, at yaong mga darating pa. Ngunit kung sa diwa ng pakikipagtalo ay ipagpipilitan mong mga diyos din ang mga ito, ano pang dakilang bagay kung tawagin si Cristo na Diyos? Sapagkat taglay lamang Niya ang taglay ng lahat.</q></p><h3>Kabanata XVII. Kalikasan ng Diyos</h3><p><q>Tinatawag naming Diyos Siya na ang mga natatanging katangian ay hindi maaaring mapasakalikasan ng sinumang iba. Sapagkat kung tinatawag Siyang Walang Hangganan dahil wala Siyang hangganan sa alinmang panig, kinakailangang wala nang iba na may natatanging katangiang matawag na walang hangganan, sapagkat walang iba na maaaring maging walang hangganan sa gayunding paraan. Ngunit kung may magsasabing posible iyon, nagkakamali siya; sapagkat dalawang bagay na walang hangganan sa lahat ng panig ay hindi maaaring sabay na umiral, dahil hahangganan ng isa ang isa. Kaya likas sa mga bagay na iisa ang hindi ipinanganak. Ngunit kung Siya’y may anyo, maging sa kasong ito ay iisa at walang maihahambing ang anyong iyon. Dahil dito Siya tinatawag na Kataas-taasan, sapagkat mas mataas Siya sa lahat at nasa ilalim Niya ang sansinukob.</q></p><h3>Kabanata XVIII. Pangalan ng Diyos</h3><p>At sinabi ni Simon: <q>Ang salitang ‘Diyos’ ba ang Kanyang di-maipahayag na pangalan na ginagamit ng lahat, yamang gayon katatag ang paninindigan mo na hindi maaaring ibigay sa iba ang pangalang iyon?</q> Sinabi ni Pedro: <q>Alam kong hindi ito ang Kanyang di-maipahayag na pangalan, kundi isang pangalang pinagkasunduan ng mga tao; ngunit kung ibibigay mo iyon sa iba, itatalaga mo rin sa isang iyon ang pangalang hindi ginagamit—at gagawin mo iyon nang sinasadya. Ang pangalang ginagamit ay tagapagpauna ng hindi ginagamit. Sa ganitong paraan, ang kawalang-galang na ibinibigay sa kilalang pangalan ay umaabot maging sa hindi pa binibigkas, gaya rin ng karangalang ibinibigay sa kilala ay naipapasa sa hindi pa nakikilala.</q></p><h3>Kabanata XIX. Ang Anyo ng Diyos sa Tao</h3><p>At sinabi ni Simon: <q>Nais kong malaman, Pedro, kung tunay mong pinaniniwalaang hinubog ang anyo ng tao ayon sa anyo ng Diyos.</q> Sinabi ni Pedro: <q>Lubos akong nakatitiyak, Simon, na gayon nga.</q> Sinabi ni Simon: <q>Paano malulusaw ng kamatayan ang katawan, samantalang tinatakan ito ng pinakadakilang tatak?</q> Sinabi ni Pedro: <q>Iyon ang anyo ng matuwid na Diyos. Kaya kapag nagsimulang kumilos nang di-makatarungan ang katawan, lumalayo ang anyong nasa loob nito; at sa pagkawala ng anyo ay nalulusaw ang katawan, upang ang di-makatarungang katawan ay huwag magtaglay ng anyo ng matuwid na Diyos. Gayunman, ang paglusaw ay hindi nangyayari sa tatak kundi sa katawang tinatakan. Ngunit ang tinatakan ay hindi nalulusaw nang hiwalay sa Nagtatak dito. Kaya hindi pinahihintulutang mamatay nang walang paghatol.</q> Sinabi ni Simon: <q>Ano ang pangangailangang ibigay sa taong hinango mula sa lupa ang anyo ng gayong Nilalang?</q> Sinabi ni Pedro: <q>Ginawa ito dahil sa pag-ibig ng Diyos na gumawa sa tao. Sapagkat kung hinggil sa sangkap ay nakahihigit sa laman ng tao ang lahat ng bagay—ang ibig kong sabihin ay ang ether, araw, buwan, mga bituin, hangin, tubig, apoy, at sa isang salita, lahat ng ibang bagay na ginawa para sa paglilingkod sa tao—gayunman, bagaman nakahihigit sila sa sangkap, kusa nilang tinitiis na maglingkod sa mas mababa sa sangkap dahil sa anyo ng Nakahihigit. Sapagkat kung paanong yaong mga nagbibigay-galang sa larawang luwad ng isang hari ay nagbibigay-galang sa hari mismo na taglay ng luwad ang anyo, gayon din ang buong nilikha ay masayang naglilingkod sa taong ginawa mula sa lupa, sapagkat nakikita nito sa karangalang ibinibigay sa tao ang karangalang ibinibigay sa Diyos.</q></p><h3>Kabanata XX. Katangian ng Diyos</h3><p><q>Narito, kung gayon, ang katangian ng Diyos na nais mong hikayatin kaming huwag pasalamatan, Simon; at patuloy kang pinapasan ng lupa, marahil upang makita kung sino pa ang mangangahas magtaglay ng mga palagay na gaya ng sa iyo. Sapagkat ikaw ang unang nangahas sa hindi nangahas ang iba; ikaw ang unang bumigkas ng hindi namin kailanman narinig. Kami ang una at tanging nakakita sa walang-hanggang pagtitiis ng Diyos sa pagtiis sa gayon kalaking kawalang-galang na gaya ng sa iyo—at ang Diyos na iyon ay walang iba kundi ang Manlilikha ng sanlibutan, laban sa Kanya ay nangahas kang kumilos nang di-maka-Diyos. Gayunman, hindi bumuka ang lupa, walang apoy na ibinaba mula sa langit upang tupukin ang mga tao, walang ulan na ibinuhos, walang karamihan ng mababangis na hayop na ipinadala mula sa mga kagubatan, at hindi nagsimulang mahayag sa amin ang mapaminsalang poot ng Diyos dahil sa isang taong nagkasala ng kasalanang maihahambing sa espirituwal na pangangalunya, na mas masama kaysa sa pangkatawan. Sapagkat hindi ang Diyos na Manlilikha ng langit at lupa ang siyang noong unang panahon ay nagpaparusa sa mga kasalanan; kung Siya iyon, ngayong nilalapastangan Siya sa pinakamataas na antas ay magpapataw sana Siya ng pinakamabigat na kaparusahan. Sa kabaligtaran, matiisin Siya at tumatawag sa pagsisisi, habang iniingatan sa Kanyang mga kayamanan ang mga palasong nagwawakas sa pagkapuksa ng mga di-maka-Diyos, na pakakawalan Niya na parang mga buhay na nilalang kapag Siya’y maupo upang humatol sa mga nauukol sa Kanya. Kaya katakutan natin ang matuwid na Diyos, na ang anyo ay taglay ng katawan ng tao bilang karangalan.</q></p><h3>Kabanata XXI. Nangako si Simon na Aapela sa Turo ni Cristo; Pinaalis ni Pedro ang mga Karamihan</h3><p>Nang sabihin ito ni Pedro, sumagot si Simon: <q>Yamang nakikita kong mahusay mong ipinahihiwatig na hindi totoo ang nasusulat sa mga aklat laban sa humubog <em>sa sanlibutan</em>, bukas ay ipapakita ko mula sa mga talumpati ng iyong guro na ipinahayag niyang ang humubog <em>sa sanlibutan</em> ay hindi ang Kataas-taasang Diyos.</q> Pagkasabi nito ni Simon, lumabas siya. Ngunit sinabi ni Pedro sa nagkakatipong karamihan: <q>Kung wala nang iba pang pinsalang magagawa sa atin si Simon tungkol sa Diyos, kahit ito man lamang ay nagagawa niya: hinahadlangan niya kayong makinig sa mga salitang makapaglilinis ng kaluluwa.</q> Nang sabihin ito ni Pedro, lumitaw ang malakas na bulung-bulungan sa gitna ng mga tao: <q>Bakit kailangan pang pahintulutan siyang pumasok dito at bigkasin ang kanyang mga kalapastanganan laban sa Diyos?</q> Narinig iyon ni Pedro at sinabi: <q>Sana’y hanggang kay Simon lamang umabot ang mga aral laban sa Diyos na nilalayong sumubok sa mga tao! Sapagkat magkakaroon, gaya ng sinabi ng Panginoon, ng mga huwad na apostol, mga huwad na propeta, mga maling aral, at mga paghahangad na manguna; at sa palagay ko, ang mga iyon, na nagsisimula kay Simon na lumalapastangan sa Diyos, ay magkakaisa sa pagpapatibay ng gayunding mga palagay laban sa Diyos na gaya ng kay Simon.</q> Pagkasabi nito nang may luha, kinumpas niya ng kamay ang mga tao upang lumapit; at nang lumapit sila, ipinatong niya sa kanila ang kanyang mga kamay at nanalangin, saka sila pinaalis at sinabihang dumating nang mas maaga kinabukasan. Pagkasabi nito, at habang dumaraing, pumasok siya at natulog nang hindi kumakain.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

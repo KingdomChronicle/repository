@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 17</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Simon Comes to Peter</option><option value="1">Chapter II. Simon's Speech Against Peter</option><option value="2">Chapter III. Simon's Accusation of Peter</option><option value="3">Chapter IV. It is Asserted that Christ's Teaching is Different from Peter's</option><option value="4">Chapter V. Jesus Inconsistent in His Teaching</option><option value="5">Chapter VI. Peter Goes Out to Answer Simon</option><option value="6">Chapter VII. Man in the Shape of God</option><option value="7">Chapter VIII. God's Figure: Simon's Objection Therefrom Refuted</option><option value="8">Chapter IX. God the Centre or Heart of the Universe</option><option value="9">Chapter X. The Nature and Shape of God</option><option value="10">Chapter XI. The Fear of God</option><option value="11">Chapter XII. The Fear and Love of God</option><option value="12">Chapter XIII. The Evidence of the Senses Contrasted with that from Supernatural Vision</option><option value="13">Chapter XIV. The Evidence of the Senses More Trustworthy Than that of Supernatural Vision</option><option value="14">Chapter XV. The Evidence from Dreams Discussed</option><option value="15">Chapter XVI. None But Evil Demons Appear to the Impious</option><option value="16">Chapter XVII. The Impious See True Dreams and Visions</option><option value="17">Chapter XVIII. The Nature of Revelation</option><option value="18">Chapter XIX. Opposition to Peter Unreasonable</option><option value="19">Chapter XX. Another Subject for Discussion Proposed</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Simon Comes to Peter</h3><p>The next day, therefore, as Peter was to hold a discussion with Simon, he rose earlier than usual and prayed. On ceasing to pray, Zacchæus came in, and said: <q>Simon is seated without, discoursing with about thirty of his own special followers.</q> And Peter said: <q>Let him talk until the multitude assemble, and then let us begin the discussion in the following way. We shall hear all that has been said by him, and having fitted our reply to this, we shall go out and discourse.</q> And assuredly so it happened. Zacchæus, therefore, went out, and not long after entered again, and communicated to Peter the discourse delivered by Simon against him.</p><h3>Chapter II. Simon's Speech Against Peter</h3><p>Now he said: <q>He accuses you, Peter, of being the servant of wickedness, of having great power in magic, and as charming the souls of men in a way worse than idolatry. To prove that you are a magician, he seemed to me to adduce the following evidence, saying: 'I am conscious of this, that when I come to hold a discussion with him, I do not remember a single word of what I have been meditating on by myself. For while he is discoursing, and my mind is engaged in recollecting what it is that I thought of saying on coming to a conference with him, I do not hear anything whatsoever of what he is saying. Now, since I do not experience this in the presence of any other than in his alone, is it not plain that I am under the influence of his magic? And as to his doctrines being worse than those of idolatry, I can make that quite clear to any one who has understanding. For there is no other benefit than this, that the soul should be freed from images of every kind. For when the soul brings an image before its eye, it is bound by fear, and it pines away through anxiety lest it should suffer some calamity; and being altered, it falls under the influence of a demon; and being under his influence, it seems to the mass to be wise.</q></p><h3>Chapter III. Simon's Accusation of Peter</h3><p><q>'Peter does this to you while promising to make you wise. For, under the pretext of proclaiming one God, he seems to free you from many lifeless images, which do not at all injure those who worship them, because they are seen by the eyes themselves to be made of stone, or brass, or gold, or of some other lifeless material. Wherefore the soul, because it knows that what is seen is nothing, cannot be spell-bound by fear in an equal degree by means of what is visible. But looking to a terrible God through the influence of deceptive teaching, it has all its natural foundations overturned. And I say this, not because I exhort you to worship images, but because Peter, seeming to free your souls from terrible images, drives mad the mind of each one of you by a more terrible image, introducing God in a shape, and that, too, a God extremely just,—an image which is accompanied by what is terrible and awful to the contemplative soul, by that which can entirely destroy the energy of a sound mind. For the mind, when in the midst of such a storm, is like the depth stirred by a violent wind, perturbed and darkened. Wherefore, if he comes to benefit you, let him not, while seeming to dissolve your fears which gently proceed from lifeless shapes, introduce in their stead the terrible shape of God. But has God a shape? If He has, He possesses a figure. And if He has a figure, how is He not limited? And if limited, He is in space. But if He is in space, He is less than the space which encloses Him. And if less than anything, how is He greater than all, or superior to all, or the highest of all? This, then, is the state of the case.</q></p><h3>Chapter IV. It is Asserted that Christ's Teaching is Different from Peter's</h3><p><q>'And that he does not really believe even the doctrines proclaimed by his teacher is evident, for he proclaims doctrines opposite to his. For he said to some one, as I learn, <q>Call me not good, for the good is one.</q> Now in speaking of the good one, he no longer speaks of that just one, whom the Scriptures proclaim, who kills and makes alive,—kills those who sin, and makes alive those who live according to His will. But that he did not really call Him who is the framer of the world good, is plain to any one who can reflect. For the framer of the world was known to Adam whom He had made, and to Enoch who pleased Him, and to Noah who was seen to be just by Him; likewise to Abraham, and Isaac, and Jacob; also to Moses, and the people, and the whole world. But Jesus, the teacher of Peter himself, came and said, <q>No one knew the Father except the Son, as no one knows even the Son except the Father, and those to whom the Son may wish to reveal Him.</q> If, then, it was the Son himself who was present, it was from the time of his appearance that he began to reveal to those to whom he wished, Him who was unknown to all. And thus the Father was unknown to all who lived before him, and could not thus be He who was known to all.</q></p><h3>Chapter V. Jesus Inconsistent in His Teaching</h3><p><q>'In saying this, Jesus is consistent not even with himself. For sometimes by other utterances, taken from the Scriptures, he presents God as being terrible and just, saying, <q>Fear not him who kills the body, but can do nothing to the soul; but fear Him who is able to cast both body and soul into the Gehenna of fire. Yea, I say unto you, fear Him.</q> But that he asserted that He is really to be feared as being a just God, to whom he says those who receive injustice cry, is shown in a parable of which he gives the interpretation, saying: <q>If, then, the unjust judge did so, because he was continually entreated, how much more will the Father avenge those who cry to Him day and night? Or do you think that, because He bears long with them, He will not do it? Yea, I say to you, He will do it, and that speedily.</q> Now he who speaks of God as an avenging and rewarding God, presents Him as naturally just, and not as good. Moreover he gives thanks to the Lord of heaven and earth. But if He is Lord of heaven and earth, He is acknowledged to be the framer of the world, and if framer, then He is just. When, therefore, he sometimes calls Him good and sometimes just, he is not consistent with himself in this point. But his wise disciple maintained yesterday a third point, that real sight is more satisfactory than vision, not knowing that real sight can be human, but that vision confessedly proceeds from divinity.</q></p><h3>Chapter VI. Peter Goes Out to Answer Simon</h3><p><q>These and such like were the statements, Peter, which Simon addressed to the multitudes while he stood outside; and he seems to me to be disturbing the minds of the greater number. Wherefore go forth immediately, and by the power of truth break down his false statements.</q> When Zacchæus said this, Peter prayed after his usual manner and went out, and standing in the place where he spoke the day before, and saluting the multitudes according to the custom enjoined by his religion, he began to speak as follows: <q>Our Lord Jesus Christ, who is the true prophet (as I shall prove conclusively at the proper time), made concise declarations in regard to those matters that relate to the truth, for these two reasons: first, because He was in the habit of addressing the pious, who had knowledge enough to enable them to believe the opinions uttered by Him by way of declaration; for His statements were not strange to their usual mode of thought; and in the second place, because, having a limited time assigned Him for preaching, He did not employ the method of demonstration in order that He might not spend all His limited time in arguments, for in this way it might happen that He would be fully occupied in giving the solutions of a few problems which might be understood by mental exertion, while He would not have given us to any great extent those statements which relate to the truth. Accordingly He stated any opinions He wished, as to a people who were able to understand Him, to whom we also belong, who, whenever we did not understand anything of what had been said by Him,—a thing which rarely happened,—inquired of Him privately, that nothing said by Him might be unintelligible to us.</q></p><h3>Chapter VII. Man in the Shape of God</h3><p><q>Knowing therefore that we knew all that was spoken by Him, and that we could supply the proofs, He sent us to the ignorant Gentiles to baptize them for remission of sins, and commanded us to teach them first. Of His commandments this is the first and great one, to fear the Lord God, and to serve Him only. But He meant us to fear that God whose angels they are who are the angels of the least of the faithful amongst us, and who stand in heaven continually beholding the face of the Father. For He has shape, and He has every limb primarily and solely for beauty's sake, and not for use. For He has not eyes that He may see with them; for He sees on every side, since He is incomparably more brilliant in His body than the visual spirit which is in us, and He is more splendid than everything, so that in comparison with Him the light of the sun may be reckoned as darkness. Nor has He ears that He may hear; for He hears, perceives, moves, energizes, acts on every side. But He has the most beautiful shape on account of man, that the pure in heart may be able to see Him, that they may rejoice because they suffered. For He moulded man in His own shape as in the grandest seal, in order that he may be the ruler and lord of all, and that all may be subject to him. Wherefore, judging that He is the universe, and that man is His image (for He is Himself invisible, but His image man is visible), the man who wishes to worship Him honours His visible image, which is man. Whatsoever therefore any one does to man, be it good or bad, is regarded as being done to Him. Wherefore the judgment which proceeds from Him shall go before, giving to every one according to his merits. For He avenges His own shape.</q></p><h3>Chapter VIII. God's Figure: Simon's Objection Therefrom Refuted</h3><p><q>But someone will say, If He has shape, then He has figure also, and is in space; but if He is in space, and is, as being less, enclosed by it, how is He great above everything? How can He be everywhere if He has figure? The first remark I have to make to him who urges these objections is this: The Scriptures persuade us to have such sentiments and to believe such statements in regard to Him; and we know that their declarations are true, for witness is borne to them by our Lord Jesus Christ, by whose orders we are bound to afford proofs to you that such is the case. But first I shall speak of space. The space of God is the non-existent, but God is that which exists. But that which is non-existent cannot be compared with that which is existent. For how can space be existent? Unless it be a second space, such as heaven, earth, water, air, and if there is any other body that fills up the vacuity, which is called vacuity on this account, that it is nothing. For 'nothing' is its more appropriate name. For what is that which is called vacuity but as it were a vessel which contains nothing, except the vessel itself? But being vacuity, it is not itself space; but space is that in which vacuity itself is, if indeed it is the vessel. For it must be the case that that which exists is in that which does not exist. But by this which is non-existent I mean that which is called by some, space, which is nothing. But being nothing, how can it be compared with that which is, except by expressing the contrary, and saying that it is that which does not exist, and that that which does not exist is called space? But even if it were something, there are many examples which I have at hand, but I shall content myself with one only, to show that that which encloses is not unquestionably superior to that which is enclosed. The sun is a circular figure, and is entirely enclosed by air, yet it lightens up the air, it warms it, it divides it; and if the sun be away from it, it is enveloped in darkness; and from whatsoever part of it the sun is removed, it becomes cold as if it were dead; but again it is illuminated by its rising, and when it has been warmed up by it, it is adorned with still greater beauty. And it does this by giving a share of itself, though it has its substance limited. What, then, is there to prevent God, as being the Framer and Lord of this and everything else, from possessing figure and shape and beauty, and having the communication of these qualities proceeding from Himself extended infinitely?</q></p><h3>Chapter IX. God the Centre or Heart of the Universe</h3><p><q>One, then, is the God who truly exists, who presides in a superior shape, being the heart of that which is above and that which is below twice, which sends forth from Him as from a centre the life-giving and incorporeal power; the whole universe with the stars and regions of the heaven, the air, the fire, and if anything else exists, is proved to be a substance infinite in height, boundless in depth, immeasurable in breadth, extending the life-giving and wise nature from Him over three infinites. It must be, therefore, that this infinite which proceeds from Him on every side exists, having as its heart Him who is above all, and who thus possesses figure; for wherever He be, He is as it were in the centre of the infinite, being the limit of the universe. And the extensions taking their rise with Him, possess the nature of six infinites; of whom the one taking its rise with Him penetrates into the height above, another into the depth below, another to the right hand, another to the left, another in front, and another behind; to whom He Himself, looking as to a number that is equal on every side, completes the world in six temporal intervals, Himself being the rest, and having the infinite age to come as His image, being the beginning and the end. For in Him the six infinites end, and from Him they receive their extension to infinity.</q></p><h3>Chapter X. The Nature and Shape of God</h3><p><q>This is the mystery of the hebdomad. For He Himself is the rest of the whole who grants Himself as a rest to those who imitate His greatness within their little measure. For He is alone, sometimes comprehensible, sometimes incomprehensible, <em>sometimes limitable</em>, sometimes illimitable, having extensions which proceed from Him into infinity. For thus He is comprehensible and incomprehensible, near and far, being here and there, as being the only existent one, and as giving a share of that mind which is infinite on every hand, in consequence of which souls breathe and possess life; and if they be separated from the body and be found with a longing for Him, they are borne along into His bosom, as in the winter time the mists of the mountains, attracted by the rays of the sun, are borne along immortal to it. What affection ought therefore to arise within us if we gaze with our mind on His beautiful shape! But otherwise it is absurd <em>to speak of beauty</em>. For beauty cannot exist apart from shape; nor can one be attracted to the love of God, nor even deem that he can see Him, if God has no form.</q></p><h3>Chapter XI. The Fear of God</h3><p><q>But some who are strangers to the truth, and who give their energies to the service of evil, on pretext of glorifying God, say that He has no figure, in order that, being shapeless and formless, He may be visible to no one, so as not to be longed for. For the mind, not seeing the form of God, is empty of Him. But how can any one pray if he has no one to whom he may flee for refuge, on whom he may lean? For if he meets with no resistance, he falls out into vacuity. Yea, says he, we ought not to fear God, but to love Him. I agree; but the consciousness of having done well in each good act will accomplish this. Now well-doing proceeds from fearing. But fear, says he, strikes death into the soul. Nay, but I affirm that it does not strike death, but awakens the soul, and converts it. And perhaps the injunction not to fear God might be right, if we men did not fear many other things; such, for instance, as plots against us by those who are like us, and wild beasts, serpents, diseases, sufferings, demons, and a thousand other ills. Let him, then, who asks us not to fear God, rescue us from these, that we may not fear them; but if he cannot, why should he grudge that we should be delivered from a thousand fears by one fear, the fear of the Just One, and that it should be possible by a slight faith in Him to remove a thousand afflictions from ourselves and others, and receive instead an exchange of blessings, and that, doing no ill in consequence of fear of the God who sees everything, we should continue in peace even in the present life.</q></p><h3>Chapter XII. The Fear and Love of God</h3><p><q>Thus, then, grateful service to Him who is truly Lord, renders us free from service to all other masters. If, then, it is possible for any one to be free from sin without fearing God, let him not fear; for under the influence of love to Him one cannot do what is displeasing to Him. For, on the one hand, it is written that we are to fear Him, and we have been commanded to love Him, in order that each of us may use that prescription which is suitable to his constitution. Fear Him, therefore, because He is just; but whether you fear Him or love Him, sin not. And may it be the case that any one who fears Him shall be able to gain the victory over unlawful desires, shall not lust after what belongs to others, shall practise kindness, shall be sober, and act justly! For I see some who are imperfect in their fear of Him sinning very much. Let us therefore fear God, not only because He is just; for it is through pity for those who have received injustice that He inflicts punishment on those who have done the injustice. As water therefore quenches fire, so does fear extinguish the desire for evil practices. He who teaches fearlessness does not himself fear; but he who does not fear, does not believe that there will be a judgment, strengthens his lusts, acts as a magician, and accuses others of the deeds which he himself does.</q></p><h3>Chapter XIII. The Evidence of the Senses Contrasted with that from Supernatural Vision</h3><p>Simon, on hearing this, interrupted him, and said: <q>I know against whom you are making these remarks; but in order that I may not spend any time in discussing subjects which I do not wish to discuss, repeating the same statements to refute you, reply to that which is concisely stated by us. You professed that you had well understood the doctrines and deeds of your teacher because you saw them before you with your own eyes, and heard them with your own ears, and that it is not possible for any other to have anything similar by vision or apparition. But I shall show that this is false. He who hears any one with his own ears, is not altogether fully assured of the truth of what is said; for his mind has to consider whether he is wrong or not, inasmuch as he is a man as far as appearance goes. But apparition not merely presents an object to view, but inspires him who sees it with confidence, for it comes from God. Now reply first to this.</q></p><h3>Chapter XIV. The Evidence of the Senses More Trustworthy Than that of Supernatural Vision</h3><p>And Peter said: <q>You proposed to speak to one point, you replied to another. For your proposition was, that one is better able to know more fully, <em>and to attain confidence</em>, when he hears in consequence of an apparition, than when he hears with his own ears; but when you set about the matter, you were for persuading us that he who hears through an apparition is surer than he who hears with his own ears. Finally, you alleged that, on this account, you knew more satisfactorily the doctrines of Jesus than I do, because you heard His words through an apparition. But I shall reply to the proposition you made at the beginning. The prophet, because he is a prophet, having first given certain information with regard to what is objectively said by him, is believed with confidence; and being known beforehand to be a true prophet, and being examined and questioned as the disciple wishes, he replies: But he who trusts to apparition or vision and dream is insecure. For he does not know to whom he is trusting. For it is possible either that he may be an evil demon or a deceptive spirit, pretending in his speeches to be what he is not. But if any one should wish to inquire of him who he is who has appeared, he can say to himself whatever he likes. And thus, gleaming forth like a wicked one, and remaining as long as he likes, he is at length extinguished, not remaining with the questioner so long as he wished him to do for the purpose of consulting him. For any one that sees by means of dreams cannot inquire about whatever he may wish. For reflection is not in the special power of one who is asleep. Hence we, desiring to have information in regard to something in our waking hours, inquire about something else in our dreams; or without inquiring, we hear about matters that do not concern us, and awaking from sleep we are dispirited because we have neither heard nor inquired about those matters which we were eager to know.</q></p><h3>Chapter XV. The Evidence from Dreams Discussed</h3><p>And Simon said: <q>If you maintain that apparitions do not always reveal the truth, yet for all that, visions and dreams, being God-sent, do not speak falsely in regard to those matters which they wish to tell.</q> And Peter said: <q>You were right in saying that, being God-sent, they do not speak falsely. But it is uncertain if he who sees has seen a God-sent dream.</q> And Simon said: <q>If he who has had the vision is just, he has seen a true vision.</q> And Peter said: <q>You were right. But who is just, if he stands in need of a vision that he may learn what he ought to learn, and do what he ought to do?</q> And Simon said: <q>Grant me this, that the just man alone can see a true vision, and I shall then reply to that other point. For I have come to the conclusion that an impious man does not see a true dream.</q> And Peter said: <q>This is false; and I can prove it both apart from Scripture and by Scripture; but I do not undertake to persuade you. For the man who is inclined to fall in love with a bad woman, does not change his mind so as to care for a lawful union with another woman in every respect good; but sometimes they love the worse woman through prepossessions, though they are conscious that there is another who is more excellent. And you are ignorant, in consequence of some such state of mind.</q> And Simon said: <q>Dismiss this subject, and discuss the matter on which you promised to speak. For it seems to me impossible that impious men should receive dreams from God in any way whatever.</q></p><h3>Chapter XVI. None But Evil Demons Appear to the Impious</h3><p>And Peter said: <q>I remember that I promised to prove this point, and to give my proofs in regard to it from Scripture and apart from Scripture. And now listen to what I say. We know that there are many (if you will pardon me the statement; and if you don't, I can appeal to those who are present as judges) who worship idols, commit adultery, and sin in every way, and yet they see true visions and dreams, and some of them have also apparitions of demons. For I maintain that the eyes of mortals cannot see the incorporeal form of the Father or Son, because it is illumined by exceeding great light. Wherefore it is not because God envies, but because He pities, that He cannot be seen by man who has been turned into flesh. For he who sees <em>God</em> cannot live. For the excess of light dissolves the flesh of him who sees; unless by the secret power of God the flesh be changed into the nature of light, so that it can see light, or the substance of light be changed into flesh, so that it can be seen by flesh. For the power to see the Father, without undergoing any change, belongs to the Son alone. But the just shall also in like manner behold God; for in the resurrection of the dead, when they have been changed, as far as their bodies are concerned, into light, and become like the angels, they shall be able to see Him. Finally, then, if any angel be sent that he may he seen by a man, he is changed into flesh, that he may be able to be seen by flesh. For no one can see the incorporeal power not only of the Son, but not even of an angel. But if one sees an apparition, he should know that this is the apparition of an evil demon.</q></p><h3>Chapter XVII. The Impious See True Dreams and Visions</h3><p><q>But it is manifest that the impious see true visions and dreams, and I can prove it from Scripture. Finally, then, it is written in the law, how Abimelech, who was impious, wished to defile the wife of just Abraham by intercourse, and how he heard the commandment from God in his sleep, as the Scripture says, not to touch her, because she was dwelling with her husband. Pharaoh, also an impious man, saw a dream in regard to the fullness and thinness of the ears of grain, to whom Joseph said, when he gave the interpretation, that the dream had come from God. Nebuchadnezzar, who worshipped images, and ordered those who worshipped God to be cast into fire, saw a dream extending over the whole age of the world. And let no one say, 'No one who is impious sees a vision when awake.' That is false. Nebuchadnezzar himself, having ordered three men to be cast into fire, saw a fourth when he looked into the furnace, and said, 'I see the fourth as the Son of God.' And nevertheless, though they saw apparitions, visions, and dreams, they were impious. Thus, we cannot infer with absolute certainty that the man who has seen visions, and dreams, and apparitions, is undoubtedly pious. For in the case of the pious man, the truth gushes up natural and pure in his mind, not worked up through dreams, but granted to the good through intelligence.</q></p><h3>Chapter XVIII. The Nature of Revelation</h3><p><q>Thus to me also was the Son revealed by the Father. Wherefore I know what is the meaning of revelation, having learned it in my own case. For at the very time when the Lord said, 'Who do they say that I am?' and when I heard one saying one thing of Him, and another another, it came into my heart to say (and I know not, therefore, how I said it), 'You are the Son of the living God.' But He, pronouncing me blessed, pointed out to me that it was the Father who had revealed it to me; and from this time I learned that revelation is knowledge gained without instruction, and without apparition and dreams. And this is indeed the case. For in the <em>soul</em> which has been placed in us by God, there is all the truth; but it is covered and revealed by the hand of God, who works so far as each one through his knowledge deserves. But the declaration of anything by means of apparitions and dreams from without is a proof, not that it comes from revelation, but from wrath. Finally, then, it is written in the law, that God, being angry, said to Aaron and Miriam, 'If a prophet arise from amongst you, I shall make myself known to him through visions and dreams, but not so as to my servant Moses; because I shall speak to him in an <em>outward</em> appearance, and not through dreams, just as one will speak to his own friend.' You see how the statements of wrath are made through visions and dreams, but the statements to a friend are made face to face, in <em>outward</em> appearance, and not through riddles and visions and dreams, as to an enemy.</q></p><h3>Chapter XIX. Opposition to Peter Unreasonable</h3><p><q>If, then, our Jesus appeared to you in a vision, made Himself known to you, and spoke to you, it was as one who is enraged with an adversary; and this is the reason why it was through visions and dreams, or through revelations that were from without, that He spoke to you. But can any one be rendered fit for instruction through apparitions? And if you will say, 'It is possible,' then I ask, 'Why did our teacher abide and discourse a whole year to those who were awake?' And how are we to believe your word, when you tell us that He appeared to you? And how did He appear to you, when you entertain opinions contrary to His teaching? But if you were seen and taught by Him, and became His apostle for a single hour, proclaim His utterances, interpret His sayings, love His apostles, contend not with me who companied with Him. For in direct opposition to me, who am a firm rock, the foundation of the Church, you now stand. If you were not opposed to me, you would not accuse me, and revile the truth proclaimed by me, in order that I may not be believed when I state what I myself have heard with my own ears from the Lord, as if I were evidently a person that was condemned and in bad repute. But if you say that I am condemned, you bring an accusation against God, who revealed the Christ to me, and you inveigh against Him who pronounced me blessed on account of the revelation. But if, indeed, you really wish to work in the cause of truth, learn first of all from us what we have learned from Him, and, becoming a disciple of the truth, become a fellow-worker with us.</q></p><h3>Chapter XX. Another Subject for Discussion Proposed</h3><p>When Simon heard this, he said: <q>Far be it from me to become his or your disciple. For I am not ignorant of what I ought to know; but the inquiries which I made as a learner were made that I may see if you can prove that actual sight is more distinct than apparition. But you spoke according to your own pleasure; you did not prove. And now, tomorrow I shall come to your opinions in regard to God, whom you affirmed to be the framer of the world; and in my discussion with you, I shall show that he is not the highest, nor good, and that your teacher made the same statements as I now do; and I shall prove that you have not understood him.</q> On saying this he went away, not wishing to listen to what might be said to the propositions which he had laid down.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Lumapit si Simon kay Pedro</h3><p>Kaya kinabukasan, yamang makikipagtalakayan si Pedro kay Simon, mas maaga siyang bumangon kaysa karaniwan at nanalangin. Nang matapos siyang manalangin, pumasok si Zacchæus at sinabi: <q>Nakaupo sa labas si Simon at nakikipag-usap sa humigit-kumulang tatlumpu sa mga natatangi niyang tagasunod.</q> At sinabi ni Pedro: <q>Hayaan siyang magsalita hanggang magtipon ang karamihan; pagkatapos ay simulan natin ang talakayan sa ganitong paraan. Pakikinggan muna natin ang lahat ng sinabi niya at saka, matapos iangkop ang ating sagot doon, lalabas tayo at magsasalita.</q> At gayon nga ang nangyari. Lumabas si Zacchæus at hindi nagtagal ay muling pumasok at isinalaysay kay Pedro ang talumpating sinabi ni Simon laban sa kanya.</p><h3>Kabanata II. Talumpati ni Simon Laban kay Pedro</h3><p>Sinabi niya: <q>Inaakusahan ka niya, Pedro, na lingkod ng kasamaan, na may malaking kapangyarihan sa mahika, at na ginagayuma mo ang mga kaluluwa ng tao sa paraang mas masahol pa kaysa pagsamba sa mga diyus-diyosan. Bilang patunay na isa kang salamangkero, sinabi niyang ganito ang kanyang karanasan: ‘Kapag pumupunta ako upang makipagtalakayan sa kanya, wala akong maalalang kahit isang salita sa mga pinag-isipan kong sabihin. Habang nagsasalita siya at abala ang isip kong alalahanin ang ihahain ko sa pakikipagtalakayan, wala akong naririnig sa anumang sinasabi niya. At yamang hindi ko ito nararanasan sa harap ng iba kundi sa kanya lamang, hindi ba malinaw na nasa ilalim ako ng impluwensiya ng kanyang mahika?’ Tungkol naman sa kanyang mga aral na mas masahol pa raw kaysa pagsamba sa diyus-diyosan, sinabi niyang madaling maipakikita iyon sa sinumang may pagkaunawa. Sapagkat ayon sa kanya, walang higit na pakinabang kaysa mapalaya ang kaluluwa mula sa lahat ng uri ng larawan. Kapag naglalagay ang kaluluwa ng isang larawan sa harap ng sarili nitong paningin, nabibigkis ito ng takot at nauubos sa pangamba na baka may dumating na kapahamakan; at kapag nabago ang kalagayan nito, napapasailalim ito sa impluwensiya ng isang demonyo. Kapag nasa ilalim na ng ganoong impluwensiya, nagmumukha itong marunong sa karamihan.</q></p><h3>Kabanata III. Akusasyon ni Simon kay Pedro</h3><p><q>‘Ito ang ginagawa sa inyo ni Pedro samantalang ipinapangako niyang gagawin kayong marunong. Sa pagkukunwaring ipinahahayag ang iisang Diyos, tila pinalalaya niya kayo mula sa maraming larawang walang buhay, na hindi naman tunay na nakapipinsala sa mga sumasamba sa mga iyon sapagkat kitang-kitang yari ang mga iyon sa bato, tanso, ginto, o ibang materyal na walang buhay. Dahil alam ng kaluluwa na walang halaga ang nakikita, hindi ito gaanong nagagayuma ng takot sa pamamagitan ng nakikitang bagay. Ngunit sa pagtingin sa isang kakila-kilabot na Diyos sa pamamagitan ng mapanlinlang na aral, nababaligtad ang lahat ng likas na saligan ng isip. Hindi ko ito sinasabi upang hikayatin kayong sumamba sa mga larawan, kundi sapagkat si Pedro, habang waring pinalalaya ang inyong mga kaluluwa mula sa nakatatakot na mga larawan, ay nilalagay sa pagkabaliw ang isip ng bawat isa sa pamamagitan ng mas kakila-kilabot na larawan—ang pagpapakilala sa Diyos bilang may anyo, at bilang isang lubhang matuwid na Diyos. Kung may anyo ang Diyos, may hugis din Siya; at kung may hugis, paano Siya hindi malilimitahan? Kung limitado, nasa isang lugar Siya. Ngunit kung nasa isang lugar at nasasaklaw nito, paano Siya magiging higit sa lahat? Paano Siya nasa lahat ng dako kung Siya’y may hugis?’</q></p><h3>Kabanata IV. Ipinahayag na Iba ang Turo ni Cristo sa Turo ni Pedro</h3><p><q>‘At maliwanag ding hindi tunay na pinaniniwalaan ni Pedro maging ang mga aral na ipinahayag ng kanyang guro, sapagkat salungat sa mga iyon ang ipinangangaral niya. Sapagkat sinabi ng kanyang guro sa isa, “<q>Huwag mo Akong tawaging mabuti, sapagkat iisa ang mabuti.</q>” Sa pagsasalita tungkol sa iisang mabuti, hindi na niya tinutukoy ang matuwid na Diyos na ipinahahayag ng mga Kasulatan—Siya na pumapatay at bumubuhay, pumapatay sa mga nagkakasala at bumubuhay sa mga namumuhay ayon sa Kanyang kalooban. Na hindi tunay na tinawag ni Jesus na mabuti ang humubog sa sanlibutan ay malinaw sa sinumang marunong mag-isip. Sapagkat kilala ng mga nauna ang humubog sa sanlibutan—sina Adan, Enoc, Noe, Abraham, Isaac, Jacob, Moises, ang bayan, at ang buong sanlibutan. Ngunit sinabi ni Jesus, guro mismo ni Pedro, “<q>Walang nakakilala sa Ama maliban sa Anak, gaya rin ng walang nakakilala sa Anak maliban sa Ama at sa mga taong nais ihayag ng Anak.</q>” Kung gayon, kung ang Anak mismo ang dumating at noon lamang nagsimulang ihayag ang Ama sa mga pinili Niya, ang Ama ay hindi nakilala ng lahat ng nabuhay bago Siya at hindi maaaring Siya ang Diyos na kilala na ng lahat.’</q></p><h3>Kabanata V. Hindi Magkakatugma ang mga Turo ni Jesus</h3><p><q>‘Sa ganitong pagsasalita, hindi rin pare-pareho si Jesus sa sarili Niyang turo. Sapagkat sa ibang mga pahayag na kinuha sa mga Kasulatan, inilalarawan Niya ang Diyos bilang kakila-kilabot at matuwid, na sinasabi: “<q>Huwag ninyong katakutan ang pumapatay sa katawan ngunit walang magagawa sa kaluluwa; kundi katakutan ninyo Siya na makapaghahagis kapwa sa katawan at kaluluwa sa Gehenna ng apoy. Oo, sinasabi Ko sa inyo, katakutan ninyo Siya.</q>” At sa isang talinghaga ay ipinakikita Niyang ang Diyos ay tagapaghiganti at tagagantimpala. <q>Kung gayon, kung ginawa iyon ng di-matuwid na hukom dahil patuloy siyang pinakikiusapan, gaano pa kaya ang Ama na maghihiganti para sa mga sumisigaw sa Kanya araw at gabi? O iniisip ba ninyong dahil matagal Siyang nagtitiis ay hindi Niya iyon gagawin? Oo, sinasabi Ko sa inyo, gagawin Niya iyon, at agad.</q> Ang nagsasalita tungkol sa Diyos bilang tagapaghiganti at tagagantimpala ay inilalarawan Siyang likas na matuwid, hindi lamang mabuti. Bukod dito, nagpapasalamat si Jesus sa Panginoon ng langit at lupa. Kung Siya ang Panginoon ng langit at lupa, Siya ang humubog sa sanlibutan; at kung Siya ang humubog, Siya ang matuwid na Diyos. Kaya kung minsan ay tinatawag Niya Siyang mabuti at kung minsan ay matuwid, hindi Siya magkakatugma sa puntong ito. At kahapon, ang marunong Niyang alagad ay nagpanindigan pa ng ikatlong bagay: na higit na mapagkakatiwalaan ang aktuwal na pagkakita kaysa pangitain, hindi nalalamang maaaring makatao ang aktuwal na pagkakita samantalang ang pangitain ay hayagang nagmumula sa pagka-Diyos.’</q></p><h3>Kabanata VI. Lumabas si Pedro upang Sagutin si Simon</h3><p><q>Ito at mga katulad nito, Pedro, ang sinabi ni Simon sa karamihan habang nasa labas siya; at para sa akin ay ginugulo niya ang isip ng marami. Kaya lumabas ka agad at, sa kapangyarihan ng katotohanan, gibain mo ang kanyang mga huwad na pahayag.</q> Nang sabihin ito ni Zacchæus, nanalangin si Pedro ayon sa kanyang kaugalian at lumabas. Tumayo siya sa lugar na pinagsalitaan niya noong nakaraang araw, binati ang karamihan ayon sa kaugaliang itinakda ng kanyang relihiyon, at nagsimulang magsalita: <q>Ang ating Panginoong Jesu-Cristo, na tunay na Propeta—gaya ng patutunayan ko nang lubos sa angkop na panahon—ay nagpahayag nang maikli tungkol sa mga bagay na nauukol sa katotohanan dahil sa dalawang dahilan. Una, karaniwan Siyang nagsasalita sa mga maka-Diyos na may sapat nang kaalaman upang maniwala sa Kanyang mga pahayag; at ikalawa, limitado ang panahong itinakda sa Kanyang pangangaral, kaya hindi Niya ginamit palagi ang paraan ng mahabang pagpapatunay upang hindi maubos ang Kanyang panahon sa paglutas ng iilang suliranin. Kaya inilalahad Niya ang Kanyang mga palagay sa bayang kayang umunawa sa Kanya. Kabilang kami sa mga iyon; at kapag may hindi kami naunawaan—na bihirang mangyari—palihim namin Siyang tinatanong upang walang anumang sinabi Niya ang manatiling hindi malinaw sa amin.</q></p><h3>Kabanata VII. Ang Tao sa Anyo ng Diyos</h3><p><q>Yamang alam Niyang nauunawaan namin ang Kanyang mga salita at kaya naming magbigay ng mga patunay, isinugo Niya kami sa mga Hentil na walang kaalaman upang bautismuhan sila para sa kapatawaran ng mga kasalanan, at iniutos na turuan muna sila. Sa Kanyang mga utos, ito ang una at dakila: katakutan ang Panginoong Diyos at Siya lamang ang paglingkuran. Ang Diyos na tinutukoy Niya ay yaong ang mga anghel ay mga anghel ng pinakamaliit sa mga sumasampalataya sa atin at palaging nakikita sa langit ang mukha ng Ama. Sapagkat Siya ay may anyo at may bawat sangkap, una at higit sa lahat, alang-alang sa kagandahan at hindi sa gamit. Hindi Siya may mga mata upang makakita sa pamamagitan ng mga iyon, sapagkat nakikita Niya ang lahat ng panig. Hindi rin Siya may mga tainga upang makarinig, sapagkat nakaririnig, nakararamdam, kumikilos, at gumagawa Siya sa lahat ng panig. Taglay Niya ang pinakamagandang anyo alang-alang sa tao, upang makita Siya ng mga dalisay ang puso at magalak sila dahil sa kanilang mga tiniis. Hinubog Niya ang tao ayon sa sarili Niyang anyo na para bang sa pinakadakilang tatak, upang maging pinuno at panginoon siya ng lahat. Kaya ang nagnanais sumamba sa Kanya ay nagpaparangal sa Kanyang nakikitang larawan, na siyang tao. Anumang gawin ng sinuman sa tao, mabuti man o masama, ay itinuturing na ginawa sa Kanya. Kaya ang Kanyang paghuhukom ay magbibigay sa bawat isa ayon sa nararapat sa kanya, sapagkat ipinaghihiganti Niya ang Kanyang sariling anyo.</q></p><h3>Kabanata VIII. Anyo ng Diyos: Pinabulaanan ang Pagtutol ni Simon</h3><p><q>Ngunit may magsasabi: Kung Siya ay may anyo, kung gayon ay may hugis din Siya at nasa isang lugar; ngunit kung nasa isang lugar Siya at, bilang mas maliit, ay nasasaklaw nito, paano Siya magiging higit sa lahat? Paano Siya magiging nasa lahat ng dako kung Siya’y may hugis? Ang una kong sasabihin sa nagtataas ng ganitong mga pagtutol ay ito: hinihikayat tayo ng mga Kasulatan na magkaroon ng ganitong mga kaisipan at paniwala tungkol sa Kanya, at alam nating totoo ang mga pahayag nila sapagkat pinatototohanan ang mga iyon ng ating Panginoong Jesu-Cristo, na sa Kanyang utos ay tungkulin naming magbigay sa inyo ng mga patunay na gayon nga. Ngunit una kong tatalakayin ang tungkol sa lugar. Ang lugar ng Diyos ay yaong hindi umiiral, samantalang ang Diyos ang umiiral. At ang hindi umiiral ay hindi maihahambing sa umiiral. Sapagkat paano iiral ang lugar? Maliban kung ito’y isang ikalawang lugar, gaya ng langit, lupa, tubig, hangin, at anumang iba pang katawang pumupuno sa kawalan. Ang kawalan ay tinatawag na gayon sapagkat wala itong anuman; mas angkop pang tawagin itong ‘wala.’ Ngunit kahit ipagpalagay nating may anumang halaga ito, maraming halimbawa akong maibibigay upang ipakitang ang sumasaklaw ay hindi kailangang nakahihigit sa nasasaklaw. Ang araw ay bilog ang hugis at lubusang nasasaklaw ng hangin, ngunit pinagliliwanag nito ang hangin, pinaiinit at hinahati iyon; at kapag wala ang araw, nababalot iyon ng dilim at lumalamig na parang patay. Sa muling pagsikat ng araw, napagliliwanag at napaiinit muli ang hangin. Ginagawa ito ng araw sa pagbabahagi ng sarili nito bagaman may hangganan ang sarili nitong sangkap. Ano, kung gayon, ang hahadlang sa Diyos, bilang Humubog at Panginoon nito at ng lahat ng bagay, na magkaroon ng hugis, anyo, at kagandahan, samantalang ang pagbabahagi ng mga katangiang ito mula sa Kanya ay umaabot nang walang hanggan?</q></p><h3>Kabanata IX. Ang Diyos Bilang Sentro o Puso ng Sansinukob</h3><p><q>Kung gayon, iisa ang Diyos na tunay na umiiral, na namamahala sa isang nakahihigit na anyo at siyang puso ng nasa itaas at ng nasa ibaba nang dalawang ulit; mula sa Kanya, na para bang mula sa isang sentro, ay lumalabas ang nagbibigay-buhay at di-katawang kapangyarihan. Ang buong sansinukob kasama ng mga bituin at mga dako ng langit, hangin, apoy, at anumang iba pang umiiral, ay napatutunayang isang sangkap na walang hanggan sa taas, walang sukdulan sa lalim, at hindi masukat sa lawak, na nagpapalawak mula sa Kanya ng kalikasang nagbibigay-buhay at marunong sa tatlong walang hanggan. Kaya kailangang umiral ang walang-hanggang ito na nagmumula sa Kanya sa lahat ng panig, na may puso nitong Siya na higit sa lahat at sa ganitong paraan ay may anyo; sapagkat saanman Siya naroroon, Siya’y parang nasa sentro ng walang hanggan at hangganan ng sansinukob. At ang mga paglawak na nagmumula sa Kanya ay may kalikasan ng anim na walang hanggan: ang isa’y tumataas sa itaas, ang isa’y lumalalim sa ibaba, ang isa’y sa kanan, ang isa’y sa kaliwa, ang isa’y sa harap, at ang isa’y sa likod. Siya mismo, na tumitingin sa mga ito na para bang sa bilang na pantay sa bawat panig, ang bumubuo sa sanlibutan sa anim na yugto ng panahon, habang Siya mismo ang kapahingahan at ang walang-hanggang panahong darating ang Kanyang larawan, Siya ang pasimula at wakas. Sapagkat sa Kanya nagwawakas ang anim na walang hanggan, at mula sa Kanya tinatanggap ng mga iyon ang paglawak tungo sa kawalang-hanggan.</q></p><h3>Kabanata X. Kalikasan at Anyo ng Diyos</h3><p><q>Ito ang hiwaga ng pito. Sapagkat Siya mismo ang kapahingahan ng kabuuan at ipinagkakaloob ang Kanyang sarili bilang kapahingahan sa mga gumagaya sa Kanyang kadakilaan ayon sa maliit nilang sukat. Sapagkat Siya lamang ang minsang nauunawaan at minsang hindi nauunawaan, <em>minsan ay nalilimitahan</em> at minsan ay walang hangganan, na may mga paglawak na nagmumula sa Kanya tungo sa kawalang-hanggan. Kaya Siya ay nauunawaan at hindi nauunawaan, malapit at malayo, narito at naroon, sapagkat Siya lamang ang tunay na umiiral at nagbabahagi ng isip na walang hanggan sa lahat ng panig; dahil dito humihinga at may buhay ang mga kaluluwa. At kapag nahiwalay sila sa katawan at matagpuang nananabik sa Kanya, dinadala sila sa Kanyang dibdib, gaya ng hamog sa kabundukan sa panahon ng taglamig na hinihila ng mga sinag ng araw at dinadala roon nang hindi namamatay. Anong uri ng pag-ibig, kung gayon, ang dapat mabuo sa atin kapag sa pamamagitan ng ating isip ay minamasdan natin ang Kanyang magandang anyo! Kung hindi, walang saysay <em>ang magsalita tungkol sa kagandahan</em>. Sapagkat hindi maaaring umiral ang kagandahan nang hiwalay sa anyo; ni maaakit ang sinuman sa pag-ibig sa Diyos o makapag-iisip man lamang na makikita niya Siya kung walang anyo ang Diyos.</q></p><h3>Kabanata XI. Takot sa Diyos</h3><p><q>Ngunit ang ilan na banyaga sa katotohanan at inilalaan ang kanilang lakas sa paglilingkod sa kasamaan ay nagsasabing walang hugis ang Diyos, sa pagkukunwaring niluluwalhati Siya, upang sapagkat wala Siyang hugis ni anyo ay hindi Siya makita ninuman at sa gayon ay hindi Siya pananabikan. Sapagkat ang isip na hindi nakikita ang anyo ng Diyos ay walang laman tungkol sa Kanya. Ngunit paano mananalangin ang isang tao kung wala siyang matatakbuhan at masasaligan? Kung wala siyang salubunging pagtutol, nahuhulog siya sa kawalan. Sasabihin ng isa: hindi natin dapat katakutan ang Diyos kundi ibigin Siya. Sumasang-ayon ako; ngunit ang kamalayan na gumawa tayo nang mabuti sa bawat mabuting gawa ang tutupad nito. Ang paggawa ng mabuti ay nagmumula sa takot. Ngunit sasabihin, pinapatay ng takot ang kaluluwa. Hindi; pinaninindigan kong hindi nito pinapatay kundi ginigising at binabago ang kaluluwa. Marahil ay magiging tama ang utos na huwag katakutan ang Diyos kung tayong mga tao ay hindi natatakot sa napakaraming ibang bagay—mga pakana ng kapwa tao, mababangis na hayop, ahas, karamdaman, pagdurusa, mga demonyo, at libu-libong iba pang kasamaan. Kaya ang humihiling sa ating huwag matakot sa Diyos ay iligtas muna tayo mula sa mga ito upang huwag natin silang katakutan. Ngunit kung hindi niya kaya, bakit niya ipagkakait na maligtas tayo mula sa isang libong takot sa pamamagitan ng iisang takot—ang takot sa Matuwid—at na sa kaunting pananampalataya sa Kanya ay maalis natin ang isang libong paghihirap sa sarili at sa iba, makatanggap ng mga pagpapala bilang kapalit, at sa takot sa Diyos na nakakakita sa lahat ay huwag gumawa ng masama at mamuhay nang payapa maging sa kasalukuyang buhay?</q></p><h3>Kabanata XII. Takot at Pag-ibig sa Diyos</h3><p><q>Kaya ang mapagpasalamat na paglilingkod sa Kanya na tunay na Panginoon ang nagpapalaya sa atin mula sa paglilingkod sa lahat ng ibang panginoon. Kung posible para sa sinuman na maging malaya sa kasalanan nang hindi natatakot sa Diyos, huwag siyang matakot; sapagkat sa impluwensiya ng pag-ibig sa Kanya ay hindi magagawa ng tao ang hindi kalugud-lugod sa Kanya. Sa isang dako ay nasusulat na katakutan natin Siya, at sa kabilang dako ay inutusan tayong ibigin Siya, upang gamitin ng bawat isa sa atin ang lunas na angkop sa kanyang kalagayan. Kaya katakutan Siya sapagkat Siya’y matuwid; ngunit katakutan mo man Siya o ibigin, huwag kang magkasala. At mangyari nawa na ang natatakot sa Kanya ay madaig ang bawal na mga pagnanasa, huwag pagnasaan ang pag-aari ng iba, magsagawa ng kabutihan, maging mahinahon, at kumilos nang matuwid! Sapagkat nakikita kong ang ilan na hindi ganap ang takot sa Kanya ay marami pa ring kasalanan. Kaya katakutan natin ang Diyos hindi lamang sapagkat Siya’y matuwid; sapagkat dahil sa habag sa mga ginawan ng mali ay pinarurusahan Niya ang mga gumawa ng mali. Kung paanong pinapatay ng tubig ang apoy, gayon pinapatay ng takot ang pagnanasa sa masasamang gawa. Ang nagtuturo ng kawalang-takot ay siya mismong hindi natatakot; ngunit ang hindi natatakot ay hindi naniniwalang may paghuhukom, pinalalakas ang kanyang mga pagnanasa, nagsasagawa ng mahika, at inaakusahan ang iba sa mga gawaing siya mismo ang gumagawa.</q></p><h3>Kabanata XIII. Patunay ng mga Pandama at Patunay mula sa Di-karaniwang Pangitain</h3><p>Nang marinig ito ni Simon, pinutol niya ang pagsasalita at sinabi: <q>Alam ko kung kanino mo ibinabato ang mga pahayag na ito; ngunit upang hindi ko sayangin ang oras sa mga paksang ayaw kong talakayin at paulit-ulit na sabihin ang gayunding mga bagay upang pabulaanan ka, sagutin mo ang maikli naming pahayag. Ipinahayag mong lubos mong naunawaan ang mga aral at gawa ng iyong guro sapagkat nakita mo ang mga iyon sa sarili mong mga mata at narinig sa sarili mong mga tainga, at na walang iba ang maaaring magkaroon ng katulad niyon sa pamamagitan ng pangitain o pagpapakita. Ngunit ipapakita kong mali ito. Ang taong nakaririnig sa sarili niyang mga tainga ay hindi pa lubos na nakatitiyak sa katotohanan ng sinasabi, sapagkat kailangan pang isaalang-alang ng kanyang isip kung nagkakamali ba ang nagsasalita, yamang sa anyo ay tao lamang ito. Ngunit ang pagpapakita ay hindi lamang naghaharap ng bagay sa paningin; binibigyan din nito ng katiyakan ang nakakakita sapagkat nagmumula iyon sa Diyos. Sagutin mo muna ito.</q></p><h3>Kabanata XIV. Mas Mapagkakatiwalaan ang Patunay ng mga Pandama kaysa sa Di-karaniwang Pangitain</h3><p>At sinabi ni Pedro: <q>Isang punto ang iminungkahi mong talakayin ngunit iba ang sinagot mo. Ang panukala mo ay higit na lubos na nakaaalam at <em>nagkakaroon ng katiyakan</em> ang nakaririnig dahil sa isang pagpapakita kaysa sa nakaririnig sa sarili niyang mga tainga; ngunit sa pagtalakay mo ay nais mo kaming kumbinsihing higit na tiyak ang nakaririnig sa pamamagitan ng pagpapakita kaysa sa nakaririnig sa sarili niyang mga tainga. Sa huli ay sinabi mong dahil dito mas tiyak mong nalalaman ang mga aral ni Jesus kaysa sa akin sapagkat narinig mo ang Kanyang mga salita sa pamamagitan ng isang pagpapakita. Ngunit sasagutin ko ang una mong panukala. Ang propeta, sapagkat propeta siya at napatunayang tunay, ay pinaniniwalaan nang may katiyakan; at yamang nakikilala na siyang tunay na propeta, maaari siyang siyasatin at tanungin ayon sa nais ng alagad at siya’y sumasagot. Ngunit ang nagtitiwala sa pagpapakita, pangitain, o panaginip ay walang katiyakan sapagkat hindi niya alam kung kanino siya nagtitiwala. Maaaring isang masamang demonyo iyon o mapanlinlang na espiritung nagkukunwaring hindi naman siya tunay. Kung nais tanungin ng isang tao kung sino ang nagpakita, maaari nitong sabihin ang anumang nais nito tungkol sa sarili. At lumilitaw at nananatili lamang ito hangga’t nais nito, saka nawawala, hindi nananatili sa nagtatanong hangga’t kailangan niya upang sumangguni. Ang nakakakita sa panaginip ay hindi rin makapagtatanong ng anumang nais niya, sapagkat ang pagninilay ay wala sa kapangyarihan ng natutulog. Kaya madalas na habang gising ay sabik tayong malaman ang isang bagay ngunit sa panaginip ay iba ang ating itinatanong, o wala tayong itinatanong ngunit may naririnig tayong hindi naman natin kailangan; at paggising ay nalulungkot tayo sapagkat hindi natin narinig ni naitanong ang mga bagay na nais talaga nating malaman.</q></p><h3>Kabanata XV. Tinalakay ang Patunay mula sa mga Panaginip</h3><p>At sinabi ni Simon: <q>Kung pinaninindigan mong hindi palaging naghahayag ng katotohanan ang mga pagpapakita, gayunman ang mga pangitain at panaginip na ipinadadala ng Diyos ay hindi nagsasalita nang huwad tungkol sa mga bagay na nais nilang sabihin.</q> Sinabi ni Pedro: <q>Tama ka sa pagsasabing kapag ipinadala ng Diyos ay hindi sila nagsasalita nang huwad. Ngunit hindi tiyak kung ang nakita ng isang tao ay panaginip na ipinadala ng Diyos.</q> Sinabi ni Simon: <q>Kung matuwid ang taong nakakita, tunay ang kanyang pangitain.</q> Sinabi ni Pedro: <q>Tama ka. Ngunit sino ang matuwid kung kailangan pa niya ng pangitain upang matutuhan ang nararapat niyang malaman at gawin?</q> Sinabi ni Simon: <q>Ipagkaloob mo sa akin ito: na ang matuwid lamang ang nakakakita ng tunay na pangitain; pagkatapos ay sasagutin ko ang isa pang punto. Sapagkat napagpasyahan kong hindi nakakakita ng tunay na panaginip ang di-maka-Diyos.</q> Sinabi ni Pedro: <q>Mali iyon; mapatutunayan ko iyan kapwa mula sa Kasulatan at hiwalay sa Kasulatan, bagaman hindi ko ipinapangakong mapapaniwala kita. Sapagkat ang taong nahuhumaling sa masamang babae ay hindi basta binabago ang isip upang umibig sa isang mabuting babae sa isang marangal na pagsasama; kung minsan ay minamahal ng tao ang mas masama dahil sa dati nang pagkiling bagaman alam niyang may higit na mahusay. Dahil sa ganitong kalagayan ng isip ay nananatili kang mangmang.</q> Sinabi ni Simon: <q>Iwan na natin iyan at talakayin mo ang bagay na ipinangako mong patutunayan. Para sa akin ay imposibleng tumanggap ng mga panaginip mula sa Diyos ang mga di-maka-Diyos sa anumang paraan.</q></p><h3>Kabanata XVI. Masasamang Demonyo Lamang ang Nagpapakita sa mga Di-maka-Diyos</h3><p>At sinabi ni Pedro: <q>Natatandaan kong ipinangako kong patunayan ang puntong ito at magbigay ng mga patunay kapwa mula sa Kasulatan at hiwalay dito. Makinig ka ngayon. Alam nating marami—kung pahihintulutan mo akong magsabi nito; at kung hindi, maaari kong tawagin ang mga naririto bilang mga hukom—ang sumasamba sa mga diyus-diyosan, nangangalunya, at nagkakasala sa iba’t ibang paraan, ngunit nakakakita pa rin ng tunay na mga pangitain at panaginip; at ang ilan ay nakararanas din ng mga pagpapakita ng mga demonyo. Pinaninindigan kong hindi kayang makita ng mga mata ng mortal ang di-katawang anyo ng Ama o ng Anak sapagkat iyon ay nililiwanagan ng napakadakilang liwanag. Kaya hindi dahil naiinggit ang Diyos kundi dahil naaawa Siya na hindi Siya maaaring makita ng taong nasa laman. Sapagkat ang nakakakita sa <em>Diyos</em> ay hindi mabubuhay. Nilulusaw ng labis na liwanag ang laman ng nakakakita, maliban kung sa lihim na kapangyarihan ng Diyos ang laman ay mabago tungo sa kalikasan ng liwanag upang makakita ng liwanag, o ang sangkap ng liwanag ay mabago tungo sa laman upang makita ng laman. Ang kapangyarihang makita ang Ama nang walang anumang pagbabago ay nauukol sa Anak lamang. Ngunit makikita rin ng mga matuwid ang Diyos; sapagkat sa muling pagkabuhay ng mga patay, kapag ang kanilang mga katawan ay nabago tungo sa liwanag at sila’y naging gaya ng mga anghel, makikita nila Siya. At kung isinusugo ang isang anghel upang makita ng tao, nagbabago siya tungo sa anyong laman upang makita ng laman. Sapagkat walang sinuman ang makakakita sa di-katawang kapangyarihan—hindi lamang ng Anak kundi maging ng isang anghel. Kaya kung may nakakakita ng isang pagpapakita, dapat niyang malaman na iyon ay pagpapakita ng isang masamang demonyo.</q></p><h3>Kabanata XVII. Nakakakita ng Tunay na mga Panaginip at Pangitain ang mga Di-maka-Diyos</h3><p><q>Ngunit maliwanag na nakakakita ng tunay na mga pangitain at panaginip ang mga di-maka-Diyos, at mapatutunayan ko iyon mula sa Kasulatan. Nasusulat sa kautusan kung paanong si Abimelech, na di-maka-Diyos, ay nagnanais dungisan sa pakikipagtalik ang asawa ng matuwid na si Abraham, at kung paanong sa kanyang pagtulog ay narinig niya mula sa Diyos ang utos na huwag siyang hipuin sapagkat kasama niya ang kanyang asawa. Si Faraon, isa ring di-maka-Diyos, ay nakakita ng panaginip tungkol sa matataba at payat na uhay; at nang ipaliwanag iyon ni Jose, sinabi niyang ang panaginip ay mula sa Diyos. Si Nabucodonosor, na sumamba sa mga larawan at nag-utos na ihagis sa apoy ang mga sumasamba sa Diyos, ay nakakita ng panaginip na umaabot sa buong panahon ng sanlibutan. At huwag sabihin ninuman, ‘Walang di-maka-Diyos na nakakakita ng pangitain habang gising.’ Mali iyon. Si Nabucodonosor mismo, matapos ipahagis sa apoy ang tatlong lalaki, ay tumingin sa hurno at nakakita ng ikaapat at sinabi, ‘Nakikita kong ang ikaapat ay gaya ng Anak ng Diyos.’ Gayunman, bagaman nakakita sila ng mga pagpapakita, pangitain, at panaginip, nanatili silang di-maka-Diyos. Kaya hindi natin maaaring ipasiya nang tiyak na ang nakakita ng mga pangitain, panaginip, at pagpapakita ay walang alinlangang maka-Diyos. Sa taong maka-Diyos, ang katotohanan ay likas at dalisay na bumubukal sa kanyang isip—hindi nililikha sa pamamagitan ng mga panaginip kundi ipinagkakaloob sa mabuti sa pamamagitan ng pagkaunawa.</q></p><h3>Kabanata XVIII. Kalikasan ng Paghahayag</h3><p><q>Gayon din sa akin ay inihayag ng Ama ang Anak. Kaya alam ko kung ano ang kahulugan ng paghahayag, sapagkat natutuhan ko ito sa sarili kong karanasan. Nang sabihin ng Panginoon, ‘Sino raw Ako ayon sa mga tao?’ at marinig kong iba-iba ang sinasabi tungkol sa Kanya, pumasok sa aking puso na sabihin—at hindi ko alam kung paano ko nasabi—‘Ikaw ang Anak ng buhay na Diyos.’ Ngunit tinawag Niya akong pinagpala at itinuro sa akin na ang Ama ang naghayag nito sa akin. Mula noon ay natutuhan kong ang paghahayag ay kaalamang natatamo nang walang pagtuturo at walang pagpapakita o panaginip. At gayon nga. Sapagkat sa <em>kaluluwa</em> na inilagay sa atin ng Diyos ay naroon ang buong katotohanan; ngunit ito’y natatakpan at inihahayag ng kamay ng Diyos ayon sa kung ano ang nararapat sa bawat isa sa pamamagitan ng kanyang kaalaman. Ngunit ang pagpapahayag ng anumang bagay sa pamamagitan ng mga panlabas na pagpapakita at panaginip ay patunay hindi ng paghahayag kundi ng poot. Sapagkat nasusulat sa kautusan na ang Diyos, sa Kanyang galit, ay nagsabi kina Aaron at Miriam: ‘Kung may propetang bumangon sa gitna ninyo, magpapakilala Ako sa kanya sa pamamagitan ng mga pangitain at panaginip; ngunit hindi gayon sa Aking lingkod na si Moises, sapagkat makikipag-usap Ako sa kanya sa <em>panlabas</em> na anyo at hindi sa pamamagitan ng mga panaginip, gaya ng pakikipag-usap ng isang tao sa kanyang kaibigan.’ Nakikita mo kung paanong ang mga pahayag ng poot ay ibinibigay sa pamamagitan ng mga pangitain at panaginip, ngunit ang mga pahayag sa isang kaibigan ay mukha-sa-mukha, sa <em>panlabas</em> na anyo, at hindi sa pamamagitan ng mga bugtong, pangitain, o panaginip na para bang sa isang kaaway.</q></p><h3>Kabanata XIX. Hindi Makatwiran ang Pagsalungat kay Pedro</h3><p><q>Kung gayon, kung nagpakita sa iyo ang ating Jesus sa isang pangitain, nagpakilala at nagsalita sa iyo, iyon ay bilang isang nagagalit sa isang kalaban; kaya sa pamamagitan ng mga pangitain, panaginip, o panlabas na paghahayag Siya nagsalita sa iyo. Ngunit maaari bang maging handa sa wastong pagtuturo ang isang tao sa pamamagitan lamang ng mga pagpapakita? At kung sasabihin mong maaari, itatanong ko: bakit nanatili at nagturo nang isang buong taon ang ating guro sa mga taong gising? At paano namin paniniwalaan ang iyong salita kapag sinasabi mong nagpakita Siya sa iyo? Paano Siya nagpakita sa iyo samantalang ang mga palagay mo ay salungat sa Kanyang turo? Kung tunay kang nakita at tinuruan Niya at naging apostol Niya kahit sa loob lamang ng isang oras, ipahayag mo ang Kanyang mga salita, ipaliwanag ang Kanyang mga pahayag, ibigin ang Kanyang mga apostol, at huwag makipagtalo sa akin na nakasama Niya. Sapagkat ngayo’y tuwirang sumasalungat ka sa akin, na isang matibay na bato, saligan ng Iglesia. Kung hindi ka sumasalungat sa akin, hindi mo ako aakusahan ni lalapastanganin ang katotohanang ipinahayag ko, upang hindi paniwalaan ang sinasabi kong narinig ko mismo sa Panginoon sa pamamagitan ng aking mga tainga, na para bang ako’y isang hinatulan at masamang-taong walang mabuting pangalan. Ngunit kung sinasabi mong hinatulan ako, inaakusahan mo ang Diyos na naghayag sa akin ng Cristo at nilalapastangan mo Siya na tumawag sa akin na pinagpala dahil sa paghahayag. Ngunit kung tunay mong nais gumawa alang-alang sa katotohanan, matuto ka muna sa amin ng natutuhan namin mula sa Kanya; at sa pagiging alagad ng katotohanan, maging katuwang ka namin.</q></p><h3>Kabanata XX. Isa Pang Paksa ng Talakayan ang Iminungkahi</h3><p>Nang marinig ito ni Simon, sinabi niya: <q>Malayo sa akin ang maging alagad niya o mo. Hindi ako mangmang sa nararapat kong malaman; ang mga tanong kong ginawa na parang isang mag-aaral ay upang makita kung mapatutunayan mong mas malinaw ang aktuwal na pagkakita kaysa sa pagpapakita. Ngunit nagsalita ka ayon sa sarili mong kagustuhan; hindi mo napatunayan. Bukas ay haharapin ko ang iyong mga palagay tungkol sa Diyos na sinabi mong humubog sa sanlibutan; at sa pakikipagtalakayan sa iyo ay ipapakita kong hindi siya ang kataas-taasan ni mabuti, at na ang iyong guro ay nagsabi rin ng gayon; patutunayan kong hindi mo siya naunawaan.</q> Pagkasabi nito, umalis siya at ayaw nang pakinggan ang anumang maaaring isagot sa mga pahayag na inilatag niya.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

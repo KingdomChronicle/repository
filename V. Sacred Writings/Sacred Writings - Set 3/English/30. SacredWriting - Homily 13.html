@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 13</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Journey to Laodicea</option><option value="1">Chapter II. Peter Relates to Nicetas and Aquila the History of Clement and His Family</option><option value="2">Chapter III. Recognition of Nicetas and Aquila</option><option value="3">Chapter IV. The Mother Must Not Take Food with Her Son; the Reason Stated</option><option value="4">Chapter V. Mattidia Wishes to Be Baptized</option><option value="5">Chapter VI. The Sons Reveal Themselves to the Mother</option><option value="6">Chapter VII. Nicetas Tells What Befell Him</option><option value="7">Chapter VIII. Nicetas Like to Be Deceived by Simon Magus</option><option value="8">Chapter IX. The Mother Begs Baptism for Herself and Her Hostess</option><option value="9">Chapter X. Mattidia Values Baptism Aright</option><option value="10">Chapter XI. Mattidia Has Unintentionally Fasted One Day</option><option value="11">Chapter XII. The Difficulty Solved</option><option value="12">Chapter XIII. Peter on Chastity</option><option value="13">Chapter XIV. Peter's Speech Continued</option><option value="14">Chapter XV. Peter's Speech Continued</option><option value="15">Chapter XVI. Peter's Speech Continued</option><option value="16">Chapter XVII. Peter's Speech Continued</option><option value="17">Chapter XVIII. Peter's Speech Continued</option><option value="18">Chapter XIX. Peter's Speech Ended</option><option value="19">Chapter XX. Peter Addresses Mattidia</option><option value="20">Chapter XXI. The Same Subject Continued</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Journey to Laodicea</h3><p>Now at break of day Peter entered, and said: <q>Clement, and his mother Mattidia, and my wife, must take their seats immediately on the waggon.</q> And so they did straightway. And as we were hastening along the road to Balanæae, my mother asked me how my father was; and I said: <q>My father went in search of you, and of my twin brothers Faustinus and Faustinianus, and is now nowhere to be found. But I fancy he must have died long ago, either perishing by shipwreck, or losing his way, or wasted away by grief.</q> When she heard this, she burst into tears, and groaned through grief; but the joy which she felt at finding me, mitigated in some degree the painfulness of her recollections. And so we all went down together to Balanæae. And on the following day we went to Paltus, and from that to Gabala; and on the next day we reached Laodicea. And, lo! Before the gates of the city Nicetas and Aquila met us, and embracing us, brought us to our lodging. Now Peter, seeing that the city was beautiful and great, said: <q>It is worth our while to stay here for some days; for, generally speaking, a populous place is most capable of yielding us those whom we seek.</q> Nicetas and Aquila asked me who that strange woman was; and I said: <q>My mother, whom God, through my lord Peter, has granted me to recognise.</q></p><h3>Chapter II. Peter Relates to Nicetas and Aquila the History of Clement and His Family</h3><p>On my saying this, Peter gave them a summary account of all the incidents,—how, when they had gone on before, I Clement had explained to him my descent, the journey undertaken by my mother with her twin children on the false pretext of the dream; and furthermore, the journey undertaken by my father in search of her; and then how Peter himself, after hearing this, went into the island, met with the woman, saw her begging, and asked the reason of her so doing; and then ascertained who she was, and her mode of life, and the feigned dream, and the names of her children—that is, the name borne by me, who was left with my father, and the names of the twin children who travelled along with her, and who, she supposed, had perished in the deep.</p><h3>Chapter III. Recognition of Nicetas and Aquila</h3><p>Now when this summary narrative had been given by Peter, Nicetas and Aquila in amazement said: <q>Is this indeed true, O Ruler and Lord of the universe, or is it a dream?</q> And Peter said: <q>Unless we are asleep, it certainly is true.</q> On this they waited for a little in deep meditation, and then said: <q>We are Faustinus and Faustinianus. From the commencement of your conversation we looked at each other, and conjectured much with regard to ourselves, whether what was said had reference to us or not; for we reflected that many coincidences take place in life. Wherefore we remained silent while our hearts beat fast. But when you came to the end of your narrative, we saw clearly that your statements referred to us, and then we avowed who we were.</q> And on saying this, bathed in tears, they rushed in to see their mother; and although they found her asleep, they were yet anxious to embrace her. But Peter forbade them, saying: <q>Let me bring you and present you to your mother, lest she should, in consequence of her great and sudden joy, lose her reason, as she is slumbering, and her spirit is held fast by sleep.</q></p><h3>Chapter IV. The Mother Must Not Take Food with Her Son; the Reason Stated</h3><p>As soon as my mother had enough of sleep, she awoke, and Peter at once began first to talk to her of <em>true</em> piety, saying: <q>I wish you to know, O woman, the course of life involved in our religion. We worship one God, who made the world which you see; and we keep His law, which has for its chief injunctions to worship Him alone, and to hallow His name, and to honour our parents, and to be chaste, and to live piously. In addition to this, we do not live with all indiscriminately; nor do we take our food from the same table as Gentiles, inasmuch as we cannot eat along with them, because they live impurely. But when we have persuaded them to have true thoughts, and to follow a right course of action, and have baptized them with a thrice blessed invocation, then we dwell with them. For not even if it were our father, or mother, or wife, or child, or brother, or any other one having a claim by nature on our affection, can we venture to take our meals with him; for our religion compels us to make a distinction. Do not, therefore, regard it as an insult if your son does not take his food along with you, until you come to have the same opinions and adopt the same course of conduct as he follows.</q></p><h3>Chapter V. Mattidia Wishes to Be Baptized</h3><p>When she heard this, she said: <q>What, then, prevents me from being baptized this day? For before I saw you I turned away from the so-called gods, induced by the thought that, though I sacrificed much to them almost every day, they did not aid me in my necessities. And with regard to adultery, what need I say? For not even when I was rich was I betrayed into this sin by luxury, and the poverty which succeeded has been unable to force me into it, since I cling to my chastity as constituting the greatest beauty, on account of which I fell into so great distress. But I do not at all imagine that you, my lord Peter, are ignorant that the greatest temptation arises when everything looks bright. And therefore, if I was chaste in my prosperity, I do not in my despondency give myself up to pleasures. Yea, indeed, you are not to suppose that my soul has now been freed from distress, although it has received some measure of consolation by the recognition of Clement. For the gloom which I feel in consequence of the loss of my two children rushes in upon me, and throws its shadow to some extent over my joy; for I am grieved, not so much because they perished in the sea, but because they were destroyed, both soul and body, without possessing true piety towards God. Moreover, my husband, their father, as I have learned from Clement, went away in search of me and his sons, and for so many years has not been heard of; and, without doubt, he must have died. For the miserable man, loving me as he did in chastity, was fond of his children; and therefore the old man, deprived of all of us who were dear to him above everything else, died utterly broken-hearted.</q></p><h3>Chapter VI. The Sons Reveal Themselves to the Mother</h3><p>The sons, on hearing their mother thus speak, could no longer, in obedience to the exhortation of Peter, restrain themselves, but rising up, they clasped her in their arms, showering down upon her tears and kisses. But she said: <q>What is the meaning of this?</q> And Peter answered: <q>Courageously summon up your spirits, O woman, that you may enjoy your children; for these are Faustinus and Faustinianus, your sons, who, you said, had perished in the deep. For how they are alive, after they had in your opinion died on that most disastrous night, and how one of them now bears the name of Nicetas, and the other that of Aquila, they will themselves be able to tell you; for we, as well as you, have yet to learn this.</q> When Peter thus spoke, my mother fainted away through her excessive joy, and was like to die. But when we had revived her she sat up, and coming to herself, she said: <q>Be so good, my darling children, as tell us what happened to you after that disastrous night.</q></p><h3>Chapter VII. Nicetas Tells What Befell Him</h3><p>And Nicetas, who in future is to be called Faustinus, began to speak. <q>On that very night when, as you know, the ship went to pieces, we were taken up by some men, who did not fear to follow the profession of robbers on the deep. They placed us in a boat, and brought us along the coast, sometimes rowing and sometimes sending for provisions, and at length took us to Cæsarea Stratonis, and there tormented us by hunger, fear, and blows, that we might not recklessly disclose anything which they did not wish us to tell; and, moreover, changing our names, they succeeded in selling us. Now the woman who bought us was a proselyte of the Jews, an altogether worthy person, of the name of Justa. She adopted us as her own children, and zealously brought us up in all the learning of the Greeks. But we, becoming discreet with our years, were strongly attached to her religion, and we paid good heed to our culture, in order that, disputing with the other nations, we might be able to convince them of their error. We also made an accurate study of the doctrines of the philosophers, especially the most atheistic,—I mean those of Epicurus and Pyrrho,—in order that we might be the better able to refute them. </q></p><h3>Chapter VIII. Nicetas Like to Be Deceived by Simon Magus</h3><p><q>We were brought up along with one Simon, a magician; and in consequence of our friendly intercourse with him, we were in danger of being led astray. Now there is a report in regard to some man, that, when he appears, the mass of those who have been pious are to live free from death and pain in his kingdom. This matter, however, mother, will be explained more fully at the proper time. But when we were going to be led astray by Simon, a friend of our lord Peter, by name Zacchæus, came to us and warned us not to be led astray by the magician; and when Peter came, he brought us to him that he might give us full information, and convince us in regard to those matters that related to piety. Wherefore we beseech you, mother, to partake of those blessings which have been vouchsafed to us, that we may unite around the same table! This, then, is the reason, mother, why you thought we were dead. On that disastrous night we had been taken up in the sea by pirates, but you supposed that we had perished.</q></p><h3>Chapter IX. The Mother Begs Baptism for Herself and Her Hostess</h3><p>When Faustinus had said this, our mother fell down at Peter's feet, begging and entreating him to send for her and her hostess, and baptize them immediately, in order that, says she, not a single day may pass after the recovery of my children, without my taking food with them. When we united with our mother in making the same request, Peter said: <q>What can you imagine? Am I alone heartless, so as not to wish that you should take your meals with your mother, baptizing her this very day? But yet it is incumbent on her to fast one day before she be baptized. And it is only one day, because, in her simplicity, she said something in her own behalf, which I looked on as a sufficient indication of her faith; otherwise, her purification must have lasted many days.</q></p><h3>Chapter X. Mattidia Values Baptism Aright</h3><p>And I said: <q>Tell us what it was that she said which made her faith manifest.</q> And Peter, said: <q>Her request that her hostess and benefactress should be baptized along with her. For she would not have besought this to be granted to her whom she loves, had she not herself first felt that baptism was a great gift. And for this reason I condemn many that, after being baptized, and asserting that they have faith, they yet do nothing worthy of faith; nor do they urge those whom they love—I mean their wives, or sons, or friends—to be baptized. For if they had believed that God grants eternal life with good works on the acceptance of baptism, they without delay would urge those whom they loved to be baptized. But some one of you will say, 'They do love them, and care for them.' That is nonsense. For do they not, most assuredly, when they see them sick, or led away along the road that ends in death, or enduring any other trial, lament over them and pity them? So, if they believed that eternal fire awaits those who worship not God, they would not cease admonishing them, or being in deep distress for them as unbelievers, if they saw them disobedient, being fully assured that punishment awaits them. But now I shall send for the hostess, and question her as to whether she deliberately accepts the law which is proclaimed through us; and so, according to her state of mind, shall we do what ought to be done.</q></p><h3>Chapter XI. Mattidia Has Unintentionally Fasted One Day</h3><p><q>But since your mother has real confidence in the efficacy of baptism, let her fast at least one day before her baptism.</q> But she swore: <q>During the two past days, while I related to the woman all the events connected with the recognition, I could not, in consequence of my excessive joy, partake of food: only yesterday I took a little water.</q> Peter's wife bore testimony to her statement with an oath, saying: <q>In truth she did not taste anything.</q> And Aquila, who must rather be called Faustinianus in future, said: <q>There is nothing, therefore, to prevent her being baptized.</q> And Peter, smiling, replied: <q>But that is not a baptismal fast which has not taken place on account of the baptism itself.</q> And Faustinus answered: <q>Perhaps God, not wishing to separate our mother a single day after our recognition from our table, has arranged beforehand the fast. For as she was chaste in the times of her ignorance, doing what the true religion inculcated, so even now perhaps God has arranged that she should fast one day before for the sake of the true baptism, that, from the first day of her recognising us, she might take her meals along with us.</q></p><h3>Chapter XII. The Difficulty Solved</h3><p>And Peter said: <q>Let not wickedness have dominion over us, finding a pretext in Providence and your affection for your mother; but rather abide this day in your fast, and I shall join you in it, and tomorrow she will be baptized. And, besides, this hour of the day is not suitable for baptism.</q> Then we all agreed that it should be so.</p><h3>Chapter XIII. Peter on Chastity</h3><p>That same evening we all enjoyed the benefit of Peter's instruction. Taking occasion by what had happened to our mother, he showed us how the results of chastity are good, while those of adultery are disastrous, and naturally bring destruction on the whole race, if not speedily, at all events slowly. <q>And to such an extent,</q> he says, <q>do deeds of chastity please God, that in this life He bestows some small favour on account of it, even on those who are in error; for salvation in the other world is granted only to those who have been baptized on account of their trust in Him, and who act chastely and righteously. This ye yourselves have seen in the case of your mother, that the results of chastity are in the end good. For perhaps she would have been cut off if she had committed adultery; but God took pity on her for having behaved chastely, rescued her from the death that threatened her, and restored to her her lost children.</q></p><h3>Chapter XIV. Peter's Speech Continued</h3><p><q>But some one will say, 'How many have perished on account of chastity!' Yes; but it was because they did not perceive the danger. For the woman who perceives that she is in love with any one, or is beloved by any one, should immediately shun all association with him as she would shun a blazing fire or a mad dog. And this is exactly what your mother did, for she really loved chastity as a blessing: wherefore she was preserved, and, along with you, obtained the full knowledge of the everlasting kingdom. The woman who wishes to be chaste, ought to know that she is envied by wickedness, and that because of love many lie in wait for her. If, then, she remain holy through a stedfast persistence in chastity, she will gain the victory over all temptations, and be saved; whereas, even if she were to do all that is right, and yet should once commit the sin of adultery, she must be punished, as said the prophet.</q></p><h3>Chapter XV. Peter's Speech Continued</h3><p><q>The chaste wife doing the will of God, is a good reminiscence of His first creation; for God, being one, created one woman for one man. She is also still more chaste if she does not forget her own creation, and has future punishment before her eyes, and is not ignorant of the loss of eternal blessings. The chaste woman takes pleasure in those who wish to be saved, and is a pious example to the pious, for she is the model of a good life. She who wishes to be chaste, cuts off all occasions for slander; but if she be slandered as by an enemy, though affording him no pretext, she is blessed and avenged by God. The chaste woman longs for God, loves God, pleases God, glorifies God; and to men she affords no occasion for slander. The chaste woman perfumes the Church with her good reputation, and glorifies it by her piety. She is, moreover, the praise of her teachers, and a helper to them in their chastity. </q></p><h3>Chapter XVI. Peter's Speech Continued</h3><p><q>The chaste woman is adorned with the Son of God as with a bridegroom. She is clothed with holy light. Her beauty lies in a well-regulated soul; and she is fragrant with ointment, even with a good reputation. She is arrayed in beautiful vesture, even in modesty. She wears about her precious pearls, even chaste words. And she is radiant, for her mind has been brilliantly lighted up. Onto a beautiful mirror does she look, for she looks into God. Beautiful cosmetics does she use, namely, the fear of God, with which she admonishes her soul. Beautiful is the woman not because she has chains of gold on her, but because she has been set free from transient lusts. The chaste woman is greatly desired by the great King; she has been wooed, watched, and loved by Him. The chaste woman does not furnish occasions for being desired, except by her own husband. The chaste woman is grieved when she is desired by another. The chaste woman loves her husband from the heart, embraces, soothes, and pleases him, acts the slave to him, and is obedient to him in all things, except when she would be disobedient to God. For she who obeys God is without the aid of watchmen chaste in soul and pure in body.</q></p><h3>Chapter XVII. Peter's Speech Continued</h3><p><q>Foolish, therefore, is every husband who separates his wife from the fear of God; for she who does not fear God is not afraid of her husband. If she fear not God, who sees what is invisible, how will she be chaste in her unseen choice? And how will she be chaste, who does not come to the assembly to hear chaste-making words? And how could she obtain admonition? And how will she be chaste without watchmen, if she be not informed in regard to the coming judgement of God, and if she be not fully assured that eternal punishment is the penalty for the slight pleasure? Wherefore, on the other hand, compel her even against her will always to come to hear the chaste-making word, yea, coax her to do so.</q></p><h3>Chapter XVIII. Peter's Speech Continued</h3><p><q>Much better is it if you will take her by the hand and come, in order that you yourself may become chaste; for you will desire to become chaste, that you may experience the full fruition of a holy marriage, and you will not scruple, if you desire it, to become a father, to love your own children, and to be loved by your own children. He who wishes to have a chaste wife is also himself chaste, gives her what is due to a wife, takes his meals with her, keeps company with her, goes with her to the word that makes chaste, does not grieve her, does not rashly quarrel with her, does not make himself hateful to her, furnishes her with all the good things he can, and when he has them not, he makes up the deficiency by caresses. The chaste wife does not expect to be caressed, recognises her husband as her lord, bears his poverty when he is poor, is hungry with him when he is hungry, travels with him when he travels, consoles him when he is grieved, and if she have a large dowry, is subject to him as if she had nothing at all. But if the husband have a poor wife, let him reckon her chastity a great dowry. The chaste wife is temperate in her eating and drinking, in order that the weariness of the body, thus pampered, may not drag the soul down to unlawful desires. Moreover, she never assuredly remains alone with young men, and she suspects the old; she turns away from disorderly laughter, gives herself up to God alone; she is not led astray; she delights in listening to holy words, but turns away from those which are not spoken to produce chastity.</q></p><h3>Chapter XIX. Peter's Speech Ended</h3><p><q>God is my witness: one adultery is as bad as many murders; and what is terrible in it is this, that the fearfulness and impiety of its murders are not seen. For, when blood is shed, the dead body remains lying, and all are struck by the terrible nature of the occurrence. But the murders of the soul caused by adultery, though they are more frightful, yet, since they are not seen by men, do not make the daring a whit less eager in their impulse. Know, O man, whose breath it is that you have to keep you in life, and you shall not wish that it be polluted. By adultery alone is the breath of God polluted. And therefore it drags him who has polluted it into the fire; for it hastens to deliver up its insulter to everlasting punishment.</q></p><h3>Chapter XX. Peter Addresses Mattidia</h3><p>While Peter was saying this, he saw the good and chaste Mattidia weeping for joy; but thinking that she was grieved at having suffered so much in past times, he said: <q>Take courage, O woman; for while many have suffered many evils on account of adultery, you have suffered on account of chastity, and therefore you did not die. But if you had died, your soul would have been saved. You left your native city of Rome on account of chastity, but through it you found the truth, the diadem of the eternal kingdom. You underwent danger in the deep, but you did not die; and even if you had died, the deep itself would have proved to you, dying on account of chastity, a baptism for the salvation of your soul. You were deprived of your children for a little; but these, the true offspring of your husband, have been found in better circumstances. When starving, you begged for food, but you did not defile your body by fornication. You exposed your body to torture, but you saved your soul; you fled from the adulterer, that you might not defile the couch of your husband: but, on account of your chastity, God, who knows your flight, will fill up the place of your husband. Grieved and left desolate, you were for a short time deprived of husband and children, but all these you must have been deprived of, some time or other, by death, the preordained lot of man. But better is it that you were willingly deprived of them on account of chastity, than that you should have perished unwillingly after a time, simply on account of sins.</q></p><h3>Chapter XXI. The Same Subject Continued</h3><p><q>Much better is it, then, that your first circumstances should be distressing. For when this is the case, they do not so deeply grieve you, because you hope that they will pass away, and they yield joy though the expectation of better circumstances. But, above all, I wish you to know how much chastity is pleasing to God. The chaste woman is God's choice, God's good pleasure, God's glory, God's child. So great a blessing is chastity, that if there had not been a law that not even a righteous person should enter into the kingdom of God unbaptized, perhaps even the erring Gentiles might have been saved solely on account of chastity. Wherefore I am exceedingly sorry for those erring ones who are chaste because they shrink from baptism—thus choosing to be chaste without good hope. Wherefore they are not saved; for the decree of God is clearly set down, that an unbaptized person cannot enter into His kingdom.</q> When he said this, and much more, we turned to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Paglalakbay Patungong Laodicea</h3><p>Nang magbukang-liwayway, pumasok si Pedro at sinabi: <q>Si Clemente, ang kanyang inang si Mattidia, at ang aking asawa ay agad nang sumakay sa karwahe.</q> At gayon nga ang ginawa nila. Habang nagmamadali kami sa daan patungong Balanæae, tinanong ako ng aking ina tungkol sa kalagayan ng aking ama; at sinabi ko: <q>Umalis ang aking ama upang hanapin ka at ang kambal kong mga kapatid na sina Faustinus at Faustinianus, at ngayon ay hindi na matagpuan saanman. Ngunit palagay ko’y matagal na siyang namatay—maaaring napahamak sa pagkawasak ng barko, naligaw ng landas, o naubos ng dalamhati.</q> Nang marinig niya ito, napaiyak siya at napadaing sa lungkot; ngunit ang kagalakang nadama niya sa pagkakatagpo sa akin ay bahagyang nagpawi sa sakit ng kanyang mga alaala. Kaya sama-sama kaming bumaba patungong Balanæae. Kinabukasan ay nagtungo kami sa Paltus, mula roon sa Gabala, at kinabukasan ay nakarating kami sa Laodicea. At naroon, sa harap ng mga pintuan ng lungsod, sinalubong kami nina Nicetas at Aquila; niyakap nila kami at inihatid sa aming tutuluyan. Nang makita ni Pedro na maganda at malaki ang lungsod, sinabi niya: <q>Karapat-dapat tayong manatili rito nang ilang araw; sapagkat sa pangkalahatan, sa isang mataong lugar ay mas malamang nating matagpuan ang mga hinahanap natin.</q> Tinanong ako nina Nicetas at Aquila kung sino ang di-kilalang babaeng iyon; at sinabi ko: <q>Ang aking ina, na sa pamamagitan ng aking panginoong si Pedro ay ipinagkaloob sa akin ng Diyos na muli kong makilala.</q></p><h3>Kabanata II. Isinalaysay ni Pedro kina Nicetas at Aquila ang Kasaysayan ni Clemente at ng Kanyang Pamilya</h3><p>Pagkasabi ko nito, ibinuod ni Pedro sa kanila ang lahat ng nangyari—kung paanong, nang mauna na silang umalis, ipinaliwanag ko, si Clemente, sa kanya ang aking pinagmulan; ang paglalakbay na ginawa ng aking ina kasama ng kambal niyang mga anak sa pamamagitan ng huwad na dahilan ng isang panaginip; gayundin ang paglalakbay na ginawa ng aking ama upang hanapin siya; at pagkatapos, kung paanong si Pedro mismo, matapos marinig ang mga bagay na ito, ay nagtungo sa pulo, nakatagpo sa babae, nakita itong namamalimos, at tinanong kung bakit niya ginagawa iyon; at saka nalaman kung sino siya, kung paano siya namuhay, ang gawa-gawang panaginip, at ang mga pangalan ng kanyang mga anak—ibig sabihin, ang pangalan ko na naiwan sa aking ama, at ang mga pangalan ng kambal na naglakbay kasama niya at inakala niyang namatay sa kailaliman.</p><h3>Kabanata III. Pagkakakilanlan nina Nicetas at Aquila</h3><p>Nang maibigay ni Pedro ang buod na ito, sinabi nina Nicetas at Aquila nang may pagkamangha: <q>Totoo nga ba ito, O Tagapamahala at Panginoon ng sansinukob, o isa lamang itong panaginip?</q> At sinabi ni Pedro: <q>Maliban kung tayo’y natutulog, tiyak na totoo ito.</q> Nanatili silang sandaling tahimik at malalim ang pag-iisip, pagkatapos ay sinabi: <q>Kami sina Faustinus at Faustinianus. Mula pa sa simula ng iyong salaysay ay nagtitinginan na kami at maraming pinagpalagay tungkol sa aming sarili—kung ang mga sinabi mo ay tumutukoy sa amin o hindi—sapagkat naisip naming maraming pagkakatulad ang maaaring mangyari sa buhay. Kaya nanatili kaming tahimik habang mabilis ang tibok ng aming puso. Ngunit nang makarating ka sa dulo ng iyong salaysay, malinaw naming nakita na kami nga ang tinutukoy mo, at saka namin ipinahayag kung sino kami.</q> Pagkasabi nito, habang naliligo sa luha, nagmamadali silang pumasok upang makita ang kanilang ina; at bagaman natagpuan nila itong natutulog, sabik silang yakapin siya. Ngunit pinigilan sila ni Pedro at sinabi: <q>Hayaan ninyong ako ang magdala sa inyo at magpakilala sa inyong ina, upang dahil sa labis at biglaang kagalakan ay hindi mawala ang kanyang ulirat habang mahimbing siyang natutulog at mahigpit pang hawak ng tulog ang kanyang diwa.</q></p><h3>Kabanata IV. Hindi Dapat Kumain ang Ina Kasama ng Kanyang Anak; Ipinaliwanag ang Dahilan</h3><p>Nang makapagpahinga nang sapat ang aking ina, nagising siya; at agad nagsimulang kausapin siya ni Pedro tungkol sa <em>tunay</em> na kabanalan, na sinasabi: <q>Nais kong malaman mo, O babae, ang uri ng pamumuhay na kaakibat ng aming relihiyon. Sinasamba namin ang iisang Diyos na gumawa ng sanlibutang nakikita mo; at sinusunod namin ang Kanyang kautusan, na ang pangunahing mga utos ay sambahin Siya lamang, pabanalin ang Kanyang pangalan, parangalan ang ating mga magulang, mamuhay nang malinis, at mamuhay nang maka-Diyos. Bukod dito, hindi kami nakikisalamuha nang walang pagtatangi sa lahat; ni kumakain kami sa iisang hapag kasama ng mga Hentil, sapagkat hindi kami maaaring kumain kasama nila habang namumuhay sila sa karumihan. Ngunit kapag nahikayat na namin silang magkaroon ng tunay na mga kaisipan, sumunod sa wastong pamumuhay, at mabautismuhan sa pamamagitan ng tatlong-ulit na pinagpalang pagtawag, saka kami nakikisama sa kanila. Sapagkat kahit ama, ina, asawa, anak, kapatid, o sinumang may likas na karapatan sa ating pagmamahal, hindi tayo makapangahas kumain kasama niya; sapagkat inuutos ng ating relihiyon na gumawa tayo ng pagkakaiba. Kaya huwag mong ituring na paghamak kung hindi ka muna kasabay kumain ng iyong anak, hanggang magkaroon ka ng kaparehong paniniwala at mamuhay ayon sa paraang sinusunod niya.</q></p><h3>Kabanata V. Nais ni Mattidia na Mabautismuhan</h3><p>Nang marinig niya ito, sinabi niya: <q>Ano, kung gayon, ang humahadlang upang mabautismuhan ako ngayong araw? Bago pa kita nakita ay tinalikuran ko na ang mga tinatawag na diyos, sapagkat naisip kong kahit halos araw-araw akong naghahandog nang marami sa kanila ay hindi nila ako tinulungan sa aking mga pangangailangan. At tungkol sa pangangalunya, ano pa ang kailangan kong sabihin? Maging noong mayaman ako ay hindi ako nadala ng karangyaan sa kasalanang ito, at maging ang sumunod na kahirapan ay hindi ako napilit dito, sapagkat pinanghahawakan ko ang kalinisan bilang pinakadakilang kagandahan—bagaman dahil dito ay dumanas ako ng napakalaking kapighatian. Ngunit hindi ko iniisip, panginoon kong Pedro, na hindi mo alam na ang pinakamalaking tukso ay dumarating kapag maaliwalas ang lahat. Kaya kung nanatili akong malinis sa kasaganaan, hindi rin ako nagpapadala sa kalayawan sa panahon ng aking kalungkutan. Tunay ngang hindi mo dapat isipin na ngayo’y lubos nang napawi ang dalamhati ng aking kaluluwa, bagaman nakatanggap ito ng kaunting kaaliwan sa muling pagkakakilala kay Clemente. Sapagkat ang dilim na dulot ng pagkawala ng dalawa kong anak ay bumabalik sa akin at bahagyang nagpapadilim sa aking kagalakan. Hindi ako gaanong nagdadalamhati sapagkat namatay sila sa dagat kundi sapagkat napahamak silang kapwa kaluluwa at katawan nang walang tunay na kabanalan sa Diyos. Bukod dito, ang aking asawa, na kanilang ama, ayon sa nalaman ko kay Clemente, ay umalis upang hanapin ako at ang kanyang mga anak at napakaraming taon nang walang balita; walang alinlangan na namatay na siya. Sapagkat ang kaawa-awang lalaki, na nagmahal sa akin nang may kalinisan, ay lubhang umiibig sa kanyang mga anak; kaya ang matandang iyon, nang mawalan sa aming lahat na higit niyang minahal kaysa sa lahat, ay namatay na wasak na wasak ang puso.</q></p><h3>Kabanata VI. Ipinakilala ng mga Anak ang Kanilang Sarili sa Ina</h3><p>Nang marinig ng mga anak ang kanilang ina na nagsasalita nang gayon, hindi na nila napigil ang sarili sa kabila ng tagubilin ni Pedro. Tumayo sila, niyakap siya, at binuhusan ng luha at mga halik. Ngunit sinabi niya: <q>Ano ang ibig sabihin nito?</q> At sumagot si Pedro: <q>Lakasan mo ang iyong loob, O babae, upang matamasa mo ang kagalakan ng iyong mga anak; sapagkat ang mga ito ay sina Faustinus at Faustinianus, ang iyong mga anak na sinabi mong namatay sa kailaliman. Kung paanong buhay sila bagaman inakala mong namatay sila noong gabing iyon ng malaking kapahamakan, at kung paanong ang isa ngayon ay nagtataglay ng pangalang Nicetas at ang isa naman ng pangalang Aquila, sila mismo ang makapagsasabi sa iyo; sapagkat kami man, gaya mo, ay kailangan pang malaman ito.</q> Nang magsalita si Pedro nang gayon, nawalan ng malay ang aking ina dahil sa labis na kagalakan at halos mamatay. Ngunit nang maibalik namin ang kanyang ulirat, naupo siya at, nang makabawi, sinabi: <q>Mga mahal kong anak, pakisabi ninyo sa amin kung ano ang nangyari sa inyo pagkatapos ng gabing iyon ng kapahamakan.</q></p><h3>Kabanata VII. Isinalaysay ni Nicetas ang Nangyari sa Kanya</h3><p>At nagsimulang magsalita si Nicetas, na mula ngayo’y tatawaging Faustinus. <q>Noong mismong gabing iyon na, gaya ng alam mo, ay nagkawatak-watak ang barko, sinagip kami ng ilang lalaking hindi natatakot mamuhay bilang mga tulisan sa dagat. Isinakay nila kami sa isang maliit na sasakyang-dagat at dinala sa baybayin, kung minsan ay nagsasagwan at kung minsan ay kumukuha ng mga panustos, hanggang sa dalhin nila kami sa Cæsarea Stratonis. Doon ay pinahirapan nila kami sa gutom, takot, at mga hampas upang hindi namin basta ibunyag ang anumang ayaw nilang sabihin namin; at pinalitan din nila ang aming mga pangalan hanggang sa maipagbili nila kami. Ang babaeng bumili sa amin ay isang proselyta ng mga Judio, isang lubhang kagalang-galang na tao na nagngangalang Justa. Inampon niya kami bilang sarili niyang mga anak at masigasig na pinalaki sa lahat ng karunungan ng mga Griyego. Ngunit habang lumalaki kami at nagkakaroon ng higit na pagkaunawa, mahigpit kaming nahikayat sa kanyang relihiyon at pinagbuti rin namin ang aming pag-aaral upang, sa pakikipagtalo sa ibang mga bansa, maipakita namin sa kanila ang kanilang kamalian. Masusi rin naming pinag-aralan ang mga aral ng mga pilosopo, lalo na yaong pinakawalang-Diyos—ang ibig kong sabihin ay ang kay Epicurus at Pyrrho—upang higit namin silang mapabulaanan.</q></p><h3>Kabanata VIII. Halos Malinlang ni Simon Magus si Nicetas</h3><p><q>Pinalaki kaming kasama ng isang Simon na isang salamangkero; at dahil sa aming malapit na pakikisalamuha sa kanya, muntik kaming mailigaw. May balita noon tungkol sa isang tao na, kapag siya’y dumating, ang karamihan sa mga naging maka-Diyos ay mabubuhay sa kanyang kaharian nang malaya sa kamatayan at sakit. Ngunit, ina, ipaliliwanag nang higit ang bagay na ito sa tamang panahon. Nang malapit na kaming mailigaw ni Simon, isang kaibigan ng aming panginoong si Pedro na nagngangalang Zacchæus ang lumapit sa amin at nagbabala na huwag kaming malinlang ng salamangkero. At nang dumating si Pedro, dinala kami ni Zacchæus sa kanya upang lubos niya kaming turuan at kumbinsihin tungkol sa mga bagay na nauukol sa kabanalan. Kaya nakikiusap kami sa iyo, ina, na makibahagi sa mga pagpapalang ipinagkaloob sa amin upang muli tayong magsama sa iisang hapag! Ito, kung gayon, ang dahilan kung bakit inakala mong patay na kami. Noong gabing iyon ng kapahamakan ay nasagip kami sa dagat ng mga pirata, ngunit inakala mong namatay kami.</q></p><h3>Kabanata IX. Hiniling ng Ina ang Bautismo para sa Kanyang Sarili at sa Kanyang Tagapagpatuloy</h3><p>Pagkasabi nito ni Faustinus, nagpatirapa ang aming ina sa paanan ni Pedro, nakikiusap at nagsusumamo na ipasundo rin ang babaeng tumanggap sa kanya at agad silang bautismuhan upang, ayon sa sinabi niya, wala nang lumipas kahit isang araw mula nang muli niyang matagpuan ang kanyang mga anak na hindi siya makakain kasama nila. Nang makiusap din kami kasama ng aming ina, sinabi ni Pedro: <q>Ano ba ang iniisip ninyo? Ako lamang ba ang walang puso upang hindi ko naisin na makakain kayo kasama ng inyong ina at mabautismuhan siya ngayong araw? Gayunman, kailangan niyang mag-ayuno nang isang araw bago siya bautismuhan. Isang araw lamang iyon, sapagkat sa kanyang pagiging payak ay may sinabi siya tungkol sa sarili na itinuring kong sapat na palatandaan ng kanyang pananampalataya; kung hindi, dapat sanang tumagal nang maraming araw ang kanyang paglilinis.</q></p><h3>Kabanata X. Wastong Pinahalagahan ni Mattidia ang Bautismo</h3><p>At sinabi ko: <q>Sabihin mo sa amin kung ano ang sinabi niya na nagpahayag ng kanyang pananampalataya.</q> At sinabi ni Pedro: <q>Ang kahilingan niyang mabautismuhan kasama niya ang babaeng tumanggap at gumawa ng mabuti sa kanya. Hindi sana niya hiniling na ipagkaloob ito sa minamahal niya kung hindi muna niya nadama sa sarili na malaking kaloob ang bautismo. Dahil dito, hinahatulan ko ang marami na pagkatapos mabautismuhan at magsabing may pananampalataya sila ay wala namang ginagawa na karapat-dapat sa pananampalataya; ni hinihikayat nila ang mga minamahal nila—ang ibig kong sabihin ay ang kanilang mga asawa, mga anak, o mga kaibigan—na mabautismuhan. Sapagkat kung naniwala silang ipinagkakaloob ng Diyos ang buhay na walang hanggan, kalakip ang mabubuting gawa, sa pagtanggap ng bautismo, walang pagkaantala nilang hihikayatin ang kanilang mga minamahal na mabautismuhan. Ngunit maaaring sabihin ng isa sa inyo, ‘Iniibig naman nila ang mga iyon at inaalagaan.’ Walang kabuluhan iyan. Sapagkat kapag nakikita nilang maysakit ang mga iyon, o dinadala sa landas na humahantong sa kamatayan, o dumaranas ng anumang ibang pagsubok, hindi ba sila nagdadalamhati at naaawa? Kaya kung naniniwala silang walang-hanggang apoy ang naghihintay sa mga hindi sumasamba sa Diyos, hindi sila titigil sa pagpapayo sa mga iyon at sa matinding pagdadalamhati para sa kanila bilang mga hindi sumasampalataya, kapag nakita nilang masuwayin sila, sapagkat lubos nilang alam na may kaparusahang naghihintay. Ngunit ngayon ay ipasasundo ko ang babaeng tumanggap sa kanya at tatanungin kung kusa niyang tinatanggap ang kautusang ipinahahayag sa pamamagitan namin; at ayon sa kalagayan ng kanyang isip ay gagawin natin ang nararapat.</q></p><h3>Kabanata XI. Hindi Sinasadyang Nakapag-ayuno si Mattidia nang Isang Araw</h3><p><q>Ngunit yamang tunay ang pagtitiwala ng inyong ina sa bisa ng bautismo, mag-ayuno man lamang siya nang isang araw bago ang kanyang bautismo.</q> Ngunit sumumpa siya: <q>Sa nakalipas na dalawang araw, habang isinasalaysay ko sa babae ang lahat ng pangyayaring kaugnay ng aming muling pagkakakilala, dahil sa labis kong kagalakan ay hindi ako makakain; kahapon ay kaunting tubig lamang ang nainom ko.</q> Pinatunayan ng asawa ni Pedro ang sinabi niya sa pamamagitan ng panunumpa: <q>Tunay na wala siyang tinikman na anuman.</q> At sinabi ni Aquila, na mula ngayo’y higit nang tatawaging Faustinianus: <q>Kung gayon, wala nang humahadlang upang mabautismuhan siya.</q> Ngunit ngumiti si Pedro at sumagot: <q>Hindi iyon pag-aayuno para sa bautismo kung hindi naman ginawa dahil sa bautismo.</q> At sumagot si Faustinus: <q>Marahil ay inayos na ito ng Diyos nang pauna, sapagkat ayaw Niyang mahiwalay ang aming ina kahit isang araw mula sa aming hapag pagkatapos naming magkakilala muli. Gaya noong panahon ng kanyang kamangmangan ay namuhay siyang malinis at ginawa ang itinuturo ng tunay na relihiyon, marahil ngayon din ay inayos ng Diyos na makapag-ayuno siya nang isang araw nang pauna alang-alang sa tunay na bautismo, upang mula pa sa unang araw ng muli niyang pagkakilala sa amin ay makakain na siya kasama namin.</q></p><h3>Kabanata XII. Nalutas ang Suliranin</h3><p>At sinabi ni Pedro: <q>Huwag nating hayaang maghari sa atin ang kasamaan sa paghahanap ng dahilan mula sa Pagkalinga at sa pagmamahal ninyo sa inyong ina; sa halip, ipagpatuloy ninyo ang pag-aayuno ngayong araw at sasamahan ko kayo rito, at bukas ay mababautismuhan siya. Bukod dito, hindi angkop ang oras na ito ng araw para sa bautismo.</q> Kaya nagkasundo kaming lahat na gayon ang gawin.</p><h3>Kabanata XIII. Si Pedro tungkol sa Kalinisan</h3><p>Nang gabing iyon, lahat kami ay nakinabang sa pagtuturo ni Pedro. Ginamit niya ang nangyari sa aming ina upang ipakita kung paanong mabuti ang bunga ng kalinisan samantalang kapahamakan ang bunga ng pangangalunya at likas na humahantong sa pagkawasak ng buong lahi—kung hindi agad, sa kalaunan. <q>At hanggang sa ganitong antas,</q> sabi niya, <q>nakalulugod sa Diyos ang mga gawa ng kalinisan na sa buhay na ito ay nagkakaloob Siya ng ilang munting pabor dahil dito maging sa mga nasa kamalian; sapagkat ang kaligtasan sa kabilang sanlibutan ay ipinagkakaloob lamang sa mga nabautismuhan dahil sa kanilang pagtitiwala sa Kanya at namumuhay nang malinis at matuwid. Nakita na ninyo mismo sa inyong ina na sa wakas ay mabuti ang bunga ng kalinisan. Sapagkat marahil ay napahamak na sana siya kung siya’y nangalunya; ngunit nahabag ang Diyos sa kanya dahil nanatili siyang malinis, iniligtas siya mula sa kamatayang nagbanta sa kanya, at ibinalik sa kanya ang kanyang mga nawawalang anak.</q></p><h3>Kabanata XIV. Ipinagpatuloy ang Talumpati ni Pedro</h3><p><q>Ngunit may magsasabi, ‘Gaano karami ang namatay dahil sa kalinisan!’ Oo; ngunit iyon ay sapagkat hindi nila nakita ang panganib. Ang babaeng nakaaalam na siya’y umiibig sa isang lalaki, o na may lalaking umiibig sa kanya, ay dapat agad iwasan ang lahat ng pakikisalamuha sa taong iyon gaya ng pag-iwas niya sa naglalagablab na apoy o sa ulol na aso. Ito mismo ang ginawa ng inyong ina, sapagkat tunay niyang inibig ang kalinisan bilang isang pagpapala; kaya siya’y napanatili at, kasama ninyo, nakamit ang lubos na kaalaman tungkol sa walang-hanggang kaharian. Ang babaeng nagnanais manatiling malinis ay dapat malaman na kinaiinggitan siya ng kasamaan at na dahil sa pag-ibig ay marami ang nag-aabang upang bitagin siya. Kung gayon, kung mananatili siyang banal sa pamamagitan ng matatag na paninindigan sa kalinisan, madaraig niya ang lahat ng tukso at maliligtas; ngunit kahit gawin pa niya ang lahat ng tama, kung minsan lamang siyang magkasala ng pangangalunya ay dapat siyang parusahan, gaya ng sinabi ng propeta.</q></p><h3>Kabanata XV. Ipinagpatuloy ang Talumpati ni Pedro</h3><p><q>Ang malinis na asawang babae na gumagawa ng kalooban ng Diyos ay isang mabuting paalaala ng Kanyang unang paglikha; sapagkat ang Diyos, na iisa, ay lumikha ng isang babae para sa isang lalaki. Lalong nananatili siyang malinis kung hindi niya nililimutan ang sarili niyang pagkalikha, inilalagay sa harap ng kanyang mga mata ang darating na kaparusahan, at hindi niya kinalilimutan ang pagkawala ng mga walang-hanggang pagpapala. Ang malinis na babae ay nagagalak sa mga nagnanais maligtas at nagiging maka-Diyos na halimbawa sa mga maka-Diyos, sapagkat siya ang huwaran ng mabuting pamumuhay. Ang nagnanais manatiling malinis ay pinuputol ang lahat ng pagkakataon para sa paninirang-puri; ngunit kung siya’y siraan na parang ng isang kaaway kahit wala siyang ibinigay na dahilan, pinagpapala siya at ipinaghihiganti ng Diyos. Ang malinis na babae ay nananabik sa Diyos, umiibig sa Diyos, nakalulugod sa Diyos, at lumuluwalhati sa Diyos; at hindi siya nagbibigay sa mga tao ng pagkakataong siya’y siraan. Pinababango ng malinis na babae ang Iglesia sa pamamagitan ng kanyang mabuting pangalan at niluluwalhati ito sa kanyang kabanalan. Siya rin ang papuri ng kanyang mga guro at katuwang nila sa kalinisan.</q></p><h3>Kabanata XVI. Ipinagpatuloy ang Talumpati ni Pedro</h3><p><q>Ang malinis na babae ay pinalalamutian ng Anak ng Diyos na parang isang kasintahang lalaki. Nabibihisan siya ng banal na liwanag. Ang kanyang kagandahan ay nasa maayos na kaluluwa; at siya’y mabango sa pabango—ibig sabihin, sa mabuting pangalan. Nakasuot siya ng magandang kasuutan—ibig sabihin, ng kahinhinan. Nakasuot siya ng mahahalagang perlas—ibig sabihin, ng malilinis na salita. At siya’y nagniningning sapagkat lubos na naliwanagan ang kanyang isip. Tumingin siya sa isang magandang salamin, sapagkat tumitingin siya sa Diyos. Gumagamit siya ng magandang pampaganda—ang takot sa Diyos—na sa pamamagitan nito ay pinapayuhan niya ang kanyang kaluluwa. Maganda ang babae hindi dahil may mga tanikalang ginto siya kundi dahil napalaya siya mula sa mga lumilipas na pagnanasa. Lubhang kinasasabikan ng dakilang Hari ang malinis na babae; niligawan, binantayan, at inibig Niya siya. Ang malinis na babae ay hindi nagbibigay ng pagkakataong pagnasaan siya maliban sa sarili niyang asawa. Nalulungkot siya kapag pinagnanasahan siya ng iba. Iniibig niya ang kanyang asawa mula sa puso, niyayakap, inaaliw, at pinalulugdan ito, naglilingkod sa kanya, at sumusunod sa kanya sa lahat ng bagay maliban kung ang pagsunod na iyon ay magiging pagsuway sa Diyos. Sapagkat ang babaeng sumusunod sa Diyos ay malinis sa kaluluwa at dalisay sa katawan kahit walang mga bantay.</q></p><h3>Kabanata XVII. Ipinagpatuloy ang Talumpati ni Pedro</h3><p><q>Kaya hangal ang bawat asawang lalaki na inilalayo ang kanyang asawa sa takot sa Diyos; sapagkat ang babaeng hindi natatakot sa Diyos ay hindi rin matatakot sa kanyang asawa. Kung hindi siya natatakot sa Diyos na nakakakita maging sa hindi nakikita, paano siya mananatiling malinis sa kanyang lihim na pagpili? At paano mananatiling malinis ang hindi dumadalo sa pagtitipon upang makarinig ng mga salitang nagtuturo ng kalinisan? Paano siya makatatanggap ng payo? At paano siya mananatiling malinis nang walang mga bantay kung hindi niya nalalaman ang tungkol sa darating na paghuhukom ng Diyos at hindi siya lubos na nakatitiyak na walang-hanggang kaparusahan ang kabayaran ng panandaliang kalayawan? Kaya sa halip, hikayatin mo siya—kahit laban sa kanyang kagustuhan—na palaging dumalo upang makinig sa salitang nagtuturo ng kalinisan; oo, suyuin mo siyang gawin iyon.</q></p><h3>Kabanata XVIII. Ipinagpatuloy ang Talumpati ni Pedro</h3><p><q>Higit na mabuti kung hahawakan mo siya sa kamay at sasama kayong dalawa upang ikaw man ay maging malinis; sapagkat nanaisin mong maging malinis upang lubos mong matamasa ang banal na pag-aasawa, at kung nais mong maging ama ay hindi ka mag-aatubiling mahalin ang sarili mong mga anak at mahalin din nila. Ang lalaking nagnanais magkaroon ng malinis na asawa ay dapat ding maging malinis; ibinibigay niya sa asawa ang nararapat dito, kumakain kasama niya, nakikisama sa kanya, sumasama sa kanya upang pakinggan ang salitang nagtuturo ng kalinisan, hindi siya pinipighati, hindi padalus-dalos na nakikipagtalo sa kanya, hindi ginagawa ang sarili na kapoot-poot sa kanya, ibinibigay sa kanya ang lahat ng mabuting bagay na kaya niya, at kapag wala siyang maibigay ay pinupunan niya ang kakulangan sa pamamagitan ng pagmamahal. Ang malinis na asawa ay hindi naghihintay na suyuin; kinikilala niya ang kanyang asawa bilang kanyang panginoon, tinitiis ang kahirapan nito kapag ito’y mahirap, nagugutom kasama niya kapag siya’y nagugutom, naglalakbay kasama niya kapag siya’y naglalakbay, inaaliw siya kapag siya’y nalulungkot, at kung malaki man ang kanyang dote ay nagpapasakop siya sa kanya na para bang wala siyang anumang ari-arian. Ngunit kung mahirap ang asawa ng lalaki, ituring niyang malaking dote ang kanyang kalinisan. Ang malinis na asawa ay mapagtimpi sa pagkain at pag-inom upang ang katawan, kapag labis na pinalayaw, ay hindi humila sa kaluluwa tungo sa mga bawal na pagnanasa. Hindi rin siya nananatiling mag-isa kasama ng mga binatang lalaki at maging sa matatanda ay maingat siya; umiiwas siya sa magulong tawanan, inilalaan ang sarili sa Diyos lamang, hindi nagpapaligaw, nalulugod sa pakikinig sa mga banal na salita, at tumatalikod sa mga salitang hindi nakatutulong sa kalinisan.</q></p><h3>Kabanata XIX. Tinapos ni Pedro ang Kanyang Talumpati</h3><p><q>Saksi ko ang Diyos: ang isang pangangalunya ay kasimbigat ng maraming pagpatay; at ang kakila-kilabot dito ay hindi nakikita ang sindak at kawalang-galang ng mga pagpatay na dulot nito. Sapagkat kapag dumanak ang dugo, nananatiling nakahandusay ang bangkay at nasisindak ang lahat sa kakila-kilabot na pangyayari. Ngunit ang mga pagpatay sa kaluluwa na dulot ng pangangalunya, bagaman higit na nakapanghihilakbot, ay hindi nakikita ng mga tao; kaya ang mga nangangahas ay hindi gaanong napipigilan sa kanilang pita. Alamin mo, O tao, kung kaninong hininga ang taglay mo upang mabuhay, at hindi mo nanaising madungisan iyon. Sa pangangalunya ay nadudungisan ang hiningang mula sa Diyos. Kaya hinihila nito sa apoy ang taong dumungis dito, sapagkat minamadali nitong ihatid ang lumapastangan dito sa walang-hanggang kaparusahan.</q></p><h3>Kabanata XX. Kinausap ni Pedro si Mattidia</h3><p>Habang sinasabi ni Pedro ang mga bagay na ito, nakita niyang umiiyak sa galak ang mabuti at malinis na si Mattidia; ngunit inakala niyang nalulungkot siya dahil sa napakaraming dinanas niya noon, kaya sinabi niya: <q>Lakasan mo ang loob mo, O babae; sapagkat marami ang dumanas ng maraming kasamaan dahil sa pangangalunya, ngunit ikaw ay nagdusa dahil sa kalinisan, at dahil dito ay hindi ka namatay. Ngunit kahit namatay ka, maliligtas ang iyong kaluluwa. Nilisan mo ang iyong sariling lungsod na Roma dahil sa kalinisan, ngunit sa pamamagitan nito ay natagpuan mo ang katotohanan, ang korona ng walang-hanggang kaharian. Dumanas ka ng panganib sa kailaliman, ngunit hindi ka namatay; at kahit namatay ka, ang kailaliman mismo, habang namamatay ka dahil sa kalinisan, ay magiging bautismo para sa kaligtasan ng iyong kaluluwa. Sandali kang nawalay sa iyong mga anak; ngunit ang mga ito, ang tunay na mga anak ng iyong asawa, ay natagpuan mo sa higit na mabuting kalagayan. Nang ikaw ay nagugutom, namalimos ka ng pagkain, ngunit hindi mo dinungisan ang iyong katawan sa pakikiapid. Inilantad mo ang iyong katawan sa paghihirap ngunit iniligtas mo ang iyong kaluluwa; tinakasan mo ang mangangalunya upang hindi mo dungisan ang higaan ng iyong asawa, ngunit dahil sa iyong kalinisan, ang Diyos na nakakakilala sa iyong pagtakas ang pupuno sa lugar ng iyong asawa. Sa loob ng maikling panahon ay nalungkot at naiwang mag-isa ka, hiwalay sa asawa at mga anak; ngunit sa takdang panahon ay mawawalay ka rin sana sa lahat ng iyon sa pamamagitan ng kamatayan, na siyang itinakdang kapalaran ng tao. Kaya mas mabuting kusang nawalay ka sa kanila dahil sa kalinisan kaysa sa paglaon ay mapahamak ka nang hindi mo ginusto dahil lamang sa mga kasalanan.</q></p><h3>Kabanata XXI. Ipinagpatuloy ang Gayunding Paksa</h3><p><q>Kaya higit na mabuti na ang una mong mga kalagayan ay puno ng paghihirap. Kapag gayon, hindi ka gaanong dinudurog ng mga iyon sapagkat umaasa kang lilipas ang mga iyon, at nagbibigay pa ng kagalakan ang pag-asang darating ang mas mabuting kalagayan. Ngunit higit sa lahat, nais kong malaman mo kung gaano kalaki ang kaluguran ng Diyos sa kalinisan. Ang malinis na babae ay pinili ng Diyos, kaluguran ng Diyos, kaluwalhatian ng Diyos, anak ng Diyos. Napakadakilang pagpapala ng kalinisan na kung wala sanang kautusang nagsasabing maging ang isang matuwid na tao ay hindi makapapasok sa kaharian ng Diyos nang hindi nababautismuhan, marahil maging ang mga Hentil na nasa kamalian ay maaaring maligtas dahil lamang sa kalinisan. Kaya lubha akong nalulungkot para sa mga nasa kamalian na nananatiling malinis ngunit umiiwas sa bautismo—sa gayon ay pinipili ang kalinisan nang walang mabuting pag-asa. Kaya hindi sila naliligtas; sapagkat malinaw na nakatakda ang pasya ng Diyos na ang taong hindi nabautismuhan ay hindi makapapasok sa Kanyang kaharian.</q> Pagkasabi niya nito at marami pang iba, nagtungo kami upang matulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

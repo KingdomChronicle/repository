@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 7</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Peter Addresses the People</option><option value="1">Chapter II. Reason of Simon's Power</option><option value="2">Chapter III. The Remedy</option><option value="3">Chapter IV. The Golden Rule</option><option value="4">Chapter V. Peter Departs for Sidon</option><option value="5">Chapter VI. Peter in Sidon</option><option value="6">Chapter VII. The Two Paths</option><option value="7">Chapter VIII. The Service of God's Appointment</option><option value="8">Chapter IX. Simon Attacks Peter</option><option value="9">Chapter X. Simon is Driven Away</option><option value="10">Chapter XI. The Way of Salvation</option><option value="11">Chapter XII. Peter Goes to Byblus and Tripolis</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Peter Addresses the People</h3><p>And on the fourth day of our stay in Tyre, Peter went out about daybreak, and there met him not a few of the dwellers round about, with very many of the inhabitants of Tyre itself, who cried out, and said, <q>God through you have mercy upon us, God through you heal us!</q> And Peter stood on a high stone, that all might see him; and having greeted them in a godly manner, thus began:—</p><h3>Chapter II. Reason of Simon's Power</h3><p><q>God, who created the heavens and the whole universe, does not want occasion for the salvation of those who would be saved. Wherefore let no one, in seeming evils, rashly charge Him with unkindness to man. For men do not know the issue of those things which happen to them, nay, suspect that the result will be evil; but God knows that they will turn out well. So is it in the case of Simon. He is a power of the left hand of God, and has authority to do harm to those who know not God, so that he has been able to involve you in diseases; but by these very diseases, which have been permitted to come upon you by the good providence of God, you, seeking and finding him who is able to cure, have been compelled to submit to the will of God on the occasion of the cure of the body, and to think of believing, in order that in this way you may have your souls as well as your bodies in a healthy state.</q></p><h3>Chapter III. The Remedy</h3><p><q>Now I have been told, that after he had sacrificed an ox he feasted you in the middle of the forum, and that you, being carried away with much wine, made friends with not only the evil demons, but their prince also, and that in this way the most of you were seized by these sicknesses, unwittingly drawing upon yourselves with your own hands the sword of destruction. For the demons would never have had power over you, had not you first supped with their prince. For thus from the beginning was a law laid by God, the Creator of all things, on each of the two princes, him of the right hand and him of the left, that neither should have power over any one whom they might wish to benefit or to hurt, unless first he had sat down at the same table with them. As, then, when you partook of meat offered to idols, you became servants to the prince of evil, in like manner, if you cease from these things, and flee for refuge to God through the good Prince of His right hand, honouring Him without sacrifices, by doing whatsoever He wills, know of a truth that not only will your bodies be healed, but your souls also will become healthy. For He only, destroying with His left hand, can quicken with His right; He only can both smite and raise the fallen.</q></p><h3>Chapter IV. The Golden Rule</h3><p><q>Wherefore, as then you were deceived by the forerunner Simon, and so became dead in your souls to God, and were smitten in your bodies; so now, if you repent, as I said, and submit to those things which are well-pleasing to God, you may get new strength to your bodies, and recover your soul's health. And the things which are well-pleasing to God are these: to pray to Him, to ask from Him, recognising that He is the giver of all things, and gives with discriminating law; to abstain from the table of devils, not to taste dead flesh, not to touch blood; to be washed from all pollution; and the rest in one word,—as the God-fearing Jews have heard, do you also hear, and be of one mind in many bodies; let each man be minded to do to his neighbour those good things he wishes for himself. And you may all find out what is good, by holding some such conversation as the following with yourselves: You would not like to be murdered; do not murder another man: you would not like your wife to be seduced by another; do not you commit adultery: you would not like any of your things to be stolen from you; steal nothing from another. And so understanding by yourselves what is reasonable, and doing it, you will become dear to God, and will obtain healing; otherwise in the life which now is your bodies will be tormented, and in that which is to come your souls will be punished.</q></p><h3>Chapter V. Peter Departs for Sidon</h3><p>After Peter had spent a few days in teaching them in this way, and in healing them, they were baptized. And after that, all sat down together in the market-places in sackcloth and ashes, grieving because of his other wondrous works, and repenting their former sins. And when they of Sidon heard it, they did likewise, and sent to beseech Peter, since they could not come themselves for their diseases. And Peter did not spend many days in Tyre; but when he had instructed all its inhabitants, and freed them from all manners of diseases and had founded a church, and set over it as bishop one of the elders who were with him, he departed for Sidon. But when Simon heard that Peter was coming, he straightway fled to Beyrout with Appion and his friends.</p><h3>Chapter VI. Peter in Sidon</h3><p>And as Peter entered Sidon, they brought many in couches, and laid them before him. And he said to them: <q>Think not, I pray you, that I can do anything to heal you, who am a mortal man, myself subject to many evils. But I shall not refuse to show you the way in which you must be saved. For I have learned from the Prophet of truth the conditions fore-ordained of God before the foundation of the world; that is to say, the evil deeds which if men do He has ordained that they shall be injured by the prince of evil, and in like manner the good deeds for which He has decreed that they who have believed in Him as their Physician shall have their bodies made whole, and their souls established in safety.</q></p><h3>Chapter VII. The Two Paths</h3><p><q>Knowing, then, these good and evil deeds, I make known unto you as it were two paths, and I shall show you by which travellers are lost and by which they are saved, being guided of God. The path of the lost, then, is broad and very smooth—it ruins them without troubling them; but the path of the saved is narrow, rugged, and in the end it saves, not without much toil, those who have journeyed through it. And these two paths are presided over by unbelief and faith; and these journey through the path of unbelief, those who have preferred pleasure, on account of which they have forgotten the day of judgment, doing that which is not pleasing to God, and not caring to save their souls by the word, and have not anxiously sought their own good. Truly they know not that the counsels of God are not like men's counsels; for, in the first place, He knows the thoughts of all men, and all must give an account not only of their actions, but also of their thoughts. And their sin is much less who strive to understand well and fall, than that of those who do not at all strive after good things. Because it has pleased God that he who errs in his knowledge of good, as men count errors, should be saved after being slightly punished. But they who have taken no care at all to know the better way, even though they may have done countless other good deeds, if they have not stood in the service He has Himself appointed, come under the charge of indifference, and are severely punished, and utterly destroyed.</q></p><h3>Chapter VIII. The Service of God's Appointment</h3><p><q>And this is the service He has appointed: To worship Him only, and trust only in the Prophet of truth, and to be baptized for the remission of sins, and thus by this pure baptism to be born again unto God by saving water; to abstain from the table of devils, that is, from food offered to idols, from dead carcases, from animals which have been suffocated or caught by wild beasts, and from blood; not to live any longer impurely; to wash after intercourse; that the women on their part should keep the law of purification; that all should be sober-minded, given to good works, refraining from wrongdoing, looking for eternal life from the all-powerful God, and asking with prayer and continual supplication that they may win it.</q> Such was Peter's counsel to the men of Sidon also. And in few days many repented and believed, and were healed. And Peter having founded a church, and set over it as bishop one of the elders who were with him, left Sidon.</p><h3>Chapter IX. Simon Attacks Peter</h3><p>No sooner had he reached Beyrout than an earthquake took place; and the multitude, running to Peter, said, <q>Help us, for we are afraid we shall all utterly perish.</q> Then Simon ventured, along with Appion and Anubion and Athenodorus, and the rest of his companions, to cry out to the people against Peter in public: <q>Flee, friends, from this man! He is a magician; trust us, he it was who caused this earthquake: he sent us these diseases to terrify us, as if he were God Himself.</q> And many such false charges did Simon and his friends bring against Peter, as one who could do things above human power. But as soon as the people gave him a moment's quiet, Peter with surprising boldness gave a little laugh, and said, <q>Friends, I admit that I can do, God willing, what these men say; and more than that, I am ready, if you do not believe what I say, to overturn your city from top to bottom.</q></p><h3>Chapter X. Simon is Driven Away</h3><p>And the people were afraid, and promised to do whatever he should command. <q>Let none of you, then,</q> said Peter, <q>either hold conversation with these sorcerers, or have anything to do with them.</q> And as soon as the people heard this concise command, they took up sticks, and pursued them till they had driven them wholly out of the town. And they who were sick and possessed with devils came and cast themselves at Peter's feet. And he seeing all this, and anxious to free them from their terror, said to them:—</p><h3>Chapter XI. The Way of Salvation</h3><p><q>Were I able to cause earthquakes, and do all that I wish, I assure you I would not destroy Simon and his friends (for not to destroy men am I sent), but would make him my friend, that he might no longer, by his slanders against my preaching the truth, hinder the salvation of many. But if you believe me, he himself is a magician; he is a slanderer; he is a minister of evil to them who know not the truth. Therefore he has power to bring diseases on sinners, having the sinners themselves to help him in his power over them. But I am a servant of God the Creator of all things, and a disciple of His Prophet who is at His right hand. Wherefore I, being His apostle, preach the truth: to serve a good man I drive away diseases, for I am His second messenger, since first the disease comes, but after that the healing. By that evil-working magician, then, you were stricken with disease because you revolted from God. By me, if you believe in Him ye shall be cured: and so having had experience that He is able, you may turn to good works, and have your souls saved.</q></p><h3>Chapter XII. Peter Goes to Byblus and Tripolis</h3><p>As he said these things, all fell on their knees before his feet. And he, lifting up his hands to heaven, prayed to God, and healed them all by his simple prayer alone. And he remained not many days in Beyrout; but after he had accustomed many to the service of the one God, and had baptized them, and had set over them a bishop from the elders who were with him, he went to Byblus. And when he came there, and learned that Simon had not waited for them for a day, but had gone straightway to Tripolis, he remained there only a few days; and after that he had healed not a few, and exercised them in the Scriptures, he followed in Simon's track to Tripolis, preferring to pursue him rather than flee from him.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Nagsalita si Pedro sa mga Tao</h3><p>At sa ikaapat na araw ng aming pananatili sa Tiro, lumabas si Pedro bandang bukang-liwayway. Sinalubong siya roon ng hindi kakaunti sa mga nakatira sa paligid, kasama ang napakaraming mamamayan mismo ng Tiro, na sumigaw at nagsabi, <q>Kaawaan nawa kami ng Diyos sa pamamagitan mo; pagalingin nawa kami ng Diyos sa pamamagitan mo!</q> At tumayo si Pedro sa isang mataas na bato upang makita siya ng lahat; at matapos silang batiin sa maka-Diyos na paraan, nagsimula siyang magsalita nang ganito:—</p><h3>Kabanata II. Dahilan ng Kapangyarihan ni Simon</h3><p><q>Ang Diyos, na lumalang ng mga langit at ng buong sansinukob, ay hindi nagkukulang ng pagkakataon para sa kaligtasan ng mga nagnanais maligtas. Kaya huwag madaliin ng sinuman, dahil sa mga bagay na tila masama, na paratangan Siya ng kawalan ng kabutihan sa tao. Sapagkat hindi nalalaman ng mga tao ang magiging wakas ng mga bagay na nangyayari sa kanila; bagkus, pinaghihinalaan nilang masama ang kalalabasan, samantalang nalalaman ng Diyos na magiging mabuti iyon. Gayon din sa kaso ni Simon. Isa siyang kapangyarihan ng kaliwang kamay ng Diyos at may kapahintulutang manakit sa mga hindi nakakakilala sa Diyos, kaya nagawa niyang ilagay kayo sa mga karamdaman. Ngunit sa pamamagitan mismo ng mga karamdamang ito, na pinahintulutang dumating sa inyo ayon sa mabuting pagkalinga ng Diyos, napilitan kayong hanapin at matagpuan ang makapagpapagaling; at sa pagkakataon ng paggaling ng katawan, napasailalim kayo sa kalooban ng Diyos at nahikayat na manampalataya, upang sa ganitong paraan ay maging malusog hindi lamang ang inyong mga katawan kundi pati ang inyong mga kaluluwa.</q></p><h3>Kabanata III. Ang Lunas</h3><p><q>Ngayon ay ibinalita sa akin na, matapos maghandog si Simon ng isang baka, pinakain niya kayo sa gitna ng pamilihan; at dahil sa labis na alak, nakipagkaibigan kayo hindi lamang sa masasamang demonyo kundi maging sa kanilang pinuno. Sa ganitong paraan, karamihan sa inyo ay dinapuan ng mga karamdamang ito, na hindi namamalayang sa sarili ninyong mga kamay ay inilalapit ninyo sa inyong sarili ang tabak ng kapahamakan. Sapagkat hindi kailanman magkakaroon ng kapangyarihan sa inyo ang mga demonyo kung hindi muna kayo kumain kasalo ng kanilang pinuno. Sapagkat mula pa sa pasimula ay nagtakda ang Diyos, ang Manlilikha ng lahat ng bagay, ng isang batas para sa dalawang pinuno—yaong nasa kanan at yaong nasa kaliwa—na wala sa kanila ang magkakaroon ng kapangyarihan sa sinumang nais nilang pakinabangan o pinsalain maliban kung ang taong iyon ay nakaupo muna sa iisang hapag kasama nila. Kaya kung paanong sa pagkain ninyo ng handog sa mga diyus-diyosan ay naging mga lingkod kayo ng pinuno ng kasamaan, gayon din, kung titigil kayo sa mga bagay na ito at tatakbo sa Diyos sa pamamagitan ng mabuting Prinsipe ng Kanyang kanang kamay, pinararangalan Siya nang walang mga hain sa paggawa ng anumang Kanyang kalooban, alamin ninyong totoo na hindi lamang gagaling ang inyong mga katawan kundi magiging malusog din ang inyong mga kaluluwa. Sapagkat Siya lamang, na pumupuksa sa pamamagitan ng Kanyang kaliwang kamay, ang makapagbibigay-buhay sa pamamagitan ng Kanyang kanan; Siya lamang ang kapwa makasasakit at makapagbabangon sa nahulog.</q></p><h3>Kabanata IV. Ang Gintong Tuntunin</h3><p><q>Kaya kung paanong noon ay nalinlang kayo ng tagapagpauna na si Simon, at sa gayon ay namatay ang inyong mga kaluluwa sa harap ng Diyos at nasaktan ang inyong mga katawan, gayon naman ngayon, kung magsisisi kayo, gaya ng sinabi ko, at magpapasakop sa mga bagay na kalugud-lugod sa Diyos, maaari kayong muling tumanggap ng lakas sa katawan at mabawi ang kalusugan ng inyong mga kaluluwa. At ang mga bagay na kalugud-lugod sa Diyos ay ito: manalangin sa Kanya; humingi sa Kanya, na kinikilalang Siya ang nagbibigay ng lahat ng bagay at nagbibigay ayon sa matuwid na pagpapasya; umiwas sa hapag ng mga diyablo; huwag kumain ng patay na laman; huwag humipo ng dugo; mahugasan mula sa bawat karumihan; at ang iba pa ay mabubuod sa isang salita—kung ano ang narinig ng mga Judiong may takot sa Diyos, pakinggan din ninyo, at sa maraming katawan ay magkaroon kayo ng iisang kalooban. Nawa’y maging pasya ng bawat isa na gawin sa kanyang kapwa ang mabubuting bagay na nais niyang gawin sa kanya. At matutuklasan ninyong lahat kung ano ang mabuti sa pamamagitan ng ganitong pakikipag-usap sa inyong sarili: Ayaw mong patayin ka; huwag kang pumatay ng iba. Ayaw mong akitin ng iba ang iyong asawa; huwag kang mangalunya. Ayaw mong may magnakaw ng alinman sa iyong mga pag-aari; huwag kang magnakaw sa iba. Sa gayon, sa pagkaunawa ninyo sa inyong sarili kung ano ang makatwiran at sa paggawa nito, magiging mahal kayo ng Diyos at tatanggap ng kagalingan. Kung hindi, sa buhay na ito ay pahihirapan ang inyong mga katawan, at sa darating ay parurusahan ang inyong mga kaluluwa.</q></p><h3>Kabanata V. Umalis si Pedro Patungong Sidon</h3><p>Matapos gumugol si Pedro ng ilang araw sa pagtuturo sa kanila sa ganitong paraan at sa pagpapagaling sa kanila, sila ay binautismuhan. Pagkatapos nito, sama-sama silang naupo sa mga pamilihan na nakasuot ng magaspang na damit at may abo, nagdadalamhati dahil sa iba pa niyang kahanga-hangang mga gawa at nagsisisi sa kanilang mga dating kasalanan. Nang marinig ito ng mga taga-Sidon, ginawa rin nila ang gayon at nagsugo upang pakiusapan si Pedro, sapagkat dahil sa kanilang mga karamdaman ay hindi sila makapunta mismo sa kanya. Hindi nagtagal si Pedro sa Tiro; ngunit matapos turuan ang lahat ng naninirahan doon, palayain sila mula sa lahat ng uri ng karamdaman, magtatag ng isang iglesia, at italaga bilang obispo ang isa sa mga matatandang kasama niya, umalis siya patungong Sidon. Ngunit nang marinig ni Simon na parating si Pedro, agad siyang tumakas patungong Beirut kasama sina Appion at ang kanyang mga kaibigan.</p><h3>Kabanata VI. Si Pedro sa Sidon</h3><p>At nang pumasok si Pedro sa Sidon, marami ang dinala sa mga higaan at inilagay sa harap niya. Sinabi niya sa kanila: <q>Nakikiusap ako, huwag ninyong isipin na ako, na isang mortal na tao at mismong saklaw ng maraming paghihirap, ay may anumang sariling kapangyarihang magpagaling sa inyo. Ngunit hindi ko ipagkakait sa inyo na ipakita ang daan kung paano kayo dapat maligtas. Sapagkat natutuhan ko mula sa Propeta ng katotohanan ang mga kundisyong itinakda ng Diyos bago pa itatag ang sanlibutan: ibig sabihin, ang masasamang gawa na kapag ginawa ng mga tao ay itinakda Niyang mapinsala sila ng pinuno ng kasamaan; at gayundin ang mabubuting gawa na dahil dito ay itinakda Niyang ang mga naniniwala sa Kanya bilang kanilang Manggagamot ay mapagaling sa katawan at mapanatiling ligtas ang kanilang mga kaluluwa.</q></p><h3>Kabanata VII. Ang Dalawang Daan</h3><p><q>Kaya, yamang nalalaman ko ang mabuti at masasamang gawang ito, inilalahad ko sa inyo na para bang dalawang daan at ipakikita ko kung alin ang landas na ikapapahamak ng mga naglalakbay at alin ang daang ikaliligtas nila, sa patnubay ng Diyos. Ang daan ng mga napapahamak ay maluwang at napakadali—winawasak sila nito nang hindi sila pinahihirapan; ngunit ang daan ng mga naliligtas ay makitid at baku-bako, at sa wakas ay nagliligtas, hindi nang walang malaking pagpapagal, sa mga tumahak dito. Ang dalawang daang ito ay pinamamahalaan ng kawalan ng pananampalataya at pananampalataya. Ang mga tumatahak sa landas ng kawalan ng pananampalataya ay yaong pinili ang kalayawan, dahil dito ay kinalimutan nila ang araw ng paghuhukom, ginagawa ang hindi kalugud-lugod sa Diyos, walang malasakit na iligtas ang kanilang mga kaluluwa sa pamamagitan ng salita, at hindi masigasig na hinanap ang sarili nilang ikabubuti. Tunay ngang hindi nila alam na ang mga pasya ng Diyos ay hindi gaya ng mga pasya ng tao; sapagkat una sa lahat, nalalaman Niya ang mga pag-iisip ng lahat ng tao, at ang lahat ay kailangang magsulit hindi lamang sa kanilang mga gawa kundi pati sa kanilang mga pag-iisip. At higit na maliit ang kasalanan ng mga nagsisikap umunawa nang tama ngunit nagkakamali kaysa sa mga hindi man lamang nagsisikap tungo sa mabubuting bagay. Sapagkat kinalugdan ng Diyos na ang taong nagkakamali sa pagkilala sa mabuti, ayon sa pagbibilang ng tao sa mga pagkakamali, ay maligtas matapos bahagyang maparusahan. Ngunit ang mga walang anumang malasakit na malaman ang mas mabuting daan, kahit pa nakagawa sila ng di-mabilang na iba pang mabubuting gawa, kung hindi sila nanatili sa paglilingkod na Siya mismo ang nagtakda, ay nahaharap sa paratang ng kawalang-malasakit, matinding pinarurusahan, at lubusang winawasak.</q></p><h3>Kabanata VIII. Ang Paglilingkod na Itinakda ng Diyos</h3><p><q>At ito ang paglilingkod na Kanyang itinakda: sambahin Siya lamang at magtiwala lamang sa Propeta ng katotohanan; magpabautismo para sa kapatawaran ng mga kasalanan, at sa gayon, sa pamamagitan ng dalisay na bautismong ito, ay muling ipanganak sa Diyos sa pamamagitan ng tubig na nagliligtas; umiwas sa hapag ng mga diyablo—ibig sabihin, sa pagkaing inihandog sa mga diyus-diyosan, sa mga patay na bangkay, sa mga hayop na binigti o nasilo ng mababangis na hayop, at sa dugo; huwag nang mamuhay sa karumihan; maghugas pagkatapos ng pakikipagtalik; at ang mga babae naman ay tumupad sa kautusan ng paglilinis. Ang lahat ay dapat maging mahinahon ang isip, nakatalaga sa mabubuting gawa, umiiwas sa paggawa ng masama, naghihintay ng buhay na walang hanggan mula sa makapangyarihang Diyos, at humihingi nito sa pamamagitan ng panalangin at walang-tigil na pagsusumamo.</q> Gayon din ang payo ni Pedro sa mga tao ng Sidon. Sa loob ng ilang araw marami ang nagsisi at naniwala, at sila’y pinagaling. Matapos magtatag si Pedro ng isang iglesia at italaga bilang obispo ang isa sa mga matatandang kasama niya, nilisan niya ang Sidon.</p><h3>Kabanata IX. Sinalakay ni Simon si Pedro</h3><p>Hindi pa man nagtatagal mula nang makarating siya sa Beirut ay nagkaroon ng lindol; at ang karamihan, na tumatakbo kay Pedro, ay nagsabi, <q>Tulungan mo kami, sapagkat natatakot kaming tuluyang mapahamak!</q> Nang magkagayon, si Simon, kasama sina Appion, Anubion, Athenodorus, at ang iba pa niyang mga kasama, ay nangahas sumigaw sa publiko laban kay Pedro: <q>Tumakas kayo, mga kaibigan, mula sa taong ito! Isa siyang salamangkero. Maniwala kayo sa amin—siya ang nagdulot ng lindol na ito; siya rin ang nagpadala sa amin ng mga karamdamang ito upang takutin tayo, na para bang siya mismo ay Diyos.</q> At marami pang gayong huwad na paratang ang ibinato ni Simon at ng kanyang mga kaibigan kay Pedro, na para bang may kakayahan itong gumawa ng mga bagay na lampas sa kapangyarihan ng tao. Ngunit nang bigyan siya ng mga tao ng kaunting katahimikan, bahagyang natawa si Pedro nang may pambihirang tapang at sinabi, <q>Mga kaibigan, inaamin kong kaya kong gawin, kung loloobin ng Diyos, ang sinasabi ng mga taong ito; at higit pa rito, handa akong, kung hindi ninyo paniniwalaan ang sinasabi ko, baligtarin ang inyong lungsod mula itaas hanggang ibaba.</q></p><h3>Kabanata X. Itinaboy si Simon</h3><p>At natakot ang mga tao at nangakong gagawin ang anumang iutos niya. <q>Kung gayon, huwag makipag-usap ang sinuman sa inyo sa mga mangkukulam na ito,</q> sabi ni Pedro, <q>ni magkaroon man ng anumang pakikitungo sa kanila.</q> Nang marinig ng mga tao ang maikling utos na ito, kumuha sila ng mga pamalo at hinabol ang mga iyon hanggang tuluyan nilang maitaboy palabas ng bayan. At ang mga maysakit at sinasaniban ng mga demonyo ay lumapit at nagpatirapa sa paanan ni Pedro. Nang makita niya ang lahat ng ito at hangaring alisin ang kanilang takot, sinabi niya sa kanila:—</p><h3>Kabanata XI. Ang Daan ng Kaligtasan</h3><p><q>Kung kaya kong magdulot ng mga lindol at gawin ang lahat ng nais ko, tinitiyak ko sa inyo na hindi ko pupuksain si Simon at ang kanyang mga kaibigan—sapagkat hindi ako isinugo upang pumuksa ng mga tao—kundi gagawin ko siyang kaibigan, upang hindi na niya, sa pamamagitan ng paninirang-puri laban sa aking pangangaral ng katotohanan, hadlangan ang kaligtasan ng marami. Ngunit kung paniniwalaan ninyo ako, siya mismo ay isang salamangkero; isa siyang maninirang-puri; isa siyang lingkod ng kasamaan para sa mga hindi nakakakilala sa katotohanan. Kaya may kapangyarihan siyang magdala ng mga karamdaman sa mga makasalanan, at ang mga makasalanan mismo ang tumutulong sa kanyang kapangyarihan laban sa kanila. Ngunit ako ay lingkod ng Diyos na Manlilikha ng lahat ng bagay at alagad ng Kanyang Propeta na nasa Kanyang kanang kamay. Kaya ako, bilang Kanyang apostol, ay nangangaral ng katotohanan. Sa paglilingkod sa Mabuti ay itinataboy ko ang mga karamdaman, sapagkat ako ang Kanyang ikalawang mensahero: nauuna ang karamdaman, at pagkatapos ay dumarating ang kagalingan. Kaya sa pamamagitan ng masamang salamangkero na iyon ay dinapuan kayo ng karamdaman sapagkat naghimagsik kayo laban sa Diyos. Sa pamamagitan ko, kung maniniwala kayo sa Kanya, kayo ay gagaling; at sa pagkakaroon ninyo ng karanasan sa Kanyang kapangyarihan ay makababalik kayo sa mabubuting gawa at maliligtas ang inyong mga kaluluwa.</q></p><h3>Kabanata XII. Pumunta si Pedro sa Byblus at Tripolis</h3><p>Habang sinasabi niya ang mga bagay na ito, lahat ay lumuhod sa harap ng kanyang mga paa. At itinaas niya ang kanyang mga kamay sa langit, nanalangin sa Diyos, at pinagaling silang lahat sa pamamagitan lamang ng kanyang payak na panalangin. Hindi siya nanatili nang maraming araw sa Beirut; ngunit matapos sanayin ang marami sa paglilingkod sa iisang Diyos, bautismuhan sila, at magtalaga sa kanila ng isang obispo mula sa mga matatandang kasama niya, pumunta siya sa Byblus. At nang dumating siya roon at malaman na hindi man lamang naghihintay si Simon sa kanila nang isang araw kundi dumiretso sa Tripolis, nanatili siya roon nang ilang araw lamang. Matapos pagalingin ang hindi kakaunti at sanayin sila sa mga Kasulatan, sinundan niya ang landas ni Simon patungong Tripolis, sapagkat higit niyang piniling habulin siya kaysa tumakas mula sa kanya.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

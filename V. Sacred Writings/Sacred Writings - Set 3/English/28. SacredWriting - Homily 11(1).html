@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 11</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Morning Exercises</option><option value="1">Chapter II. Giving All Diligence.</option><option value="2">Chapter III. Behold What Indignation.</option><option value="3">Chapter IV. The Golden Rule</option><option value="4">Chapter V. Forasmuch as You Did It Unto One of These</option><option value="5">Chapter VI. Why God Suffers Objects of Idolatry to Subsist</option><option value="6">Chapter VII. Let Both Grow Together Till the Harvest.</option><option value="7">Chapter VIII. Liberty and Necessity</option><option value="8">Chapter IX. God a Jealous God</option><option value="9">Chapter X. The Creatures Avenge God's Cause</option><option value="10">Chapter XI. Immortality of the Soul</option><option value="11">Chapter XII. Idols Unprofitable</option><option value="12">Chapter XIII. Arguments in Favour of Idolatry Answered</option><option value="13">Chapter XIV. Heathen Orgies</option><option value="14">Chapter XV. Heathen Worshippers Under the Power of the Demon</option><option value="15">Chapter XVI. All Things Work for Good to Them that Love God</option><option value="16">Chapter XVII. Speaking the Truth in Love</option><option value="17">Chapter XVIII. Charming of the Serpent</option><option value="18">Chapter XIX. Not Peace, But a Sword</option><option value="19">Chapter XX. What If It Be Already Kindled?</option><option value="20">Chapter XXI.—If I Be a Father, Where is My Fear?</option><option value="21">Chapter XXII. The Gods that Have Not Made the Heavens.</option><option value="22">Chapter XXIII. To Whom Much is Given.</option><option value="23">Chapter XXIV. Born of Water.</option><option value="24">Chapter XXV. Good Works to Be Well Done</option><option value="25">Chapter XXVI. Baptism</option><option value="26">Chapter XXVII. All Need Baptism</option><option value="27">Chapter XXVIII. Purification</option><option value="28">Chapter XXIX. Outward and Inward Purity</option><option value="29">Chapter XXX. Whatsoever Things are Pure.</option><option value="30">Chapter XXXI.—What Do You Do More Than Others?</option><option value="31">Chapter XXXII. To Whom Much is Given.</option><option value="32">Chapter XXXIII. The Queen of the South and the Men of Nineveh</option><option value="33">Chapter XXXIV. Peter's Daily Work</option><option value="34">Chapter XXXV. Beware of False Prophets.</option><option value="35">Chapter XXXVI. Farewell to Tripolis</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Morning Exercises</h3><p>Therefore on the fourth day at Tripolis, Peter rising and finding us awake, saluted us and went out to the reservoir, that he might bathe and pray; and we also did so after him. To us, therefore, when we had prayed together, and were set down before him, he gave a discourse touching the necessity of purity. And when thereafter it was day, he permitted the multitudes to enter. Then, when a great crowd had entered, he saluted them according to custom, and began to speak.</p><h3>Chapter II. Giving All Diligence.</h3><p><q>Inasmuch as, by long-continued neglect on your part, to your own injury, your mind has caused to sprout many hurtful conceptions about religion, and ye have become like land fallow by the carelessness of the husbandman, you need a long time for your purification, that your mind, receiving like good seed the true word that is imparted to you, may not choke it with evil cares, and render it unfruitful with respect to works that are able to save you. Wherefore it behooves those who are careful of their own salvation to hear more constantly, that their sins which have been long multiplying may, in the short time that remains, be matched with constant care for their purification. Since, therefore, no one knows the time of his end, hasten to pluck out the many thorns of your hearts; but not little by little, for then you cannot be purified, for you have been long fallow. </q></p><h3>Chapter III. Behold What Indignation.</h3><p><q>But not otherwise will you endure to undertake much care for your purification unless you be angry with yourselves, and chastise yourselves for those things with which, as unprofitable servants, you have been ensnared, consenting to your evil lusts, that you may be able to let in your righteous indignation upon your mind, as fire upon a fallow field. If, therefore, ye have not righteous fire, I mean indignation, against evil lusts, learn from what good things ye have been seduced, and by whom ye have been deceived, and for what punishment you are prepared; and thus, your mind being sober, and kindled into indignation like fire by the teaching of Him who sent us, may be able to consume the evil things of lust. Believe me, that if you will, you can rectify all things.</q></p><h3>Chapter IV. The Golden Rule</h3><p><q>You are the image of the invisible God. Whence let not those who would be pious say that idols are images of God, and therefore that it is right to worship them. For the image of God is man. He who wishes to be pious towards God does good to man, because the body of man bears the image of God. But all do not as yet bear His likeness, but the pure mind of the good soul does. However, as we know that man was made after the image and after the likeness of God, we tell you to be pious towards him, that the favour may be accounted as done to God, whose image he is. Therefore it behooves you to give honour to the image of God, which is man—in this wise: food to the hungry, drink to the thirsty, clothing to the naked, care to the sick, shelter to the stranger, and visiting him who is in prison, to help him as you can. And not to speak at length, whatever good things any one wishes for himself, so let him afford to another in need, and then a good reward can be reckoned to him as being pious towards the image of God. And by like reason, if he will not undertake to do these things, he shall be punished as neglecting the image.</q></p><h3>Chapter V. Forasmuch as You Did It Unto One of These</h3><p><q>Can it therefore be said that, for the sake of piety towards God, ye worship every form, while in all things ye injure man who is really the image of God, committing murder, adultery, stealing, and dishonouring him in many other respects? But you ought not to do even one evil thing on account of which man is grieved. But now you do all things on account of which man is disheartened, for wrong is also distress. Wherefore you murder and spoil his goods, and whatever else you know which you would not receive from another. But you, being seduced by some malignant reptile to malice, by the suggestion of polytheistic doctrine, are impious towards the real image, which is man, and think that you are pious towards senseless things.</q></p><h3>Chapter VI. Why God Suffers Objects of Idolatry to Subsist</h3><p><q>But some say, Unless He wished these things to be, they should not be, but He would take them away. But I say this shall assuredly be the case, when all shall show their preference for Him, and thus there shall be a change of the present world. However, if you wished Him to act thus, so that none of the things that are worshipped should subsist, tell me what of existing things you have not worshipped. Do not some of you worship the sun, and some the moon, and some water, and some the earth, and some the mountains, and some plants, and some seeds, and some also man, as in Egypt? Therefore God must have suffered nothing, not even you, so that there should have been neither worshipped nor worshipper. Truly this is what the terrible serpent which lurks in you would have, and spares you not. But so it shall not be. For it is not the thing that is worshipped that sins; for it suffers violence at the hands of him who will worship it. For though unjust judgment is passed by all men, yet not by God. For it is not just that the sufferer and the disposer receive the same punishment, unless he willingly receive the honour which belongs only to the Most Honourable.</q></p><h3>Chapter VII. Let Both Grow Together Till the Harvest.</h3><p><q>But it will be said that the worshippers themselves ought to be taken away by the true God, that others may not do it. But you are not wiser than God, that you should give Him counsel as one more prudent than He. He knows what He does; for He is long-suffering to all who are in impiety, as a merciful and philanthropic father, knowing that impious men become pious. And of those very worshippers of base and senseless things, many becoming sober have ceased to worship these things and to sin, and many Greeks have been saved so as to pray to the true God.</q></p><h3>Chapter VIII. Liberty and Necessity</h3><p><q>But, you say, God ought to have made us at first so that we should not have thought at all of such things. You who say this do not know what is free-will, and how it is possible to be really good; that he who is good by his own choice is really good; but he who is made good by another under necessity is not really good, because he is not what he is by his own choice. Since therefore every one's freedom constitutes the true good, and shows the true evil, God has contrived that friendship or hostility should be in each man by occasions. But no, it is said: everything that we think He makes us to think. Stop! Why do you blaspheme more and more, in saying this? For if we are under His influence in all that we think, you say that He is the cause of fornications, lusts, avarice, and all blasphemy. Cease your evil-speaking, ye who ought to speak well of Him, and to bestow all honour upon Him. And do not say that God does not claim any honour; for if He Himself claims nothing, you ought to look to what is right, and to answer with thankful voice Him who does you good in all things.</q></p><h3>Chapter IX. God a Jealous God</h3><p><q>But, you say, we do better when we are thankful at once to Him and to all others. Now, when you say this, you do not know the plot that is formed against you. For as, when many physicians of no power promise to cure one patient, one who is really able to cure him does not apply his remedy, considering that, if he should cure him, the others would get the credit; so also God does not do you good, when He is asked along with many who can do nothing. What! It will be said, is God enraged at this, if, when He cures, another gets the credit? I answer: Although He be not indignant, at all events He will not be an accomplice in deceit; for when He has conferred a benefit, the idol, which has done nothing, is credited with the power. But also I say to you, if he who crouches in adoration before senseless idols had not been injured naturally, perhaps He (God) would have endured even this. Wherefore watch ye that you may attain to a reasonable understanding on the matter of salvation. For God being without want, neither Himself needs anything, nor receives hurt; for it belongs to us to be profited or injured. For in like manner as Cæsar is neither hurt when he is evil spoken of, nor profited when he is thanked, but safety accrues to the renderer of thanks, and ruin to the evil-speaker, so they who speak well of God indeed profit Him nothing, but save themselves; and in like manner, those who blaspheme Him do not indeed injure Him, but themselves perish.</q></p><h3>Chapter X. The Creatures Avenge God's Cause</h3><p><q>But it will be said that the cases are not parallel between God and man; and I admit that they are not parallel: for the punishment is greater to him who is guilty of impiety against the greater, and less to him who sins against the less. As, therefore, God is greatest of all, so he who is impious against Him shall endure greater punishment, as sinning against the greater; not through His defending Himself with His own hand, but the whole creation being indignant at him, and naturally taking vengeance on him. For to the blasphemer the sun will not give his light, nor the earth her fruits, nor the fountain its water, nor in Hades shall he who is there constituted prince give rest to the soul; since even now, while the constitution of the world subsists, the whole creation is indignant at him. Wherefore neither do <em>the clouds</em> afford sufficient rains, nor the earth fruits, whereby many perish; yea, even the air itself, inflamed with anger, is turned to pestilential courses. However, whatsoever good things we enjoy, He of His mercy compels the creature to our benefits. Still, against you who dishonour the Maker of all, the whole creation is hostile.</q></p><h3>Chapter XI. Immortality of the Soul</h3><p><q>And though by the dissolution of the body you should escape punishment, how shall you be able by corruption to flee from your soul, which is incorruptible? For the soul even of the wicked is immortal, for whom it were better not to have it incorruptible. For, being punished with endless torture under unquenchable fire, and never dying, it can receive no end of its misery. But perhaps some one of you will say, 'You terrify us, O Peter.' Teach us then how we can be silent <em>about these things, and yet</em> tell you things as they are, for not otherwise can we tell you them. But if we should be silent, you should be ensnared by evils through ignorance. But if we speak, we are suspected of terrifying you with a false theory. How then shall we charm that wicked <em>serpent</em> that lurks in your <em>soul</em>, and subtilely insinuates suspicions hostile to God, under the guise of love of God? Be reconciled with yourselves; for in order to your salvation recourse is to Him with well-doing. Unreasonable lust in you is hostile to God, for by conceit of wisdom it strengthens ignorance.</q></p><h3>Chapter XII. Idols Unprofitable</h3><p><q>But others say, God does not care for us. This also is false. For if really He did not care, He would neither cause His sun to rise on the good and the evil, nor send His rain on the just and the unjust. But others say, We are more pious <em>than you</em>, since we worship both him and images. I do not think, if one were to say to a king, 'I give you an equal share of honour with that which I give to corpses and to worthless dung,'—I do not think that he would profit by it. But some one will say, Do you call our objects of worship dung? I say Yes, for you have made them useless to yourselves by setting them aside for worship, whereas their substance might perhaps have been serviceable for some other purpose, or for the purpose of manure. But now it is not useful even for this purpose, since you have changed its shape and worship it. And how do you say that you are more pious, you who are the most wicked of all, who deserve destruction of your souls by this very one incomparable sin, at the hands of Him who is true, if you abide in it? For as if any son having received many benefits from his father, give to another, who is not his father, the honour that is due to his father, he is certainly disinherited; but if he live according to the judgment of his father, and so thanks him for his kindnesses, he is with good reason made the heir.</q></p><h3>Chapter XIII. Arguments in Favour of Idolatry Answered</h3><p><q>But others say, We shall act impiously if we forsake the objects of worship handed down to us by our fathers; for it is like the guarding of a deposit. But on this principle the son of a robber or a debauchee ought not to be sober and to choose the better part, lest he should act impiously, and sin by doing differently from his parents! How foolish, then, are they who say, We worship these things that we may not be troublesome to Him; as if God were troubled by those who bless Him, and not troubled by those who ungratefully blaspheme Him. Why is it, then, that when there is a withholding of rain, you look only to heaven and pour out prayers and supplications; and when you obtain it, you quickly forget? For when you have reaped your harvest or gathered your vintage, you distribute your first-fruits among those idols which are nothing, quickly forgetting God your benefactor; and thus you go into groves and temples, and offer sacrifices and feasts. Wherefore some of you say, These things have been excellently devised for the sake of good cheer and feasting.</q></p><h3>Chapter XIV. Heathen Orgies</h3><p><q>Oh men without understanding! Judge ye rightly of what is said. For if it were necessary to give one's self to some pleasure for the refreshment of the body, whether were it better to do so among the rivers and woods and groves, where there are entertainments and convivialities and shady places, or where there is the madness of demons, and cuttings of hands, and emasculations, and fury and mania, and dishevelling of hair, and shoutings and enthusiasms and howlings, and all those things which are done with hypocrisy for the confounding of the unthinking, when you offer your prescribed prayers and thanksgivings even to those who are deader than the dead?</q></p><h3>Chapter XV. Heathen Worshippers Under the Power of the Demon</h3><p><q>And why do ye take pleasure in these doings? Since the serpent which lurks in you, which has sown in you fruitless lust, will not tell you, I shall speak and put it on record. Thus the case stands. According to the worship of God, the proclamation is made to be sober, to be chaste, to restrain passion, not to pilfer other men's goods, to live uprightly, moderately, fearlessly, gently; rather to restrain one's self in necessities, than to supply his wants by wrongfully taking away the property of another. But with the so-called gods the reverse is done. And ye renounce some things <em>as done by you</em>, in order to the admiration of <em>your</em> righteousness; whereas, although you did all that you are commanded, ignorance with respect to God is alone sufficient for your condemnation. But meeting together in the places which you have dedicated to them, you delight in making yourselves drunk, and you kindle your altars, of which the diffused odour through its influence attracts the blind and deaf spirits to the place of their fumigation. And thus, of those who are present, some are filled with inspirations, and some with strange fiends, and some betake themselves to lasciviousness, and some to theft and murder. For the exhalation of blood, and the libation of wine, satisfies even these unclean spirits, which lurk within you and cause you to take pleasure in the things that are transacted there, and in dreams surround you with false phantasies, and punish you with myriads of diseases. For under the show of the so-called sacred victims you are filled with dire demons, which, cunningly concealing themselves, destroy you, so that you should not understand the plot that is laid for you. For, under the guise of some injury, or love, or anger, or grief, or strangling you with a rope, or drowning you, or throwing you from a precipice, or by suicide, or apoplexy, or some other disease, they deprive you of life.</q></p><h3>Chapter XVI. All Things Work for Good to Them that Love God</h3><p><q>But no one of us can suffer such a thing; but they themselves are punished by us, when, having entered into any one, they entreat us that they may go out slowly. But some one will say perhaps, Even some of the worshippers of God fall under such sufferings. I say that is impossible. For he is a worshipper of God, of whom I speak, who is truly pious, not one who is such only in name, but who really performs the deeds of the law that has been given him. If any one acts impiously, he is not pious; in like manner as, if he who is of another tribe keeps the law, he is a Jew; but he who does not keep it is a Greek. For the Jew believes God and keeps the law, by which faith he removes also other sufferings, though like mountains and heavy. But he who keeps not the law is manifestly a deserter through not believing God; and thus as no Jew, but a sinner, he is on account of his sin brought into subjection to those sufferings which are ordained for the punishment of sinners. For, by the will of God prescribed at the beginning, punishment righteously follows those who worship Him on account of transgressions; and this is so, in order that having reckoned with them by punishment for sin as for a debt, he may set forth those who have turned to Him pure in the universal judgment. For as the wicked here enjoy luxury to the loss of eternal blessings, so punishments are sent upon the Jews who transgress for a settlement of accounts, that, expiating their transgression here, they may there be set free from eternal punishments.</q></p><h3>Chapter XVII. Speaking the Truth in Love</h3><p><q>But you cannot speak thus; for you do not believe that things are then as we say; I mean, when there is a recompense for all. And on this account, you being ignorant of what is advantageous, are seduced by temporal pleasures from taking hold of eternal things. Wherefore we attempt to make to you exhibitions of what is profitable, that, being convinced of the promises that belong to piety, you may by good deeds inherit with us the griefless world. Until then you know us, do not be angry with us, as if we spoke falsely of the good things which we desire for you. For the things which are regarded by us as true and good, these we have not scrupled to bring to you, but, on the contrary, have hastened to make you fellow-heirs of good things, which we have considered to be such. For thus it is necessary to speak to the unbelievers. But that we really speak the truth in what we say, you cannot know otherwise than by first listening with love of the truth.</q></p><h3>Chapter XVIII. Charming of the Serpent</h3><p><q>Wherefore, as to the matter in hand, although in ten thousand ways the serpent that lurks in you suggesting evil reasonings and hindrances, wishes to ensnare you, therefore so much the more ought ye to resist him, and to listen to us assiduously. For it behooves you, consulting, as having been grievously deceived, to know how he must be charmed. But in no other way is it possible. But by charming I mean the setting yourselves by reason in opposition to their evil counsels, remembering that by promise of knowledge he brought death into the world at the first. </q></p><h3>Chapter XIX. Not Peace, But a Sword</h3><p><q>Whence the Prophet of the truth, knowing that the world was much in error, and seeing it ranged on the side of evil, did not choose that there should be peace to it while it stood in error. So that till the end he sets himself against all those who are in concord with wickedness, setting <em>truth</em> over against error, sending as it were fire upon those who are sober, namely wrath against the seducer, which is likened to a sword, and by holding forth the word he destroys ignorance by knowledge, cutting, as it were, and separating the living from the dead. Therefore, while wickedness is being conquered by lawful knowledge, war has taken hold of all. For the submissive son is, for the sake of salvation, separated from the unbelieving father, or the father from the son, or the mother from the daughter, or the daughter from the mother, and relatives from relatives, and friends from associates.</q></p><h3>Chapter XX. What If It Be Already Kindled?</h3><p><q>And let not any one say, How is this just, that parents should be separated from their children, and children from their parents? It is just, even entirely. For if they remained with them, and, after profiting them nothing, were also destroyed along with them, how is it not just that he who wishes to be saved should be separated from him who will not, but who wishes to destroy him along with himself. Moreover, it is not those who judge better that wish to be separated, but they wish to stay with them, and to profit them by the exposition of better things; and therefore the unbelievers, not wishing to hearken to them, make war against them, banishing, persecuting, hating them. But those who suffer these things, pitying those who are ensnared by ignorance, by the teaching of wisdom pray for those who contrive evil against them, having learned that ignorance is the cause of their sin. For the Teacher Himself, being nailed to <em>the cross</em>, prayed to the Father that the sin of those who slew Him might be forgiven, saying, 'Father, forgive them their sins, for they know not what they do.' They also therefore, being imitators of the Teacher in their sufferings, pray for those who contrive them, as they have been taught. Therefore they are not separated as hating their parents, since they make constant prayers even for those who are neither parents nor relatives, but enemies, and strive to love them, as they have been commanded.</q></p><h3>Chapter XXI.—If I Be a Father, Where is My Fear?</h3><p><q>But tell me, how do you love your parents? If, indeed, you do it as always regarding what is right, I congratulate you; but if you love them as it happens, then not so, for then you may on a small occasion become their enemies. But if you love them intelligently, tell me, what are parents? You will say they are the sources of our being. Why, then, do ye not love the <em>source of the</em> being of all things, if indeed you have with right understanding elected to do this? But you will now say again, we have not seen Him. Why, then, do ye not seek for Him, but worship senseless things? But what? If it were even difficult for you to know what God is, you cannot fail to know what is not God, so as to reason that God is not wood, nor stone, nor brass, nor anything else made of corruptible matter.</q></p><h3>Chapter XXII. The Gods that Have Not Made the Heavens.</h3><p><q>For are not they graven with iron? And has not the graying iron been softened by fire? And is not the fire itself extinguished with water? And has not the water its motion from the spirit? And has not the spirit the beginning of its course from the God who has made all things? For thus said the prophet Moses: 'In the beginning God made the heaven and the earth. And the earth was unsightly, and unadorned; and darkness was over the deep: and the Spirit of God was borne above the waters.' Which Spirit, at the bidding of God, as it were His hand, makes all things, dividing light from darkness, and after the invisible heaven spreading out the visible, that the places above might be inhabited by the angels of light, and those below by man, and all the creatures that were made for his use.</q></p><h3>Chapter XXIII. To Whom Much is Given.</h3><p><q>For on your account, O man, God commanded the water to retire upon the face of the earth, that the earth might be able to bring forth fruits for you. And He made water-courses, that He might provide for you fountains, and that river-beds might be disclosed, that animals might teem forth; in a word, that He might furnish you with all things. For is it not for you that the winds blow, and the rains fall, and the seasons change for the production of fruits? Moreover, it is for you that the sun and moon, with the other heavenly bodies, accomplish their risings and settings; and rivers and pools, with all fountains, serve you. Whence to you, O senseless one, as the greater honour has been given, so for you, ungrateful, the greater punishment by fire has been prepared, because you would not know Him whom it behooved you before all things to know.</q></p><h3>Chapter XXIV. Born of Water.</h3><p><q>And now from inferior things learn the cause of all, reasoning that water makes all things, and water receives the production of its movement from spirit, and the spirit has its beginning from the God of all. And thus you ought to have reasoned, in order that by reason you might attain to God, that, knowing your origin, and being born again by the first-born water, you may be constituted heir of the parents who have begotten you to incorruption.</q></p><h3>Chapter XXV. Good Works to Be Well Done</h3><p><q>Wherefore come readily, as a son to a father, that God may assign ignorance as the cause of your sins. But if after being called you will not, or delay, you shall be destroyed by the just judgment of God, not being willed, through your not willing. And do not think, though you were more pious than all the pious that ever were, but if you be unbaptized, that you shall ever obtain hope. For all the more, on this account, you shall endure the greater punishment, because you have done excellent works not excellently. For well-doing is excellent when it is done as God has commanded. But if you will not be baptized according to His pleasure, you serve your own will and oppose His counsel.</q></p><h3>Chapter XXVI. Baptism</h3><p><q>But perhaps some one will say, What does it contribute to piety to be baptized with water? In the first place, because you do that which is pleasing to God; and in the second place, being born again to God of water, by reason of fear you change your first generation, which is of lust, and thus you are able to obtain salvation. But otherwise it is impossible. For thus the prophet has sworn to us, saying, <q>Verily I say to you, Unless ye be regenerated by living water into the name of Father, Son, and Holy Spirit, you shall not enter the kingdom of heaven.</q> Wherefore approach. For there is there something that is merciful from the beginning, borne upon the water, and rescues from the future punishment those who are baptized with the thrice blessed invocation, offering as gifts to God the good deeds of the baptized whenever they are done after their baptism. Wherefore flee to the waters, for this alone can quench the violence of fires. He who will not now come to it still bears the spirit of strife, on account of which he will not approach the living water for his own salvation.</q></p><h3>Chapter XXVII. All Need Baptism</h3><p><q>Therefore approach, be ye righteous or unrighteous. For if you are righteous, baptism alone is lacking in order to salvation. But if you are unrighteous, come to be baptized for the remission of the sins formerly committed in ignorance. And to the unrighteous man it remains that his well-doing after baptism be according to the proportion of his <em>previous</em> impiety. Wherefore, be ye righteous or unrighteous, hasten to be born to God, because delay brings danger, on account of the fore-appointment of death being unrevealed; and show by well-doing your likeness to the Father, who begets you of water. As a lover of truth, honour the true God as your Father. But His honour is that you live as He, being righteous, would have you live. And the will of the righteous One is that you do no wrong. But wrong is murder, hatred, envy, and such like; and of these there are many forms.</q></p><h3>Chapter XXVIII. Purification</h3><p><q>However, it is necessary to add something to these things which has not community with man, but is peculiar to the worship of God. I mean purification, not approaching to a man's own wife when she is in separation, for so the law of God commands. But what? If purity be not added to the service of God, you would roll pleasantly like the dung-flies. Wherefore as man, having something more than the irrational animals, namely, rationality, purify your hearts from evil by heavenly reasoning, and wash your bodies in the bath. For purification according to the truth is not that the purity of the body precedes purification after the heart, but that purity follows goodness. For our Teacher also, <em>dealing with</em> certain of the Pharisees and Scribes among us, who are separated, and as Scribes know the matters of the law more than others, still He reproved them as hypocrites, because they cleansed only the things that appear to men, but omitted purity of heart and the things seen by God alone.</q></p><h3>Chapter XXIX. Outward and Inward Purity</h3><p><q>Therefore He made use of this memorable expression, speaking the truth with respect to the hypocrites of them, not with respect to all. For to some He said that obedience was to be rendered, because they were entrusted with the chair of Moses. However, to the hypocrites he said, 'Woe to you, Scribes and Pharisees, hypocrites, for ye make clean the outside of the cup and the platter, but the inside is full of filth. You blind Pharisee, cleanse first the inside of the cup and the platter, that their outsides may be clean also.' And truly: for when the mind is enlightened by knowledge, the disciple is able to be good, and thereupon purity follows; for from the understanding within a good care of the body without is produced. As from negligence with respect to the body, care of the understanding cannot be produced, so the pure man can purify both that which is without and that which is within. And he who, purifying the things without, does it looking to the praise of men, and by the praise of those who look on, he has nothing from God.</q></p><h3>Chapter XXX. Whatsoever Things are Pure.</h3><p><q>But who is there to whom it is not manifest that it is better not to have intercourse with a woman in her separation, but purified and washed. And also after copulation it is proper to wash. But if you grudge to do this, recall to mind how you followed after the parts of purity when you served senseless idols; and be ashamed that now, when it is necessary to attain, I say not more, but to attain the one and whole of purity, you are more slothful. Consider, therefore, Him who made you, and you will understand who He is that casts upon you this sluggishness with respect to purity.</q></p><h3>Chapter XXXI.—What Do You Do More Than Others?</h3><p><q>But some one of you will say, Must we then do whatsoever things we did while we were idolaters? I say to you, Not all things; but whatsoever you did well, you must do now, and more: for whatsoever is well done in error hangs upon truth, as if anything be ill done in the truth it is from error. Receive, therefore, from all quarters the things that are your own, and not those that are another's, and do not say, If those who are in error do anything well we are not bound to do it. For, on this principle, if any one who worships idols do not commit murder, we ought to commit murder, because he who is in error does not commit it.</q></p><h3>Chapter XXXII. To Whom Much is Given.</h3><p><q>No; but rather, if those who are in error do not kill, let us not be angry; if he who is in error do not commit adultery, let us not lust even in the smallest degree; if he who is in error loves him who loves him, let us love even those who hate us; if he who is in error lends to those who have, let us <em>give</em> to those who have not. Unquestionably we ought—we who hope to inherit eternal life—to do better things than the good things that are done by those who know only the present life, knowing that if their works, being judged with ours in the day of judgment, be found equal in goodness, we shall have shame, and they perdition, having acted against themselves through error. And I say that we shall be put to shame on this account, because we have not done more than they, though we have known more than they. And if we shall be put to shame if we show well-doing equal to theirs, and no more, how much more if we show less than their well-doing?</q></p><h3>Chapter XXXIII. The Queen of the South and the Men of Nineveh</h3><p><q>But that indeed in the day of judgment the doings of those who have known the truth are compared with the good deeds of those who have been in error, the unlying One Himself has taught us, saying to those who neglected to come and listen to Him, 'The queen of the south shall rise up with this generation, and shall condemn it; because she came from the extremities of the earth to hear the wisdom of Solomon: and behold, a greater than Solomon is here,' and ye do not believe Him. And to those amongst the people who would not repent at His preaching He said, 'The men of Nineveh shall rise up with this generation and shall condemn it, for they heard and repented on the preaching of Jonas: and behold, a greater is here, and no one believes.' And thus, setting over against all their impiety those from among the Gentiles who have done <em>well</em>, in order to condemn those who, possessing the true religion, had not acted so well as those who were in error, he exhorted those having reason not only to do equally with the Gentiles whatsoever things are excellent, but more than they. And this speech has been suggested to me, taking occasion from the necessity of respecting the separation, and of washing after copulation, and of not denying such purity, though those who are in error do the same, since those who in error do well, without being saved, are for the condemnation of those who are in the worship of God, <em>and do ill;</em> because their respect for purity is through error, and not through the worship of the true Father and God of all.</q></p><h3>Chapter XXXIV. Peter's Daily Work</h3><p>Having said this, he dismissed the multitudes; and according to his custom, having partaken of food with those dearest to him, he went to rest. And thus doing and discoursing day by day, he strongly buttressed the law of God, challenging the reputed gods with the reputed Genesis, and arguing that there is no automatism, but that the world is governed according to providence.</p><h3>Chapter XXXV. Beware of False Prophets.</h3><p>Then after three months were fulfilled, he ordered me to fast for several days, and then brought me to the fountains that are near to the sea, and baptized me as in ever-flowing water. Thus, therefore, when our brethren rejoiced at my God-gifted regeneration, not many days after he turned to the elders in presence of all the church, and charged them, saying: <q>Our Lord and Prophet, who has sent us, declared to us that the wicked one, having disputed with Him forty days, and having prevailed nothing against Him, promised that he would send apostles from amongst his subjects, to deceive. Wherefore, above all, remember to shun apostle or teacher or prophet who does not first accurately compare his preaching with <em>that of</em> James, who was called the brother of my Lord, and to whom was entrusted to administer the church of the Hebrews in Jerusalem,—and that even though he come to you with witnesses: lest the wickedness which disputed forty days with the Lord, and prevailed nothing, should afterwards, like lightning falling from heaven upon the earth, send a preacher to your injury, as now he has sent Simon upon us, preaching, under pretence of the truth, in the name of the Lord, and sowing error. Wherefore He who has sent us, said, 'Many shall come to me in sheep's clothing, but inwardly they are ravening wolves. By their fruits ye shall know them.'</q></p><h3>Chapter XXXVI. Farewell to Tripolis</h3><p>Having spoken thus, he sent the harbingers into Antioch of Syria, bidding them expect him there immediately. Then when they had gone, Peter having driven away diseases, sufferings, and demons from great multitudes who were persuaded, and having baptized them in the fountains which are near to the sea, and having celebrated the Eucharist, and having appointed Maroones, who had received him into his house, and was now perfected, as their bishop, and having set apart twelve elders, and having designated deacons, and arranged matters relating to widows, and having discoursed on the common good what was profitable for the ordering of the church, and having counselled them to obey the bishop Maroones, three months being now fulfilled; he bade those in Tripolis of Phœnicia farewell, and took his journey to Antioch of Syria, all the people accompanying us with due honour.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Mga Gawain sa Umaga</h3><p>Kaya sa ikaapat na araw sa Tripolis, bumangon si Pedro at, nang makita kaming gising na, binati kami at lumabas patungo sa imbakan ng tubig upang maligo at manalangin; at ginawa rin namin iyon pagkatapos niya. Kaya nang makapanalangin na kami nang sama-sama at makaupo sa harap niya, nagsalita siya sa amin tungkol sa pangangailangan ng kadalisayan. At nang mag-umaga na, pinahintulutan niyang pumasok ang mga tao. Nang makapasok ang malaking karamihan, binati niya sila ayon sa kanyang kaugalian at nagsimulang magsalita.</p><h3>Kabanata II. Gawin ang Lahat ng Pagsisikap</h3><p><q>Yamang dahil sa matagal ninyong pagpapabaya, sa sarili ninyong kapinsalaan, ay nagpatubo ang inyong isip ng maraming mapaminsalang kuru-kuro tungkol sa relihiyon, at naging gaya kayo ng lupang pinabayaan dahil sa kapabayaan ng magsasaka, kailangan ninyo ng mahabang panahon para sa paglilinis upang ang inyong isip, sa pagtanggap sa tunay na salitang ibinibigay sa inyo na gaya ng mabuting binhi, ay hindi iyon masakal ng masasamang alalahanin at gawing walang bunga pagdating sa mga gawang makapagliligtas sa inyo. Kaya ang mga nagmamalasakit sa sarili nilang kaligtasan ay nararapat makinig nang higit na palagian, upang ang kanilang mga kasalanang matagal nang dumarami ay mapantayan, sa maikling panahong natitira, ng patuloy na pagsisikap sa paglilinis. Yamang walang sinumang nakaaalam ng oras ng kanyang wakas, magmadali kayong bunutin ang maraming tinik sa inyong mga puso; ngunit huwag nang paisa-isa at dahan-dahan, sapagkat sa gayon ay hindi kayo malilinis, palibhasa’y matagal kayong napabayaan.</q></p><h3>Kabanata III. Masdan ang Gayong Pagkagalit</h3><p><q>Ngunit hindi ninyo matitiis na magsikap nang husto para sa paglilinis maliban kung magalit kayo sa sarili ninyo at parusahan ang inyong sarili dahil sa mga bagay na bumihag sa inyo, gaya ng mga aliping walang pakinabang, nang pumayag kayo sa masasama ninyong pagnanasa. Sa gayon ay maibubuhos ninyo sa inyong isip ang matuwid na galit na parang apoy sa lupang pinabayaan. Kaya kung wala sa inyo ang matuwid na apoy—ang ibig kong sabihin ay pagkagalit laban sa masasamang pagnanasa—alamin ninyo kung anong mabubuting bagay ang pinaglayuan ninyo, kung sino ang nanlinlang sa inyo, at anong kaparusahan ang inihanda para sa inyo. Sa gayon, kapag naging malinaw ang inyong isip at nagningas sa matuwid na galit na parang apoy sa pamamagitan ng aral Niya na nagsugo sa amin, mauubos nito ang masasamang bagay ng pagnanasa. Maniwala kayo sa akin: kung gugustuhin ninyo, maitutuwid ninyo ang lahat ng bagay.</q></p><h3>Kabanata IV. Ang Gintong Tuntunin</h3><p><q>Kayo ang larawan ng di-nakikitang Diyos. Kaya huwag sabihin ng mga nagnanais maging maka-Diyos na ang mga diyus-diyosan ay mga larawan ng Diyos at samakatuwid ay nararapat sambahin ang mga iyon. Sapagkat ang larawan ng Diyos ay ang tao. Ang nagnanais maging maka-Diyos sa Diyos ay gumagawa ng mabuti sa tao, sapagkat taglay ng katawan ng tao ang larawan ng Diyos. Ngunit hindi pa taglay ng lahat ang Kanyang wangis; ang dalisay na isip lamang ng mabuting kaluluwa ang nagtataglay nito. Gayunman, yamang alam nating nilikha ang tao ayon sa larawan at wangis ng Diyos, sinasabi naming dapat kayong maging maka-Diyos sa kanya, upang ang kabutihang ginawa ay mabilang na ginawa sa Diyos na siyang larawan niya. Kaya nararapat ninyong parangalan ang larawan ng Diyos, na siyang tao, sa ganitong paraan: bigyan ng pagkain ang nagugutom, inumin ang nauuhaw, damit ang hubad, pangangalaga ang maysakit, matutuluyan ang dayuhan, at dalawin ang nasa bilangguan upang tulungan siya ayon sa inyong makakaya. At upang hindi na humaba pa, anumang mabuting bagay ang nais ng sinuman para sa sarili, gawin din niya iyon sa ibang nangangailangan; at sa gayon ay maibibilang sa kanya ang mabuting gantimpala bilang isang taong naging maka-Diyos sa larawan ng Diyos. At sa gayunding dahilan, kung ayaw niyang gawin ang mga bagay na ito, parurusahan siya dahil pinabayaan niya ang larawan.</q></p><h3>Kabanata V. Yamang Ginawa Ninyo Ito sa Isa sa mga Ito</h3><p><q>Masasabi ba, kung gayon, na alang-alang sa kabanalan sa Diyos ay sinasamba ninyo ang bawat anyo, samantalang sa lahat ng bagay ay sinasaktan ninyo ang tao na tunay na larawan ng Diyos, sa pagpatay, pangangalunya, pagnanakaw, at paglapastangan sa kanya sa marami pang paraan? Hindi ninyo dapat gawin kahit isang masamang bagay na ikalulungkot ng tao. Ngunit ngayon ay ginagawa ninyo ang lahat ng bagay na nagpapahina ng loob ng tao, sapagkat ang paggawa ng mali ay pagdudulot din ng dalamhati. Kaya kayo’y pumapatay at kumukuha ng kanyang mga ari-arian at gumagawa ng iba pang mga bagay na alam ninyong ayaw ninyong gawin sa inyo ng iba. Ngunit kayo, na naakit ng isang masamang gumagapang na nilalang tungo sa kasamaan sa pamamagitan ng mungkahi ng aral tungkol sa maraming diyos, ay di-maka-Diyos sa tunay na larawan, na siyang tao, samantalang iniisip ninyong maka-Diyos kayo sa mga bagay na walang pakiramdam.</q></p><h3>Kabanata VI. Kung Bakit Pinahihintulutan ng Diyos na Manatili ang mga Bagay na Sinasamba bilang mga Diyus-diyosan</h3><p><q>Ngunit sinasabi ng ilan: Kung ayaw Niyang umiral ang mga bagay na ito, hindi sana umiiral ang mga iyon; inalis sana Niya ang mga iyon. Ngunit sinasabi ko na tiyak na mangyayari iyon kapag naipakita na ng lahat ang pagpili nila sa Kanya, at sa gayon ay magbabago ang kasalukuyang sanlibutan. Gayunman, kung nais ninyong kumilos Siya nang gayon upang walang anumang bagay na sinasamba ang manatili, sabihin ninyo sa akin: alin sa mga bagay na umiiral ang hindi ninyo sinamba? Hindi ba ang ilan sa inyo ay sumasamba sa araw, ang iba sa buwan, ang iba sa tubig, ang iba sa lupa, ang iba sa mga bundok, ang iba sa mga halaman, ang iba sa mga binhi, at ang iba maging sa tao, gaya sa Ehipto? Kung gayon, wala sanang pinahintulutang manatili ang Diyos—kahit kayo—upang wala sanang sinasamba ni sumasamba. Tunay na ito ang nanaisin ng kakila-kilabot na ahas na nagkukubli sa inyo, at hindi niya kayo pinatatawad. Ngunit hindi mangyayari ang gayon. Sapagkat hindi nagkakasala ang bagay na sinasamba; dumaranas lamang ito ng pamimilit mula sa taong nagnanais sumamba rito. Bagaman maaaring hindi makatarungan ang hatol ng lahat ng tao, hindi gayon ang sa Diyos. Sapagkat hindi makatarungang tumanggap ng parehong kaparusahan ang nagdurusa at ang gumagawa ng masama, maliban kung kusang tinatanggap ng una ang karangalang nauukol lamang sa Pinakamarangal.</q></p><h3>Kabanata VII. Hayaang Parehong Lumago Hanggang sa Pag-aani</h3><p><q>Ngunit sasabihin na ang mga sumasamba mismo ang dapat alisin ng tunay na Diyos upang hindi na gawin iyon ng iba. Ngunit hindi kayo higit na marunong kaysa sa Diyos upang payuhan Siya na para bang mas maingat kayo kaysa sa Kanya. Alam Niya ang Kanyang ginagawa; sapagkat matiisin Siya sa lahat ng nasa kawalang-galang, gaya ng isang mahabagin at mapagmahal-sa-taong ama, na nalalamang ang mga di-maka-Diyos ay maaaring maging maka-Diyos. At sa mismong mga sumasamba sa mababa at walang pakiramdam na mga bagay, marami ang natauhan, tumigil sa pagsamba sa mga iyon at sa pagkakasala, at maraming Griyego ang naligtas upang manalangin sa tunay na Diyos.</q></p><h3>Kabanata VIII. Kalayaan at Pangangailangan</h3><p><q>Ngunit sinasabi ninyo: Dapat sana’y nilikha tayo ng Diyos mula sa simula na hindi man lamang makapag-isip ng gayong mga bagay. Kayong nagsasabi nito ay hindi nakaaalam kung ano ang malayang kalooban at kung paano nagiging tunay na mabuti ang isang tao: ang mabuti sa sarili niyang pagpili ang tunay na mabuti; ngunit ang ginawang mabuti ng iba sa ilalim ng pamimilit ay hindi tunay na mabuti, sapagkat hindi siya naging gayon sa sarili niyang pagpili. Kaya yamang ang kalayaan ng bawat isa ang siyang bumubuo ng tunay na kabutihan at naghahayag din ng tunay na kasamaan, inayos ng Diyos na sa pamamagitan ng mga pagkakataon ay lumitaw sa bawat tao ang pakikipagkaibigan o pagkapoot. Ngunit sinasabi ng iba: lahat ng iniisip natin ay Siya ang nagpapaisip sa atin. Tumigil kayo! Bakit lalo pa ninyong nilalapastangan Siya sa pagsasabi nito? Sapagkat kung nasa ilalim tayo ng Kanyang impluwensiya sa lahat ng iniisip natin, ginagawa ninyo Siyang sanhi ng pakikiapid, masasamang pagnanasa, kasakiman, at bawat kalapastanganan. Tumigil kayo sa pagsasalita nang masama tungkol sa Kanya, samantalang dapat sana’y magsalita kayo nang mabuti at ibigay sa Kanya ang lahat ng karangalan. At huwag ninyong sabihin na hindi humihingi ang Diyos ng anumang karangalan; sapagkat kahit wala Siyang hinihingi para sa sarili, tungkulin ninyong tingnan kung ano ang tama at pasalamatan sa tinig na may utang na loob Siya na gumagawa sa inyo ng mabuti sa lahat ng bagay.</q></p><h3>Kabanata IX. Ang Diyos ay Diyos na Mapagpanibughuin</h3><p><q>Ngunit sinasabi ninyo: Higit na mabuti ang ginagawa namin kapag sabay kaming nagpapasalamat sa Kanya at sa lahat ng iba pa. Sa pagsasabi ninyo nito, hindi ninyo nauunawaan ang pakana laban sa inyo. Sapagkat gaya ng kapag maraming manggagamot na walang kakayahan ang nangangakong pagagalingin ang isang maysakit, ang isang tunay na makagagamot ay hindi agad nagbibigay ng lunas dahil iniisip niyang kapag pinagaling niya ang maysakit ay mapupunta sa iba ang karangalan; gayon din, hindi kayo pinakikinabangan ng Diyos kapag hinihingan Siya kasama ng maraming walang magagawa. Ano! sasabihin, nagagalit ba ang Diyos kung sa Kanyang pagpapagaling ay mapunta sa iba ang karangalan? Sumasagot ako: Kahit hindi Siya magalit, hindi Siya makikibahagi sa panlilinlang; sapagkat kapag nagkaloob Siya ng kabutihan, ang diyus-diyosang walang ginawa ang pinaniniwalaang may kapangyarihan. Ngunit sinasabi ko rin sa inyo: kung ang taong yumuyukod sa pagsamba sa mga diyus-diyosang walang pakiramdam ay hindi likas na napipinsala dahil dito, marahil ay pagtitiisan pa iyon ng Diyos. Kaya magbantay kayo upang makarating sa makatuwirang pagkaunawa tungkol sa kaligtasan. Sapagkat ang Diyos, palibhasa’y walang kakulangan, ay hindi nangangailangan ng anuman ni napipinsala; tayo ang nakikinabang o napipinsala. Gaya ni Caesar na hindi napipinsala kapag siya’y nilalait ni napapakinabangan kapag pinasasalamatan, ngunit ang kaligtasan ay napupunta sa nagpapasalamat at ang kapahamakan sa nanlalait, gayon din ang mga nagsasalita nang mabuti tungkol sa Diyos ay walang idinadagdag sa Kanya kundi inililigtas ang sarili; at gayundin, ang mga lumalapastangan sa Kanya ay hindi Siya napipinsala kundi ang kanilang sarili ang napapahamak.</q></p><h3>Kabanata X. Ipinaghihiganti ng mga Nilalang ang Kapakanan ng Diyos</h3><p><q>Ngunit sasabihin na hindi magkatulad ang kaso ng Diyos at ng tao; at inaamin kong hindi nga magkatulad: sapagkat mas mabigat ang kaparusahan sa nagkasala ng kawalang-galang laban sa higit na dakila, at mas magaan sa nagkasala laban sa mas mababa. Kaya yamang ang Diyos ang pinakadakila sa lahat, mas mabigat ang kaparusahang titiisin ng di-maka-Diyos laban sa Kanya, sapagkat nagkasala siya laban sa Higit na Dakila; hindi dahil ipinagtatanggol Niya ang sarili sa sarili Niyang kamay, kundi dahil nagagalit sa kanya ang buong nilikha at likas na gumaganti. Sapagkat sa lumalapastangan ay hindi ibibigay ng araw ang liwanag nito, ni ng lupa ang mga bunga nito, ni ng bukal ang tubig nito, ni sa Hades ay bibigyan ng kapahingahan ng nakatalagang pinuno roon ang kaluluwa; sapagkat maging ngayon, habang nananatili ang kaayusan ng sanlibutan, nagagalit sa kanya ang buong nilikha. Kaya maging <em>ang mga ulap</em> ay hindi nagbibigay ng sapat na ulan ni ang lupa ng sapat na bunga, kaya marami ang namamatay; oo, maging ang hangin mismo, na nag-aalab sa galit, ay nagiging sanhi ng salot. Gayunman, anumang mabubuting bagay ang tinatamasa natin ay sapilitang ipinagkakaloob sa atin ng nilikha dahil sa Kanyang awa. Ngunit laban sa inyo na lumalapastangan sa Manlilikha ng lahat, ang buong nilikha ay salungat.</q></p><h3>Kabanata XI. Kawalang-Kamatayan ng Kaluluwa</h3><p><q>At kahit sa pagkawasak ng katawan ay makaiwas kayo sa kaparusahan, paano kayo makatatakas sa pamamagitan ng kabulukan mula sa inyong kaluluwang hindi nasisira? Sapagkat maging ang kaluluwa ng masama ay walang kamatayan, bagaman mas mabuti sana para rito kung hindi iyon hindi nasisira. Sapagkat habang pinarurusahan sa walang-hanggang paghihirap sa ilalim ng apoy na hindi mapapatay at hindi namamatay kailanman, wala itong matatanggap na wakas ng paghihirap. Ngunit marahil ay may magsasabi sa inyo, ‘Tinatakot mo kami, O Pedro.’ Turuan ninyo kami kung paano kami maaaring manahimik <em>tungkol sa mga bagay na ito at gayunma’y</em> sabihin sa inyo ang tunay na kalagayan, sapagkat hindi namin ito maipahahayag sa ibang paraan. Ngunit kung mananahimik kami, mabibitag kayo ng kasamaan dahil sa kamangmangan. At kung magsasalita kami, paghihinalaan ninyong tinatakot namin kayo sa pamamagitan ng huwad na aral. Paano, kung gayon, namin mapaaamo ang masamang <em>ahas</em> na nagkukubli sa inyong <em>kaluluwa</em> at tusong naghahasik ng mga hinalang laban sa Diyos sa anyo ng pagmamahal sa Diyos? Makipagkasundo kayo sa sarili ninyo; sapagkat para sa inyong kaligtasan ay dapat kayong dumulog sa Kanya sa pamamagitan ng paggawa ng mabuti. Ang di-makatuwirang pagnanasa sa inyo ay laban sa Diyos, sapagkat sa kapalaluan ng inaakalang karunungan ay pinatitibay nito ang kamangmangan.</q></p><h3>Kabanata XII. Walang Pakinabang ang mga Diyus-diyosan</h3><p><q>Ngunit sinasabi ng iba: Walang pakialam sa atin ang Diyos. Mali rin ito. Sapagkat kung tunay ngang wala Siyang pakialam, hindi Niya pasisikatin ang Kanyang araw sa mabuti at masama ni pauulanan ang matuwid at di-matuwid. Ngunit sinasabi ng iba: Mas maka-Diyos kami <em>kaysa sa inyo</em>, sapagkat sumasamba kami kapwa sa Kanya at sa mga larawan. Sa palagay ko, kung may magsabi sa isang hari, ‘Binibigyan kita ng kapantay na karangalan sa ibinibigay ko sa mga bangkay at sa walang-halagang dumi,’ hindi siya makikinabang doon. Ngunit may magsasabi: Tinatawag mo bang dumi ang mga sinasamba namin? Sinasabi kong oo, sapagkat ginawa ninyong walang pakinabang sa sarili ang mga iyon sa pagtatalaga sa pagsamba, samantalang marahil ay magagamit sana ang kanilang sangkap sa ibang layunin, o kahit sa pataba. Ngunit ngayon ay wala man silang silbi roon, sapagkat binago ninyo ang hugis at sinamba. At paano ninyo nasasabing higit kayong maka-Diyos, samantalang kayo ang pinakamasama sa lahat, na karapat-dapat sa pagkapuksa ng inyong mga kaluluwa dahil lamang sa iisang walang-kapantay na kasalanang ito sa harap Niya na tunay, kung mananatili kayo rito? Sapagkat kung ang isang anak na tumanggap ng maraming kabutihan mula sa kanyang ama ay ibigay sa iba na hindi niya ama ang karangalang nauukol sa ama, tiyak na aalisan siya ng mana; ngunit kung mamuhay siya ayon sa pasya ng kanyang ama at sa gayon ay pasalamatan siya sa kanyang kabutihan, makatuwirang gagawin siyang tagapagmana.</q></p><h3>Kabanata XIII. Sinagot ang mga Pangangatwiran Pabor sa Pagsamba sa mga Diyus-diyosan</h3><p><q>Ngunit sinasabi ng iba: Kikilos kaming di-maka-Diyos kung tatalikuran namin ang mga bagay na sinamba at ipinasa sa amin ng aming mga ninuno; sapagkat para itong pag-iingat sa isang ipinagkatiwalang bagay. Ngunit kung gayon, ang anak ng magnanakaw o ng taong mahalay ay hindi dapat maging mahinahon ni pumili ng higit na mabuti, baka siya’y kumilos nang di-maka-Diyos at magkasala sa paggawa nang naiiba sa kanyang mga magulang! Gaano kahangal, kung gayon, ang nagsasabing, Sinasamba namin ang mga bagay na ito upang hindi namin Siya abalahin; na para bang naaabala ang Diyos ng mga nagpapala sa Kanya at hindi ng mga walang utang na loob na lumalapastangan sa Kanya. Bakit, kung gayon, kapag hindi umuulan ay sa langit lamang kayo tumitingin at nagbubuhos ng mga panalangin at pagsusumamo; ngunit kapag natanggap ninyo ang ulan ay agad ninyong nalilimutan? Sapagkat matapos anihin ang inyong ani o tipunin ang ubas, ipinamamahagi ninyo ang mga unang bunga sa mga diyus-diyosang walang kabuluhan, na agad nalilimutan ang Diyos na inyong Tagapagbigay; at sa gayon ay pumupunta kayo sa mga kakahuyan at templo at naghahandog ng mga hain at piging. Kaya sinasabi ng ilan sa inyo: Napakahusay na naimbento ang mga bagay na ito alang-alang sa kasiyahan at pagdiriwang.</q></p><h3>Kabanata XIV. Mga Orhiya ng mga Hentil</h3><p><q>O mga taong walang pagkaunawa! Humusga kayo nang tama sa sinabi. Sapagkat kung kailangan ang kaunting kasiyahan upang mapahinga ang katawan, alin ang higit na mabuti: gawin iyon sa tabi ng mga ilog, kakahuyan, at luntiang lugar, kung saan may salu-salo, pagsasama-sama, at lilim; o sa mga lugar na may kabaliwan ng mga demonyo, paghiwa sa mga kamay, pagkapon, pagngangalit at pagkasira ng isip, pagkakalugay ng buhok, sigawan, mga pag-aalab ng damdamin, pag-ungol, at lahat ng gayong bagay na mapagkunwaring ginagawa upang lituhin ang mga walang pag-iisip, habang inihahandog ninyo ang itinakdang panalangin at pasasalamat maging sa mga bagay na mas patay pa sa patay?</q></p><h3>Kabanata XV. Ang mga Mananamba ng mga Hentil sa Ilalim ng Kapangyarihan ng Demonyo</h3><p><q>At bakit ninyo ikinatutuwa ang mga bagay na ito? Yamang ang ahas na nagkukubli sa inyo, na naghasik sa inyo ng walang-bungang pagnanasa, ay hindi magsasabi sa inyo, ako ang magsasalita at itatala ko iyon. Ganito ang kalagayan. Sa pagsamba sa Diyos, ipinahahayag na maging mahinahon, maging malinis, pigilan ang pagnanasa, huwag magnakaw ng ari-arian ng iba, mamuhay nang matuwid, katamtaman, walang takot, at mahinahon; mas piliing pigilan ang sarili sa pangangailangan kaysa punan ang kakulangan sa pamamagitan ng di-makatarungang pagkuha ng pag-aari ng iba. Ngunit sa mga tinatawag na diyos ay kabaligtaran ang ginagawa. At itinatanggi ninyo ang ilang bagay <em>na para bang ginawa ninyo</em> upang hangaan ang <em>inyong</em> katuwiran; samantalang kahit nagawa pa ninyo ang lahat ng iniutos, sapat na ang kamangmangan tungkol sa Diyos upang kayo’y mahatulan. Ngunit kapag nagtitipon kayo sa mga lugar na itinalaga ninyo sa kanila, nalulugod kayong magpakalasing, sinisindihan ninyo ang inyong mga altar, at ang usok na kumakalat ay umaakit sa mga bulag at binging espiritu sa lugar ng kanilang pagsingaw. Kaya sa mga naroroon, ang ilan ay napupuspos ng mga espiritu, ang ilan ay sinasapian ng kakaibang mga demonyo, ang ilan ay nahuhulog sa kahalayan, at ang ilan sa pagnanakaw at pagpatay. Sapagkat ang singaw ng dugo at ang pagbubuhos ng alak ay nagbibigay-kasiyahan sa maruruming espiritung ito, na nagkukubli sa loob ninyo at nagpapalugod sa inyo sa mga nangyayari roon, at sa mga panaginip ay pinalilibutan kayo ng mga huwad na larawan at pinarurusahan ng di-mabilang na mga karamdaman. Sapagkat sa anyo ng mga tinatawag na banal na handog ay napupuspos kayo ng kakila-kilabot na mga demonyo na, habang tusong nagkukubli, ay sumisira sa inyo upang hindi ninyo maunawaan ang pakana laban sa inyo. Sapagkat sa anyo ng ilang pinsala, pag-ibig, galit, o dalamhati, o sa pagsakal sa inyo sa pamamagitan ng lubid, paglunod, paghahagis mula sa bangin, pagpapakamatay, apopleksya, o iba pang karamdaman, inaalis nila ang inyong buhay.</q></p><h3>Kabanata XVI. Gumagawa ang Lahat ng Bagay para sa Ikabubuti ng mga Umiibig sa Diyos</h3><p><q>Ngunit walang isa sa atin ang maaaring dumanas ng gayong bagay; sa halip, sila mismo ang pinarurusahan namin kapag nakapasok sila sa sinuman at nakikiusap na pahintulutang lumabas nang dahan-dahan. Ngunit maaaring sabihin ng isa: Maging ang ilang sumasamba sa Diyos ay nakararanas ng gayong mga paghihirap. Sinasabi kong imposible iyon. Sapagkat ang sumasamba sa Diyos na tinutukoy ko ay yaong tunay na maka-Diyos, hindi yaong sa pangalan lamang, kundi yaong totoong tumutupad sa mga gawa ng kautusang ibinigay sa kanya. Kung ang sinuman ay kumikilos nang di-maka-Diyos, hindi siya maka-Diyos; gaya rin ng kung ang isang kabilang sa ibang lipi ay tumutupad sa kautusan, siya ay Judio; ngunit ang hindi tumutupad nito ay Griyego. Sapagkat ang Judio ay naniniwala sa Diyos at tumutupad sa kautusan; sa pananampalatayang ito ay naaalis din niya ang iba pang mga paghihirap, kahit mabibigat na parang mga bundok. Ngunit ang hindi tumutupad sa kautusan ay hayagang tumatalikod dahil hindi siya naniniwala sa Diyos; kaya bilang hindi Judio kundi makasalanan, dahil sa kanyang kasalanan ay napasasailalim siya sa mga paghihirap na itinakda bilang kaparusahan sa mga makasalanan. Sapagkat ayon sa kalooban ng Diyos na itinakda mula sa pasimula, ang kaparusahan ay makatarungang sumusunod sa mga sumasamba sa Kanya dahil sa kanilang mga paglabag, upang matapos silang makapagbayad sa pamamagitan ng kaparusahan para sa kasalanan na parang utang, maiharap Niya sa pangkalahatang paghuhukom na dalisay ang mga bumalik sa Kanya. Sapagkat kung paanong ang masasama rito ay nagpapakasasa kapalit ng pagkawala ng mga walang-hanggang pagpapala, gayon din ipinadadala ang mga kaparusahan sa mga Judiong lumalabag bilang pag-aayos ng pananagutan, upang sa pagbabayad nila rito sa kanilang paglabag ay mapalaya sila roon mula sa walang-hanggang kaparusahan.</q></p><h3>Kabanata XVII. Pagsasalita ng Katotohanan sa Pag-ibig</h3><p><q>Ngunit hindi ninyo masasabi ang gayon; sapagkat hindi kayo naniniwalang ang mga bagay ay mangyayari ayon sa sinasabi namin—ibig kong sabihin, na magkakaroon ng gantimpala sa lahat. Dahil dito, yamang hindi ninyo nalalaman kung ano ang kapaki-pakinabang, nahihikayat kayo ng pansamantalang kalayawan na bitiwan ang mga bagay na walang hanggan. Kaya sinisikap naming ipakita sa inyo kung ano ang makabubuti, upang kapag nakumbinsi kayo sa mga pangakong kaugnay ng kabanalan, sa pamamagitan ng mabubuting gawa ay mamanahin ninyo kasama namin ang sanlibutang walang dalamhati. Hangga’t hindi pa ninyo kami lubos na nakikilala, huwag kayong magalit sa amin na para bang nagsasalita kami nang mali tungkol sa mabubuting bagay na nais namin para sa inyo. Sapagkat ang mga bagay na itinuturing naming totoo at mabuti ay hindi namin ipinagkait sa inyo; sa halip ay minadali naming gawing kasama naming tagapagmana ng mabubuting bagay na kinilala naming gayon. Sapagkat ganito nararapat magsalita sa mga hindi sumasampalataya. Ngunit na tunay kaming nagsasabi ng katotohanan sa aming sinasabi ay hindi ninyo malalaman sa ibang paraan kundi sa unang pakikinig na may pag-ibig sa katotohanan.</q></p><h3>Kabanata XVIII. Pagpapaamo sa Ahas</h3><p><q>Kaya tungkol sa usaping nasa harap natin, kahit sa sampung libong paraan ay nais kayong bitagin ng ahas na nagkukubli sa inyo sa pamamagitan ng masasamang pangangatwiran at mga hadlang, lalo pa ninyong dapat siyang labanan at masigasig na makinig sa amin. Sapagkat nararapat ninyong magsiyasat, yamang lubha kayong nalinlang, upang malaman kung paano siya mapaaamo. Ngunit hindi ito posible sa ibang paraan. At sa pagpapaamo ay ang ibig kong sabihin ay ang paglaban ninyo sa pamamagitan ng katuwiran sa masasama niyang payo, habang inaalala na sa pangako ng kaalaman ay ipinasok niya ang kamatayan sa sanlibutan mula pa sa pasimula.</q></p><h3>Kabanata XIX. Hindi Kapayapaan, Kundi Tabak</h3><p><q>Kaya ang Propeta ng katotohanan, na nakaaalam na lubhang naliligaw ang sanlibutan at nakikitang nakahanay ito sa panig ng kasamaan, ay hindi ninais na magkaroon ito ng kapayapaan habang nananatili sa kamalian. Kaya hanggang sa wakas ay kinakalaban Niya ang lahat ng kaayon ng kasamaan, itinatapat ang <em>katotohanan</em> laban sa kamalian, at waring nagpapadala ng apoy sa mga gising ang isip—ang ibig sabihin ay galit laban sa manlilinlang—na inihahambing sa tabak. Sa paghaharap ng salita ay winawasak Niya ang kamangmangan sa pamamagitan ng kaalaman, na wari’y hinihiwa at inihihiwalay ang buhay sa patay. Kaya habang nilulupig ang kasamaan sa pamamagitan ng matuwid na kaalaman, ang digmaan ay humahawak sa lahat. Sapagkat alang-alang sa kaligtasan, ang masunuring anak ay nahihiwalay sa amang hindi naniniwala, o ang ama sa anak, o ang ina sa anak na babae, o ang anak na babae sa ina, at ang mga kamag-anak sa kamag-anak, at ang mga kaibigan sa mga kasama.</q></p><h3>Kabanata XX. Paano Kung Nagsiklab Na Ito?</h3><p><q>At huwag sabihin ng sinuman: Paano magiging makatarungan na mahiwalay ang mga magulang sa kanilang mga anak at ang mga anak sa kanilang mga magulang? Makatarungan iyon, at lubos na makatarungan. Sapagkat kung nanatili sila sa mga ito at, matapos hindi mapakinabangan ang mga iyon, ay mapuksa ring kasama nila, paano hindi magiging makatarungan na ang nagnanais maligtas ay mahiwalay sa ayaw maligtas at nais pa siyang wasakin kasama ng sarili? Bukod dito, hindi ang mga higit na humahatol nang tama ang nagnanais mahiwalay; nais nilang manatili at pakinabangan ang mga iyon sa pamamagitan ng pagpapahayag ng higit na mabubuting bagay. Ngunit ang mga hindi sumasampalataya, dahil ayaw nilang makinig, ang nakikipagdigma laban sa kanila, nagpapalayas, umuusig, at napopoot sa kanila. Samantala, ang mga dumaranas ng mga bagay na ito, sa pagkaawa sa mga nabitag ng kamangmangan, ay sa pamamagitan ng aral ng karunungan ay nananalangin para sa mga gumagawa ng masama laban sa kanila, sapagkat natutuhan nilang kamangmangan ang sanhi ng kanilang kasalanan. Sapagkat ang Guro mismo, habang ipinapako sa <em>krus</em>, ay nanalangin sa Ama na patawarin ang kasalanan ng mga pumatay sa Kanya, na sinasabi, ‘Ama, patawarin Mo sila sa kanilang mga kasalanan, sapagkat hindi nila nalalaman ang kanilang ginagawa.’ Kaya sila rin, bilang mga tagatulad ng Guro sa Kanyang mga pagdurusa, ay nananalangin para sa mga nagbabalak laban sa kanila, gaya ng itinuro sa kanila. Kaya hindi sila nahihiwalay dahil sa pagkapoot sa kanilang mga magulang, yamang patuloy silang nananalangin maging para sa mga hindi nila magulang o kamag-anak kundi mga kaaway, at nagsisikap silang mahalin ang mga iyon gaya ng iniutos sa kanila.</q></p><h3>Kabanata XXI. Kung Ako ay Ama, Nasaan ang Takot sa Akin?</h3><p><q>Ngunit sabihin ninyo sa akin: paano ninyo iniibig ang inyong mga magulang? Kung ginagawa ninyo iyon habang laging isinasaalang-alang kung ano ang tama, binabati ko kayo; ngunit kung iniibig ninyo sila ayon lamang sa pagkakataon, hindi gayon, sapagkat sa maliit na dahilan ay maaari kayong maging mga kaaway nila. Ngunit kung iniibig ninyo sila nang may pagkaunawa, sabihin ninyo sa akin: ano ang mga magulang? Sasabihin ninyong sila ang pinagmumulan ng ating pag-iral. Bakit, kung gayon, hindi ninyo iniibig ang <em>pinagmumulan ng</em> pag-iral ng lahat ng bagay, kung tunay ngang pinili ninyong gawin ito nang may wastong pagkaunawa? Ngunit sasabihin ninyo muli ngayon: Hindi namin Siya nakita. Bakit, kung gayon, hindi ninyo Siya hinahanap, kundi sumasamba kayo sa mga bagay na walang pakiramdam? Ngunit ano? Kahit mahirap para sa inyo na malaman kung ano ang Diyos, hindi maaaring hindi ninyo malaman kung ano ang hindi Diyos, upang maunawaan ninyo na ang Diyos ay hindi kahoy, bato, tanso, o anumang ibang bagay na yari sa nasisirang sangkap.</q></p><h3>Kabanata XXII. Ang mga Diyos na Hindi Gumawa ng mga Langit</h3><p><q>Sapagkat hindi ba inukit sila sa pamamagitan ng bakal? At hindi ba pinalambot ng apoy ang matigas na bakal? At hindi ba ang mismong apoy ay pinapatay ng tubig? At hindi ba ang tubig ay gumagalaw dahil sa espiritu? At hindi ba ang espiritu ay nagsisimula ng paggalaw nito mula sa Diyos na gumawa ng lahat ng bagay? Sapagkat ganito ang sinabi ng propetang si Moises: ‘Sa pasimula ay ginawa ng Diyos ang langit at lupa. At ang lupa ay walang anyo at walang palamuti; at ang kadiliman ay nasa ibabaw ng kalaliman; at ang Espiritu ng Diyos ay nasa ibabaw ng mga tubig.’ Ang Espiritung ito, sa utos ng Diyos at wari’y Kanyang kamay, ang gumagawa ng lahat ng bagay, naghihiwalay ng liwanag sa kadiliman at, pagkatapos ng di-nakikitang langit, inilalatag ang nakikita, upang ang mga lugar sa itaas ay tahanan ng mga anghel ng liwanag at ang nasa ibaba ay ng tao at ng lahat ng nilalang na ginawa para sa kanyang gamit.</q></p><h3>Kabanata XXIII. Sa Binigyan ng Marami</h3><p><q>Sapagkat alang-alang sa iyo, O tao, iniutos ng Diyos na umurong ang tubig sa ibabaw ng lupa upang makapagbunga ang lupa para sa iyo. Gumawa Siya ng mga daluyan ng tubig upang maglaan sa iyo ng mga bukal at mahayag ang mga ilog, upang dumami ang mga hayop; sa madaling salita, upang ipagkaloob sa iyo ang lahat ng bagay. Hindi ba alang-alang sa iyo umiihip ang mga hangin, bumabagsak ang ulan, at nagbabago ang mga panahon upang makalikha ng mga bunga? Higit pa rito, alang-alang sa iyo ginagawa ng araw at buwan, kasama ng iba pang mga makalangit na bagay, ang kanilang pagsikat at paglubog; at naglilingkod sa iyo ang mga ilog, lawa, at lahat ng bukal. Kaya sa iyo, O walang-unawa, yamang higit na malaking karangalan ang ibinigay, higit ding malaking kaparusahan sa apoy ang inihanda para sa iyo na walang utang na loob, sapagkat ayaw mong kilalanin Siya na higit sa lahat ay nararapat mong makilala.</q></p><h3>Kabanata XXIV. Ipinanganak mula sa Tubig</h3><p><q>At ngayon, mula sa mas mababang mga bagay ay matutuhan ninyo ang sanhi ng lahat, na inuunawa na ginagawa ng tubig ang lahat ng bagay, at natatanggap ng tubig ang paglikha ng paggalaw nito mula sa espiritu, at ang espiritu ay nagmumula sa Diyos ng lahat. Ganito kayo dapat nangatuwiran upang sa pamamagitan ng katuwiran ay makarating kayo sa Diyos, nang sa pagkilala ninyo sa inyong pinagmulan at muling kapanganakan sa pamamagitan ng panganay na tubig ay maitatag kayo bilang mga tagapagmana ng mga magulang na nagsilang sa inyo tungo sa kawalang-kasiraan.</q></p><h3>Kabanata XXV. Ang Mabubuting Gawa ay Dapat Gawin nang Wasto</h3><p><q>Kaya lumapit kayo agad, gaya ng anak sa ama, upang maibilang ng Diyos ang kamangmangan bilang sanhi ng inyong mga kasalanan. Ngunit kung matapos kayong tawagin ay ayaw ninyong lumapit o magpapaliban kayo, mapupuksa kayo sa matuwid na paghatol ng Diyos, hindi dahil ayaw Niyang kayo’y maligtas kundi dahil kayo ang ayaw. At huwag ninyong isipin na kahit higit kayong maka-Diyos kaysa sa lahat ng naging maka-Diyos, kung hindi kayo nabautismuhan ay matatamo ninyo kailanman ang pag-asa. Sa halip, dahil dito ay lalo kayong tatanggap ng mas mabigat na kaparusahan, sapagkat gumawa kayo ng mahuhusay na gawa ngunit hindi sa mahusay na paraan. Sapagkat mahusay ang paggawa ng mabuti kapag ginagawa iyon ayon sa iniutos ng Diyos. Ngunit kung ayaw ninyong magpabautismo ayon sa Kanyang kalooban, pinaglilingkuran ninyo ang sarili ninyong kalooban at sinasalungat ang Kanyang payo.</q></p><h3>Kabanata XXVI. Bautismo</h3><p><q>Ngunit marahil ay may magsasabi: Ano ang naidaragdag sa kabanalan ng pagpapabautismo sa tubig? Una, dahil ginagawa ninyo ang kalugud-lugod sa Diyos; at ikalawa, sa muling kapanganakan sa Diyos mula sa tubig, dahil sa takot ay pinapalitan ninyo ang inyong unang kapanganakan na mula sa pagnanasa, at sa gayon ay nagiging posible ang kaligtasan. Ngunit sa ibang paraan ay imposible. Sapagkat ganito ang panunumpa sa amin ng Propeta, na sinasabi: <q>Katotohanang sinasabi ko sa inyo, maliban kung kayo’y muling ipanganak sa pamamagitan ng tubig na buhay sa pangalan ng Ama, Anak, at Espiritu Santo, hindi kayo makapapasok sa kaharian ng langit.</q> Kaya lumapit kayo. Sapagkat may naroroon mula pa sa pasimula na mahabagin, nasa ibabaw ng tubig, at nagliligtas mula sa darating na kaparusahan sa mga nababautismuhan sa pamamagitan ng tatlong-ulit na pinagpalang pagtawag, na inihahandog sa Diyos bilang mga kaloob ang mabubuting gawa ng mga nabautismuhan kapag ginagawa nila ang mga iyon pagkatapos ng kanilang bautismo. Kaya tumakas kayo patungo sa mga tubig, sapagkat ito lamang ang makapapawi sa bagsik ng mga apoy. Ang ayaw lumapit dito ngayon ay taglay pa rin ang espiritu ng pagtatalo, at dahil dito ay ayaw niyang lumapit sa tubig na buhay para sa sarili niyang kaligtasan.</q></p><h3>Kabanata XXVII. Kailangan ng Lahat ang Bautismo</h3><p><q>Kaya lumapit kayo, maging matuwid man o di-matuwid. Sapagkat kung kayo’y matuwid, bautismo lamang ang kulang upang sa kaligtasan ay maging ganap kayo. Ngunit kung kayo’y di-matuwid, lumapit upang mabautismuhan para sa kapatawaran ng mga kasalanang dati ninyong nagawa sa kamangmangan. At para sa di-matuwid na tao, nananatiling ang kanyang paggawa ng mabuti pagkatapos ng bautismo ay maging ayon sa sukat ng kanyang <em>dating</em> kawalang-galang. Kaya maging matuwid man o di-matuwid, magmadali kayong ipanganak sa Diyos, sapagkat may panganib ang pagpapaliban dahil hindi ipinahahayag nang maaga ang itinakdang oras ng kamatayan; at sa paggawa ng mabuti ay ipakita ninyo ang inyong pagkawangis sa Ama na nagsisilang sa inyo mula sa tubig. Bilang mga umiibig sa katotohanan, parangalan ninyo ang tunay na Diyos bilang inyong Ama. At ang Kanyang karangalan ay ito: mamuhay kayo ayon sa nais Niyang ipamuhay ninyo, sapagkat Siya ay matuwid. At ang kalooban ng Matuwid ay huwag kayong gumawa ng mali. Ngunit ang paggawa ng mali ay pagpatay, pagkapoot, inggit, at mga katulad nito; at marami ang anyo ng mga iyon.</q></p><h3>Kabanata XXVIII. Paglilinis</h3><p><q>Gayunman, kailangang idagdag sa mga bagay na ito ang isang bagay na hindi nauukol sa karaniwang ugnayan ng tao kundi natatangi sa pagsamba sa Diyos. Ang ibig kong sabihin ay paglilinis: huwag lapitan ng lalaki ang sarili niyang asawa habang siya’y nasa panahon ng pagkakahiwalay, sapagkat gayon ang iniutos ng kautusan ng Diyos. Ngunit ano? Kung hindi idaragdag ang kadalisayan sa paglilingkod sa Diyos, lulundag-lundag kayo sa karumihan na gaya ng mga langaw sa dumi. Kaya bilang tao na may higit sa mga hayop na walang katuwiran—ibig sabihin, may katuwiran—linisin ninyo ang inyong mga puso mula sa kasamaan sa pamamagitan ng makalangit na pangangatwiran, at hugasan ninyo ang inyong mga katawan sa paliguan. Sapagkat ang paglilinis ayon sa katotohanan ay hindi yaong nauuna ang kadalisayan ng katawan kaysa sa paglilinis ng puso, kundi yaong ang kadalisayan ay sumusunod sa kabutihan. Sapagkat ang ating Guro rin, <em>sa pakikitungo sa</em> ilang Fariseo at mga eskriba sa gitna natin, na hiwalay at bilang mga eskriba ay higit na nakaaalam sa mga bagay ng kautusan kaysa sa iba, ay sinaway pa rin sila bilang mga mapagkunwari, sapagkat nilinis lamang nila ang mga bagay na nakikita ng tao ngunit pinabayaan ang kadalisayan ng puso at ang mga bagay na nakikita lamang ng Diyos.</q></p><h3>Kabanata XXIX. Panlabas at Panloob na Kadalisayan</h3><p><q>Kaya ginamit Niya ang di-malilimot na pahayag na ito, na nagsasalita ng katotohanan tungkol sa mga mapagkunwari sa kanila, hindi tungkol sa lahat. Sapagkat tungkol sa ilan ay sinabi Niyang dapat silang sundin dahil ipinagkatiwala sa kanila ang luklukan ni Moises. Ngunit sa mga mapagkunwari ay sinabi Niya: ‘Sa aba ninyo, mga eskriba at mga Fariseo, mga mapagkunwari, sapagkat nililinis ninyo ang labas ng saro at pinggan, ngunit ang loob ay punô ng karumihan. Ikaw na bulag na Fariseo, linisin mo muna ang loob ng saro at pinggan upang maging malinis din ang labas ng mga iyon.’ At tunay nga: kapag naliwanagan ang isip sa pamamagitan ng kaalaman, nagiging posible para sa alagad ang maging mabuti, at pagkatapos nito ay sumusunod ang kadalisayan; sapagkat mula sa pagkaunawang nasa loob ay nagmumula ang mabuting pangangalaga sa katawang nasa labas. Kung paanong mula sa pagpapabaya sa katawan ay hindi nagmumula ang pangangalaga sa pagkaunawa, gayon ang taong dalisay ay nakapaglilinis kapwa ng nasa labas at ng nasa loob. At yaong naglilinis ng mga bagay sa labas habang nakatingin lamang sa papuri ng mga tao at sa papuri ng mga nakakakita ay walang natatanggap mula sa Diyos.</q></p><h3>Kabanata XXX. Anumang mga Bagay na Dalisay</h3><p><q>Ngunit sino ang hindi nakaaalam na higit na mabuti ang huwag makipagtalik sa isang babae habang siya’y nasa panahon ng pagkakahiwalay, kundi matapos siyang malinis at makapaghugas? At pagkatapos din ng pakikipagtalik ay nararapat maghugas. Ngunit kung ikinaiinis ninyong gawin ito, alalahanin ninyo kung paanong dati’y sinusunod ninyo ang mga bahagi ng paglilinis noong naglilingkod kayo sa mga diyus-diyosang walang pakiramdam; at mahiya kayo na ngayon, kapag kailangan ninyong makamit—hindi ko sinasabing higit pa, kundi ang iisa at buong kadalisayan—ay mas tamad kayo. Isaalang-alang ninyo, kung gayon, Siya na gumawa sa inyo, at mauunawaan ninyo kung sino ang naghahasik sa inyo ng katamarang ito tungkol sa kadalisayan.</q></p><h3>Kabanata XXXI. Ano ang Higit Ninyong Ginagawa kaysa sa Iba?</h3><p><q>Ngunit may ilan sa inyo na magsasabi: Dapat ba naming gawin ang lahat ng ginagawa namin noon nang kami’y mga sumasamba sa diyus-diyosan? Sinasabi ko sa inyo: Hindi lahat; ngunit anumang ginawa ninyong mabuti, gawin ninyo ngayon at higit pa. Sapagkat anumang mabuting ginawa sa kamalian ay nakasandig sa katotohanan, gaya ng anumang masamang ginawa sa katotohanan ay nagmumula sa kamalian. Kaya tanggapin ninyo mula sa lahat ng panig ang mga bagay na tunay na inyo at hindi yaong sa iba, at huwag ninyong sabihin: Kung may ginagawang mabuti ang mga nasa kamalian, hindi tayo obligadong gawin iyon. Sapagkat ayon sa gayong prinsipyo, kung ang isang sumasamba sa diyus-diyosan ay hindi pumapatay, dapat tayong pumatay dahil hindi pumapatay ang taong nasa kamalian.</q></p><h3>Kabanata XXXII. Sa Binigyan ng Marami</h3><p><q>Hindi; sa halip, kung hindi pumapatay ang mga nasa kamalian, huwag tayong magalit; kung ang nasa kamalian ay hindi nangangalunya, huwag tayong magnasa kahit sa pinakamaliit na antas; kung iniibig ng nasa kamalian ang umiibig sa kanya, ibigin natin maging ang mga napopoot sa atin; kung nagpapahiram ang nasa kamalian sa mga may kakayahang magbayad, tayo naman ay <em>magbigay</em> sa mga wala. Walang alinlangan na dapat tayong gumawa ng higit na mabubuting bagay kaysa sa mabubuting gawa ng mga nakakikilala lamang sa kasalukuyang buhay, sapagkat umaasa tayong mamanahin ang buhay na walang hanggan. Alam nating kung sa araw ng paghuhukom ay ihahambing ang kanilang mga gawa sa atin at matagpuang magkapantay sa kabutihan, tayo ang mapapahiya, at sila naman ay mapapahamak dahil kumilos sila laban sa sarili sa pamamagitan ng kamalian. At sinasabi kong mapapahiya tayo dahil dito: hindi tayo gumawa ng higit kaysa sa kanila bagaman higit tayong nakaaalam kaysa sa kanila. At kung mapapahiya tayo kapag ang ating paggawa ng mabuti ay kapantay lamang ng kanila at wala nang higit, gaano pa kaya kung mas mababa pa ang ating paggawa ng mabuti kaysa sa kanila?</q></p><h3>Kabanata XXXIII. Ang Reyna ng Timog at ang mga Taga-Ninive</h3><p><q>Ngunit na sa araw ng paghuhukom ay tunay ngang ihahambing ang mga gawa ng mga nakakilala sa katotohanan sa mabubuting gawa ng mga nasa kamalian, itinuro mismo sa atin ng Hindi Nagsisinungaling, nang sabihin Niya sa mga nagpabaya na lumapit at makinig sa Kanya: ‘Babangon ang reyna ng timog kasama ng salinlahing ito at hahatulan ito, sapagkat nagmula siya sa pinakamalayong bahagi ng lupa upang pakinggan ang karunungan ni Solomon; at narito, may higit kay Solomon dito,’ ngunit hindi ninyo Siya pinaniniwalaan. At sa mga kabilang sa bayan na ayaw magsisi sa Kanyang pangangaral ay sinabi Niya: ‘Babangon ang mga taga-Ninive kasama ng salinlahing ito at hahatulan ito, sapagkat nakinig sila at nagsisi sa pangangaral ni Jonas; at narito, may higit dito, ngunit walang naniniwala.’ At sa gayon, sa pagtapat sa lahat ng kanilang kawalang-galang ng mga Hentil na gumawa nang <em>mabuti</em>, upang hatulan ang mga nagtataglay ng tunay na relihiyon ngunit hindi kumilos nang kasimbuti ng mga nasa kamalian, hinikayat Niya ang mga may katuwiran na hindi lamang gawin ang mahuhusay na bagay nang kapantay ng mga Hentil kundi higit pa sa kanila. At ang pahayag na ito ay naudyukan sa akin ng pangangailangang igalang ang panahon ng pagkakahiwalay, maghugas pagkatapos ng pakikipagtalik, at huwag tanggihan ang gayong kadalisayan kahit ginagawa rin iyon ng mga nasa kamalian, sapagkat yaong mga nasa kamalian na gumagawa nang mabuti, bagaman hindi naliligtas, ay nagiging dahilan ng paghatol sa mga nasa pagsamba sa Diyos ngunit <em>gumagawa ng masama</em>; sapagkat ang paggalang nila sa kadalisayan ay nagmumula sa kamalian at hindi sa pagsamba sa tunay na Ama at Diyos ng lahat.</q></p><h3>Kabanata XXXIV. Araw-araw na Gawain ni Pedro</h3><p>Pagkasabi nito, pinaalis niya ang karamihan; at ayon sa kanyang kaugalian, matapos kumain kasama ng mga pinakamalapit sa kanya, nagpahinga siya. At sa ganitong paraan, araw-araw na gumagawa at nagtuturo, matatag niyang pinagtibay ang kautusan ng Diyos, hinahamon ang mga tinatawag na diyos sa pamamagitan ng tinatawag na Genesis at nangangatwirang walang kusang pag-iral sa sarili lamang, kundi ang sanlibutan ay pinamamahalaan ayon sa pagkalinga.</p><h3>Kabanata XXXV. Mag-ingat sa mga Huwad na Propeta</h3><p>Pagkaraan ng tatlong buwan, inutusan niya akong mag-ayuno nang ilang araw at pagkatapos ay dinala ako sa mga bukal na malapit sa dagat at binautismuhan ako na para bang sa patuloy na umaagos na tubig. Kaya nang magalak ang aming mga kapatid sa aking muling kapanganakang kaloob ng Diyos, makalipas ang hindi maraming araw ay humarap siya sa mga matatanda sa harap ng buong iglesia at nagbilin sa kanila, na sinasabi: <q>Ang ating Panginoon at Propeta na nagsugo sa atin ay nagpahayag sa atin na ang masama, matapos makipagtalo sa Kanya nang apatnapung araw at walang napala laban sa Kanya, ay nangakong magsusugo siya ng mga apostol mula sa kanyang mga nasasakupan upang manlinlang. Kaya higit sa lahat, tandaan ninyong iwasan ang apostol, guro, o propetang hindi muna maingat na inihahambing ang kanyang pangangaral sa <em>kay</em> Santiago, na tinawag na kapatid ng aking Panginoon at pinagkatiwalaang mamahala sa iglesia ng mga Hebreo sa Jerusalem—kahit pa dumating siya sa inyo na may mga saksi—upang ang kasamaan na nakipagtalo nang apatnapung araw sa Panginoon at walang napala ay hindi pagkatapos, gaya ng kidlat na bumabagsak mula sa langit sa lupa, magsugo ng isang mangangaral sa inyong kapinsalaan, gaya ng ngayo’y isinugo niya sa atin si Simon, na nangangaral sa ilalim ng anyo ng katotohanan sa pangalan ng Panginoon ngunit naghahasik ng kamalian. Kaya Siya na nagsugo sa atin ay nagsabi, ‘Marami ang lalapit sa Akin na nakadamit-tupa, ngunit sa loob ay mga mababangis na lobo. Sa kanilang mga bunga ay makikilala ninyo sila.’</q></p><h3>Kabanata XXXVI. Pamamaalam sa Tripolis</h3><p>Pagkasabi nito, isinugo niya ang mga tagapagpauna patungong Antioquia ng Syria at inutusan silang hintayin siya roon kaagad. Nang makaalis na sila, pinalayas ni Pedro ang mga karamdaman, pagdurusa, at demonyo mula sa napakaraming nahikayat, binautismuhan sila sa mga bukal na malapit sa dagat, ipinagdiwang ang Eukaristiya, at itinalaga si Maroones—na tumanggap sa kanya sa kanyang bahay at ngayo’y naging ganap—bilang kanilang obispo. Nagbukod din siya ng labindalawang matatanda, nagtalaga ng mga diakono, nag-ayos ng mga bagay tungkol sa mga biyuda, at nagsalita tungkol sa panlahatang kabutihan at sa mga kapaki-pakinabang sa kaayusan ng iglesia. Matapos silang payuhang sundin ang obispong si Maroones, at nang matupad na ang tatlong buwan, nagpaalam siya sa mga taga-Tripolis ng Fenicia at naglakbay patungong Antioquia ng Syria, habang sinasamahan kami ng buong bayan nang may nararapat na karangalan.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

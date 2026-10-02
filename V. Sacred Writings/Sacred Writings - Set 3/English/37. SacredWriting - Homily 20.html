@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 20</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Peter is Willing to Gratify Sophonias</option><option value="1">Chapter II. The Two Ages</option><option value="2">Chapter III. The Work of the Good One and of the Evil One</option><option value="3">Chapter IV. Men Sin Through Ignorance</option><option value="4">Chapter V. Sophonias Maintains that God Cannot Produce What is Unlike Himself</option><option value="5">Chapter VI. God's Power of Changing Himself</option><option value="6">Chapter VII. The Objection Answered, that One Cannot Change Himself</option><option value="7">Chapter VIII. The Origin of the Good One Different from that of the Evil One</option><option value="8">Chapter IX. Why the Wicked One is Appointed Over the Wicked by the Righteous God</option><option value="9">Chapter X. Why Some Believe, and Others Do Not</option><option value="10">Chapter XI. Arrival of Appion and Annubion</option><option value="11">Chapter XII. Faustus Appears to His Friends with the Face of Simon</option><option value="12">Chapter XIII. The Flight of Simon</option><option value="13">Chapter XIV. The Change in the Form of Faustus Caused by Simon</option><option value="14">Chapter XV. The Repentance of Faustus</option><option value="15">Chapter XVI. Why Simon Gave to Faustus His Own Shape</option><option value="16">Chapter XVII. Annubion's Services to Faustus</option><option value="17">Chapter XVIII. Peter Promises to Restore to Faustus His Own Shape</option><option value="18">Chapter XIX. Peter's Instructions to Faustus</option><option value="19">Chapter XX. Faustus, His Wife, and Sons, Prepare to Go to Antioch</option><option value="20">Chapter XXI. Appion and Athenodorus Return in Quest of Faustus</option><option value="21">Chapter XXII. Appion and Athenodorus Return to Simon</option><option value="22">Chapter XXIII. Peter Goes to Antioch</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Peter is Willing to Gratify Sophonias</h3><p>In the night-time Peter rose up and wakened us, and then sat down in his usual way, and said: <q>Ask me questions about anything you like.</q> And Sophonias was the first to begin to speak to him: <q>Will you explain to us who are eager to learn what is the real truth in regard to evil?</q> And Peter said: <q>I have already explained it in the course of my discussion with Simon; but because I stated the truth in regard to it in combination with other topics, it was not altogether clearly put; for many topics that seem to be of equal weight with the truth afford some kind of knowledge of the truth to the masses. So that, if now I state what I formerly stated to Simon along with many topics, do not imagine that you are <em>not</em> honoured with honour equal to his.</q> And Sophonias said: <q>You are right; for if you now separate it for us from many of the topics that were then discussed, you will make the truth more evident.</q></p><h3>Chapter II. The Two Ages</h3><p>And Peter said: <q>Listen, therefore, to the truth of the harmony in regard to the evil one. God appointed two kingdoms, and established two ages, determining that the present world should be given to the evil one, because it is small, and passes quickly away; but He promised to preserve for the good one the age to come, as it will be great and eternal. Man, therefore, He created with free-will, and possessing the capability of inclining to whatever actions he wishes. And his body consists of three parts, deriving its origin from the female; for it has lust, anger, and grief, and what is consequent on these. But the spirit not being uniform, but consisting of three parts, derives its origin from the male; and it is capable of reasoning, knowledge, and fear, and what is consequent on these. And each of these triads has one root, so that man is a compound of two mixtures, the female and the male. Wherefore also two ways have been laid before him—those of obedience and disobedience to law; and two kingdoms, have been established,—the one called the kingdom of heaven, and the other the kingdom of those who are now kings upon earth. Also two kings have been appointed, of whom the one is selected to rule by law over the present and transitory world, and his composition is such that he rejoices in the destruction of the wicked. But the other and good one, who is the King of the age to come, loves the whole nature of man; but not being able to have boldness in the present world, he counsels what is advantageous, like one who tries to conceal who he really is. </q></p><h3>Chapter III. The Work of the Good One and of the Evil One</h3><p><q>But of these two, <em>the one</em> acts violently towards the other by the command of God. Moreover, each man has power to obey whichever of them he pleases for the doing of good or evil. But if any one chooses to do what is good, he becomes the possession of the future good king; but if any one should do evil, he becomes the servant of the present evil one, who, having received power over him by just judgment on account of his sins, and wishing <em>to use it</em> before the coming age, rejoices in punishing him in the present life, and thus by gratifying, as it were, his own private passion, he accomplishes the will of God. But the other, being made to rejoice in power over the righteous, when he finds a righteous man, is exceedingly glad, and saves him with eternal life; and he also, as if gratifying himself, traces the gratification which he feels on account of these to God. Now it is within the power of every unrighteous man to repent and be saved; and every righteous man may have to undergo punishment for sins committed at the end of his career. Moreover, these two leaders are the swift hands of God, eager to anticipate Him so as to accomplish His will. But that this is so, has been said even by the law in the person of God: 'I will kill, and I will make alive; I will strike, and I will heal.' For, in truth, He kills and makes alive. He kills through the left hand, that is, through the evil one, who has been so composed as to rejoice in afflicting the impious. And he saves and benefits through the right hand, that is, through the good one, who has been made to rejoice in the good deeds and salvation of the righteous. Now these have not their substances outside of God: for there is no other primal source. Nor, indeed, have they been sent forth as animals from God, for they were of the same mind with Him; nor are they accidental, arising spontaneously in opposition to His will, since thus the greatest exercise of His power would have been destroyed. But from God have been sent forth the four first elements—heat and cold, moist and dry. In consequence of this, He is the father of every substance, but not of the disposition which may arise from the combination of the elements; for when these were combined from without, disposition was begotten in them as a child. The wicked one, then, having served God blamelessly to the end of the present world, can become good by a change in his composition, since he assuredly is not of one uniform substance whose sole bent is towards sin. For not even more does he do evil, although he is evil, since he has received power to afflict lawfully.</q></p><h3>Chapter IV. Men Sin Through Ignorance</h3><p>When Peter said this, Micah, who was himself one of his followers, asked: <q>What, then, is the reason why men sin?</q> And Peter said: <q>It is because they are ignorant that they will without doubt be punished for their evil deeds when judgment takes place. For this reason they, having lust, as I elsewhere said, for the continuance of life, gratify it in any accidental way, it may be by the vitiation of boys, or by some other flattering sin. For in consequence of their ignorance, as I said before, they are urged on through fearlessness to satisfy their lust in an unlawful manner. Wherefore God is not evil, who has rightly placed lust within man, that there may be a continuance of life, but they are most impious who have used the good of lust badly. The same considerations apply to anger also, that if one uses it righteously, as is within his power, he is pious; but going beyond measure, and taking judgment to himself, he is impious.</q></p><h3>Chapter V. Sophonias Maintains that God Cannot Produce What is Unlike Himself</h3><p>And Sophonias said again: <q>Your great patience, my lord Peter, gives us boldness to ask you many questions for the sake of accuracy. Wherefore we make our inquiries with confidence in every direction. I remember, then, that Simon said yesterday, in his discussion with you, that the evil one, if he was born of God, possesses in consequence the same substance as He does who sent him forth, and he ought to have been good, and not wicked. But you answered that this was not always the case, since many wicked sons are born of good parents, as from Adam two unlike sons were begotten, one of whom was bad and the other good. And when Simon found fault with you for having used human examples, you answered that in this way we ought not to admit that God begets at all; for this also is a human example. And I, Sophonias, admit that God begets; but I do not allow that He begets what is bad, even though the good among men beget bad children. And do not imagine that I am without reason attributing to God some of the qualities that distinguish men, and refusing to attribute others, when I grant that He begets, but do not allow that He begets what is unlike Himself. For men, as you might expect, beget sons who are unlike them in their dispositions for the following reason. Being composed of four parts, they change their bodies variously, according to the various changes of the year; and thus, the appropriate change either of increase or decrease taking place in the human body, each season destroys the harmonious combination. Now, when the combinations do not always remain exactly in the same position, the seeds, having sometimes one combination, sometimes another, are sent off; and these are followed, according to the combination belonging to the season, by dispositions either good or bad. But in the case of God we cannot suppose any such thing; for, being unchangeable and always existing, whenever He wishes to send forth, there is an absolute necessity that what is sent forth should be in all respects in the same position as that which has begotten, I mean in regard to substance and disposition. But if any one should wish to maintain that He is changeable, I do not know how it is possible for him to maintain that He is immortal.</q></p><h3>Chapter VI. God's Power of Changing Himself</h3><p>When Peter heard this, he thought for a little, and said: <q>I do not think that any one can converse about evil without doing the will of the evil one. Therefore knowing this, I do not know what I shall do, whether I shall be silent or speak. For if I be silent, I should incur the laughter of the multitude, because, professing to proclaim the truth, I am ignorant of the explanation of vice. But if I should state my opinion, I am afraid lest it be not at all pleasing to God that we should seek after evil, for only seeking after good is pleasing to Him. However, in my reply to the statements of Sophonias, I shall make my ideas more plain. I then agree with him in thinking that we ought not to attribute to God all the qualities of men. For instance, men not having bodies that are convertible are not converted; but they have a nature that admits of alteration by the lapse of time through the seasons of the year. But this is not the case with God; for through His inborn Spirit He becomes, by a power which cannot be described, whatever body He likes. And one can the more easily believe this, as the air, which has received such a nature from Him, is converted into dew by the incorporeal mind permeating it, and being thickened becomes water, and water being compacted becomes stone and earth, and stones through collision light up fire. According to such a change and conversion, air becomes first water, and ends in being fire through conversions, and the moist is converted into its natural opposite. Why? Did not God convert the rod of Moses into an animal, making it a serpent, which He reconverted into a rod? And by means of this very converted rod he converted the water of the Nile into blood, which again he reconverted into water. Yea, even man, who is dust, He changed by the inbreathing of His breath into flesh, and changed him back again into dust. And was not Moses, who himself was flesh, converted into the grandest light, so that the sons of Israel could not look him in the face? Much more, then, is God completely able to convert Himself into whatsoever He wishes.</q></p><h3>Chapter VII. The Objection Answered, that One Cannot Change Himself</h3><p><q>But perhaps some one of you thinks that one may become something under the influence of one, and another under the influence of another, but no one can change himself into whatever he wishes, and that it is the characteristic of one who grows old, and who must die according to his nature, to change, but we ought not to entertain such thoughts of immortal beings. For were not angels, who are free from old age, and of a fiery substance, changed into flesh,—those, for instance, who received the hospitality of Abraham, whose feet men washed, as if they were the feet of men of like substance? Yea, moreover, with Jacob, who was a man, there wrestled an angel, converted into flesh that he might be able to come to close quarters with him. And, in like manner, after he had wrestled by his own will, he was converted into his own natural form; and now, when he was changed into fire, he did not burn up the broad sinew of Jacob, but he inflamed it, and made him lame. Now, that which cannot become anything else, whatever it may wish, is mortal, inasmuch as it is subject to its own nature; but he who can become whatever he wishes, whenever he wishes, is immortal, returning to a new condition, inasmuch as he has control over his own nature. Wherefore much more does the power of God change the substance of the body into whatever He wishes and whenever He wishes; and by the change that takes place He sends forth what, on the one hand, is of similar substance, but, on the other, is not of equal power. Whatever, then, he who sends forth turns into a different substance, that he can again turn back into his own; but he who is sent forth, arising in consequence of the change which proceeds from him, and being his child, cannot become anything else without the will of him who sent him forth, unless he wills it.</q></p><h3>Chapter VIII. The Origin of the Good One Different from that of the Evil One</h3><p>When Peter said this, Micah, who was himself also one of the companions that attended on him, said: <q>I also should like to learn from you if the good one has been produced in the same way that the evil one came into being. But if they came into being in a similar manner, then they are brothers in my opinion.</q> And Peter said: <q>They have not come into being in a similar way: for no doubt you remember what I said in the beginning, that the substance of the body of the wicked one, being fourfold in origin, was carefully selected and sent forth by God; but when it was combined externally, according to the will of Him who sent it forth, there arose, in consequence of the combination, the disposition which rejoices in evils: so that you may see that the substance, fourfold in origin, which was sent forth by Him, and which also always exists, is the child of God; but that the accidentally arising disposition which rejoices in evils has supervened when the substance was combined externally by him. And thus disposition has not been begotten by God, nor by any one else, nor indeed has it been sent forth by Him, nor has it come forth spontaneously, nor did it always exist, like the substance before the combination; but it has come on as an accident by external combination, according to the will of God. And we have often said that it must be so. But the good one having been begotten from the most beautiful change of God, and not having arisen accidentally through an external combination, is really His Son. Yet, since these doctrines are unwritten, and are confirmed to us only by conjecture, let us by no means deem it as absolutely certain that this is the true state of the case. For if we act otherwise, our mind will cease from investigating the truth, in the belief that it has already fully comprehended it. Remember these things, therefore; for I must not state such things to all, but only to those who are found after trial most trustworthy. Nor ought we rashly to maintain such assertions towards each other, nor ought ye to dare to speak as if you were accurately acquainted with the discovery of secret truths, but you ought simply to reflect over them in silence; for in stating, perchance, that a matter is so, he who says it will err, and he will suffer punishment for having dared to speak even to himself what has been honoured with silence.</q></p><h3>Chapter IX. Why the Wicked One is Appointed Over the Wicked by the Righteous God</h3><p>When Peter said this, Lazarus, who also was one of his followers, said: <q>Explain to us the harmony, how it can be reasonable that the wicked one should be appointed by the righteous God to be the punisher of the impious, and yet should himself afterwards be sent into lower darkness along with his angels and with sinners: for I remember that the Teacher Himself said this.</q> And Peter said: <q>I indeed allow that the evil one does no evil, inasmuch as he is accomplishing the law given to him. And although he has an evil disposition, yet through fear of God he does nothing unjustly; but, accusing the teachers of truth so as to entrap the unwary, he is himself named the accuser (the devil). But the statement of our unerring Teacher, that he and his angels, along with the deluded sinners, shall go into lower darkness, admits of the following explanation. The evil one, having obtained the lot of rejoicing in darkness according to his composition, delights to go down to the darkness of Tartarus along with angels who are his fellow-slaves; for darkness is dear to fire. But the souls of men, being drops of pure light, are absorbed by the substance fire, which is of a different class; and not possessing a nature capable of dying, they are punished according to their deserts. But if he who is the leader of men into vice is not sent into darkness, as not rejoicing in it, then his composition, which rejoices in evils, cannot be changed by another combination into the disposition for good. And thus he will be adjudged to be with the good, all the more because, having obtained a composition which rejoices in evils, through fear of God he has done nothing contrary to the decrees of the law of God. And did not the Scripture by a mysterious hint point out by the statement that the rod of the high priest Aaron became a serpent, and was again converted into a rod, that a change in the composition of the wicked one would afterwards take place?</q></p><h3>Chapter X. Why Some Believe, and Others Do Not</h3><p>And after Lazarus, Joseph, who also was one of his followers, said: <q>You have spoken all things rightly. Teach me also this, as I am eager to know it, why, when you give the same discourses to all, some believe and others disbelieve?</q> And Peter said: <q>It is because my discourses are not charms, so that every one that hears them must without hesitation believe them. The fact that some believe, and others do not, points out to the intelligent the freedom of the will.</q> And when he said this, we all blessed him.</p><h3>Chapter XI. Arrival of Appion and Annubion</h3><p>And as we were going to take our meals, some one ran in and said: <q>Appion Pleistonices has just come with Annubion from Antioch, and he is lodging with Simon.</q> And my father hearing this, and rejoicing, said to Peter: <q>If you permit me, I shall go to salute Appion and Annubion, who have been my friends from childhood. For perchance I shall persuade Annubion to discuss genesis with Clement.</q> And Peter said: <q>I permit you, and I praise you for fulfilling the duties of a friend. But now consider how in the providence of God there come together from all quarters considerations which contribute to your full assurance, rendering the harmony complete. But I say this because the arrival of Annubion happens advantageously for you.</q> And my father: <q>In truth, I see that this is the case.</q> And saying this, he went to Simon.</p><h3>Chapter XII. Faustus Appears to His Friends with the Face of Simon</h3><p>Now all of us who were with Peter asked each other questions the whole of the night, and continued awake, because of the pleasure and joy we derived from what was said. But when at length the dawn began to break, Peter, looking at me and my brothers, said: <q>I am puzzled to think what your father has been about.</q> And just as he was saying this, our father came in and caught Peter talking to us of him; and seeing him displeased, he accosted him, and rendered an apology for having slept outside. But we were amazed when we looked at him: for we saw the form of Simon, but heard the voice of our father Faustus. And when we were fleeing from him, and abhorring him, our father was astonished at receiving such harsh and hostile treatment from us. But Peter alone saw his natural shape, and said to us: <q>Why do you in horror turn away from your own father?</q> But we and our mother said: <q>It is Simon that we see before us, with the voice of our father.</q> And Peter said: <q>You recognise only his voice, which is unaffected by magic; but as my eyes also are unaffected by magic, I can see his form as it really is, that he is not Simon, but your father Faustus.</q> Then, looking to my father, he said: <q>It is not your own true form that is seen by them, but that of Simon, our deadliest foe, and a most impious man.</q></p><h3>Chapter XIII. The Flight of Simon</h3><p>While Peter was thus talking, there entered one of those who had gone before to Antioch, and who, coming back from Antioch, said to Peter: <q>I wish you to know, my lord, that Simon, by doing many miracles publicly in Antioch, and calling you a magician and a juggler <em>and a murderer</em>, has worked them up to such hatred against you, that every man is eager to taste your very flesh if you should sojourn there. Wherefore we who went before, along with our brethren who were in pretence attached by you to Simon, seeing the city raging wildly against you, met secretly and considered what we ought to do. And assuredly, while we were in great perplexity, Cornelius the centurion arrived, who had been sent by the emperor to the governor of the province. He was the person whom our Lord cured when he was possessed of a demon in Cæsarea. This man we sent for secretly; and informing him of the cause of our despondency, we begged his help. He promised most readily that he would alarm Simon, and make him take to flight, if we should assist him in his effort. And when we all promised that we should readily do everything, he said, 'I shall spread abroad the news through many friends that I have secretly come to apprehend him; and I shall pretend that I am in search of him, because the emperor, having put to death many magicians, and having received information in regard to him, has sent me to search him out, that he may punish him as he punished the magicians before him; while those of your party who are with him must report to him, as if they had heard it from a secret source, that I have been sent to apprehend him. And perchance when he hears it from them, he will be alarmed and take to flight.' When, therefore, we had intended to do something else, nevertheless the affair turned out in the following way. For when he heard the news from many strangers who gratified him greatly by secretly informing him, and also from our brethren who pretended to be attached to him, and took it as the opinion of his own followers, he resolved on retiring. And hastening away from Antioch, he has come here with Athenodorus, as we have heard. Wherefore we advise you not yet to enter that city, until we ascertain whether they can forget in his absence the accusations which he brought against you.</q></p><h3>Chapter XIV. The Change in the Form of Faustus Caused by Simon</h3><p>When the person who had gone before gave this report, Peter looked to my father, and said: <q>You hear, Faustus; the change in your form has been caused by Simon the magician, as is now evident. For, thinking that <em>a servant</em> of the emperor was seeking him to punish him, he became afraid and fled, putting you into his own shape, that if you were put to death, your children might have sorrow.</q> When my father heard this, he wept and lamented, and said: <q>You have conjectured rightly, Peter. For Annubion, who is my dear friend, hinted his design to me; but I did not believe him, <em>miserable man that I am</em>, since I deserved to suffer.</q></p><h3>Chapter XV. The Repentance of Faustus</h3><p>When my father said this, after no long time <em>Annubion came</em> to us to announce to us the flight of Simon, and how that very night he had hurried to Judæa. And he found our father wailing, and with lamentations saying: <q>Alas, alas! unhappy man! I did not believe when I was told that he was a magician. Miserable man that I am! I have been recognised for one day by my wife and children, and have speedily gone back to my previous sad condition when I was still ignorant.</q> And my mother lamenting, plucked her hair; and we groaned in distress on account of the transformation of our father, and could not comprehend what in the world it could be. But Annubion stood speechless, seeing and hearing these things; while Peter said to us, his children, in the presence of all: <q>Believe me, this is Faustus your father. Wherefore I urge you to attend to him as being your father. For God will vouchsafe some occasion for his putting off the shape of Simon, and exhibiting again distinctly that of your father.</q> And saying this, and looking to my father, he said: <q>I permitted you to salute Appion and Annubion, since you asserted that they were your friends from childhood, but I did not permit you to associate with the magician Simon.</q></p><h3>Chapter XVI. Why Simon Gave to Faustus His Own Shape</h3><p>And my father said: <q>I have sinned; I confess it.</q> And Annubion said: <q>I also along with him beg you to forgive the noble and good old man who has been deceived: for the unfortunate man has been the sport of that notorious fellow. But I shall tell you how it took place. The good old man came to salute us. But at that very hour we who were there happened to be listening to Simon, who wished to run away that night, for he had heard that some people had come to Laodicea in search of him by the command of the emperor. But as Faustus was entering, he <em>turned</em> his own rage on him, and thus addressed us: 'Make him, when he comes, share your meals; and I will prepare an ointment, so that, when he has supped, he may take some of it, and anoint his face with it, and then he will appear to all to have my shape. But I will anoint you with the juice of some plant, and then you will not be deceived by his new shape; but to all others Faustus will seem to be Simon.'</q></p><h3>Chapter XVII. Annubion's Services to Faustus</h3><p><q>And while he stated this beforehand, I said, 'What, then, is the advantage you now expect to get from such a contrivance?' And Simon said, 'First, those who seek me, when they apprehend him, will give up the search after me. But if he be executed by the hand of the emperor, very great sorrow will fall upon his children, who left me, and fleeing <em>to Peter</em>, now aid him in his work.' And now, Peter, I confess the truth to you: I was prevented by fear <em>of Simon</em> from informing <em>Fau</em>stus of this. But Simon did not give us an opportunity for private conversation, <em>lest</em> some one of us might reveal to him the wicked design of Simon. Simon then rose up in the middle of the night and fled to Judæa, convoyed by Appion and Athenodorus. Then I pretended that I was sick, in order that, remaining after they had gone, I might make Faustus go back immediately to his own people, if by any chance he might be able, by being concealed with you, to escape observation, lest, being caught as Simon by those who were in search of Simon, he might be put to death through the wrath of the emperor. At the dead of night, therefore, I sent him away to you; and in my anxiety for him I came by night to see him, with the intention of returning before those who convoyed Simon should return.</q> And looking to us, he said: <q>I, Annubion, see the true shape of your father; for I was anointed, as I related to you before, by Simon himself, that the true shape of Faustus might be seen by my eyes. Astonished, therefore, I exceedingly wonder at the magic power of Simon, in that standing you do not recognise your own father.</q> And while our father and our mother and we ourselves wept on account of the calamity common to all of us, Annubion also through sympathy wept with us.</p><h3>Chapter XVIII. Peter Promises to Restore to Faustus His Own Shape</h3><p>Then Peter promised to us to restore the shape of our father, and he said to him: <q>Faustus, you heard how matters stand with us. When, therefore, the deceptive shape which invests you has been useful to us, and you have assisted us in doing what I shall tell you to do, then I shall restore to you your true form, when you have first performed my commands.</q> And when my father said, <q>I shall do everything that is in my power most willingly; only restore to my own people my own form;</q> Peter answered, <q>You yourself heard with your own ears how those who went before me came back from Antioch, and said that Simon had been there, and had strongly excited the multitudes against me by calling me a magician and a murderer, a deceiver and a juggler, to such an extent that all the people there were eager to taste my flesh. You will do, then, as I tell you. You will leave Clement with me, and you will go before us into Antioch with your wife, and your sons Faustinus and Faustinianus. And some others will accompany you whom I deem capable of helping forward my design.</q></p><h3>Chapter XIX. Peter's Instructions to Faustus</h3><p><q>When <em>you are</em> with these in Antioch, while you look like Simon, proclaim publicly your <em>repentance</em>, saying, 'I Simon proclaim this to you: I confess that all my statements in regard to Peter are <em>utterly false;</em> <em>for he is not</em> a deceiver, nor a murderer, nor a juggler; nor are any of the evil things true which I, urged on by wrath, said previously in regard to him. I myself therefore beg of you, I who have been the cause of your hatred to him, cease from hating him; for he is the true apostle of the true Prophet that was sent by God for the salvation of the world. Wherefore also I counsel you to believe what he preaches; for if you do not, your whole city will be utterly destroyed. Now I wish you to know for what reason I have made this confession to you. This night angels of God scourged me, the impious one, terribly, as being an enemy to the herald of the truth. I beseech you, therefore, do not listen to me, even if I myself should come at another time and attempt to say anything against Peter. For I confess to you I am a magician, I am a deceiver, I am a juggler. Yet perhaps it is possible for me by repentance to wipe out the sins which were formerly committed by me.'</q></p><h3>Chapter XX. Faustus, His Wife, and Sons, Prepare to Go to Antioch</h3><p>When Peter suggested this, my father said: <q>I know what you want; wherefore take no trouble. For assuredly I shall take good care, when I reach that place, to make such statements in regard to you as I ought to make.</q> And Peter again suggested: <q>When, then, you perceive the city changing from its hatred of me, and longing to see me, send information to me of this, and I shall come to you immediately. And when I arrive there, that same day I shall remove the strange shape which now invests you, and I shall make your own unmistakeably visible to your own people and to all others.</q> Saying this, he made his sons, my brothers, and our mother Mattidia to go along with him; and he also commanded some of his more intimate acquaintances to accompany him. But my mother was unwilling to go with him, and said: <q>I seem to be an adulteress if I associate with the shape of Simon; but if I shall be compelled to go along with him, it is impossible for me to recline on the same couch with him! But I do not know if I shall be persuaded to go along with him.</q> And while she was very unwilling to go, Annubion urged her, saying: <q>Believe me and Peter, and the very voice itself, that this is <em>Faustus</em> your husband, whom I love not less than you. And I myself <em>will go</em> along with him.</q> When Annubion said this, our mother promised to go with him.</p><h3>Chapter XXI. Appion and Athenodorus Return in Quest of Faustus</h3><p>But Peter said: <q>God arranges our affairs in a most satisfactory manner; for we have with us Annubion the <em>astro</em>loger. For when we arrive at Antioch, he will in future discourse regarding genesis, giving us his genuine opinions as a friend.</q> Now when, after midnight, our father hurried with those whom Peter had ordered to go along with him and with Annubion to Antioch, which was near, early next day, before Peter went forth to discourse, Appion and Athenodorus, who had convoyed Simon, returned to Laodicea in search of our father. But Peter, ascertaining the fact, urged them to enter. And when they came in and sat down, and said, <q>Where is Faustus?</q> Peter answered: <q>We know not; for since the evening, when he went to you, he has not been seen by his kinsmen. But yesterday morning Simon came in search of him; and when we made no reply to him, something seemed to come over him, for he called himself Faustus; but not being believed, he wept and lamented, and threatened to kill himself, and then rushed out in the direction of the sea.</q></p><h3>Chapter XXII. Appion and Athenodorus Return to Simon</h3><p>When Appion and those who were with him heard this, they howled and lamented, saying: <q>Why did you not receive him?</q> And when at the same time Athenodorus wished to say to me, <q>It was Faustus, your father;</q> Appion anticipated him, and said, <q>We learned from some one that Simon, finding him, urged him <em>to go along with him</em>, Faustus himself entreating him, since he did not wish to see his sons after they had become Jews. And hearing this, we came, for his own sake, in search of him. But since he is not here, it is plain that he spoke the truth who gave us the information which we, hearing it from him, have given to you.</q> And I Clement, perceiving the design of Peter, that he wished to beget a suspicion in them that he intended to look out among them for the old man, that they might be afraid and take to flight, assisted in his design, and said to Appion: <q>Listen to me, my dearest Appion. We were eager to give to him, as being our father, what we ourselves deemed to be good. But if he himself did not wish to receive it, but, on the contrary, fled from us in horror, I shall make a somewhat harsh remark, 'Nor do we care for him.'</q> And when I said this, they went away, as if irritated by my savageness; and, as we learn next day, they went to Judæa in the track of Simon.</p><h3>Chapter XXIII. Peter Goes to Antioch</h3><p>Now, when ten days had passed away, <em>there came one of our people</em> from our father to announce to us how our father <em>stood forward</em> publicly <em>in the</em> shape <em>of Simon</em>, accusing him; and how by praising Peter he had made the whole city of Antioch long for him: and in consequence of this, all said that they were eager to see him, and that there were some who were angry with him as being Simon, on account of their surpassing affection for Peter, and wished to lay hands on Faustus, believing he was Simon. Wherefore he, fearing that he might be put to death, had sent to request Peter to come immediately if he wished to meet him alive, and to appear at the proper time to the city, when it was at the height of its longing for him. Peter, hearing this, called the multitude together to deliberate, and appointed one of his attendants bishop; and having remained three days in Laodicea baptizing and healing, he hastened to the neighboring city of Antioch. Amen.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Handa si Pedro na Pagbigyan si Sophonias</h3><p>Sa gabi ay bumangon si Pedro at ginising kami; pagkatapos ay naupo siya ayon sa kanyang nakagawian at sinabi: <q>Magtanong kayo sa akin tungkol sa anumang nais ninyo.</q> Si Sophonias ang unang nagsalita: <q>Ipapaliwanag mo ba sa amin, na sabik matuto, kung ano ang tunay na katotohanan tungkol sa kasamaan?</q> Sinabi ni Pedro: <q>Naipaliwanag ko na iyon sa takbo ng aking pakikipagtalakayan kay Simon; ngunit dahil inilahad ko ang katotohanan tungkol dito na kalakip ng iba pang mga paksa, hindi ito nailagay nang lubos na malinaw. Sapagkat maraming paksang waring kasingbigat ng katotohanan ang nakapagbibigay sa karamihan ng isang uri ng kaalaman tungkol sa katotohanan. Kaya kung ngayon ay ilalahad ko muli ang dati kong sinabi kay Simon kasabay ng maraming paksa, huwag ninyong isipin na <em>hindi</em> kayo pinararangalan nang kapantay niya.</q> Sinabi ni Sophonias: <q>Tama ka; sapagkat kung ngayon ay ihihiwalay mo iyon para sa amin mula sa maraming paksang tinalakay noon, magiging higit na maliwanag ang katotohanan.</q></p><h3>Kabanata II. Ang Dalawang Panahon</h3><p>Sinabi ni Pedro: <q>Makinig kayo, kung gayon, sa katotohanan ng pagkakatugma tungkol sa masama. Nagtalaga ang Diyos ng dalawang kaharian at nagtakda ng dalawang panahon. Itinalaga Niya ang kasalukuyang sanlibutan sa masama sapagkat maliit ito at mabilis lumipas; ngunit ipinangako Niyang iingatan para sa mabuti ang panahong darating sapagkat dakila iyon at walang hanggan. Kaya nilikha Niya ang tao na may malayang kalooban at may kakayahang kumiling sa anumang gawaing nais niya. Ang katawan niya ay binubuo ng tatlong bahagi at nagmula sa babae, sapagkat mayroon itong pagnanasa, galit, kalungkutan, at ang mga sumusunod sa mga ito. Ang espiritu naman ay hindi iisa ang anyo kundi binubuo rin ng tatlong bahagi at nagmula sa lalaki; mayroon itong pangangatwiran, kaalaman, takot, at ang mga sumusunod sa mga ito. Ang bawat isa sa dalawang tatluhan ay may iisang ugat, kaya ang tao ay pinaghalong dalawang pagkakabuo—ang pambabae at panlalaki. Dahil dito ay inilagay sa harap niya ang dalawang daan: ang pagsunod at pagsuway sa kautusan; at dalawang kaharian: ang tinatawag na kaharian ng langit at ang kaharian ng mga naghahari ngayon sa lupa. Nagtalaga rin ng dalawang hari. Ang isa ay piniling mamahala ayon sa kautusan sa kasalukuyan at lumilipas na sanlibutan, at ang kanyang pagkakabuo ay gayon na nalulugod siya sa pagkapuksa ng masasama. Ngunit ang isa, ang mabuti at Hari ng panahong darating, ay umiibig sa buong kalikasan ng tao; at yamang hindi siya makakilos nang hayagan sa kasalukuyang sanlibutan, nagpapayo siya ng kapaki-pakinabang na para bang itinatago kung sino talaga siya.</q></p><h3>Kabanata III. Gawain ng Mabuti at ng Masama</h3><p><q>Sa dalawang ito, <em>ang isa</em> ay kumikilos nang marahas laban sa isa ayon sa utos ng Diyos. At ang bawat tao ay may kapangyarihang sundin ang sinuman sa kanila na nais niya upang gumawa ng mabuti o masama. Kung pipiliin ng isang tao ang mabuti, siya’y nagiging pag-aari ng mabuting haring darating. Ngunit kung gagawa siya ng masama, nagiging lingkod siya ng masama sa kasalukuyan, na dahil sa matuwid na paghatol ay tumanggap ng kapangyarihan sa kanya sanhi ng kanyang mga kasalanan at nagnanais <em>gamitin iyon</em> bago dumating ang susunod na panahon; kaya nalulugod siyang parusahan siya sa kasalukuyang buhay at, na para bang binibigyang-kasiyahan ang sarili niyang damdamin, ay natutupad ang kalooban ng Diyos. Ang isa naman, na nilikhang malugod sa pagkakaroon ng kapangyarihan sa mga matuwid, kapag nakatagpo ng isang matuwid na tao ay lubhang nagagalak at inililigtas siya sa buhay na walang hanggan; at siya rin, na para bang binibigyang-kasiyahan ang sarili, ay iniuugnay sa Diyos ang kagalakang nadarama niya dahil dito. Nasa kapangyarihan ng bawat di-matuwid na magsisi at maligtas; at ang bawat matuwid ay maaari ring parusahan dahil sa mga kasalanang ginawa sa katapusan ng kanyang buhay. Ang dalawang pinunong ito ay parang mabilis na mga kamay ng Diyos, sabik na mauna upang isagawa ang Kanyang kalooban. Sinabi rin ito ng kautusan sa katauhan ng Diyos: ‘Papatayin Ko at bubuhayin Ko; sasaktan Ko at pagagalingin Ko.’ Tunay ngang pumapatay Siya at nagbibigay-buhay. Pumapatay Siya sa pamamagitan ng kaliwang kamay, ibig sabihin, sa pamamagitan ng masama, na gayon ang pagkakabuo na nalulugod sa pagpapahirap sa mga di-maka-Diyos. At nagliligtas at nagpapala Siya sa pamamagitan ng kanang kamay, ibig sabihin, sa pamamagitan ng mabuti, na nilikhang malugod sa mabubuting gawa at kaligtasan ng mga matuwid. Hindi nagmula sa labas ng Diyos ang kanilang mga sangkap, sapagkat wala nang ibang unang pinagmulan. Hindi rin sila inilabas mula sa Diyos na gaya ng mga hayop, sapagkat kung gayon ay kapareho Niya sana sila ng isip; ni sila ay mga aksidenteng kusang lumitaw laban sa Kanyang kalooban, sapagkat kung gayon ay mawawasak ang dakilang paggamit ng Kanyang kapangyarihan. Sa halip, mula sa Diyos ay inilabas ang apat na unang elemento—init at lamig, basa at tuyo. Dahil dito Siya ang Ama ng bawat sangkap, ngunit hindi ng disposisyong maaaring lumitaw mula sa pagsasama-sama ng mga elemento; sapagkat nang paghaluin ang mga iyon sa labas, lumitaw sa kanila ang disposisyon na para bang isang anak. Kaya ang masama, matapos paglingkuran ang Diyos nang walang sala hanggang sa katapusan ng kasalukuyang sanlibutan, ay maaaring maging mabuti sa pamamagitan ng pagbabago sa kanyang pagkakabuo, sapagkat tiyak na hindi siya iisang sangkap lamang na ang tanging hilig ay kasalanan. Sapagkat hindi rin siya gumagawa ng higit na masama dahil lamang sa siya’y masama, yamang tumanggap siya ng kapangyarihang magparusa ayon sa kautusan.</q></p><h3>Kabanata IV. Nagkakasala ang mga Tao Dahil sa Kamangmangan</h3><p>Nang sabihin ito ni Pedro, nagtanong si Micah, na isa rin sa kanyang mga tagasunod: <q>Kung gayon, ano ang dahilan kung bakit nagkakasala ang mga tao?</q> Sinabi ni Pedro: <q>Dahil hindi nila alam na walang pagsalang parurusahan sila sa kanilang masasamang gawa kapag dumating ang paghuhukom. Dahil dito, yamang mayroon silang pagnanasa para sa pagpapatuloy ng buhay, gaya ng sinabi ko sa ibang lugar, binibigyang-kasiyahan nila iyon sa anumang pagkakataong paraan—maaaring sa paglapastangan sa mga batang lalaki o sa iba pang mapang-akit na kasalanan. Dahil sa kanilang kamangmangan, gaya ng sinabi ko noon, hinihimok sila ng kawalang-takot na bigyang-kasiyahan ang kanilang pagnanasa sa paraang labag sa kautusan. Kaya hindi masama ang Diyos na wastong naglagay ng pagnanasa sa tao upang magpatuloy ang buhay; sa halip, lubhang di-maka-Diyos yaong gumamit nang masama sa mabuting kaloob na pagnanasa. Gayundin ang masasabi tungkol sa galit: kung ginagamit ito ng isang tao nang matuwid, gaya ng nasa kanyang kapangyarihan, maka-Diyos siya; ngunit kung lumalampas siya sa hangganan at inaako ang paghatol para sa sarili, siya’y di-maka-Diyos.</q></p><h3>Kabanata V. Pinaninindigan ni Sophonias na Hindi Makalilikha ang Diyos ng Hindi Katulad Niya</h3><p>Muling sinabi ni Sophonias: <q>Ang dakilang pagtitiis mo, panginoon kong Pedro, ang nagbibigay sa amin ng lakas ng loob na magtanong nang marami alang-alang sa katiyakan. Kaya buong pagtitiwala kaming nagtatanong sa lahat ng panig. Natatandaan kong sinabi ni Simon kahapon sa pakikipagtalakayan sa iyo na kung ang masama ay ipinanganak mula sa Diyos, taglay niya dahil dito ang kaparehong sangkap ng naglabas sa kanya at dapat sana siyang maging mabuti, hindi masama. Ngunit sumagot ka na hindi ito laging gayon, sapagkat maraming masasamang anak ang nagmumula sa mabubuting magulang, gaya ng dalawang magkaibang anak ni Adan—ang isa’y masama at ang isa’y mabuti. Nang punahin ka ni Simon dahil gumamit ka ng mga halimbawang pantao, sumagot kang sa gayong paraan ay hindi rin natin dapat tanggapin na ang Diyos ay nagsisilang, sapagkat isa rin iyong halimbawang pantao. Ako, si Sophonias, ay umaaming ang Diyos ay nagsisilang, ngunit hindi ko tinatanggap na nagsisilang Siya ng masama, kahit pa ang mabubuting tao ay magkaroon ng masasamang anak. At huwag mong isipin na walang dahilan ang pag-uukol ko sa Diyos ng ilang katangiang nagpapakilala sa tao at pagtangging iukol ang iba, kapag tinatanggap kong nagsisilang Siya ngunit hindi ko tinatanggap na nagsisilang Siya ng hindi katulad Niya. Sapagkat ang mga tao, gaya ng maaasahan, ay nagkakaroon ng mga anak na hindi katulad nila sa disposisyon dahil sa ganitong dahilan: binubuo sila ng apat na bahagi at nagbabago ang kanilang mga katawan sa sari-saring paraan ayon sa iba’t ibang pagbabago ng mga panahon ng taon. Kaya kapag nagaganap ang angkop na pagtaas o pagbaba sa katawan ng tao, sinisira ng bawat panahon ang maayos na pagkakahalo. At dahil hindi palaging nananatili ang mga pagkakahalo sa eksaktong kalagayan, ang mga binhi ay lumalabas minsang may ganitong pagkakabuo at minsang iba; at ayon sa pagkakabuong nauukol sa panahon ay sumusunod ang mabuti o masamang disposisyon. Ngunit sa Diyos ay hindi natin maaaring ipalagay ang gayon; sapagkat Siya’y hindi nagbabago at laging umiiral. Kaya tuwing nanaisin Niyang maglabas mula sa Kanya, lubos na kinakailangang ang inilalabas ay nasa lahat ng bagay sa kaparehong kalagayan ng pinagmulan nito—ang ibig kong sabihin ay sa sangkap at disposisyon. Ngunit kung may nagnanais panindigang nagbabago Siya, hindi ko alam kung paano niya mapananatiling walang kamatayan ang Diyos.</q></p><h3>Kabanata VI. Kapangyarihan ng Diyos na Baguhin ang Kanyang Sarili</h3><p>Nang marinig ito ni Pedro, nag-isip siya sandali at sinabi: <q>Hindi ko iniisip na makapagsasalita ang sinuman tungkol sa kasamaan nang hindi sa isang paraan ay ginagawa ang kalooban ng masama. Dahil alam ko ito, hindi ko alam kung ano ang gagawin ko—manahimik o magsalita. Sapagkat kung mananahimik ako, pagtatawanan ako ng karamihan dahil, bagaman nagpapahayag akong nangangaral ng katotohanan, hindi ko alam ang paliwanag tungkol sa kasamaan. Ngunit kung ilalahad ko ang aking palagay, natatakot akong maaaring hindi kalugud-lugod sa Diyos ang paghahanap natin tungkol sa kasamaan, sapagkat ang paghahanap lamang sa mabuti ang kalugud-lugod sa Kanya. Gayunman, sa pagsagot ko sa sinabi ni Sophonias, gagawin kong mas malinaw ang aking kaisipan. Sumasang-ayon ako sa kanya na hindi natin dapat iukol sa Diyos ang lahat ng katangian ng tao. Halimbawa, ang mga tao, yamang walang mga katawang maaaring baguhin ayon sa kanilang kagustuhan, ay hindi kusang nagbabago; ngunit taglay nila ang kalikasang sumasailalim sa pagbabago habang lumilipas ang panahon sa pamamagitan ng mga panahon ng taon. Hindi gayon sa Diyos; sapagkat sa pamamagitan ng Kanyang likas na Espiritu ay nagiging anumang katawang nais Niya sa kapangyarihang hindi mailarawan. Mas madaling paniwalaan ito kung isasaalang-alang na ang hangin, na tumanggap ng gayong kalikasan mula sa Kanya, ay nagiging hamog kapag dinaraanan ng di-katawang isip; kapag kumapal ay nagiging tubig; kapag nagsiksikan ang tubig ay nagiging bato at lupa; at ang mga bato sa pagkikiskisan ay lumilikha ng apoy. Sa gayong pagbabago at pagpapalit, ang hangin ay unang nagiging tubig at sa huli ay nagiging apoy, at ang basa ay nagiging likas nitong kabaligtaran. Bakit? Hindi ba binago ng Diyos ang tungkod ni Moises tungo sa isang hayop, na ginawa Niyang ahas at muling ibinalik sa pagiging tungkod? At sa pamamagitan ng mismong binagong tungkod na iyon ay binago niya ang tubig ng Nilo tungo sa dugo at muling ibinalik sa tubig. Oo, maging ang tao, na alabok, ay binago Niya sa laman sa pamamagitan ng paghinga ng Kanyang hininga at muling ibinalik sa alabok. At hindi ba si Moises, na laman din, ay binago tungo sa napakadakilang liwanag kaya hindi siya matingnan sa mukha ng mga anak ni Israel? Kung gayon, lalo pang lubos na kayang baguhin ng Diyos ang Kanyang sarili tungo sa anumang nais Niya.</q></p><h3>Kabanata VII. Sinagot ang Pagtutol na Hindi Mababago ng Isang Nilalang ang Sarili Nito</h3><p><q>Ngunit marahil ay iniisip ng ilan sa inyo na ang isang bagay ay maaaring maging iba sa ilalim ng impluwensiya ng iba, ngunit walang sinuman ang makapagbabago sa sarili tungo sa anumang nais niya; at na ang pagbabago ay katangian ng tumatanda at ng likas na mamamatay. Ngunit hindi natin dapat isipin nang gayon ang mga walang-kamatayang nilalang. Hindi ba ang mga anghel na malaya sa pagtanda at may sangkap na apoy ay naging laman—gaya ng mga tumanggap sa mabuting pakikitungo ni Abraham, na ang kanilang mga paa ay hinugasan ng mga tao na para bang mga paa ng kapwa nilang laman? Oo, at ang anghel na nakipagbuno kay Jacob na isang tao ay naging laman upang makalapit at makipagbuno sa kanya. At gayundin, matapos siyang makipagbuno ayon sa sarili niyang kalooban, bumalik siya sa likas niyang anyo; at nang siya’y maging apoy, hindi niya sinunog ang litid ni Jacob kundi pinainit iyon at ginawa siyang pilay. Ang hindi maaaring maging anumang iba ayon sa kagustuhan nito ay mortal, sapagkat alipin ito ng sarili nitong kalikasan; ngunit ang maaaring maging anumang nais nito, kailan man nito nais, ay walang kamatayan, sapagkat nakababalik ito sa bagong kalagayan yamang may kapangyarihan ito sa sariling kalikasan. Kaya lalo pang kayang baguhin ng kapangyarihan ng Diyos ang sangkap ng katawan tungo sa anumang nais Niya at kailan man Niya nais; at sa pagbabago ay nagpapalabas Siya ng isang bagay na sa isang dako ay may katulad na sangkap ngunit sa kabilang dako ay hindi kapantay sa kapangyarihan. Anumang baguhin ng naglalabas tungo sa ibang sangkap ay kaya niyang muling ibalik sa sarili nitong anyo; ngunit ang inilabas, na nagmula sa pagbabagong nagmumula sa kanya at naging anak niya, ay hindi maaaring maging iba nang wala ang kalooban ng naglabas sa kanya, maliban kung iyon din ang naisin nito.</q></p><h3>Kabanata VIII. Magkaiba ang Pinagmulan ng Mabuti at ng Masama</h3><p>Nang sabihin ito ni Pedro, sinabi ni Micah, na isa rin sa kanyang mga kasamang tagasunod: <q>Nais ko ring matutuhan mula sa iyo kung ang mabuti ay ginawa sa gayunding paraan ng paglitaw ng masama. Sapagkat kung magkatulad ang paraan ng kanilang pag-iral, sa palagay ko ay magkapatid sila.</q> Sinabi ni Pedro: <q>Hindi sila nagkaroon ng pag-iral sa magkatulad na paraan. Walang alinlangang natatandaan mo ang sinabi ko sa simula: ang sangkap ng katawan ng masama, na may apat na pinagmulan, ay maingat na pinili at inilabas ng Diyos; ngunit nang paghaluin iyon sa labas ayon sa kalooban Niya na naglabas dito, lumitaw dahil sa pagsasama ang disposisyong nalulugod sa kasamaan. Kaya makikita mong ang sangkap na may apat na pinagmulan, na inilabas Niya at patuloy na umiiral, ang anak ng Diyos; ngunit ang disposisyong aksidenteng lumitaw at nalulugod sa kasamaan ay dumating nang paghaluin sa labas ang sangkap. Kaya ang disposisyon ay hindi isinilang ng Diyos ni ng sinumang iba, ni inilabas Niya, ni kusang lumitaw, ni laging umiiral na gaya ng sangkap bago ang pagsasama; sa halip, dumating ito bilang aksidente sa panlabas na pagsasama ayon sa kalooban ng Diyos. Madalas na nating sinabi na kailangang gayon. Ngunit ang mabuti, yamang ipinanganak mula sa pinakamagandang pagbabago ng Diyos at hindi aksidenteng lumitaw sa panlabas na pagsasama, ay tunay na Kanyang Anak. Gayunman, sapagkat ang mga aral na ito ay hindi nakasulat at napagtitibay lamang sa atin sa pamamagitan ng palagay, huwag nating ituring na lubos na tiyak na ito ang tunay na kalagayan. Sapagkat kung gagawin natin iyon, titigil ang ating isip sa paghahanap ng katotohanan dahil maniniwala itong ganap na nitong naunawaan iyon. Kaya tandaan ninyo ang mga bagay na ito. Hindi ko dapat sabihin ang gayong mga bagay sa lahat, kundi sa mga napatunayang lubhang mapagkakatiwalaan matapos subukin. Hindi rin natin dapat padalus-dalos na ipahayag ang gayong mga paninindigan sa isa’t isa, ni mangahas magsalita na para bang tiyak nating natuklasan ang lihim na mga katotohanan. Sa halip, tahimik lamang nating pagnilayan ang mga iyon; sapagkat kapag sinabi ng isang tao na tiyak na gayon ang isang bagay, maaaring magkamali siya at maparusahan sa pangahas na pagsasalita maging sa sarili niya tungkol sa bagay na pinarangalan ng katahimikan.</q></p><h3>Kabanata IX. Bakit Itinalaga ng Matuwid na Diyos ang Masama sa Pamamahala sa Masasama</h3><p>Nang sabihin ito ni Pedro, sinabi ni Lazaro, na isa rin sa kanyang mga tagasunod: <q>Ipaliwanag mo sa amin ang pagkakatugma: paano magiging makatuwiran na italaga ng matuwid na Diyos ang masama bilang tagapagparusa sa mga di-maka-Diyos, ngunit pagkatapos ay ipadala rin siya sa pinakamalalim na kadiliman kasama ng kanyang mga anghel at ng mga makasalanan? Sapagkat natatandaan kong sinabi mismo ito ng Guro.</q> Sinabi ni Pedro: <q>Inaamin kong ang masama ay hindi gumagawa ng masama hangga’t tinutupad niya ang kautusang ibinigay sa kanya. At bagaman masama ang kanyang disposisyon, dahil sa takot sa Diyos ay wala siyang ginagawang di-makatarungan. Ngunit sa pag-aakusa sa mga guro ng katotohanan upang mahuli ang mga walang-ingat, siya mismo ay tinatawag na taga-akusa, ang diyablo. Ang pahayag naman ng ating Guro na hindi nagkakamali, na siya at ang kanyang mga anghel kasama ng mga nalinlang na makasalanan ay pupunta sa pinakamalalim na kadiliman, ay maaaring ipaliwanag nang ganito: dahil sa pagkakabuo ng masama, ang bahagi niyang nalulugod sa kadiliman ay nasisiyahang bumaba sa kadiliman ng Tartaro kasama ng mga anghel na kapwa niya alipin, sapagkat mahal ng apoy ang kadiliman. Ngunit ang mga kaluluwa ng tao, bilang mga patak ng dalisay na liwanag, ay nilalamon ng sangkap na apoy na ibang uri; at yamang wala silang kalikasang kayang mamatay, pinarurusahan sila ayon sa nararapat sa kanila. Ngunit kung ang pinunong nagtutulak sa mga tao sa bisyo ay hindi ipadadala sa kadiliman sapagkat hindi siya nalulugod dito, kung gayon ang kanyang pagkakabuo na nalulugod sa kasamaan ay hindi maaaring mabago sa pamamagitan ng ibang pagsasama tungo sa disposisyong mabuti. Sa gayon ay hahatulan siyang mapabilang sa mabuti, lalo na sapagkat, bagaman tumanggap siya ng pagkakabuong nalulugod sa kasamaan, dahil sa takot sa Diyos ay wala siyang ginawang salungat sa mga pasiya ng kautusan ng Diyos. At hindi ba ipinahiwatig ng Kasulatan sa isang mahiwagang paraan, nang ang tungkod ng punong saserdoteng si Aaron ay naging ahas at muling naging tungkod, na darating ang pagbabago sa pagkakabuo ng masama?</q></p><h3>Kabanata X. Bakit May Naniniwala at May Hindi</h3><p>Pagkatapos ni Lazaro, sinabi ni Jose, na isa rin sa kanyang mga tagasunod: <q>Wasto ang lahat ng sinabi mo. Ituro mo rin sa akin ito, sapagkat sabik akong malaman: bakit kapag iisa ang mga talumpating ibinibigay mo sa lahat, may naniniwala at may hindi?</q> Sinabi ni Pedro: <q>Sapagkat ang mga talumpati ko ay hindi mga gayuma na kailangang paniwalaan agad ng bawat makarinig. Ang katotohanang may naniniwala at may hindi ay nagpapakita sa marunong na may kalayaan ang kalooban.</q> Nang sabihin niya ito, pinagpala naming lahat siya.</p><h3>Kabanata XI. Pagdating nina Appion at Annubion</h3><p>Habang patungo na kami upang kumain, may isang tumakbo papasok at nagsabi: <q>Kadarating lamang ni Appion Pleistonices kasama si Annubion mula sa Antioquia, at nanunuluyan sila kay Simon.</q> Nang marinig ito ng aking ama, nagalak siya at sinabi kay Pedro: <q>Kung pahihintulutan mo ako, pupunta ako upang batiin sina Appion at Annubion, na mga kaibigan ko mula pa pagkabata. Marahil ay mahihikayat ko si Annubion na talakayin kay Clemente ang tungkol sa genesis.</q> Sinabi ni Pedro: <q>Pinahihintulutan kita, at pinupuri kita sa pagtupad sa tungkulin ng isang kaibigan. Ngunit ngayon ay isipin mo kung paanong sa pagkalinga ng Diyos ay nagsasama-sama mula sa lahat ng panig ang mga pangyayaring nagdaragdag sa iyong katiyakan at bumubuo sa ganap na pagkakatugma. Sinasabi ko ito dahil ang pagdating ni Annubion ay kapaki-pakinabang para sa iyo.</q> Sinabi ng aking ama: <q>Tunay ngang nakikita kong gayon nga.</q> Pagkasabi nito, pumunta siya kay Simon.</p><h3>Kabanata XII. Nagpakita si Faustus sa Kanyang mga Kaibigan na Taglay ang Mukha ni Simon</h3><p>Kaming lahat na kasama ni Pedro ay buong gabing nagtatanungan sa isa’t isa at nanatiling gising dahil sa kasiyahan at galak na dulot ng mga sinabi. Ngunit nang magsimulang magbukang-liwayway, tumingin si Pedro sa akin at sa mga kapatid ko at sinabi: <q>Nagtataka ako kung ano ang pinagkakaabalahan ng inyong ama.</q> Habang sinasabi niya ito, pumasok ang aming ama at narinig si Pedro na pinag-uusapan siya. Nang makita niyang hindi nasisiyahan si Pedro, bumati siya at humingi ng paumanhin dahil sa pagtulog sa labas. Ngunit nang tingnan namin siya ay lubha kaming namangha, sapagkat ang anyo ni Simon ang nakita namin ngunit ang tinig ay sa aming amang si Faustus. Nang tumakas kami mula sa kanya at kasuklaman siya, nagtaka ang aming ama sa gayong mabagsik at mapoot na pakikitungo namin. Ngunit si Pedro lamang ang nakakakita sa likas niyang anyo at sinabi sa amin: <q>Bakit kayo lumalayo nang may takot sa sarili ninyong ama?</q> Sinabi namin kasama ng aming ina: <q>Si Simon ang nakikita naming nasa harap namin, ngunit tinig ng aming ama ang naririnig namin.</q> Sinabi ni Pedro: <q>Ang tinig lamang niya ang nakikilala ninyo sapagkat hindi naaapektuhan iyon ng mahika; ngunit yamang ang aking mga mata ay hindi rin naaapektuhan ng mahika, nakikita ko ang kanyang tunay na anyo—hindi siya si Simon kundi ang inyong amang si Faustus.</q> Pagkatapos, tumingin siya sa aking ama at sinabi: <q>Hindi ang tunay mong anyo ang nakikita nila, kundi ang kay Simon, ang pinakamapanganib nating kaaway at isang lubhang di-maka-Diyos na tao.</q></p><h3>Kabanata XIII. Pagtakas ni Simon</h3><p>Habang nagsasalita pa si Pedro, pumasok ang isa sa mga naunang pumunta sa Antioquia at, pagkabalik mula roon, sinabi kay Pedro: <q>Nais kong malaman mo, panginoon ko, na si Simon, sa pamamagitan ng maraming himalang ginawa niya sa harap ng lahat sa Antioquia at sa pagtawag sa iyo na salamangkero, manlilinlang, <em>at mamamatay-tao</em>, ay nagpasiklab sa kanila ng gayong poot laban sa iyo na halos bawat isa ay sabik kainin ang laman mo kung pupunta ka roon. Kaya kaming mga nauna, kasama ng mga kapatid nating nagkukunwaring kapanig mo ngunit inilagay malapit kay Simon, nang makita naming nag-aalab ang buong lungsod laban sa iyo, ay lihim na nagpulong upang pag-isipan ang dapat gawin. Habang lubha kaming nalilito, dumating ang senturyong si Cornelio na isinugo ng emperador sa gobernador ng lalawigan. Siya yaong pinagaling ng ating Panginoon nang sapian ng demonyo sa Cesarea. Palihim namin siyang ipinatawag; ipinaliwanag namin ang dahilan ng aming pagkabalisa at nakiusap sa kanyang tulong. Agad niyang ipinangakong tatakutin niya si Simon at paiikutin itong tumakas kung tutulungan namin siya. Nang mangako kaming gagawin ang anumang kailangan, sinabi niya, “Ikakalat ko sa pamamagitan ng maraming kaibigan ang balitang lihim akong dumating upang hulihin siya; magpapanggap akong hinahanap siya dahil pinapatay ng emperador ang maraming salamangkero at, matapos makatanggap ng ulat tungkol sa kanya, isinugo ako upang hanapin siya upang parusahan gaya ng iba. Samantala, ang mga kasama ninyo na nasa kanya ay kailangang magsabi rin sa kanya na wari’y mula sa lihim na pinagmulan nila nalaman na isinugo ako upang hulihin siya. Marahil, kapag narinig niya iyon mula sa kanila, matatakot siya at tatakas.” Bagaman iba sana ang balak naming gawin, ito ang nangyari. Nang marinig ni Simon ang balita mula sa maraming di-kilala na lubha niyang pinasasalamatan sa lihim na pagbababala sa kanya, at mula rin sa ating mga kapatid na nagkukunwaring kapanig niya—kaya inakala niyang ito rin ang palagay ng sarili niyang mga tagasunod—nagpasya siyang umalis. Nagmadali siyang umalis sa Antioquia at dumating dito kasama si Athenodorus, ayon sa aming nabalitaan. Kaya ipinapayo naming huwag ka munang pumasok sa lungsod hanggang matiyak namin kung malilimutan nila, habang wala siya, ang mga paratang niyang ibinato laban sa iyo.</q></p><h3>Kabanata XIV. Ang Pagbabago sa Anyo ni Faustus ay Gawa ni Simon</h3><p>Nang matapos ang ulat ng naunang naglakbay, tumingin si Pedro sa aking ama at sinabi: <q>Naririnig mo, Faustus; maliwanag na ngayon na si Simon na salamangkero ang sanhi ng pagbabago sa iyong anyo. Sapagkat sa pag-aakalang <em>isang lingkod</em> ng emperador ang naghahanap sa kanya upang parusahan siya, natakot siya at tumakas, at inilagay sa iyo ang sarili niyang anyo upang, kung ikaw ang mapatay, magdalamhati ang iyong mga anak.</q> Nang marinig ito ng aking ama, umiyak siya at nanaghoy, na sinasabi: <q>Tama ang iyong hinala, Pedro. Sapagkat si Annubion, na matalik kong kaibigan, ay nagpahiwatig sa akin ng kanyang balak; ngunit hindi ko siya pinaniwalaan, <em>kaawa-awa akong tao</em>, sapagkat nararapat kong danasin ito.</q></p><h3>Kabanata XV. Pagsisisi ni Faustus</h3><p>Hindi nagtagal matapos sabihin ito ng aking ama, <em>dumating si Annubion</em> upang ipaalam sa amin ang pagtakas ni Simon at kung paanong nang mismong gabing iyon ay nagmadali siyang pumunta sa Judea. Natagpuan niyang nananangis ang aming ama at nagsasabing: <q>Ay! Ay! Kaawa-awa ako! Hindi ako naniwala nang sabihin sa akin na siya’y salamangkero. Kaawa-awa akong tao! Isang araw lamang akong muling nakilala ng aking asawa at mga anak, at agad akong bumalik sa dati kong malungkot na kalagayan nang hindi pa nila ako nakikilala.</q> Nanaghoy ang aking ina at hinila ang kanyang buhok; at kami ay dumaing sa dalamhati dahil sa pagbabago ng aming ama at hindi namin maunawaan kung ano sa sanlibutan ang nangyari. Tahimik na nakatayo si Annubion habang nakikita at naririnig ang lahat ng ito. Ngunit sinabi ni Pedro sa aming mga anak sa harap ng lahat: <q>Maniwala kayo sa akin: ito si Faustus na inyong ama. Kaya hinihimok kong asikasuhin ninyo siya bilang inyong ama. Magkakaloob ang Diyos ng pagkakataon upang maalis niya ang anyo ni Simon at muling maipakita nang malinaw ang anyo ng inyong ama.</q> Pagkasabi nito, tumingin siya sa aking ama at sinabi: <q>Pinahintulutan kitang batiin sina Appion at Annubion dahil sinabi mong mga kaibigan mo sila mula pa pagkabata; ngunit hindi kita pinahintulutang makisama sa salamangkero na si Simon.</q></p><h3>Kabanata XVI. Bakit Ibinigay ni Simon kay Faustus ang Sarili Niyang Anyo</h3><p>Sinabi ng aking ama: <q>Nagkasala ako; inaamin ko.</q> Sinabi ni Annubion: <q>Ako rin, kasama niya, ay nakikiusap na patawarin mo ang marangal at mabuting matandang nalinlang; sapagkat naging laruan siya ng kilalang taong iyon. Ngunit sasabihin ko sa iyo kung paano nangyari. Dumating ang mabuting matanda upang batiin kami. Ngunit nang oras ding iyon, kaming naroroon ay nakikinig kay Simon na nais tumakas nang gabing iyon sapagkat nabalitaan niyang may mga taong dumating sa Laodicea upang hanapin siya sa utos ng emperador. Nang papasok na si Faustus, <em>ibinaling</em> ni Simon sa kanya ang sariling galit at sinabi sa amin: “Kapag dumating siya, pakainin ninyo siyang kasama ninyo; at maghahanda ako ng pamahid upang, pagkatapos niyang kumain, kumuha siya niyon at ipahid sa mukha, at saka sa paningin ng lahat ay magkakaroon siya ng aking anyo. Ngunit pahihiran ko kayo ng katas ng isang halaman upang hindi kayo malinlang ng bago niyang anyo; sa lahat ng iba, si Faustus ay magmumukhang si Simon.”</q></p><h3>Kabanata XVII. Mga Ginawa ni Annubion para kay Faustus</h3><p><q>Habang pauna niyang sinasabi ito, sinabi ko, ‘Ano, kung gayon, ang pakinabang na inaasahan mong makuha sa ganitong pakana?’ Sinabi ni Simon, ‘Una, kapag nahuli siya ng mga naghahanap sa akin, titigil na silang maghanap sa akin. At kung siya’y ipapatay sa utos ng emperador, matinding dalamhati ang darating sa kanyang mga anak na tumalikod sa akin at, sa pagtakas <em>kay Pedro</em>, ay tumutulong ngayon sa kanyang gawain.’ At ngayon, Pedro, inaamin ko sa iyo ang katotohanan: pinigilan ako ng takot <em>kay Simon</em> na ipaalam ito kay <em>Faustus</em>. Hindi rin kami binigyan ni Simon ng pagkakataong mag-usap nang sarilinan, <em>baka</em> may isa sa amin na magbunyag kay Faustus ng masamang balak ni Simon. Pagkatapos ay bumangon si Simon sa kalagitnaan ng gabi at tumakas patungong Judea, na sinamahan nina Appion at Athenodorus. Nagkunwari akong may sakit upang maiwan ako matapos silang umalis at maibalik ko agad si Faustus sa sarili niyang mga tao, kung sakaling makaligtas siya sa pagkakakilanlan sa pamamagitan ng pagtatago sa piling ninyo at hindi mahuli bilang si Simon ng mga naghahanap kay Simon at mapatay dahil sa galit ng emperador. Kaya sa kalaliman ng gabi ay pinauwi ko siya sa inyo; at dahil nag-aalala ako sa kanya, pumunta rin ako rito sa gabi upang makita siya, na balak bumalik bago makabalik ang mga sumama kay Simon.</q> Pagkatapos, tumingin siya sa amin at sinabi: <q>Ako, si Annubion, ay nakikita ang tunay na anyo ng inyong ama; sapagkat, gaya ng sinabi ko sa inyo, ako mismo ay pinahiran ni Simon upang makita ng aking mga mata ang tunay na anyo ni Faustus. Kaya lubha akong namamangha sa kapangyarihan ng mahika ni Simon, sapagkat habang naririto ang inyong ama ay hindi ninyo siya nakikilala.</q> Habang umiiyak ang aming ama, aming ina, at kaming mga anak dahil sa kapahamakang dinaranas naming lahat, umiyak din si Annubion dahil sa habag sa amin.</p><h3>Kabanata XVIII. Nangako si Pedro na Ibabalik kay Faustus ang Sarili Niyang Anyo</h3><p>Pagkatapos ay ipinangako ni Pedro sa amin na ibabalik niya ang anyo ng aming ama at sinabi sa kanya: <q>Faustus, narinig mo kung ano ang kalagayan namin. Kaya kapag naging kapaki-pakinabang sa amin ang mapanlinlang na anyong nakabalot sa iyo at natulungan mo kami sa gagawin kong ipagawa sa iyo, saka ko ibabalik sa iyo ang tunay mong anyo matapos mong tuparin ang aking mga tagubilin.</q> Sinabi ng aking ama: <q>Gagawin ko nang buong kusa ang lahat ng nasa aking kapangyarihan; ibalik mo lamang sa aking sariling mga tao ang sarili kong anyo.</q> Sumagot si Pedro: <q>Narinig mo mismo sa sarili mong mga tainga kung paano bumalik mula sa Antioquia ang mga nauna sa akin at sinabi nilang naroon si Simon at matindi niyang pinukaw ang mga tao laban sa akin sa pagtawag sa akin na salamangkero at mamamatay-tao, manlilinlang at huwad na manggagawa ng kababalaghan, hanggang sa halos sabik silang lahat kainin ang laman ko. Kaya gagawin mo ang sasabihin ko sa iyo. Iiwan mo rito si Clemente sa piling ko, at mauuna ka sa amin patungong Antioquia kasama ang iyong asawa at mga anak na sina Faustinus at Faustinianus. Sasama rin sa iyo ang ilan pang ituturing kong makatutulong sa aking balak.</q></p><h3>Kabanata XIX. Mga Tagubilin ni Pedro kay Faustus</h3><p><q>Kapag <em>naroon ka</em> na sa Antioquia kasama nila, habang taglay mo ang anyo ni Simon, hayagang ipahayag ang iyong <em>pagsisisi</em>, na sinasabi: ‘Ako, si Simon, ay nagpapahayag nito sa inyo: inaamin kong <em>lubusang huwad</em> ang lahat ng sinabi ko tungkol kay Pedro; <em>sapagkat hindi siya</em> manlilinlang, mamamatay-tao, o huwad na manggagawa ng kababalaghan; at hindi totoo ang alinman sa masasamang bagay na dati kong sinabi laban sa kanya dahil sa galit. Kaya ako mismo, na naging sanhi ng inyong pagkapoot sa kanya, ay nakikiusap na tumigil na kayong mapoot sa kanya; sapagkat siya ang tunay na apostol ng tunay na Propeta na isinugo ng Diyos para sa kaligtasan ng sanlibutan. Kaya pinapayuhan ko kayong paniwalaan ang kanyang ipinangangaral; sapagkat kung hindi, lubusang mawawasak ang inyong buong lungsod. Nais ko ring malaman ninyo kung bakit ko ginagawa sa inyo ang pag-amin na ito. Ngayong gabi ay lubhang hinagupit ako ng mga anghel ng Diyos, akong di-maka-Diyos, sapagkat naging kaaway ako ng tagapagbalita ng katotohanan. Kaya nakikiusap ako sa inyo: huwag na kayong makinig sa akin kahit ako mismo ay dumating muli sa ibang panahon at magsikap magsalita laban kay Pedro. Sapagkat inaamin kong ako’y salamangkero, manlilinlang, at huwad na manggagawa ng kababalaghan. Gayunman, marahil sa pamamagitan ng pagsisisi ay maaari ko pang mapawi ang mga kasalanang dati kong ginawa.’</q></p><h3>Kabanata XX. Naghanda sina Faustus, ang Kanyang Asawa, at mga Anak na Pumunta sa Antioquia</h3><p>Nang imungkahi ito ni Pedro, sinabi ng aking ama: <q>Alam ko ang nais mo; kaya huwag ka nang mag-alala. Tiyak na iingatan kong mabuti, pagdating ko roon, na sabihin tungkol sa iyo ang nararapat kong sabihin.</q> Muling sinabi ni Pedro: <q>Kapag nakita mong nagbabago ang lungsod mula sa pagkapoot sa akin at nananabik na makita ako, ipaalam mo iyon sa akin at agad akong pupunta sa inyo. At pagdating ko roon, sa araw ding iyon ay aalisin ko ang di-kilalang anyong nakabalot ngayon sa iyo at gagawin kong malinaw at walang-pagdududang makita ng sarili mong mga tao at ng lahat ng iba ang tunay mong anyo.</q> Pagkasabi nito, pinasama niya sa aking ama ang kanyang mga anak—ang aking mga kapatid—at ang aming inang si Mattidia; inutusan din niya ang ilan sa kanyang pinakamalalapit na kakilala na sumama sa kanya. Ngunit ayaw ng aking ina na sumama at sinabi: <q>Para akong nangangalunya kung makikisama ako sa anyo ni Simon; at kung mapipilitan akong sumama sa kanya, imposible para sa akin na mahiga sa iisang higaan kasama niya! Hindi ko alam kung mapapaniwala akong sumama.</q> Habang mahigpit siyang tumatanggi, hinimok siya ni Annubion: <q>Maniwala ka sa akin at kay Pedro, at maging sa mismong tinig niya, na ito si <em>Faustus</em> na asawa mo, na hindi ko iniibig nang kulang sa pag-ibig mo sa kanya. At ako mismo ay <em>sasama</em> sa kanya.</q> Nang sabihin ito ni Annubion, pumayag ang aming ina na sumama.</p><h3>Kabanata XXI. Bumalik sina Appion at Athenodorus upang Hanapin si Faustus</h3><p>Ngunit sinabi ni Pedro: <q>Napakahusay ng pagkakaayos ng Diyos sa ating mga gawain; sapagkat kasama natin si Annubion na <em>astro</em>logo. Pagdating natin sa Antioquia, magsasalita siya tungkol sa genesis at ibibigay sa atin ang tunay niyang mga palagay bilang isang kaibigan.</q> Pagkaraan ng hatinggabi, nagmadaling umalis ang aming ama patungong Antioquia, na malapit lamang, kasama ang mga inutusan ni Pedro na sumama sa kanya at si Annubion. Maaga kinabukasan, bago lumabas si Pedro upang magturo, bumalik sa Laodicea sina Appion at Athenodorus, na sumama kay Simon, upang hanapin ang aming ama. Nang malaman ito ni Pedro, ipinapasok niya sila. Nang makapasok at makaupo sila, sinabi nila: <q>Nasaan si Faustus?</q> Sumagot si Pedro: <q>Hindi namin alam; sapagkat mula kagabi, nang pumunta siya sa inyo, hindi na siya nakita ng kanyang mga kamag-anak. Ngunit kahapon ng umaga ay dumating si Simon upang hanapin siya; at nang wala kaming maisagot, parang may nangyari sa kanya sapagkat tinawag niya ang sarili niyang Faustus. Ngunit dahil hindi siya pinaniwalaan, umiyak siya at nanaghoy, nagbantang papatayin ang sarili, at pagkatapos ay nagmadaling tumakbo patungo sa dagat.</q></p><h3>Kabanata XXII. Bumalik sina Appion at Athenodorus kay Simon</h3><p>Nang marinig ito ni Appion at ng mga kasama niya, sumigaw sila at nanaghoy: <q>Bakit hindi ninyo siya tinanggap?</q> At nang nais sanang sabihin sa akin ni Athenodorus, <q>Si Faustus iyon, ang iyong ama,</q> naunahan siya ni Appion at sinabi: <q>Nalaman namin mula sa isang tao na natagpuan ni Simon si Faustus at hinimok siyang <em>sumama sa kanya</em>; at si Faustus mismo ang nakiusap dito sapagkat ayaw na niyang makita ang kanyang mga anak matapos silang maging mga Judio. Nang marinig namin ito, pumunta kami rito alang-alang sa kanya upang hanapin siya. Ngunit yamang wala siya rito, malinaw na nagsabi ng totoo ang nagbigay sa amin ng impormasyong isinalaysay namin sa inyo.</q> Ako, si Clemente, nang maunawaan ang balak ni Pedro—na nais niyang magtanim sa kanila ng hinalang hahanapin niya sa gitna nila ang matanda upang matakot sila at tumakas—ay tumulong sa kanyang balak at sinabi kay Appion: <q>Makinig ka sa akin, pinakamamahal kong Appion. Sabik kaming ibigay sa kanya, bilang aming ama, ang inaakala naming mabuti. Ngunit kung siya mismo ay ayaw tumanggap niyon at sa halip ay tumakas mula sa amin nang may pagkasuklam, magsasabi ako ng medyo mabigat: ‘Wala na rin kaming pakialam sa kanya.’</q> Nang sabihin ko ito, umalis sila na para bang nainis sa aking kabagsikan; at gaya ng nalaman namin kinabukasan, nagtungo sila sa Judea kasunod ni Simon.</p><h3>Kabanata XXIII. Pumunta si Pedro sa Antioquia</h3><p>Nang lumipas ang sampung araw, <em>dumating ang isa sa aming mga kasama</em> mula sa aming ama upang ipaalam kung paano humarap sa publiko ang aming ama <em>na taglay</em> ang <em>anyo</em> <em>ni Simon</em> at inakusahan ito; at kung paano, sa pagpuri kay Pedro, ay ginawa niyang manabik ang buong lungsod ng Antioquia na makita siya. Dahil dito ay sinabi ng lahat na sabik silang makita si Pedro; at may ilan pang labis ang pagmamahal kay Pedro kaya nagalit sila sa aming ama sa pag-aakalang siya si Simon at nais siyang saktan. Kaya, sa takot na baka siya mapatay, nagpadala siya upang hilingin kay Pedro na pumunta agad kung nais niyang makita siyang buhay at magpakita sa lungsod sa tamang panahon habang nasa sukdulan ang pananabik nito sa kanya. Nang marinig ito ni Pedro, tinipon niya ang karamihan upang magpasiya at nagtalaga ng isa sa kanyang mga tagapaglingkod bilang obispo. Matapos manatili nang tatlong araw sa Laodicea upang magbautismo at magpagaling, nagmadali siyang pumunta sa kalapit na lungsod ng Antioquia. Amen.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

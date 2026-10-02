@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 12</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Two Bands</option><option value="1">Chapter II. Love of Preachers and Their Converts</option><option value="2">Chapter III. Submission</option><option value="3">Chapter IV. Clement's Joy</option><option value="4">Chapter V. Clement's Office of Service</option><option value="5">Chapter VI. Peter's Frugality</option><option value="6">Chapter VII. Not to Be Ministered Unto, But to Minister.</option><option value="7">Chapter VIII. Family History</option><option value="8">Chapter IX. The Lost Ones</option><option value="9">Chapter X. The Seeker Lost</option><option value="10">Chapter XI. The Afflictions of the Righteous</option><option value="11">Chapter XII. A Pleasure Trip</option><option value="12">Chapter XIII. A Woman of a Sorrowful Spirit</option><option value="13">Chapter XIV. Balm in Gilead</option><option value="14">Chapter XV. The Woman's Story</option><option value="15">Chapter XVI. The Shipwreck</option><option value="16">Chapter XVII. The Fruitless Search</option><option value="17">Chapter XVIII. Trouble Upon Trouble</option><option value="18">Chapter XIX. Evasions</option><option value="19">Chapter XX. Peter's Account of the Matter</option><option value="20">Chapter XXI. A Disclosure</option><option value="21">Chapter XXII. The Lost Found</option><option value="22">Chapter XXIII. Reward of Hospitality</option><option value="23">Chapter XXIV. All Well Arranged</option><option value="24">Chapter XXV. Philanthropy and Friendship</option><option value="25">Chapter XXVI. What is Philanthropy</option><option value="26">Chapter XXVII. Who Can Judge</option><option value="27">Chapter XXVIII. Difficulty of Judging</option><option value="28">Chapter XXIX. Sufferings of the Good</option><option value="29">Chapter XXX. Offences Must Come</option><option value="30">Chapter XXXI. Howbeit, They Meant It Not.</option><option value="31">Chapter XXXII. The Golden Rule</option><option value="32">Chapter XXXIII. Fear and Love</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Two Bands</h3><p>Therefore starting from Tripolis of Phœnicia to go to Antioch of Syria, on the same day we came to Orthasia, and there stayed. And on account of its being near the city which we had left, almost all having heard the preaching before, we stopped there only one day, and set out to Antaradus. And as there were many who journeyed with us, Peter, addressing Nicetus and Aquila, said, <q>Inasmuch as the great crowd of those who journey with us draws upon us no little envy as we enter city after city, I have thought that we must of necessity arrange, so that neither, on the one hand, these may be grieved at being prevented from accompanying us, nor, on the other hand, we, by being so conspicuous, may fall under the envy of the wicked. Wherefore I wish you, Nicetus and Aquila, to go before me in two separate bodies, and enter secretly into the Gentile cities.</q></p><h3>Chapter II. Love of Preachers and Their Converts</h3><p><q>I know, indeed, that you are distressed at being told to do this, being separated from me by a space of two days. I would have you know, therefore, that we the persuaders love you the persuaded much more than you love us who have persuaded you. Therefore loving one another as we do by not unreasonably doing what we wish, let us provide, as much as in us lies, for safety. For I prefer, as you also know, to go into the more notable cities of the provinces, and to remain some days, and discourse. And for the present lead the way into the neighbouring Laodicea, and, after two or three days, so far as it depends upon my choice, I shall overtake you. And do you alone receive me at the gates, on account of the confusion, that thus we may enter along with you without tumult. And thence, in like manner, after some days' stay, others in your stead will go forward by turns to the places beyond, preparing lodgings for us.</q></p><h3>Chapter III. Submission</h3><p>When Peter had thus spoken they were compelled to acquiesce, saying, <q>It does not altogether grieve us, my lord, to do this on account of its being your command; in the first place, indeed, because you have been chosen by the providence of God, as being worthy to think and counsel well in all things; and in addition to this, for the most part we shall be separated from you only for two days by the necessity of preceding you. And that were indeed a long time to be without sight of you, O Peter, did we not consider that they will be more grieved who are sent much farther forward, being ordered to wait for you longer in every city, distressed that they are longer deprived of the sight of your longed-for countenance. And we, though not less distressed than they, make no opposition, because you order us to do it for profit.</q> Thus, having spoken, they went forward, having it in charge that at the first stage they should address the accompanying multitude that they should enter the cities apart from one another.</p><h3>Chapter IV. Clement's Joy</h3><p>When, therefore, they had gone, I, Clement, rejoiced greatly that he had ordered me to remain with himself. Then I answered and said, <q>I thank God that you have not sent me away as you have done the others, as I should have died of grief.</q> But he said, <q>But what? If there shall ever be any necessity that you be sent away for the sake of teaching, would you, on account of being separated for a little while from me, and that for an advantageous purpose, would you die for that? Would you not rather impress upon yourself the duty of bearing the things that are arranged for you through necessity, and cheerfully submit? And do you not know that friends are present with one another in their memories, although they are separated bodily; whereas some, being bodily present, wander from their friends in their souls, by reason of want of memory?</q></p><h3>Chapter V. Clement's Office of Service</h3><p>Then I answered, <q>Do not think, my lord, that I should endure that grief foolishly, but with some good reason. For since I hold you, my lord, in place of all, father, mother, brothers, relatives, you who are the means through God of my having the saving truth, holding you in place of all, I have the greatest consolation. And in addition to this, being afraid of my natural youthful lust, I was concerned lest, being left by you (being but a young man, and having now such a resolution that it would be impossible to desert you without incurring the anger of God,) I should be overcome by lust. But since it is much better and safer for me to remain with you, when my mind is with good reason set upon venerating, therefore I pray that I may always remain with you. Moreover, I remember you saying in Cæsarea, 'If any one wishes to journey with me, let him piously journey.' And by piously you meant, that those who are devoted to the worship of God should grieve no one in respect of God, such as by leaving parents, an attached wife, or any others. Whence I am in all respects a fitting fellow-traveller for you, to whom, if you would confer the greatest favour, you would allow to perform the functions of a servant.</q></p><h3>Chapter VI. Peter's Frugality</h3><p>Then Peter, hearing, smiled and said, <q>What think you, then, O Clement? Do you not think that you are placed by very necessity in the position of my servant? For who else shall take care of those many splendid tunics, with all my changes of rings and sandals? And who shall make ready those pleasant and artistic dainties, which, being so various, need many skilful cooks, and all those things which are procured with great eagerness, and are prepared for the appetite of effeminate men as for some great wild beast? However, such a choice has occurred to you, perhaps, without you understanding or knowing my manner of life, that I use only bread and olives, and rarely pot-herbs; and that this is my only coat and cloak which I wear; and I have no need of any of them, nor of anything else: for even in these I abound. For my mind, seeing all the eternal good things that are there, regards none of the things that are here. However, I accept of your good will; and I admire and commend you, for that you, a man of refined habits, have so easily submitted your manner of living to your necessities. For we, from our childhood, both I and Andrew, my brother, who is also my brother as respects God, not only being brought up in the condition of orphans, but also accustomed to labour through poverty and misfortune, easily bear the discomforts of our present journeys. Whence, if you would obey me, you would allow me, a working man, to fulfil the part of a servant to you.</q></p><h3>Chapter VII. Not to Be Ministered Unto, But to Minister.</h3><p>But I, when I heard this, fell a-trembling and weeping, that such a word should be spoken by a man to whom all the men of this generation are inferior in point of knowledge and piety. But he, seeing me weeping, asked the cause of my tears. Then I said, <q>In what have I sinned so that you have spoken to me such a word?</q> Then Peter answered, <q>If it were wrong of me to speak of being your servant, you were first in fault in asking to be mine.</q> Then I said, <q>The cases are not parallel; for to do this indeed becomes me well; but it is terrible for you, the herald of God, and who savest our souls, to do this to me.</q> Then Peter answered, <q>I should agree with you, but that our Lord, who came for the salvation of all the world, being alone noble above all, submitted to the condition of a servant, that He might persuade us not to be ashamed to perform the ministrations of servants to our brethren, however well-born we may be.</q> Then I said, <q>If I think to overcome you in argument, I am foolish. However, I thank the providence of God, that I have been thought worthy to have you instead of parents.</q></p><h3>Chapter VIII. Family History</h3><p>Then Peter inquired, <q>Are you really, then, alone in your family?</q> Then I answered, <q>There are indeed many and great men, being of the kindred of Cæsar. Wherefore Cæsar himself gave a wife of his own family to my father, who was his foster-brother; and of her three sons of us were born, two before me, who were twins and very like each other, as my father told me. But I scarcely know either them or our mother, but bear about with me an obscure image of them, as through dreams. My mother's name was Mattidia, and my father's, Faustus; and of my brothers one was called Faustinus, and the other Faustinianus. Then after I, their third son, was born, my mother saw a vision—so my father told me— <em>which told her</em>, that unless she immediately took away her twin sons, and left the city of Rome for exile for twelve years, she and they must die by an all-destructive fate.</q></p><h3>Chapter IX. The Lost Ones</h3><p><q>Therefore my father, being fond of his children, supplying them suitably for the journey with male and female servants, put them on board ship, and sent them to Athens with her to be educated, and kept me alone of his sons with him for his comfort; and for this I am very thankful, that the vision had not ordered me also to depart with my mother from the city of Rome. Then, after the lapse of a year, my father sent money to them to Athens, and at the same time to learn how they did. But those who went on this errand did not return. And in the third year, my father being distressed, sent others in like manner with supplies, and they returned in the fourth year with the tidings that they had seen neither my mother nor my brothers, nor had they ever arrived at Athens, nor had they found any trace of any one of those who set out with them.</q></p><h3>Chapter X. The Seeker Lost</h3><p><q>Then my father, hearing this, and being stupefied with excessive grief, and not knowing where to go in quest of them, used to take me with him and go down to the harbour, and inquire of many where any one of them had seen or heard of a shipwreck four years ago. And one turned one place, and another another. Then he inquired whether they had seen the body of a woman with <em>two</em> children cast ashore. And when they told him they had seen many corpses. in many places, my father groaned at the information. But, with his bowels yearning, he asked unreasonable questions, that he might try to search so great an extent of sea. However, he was pardonable, because, through affection towards those whom he was seeking for, he fed on vain hopes. And at last, placing me under guardians, and leaving me at Rome when I was twelve years old, he himself, weeping, went down to the harbour, and went on board ship, and set out upon the search. And from that day till this I have neither received a letter from him, nor do I know whether he be alive or dead. But I rather suspect that he is dead somewhere, either overcome by grief, or perished by shipwreck. And the proof of that is that it is now the twentieth year that I have heard no true intelligence concerning him.</q></p><h3>Chapter XI. The Afflictions of the Righteous</h3><p>But Peter, hearing this, wept through sympathy, and immediately said to the gentlemen who were present: <q>If any worshipper of God had suffered these things, such as this man's father has suffered, he would immediately have assigned the cause of it to be his worship of God, ascribing it to the wicked one. Thus also it is the lot of the wretched Gentiles to suffer; and we worshippers of God know it not. But with good reason I call them wretched, because here they are ensnared, and the hope that is yours they obtain not. For those who in the worship of God suffer afflictions, suffer them for the expiation of their transgressions.</q></p><h3>Chapter XII. A Pleasure Trip</h3><p>When Peter had spoken thus, a certain one amongst us ventured to invite him, in the name of all, that next day, early in the morning, he should sail to Aradus, an island opposite, distant, I suppose, not quite thirty stadia, for the purpose of seeing two pillars of vine-wood that were there, and that were of very great girth. Therefore the indulgent Peter consented, saying, <q>When you leave the boat, do not go many of you together to see the things that you desire to see; for I do not wish that the attention of the inhabitants should be turned to you.</q> And so we sailed, and in short time arrived at the island. Then landing from the boat, we went to the place where the vine-wood pillars were, and along with them we looked at several of the works of Phidias.</p><h3>Chapter XIII. A Woman of a Sorrowful Spirit</h3><p>But Peter alone did not think it worth while to look at the sights that were there; but noticing a certain woman sitting outside before the doors, begging constantly for her support, he said to her, <q>O woman, is any of your limbs defective, that you submit to such disgrace—I mean that of begging,—and do not rather work with the hands which God has given you, and procure your daily food?</q> But she, groaning, answered, <q>Would that I had hands able to work! But now they retain only the form of hands, being dead and rendered useless by my gnawing of them.</q> Then Peter asked her, <q>What is the cause of your suffering so terribly?</q> And she answered, <q>Weakness of soul; and nought else. For if I had the mind of a man, there was a precipice or a pool whence I should have thrown myself, and have been able to rest from my tormenting misfortunes.</q></p><h3>Chapter XIV. Balm in Gilead</h3><p>Then said Peter, <q>What then? Do you suppose, O woman, that those who destroy themselves are freed from punishment? Are not the souls of those who thus die punished with a worse punishment in Hades for their suicide?</q> But she said, <q>Would that I were persuaded that souls are really found alive in Hades; then I should love death, making light of the punishment, that I might see, were it but for an hour, my longed for sons!</q> Then said Peter, <q>What is it that grieves you? I should like to know, O woman. For if you inform me, in return for this favour, I shall satisfy you that souls live in Hades; and instead of precipice or pool, I shall give you a drug, that you may live and die without torment.</q></p><h3>Chapter XV. The Woman's Story</h3><p>Then the woman, not understanding what was spoken ambiguously, being pleased with the promise, began to speak thus:—<q>Were I to speak of my family and my country, I do not suppose that I should be able to persuade any one. But of what consequence is it to you to learn this, excepting only the reason why in my anguish I have deadened my hands by gnawing them? Yet I shall give you an account of myself, so far as it is in your power to hear it. I, being very nobly born, by the arrangement of a certain man in authority, became the wife of a man who was related to him. And first I had twins sons, and afterwards another son. But my husband's brother, being thoroughly mad, was enamoured of wretched me, who exceedingly affected chastity. And I, wishing neither to consent to my lover nor to expose to my husband his brother's love of me, reasoned thus: that I may neither defile myself by the commission of adultery nor disgrace my husband's bed, nor set brother at war with brother, nor subject the whole family, which is a great one, to the reproach of all, as I said. I reasoned that it was best for me to leave the city for some time with my twin children, until the impure love should cease of him who flattered me to my disgrace. The other son, however, I left with his father, to remain for a comfort to him.</q></p><h3>Chapter XVI. The Shipwreck</h3><p><q>However, that matters might be thus arranged, I resolved to fabricate a dream, to the effect that some one stood by me by night, and thus spoke: 'O woman, straightway leave the city with your twin children for some time, until I shall charge you to return hither again; otherwise you immediately shall die miserably, with your husband and all your children.' And so I did. For as soon as I told the false dream to my husband, he being alarmed, sent me off by ship to Athens with my two sons, and with slaves, maids, and abundance of money, to educate the boys, until, said he, it shall please the giver of the oracle that you return to me. But, wretch that I am, while sailing with my children, I was driven by the fury of the winds into these regions, and the ship having gone to pieces in the night, I was wrecked. And all the rest having died, my unfortunate self alone was tossed by a great wave and cast upon a rock; and while I sat upon it in my misery, I was prevented, by the hope of finding my children alive, from throwing myself into the deep then, when I could easily have done it, having my soul made drunk by the waves.</q></p><h3>Chapter XVII. The Fruitless Search</h3><p><q>But when the day dawned, I shouted aloud, and howled miserably, and looked around, seeking for the dead bodies of my hapless children. Therefore the inhabitants took pity on me, and seeing me naked, they first clothed me and then sounded the deep, seeking for my children. And when they found nothing of what they sought, some of the hospitable women came to me to comfort me, and every one told her own misfortunes, that I might obtain comfort from the occurrences of similar misfortunes. But this only grieved me the more for I said that I was not so wicked that I could take comfort from the misfortunes of others. And so, when many of them asked me to accept their hospitality, a certain poor woman with much urgency constrained me to come into her cottage, saying to me, 'Take courage, woman, for my husband, who was a sailor, also died at sea, while he was still in the bloom of his youth; and ever since, though many have asked me in marriage, I have preferred living as a widow, regretting the loss of my husband. But we shall have in common whatever we can both earn with our hands.'</q></p><h3>Chapter XVIII. Trouble Upon Trouble</h3><p><q>And not to lengthen out unnecessary details, I went to live with her, on account of her love to her husband. And not long after, my hands were debilitated by my gnawing of them; and the woman who had taken me in, being wholly seized by some malady, is confined in the house. Since then the former compassion of the women has declined, and I and the woman of the house are both of us helpless. For a long time I have sat here, as you see, begging; and whatever I get I convey to my fellow-sufferer for our support. Let this suffice about my affairs. For the rest, what hinders your fulfilling of your promise to give me the drug, that I may give it to her also, who desires to die; and thus I also, as you said, shall be able to escape from life?</q></p><h3>Chapter XIX. Evasions</h3><p>While the woman thus spoke, Peter seemed to be in suspense on account of many reasonings. But I came up and said, <q>I have been going about seeking you for a long time. And now, what is in hand?</q> But Peter ordered me to lead the way, and wait for him at the boat; and because there was no gainsaying when he commanded, I did as I was ordered. But Peter, as he afterwards related the whole matter to me, being struck in his heart with some slight suspicion, inquired of the woman, saying, <q>Tell me, O woman, your family, and your city, and the names of your children, and presently I shall give you the drug.</q> But she, being put under constraint, and not wishing to speak, yet being eager to obtain the drug, cunningly said one thing for another. And so she said that she was an Ephesian and her husband a Sicilian; and in like manner she changed the names of the three children. Then Peter, supposing that she spoke the truth, said, <q>Alas! O woman, I thought that this day was to bring you great joy, suspecting that you are a certain person of whom I was thinking, and whose affairs I have heard and accurately know.</q> But she adjured him, saying, <q>Tell me, I entreat of you, that I may know if there is among women any one more wretched than myself.</q></p><h3>Chapter XX. Peter's Account of the Matter</h3><p>Then Peter, not knowing that she had spoken falsely, through pity towards her, began to tell her the truth: <q>There is a certain young man in attendance upon me, thirsting after the discourses on religion, a Roman citizen, who told me how that, having a father and two twin brothers, he has lost sight of them all. For,</q> says he, <q>my mother, as my father related to me, having seen a vision, left the city Rome for a time with her twin children, lest she should perish by an evil fate, and having gone away with them, she cannot be found; and her husband, the young man's father, having gone in search of her, he also cannot be found.</q></p><h3>Chapter XXI. A Disclosure</h3><p>While Peter thus spoke, the woman, who had listened attentively, swooned away as if in stupor. But Peter approached her, and caught hold of her, and exhorted her to restrain herself, persuading her to confess what was the matter with her. But she, being powerless in the rest of her body, as through intoxication, turned her <em>head</em> round, being able to sustain the greatness of the hoped for joy, and rubbing her face: <q>Where,</q> said she, <q>is this youth?</q> And he, now seeing through the whole affair, said, <q>Tell me first; for otherwise you cannot see him.</q> Then she earnestly said, <q>I am that youth's mother.</q> Then said Peter, <q>What is his name?</q> And she said, <q>Clement.</q> Then Peter said, <q>It is the same, and he it was that spoke to me a little while ago, whom I ordered to wait for me in the boat. And she, falling at Peter's feet, entreated him to make haste to come to the boat. Then Peter, <q>If you will keep terms with me, I shall do so.</q> Then she said, <q>I will do anything; only show me my only child. For I shall seem to see in him my two children who died here.</q> Then Peter said, <q>When ye see him, be quiet, until we depart from the island.</q> And she said, <q>I will.</q></q></p><h3>Chapter XXII. The Lost Found</h3><p>Peter, therefore, took her by the hand, and led her to the boat. But I, when I saw him leading the woman by the hand, laughed, and approaching, offered to lead her instead of him, to his honour. But as soon as I touched her hand, she gave a motherly shout, and embraced me violently, and eagerly kissed me as her son. But I, being ignorant of the whole affair, shook her off as a madwoman. But, through my respect for Peter, I checked myself.</p><h3>Chapter XXIII. Reward of Hospitality</h3><p>But Peter said, <q>Alas! What are you doing, my son Clement, shaking off your real mother?</q> But I, when I heard this, wept, and falling down by my mother, who had fallen, I kissed her. For as soon as this was told me, I in some way recalled her appearance indistinctly. Then great crowds ran together to see the beggar woman, telling one another that her son had recognised her, and that he was a man of consideration. Then, when we would have straightway left the island with my mother, she said to us, <q>My much longed-for son, it is right that I should bid farewell to the woman who entertained me, who, being poor and wholly debilitated, lies in the house.</q> And Peter hearing this, and all the multitude who stood by, admired the good disposition of the woman. And immediately Peter ordered some persons to go and bring the woman on her couch. And as soon as the couch was brought and set down, Peter said, in the hearing of the whole multitude, <q>If I be a herald of the truth, in order to the faith of the bystanders, that they may know that there is one God, who made the world, let her straightway rise whole.</q> And while Peter was still speaking, the woman arose healed, and fell down before Peter, and kissed her dear associate, and asked her what it all meant. Then she briefly detailed to her the whole business of the recognition, to the astonishment of the hearers. Then also my mother, seeing her hostess cured, entreated that she herself also might obtain healing. And his placing his hand upon her, cured her also.</p><h3>Chapter XXIV. All Well Arranged</h3><p>And then Peter having discoursed concerning God and the service accorded to Him, he concluded as follows: <q>If any one wishes to learn these things accurately, let him come to Antioch, where I have resolved to remain some length of time, and learn the things that pertain to his salvation. For if you are familiar with leaving your country for the sake of trading or of warfare, and coming to far-off places, you should not be unwilling to go three days' journey for the sake of eternal salvation.</q> Then, after the address of Peter, I presented the woman who had been healed, in the presence of all the multitude, with a thousand drachmas, for her support, giving her in charge to a certain good man, who was the chief man of the city, and who of his own accord joyfully undertook the charge. Further, having distributed money amongst many other women, and thanked those who at any time had comforted my mother, I sailed away to Antaradus, along with my mother, and Peter, and the rest of our companions; and thus we proceeded to our lodging.</p><h3>Chapter XXV. Philanthropy and Friendship</h3><p>And when we were arrived and had partaken of food, and given thanks according to our custom, there being still time, I said to Peter: <q>My lord Peter, my mother has done a work of philanthropy in remembering the woman her hostess.</q> And Peter answered, <q>Have you indeed, O Clement, thought truly that your mother did a work of philanthropy in respect of her treatment of the woman who took her in after her shipwreck, or have you spoken this word by way of greatly complimenting your mother? But if you spoke truly, and not by way of compliment, you seem to me not to know what the greatness of philanthropy is, which is affection towards any one whatever in respect of his being a man, apart from physical persuasion. But not even do I venture to call the hostess who received your mother after her shipwreck, philanthropic; for she was impelled by pity, and persuaded to become the benefactress of a woman who had been shipwrecked, who was grieving for her children,—a stranger, naked, destitute, and greatly deploring her misfortunes. When, therefore, she was in such circumstances, who that saw her, though he were impious, could but pity her? So that it does not seem to me that even the stranger-receiving woman did a work of philanthropy, but to have been moved to assist her by pity for her innumerable misfortunes. And how much more is it true of your mother, than when she was in prosperous circumstances and requited her hostess, she did a deed, not of philanthropy, but of friendship! For there is much difference between friendship and philanthropy, because friendship springs from requital. But philanthropy, apart from physical persuasion, loves and benefits every man as he is a man. If, therefore, while she pitied her hostess, she also pitied and did good to her enemies who have wronged her, she would be philanthropic; but if, on one account she is friendly or hostile, and on another account is hostile or friendly, such an one is the friend or enemy of some quality, not of man as man.</q></p><h3>Chapter XXVI. What is Philanthropy</h3><p>Then I answered, <q>Do you not think, then, that even the stranger-receiver was philanthropic, who did good to a stranger whom she did not know?</q> Then Peter said, <q>Compassionate, indeed, I can call her, but I dare not call her philanthropic, just as I cannot call a mother philoteknic, for she is prevailed on to have an affection for them by her pangs, and by her rearing of them. As the lover also is gratified by the company and enjoyment of his mistress, and the friend by return of friendship, so also the compassionate man by misfortune. However the compassionate man is near to the philanthropic, in that he is impelled, apart from hunting after the receipt of anything, to do the kindness. But he is not yet philanthropic.</q> Then I said, <q>By what deeds, then, can any one be philanthropic?</q> And Peter answered, <q>Since I see that you are eager to hear what is the work of philanthropy, I shall not object to telling you. He is the philanthropic man who does good even to his enemies. And that it is so, listen: Philanthropy is masculo-feminine; and the feminine part of it is called compassion, and the male part is named love to our neighbour. But every man is neighbour to every man, and not merely this man or that; for the good and the bad, the friend and the enemy, are alike men. It behooves, therefore, him who practises philanthropy to be an imitator of God, doing good to the righteous and the unrighteous, as God Himself vouchsafes His sun and His heavens to all in the present world. But if you will do good to the good, but not to the evil, or even will punish them, you undertake to do the work of a judge, you do not strive to hold by philanthropy.</q></p><h3>Chapter XXVII. Who Can Judge</h3><p>Then I said, <q>Then even God, who, as you teach us, is at some time to judge, is not philanthropic.</q> Then said Peter, <q>You assert a contradiction; for because He shall judge, on that very account He is philanthropic. For he who loves and compassionates those who have been wronged, avenges those who have wronged them.</q> Then I said, <q>If, then, I also do good to the good, and punish the wrong-doers in respect of their injuring men, am I not philanthropic?</q> And Peter answered, <q>If along with knowledge you had also authority to judge, you would do this rightly on account of your having received authority to judge those whom God made, and on account of your knowledge infallibly justifying some as the righteous, and condemning some as unrighteous.</q> Then I said, <q>You have spoken rightly and truly; for it is impossible for any one who has not knowledge to judge rightly. For sometimes some persons seem good, though they perpetrate wickedness in secret, and some good persons are conceived to be bad through the accusation of their enemies. But even if one judges, having the power of torturing and examining, not even so should he altogether judge righteously. For some persons, being murderers, have sustained the tortures, and have come off as innocent; while others, being innocent, have not been able to sustain the tortures, but have confessed falsely against themselves, and have been punished as guilty.</q></p><h3>Chapter XXVIII. Difficulty of Judging</h3><p>Then said Peter, <q>These things are ordinary: now hear what is greater. There are some men whose sins or good deeds are partly their own, and partly those of others; but it is right that each one be punished for his own sins, and rewarded for his own merits. But it is impossible for any one except a prophet, who alone has omniscience, to know with respect to the things that are done by any one, which are his own, and which are not; for all are seen as done by him.</q> Then I said, <q>I would learn how some of men's wrong-doings or right-doings are their own, and some belong to others.</q></p><h3>Chapter XXIX. Sufferings of the Good</h3><p>Then Peter answered, <q>The prophet of the truth has said, 'Good things must needs come, and blessed, said he, is he by whom they come; in like manner evil things must needs come, but woe to him through whom they come.' But if evil things come by means of evil men, and good things are brought by good men, it must needs be in each man as his own to be either good or bad, and proceeding from what he has proposed, in order to the coming of the subsequent good or evil, which, being of his own choice, are not arranged by the providence of God to come from him. This being so, this is the judgment of God, that he who, as by a combat, comes through all misfortune and is found blameless, he is deemed worthy of eternal life; for those who by their own will continue in goodness, are tempted by those who continue in evil by their own will, being persecuted, hated, slandered, plotted against, struck, cheated, accused, tortured, disgraced,—suffering all these things by which it seems reasonable that they should be enraged and stirred up to vengeance.</q></p><h3>Chapter XXX. Offences Must Come</h3><p><q>But the Master knowing that those who wrongfully do these things are guilty by means of their former sins, and that the spirit of wickedness works these things by means of the guilty, has counselled to compassionate men, as they are men, and as being the instruments of wickedness through sin; <em>and this counsel</em> He has given to His disciples as claiming philanthropy, and, as much as in us lies, to absolve the wrong-doers from condemnation, that, as it were, the temperate may help the drunken, by prayers, fastings, and benedictions, not resisting, not avenging, lest they should compel them to sin more. For when a person is condemned by any one to suffer, it is not reasonable for him to be angry with him by whose means the suffering comes; for he ought to reason, that if he had not ill-used him, yet because he was to be ill-used, he must have suffered it by means of another. Why, then, should I be angry with the dispenser, when I was condemned at all events to suffer? But yet, further: if we do these same things to the evil on pretence of revenge, we who are good do the very things which the evil do, excepting that they do them first, and we second; and, as I said, we ought not to be angry, as knowing that in the providence of God, the evil punish the good. Those, therefore, who are bitter against their punishers, sin, as disdaining the messengers of God; but those who honour them, and set themselves in opposition to those who think to injure them, are pious towards God who has thus decreed.</q></p><h3>Chapter XXXI. Howbeit, They Meant It Not.</h3><p>To this I answered, <q>Those, therefore, who do wrong are not guilty, because they wrong the just by the judgment of God.</q> Then Peter said, <q>They indeed sin greatly, for they have given themselves to sin. Wherefore knowing this, <em>God</em> chooses from among them <em>some</em> to punish those who righteously repented of their former sins, that the evil things done by the just before their repentance may be remitted through this punishment. But to the wicked who punish and desire to ill-use them, and will not repent, it is permitted to ill-use the righteous for the filling up of their own punishment. For without the will of God, not even a sparrow can fall into a girn. Thus even the hairs of the righteous are numbered by God.</q></p><h3>Chapter XXXII. The Golden Rule</h3><p><q>But he is righteous who for the sake of what is reasonable fights with nature. For example, it is natural to all to love those who love them. But the righteous man tries also to love his enemies and to bless those who slander him, and even to pray for his enemies, and to compassionate those who do him wrong. Wherefore also he refrains from doing wrong, and blesses those who curse him, pardons those who strike him, and submits to those who persecute him, and salutes those who do not salute him, shares such things as he has with those who have not, persuades him that is angry with him, conciliates his enemy, exhorts the disobedient, instructs the unbelieving, comforts the mourner; being distressed, he endures; being ungratefully treated, he is not angry. But having devoted himself to love his neighbour as himself, he is not afraid of poverty, but becomes poor by sharing his possessions with those who have none. But neither does he punish the sinner. For he who loves his neighbour as himself, as he knows that when he has sinned he does not wish to be punished, so neither does he punish those who sin. And as he wishes to be praised, and blessed, and honoured, and to have all his sins forgiven, thus he does to his neighbour, loving him as himself. In one word, what he wishes for himself, he wishes also for his neighbour. For this is the law of God and of the prophets this is the doctrine of truth. And this perfect love towards every man is the male part of philanthropy, but the female part of it is compassion; that is, to feed the hungry, to give drink to the thirsty, to clothe the naked, to visit the sick, to take in the stranger, to show herself to, and help to the utmost of her power, him who is in prison, and, in short, to have compassion on him who is in misfortune.</q></p><h3>Chapter XXXIII. Fear and Love</h3><p>But I, hearing this, said: <q>These things, indeed, it is impossible to do; but to do good to enemies, bearing all their insolences, I do not think can possibly be in human nature.</q> Then Peter answered: <q>You have said truly; for philanthropy, being the cause of immortality, is given for much.</q> Then I said, <q>How then is it possible to get it in the mind?</q> Then Peter answered: <q>O beloved Clement, the way to get it is this: if any one be persuaded that enemies, ill-using for a time those whom they hate, become the cause to them of deliverances from eternal punishment; and immediately he will ardently love them as benefactors. But the way to get it, O dear Clement, is but one, which is the fear of God. For he who fears God cannot indeed from the first love his neighbour as himself; for such an order does not occur to the soul. But by the fear of God he is able to do the things of those who love; and thus, while he does the deeds of love, the bride Love is, as it were, brought to the bridegroom Fear. And thus this bride, bringing forth philanthropic thoughts, makes her possessor immortal, as an accurate image of God, which cannot be subject in its nature to corruption.</q> Thus while he expounded to us the doctrine of philanthropy, the evening having set in, we turned to sleep.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Dalawang Pangkat</h3><p>Kaya nang matapos ang tatlong buwan at malapit nang umalis si Pedro mula sa Tripolis patungong Antioquia ng Syria, inutusan niya ang labindalawa na mauna sa kanya nang tig-dalawa, upang sa bawat lungsod na daraanan nila ay maghanda para sa kanyang pagdating. At nang gawin na niya ang kaayusang ito, tinipon niya kaming lahat at sinabi: <q>Mga kapatid at kasama sa aking paglilingkod, huwag kayong magdamdam na pinauuna ko ang ilan sa inyo, sapagkat hindi ito dahil mas mababa ang pagtingin ko sa inyo kaysa sa mga nananatili sa akin, kundi upang ang bawat isa ay makagawa ng bahagi niyang paglilingkod. Sapagkat ang ilan ay kailangang mauna upang maghanda sa mga lungsod, at ang ilan naman ay manatili sa akin upang tumulong sa aking pangangailangan.</q></p><h3>Kabanata II. Pag-ibig ng mga Mangangaral at ng Kanilang mga Napagbagong-loob</h3><p><q>Sapagkat hindi lamang ang mga mangangaral ang umiibig sa mga taong tinuturuan nila, kundi yaong mga napagbagong-loob ay umiibig din sa mga nagturo sa kanila. Kaya kung ang lahat sa inyo ay mananatili sa akin, yaong mga lungsod na hinihintay tayong dumating ay mawawalan ng mga tagapagpauna na maghahanda sa kanila; at kung lahat naman kayo ay mauuna, ako’y mawawalan ng mga kasama sa paglalakbay at paglilingkod. Kaya kailangang ang ilan ay mauna at ang ilan ay manatili. At huwag isipin ng sinumang ipinadadala ko na napagkakaitan siya ng aking piling; sapagkat ang pinadadala alang-alang sa gawain ay naroroon sa akin sa pamamagitan ng alaala at pag-ibig, kahit hiwalay sa katawan.</q></p><h3>Kabanata III. Pagpapasakop</h3><p>Nang marinig ito, sinabi ng mga inutusang mauna: <q>Hindi kami nalulungkot, panginoon, dahil sa iyong utos. Sapagkat kung kailangan naming mauna sa iyo nang dalawang araw lamang, maliit iyon kung ihahambing sa mga isusugo nang mas malayo pa at kailangang maghintay sa iyo nang mas matagal sa bawat lungsod, na higit na malulungkot dahil mas matagal silang mawawalan ng paningin sa iyong pinananabikang mukha. At kami man ay hindi gaanong nalulungkot kaysa sa kanila, ngunit hindi kami sumasalungat sapagkat iniuutos mo ito alang-alang sa kapakinabangan.</q> Pagkasabi nito, nauna sila, at iniatas sa kanila na sa unang hintuan ay turuan nila ang karamihang kasama nila na pumasok sa mga lungsod nang magkakahiwalay.</p><h3>Kabanata IV. Kagalakan ni Clemente</h3><p>Kaya nang makaalis na sila, ako, si Clemente, ay labis na nagalak sapagkat iniutos niyang manatili ako sa kanya. Kaya sinabi ko: <q>Nagpapasalamat ako sa Diyos na hindi mo ako ipinadala gaya ng iba, sapagkat mamamatay ako sa dalamhati.</q> Ngunit sinabi niya: <q>Ano? Kung dumating ang pagkakataong kailangan kang isugo alang-alang sa pagtuturo, dahil lamang mahihiwalay ka sa akin nang kaunting panahon at iyon ay para sa kapaki-pakinabang na layunin, mamamatay ka ba? Hindi ba mas nararapat na itanim mo sa sarili ang tungkuling tiisin nang may kagalakan ang mga bagay na inayos para sa iyo dahil sa pangangailangan? At hindi mo ba alam na ang magkakaibigan ay kapiling ng isa’t isa sa kanilang alaala kahit magkahiwalay sa katawan, samantalang may iba namang magkasama sa katawan ngunit malayo sa kanilang kaibigan sa kaluluwa dahil sa kawalan ng alaala?</q></p><h3>Kabanata V. Ang Tungkulin ni Clemente sa Paglilingkod</h3><p>Sumagot ako: <q>Huwag mong isipin, panginoon ko, na titiisin ko ang dalamhating iyon nang walang mabuting dahilan. Sapagkat ikaw ang pinanghahawakan kong kapalit ng lahat—ama, ina, mga kapatid, mga kamag-anak—ikaw na sa pamamagitan ng Diyos ang naging daan upang matamo ko ang katotohanang nagliligtas. Kaya sa pagkakaroon sa iyo bilang kapalit ng lahat ay mayroon akong pinakamalaking kaaliwan. Bukod dito, natatakot ako sa likas na pagnanasa ng aking kabataan. Nag-aalala ako na kung maiiwan akong malayo sa iyo—ako na bata pa at ngayo’y may pasyang hindi kita maaaring talikuran nang hindi nagkakasala laban sa Diyos—baka madaig ako ng pagnanasa. Kaya mas mabuti at higit na ligtas para sa akin na manatili sa iyo, yamang makatuwiran nang nakatuon ang aking isip sa paggalang. Kaya hinihiling kong lagi akong manatili sa iyo. Natatandaan ko rin ang sinabi mo sa Caesarea: ‘Kung may nagnanais maglakbay na kasama ko, lumakbay siyang maka-Diyos.’ At sa ‘maka-Diyos’ ang ibig mong sabihin ay yaong mga nakatalaga sa pagsamba sa Diyos ay huwag magdulot ng dalamhati kaninuman alang-alang sa Diyos, gaya ng pag-iwan sa mga magulang, tapat na asawa, o iba pa. Kaya sa lahat ng bagay ay angkop akong maging kasama mo sa paglalakbay; at kung nais mong igawad sa akin ang pinakamalaking pabor, pahintulutan mo akong gumanap ng mga tungkulin ng isang lingkod.</q></p><h3>Kabanata VI. Pagiging Matipid ni Pedro</h3><p>Nang marinig ito ni Pedro, ngumiti siya at sinabi: <q>Ano sa palagay mo, O Clemente? Hindi mo ba nakikitang dahil mismo sa pangangailangan ay inilagay ka na sa kalagayan ng aking lingkod? Sapagkat sino pa ang mag-aalaga sa napakarami kong mariringal na tunika, sa lahat ng pagpapalit ko ng mga singsing at sandalyas? At sino ang maghahanda ng masasarap at masining na pagkain, na dahil sa sari-sari nilang uri ay nangangailangan ng maraming bihasang tagapagluto, at ng lahat ng bagay na hinahanap nang may malaking pagsisikap at inihahanda para sa panlasa ng mga mahihinang lalaking mahilig sa karangyaan na para bang para sa isang mabangis na hayop? Ngunit marahil ay naisip mong piliing gawin ito nang hindi mo nauunawaan ang paraan ng aking pamumuhay: tinapay at mga olibo lamang ang kinakain ko, at bihira ang mga gulay; at ito lamang ang aking tunika at balabal na isinusuot ko. Wala akong pangangailangan sa alinman sa mga iyon ni sa iba pa; sapagkat maging sa mga bagay na ito ay sagana na ako. Sapagkat ang aking isip, na nakikita ang lahat ng walang-hanggang mabubuting bagay na naroon, ay hindi nagpapahalaga sa alinman sa mga bagay na narito. Gayunman, tinatanggap ko ang iyong mabuting kalooban at hinahangaan at pinupuri kita dahil ikaw, na nasanay sa marangyang pamumuhay, ay napakadaling nakaayon ang iyong pamumuhay sa mga pangangailangan. Sapagkat mula pagkabata, ako at si Andres na aking kapatid—na kapatid ko rin tungkol sa Diyos—ay hindi lamang lumaking parang mga ulila, kundi nasanay rin sa paggawa dahil sa kahirapan at kasawian; kaya madali naming natitiis ang hirap ng mga paglalakbay na ito. Kaya kung susunod ka sa akin, pahintulutan mo akong, bilang isang taong sanay gumawa, na gampanan ang bahagi ng lingkod para sa iyo.</q></p><h3>Kabanata VII. Hindi Upang Paglingkuran Kundi Upang Maglingkod</h3><p>Nang marinig ko ito, nanginig ako at napaiyak, sapagkat ang gayong salita ay sinabi ng isang taong walang kapantay sa kaalaman at kabanalan sa salinlahing ito. Nang makita niya akong umiiyak, tinanong niya ang dahilan ng aking mga luha. Sinabi ko: <q>Sa ano ako nagkasala upang magsalita ka sa akin nang gayon?</q> Sumagot si Pedro: <q>Kung mali para sa akin ang magsalitang ako’y magiging lingkod mo, ikaw ang unang nagkamali nang hilingin mong maging lingkod ko.</q> Sinabi ko: <q>Hindi magkatulad ang kaso. Ang gawin ko iyon ay lubhang angkop sa akin; ngunit kakila-kilabot na gawin mo iyon sa akin—ikaw na tagapagbalita ng Diyos at tagapagligtas ng aming mga kaluluwa.</q> Sumagot si Pedro: <q>Sasang-ayon sana ako sa iyo kung hindi dahil ang ating Panginoon, na dumating para sa kaligtasan ng buong sanlibutan at Siyang tanging higit na marangal sa lahat, ay nagpakababa sa kalagayan ng isang lingkod upang hikayatin tayong huwag ikahiya ang paglilingkod sa ating mga kapatid, gaano man kataas ang ating pinagmulan.</q> Sinabi ko: <q>Kung iniisip kong matatalo kita sa pangangatwiran, hangal ako. Gayunman, nagpapasalamat ako sa pagkalinga ng Diyos na itinuring akong karapat-dapat na magkaroon sa iyo bilang kapalit ng mga magulang.</q></p><h3>Kabanata VIII. Kasaysayan ng Pamilya</h3><p>Pagkatapos ay nagtanong si Pedro: <q>Ikaw lamang ba talaga sa inyong pamilya?</q> Sumagot ako: <q>Marami ngang dakilang tao sa aming angkan, na kamag-anak ni Caesar. Kaya si Caesar mismo ang nagbigay sa aking ama, na kanyang kapatid sa pag-aalaga, ng isang asawa mula sa sarili niyang pamilya. Sa kanya ay ipinanganak kaming tatlong anak na lalaki: ang dalawang nauna sa akin ay kambal at lubhang magkamukha, ayon sa sinabi ng aking ama. Ngunit halos hindi ko nakikilala sila ni ang aming ina; malabo lamang ang larawan nila sa aking alaala na para bang mula sa panaginip. Mattidia ang pangalan ng aking ina at Faustus ang aking ama. Sa aking mga kapatid, ang isa ay Faustinus at ang isa ay Faustinianus. Pagkatapos akong ipanganak bilang ikatlong anak, nakakita ang aking ina ng isang pangitain—ayon sa sinabi sa akin ng aking ama—<em>na nagsabi sa kanya</em> na kung hindi niya agad dadalhin ang kanyang kambal na mga anak at aalis sa lungsod ng Roma para sa labindalawang taong pagkakatapon, siya at sila ay mamamatay sa isang kapahamakang lilipol sa lahat.</q></p><h3>Kabanata IX. Ang mga Nawawala</h3><p><q>Kaya ang aking ama, dahil mahal niya ang kanyang mga anak, ay naglaan nang sapat para sa kanilang paglalakbay ng mga aliping lalaki at babae, isinakay sila sa barko, at ipinadala kasama ng aking ina sa Athens upang turuan. Ako lamang sa kanyang mga anak ang pinanatili niyang kasama bilang kaaliwan, at lubos akong nagpapasalamat na hindi rin ako iniutos ng pangitain na umalis sa lungsod ng Roma kasama ng aking ina. Pagkaraan ng isang taon, nagpadala ang aking ama ng pera sa kanila sa Athens at kasabay nito’y ipinatanong ang kanilang kalagayan. Ngunit hindi bumalik ang mga inutusang iyon. Sa ikatlong taon, dahil nag-aalala ang aking ama, nagpadala siya muli ng iba na may mga panustos; bumalik sila sa ikaapat na taon na may balitang hindi nila nakita ang aking ina o mga kapatid, ni nakarating kailanman ang mga iyon sa Athens, ni nakatagpo sila ng anumang bakas ng mga kasama nilang umalis.</q></p><h3>Kabanata X. Nawala Rin ang Naghahanap</h3><p><q>Nang marinig ito ng aking ama, natigilan siya sa matinding dalamhati at, hindi alam kung saan sila hahanapin, madalas niya akong isama sa daungan at magtanong sa marami kung saan may nakakita o nakarinig ng pagkawasak ng barko apat na taon na ang nakararaan. Iba-iba ang itinuro ng bawat isa. Pagkatapos ay tinatanong niya kung may nakakita sa bangkay ng isang babae na may <em>dalawang</em> anak na napadpad sa pampang. Nang sabihin nilang marami silang nakitang bangkay sa iba’t ibang lugar, napabuntong-hininga ang aking ama sa balita. Ngunit dahil sabik ang kanyang puso, nagtatanong siya ng mga halos imposibleng bagay upang subukang hanapin ang napakalawak na dagat. Gayunman, mapapatawad siya sapagkat dahil sa pagmamahal sa mga hinahanap niya ay kumapit siya sa mga walang-katiyakang pag-asa. Sa huli, inilagay niya ako sa pangangalaga ng mga tagapag-alaga at iniwan sa Roma nang ako’y labindalawang taong gulang; at siya mismo, umiiyak, ay bumaba sa daungan, sumakay sa barko, at umalis upang maghanap. Mula sa araw na iyon hanggang ngayon ay hindi ako nakatanggap ni isang liham mula sa kanya, ni hindi ko alam kung buhay pa siya o patay na. Ngunit mas pinaghihinalaan kong patay na siya saanman—maaaring dinaig ng dalamhati o napahamak sa pagkawasak ng barko. Patunay nito na ngayo’y ikadalawampung taon na mula nang makarinig ako ng anumang tiyak na balita tungkol sa kanya.</q></p><h3>Kabanata XI. Mga Paghihirap ng mga Matuwid</h3><p>Nang marinig ito ni Pedro, napaiyak siya sa pakikiramay at agad sinabi sa mga ginoong naroroon: <q>Kung ang isang sumasamba sa Diyos ay dumanas ng mga bagay na dinanas ng ama ng taong ito, agad niyang iuugnay ang dahilan nito sa kanyang pagsamba sa Diyos at ibibintang iyon sa masama. Gayunman, ang kaparehong mga paghihirap ay dumarating din sa mga kaawa-awang Hentil, at hindi natin iyon nalalaman bilang mga sumasamba sa Diyos. Ngunit may mabuting dahilan kung bakit tinatawag ko silang kaawa-awa: dito sila nabibitag, at hindi nila nakakamit ang pag-asang taglay ninyo. Sapagkat ang mga nagdurusa habang nasa pagsamba sa Diyos ay dumaranas ng mga paghihirap na iyon para sa paglilinis ng kanilang mga paglabag.</q></p><h3>Kabanata XII. Isang Lakbay para sa Kasiyahan</h3><p>Pagkasabi ni Pedro nito, may isa sa amin na nangahas, sa ngalan ng lahat, na anyayahan siyang kinaumagahan ay maglayag patungong Aradus, isang pulong nasa tapat at, sa palagay ko, hindi hihigit sa tatlumpung stadia ang layo, upang makita ang dalawang haliging yari sa kahoy ng baging na naroon at napakalalaki ang kabilugan. Pumayag ang mapagbigay na si Pedro at sinabi: <q>Kapag bumaba kayo sa bangka, huwag kayong magpunta nang maramihan upang tingnan ang mga bagay na nais ninyong makita; ayaw kong mapukaw sa inyo ang pansin ng mga naninirahan doon.</q> Kaya naglayag kami at sa maikling panahon ay nakarating sa pulo. Nang makababa mula sa bangka, pumunta kami sa kinaroroonan ng mga haliging kahoy ng baging, at kasabay ng mga iyon ay tiningnan namin ang ilan sa mga gawa ni Phidias.</p><h3>Kabanata XIII. Isang Babaeng Puspos ng Dalamhati</h3><p>Ngunit si Pedro lamang ang hindi nag-akalang karapat-dapat pag-ukulan ng pansin ang mga tanawing naroon. Napansin niya ang isang babaeng nakaupo sa labas sa harap ng mga pintuan, palaging namamalimos para sa kanyang ikabubuhay, at sinabi niya rito: <q>O babae, may kapansanan ba ang alinman sa iyong mga sangkap kaya tinitiis mo ang ganitong kahihiyan—ang ibig kong sabihin ay pamamalimos—at hindi ka sa halip gumawa sa pamamagitan ng mga kamay na ibinigay sa iyo ng Diyos upang makakuha ng pang-araw-araw mong pagkain?</q> Ngunit humihibik siyang sumagot: <q>Sana’y mayroon akong mga kamay na kayang gumawa! Ngunit ngayon ay anyo na lamang ng mga kamay ang natitira sa mga ito, sapagkat namatay at nawalan ng gamit dahil sa pagkagat ko sa mga iyon.</q> Tinanong siya ni Pedro: <q>Ano ang sanhi ng gayon kalubha mong pagdurusa?</q> Sumagot siya: <q>Kahinaan ng kaluluwa, at wala nang iba. Sapagkat kung taglay ko ang tapang ng isang lalaki, may bangin o lawa sana kung saan naihagis ko na ang aking sarili at nakapagpahinga sa nagpapahirap kong mga kasawian.</q></p><h3>Kabanata XIV. Balsamo sa Gilead</h3><p>Sinabi ni Pedro: <q>Ano, kung gayon? Inaakala mo ba, O babae, na ang mga pumapatay sa sarili ay napalalaya sa kaparusahan? Hindi ba ang mga kaluluwa ng mga namamatay nang gayon ay pinarurusahan sa Hades ng mas mabigat na parusa dahil sa kanilang pagpapakamatay?</q> Ngunit sinabi niya: <q>Sana’y makumbinsi akong tunay ngang natatagpuang buhay ang mga kaluluwa sa Hades; kung gayon ay iibigin ko ang kamatayan at hindi ko pahahalagahan ang kaparusahan, upang makita ko man lamang nang isang oras ang aking mga pinananabikang anak!</q> Sinabi ni Pedro: <q>Ano ang nagpapadalamhati sa iyo? Nais kong malaman, O babae. Sapagkat kung sasabihin mo sa akin, bilang kapalit ng kabutihang ito ay kukumbinsihin kitang buhay ang mga kaluluwa sa Hades; at sa halip na bangin o lawa, bibigyan kita ng gamot upang mabuhay at mamatay ka nang walang paghihirap.</q></p><h3>Kabanata XV. Kuwento ng Babae</h3><p>Ang babae, na hindi naunawaan ang malabong pagkakasabi at natuwa sa pangako, ay nagsimulang magsalita nang ganito: <q>Kung sasabihin ko ang tungkol sa aking angkan at bansa, sa palagay ko’y hindi ko mahihikayat ang sinuman na maniwala. Ngunit ano ang kabuluhan sa iyo ng malaman iyon, maliban sa dahilan kung bakit sa tindi ng aking dalamhati ay pinamanhid ko ang aking mga kamay sa pamamagitan ng pagkagat sa mga iyon? Gayunman, isasalaysay ko sa iyo ang aking sarili hanggang sa kaya mong pakinggan. Ako’y ipinanganak sa napakataas na angkan at, sa pagsasaayos ng isang makapangyarihang tao, naging asawa ako ng isang lalaking kamag-anak niya. Una akong nagkaroon ng kambal na mga anak na lalaki, at pagkatapos ay isa pang anak. Ngunit ang kapatid ng aking asawa, na lubos na nabaliw, ay umibig sa kaawa-awang ako na lubhang mapag-ingat sa kalinisan. At ako, na ayaw sumang-ayon sa umiibig sa akin ngunit ayaw ring ibunyag sa aking asawa ang pag-ibig sa akin ng kanyang kapatid, ay nangatuwiran nang ganito: upang hindi ko dungisan ang sarili sa pangangalunya, ni lapastanganin ang higaan ng aking asawa, ni pag-awayin ang magkapatid, ni ilagay ang buong malaking pamilya sa kahihiyan, gaya ng sinabi ko, inisip kong pinakamainam na umalis muna sa lungsod kasama ng kambal kong mga anak hanggang humupa ang maruming pag-ibig ng taong nambobola sa akin tungo sa aking kahihiyan. Ngunit iniwan ko sa kanyang ama ang isa pang anak upang manatiling kaaliwan niya.</q></p><h3>Kabanata XVI. Ang Pagkawasak ng Barko</h3><p><q>Upang maisaayos ang mga bagay nang gayon, nagpasiya akong gumawa ng kathang panaginip: na may isang tumayo sa tabi ko sa gabi at nagsabi, ‘O babae, agad mong lisanin ang lungsod kasama ng iyong kambal na mga anak sa loob ng ilang panahon, hanggang utusan kitang bumalik dito; kung hindi, agad kayong mamamatay nang kaawa-awa—ikaw, ang iyong asawa, at lahat ng inyong mga anak.’ At ginawa ko iyon. Nang sabihin ko sa aking asawa ang huwad na panaginip, natakot siya at ipinadala ako sa barko patungong Athens kasama ng aking dalawang anak, mga aliping lalaki at babae, at saganang salapi upang pag-aralin ang mga bata, hanggang—ayon sa sabi niya—ikalugod ng nagbigay ng pahayag na makabalik ka sa akin. Ngunit ako, kaawa-awa, habang naglalayag kasama ng aking mga anak, ay itinaboy ng bagsik ng hangin patungo sa mga dakong ito; at nang magkabiyak-biyak ang barko sa gabi, nalunod kami. Namatay ang lahat ng iba pa, at ako lamang na kaawa-awa ang itinapon ng isang malaking alon at napadpad sa isang bato. Habang nakaupo roon sa aking paghihirap, ang pag-asang matagpuan kong buhay ang aking mga anak ang pumigil sa akin na ihagis noon ang sarili sa kailaliman, nang madali ko sanang nagawa iyon, bagaman tila nalasing ng mga alon ang aking kaluluwa.</q></p><h3>Kabanata XVII. Ang Walang-Bungang Paghahanap</h3><p><q>Nang magbukang-liwayway, sumigaw ako nang malakas, humagulgol nang kaawa-awa, at tumingin sa paligid upang hanapin ang mga bangkay ng aking kapus-palad na mga anak. Naawa sa akin ang mga naninirahan doon; nang makita akong hubad, dinamitan muna nila ako at saka sinuyod ang kailaliman sa paghahanap sa aking mga anak. Nang wala silang matagpuan sa hinahanap, lumapit sa akin ang ilang mapagpatuloy na babae upang aliwin ako, at bawat isa ay nagsalaysay ng sarili niyang mga kasawian upang magkaroon ako ng kaaliwan mula sa pagkakatulad ng aming mga paghihirap. Ngunit lalo lamang akong nalungkot, sapagkat sinabi kong hindi ako gayon kasama upang makatagpo ng kaaliwan sa mga kasawian ng iba. At nang marami sa kanila ang mag-anyaya sa akin na tumuloy sa kanilang tahanan, isang mahirap na babae ang mariing humikayat sa aking pumunta sa kanyang munting bahay. Sinabi niya sa akin, ‘Lakasan mo ang loob mo, babae, sapagkat ang aking asawa na isang mandaragat ay namatay rin sa dagat habang nasa kasibulan pa ng kabataan. Mula noon, kahit marami ang humiling na pakasalan ako, pinili kong mamuhay bilang biyuda habang ipinagdalamhati ang pagkawala ng aking asawa. Pagsasaluhan natin anuman ang kaya nating kitain sa pamamagitan ng ating mga kamay.’</q></p><h3>Kabanata XVIII. Sunod-sunod na Kasawian</h3><p><q>At upang hindi na pahabain ang mga di-kailangang detalye, tumira ako sa kanya dahil sa pag-ibig niya sa kanyang asawa. Hindi nagtagal, nanghina ang aking mga kamay dahil sa pagkagat ko sa mga iyon; at ang babaeng tumanggap sa akin ay lubusang dinapuan ng isang karamdaman at nakaratay sa bahay. Mula noon ay humina ang dating habag ng mga babae, at kapwa kami walang magawa—ako at ang babaeng may-ari ng bahay. Matagal na akong nakaupo rito, gaya ng nakikita mo, at namamalimos; at anumang makuha ko ay dinadala ko sa kasama kong nagdurusa para sa aming ikabubuhay. Sapat na ito tungkol sa aking kalagayan. Tungkol naman sa iba, ano ang pumipigil sa iyo na tuparin ang pangako mong ibibigay sa akin ang gamot upang maibigay ko rin sa kanya, na nais ding mamatay; at sa gayon, gaya ng sinabi mo, ako rin ay makatatakas sa buhay?</q></p><h3>Kabanata XIX. Mga Pag-iwas</h3><p>Habang nagsasalita nang ganito ang babae, tila nag-aalinlangan si Pedro dahil sa maraming iniisip. Ngunit lumapit ako at sinabi: <q>Matagal na kitang hinahanap. Ano ang ginagawa mo rito?</q> Inutusan ako ni Pedro na mauna at hintayin siya sa bangka; at dahil walang pagtutol sa kanyang utos, ginawa ko ang sinabi niya. Ngunit si Pedro, ayon sa pagkukuwento niya sa akin pagkatapos, ay nakaramdam ng bahagyang hinala sa kanyang puso at nagtanong sa babae: <q>Sabihin mo sa akin, O babae, ang iyong angkan, ang iyong lungsod, at ang mga pangalan ng iyong mga anak; at pagkatapos ay agad kong ibibigay sa iyo ang gamot.</q> Ngunit siya, na napilitang magsalita at ayaw sana, ngunit sabik makuha ang gamot, ay tusong nagsabi ng ibang bagay sa halip na totoo. Sinabi niyang taga-Efeso siya at Siciliano ang kanyang asawa; gayundin, pinalitan niya ang mga pangalan ng tatlong anak. Inakala ni Pedro na nagsasabi siya ng totoo at sinabi: <q>Ay! O babae, inakala kong magdadala sa iyo ng malaking kagalakan ang araw na ito, sapagkat pinaghinalaan kong ikaw ay isang taong nasa isip ko at ang mga pangyayari sa buhay ay narinig ko at nalalaman nang tumpak.</q> Ngunit nakiusap siya nang taimtim: <q>Sabihin mo sa akin, nakikiusap ako, upang malaman ko kung may babaeng higit pang kaawa-awa kaysa sa akin.</q></p><h3>Kabanata XX. Salaysay ni Pedro tungkol sa Pangyayari</h3><p>Si Pedro, na hindi alam na nagsinungaling siya, ay dahil sa habag nagsimulang magsabi ng katotohanan: <q>May isang binatang kasama ko na sabik sa mga aral tungkol sa relihiyon, isang mamamayang Romano, na nagsabi sa akin na mayroon siyang ama at dalawang kambal na kapatid ngunit nawala silang lahat sa kanyang paningin. Sapagkat,</q> sabi niya, <q>ang aking ina, ayon sa isinalaysay sa akin ng aking ama, ay nakakita ng isang pangitain at pansamantalang umalis sa lungsod ng Roma kasama ng kanyang kambal na mga anak upang hindi siya mapahamak sa masamang kapalaran; ngunit nang makaalis kasama nila ay hindi na siya matagpuan. At ang kanyang asawa, na ama ng binata, ay umalis upang hanapin siya at hindi rin matagpuan.</q></p><h3>Kabanata XXI. Isang Pagbubunyag</h3><p>Habang nagsasalita si Pedro, ang babaeng taimtim na nakikinig ay nawalan ng malay na para bang natigilan. Lumapit si Pedro, hinawakan siya, at hinikayat na pigilan ang sarili at ipagtapat kung ano ang nangyayari sa kanya. Ngunit siya, na para bang lasing at halos walang lakas sa nalalabing katawan, ay inikot ang kanyang <em>ulo</em>, na halos hindi makayanan ang laki ng inaasahang kagalakan, at habang kinukuskos ang kanyang mukha ay nagsabi: <q>Nasaan ang binatang ito?</q> At si Pedro, na ngayo’y naunawaan na ang buong pangyayari, ay nagsabi: <q>Sabihin mo muna sa akin; kung hindi, hindi mo siya makikita.</q> Taimtim niyang sinabi: <q>Ako ang ina ng binatang iyon.</q> Sinabi ni Pedro: <q>Ano ang kanyang pangalan?</q> Sumagot siya: <q>Clemente.</q> Sinabi ni Pedro: <q><q>Siya nga iyon, at siya ang kumausap sa akin kanina lamang, na inutusan kong hintayin ako sa bangka.</q> At siya, na nagpatirapa sa paanan ni Pedro, ay nakiusap na magmadali silang pumunta sa bangka. Sinabi ni Pedro: <q>Kung tutuparin mo ang aking kondisyon, gagawin ko iyon.</q> Sinabi niya: <q>Gagawin ko ang anumang bagay; ipakita mo lamang sa akin ang nag-iisa kong anak. Sapagkat sa kanya ay para ko na ring makikita ang dalawa kong anak na namatay rito.</q> Sinabi ni Pedro: <q>Kapag nakita mo siya, manahimik ka hanggang makaalis tayo sa pulo.</q> Sumagot siya: <q>Gagawin ko.</q></q></p><h3>Kabanata XXII. Natagpuan ang Nawawala</h3><p>Kaya hinawakan ni Pedro ang kamay ng babae at inakay siya patungo sa bangka. Ngunit ako, nang makita kong inaakay niya sa kamay ang babae, ay natawa at lumapit upang mag-alok na ako na lamang ang umakay sa kanya bilang paggalang kay Pedro. Ngunit pagkahawak ko sa kanyang kamay, napasigaw siya gaya ng isang ina, mahigpit akong niyakap, at sabik na hinalikan na para bang ako ang kanyang anak. Ngunit ako, na walang nalalaman sa buong pangyayari, ay itinulak siyang palayo na para bang baliw. Gayunman, dahil sa paggalang ko kay Pedro ay pinigil ko ang sarili.</p><h3>Kabanata XXIII. Gantimpala ng Pagkamapagpatuloy</h3><p>Ngunit sinabi ni Pedro: <q>Ay! Ano ang ginagawa mo, anak kong Clemente, at itinutulak mo ang tunay mong ina?</q> Nang marinig ko ito, napaiyak ako; at lumuhod sa tabi ng aking inang napaluhod din at hinalikan siya. Sapagkat sa sandaling sabihin iyon sa akin, tila bumalik nang malabo sa aking alaala ang kanyang anyo. Pagkatapos ay nagtakbuhan ang napakaraming tao upang makita ang babaeng pulubi, na sinasabi sa isa’t isa na nakilala siya ng kanyang anak at ang anak niya ay isang taong kagalang-galang. Nang handa na sana kaming umalis agad sa pulo kasama ng aking ina, sinabi niya sa amin: <q>Anak kong matagal kong pinananabikan, nararapat lamang na magpaalam ako sa babaeng tumanggap sa akin, na mahirap at lubhang nanghina at ngayo’y nakaratay sa bahay.</q> Nang marinig ito ni Pedro, siya at ang buong karamihang naroroon ay humanga sa mabuting kalooban ng babae. Agad niyang inutusan ang ilan na puntahan at dalhin ang babae sakay ng kanyang higaan. Nang madala at mailapag ang higaan, sinabi ni Pedro sa pandinig ng buong karamihan: <q>Kung ako’y tagapagbalita ng katotohanan, upang sumampalataya ang mga naririto at malaman nilang iisa ang Diyos na gumawa ng sanlibutan, agad siyang bumangon na lubusang gumaling.</q> Habang nagsasalita pa si Pedro, bumangon ang babae na gumaling, nagpatirapa sa harap ni Pedro, hinalikan ang minamahal niyang kasama, at tinanong kung ano ang kahulugan ng lahat ng ito. Maikli niyang isinalaysay sa kanya ang buong pagkakakilanlan, sa labis na pagkamangha ng mga nakikinig. Pagkatapos, nang makita ng aking ina na gumaling ang kanyang tagapagpatuloy, nakiusap din siyang siya man ay tumanggap ng kagalingan. Ipinatong ni Pedro ang kanyang kamay sa kanya at pinagaling din siya.</p><h3>Kabanata XXIV. Maayos ang Lahat</h3><p>Pagkatapos nito, nagsalita si Pedro tungkol sa Diyos at sa paglilingkod na nararapat sa Kanya, at nagtapos nang ganito: <q>Kung may nagnanais matutuhan nang tumpak ang mga bagay na ito, pumunta siya sa Antioquia, kung saan nagpasiya akong manatili nang ilang panahon, at matutuhan niya ang mga bagay na nauukol sa kanyang kaligtasan. Sapagkat kung sanay kayong lisanin ang inyong bansa alang-alang sa pangangalakal o digmaan at pumunta sa malalayong lugar, hindi kayo dapat tumangging maglakbay nang tatlong araw alang-alang sa walang-hanggang kaligtasan.</q> Pagkatapos ng talumpati ni Pedro, sa harap ng buong karamihan ay binigyan ko ang babaeng pinagaling ng isang libong drachma para sa kanyang ikabubuhay at ipinagkatiwala siya sa isang mabuting lalaki, ang pangunahing tao sa lungsod, na kusa at masayang tumanggap ng pananagutan. Bukod dito, namahagi ako ng salapi sa marami pang ibang babae at pinasalamatan ang mga minsang umaliw sa aking ina. Pagkatapos ay naglayag ako patungong Antaradus kasama ang aking ina, si Pedro, at ang iba naming kasama; at sa gayon ay nagtungo kami sa aming tuluyan.</p><h3>Kabanata XXV. Pagmamahal sa Tao at Pagkakaibigan</h3><p>Nang makarating kami at makakain at makapagpasalamat ayon sa aming kaugalian, may natitira pang oras, kaya sinabi ko kay Pedro: <q>Panginoon kong Pedro, gumawa ng gawaing makatao ang aking ina nang alalahanin niya ang babaeng tumanggap sa kanya.</q> Sumagot si Pedro: <q>Tunay mo bang inakala, O Clemente, na gumawa ang iyong ina ng gawaing makatao sa pakikitungo niya sa babaeng tumanggap sa kanya pagkatapos ng pagkawasak ng barko, o sinabi mo lamang ito bilang malaking papuri sa iyong ina? Kung tunay ang iyong sinabi at hindi lamang papuri, tila hindi mo nalalaman kung gaano kadakila ang tunay na pagmamahal sa tao, na siyang pagkagiliw sa sinumang tao dahil siya ay tao, hiwalay sa anumang likas na paghikayat. Ni hindi ko nga basta matatawag na mapagmahal sa tao ang babaeng tumanggap sa iyong ina pagkatapos ng pagkawasak ng barko; sapagkat naantig siya ng habag at nahikayat na tulungan ang isang babaeng nasiraan ng barko, nagdadalamhati sa kanyang mga anak, dayuhan, hubad, walang anumang pag-aari, at labis na tumatangis sa kanyang mga kasawian. Sa gayong kalagayan, sino ang makakakita sa kanya—kahit di-maka-Diyos—at hindi maaawa? Kaya para sa akin, maging ang babaeng tumanggap sa dayuhan ay hindi gumawa ng lubusang gawaing makatao; sa halip ay napakilos siyang tumulong dahil sa habag sa di-mabilang nitong kasawian. Lalong totoo ito sa iyong ina: nang siya’y nasa mabuting kalagayan at gumanti sa babaeng tumanggap sa kanya, ang ginawa niya ay hindi gawa ng pangkalahatang pagmamahal sa tao kundi ng pagkakaibigan. Sapagkat malaki ang pagkakaiba ng pagkakaibigan at pagmamahal sa tao: ang pagkakaibigan ay umuusbong mula sa pagganti; ngunit ang pagmamahal sa tao, na hindi hinihikayat ng personal na pakinabang o ugnayan, ay umiibig at gumagawa ng mabuti sa bawat tao dahil siya ay tao. Kaya kung habang naaawa siya sa kanyang tagapagpatuloy ay naaawa rin siya at gumagawa ng mabuti sa mga kaaway na nagkasala sa kanya, maituturing siyang tunay na mapagmahal sa tao. Ngunit kung sa isang dahilan ay kaibigan o kaaway siya, at sa ibang dahilan naman ay kaaway o kaibigan, ang gayong tao ay kaibigan o kaaway ng isang katangian, hindi ng tao bilang tao.</q></p><h3>Kabanata XXVI. Ano ang Pagmamahal sa Tao?</h3><p>Sumagot ako: <q>Hindi mo ba itinuturing na mapagmahal sa tao maging ang babaeng tumanggap sa dayuhan, na gumawa ng mabuti sa isang dayuhang hindi niya kilala?</q> Sinabi ni Pedro: <q>Maawain, oo, matatawag ko siya; ngunit hindi ko pa siya matatawag na tunay na mapagmahal sa tao, gaya rin ng hindi ko matatawag na mapagmahal-sa-anak ang isang ina dahil lamang sa pagmamahal niya sa kanyang mga anak; sapagkat nahihikayat siyang mahalin ang mga iyon dahil sa hirap ng panganganak at pagpapalaki. Gaya rin ng umiibig na nasisiyahan sa piling at kasiyahang ibinibigay ng minamahal, at ng kaibigang nasisiyahan sa pagganti ng pagkakaibigan, gayon din ang maawaing tao sa paghihirap ng iba. Gayunman, malapit ang maawaing tao sa tunay na mapagmahal sa tao, sapagkat napakikilos siyang gumawa ng kabutihan nang hindi naghahangad na may matanggap bilang kapalit. Ngunit hindi pa rin siya ganap na mapagmahal sa tao.</q> Sinabi ko: <q>Sa anong mga gawa, kung gayon, nagiging tunay na mapagmahal sa tao ang isang tao?</q> Sumagot si Pedro: <q>Yamang nakikita kong sabik kang malaman kung ano ang gawa ng pagmamahal sa tao, hindi ko ipagkakait na sabihin sa iyo. Ang tunay na mapagmahal sa tao ay yaong gumagawa ng mabuti maging sa kanyang mga kaaway. At na gayon nga iyon, pakinggan mo: Ang pagmamahal sa tao ay may panlalaki at pambabaeng bahagi; ang pambabaeng bahagi ay tinatawag na habag, at ang panlalaking bahagi ay pagmamahal sa kapwa. Ngunit ang bawat tao ay kapwa ng bawat tao, hindi lamang ang isang ito o yaon; sapagkat kapwa tao ang mabuti at masama, kaibigan at kaaway. Kaya ang nagsasagawa ng pagmamahal sa tao ay nararapat maging tagatulad ng Diyos, gumagawa ng mabuti sa matuwid at di-matuwid, gaya ng ipinagkakaloob mismo ng Diyos ang Kanyang araw at kalangitan sa lahat sa kasalukuyang sanlibutan. Ngunit kung gagawa ka ng mabuti sa mabuti at hindi sa masama, o paparusahan mo pa ang mga iyon, inaako mo ang gawain ng isang hukom; hindi mo hinahabol ang ganap na pagmamahal sa tao.</q></p><h3>Kabanata XXVII. Sino ang Makapaghuhukom?</h3><p>Sinabi ko: <q>Kung gayon, maging ang Diyos, na ayon sa iyong turo ay hahatol balang araw, ay hindi mapagmahal sa tao.</q> Sinabi ni Pedro: <q>Nagsasabi ka ng salungatan; sapagkat dahil Siya’y hahatol, dahil mismo roon Siya ay mapagmahal sa tao. Sapagkat ang umiibig at nahahabag sa mga ginawan ng mali ay naghihiganti laban sa mga gumawa ng mali sa kanila.</q> Sinabi ko: <q>Kung gayon, kung gumagawa rin ako ng mabuti sa mabuti at nagpaparusa sa mga gumagawa ng mali dahil sinasaktan nila ang tao, hindi ba ako mapagmahal sa tao?</q> Sumagot si Pedro: <q>Kung kasama ng kaalaman ay mayroon ka ring kapangyarihang humatol, tama ang gagawin mo, sapagkat tinanggap mo ang awtoridad na humatol sa mga nilikha ng Diyos at taglay mo ang kaalamang walang pagkakamali upang kilalaning matuwid ang ilan at di-matuwid ang iba.</q> Sinabi ko: <q>Tama at totoo ang sinabi mo; sapagkat imposibleng humatol nang wasto ang sinumang walang kaalaman. Minsan ay mukhang mabuti ang ilang tao bagaman lihim silang gumagawa ng kasamaan, at ang ilang mabubuti naman ay napagkakamalang masama dahil sa paratang ng kanilang mga kaaway. Ngunit kahit ang isang hukom ay may kapangyarihang magpahirap at magsiyasat, hindi pa rin laging makatarungan ang magiging hatol niya. Sapagkat may mga mamamatay-taong nakatiis sa pagpapahirap at lumabas na parang inosente; samantalang may mga inosenteng hindi nakatiis sa pagpapahirap, maling umamin laban sa sarili, at pinarusahan na para bang nagkasala.</q></p><h3>Kabanata XXVIII. Kahirapan ng Paghatol</h3><p>Sinabi ni Pedro: <q>Karaniwan ang mga bagay na iyan; ngayon pakinggan mo ang higit na malalim. May mga taong ang mga kasalanan o mabubuting gawa ay bahagyang kanila at bahagyang sa iba; ngunit nararapat na ang bawat isa ay parusahan para sa sariling mga kasalanan at gantimpalaan para sa sariling kabutihan. Gayunman, imposible para sa sinuman maliban sa isang propeta, na siya lamang ang nakaaalam ng lahat, na malaman tungkol sa mga bagay na ginagawa ng isang tao kung alin ang tunay na kanya at alin ang hindi; sapagkat lahat ay nakikitang ginawa niya.</q> Sinabi ko: <q>Nais kong malaman kung paano nagiging sariling gawa ng tao ang ilan sa kanyang mali o tama, samantalang ang iba ay nauukol sa ibang tao.</q></p><h3>Kabanata XXIX. Mga Paghihirap ng Mabubuti</h3><p>Sumagot si Pedro: <q>Sinabi ng Propeta ng katotohanan: ‘Kinakailangang dumating ang mabubuting bagay, at mapalad yaong sa pamamagitan niya ay dumarating ang mga iyon; gayundin, kinakailangang dumating ang masasamang bagay, ngunit sa aba niya na sa pamamagitan niya ay dumarating ang mga iyon.’ Ngunit kung ang masasamang bagay ay dumarating sa pamamagitan ng masasamang tao at ang mabubuting bagay ay sa pamamagitan ng mabubuting tao, kinakailangang nasa sariling pagpili ng bawat tao kung siya’y magiging mabuti o masama. At mula sa kanyang sariling pasya ay lumalabas ang susunod na mabuti o masama; yamang mula iyon sa sariling pagpili, hindi inayos ng pagkalinga ng Diyos na mula sa kanya iyon kailangang lumabas. Sa ganitong kalagayan, ito ang hatol ng Diyos: ang taong, gaya ng isang nakikipaglaban, ay dumaan sa bawat kasawian at natagpuang walang kapintasan ay itinuturing na karapat-dapat sa buhay na walang hanggan. Sapagkat yaong mga kusang nananatili sa kabutihan ay sinusubok ng mga kusang nananatili sa kasamaan—inuusig, kinapopootan, sinisiraan, pinagbabalakan, sinasaktan, dinadaya, inaakusahan, pinahihirapan, at hinahamak—na dumaranas ng lahat ng bagay na waring sapat na dahilan upang magalit sila at gumanti.</q></p><h3>Kabanata XXX. Kailangang Dumating ang mga Katitisuran</h3><p><q>Ngunit alam ng Guro na ang mga gumagawa ng gayong kasamaan ay nagiging may-sala dahil sa dati nilang mga kasalanan at ginagamit sila ng espiritu ng kasamaan bilang mga kasangkapan. Kaya itinuro Niyang kahabagan ang mga tao sapagkat tao sila at sapagkat dahil sa kasalanan ay nagiging mga kasangkapan sila ng kasamaan; <em>at ang payong ito</em> ay ibinigay Niya sa Kanyang mga alagad bilang mga taong inaasahang magsasagawa ng pagmamahal sa tao. At sa abot ng ating makakaya ay dapat nating tulungang makalaya sa hatol ang mga gumagawa ng mali, upang gaya ng taong mahinahon na tumutulong sa lasing ay tulungan natin sila sa pamamagitan ng mga panalangin, pag-aayuno, at pagpapala, na hindi lumalaban at hindi gumaganti, upang hindi natin sila itulak na magkasala pa nang higit. Sapagkat kapag ang isang tao ay hinatulang dumanas ng isang bagay, hindi makatuwirang magalit siya sa taong naging daan ng kanyang pagdurusa; dapat niyang isipin na kahit hindi siya pininsala ng taong iyon, yamang kailangan niyang dumanas ng gayon, sa pamamagitan sana ng iba iyon dumating. Bakit, kung gayon, ako magagalit sa naging tagapaghatid lamang, gayong hinatulan na rin akong dumanas? Higit pa rito: kung gagawin natin sa masama ang mismong mga bagay na ginagawa nila sa atin sa ngalan ng paghihiganti, tayong mabubuti ay gagawa rin ng ginagawa ng masasama; ang kaibahan lamang ay nauna sila at sumunod tayo. At gaya ng sinabi ko, hindi tayo dapat magalit sapagkat nalalaman nating sa pagkalinga ng Diyos ay ang masama ang nagiging instrumento ng kaparusahan sa mabuti. Kaya ang mga nagiging mapait laban sa nagpaparusa sa kanila ay nagkakasala, na para bang hinahamak nila ang mga mensahero ng Diyos; ngunit ang mga gumagalang sa kanila at lumalaban sa pag-iisip ng mga nagbabalak na manakit sa kanila ay maka-Diyos sa Diyos na nagpasiya nang gayon.</q></p><h3>Kabanata XXXI. Gayunman, Hindi Nila Iyon Nilayon</h3><p>Sumagot ako: <q>Kung gayon, ang mga gumagawa ng mali ay walang sala, sapagkat ayon sa hatol ng Diyos ay sinasaktan nila ang mga matuwid.</q> Sinabi ni Pedro: <q>Malaki pa rin ang kanilang kasalanan, sapagkat ibinigay nila ang sarili sa kasalanan. Dahil alam ito ng <em>Diyos</em>, pumipili Siya sa kanila ng <em>ilan</em> upang parusahan ang mga taong matuwid na nagsisi sa dati nilang mga kasalanan, upang sa pamamagitan ng kaparusahang ito ay mapawi ang masasamang ginawa ng mga matuwid bago sila magsisi. Ngunit sa masasamang nagpaparusa at nagnanais manakit sa kanila at ayaw magsisi, pinahihintulutang saktan nila ang mga matuwid upang mapuno ang sarili nilang kaparusahan. Sapagkat kung wala ang kalooban ng Diyos, ni isang maya ay hindi mahuhulog sa isang silo. Gayon din, maging ang mga buhok ng matuwid ay binibilang ng Diyos.</q></p><h3>Kabanata XXXII. Ang Gintong Tuntunin</h3><p><q>Ngunit matuwid ang taong alang-alang sa makatwiran ay nakikipaglaban sa likas na hilig. Halimbawa, likas sa lahat ang mahalin ang mga umiibig sa kanila. Ngunit sinisikap ng matuwid na mahalin maging ang kanyang mga kaaway, pagpalain ang mga naninirang-puri sa kanya, ipanalangin ang kanyang mga kaaway, at kahabagan ang mga gumagawa ng mali sa kanya. Kaya umiiwas siyang gumawa ng mali, pinagpapala ang mga sumusumpa sa kanya, pinatatawad ang mga sumasakit sa kanya, nagpapasakop sa mga umuusig sa kanya, bumabati sa mga hindi bumabati sa kanya, ibinabahagi ang mayroon siya sa mga wala, hinihikayat ang nagagalit sa kanya, nakikipagkasundo sa kaaway, nagpapayo sa masuwayin, nagtuturo sa hindi naniniwala, at umaaliw sa nagdadalamhati. Kapag siya’y nahihirapan, nagtitiis siya; kapag pinakikitunguhan nang walang utang na loob, hindi siya nagagalit. Dahil itinalaga niya ang sarili na mahalin ang kanyang kapwa gaya ng sarili, hindi siya natatakot sa kahirapan kundi nagiging mahirap sa pagbabahagi ng kanyang mga ari-arian sa mga walang anuman. Hindi rin niya pinarurusahan ang makasalanan. Sapagkat ang umiibig sa kanyang kapwa gaya ng sarili ay nakaaalam na kapag siya’y nagkasala ay ayaw niyang maparusahan; kaya hindi rin niya pinarurusahan ang mga nagkakasala. At gaya ng nais niyang purihin, pagpalain, parangalan, at patawarin sa lahat ng kanyang kasalanan, gayon din ang ginagawa niya sa kanyang kapwa, sapagkat iniibig niya ito gaya ng sarili. Sa isang salita, anuman ang nais niya para sa sarili ay nais din niya para sa kanyang kapwa. Sapagkat ito ang kautusan ng Diyos, at ito ang aral ng katotohanan ng mga propeta. At ang ganap na pag-ibig na ito sa bawat tao ang panlalaking bahagi ng pagmamahal sa tao; ngunit ang pambabaeng bahagi nito ay habag—ang pakainin ang nagugutom, painumin ang nauuhaw, damitan ang hubad, dalawin ang maysakit, tanggapin ang dayuhan, dumalaw at tumulong sa abot ng makakaya sa nasa bilangguan, at sa madaling salita, kahabagan ang sinumang nasa kasawian.</q></p><h3>Kabanata XXXIII. Takot at Pag-ibig</h3><p>Nang marinig ko ito, sinabi ko: <q>Imposibleng gawin ang mga bagay na ito; at ang gumawa ng mabuti sa mga kaaway habang tinitiis ang lahat ng kanilang paglapastangan ay hindi ko inaakalang posible sa kalikasan ng tao.</q> Sumagot si Pedro: <q>Tama ang sinabi mo; sapagkat ang pagmamahal sa tao, na sanhi ng kawalang-kamatayan, ay ibinibigay kapalit ng malaking pagsisikap.</q> Sinabi ko: <q>Paano, kung gayon, ito matatamo ng isip?</q> Sumagot si Pedro: <q>O minamahal kong Clemente, ito ang paraan: kung mahihikayat ang isang tao na ang kanyang mga kaaway, sa pansamantalang pagmamalupit sa mga kinapopootan nila, ay nagiging sanhi ng pagliligtas ng mga iyon mula sa walang-hanggang kaparusahan, agad niya silang iibigin nang taimtim bilang mga gumagawa sa kanya ng mabuti. Ngunit iisa lamang ang paraan upang matamo ito, mahal kong Clemente: ang takot sa Diyos. Sapagkat ang natatakot sa Diyos ay hindi agad mula sa pasimula makaiibig sa kanyang kapwa gaya ng sarili; hindi gayon ang pagkakasunod sa kaluluwa. Ngunit sa pamamagitan ng takot sa Diyos ay nagagawa niyang isagawa ang mga gawa ng umiibig; at habang ginagawa niya ang mga gawa ng pag-ibig, ang kasintahang Pag-ibig ay wari’y inihahatid sa kasintahang Takot. At sa gayon, ang kasintahang ito, sa pagluluwal ng mga kaisipang mapagmahal sa tao, ay ginagawang walang kamatayan ang nagtataglay sa kanya bilang isang tumpak na larawan ng Diyos na sa likas na katangian ay hindi napapasailalim sa pagkasira.</q> Habang ipinapaliwanag niya sa amin ang aral tungkol sa pagmamahal sa tao, lumalim ang gabi at nagtungo kami upang matulog.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

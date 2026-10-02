@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 6</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Clement Meets Appion</option><option value="1">Chapter II. The Myths are Not to Be Taken Literally</option><option value="2">Chapter III. Appion Proceeds to Interpret the Myths</option><option value="3">Chapter IV. Origin of Chaos</option><option value="4">Chapter V. Kronos and Rhea Explained</option><option value="5">Chapter VI. Phanes and Pluto</option><option value="6">Chapter VII. Poseidon, Zeus, and Metis</option><option value="7">Chapter VIII. Pallas and Hera</option><option value="8">Chapter IX. Artemis</option><option value="9">Chapter X. All Such Stories are Allegorical</option><option value="10">Chapter XI. Clement Has Heard All This Before</option><option value="11">Chapter XII. Epitome of Appion's Explanation</option><option value="12">Chapter XIII. Kronos and Aphrodite</option><option value="13">Chapter XIV. Peleus and Thetis, Prometheus, Achilles, and Polyxena</option><option value="14">Chapter XV. The Judgment of Paris</option><option value="15">Chapter XVI. Hercules</option><option value="16">Chapter XVII. They are Blameworthy Who Invented Such Stories</option><option value="17">Chapter XVIII. The Same</option><option value="18">Chapter XIX. None of These Allegories are Consistent</option><option value="19">Chapter XX. These Gods Were Really Wicked Magicians</option><option value="20">Chapter XXI. Their Graves are Still to Be Seen</option><option value="21">Chapter XXII. Their Contemporaries, Therefore, Did Not Look on Them as Gods</option><option value="22">Chapter XXIII. The Egyptians Pay Divine Honours to a Man</option><option value="23">Chapter XXIV. What is Not God</option><option value="24">Chapter XXV. The Universe is the Product of Mind</option><option value="25">Chapter XXVI. Peter Arrives from Cæsarea</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Clement Meets Appion</h3><p>And on the third day, when I came with my friends to the appointed place in Tyre, I found Appion sitting between Anubion and Athenodorus, and waiting for us, along with many other learned men. But in no wise dismayed, I greeted them, and sat down opposite Appion. And in a little he began to speak:—</p><p><q>I wish to start from the following point, and to come with all speed at once to the question. Before you, my son Clement, joined us, my friend Anubion here, and Athenodorus, who yesterday were among those who heard you discourse, were reporting to me what you said of the numerous false accusations I brought against the gods when I was visiting you in Rome, at the time you were shamming love, how I charged them with pederasty, lasciviousness, and numerous incests of all kinds. But, my son, you ought to have known that I was not in earnest when I wrote such things about the gods, but was concealing the truth, from my love to you. That truth, however, if it so please you, you may hear from me now.</q></p><h3>Chapter II. The Myths are Not to Be Taken Literally</h3><p><q>The wisest of the ancients, men who had by hard labour learned all truth, kept the path of knowledge hid from those who were unworthy and had no taste for lessons in divine things. For it is not really true that from Ouranos and his mother Ge were born twelve children, as the myth counts them: six sons, Okeanos, Koios, Krios, Hyperion, Japetos, Kronos; and six daughters, Thea, Themis, Mnemosyne, Demeter, Tethys, and Rhea. Nor that Kronos, with the knife of adamant, mutilated his father Ouranos, as you say, and threw the part into the sea; nor that Aphrodite sprang from the drops of blood which flowed from it; nor that Kronos associated with Rhea, and devoured his first-begotten son Pluto, because a certain saying of Prometheus led him to fear that a child born from him would wax stronger than himself, and spoil him of his kingdom; nor that he devoured in the same way Poseidon, his second child; nor that, when Zeus was born next, his mother Rhea concealed him, and when Kronos asked for him that he might devour him, gave him a stone instead; nor that this, when it was devoured, pressed those who had been previously devoured, and forced them out, so that Pluto, who was devoured first, came out first, and after him Poseidon, and then Zeus; nor that Zeus, as the story goes, preserved by the wit of his mother, ascended into heaven, and spoiled his father of the kingdom; nor that he punished his father's brothers; nor that he came down to lust after mortal women; nor that he associated with his sisters, and daughters, and sisters-in-law, and was guilty of shameful pederasty; nor that he devoured his daughter Metis, in order that from her he might make Athene be born out of his own brain (and from his thigh might bear Dionysos, who is said to have been rent in pieces by the Titans) ; nor that he held a feast at the marriage of Peleus and Thetis; nor that he excluded Eris (discord) from the marriage; nor that Eris on her part, thus dishonoured, contrived an occasion of quarrelling and discord among the feasters; nor that she took a golden apple from the gardens of the Hesperides, and wrote on it 'For the fair.' And then they fable how Hera, and Athena, and Aphrodite, found the apple, and quarrelling about it, came to Zeus; and he did not decide it for them, but sent them by Hermes to the shepherd Paris, to be judged of their beauty. But there was no such judging of the goddesses; nor did Paris give the apple to Aphrodite; nor did Aphrodite, being thus honoured, honour him in return, by giving him Helen to wife. For the honour bestowed by the goddess could never have furnished a pretext for a universal war, and that to the ruin of him who was honoured, himself nearly related to the race of Aphrodite. But, my son, as I said, such stories have a peculiar and philosophical meaning, which can be allegorically set forth in such a way that you yourself would listen with wonder.</q> And I said, <q>I beseech you not to torment me with delay.</q> And he said, <q>Do not be afraid; for I shall lose no time, but commence at once.</q></p><h3>Chapter III. Appion Proceeds to Interpret the Myths</h3><p><q>There was once a time when nothing existed but chaos and a confused mixture of orderless elements, which were as yet simply heaped together. This nature testifies, and great men have been of opinion that it was so. Of these great men I shall bring forward to you him who excelled them all in wisdom, Homer, where he says, with a reference to the original confused mass, 'But may you all become water and earth;' implying that from these all things had their origin, and that all things return to their first state, which is chaos, when the watery and earthy substances are separated. And Hesiod in the Theogony says, 'Assuredly chaos was the very first to come into being.' Now, by 'come into being,' he evidently means that chaos came into being, as having a beginning, and did not always exist, without beginning. And Orpheus likens chaos to an egg, in which was the confused mixture of the primordial elements. This chaos, which Orpheus calls an egg, is taken for granted by Hesiod, having a beginning, produced from infinite matter, and originated in the following way.</q></p><h3>Chapter IV. Origin of Chaos</h3><p><q>This matter, of four kinds, and endowed with life, was an entire infinite abyss, so to speak, in eternal stream, borne about without order, and forming every now and then countless but ineffectual combinations (which therefore it dissolved again from want of order); ripe indeed, but not able to be bound so as to generate a living creature. And once it chanced that this infinite sea, which was thus by its own nature driven about with a natural motion, flowed in an orderly manner from the same to the same (back on itself), like a whirlpool, mixing the substances in such a way that from each there flowed down the middle of the universe (as in the funnel of a mould) precisely that which was most useful and suitable for the generation of a living creature. This was carried down by the all-carrying whirlpool, drew to itself the surrounding spirit, and having been so conceived that it was very fertile, formed a separate substance. For just as a bubble is usually formed in water, so everything round about contributed to the conception of this ball-like globe. Then there came forth to the light, after it had been conceived in itself, and was borne upwards by the divine spirit which surrounded it, perhaps the greatest thing ever born; a piece of workmanship, so to speak, having life in it which had been conceived from that entire infinite abyss, in shape like an egg, and as swift as a bird.</q></p><h3>Chapter V. Kronos and Rhea Explained</h3><p><q>Now you must think of Kronos as time (chronos), and Rhea as the flowing (rheon) of the watery substance. For the whole body of matter was borne about for some Time, before it brought forth, like an egg, the sphere-like, all-embracing heaven (ouranos), which at first was full of productive marrow, so that it was able to produce out of itself elements and colors of all sorts, while from the one substance and the one color it produced all kinds of forms. For as a peacock's egg seems to have only one color, while potentially it has in it all the colors of the animal that is to be, so this living egg, conceived out of infinite matter, when set in motion by the underlying and ever-flowing matter, produces many different forms. For within the circumference a certain living creature, which is both male and female, is formed by the skill of the indwelling divine spirit. This Orpheus calls Phanes, because when it appeared (phaneis) the universe shone forth from it, with the lustre of that most glorious of the elements, fire, perfected in moisture. Nor is this incredible, since in glowworms nature gives us to see a moist light.</q></p><h3>Chapter VI. Phanes and Pluto</h3><p><q>This egg, then, which was the first substance, growing somewhat hot, was broken by the living creature within, and then there took shape and came forth something; such as Orpheus also speaks of, where he says, 'when the capacious egg was broken,' etc. And so by the mighty power of that which appeared (phaneis) and came forth, the globe attained coherency, and maintained order, while it itself took its seat, as it were, on the summit of heaven, there in ineffable mystery diffusing light through endless ages. But the productive matter left inside the globe, separated the substances of all things. For first its lower part, just like the dregs, sank downwards of its own weight; and this they called Pluto from its gravity, and weight, and great quantity (polu) of underlying matter, styling it the king of Hades and the dead. </q></p><h3>Chapter VII. Poseidon, Zeus, and Metis</h3><p><q>When, then, they say that this primordial substance, although most filthy and rough, was devoured by Kronos, that is, time, this is to be understood in a physical sense, as meaning that it sank downwards. And the water which flowed together after this first sediment, and floated on the surface of the first substance, they called Poseidon. And then what remained, the purest and noblest of all, for it was translucent fire, they called Zeus, from its glowing (zeousa) nature. Now since fire ascends, this was not swallowed, and made to descend by time or Kronos; but, as I said, the fiery substance, since it has life in it, and naturally ascends, flew right up into the air, which from its purity is very intelligent. By his own proper heat, then, Zeus—that is, the glowing substance—draws up what is left in the underlying moisture, to wit, that very strong and divine spirit which they called Metis.</q></p><h3>Chapter VIII. Pallas and Hera</h3><p><q>And this, when it had reached the summit of the æther, was devoured by it (moisture being mixed with heat, so to say); and causing in it that ceaseless palpitation, it begot intelligence, which they call Pallas from this palpitating (pallesthai). And this is artistic wisdom, by which the ætherial artificer wrought out the whole world. And from all-pervading Zeus, that is, from this very hot æther, air (aer) extends all the way to our earth; and this they call Hera. Wherefore, because it has come below the æther, which is the purest substance (just as a woman, as regards purity, is inferior), when the two were compared to see which was the better, she was rightly regarded as the sister of Zeus, in respect of her origin from the same substance, but as his spouse, as being inferior like a wife.</q></p><h3>Chapter IX. Artemis</h3><p><q>And Hera we understand to be a happy tempering of the atmosphere, and therefore she is very fruitful; but Athena, as they call Pallas, was reckoned a virgin, because on account of the intense heat she could produce nothing. And in a similar fashion Artemis is explained: for her they take as the lowest depth of air, and so they called her a virgin, because she could not bear anything on account of the extreme cold. And that troubled and drunken composition which arises from the upper and lower vapours they called Dionysus, as troubling the intellect. And the water under the earth, which is in nature indeed one, but which flows through all the paths of earth, and is divided into many parts, they called Osiris, as being cut in pieces. And they understand Adonis as favourable seasons, Aphrodite as coition and generation, Demeter as the earth, the Girl (Proserpine) as seeds; and Dionysus some understand as the vine.</q></p><h3>Chapter X. All Such Stories are Allegorical</h3><p><q>And I must ask you to think of all such stories as embodying some such allegory. Look on Apollo as the wandering Sun (peri-polôn), a son of Zeus, who was also called Mithras, as completing the period of a year. And these said transformations of the all-pervading Zeus must be regarded as the numerous changes of the seasons, while his numberless wives you must understand to be years, or generations. For the power which proceeds from the æther and passes through the air unites with all the years and generations in turn, and continually varies them, and so produces or destroys the crops. And ripe fruits are called his children, the barrenness of some seasons being referred to unlawful unions.</q></p><h3>Chapter XI. Clement Has Heard All This Before</h3><p>While Appion was allegorizing in this way, I became plunged in thought, and seemed not to be following what he was saying. So he interrupted his discourse, and said to me, <q>If you do not follow what I am saying, why should I speak at all?</q> And I answered, <q>Do not suppose that I do not understand what you say. I understand it thoroughly; and that the more that this is not the first time I have heard it. And that you may know that I am not ignorant of these things, I shall epitomize what you have said, and supply in their order, as I have heard them from others, the allegorical interpretations of those stories you have omitted.</q> And Appion said: <q>Do so.</q></p><h3>Chapter XII. Epitome of Appion's Explanation</h3><p>And I answered: <q>I shall not at present speak particularly of that living egg, which was conceived by a happy combination out of infinite matter, and from which, when it was broken, the masculo-feminine Phanes leaped forth, as some say. I say little about all that, up to the point when this broken globe attained coherency, there being left in it some of its marrow-like matter; and I shall briefly run over the description of what took place in it by the agency of this matter, with all that followed. For from Kronos and Rhea were born, as you say—that is, by time and matter—first Pluto, who represents the sediment which settled down; and then Poseidon, the liquid substance in the middle, which floated over the heavier body below; and the third child—that is, Zeus—is the æther, and is highest of all. It was not devoured; but as it is a fiery power, and naturally ascends, it flew up as with a bound to the very highest æther.</q></p><h3>Chapter XIII. Kronos and Aphrodite</h3><p><q>And the bonds of Kronos are the binding together of heaven and earth, as I have heard others allegorizing; and his mutilation is the separation and parting of the elements; for they all were severed and separated, according to their respective natures, that each kind might be arranged by itself. And time no longer begets anything; but the things which have been begotten of it, by a law of nature, produce their successors. And the Aphrodite who emerged from the sea is the fruitful substance which arises out of moisture, with which the warm spirit mixing, causes that sexual desire, and perfects the beauty of the world.</q></p><h3>Chapter XIV. Peleus and Thetis, Prometheus, Achilles, and Polyxena</h3><p><q>And the marriage banquet, at which Zeus held the feast on the occasion of the marriage of the Nereid Thetis and the beautiful Peleus, has in it this allegory, —that you may know, Appion, that you are not the only one from whom I have heard this sort of thing. The banquet, then, is the world, and the twelve are these heavenly props of the Fates, called the Zodiac. Prometheus is foresight (prometheia), by which all things arose; Peleus is clay (pelos), namely, that which was collected from the earth and mixed with Nereis, or water, to produce man; and from the mixing of the two, i.e., water and earth, the first offspring was not begotten, but fashioned complete, and called Achilles, because he never put his lips (cheile) to the breast. Still in the bloom of life, he is slain by an arrow while desiring to have Polyxena, that is, something other than the truth, and foreign (xene) to it, death stealing on him through a wound in his foot.</q></p><h3>Chapter XV. The Judgment of Paris</h3><p><q>Then Hera, and Athena, and Aphrodite, and Eris, and the apple, and Hermes, and the judgment, and the shepherd, have some such hidden meaning as the following:—Hera is dignity; Athena, manliness; Aphrodite, pleasure; Hermes, language, which interprets (hermeneutikos) thought; the shepherd Paris, unreasoned and brutish passion. Now if, in the prime of life, reason, that shepherd of the soul, is brutish, does not regard its own advantage, will have nothing to do with manliness and temperance, chooses only pleasure, and gives the prize to lust alone, bargaining that it is to receive in return from lust what may delight it,—he who thus judges incorrectly will choose pleasure to his own destruction and that of his friends. And Eris is jealous spite; and the golden apples of the Hesperides are perhaps riches, by which occasionally even temperate persons like Hera are seduced, and manly ones like Athena are made jealous, so that they do things which do not become them, and the soul's beauty like Aphrodite is destroyed under the guise of refinement. To speak briefly, in all men riches provoke evil discord.</q></p><h3>Chapter XVI. Hercules</h3><p><q>And Hercules, who slew the serpent which led and guarded riches, is the true philosophical reason which, free from all wickedness, wanders all over the world, visiting the souls of men, and chastising all it meets,—namely, men like fierce lions, or timid stags, or savage boars, or multiform hydras; and so with all the other fabled labours of Hercules, they all have a hidden reference to moral valour. But these instances must suffice, for all our time would be insufficient if we were to go over each one.</q></p><h3>Chapter XVII. They are Blameworthy Who Invented Such Stories</h3><p><q>Now, since these things can be clearly, profitably, and without prejudice to piety, set forth in an open and straightforward manner, I wonder you call those men sensible and wise who concealed them under crooked riddles, and overlaid them with filthy stories, and thus, as if impelled by an evil spirit, deceived almost all men. For either these things are not riddles, but real crimes of the gods, in which case they should not have been exposed to contempt, nor should these their needs have been set before men at all as models; or things falsely attributed to the gods were set forth in an allegory, and then, Appion, they whom you call wise erred, in that, by concealing under unworthy stories things in themselves worthy, they led men to sin, and that not without dishonouring those whom they believed to be gods.</q></p><h3>Chapter XVIII. The Same</h3><p><q>Wherefore do not suppose that they were wise men, but rather evil spirits, who could cover honourable actions with wicked stories, in order that they who wish to imitate their betters may emulate these deeds of so-called gods, which yesterday in my discourse I spoke so freely of,—namely, their parricides, their murders of their children, their incests of all kinds, their shameless adulteries and countless impurities. The most impious of them are those who wish these stories to be believed, in order that they may not be ashamed when they do the like. If they had been disposed to act reverently, they ought, as I said a little ago, even if the gods really did the things which are sung of them, to have veiled their indecencies under more seemly stories, and not, on the contrary, as you say they did, when the deeds of the gods were honourable, clothed them in wicked and indecent forms, which, even when interpreted, can only be understood by much labour; and when they were understood by some, they indeed got for their much toil the privilege of not being deceived, which they might have had without the toil, while they who were deceived were utterly ruined. (Those, however, who trace the allegories to a more honourable source I do not object to; as, for instance, those who explain one allegory by saying that it was wisdom which sprang from the head of Zeus.) On the whole, it seems to me more probable that wicked men, robbing the gods of their honour, ventured to promulgate these insulting stories.</q></p><h3>Chapter XIX. None of These Allegories are Consistent</h3><p><q>Nor do we find the poetical allegory about any of the gods consistent with itself. To go no further than the fashioning of the universe, the poets now say that nature was the first cause of the whole creation, now that it was mind. For, say they, the first moving and mixture of the elements came from nature, but it was the foresight of mind which arranged them in order. Even when they assert that it was nature which fashioned the universe, being unable absolutely to demonstrate this on account of the traces of design in the work, they in weave the foresight of mind in such a way that they are able to entrap even the wisest. But we say to them: If the world arose from self-moved nature, how did it ever take proportion and shape, which cannot come but from a superintending wisdom, and can be comprehended only by knowledge, which alone can trace such things? If, on the other hand, it is by wisdom that all things subsist and maintain order, how can it be that those things arose from self-moved chance?</q></p><h3>Chapter XX. These Gods Were Really Wicked Magicians</h3><p><q>Then those who chose to make dishonourable allegories of divine things—as, for instance, that Metis was devoured by Zeus—have fallen into a dilemma, because they did not see that they who in these stories about the gods indirectly taught physics, denied the very existence of the gods, revolving all kinds of gods into mere allegorical representations of the various substances of the universe. And so it is more likely that the gods these persons celebrate were some sort of wicked magicians, who were in reality wicked men, but by magic assumed different shapes, committed adulteries, and took away life, and thus to the men of old who did not understand magic seemed to be gods by the things they did; and the bodies and tombs of these men are to be seen in many towns.</q></p><h3>Chapter XXI. Their Graves are Still to Be Seen</h3><p><q>For instance, as I have mentioned already, in the Caucasian mountains there is shown the tomb of a certain Kronos, a man, and a fierce monarch who slew his children. And the son of this man, called Zeus, became worse <em>than his father;</em> and having by the power of magic been declared ruler of the universe, he committed many adulteries, and inflicted punishment on his father and uncles, and so died; and the Cretans show his tomb. And in Mesopotamia there lie buried a certain Helios at Atir, and a certain Selene at Carrhæ. A certain Hermes, a man, lies buried in Egypt; Ares in Thrace; Aphrodite in Cyprus; Æsculapius in Epidaurus; and the tombs of many other such persons are to be seen. </q></p><h3>Chapter XXII. Their Contemporaries, Therefore, Did Not Look on Them as Gods</h3><p><q>Thus, to right-thinking men, it is clear that they were admitted to be mortals. And their contemporaries, knowing that they were mortal, when they died paid them no more heed; and it was length of time which clothed them with the glory of gods. Nor need you wonder that they who lived in the times of Æsculapius and Hercules were deceived, or the contemporaries of Dionysus or any other of the men of that time, when even Hector in Ilium, and Achilles in the island of Leuce, are worshipped by the inhabitants of those places; and the Opuntines worship Patroclus, and the Rhodians Alexander of Macedon. </q></p><h3>Chapter XXIII. The Egyptians Pay Divine Honours to a Man</h3><p><q>Moreover, among the Egyptians even to the present day, a man is worshipped as a god before his death. And this truly is a small impiety, that the Egyptians give divine honours to a man in his lifetime; but what is of all things most absurd is, that they worship birds and creeping things, and all kinds of beasts. For the mass of men neither think nor do anything with discretion. But look, I pray you, at what is most disgraceful of all: he who is with them the father of gods and men is said by them to have had intercourse with Leda; and many of them set up in public a painting of this, writing above it the name Zeus. To punish this insult, I could wish that they would paint their own present king in such base embraces as they have dared to do with Zeus, and set it up in public, that from the anger of a temporary monarch, and him a mortal, they might learn to render honour where it is due. This I say to you, not as myself already knowing the true God; but I am happy to say that even if I do not know who is God, I think I at least know clearly what God is.</q></p><h3>Chapter XXIV. What is Not God</h3><p><q>And first, then, the four original elements cannot be God, because they have a cause. Nor can that mixing be God, nor that compounding, nor that generating, nor that globe which surrounds the visible universe; nor the dregs which flow together in Hades, nor the water which floats over them; nor the fiery substance, nor the air which extends from it to our earth. For the four elements, if they lay outside one another, could not have been mixed together so as to generate animal life without some great artificer. If they have always been united, even in this case they are fitted together by an artistic mind to what is requisite for the limbs and parts of animals, that they may be able to preserve their respective proportions, may have a clearly defined shape, and that all the inward parts may attain the fitting coherency. In the same way also the positions suitable for each are determined, and that very beautifully, by the artificer mind. To be brief, in all other things which a living creature must have, this great being of the world is in no respect wanting.</q></p><h3>Chapter XXV. The Universe is the Product of Mind</h3><p><q>Thus we are shut up to the supposition that there is an unbegotten artificer, who brought the elements together, if they were separate; or, if they were together, artistically blended them so as to generate life, and perfected from all one work. For it cannot be that a work which is completely wise can be made without a mind which is greater than it. Nor will it do to say that love is the artificer of all things, or desire, or power, or any such thing. All these are liable to change, and transient in their very nature. Nor can that be God which is moved by another, much less what is altered by time and nature, and can be annihilated.</q></p><h3>Chapter XXVI. Peter Arrives from Cæsarea</h3><p>While I was saying these things to Appion, Peter drew near from Cæsarea, and in Tyre the people were flocking together, hurrying to meet him and unite in an expression of gratification at his visit. And Appion withdrew, accompanied by Anubion and Athenodorus only; but the rest of us hurried to meet Peter, and I was the first to greet him at the gate, and I led him towards the inn. When we arrived, we dismissed the people; and when he deigned to ask what had taken place, I concealed nothing, but told him of Simon's slanders, and the monstrous shapes he had taken, and all the diseases he had sent after the sacrificial feast, and that some of the sick persons were still there in Tyre, while others had gone on with Simon to Sidon just as I arrived, hoping to be cured by him, but that I had heard that none of them had been cured by him. I also told Peter of the controversy I had with Appion; and he, from his love to me, and desiring to encourage me, praised and blessed me. Then, having supped, he betook himself to the rest the fatigues of his journey rendered so necessary.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Nakipagkita si Clemente kay Appion</h3><p>At sa ikatlong araw, nang dumating ako kasama ng aking mga kaibigan sa itinakdang lugar sa Tiro, natagpuan kong nakaupo si Appion sa pagitan nina Anubion at Athenodorus at naghihintay sa amin, kasama ng marami pang ibang marurunong na lalaki. Ngunit hindi ako natakot sa anumang paraan; binati ko sila at naupo sa tapat ni Appion. Pagkaraan ng kaunti ay nagsimula siyang magsalita:</p><p><q>Nais kong magsimula sa puntong ito at agad na dumako nang mabilis sa usapin. Bago ka, anak kong Clemente, sumama sa amin, ang kaibigan kong si Anubion na naririto at si Athenodorus—na kahapon ay kabilang sa mga nakarinig sa iyong pagsasalita—ay ikinukuwento sa akin ang sinabi mo tungkol sa maraming maling paratang na ibinato ko laban sa mga diyos nang dalawin kita sa Roma, noong nagkukunwari kang umiibig: kung paanong pinaratangan ko sila ng pakikipagtalik sa mga batang lalaki, kahalayan, at maraming uri ng insesto. Ngunit, anak ko, dapat mong nalaman na hindi ako seryoso nang isulat ko ang gayong mga bagay tungkol sa mga diyos; ikinukubli ko lamang ang katotohanan dahil sa pagmamahal ko sa iyo. Gayunman, kung nais mo, maaari mo nang marinig sa akin ngayon ang katotohanang iyon.</q></p><h3>Kabanata II. Hindi Dapat Unawain nang Literal ang mga Alamat</h3><p><q>Ang pinakamayayamang-karunungan sa mga sinaunang tao—mga lalaking sa pamamagitan ng matinding pagpapagal ay natutuhan ang buong katotohanan—ay ikinubli ang landas ng kaalaman mula sa mga hindi karapat-dapat at walang pagkagusto sa mga aral tungkol sa mga banal na bagay. Sapagkat hindi naman tunay na mula kina Ouranos at sa kanyang inang si Ge ay ipinanganak ang labindalawang anak, gaya ng bilang ng alamat: anim na lalaki—sina Okeanos, Koios, Krios, Hyperion, Japetos, at Kronos—at anim na babae—sina Thea, Themis, Mnemosyne, Demeter, Tethys, at Rhea. Hindi rin totoong pinutol ni Kronos, sa pamamagitan ng kutsilyong adamantino, ang mga sangkap ng kanyang amang si Ouranos, gaya ng sinasabi mo, at itinapon ang bahaging iyon sa dagat; ni na mula sa mga patak ng dugong dumaloy rito ay sumibol si Aphrodite; ni na nakipagtalik si Kronos kay Rhea at nilamon ang kanyang panganay na anak na si Pluto dahil sa isang pahayag ni Prometheus na nagdulot sa kanyang matakot na ang isang anak na ipanganganak mula sa kanya ay magiging mas makapangyarihan kaysa sa kanya at aagaw sa kanyang kaharian; ni na sa gayunding paraan ay nilamon niya si Poseidon, ang kanyang ikalawang anak; ni na nang sumunod na ipanganak si Zeus ay ikinubli siya ng kanyang inang si Rhea at, nang hanapin siya ni Kronos upang lamunin, ay bato ang ibinigay sa halip; ni na ang batong ito, nang malunok, ay dumagan sa mga naunang nilamon at pinilit silang lumabas, kaya si Pluto, na unang nilamon, ang unang lumabas, kasunod si Poseidon at pagkatapos si Zeus; ni na si Zeus, ayon sa kuwento, na nailigtas sa talino ng kanyang ina, ay umakyat sa langit at inagaw ang kaharian ng kanyang ama; ni na pinarusahan niya ang mga kapatid ng kanyang ama; ni na bumaba siya upang pagnasaan ang mga mortal na babae; ni na nakipagtalik siya sa kanyang mga kapatid na babae, mga anak na babae, at mga hipag, at nagkasala ng kahiya-hiyang pakikipagtalik sa mga batang lalaki; ni na nilamon niya ang kanyang anak na si Metis upang mula rito ay maipanganak niya si Athene mula sa sarili niyang utak—at mula sa kanyang hita ay mailuwal si Dionysos, na sinasabing nilapa ng mga Titan; ni na naghanda siya ng piging sa kasal nina Peleus at Thetis; ni na hindi niya isinama si Eris—ang alitan—sa kasal; ni na si Eris naman, dahil sa gayong paghamak, ay gumawa ng pagkakataon para sa pagtatalo at alitan sa gitna ng mga panauhin; ni na kumuha siya ng gintong mansanas mula sa mga hardin ng Hesperides at isinulat doon, ‘Para sa pinakamaganda.’ At pagkatapos ay isinasalaysay nilang sina Hera, Athena, at Aphrodite ay nakakita sa mansanas at, habang pinagtatalunan iyon, ay lumapit kay Zeus; ngunit hindi niya sila hinatulan kundi ipinadala sila sa pamamagitan ni Hermes sa pastol na si Paris upang hatulan kung sino ang pinakamaganda. Ngunit walang gayong paghatol sa mga diyosa; hindi rin ibinigay ni Paris ang mansanas kay Aphrodite; ni si Aphrodite, dahil sa gayong pagpaparangal, ay gumanti sa kanya sa pamamagitan ng pagbibigay kay Helen bilang asawa. Sapagkat ang parangal na ibinigay ng diyosa ay hindi kailanman maaaring maging dahilan ng isang digmaang pangkalahatan na humantong sa kapahamakan ng mismong pinarangalan, na malapit ding kamag-anak ng lahi ni Aphrodite. Ngunit, anak ko, gaya ng sinabi ko, ang gayong mga kuwento ay may natatangi at pilosopikong kahulugan na maaaring ilahad sa alegoryang paraan nang gayon na lamang anupa’t ikaw mismo ay makikinig nang may pagkamangha.</q> At sinabi ko: <q>Nakikiusap ako, huwag mo akong pahirapan sa pagpapaliban.</q> At sinabi niya: <q>Huwag kang matakot; hindi ako magsasayang ng oras kundi magsisimula agad.</q></p><h3>Kabanata III. Nagpatuloy si Appion sa Pagpapakahulugan sa mga Alamat</h3><p><q>May panahon noon na walang umiiral kundi kaguluhan at isang magulong halo ng mga elementong walang kaayusan, na noon ay basta nakatambak lamang. Pinatutunayan ito ng kalikasan, at ganito rin ang naging palagay ng mga dakilang tao. Sa mga dakilang taong ito ay ihaharap ko sa iyo ang nakahigit sa kanilang lahat sa karunungan—si Homer—kung saan sinabi niya, na tumutukoy sa unang magulong masa, ‘Ngunit maging tubig at lupa nawa kayong lahat’; ipinahihiwatig na mula sa mga ito nagmula ang lahat ng bagay at sa mga ito rin bumabalik ang lahat sa kanilang unang kalagayan, na siyang kaguluhan, kapag nagkahiwalay ang mga sangkap na tubig at lupa. At sinabi ni Hesiod sa Theogony, ‘Tiyak na ang kaguluhan ang pinakaunang umiral.’ Ngayon, sa pagsasabing ‘umiral,’ malinaw na ibig niyang sabihin na ang kaguluhan ay nagsimulang umiral, na may pasimula, at hindi palaging umiiral nang walang pasimula. At inihahambing ni Orpheus ang kaguluhan sa isang itlog na kinaroroonan ng magulong halo ng mga pangunahing elemento. Ang kaguluhang ito, na tinatawag ni Orpheus na itlog, ay ipinagpapalagay ni Hesiod na may pasimula, nagmula sa walang-hanggang bagay, at nabuo sa ganitong paraan.</q></p><h3>Kabanata IV. Pinagmulan ng Kaguluhan</h3><p><q>Ang bagay na ito, na may apat na uri at may buhay, ay parang isang buong walang-hanggang kalaliman na nasa walang-hanggang agos, umiikot nang walang kaayusan at paminsan-minsang bumubuo ng di-mabilang ngunit walang-bisang mga pagsasama—na muli rin nitong binubuwag dahil sa kawalan ng kaayusan; hinog nga, ngunit hindi kayang mabigkis upang makalikha ng isang nilalang na may buhay. At minsan ay nagkataong ang walang-hanggang dagat na ito, na likas na umiikot dahil sa sariling likas na paggalaw, ay umagos nang maayos mula sa gayon tungo rin sa gayon—pabalik sa sarili—na gaya ng isang ipo-ipo, na hinahalo ang mga sangkap sa paraang mula sa bawat isa ay dumaloy pababa sa gitna ng sansinukob—na parang sa imbudo ng isang hulmahan—yaong tiyak na pinakamapakinabang at pinakanaaangkop sa paglikha ng isang nilalang na may buhay. Dinala ito pababa ng ipo-ipong nagdadala sa lahat, hinila nito patungo sa sarili ang espiritung nakapaligid dito, at nang gayon itong maipaglihi at maging napakamabunga ay bumuo ito ng isang hiwalay na sangkap. Sapagkat kung paanong karaniwang nabubuo ang bula sa tubig, gayon ang lahat ng nasa paligid ay nakibahagi sa paglilihi ng bilugang globo na ito. Pagkatapos, nang maipaglihi sa sarili at madala paitaas ng banal na espiritung nakapaligid dito, lumitaw sa liwanag marahil ang pinakadakilang bagay na kailanman ay ipinanganak—isang gawang wari’y may buhay sa loob, na ipinaglihi mula sa buong walang-hanggang kalalimang iyon, hugis-itlog at kasimbilis ng ibon.</q></p><h3>Kabanata V. Ipinaliwanag sina Kronos at Rhea</h3><p><q>Ngayon, isipin mo si Kronos bilang panahon (chronos) at si Rhea bilang ang pag-agos (rheon) ng sangkap na tubig. Sapagkat ang buong katawan ng bagay ay umikot nang ilang Panahon bago ito nagluwal, gaya ng isang itlog, ng bilugang langit na sumasaklaw sa lahat (ouranos), na sa pasimula ay punô ng mabungang utak upang makalikha mula sa sarili ng iba’t ibang elemento at kulay, samantalang mula sa iisang sangkap at iisang kulay ay nalikha nito ang lahat ng uri ng anyo. Sapagkat kung paanong waring iisa lamang ang kulay ng itlog ng paboreal ngunit taglay nito sa posibilidad ang lahat ng kulay ng hayop na mabubuo, gayon din ang buhay na itlog na ito, na ipinaglihi mula sa walang-hanggang bagay, kapag pinakilos ng nasa ilalim at patuloy na umaagos na bagay, ay lumilikha ng maraming magkakaibang anyo. Sapagkat sa loob ng saklaw nito ay nabubuo, sa pamamagitan ng kasanayan ng naninirahang banal na espiritu, ang isang nilalang na kapwa lalaki at babae. Tinatawag ito ni Orpheus na Phanes, sapagkat nang ito’y lumitaw (phaneis) ay nagniningning mula rito ang sansinukob sa ningning ng pinakamaluwalhating elemento—ang apoy—na naging ganap sa kahalumigmigan. Hindi ito kapanipaniwalang imposible, sapagkat sa mga alitaptap ay ipinakikita sa atin ng kalikasan ang basang liwanag.</q></p><h3>Kabanata VI. Phanes at Pluto</h3><p><q>Ang itlog na ito, kung gayon, na siyang unang sangkap, nang bahagyang uminit, ay nabasag ng buhay na nilalang na nasa loob; at pagkatapos ay may nahubog at lumitaw—gaya rin ng sinasabi ni Orpheus nang sabihin niya, ‘nang mabasag ang maluwang na itlog,’ at iba pa. Kaya sa pamamagitan ng makapangyarihang lakas ng lumitaw (phaneis) at lumabas, nagkaroon ng pagkakabigkis ang globo at napanatili ang kaayusan, samantalang ang mismong lumitaw ay wari’y umupo sa tuktok ng langit at doon, sa isang di-maipahayag na hiwaga, ay nagpalaganap ng liwanag sa walang-hanggang mga panahon. Ngunit ang mabungang bagay na naiwan sa loob ng globo ang naghiwalay sa mga sangkap ng lahat ng bagay. Sapagkat una, ang mababang bahagi nito, gaya ng latak, ay kusang lumubog dahil sa sariling bigat; at tinawag nila itong Pluto dahil sa bigat at bigat ng malaking dami (polu) ng nasa ilalim na bagay, na tinatawag siyang hari ng Hades at ng mga patay.</q></p><h3>Kabanata VII. Poseidon, Zeus, at Metis</h3><p><q>Kung gayon, kapag sinasabi nilang ang unang sangkap na ito, bagaman napakarumi at magaspang, ay nilamon ni Kronos—ibig sabihin, ng panahon—dapat itong unawain sa pisikal na diwa na ito’y lumubog pababa. At ang tubig na nagtipon matapos ang unang latak na ito at lumutang sa ibabaw ng unang sangkap ay tinawag nilang Poseidon. At pagkatapos, ang natira—ang pinakadalisay at pinakamarangal sa lahat, sapagkat iyon ay makinang na apoy—ay tinawag nilang Zeus, mula sa nagliliyab (zeousa) nitong kalikasan. Ngayon, dahil umaakyat ang apoy, hindi ito nilamon at pinababa ng panahon o ni Kronos; sa halip, gaya ng sinabi ko, dahil may buhay ang maapoy na sangkap at likas na umaakyat, mabilis itong lumipad pataas sa hangin, na dahil sa kadalisayan nito ay lubhang may talino. Sa sarili niyang init, kung gayon, hinihila paitaas ni Zeus—ibig sabihin, ng nagliliyab na sangkap—ang natitira sa kahalumigmigang nasa ilalim, samakatuwid ay yaong napakalakas at banal na espiritu na tinawag nilang Metis.</q></p><h3>Kabanata VIII. Pallas at Hera</h3><p><q>At nang makarating ito sa tuktok ng eter ay nilamon ito niyon—na para bang nahalo ang kahalumigmigan sa init—at, sa paglikha rito ng walang-tigil na pagpintig, nagluwal ito ng talino, na tinatawag nilang Pallas mula sa pagpintig na ito (pallesthai). At ito ang masining na karunungan na sa pamamagitan nito ay hinubog ng manlilikha sa eter ang buong sanlibutan. At mula sa sumasaklaw-sa-lahat na Zeus—ibig sabihin, mula sa napakainit na eter na ito—umaabot ang hangin (aer) hanggang sa ating lupa; at ito ang tinatawag nilang Hera. Kaya dahil bumaba ito sa ibaba ng eter, na siyang pinakadalisay na sangkap—gaya ng isang babae na itinuturing na mas mababa sa kadalisayan—nang paghambingin ang dalawa upang malaman kung alin ang mas mainam, wastong itinuring siyang kapatid ni Zeus dahil nagmula sila sa iisang sangkap, ngunit asawa niya dahil mas mababa siya gaya ng isang asawa.</q></p><h3>Kabanata IX. Artemis</h3><p><q>At inuunawa natin si Hera bilang isang masayang pagtitimpla ng atmospera, kaya siya’y napakamabunga; ngunit si Athena, na tinatawag din nilang Pallas, ay itinuring na birhen sapagkat dahil sa matinding init ay wala siyang kayang likhain. Sa gayunding paraan ay ipinaliliwanag si Artemis: sapagkat siya’y itinuturing nilang pinakamababang lalim ng hangin at kaya tinawag siyang birhen, dahil hindi siya makapagdala ng anuman dahil sa matinding lamig. At ang magulo at wari’y lasing na paghahalong nagmumula sa mga singaw sa itaas at ibaba ay tinawag nilang Dionysus, sapagkat ginugulo nito ang isip. At ang tubig sa ilalim ng lupa, na iisa nga sa kalikasan ngunit dumadaloy sa lahat ng daanan ng lupa at nahahati sa maraming bahagi, ay tinawag nilang Osiris, na para bang pinagpira-piraso. At inuunawa nila si Adonis bilang mabubuting panahon, si Aphrodite bilang pagtatalik at pag-aanak, si Demeter bilang lupa, ang Dalaga—si Proserpine—bilang mga binhi; at si Dionysus naman ay inuunawa ng ilan bilang puno ng ubas.</q></p><h3>Kabanata X. Alegoriko ang Lahat ng Gayong mga Kuwento</h3><p><q>At hinihiling kong isipin mo ang lahat ng gayong kuwento bilang naglalaman ng isang uri ng alegorya. Ituring mo si Apollo bilang ang gumagala-galang Araw (peri-polôn), isang anak ni Zeus, na tinawag ding Mithras, sapagkat kinukumpleto niya ang takbo ng isang taon. At ang sinasabing mga pagbabago ng anyo ng sumasaklaw-sa-lahat na Zeus ay dapat unawain bilang maraming pagbabago ng mga panahon, samantalang ang kanyang di-mabilang na mga asawa ay dapat unawain bilang mga taon o mga salinlahi. Sapagkat ang kapangyarihang nagmumula sa eter at dumaraan sa hangin ay nakikipag-ugnayan sa bawat taon at salinlahi nang sunud-sunod, patuloy na binabago ang mga ito, at sa gayon ay lumilikha o sumisira sa mga ani. At ang mga hinog na bunga ay tinatawag na kanyang mga anak, samantalang ang pagkabaog ng ilang panahon ay iniuugnay sa mga bawal na pagsasama.</q></p><h3>Kabanata XI. Narinig na ni Clemente ang Lahat ng Ito</h3><p>Habang ganito ang pag-aalegorya ni Appion, nalubog ako sa pag-iisip at tila hindi sinusundan ang kanyang sinasabi. Kaya pinutol niya ang kanyang paliwanag at sinabi sa akin: <q>Kung hindi mo sinusundan ang sinasabi ko, bakit pa ako magsasalita?</q> At sumagot ako: <q>Huwag mong isipin na hindi ko nauunawaan ang iyong sinasabi. Lubos ko itong nauunawaan, lalo na sapagkat hindi ito ang unang pagkakataong narinig ko ang mga bagay na ito. At upang malaman mong hindi ako mangmang sa mga ito, ibubuod ko ang sinabi mo at idaragdag ko sa wastong pagkakasunod, ayon sa narinig ko sa iba, ang alegorikong pagpapakahulugan sa mga kuwentong hindi mo nabanggit.</q> At sinabi ni Appion: <q>Gawin mo.</q></p><h3>Kabanata XII. Buod ng Paliwanag ni Appion</h3><p>At sumagot ako: <q>Hindi ko muna tatalakayin nang detalyado ang buhay na itlog na iyon, na ipinaglihi sa pamamagitan ng isang mabuting pagsasama mula sa walang-hanggang bagay, at mula rito, nang mabasag iyon, ay lumundag palabas ang Phanes na kapwa lalaki at babae, gaya ng sinasabi ng ilan. Kaunti lamang ang sasabihin ko tungkol sa lahat ng iyon hanggang sa puntong ang nabasag na globong ito ay muling nagkaroon ng pagkakabigkis, samantalang may naiwan sa loob nito na isang uri ng sangkap na parang utak; at maikli kong daraanan ang paglalarawan ng nangyari rito sa pamamagitan ng sangkap na ito, kasama ng lahat ng sumunod. Sapagkat mula kina Kronos at Rhea ay ipinanganak, gaya ng sinasabi mo—ibig sabihin, sa pamamagitan ng panahon at bagay—una si Pluto, na kumakatawan sa latak na lumubog; pagkatapos si Poseidon, ang likidong sangkap sa gitna na lumutang sa ibabaw ng mas mabigat na katawan sa ibaba; at ang ikatlong anak—ibig sabihin, si Zeus—ay ang eter at siyang pinakamataas sa lahat. Hindi siya nilamon; sa halip, dahil isa siyang maapoy na kapangyarihan at likas na umaakyat, mabilis siyang pumailanlang hanggang sa pinakamataas na eter.</q></p><h3>Kabanata XIII. Kronos at Aphrodite</h3><p><q>At ang mga gapos ni Kronos ay ang pagbibigkis ng langit at lupa, gaya ng narinig kong pag-aalegorya ng iba; at ang pagputol sa kanyang mga sangkap ay ang paghihiwalay at pagkakabaha-bahagi ng mga elemento. Sapagkat pinaghiwa-hiwalay ang lahat ayon sa kani-kaniyang kalikasan upang ang bawat uri ay maayos nang hiwalay. At ang panahon ay hindi na lumilikha ng anuman; ngunit ang mga bagay na nailuwal nito ay, ayon sa batas ng kalikasan, lumilikha ng mga susunod sa kanila. At si Aphrodite na lumitaw mula sa dagat ay ang mabungang sangkap na nagmumula sa kahalumigmigan, na kapag hinaluan ng mainit na espiritu ay lumilikha ng pagnanasang seksuwal at nagpapaganap sa kagandahan ng sanlibutan.</q></p><h3>Kabanata XIV. Peleus at Thetis, Prometheus, Achilles, at Polyxena</h3><p><q>At ang piging sa kasal na inihanda ni Zeus sa okasyon ng pag-aasawa ng Nereid na si Thetis at ng magandang si Peleus ay may ganitong alegorya—upang malaman mo, Appion, na hindi lamang sa iyo ko narinig ang ganitong uri ng bagay. Ang piging, kung gayon, ay ang sanlibutan; at ang labindalawa ay ang mga makalangit na sandigan ng mga Tadhana na tinatawag na Zodiac. Si Prometheus ay ang paunang pag-iisip (prometheia) na pinagmulan ng lahat ng bagay; si Peleus ay putik (pelos), ibig sabihin, yaong tinipon mula sa lupa at hinaluan ng Nereis, o tubig, upang malikha ang tao. At mula sa paghahalo ng dalawa—tubig at lupa—ang unang supling ay hindi ipinanganak kundi hinubog nang ganap at tinawag na Achilles sapagkat hindi niya kailanman inilapat ang kanyang mga labi (cheile) sa dibdib. Habang nasa kasibulan pa ng buhay, pinatay siya ng isang palaso habang nagnanais makuha si Polyxena—ibig sabihin, isang bagay na iba kaysa sa katotohanan at banyaga (xene) rito—samantalang ang kamatayan ay palihim na dumating sa kanya sa pamamagitan ng sugat sa kanyang paa.</q></p><h3>Kabanata XV. Ang Hatol ni Paris</h3><p><q>Pagkatapos, sina Hera, Athena, Aphrodite, Eris, ang mansanas, si Hermes, ang paghatol, at ang pastol ay may nakatagong kahulugang ganito: si Hera ay dangal; si Athena ay katapangan; si Aphrodite ay kalayawan; si Hermes ay wika, na nagpapakahulugan (hermeneutikos) sa pag-iisip; at ang pastol na si Paris ay di-makatuwiran at makahayop na pagnanasa. Ngayon, kung sa kasibulan ng buhay ang katuwiran, na siyang pastol ng kaluluwa, ay nagiging makahayop, hindi isinasaalang-alang ang sariling kapakinabangan, walang pakialam sa katapangan at pagpipigil sa sarili, pinipili lamang ang kalayawan, at ibinibigay ang gantimpala sa pagnanasa lamang habang nakikipagkasundo na bilang kapalit ay tatanggap ito mula sa pagnanasa ng anumang makapagpapaligaya rito—ang taong ganito ang maling paghatol ay pipili ng kalayawan tungo sa kapahamakan ng kanyang sarili at ng kanyang mga kaibigan. At si Eris ay mapanibughong galit; at ang mga gintong mansanas ng Hesperides ay marahil mga kayamanan, na kung minsan ay nakatutukso maging sa mga mapagtimpi gaya ni Hera at nagpapapanibugho sa matatapang gaya ni Athena, upang gumawa sila ng mga bagay na hindi angkop sa kanila, at ang kagandahan ng kaluluwa na gaya ni Aphrodite ay masira sa ilalim ng anyo ng pagiging pino. Sa madaling salita, sa lahat ng tao ay nagbubunsod ng masamang alitan ang mga kayamanan.</q></p><h3>Kabanata XVI. Hercules</h3><p><q>At si Hercules, na pumatay sa ahas na umaakay at nagbabantay sa mga kayamanan, ay ang tunay na pilosopikong katuwiran na, malaya sa lahat ng kasamaan, ay gumagala sa buong sanlibutan, dumadalaw sa mga kaluluwa ng mga tao at nagpaparusa sa lahat ng masumpungan nito—mga taong gaya ng mababangis na leon, mahihinang usa, malulupit na baboy-ramo, o mga hydra na maraming anyo. At gayon din sa lahat ng iba pang maalamat na pagpapagal ni Hercules: lahat ng iyon ay may nakatagong pagtukoy sa moral na katapangan. Ngunit sapat na ang mga halimbawang ito, sapagkat hindi sasapat ang lahat ng ating panahon kung isa-isahin natin ang bawat isa.</q></p><h3>Kabanata XVII. Karapat-dapat Sisihin ang mga Kumatha ng Gayong mga Kuwento</h3><p><q>Ngayon, yamang ang mga bagay na ito ay maaaring ilahad nang malinaw, kapaki-pakinabang, at walang pinsala sa kabanalan sa isang tuwiran at hayag na paraan, nagtataka ako kung bakit tinatawag mong matatalino at marurunong ang mga taong nagkubli sa mga iyon sa baluktot na bugtong, binalutan ng maruruming kuwento, at sa gayon, na para bang inuudyukan ng masamang espiritu, ay nilinlang ang halos lahat ng tao. Sapagkat alinman sa mga bagay na ito ay hindi bugtong kundi tunay na mga krimen ng mga diyos—at kung gayon ay hindi sana sila inilantad sa paghamak ni inilagay sa harap ng mga tao bilang mga huwaran ang gayong mga gawain; o kaya’y ang mga bagay na maling iniukol sa mga diyos ay inilatag sa alegorya—at kung gayon, Appion, nagkamali ang mga tinatawag mong marurunong sapagkat, sa pagkukubli ng mga bagay na karapat-dapat sa ilalim ng mga kuwentong hindi karapat-dapat, inakay nila ang mga tao tungo sa pagkakasala, at ginawa iyon nang hindi lamang walang pakundangan kundi nakasisira rin sa dangal ng mga pinaniniwalaan nilang mga diyos.</q></p><h3>Kabanata XVIII. Gayundin</h3><p><q>Kaya huwag mong ipalagay na sila’y marurunong na tao; mas nararapat silang ituring na masasamang espiritu na kayang balutan ng masasamang kuwento ang mararangal na gawa, upang ang mga nagnanais tumulad sa mas nakahihigit sa kanila ay tumulad sa mga gawa ng tinatawag na mga diyos na malaya kong binanggit kahapon sa aking pagsasalita—ang pagpatay nila sa kanilang mga magulang, pagpatay sa sariling mga anak, iba’t ibang uri ng insesto, walang-kahiyang pangangalunya, at di-mabilang na karumihan. Ang pinakadi-maka-Diyos sa kanila ay yaong nagnanais paniwalaan ang mga kuwentong ito upang hindi sila mahiya kapag ginagawa rin nila ang gayon. Kung nakahilig silang kumilos nang may paggalang, dapat sana, gaya ng sinabi ko kanina, kahit tunay ngang ginawa ng mga diyos ang mga bagay na inaawit tungkol sa kanila, tinakpan nila ang kanilang mga kahalayan sa ilalim ng mas marangal na mga kuwento. Hindi sana, sa kabaligtaran, gaya ng sinasabi mong ginawa nila, na kung marangal ang mga gawa ng mga diyos ay binalutan nila ang mga iyon ng masasama at mahalay na anyo na, kahit ipakahulugan, ay mauunawaan lamang matapos ang matinding pagpapagal. At nang maunawaan iyon ng ilan, ang nakuha lamang nilang gantimpala sa matinding paggawa ay ang pribilehiyong huwag malinlang—na maaari naman nilang makamit nang walang gayong pagpapagal—samantalang ang mga nalinlang ay lubusang napahamak. Gayunman, wala akong pagtutol sa mga nag-uugat ng mga alegorya sa isang mas marangal na pinagmulan—gaya halimbawa ng nagpapaliwanag na ang karunungan ang siyang sumibol mula sa ulo ni Zeus. Sa kabuuan, mas malamang sa akin na masasamang tao, sa pag-agaw sa dangal ng mga diyos, ang nangahas magpalaganap ng mga mapanirang kuwentong ito.</q></p><h3>Kabanata XIX. Hindi Magkakatugma ang mga Alegoryang Ito</h3><p><q>Ni hindi natin natatagpuang magkakatugma sa sarili ang patulang alegorya tungkol sa alinman sa mga diyos. Kung hindi na tayo lalayo pa sa paghubog ng sansinukob, sinasabi ngayon ng mga makata na ang kalikasan ang unang sanhi ng buong paglikha, at sa ibang pagkakataon ay isip naman. Sapagkat, sabi nila, ang unang pagkilos at paghahalo ng mga elemento ay nagmula sa kalikasan, ngunit ang paunang pag-iisip ng isip ang siyang nag-ayos sa mga iyon. Kahit kapag iginigiit nilang kalikasan ang humubog sa sansinukob, dahil hindi nila ito ganap na mapatutunayan dahil sa mga bakas ng disenyo sa gawa, isinasama nila ang paunang pag-iisip ng isip sa paraang kaya nilang mabitag maging ang pinakamarurunong. Ngunit sinasabi namin sa kanila: Kung ang sanlibutan ay nagmula sa kalikasang kusang kumikilos, paano ito kailanman nagkaroon ng sukat at anyo, na hindi maaaring magmula kundi sa karunungang nangangasiwa at mauunawaan lamang sa pamamagitan ng kaalaman na siyang makatutunton sa gayong mga bagay? Ngunit kung, sa kabilang banda, sa pamamagitan ng karunungan nananatili at naaayos ang lahat ng bagay, paano masasabi na nagmula ang mga iyon sa kusang-kumikilos na pagkakataon?</q></p><h3>Kabanata XX. Ang mga Diyos na Ito ay Tunay na Masasamang Salamangkero</h3><p><q>Pagkatapos, yaong mga piniling gumawa ng mga kahiya-hiyang alegorya tungkol sa mga banal na bagay—gaya halimbawa ng pagsasabing nilamon ni Zeus si Metis—ay nahulog sa isang suliraning may dalawang dulo, sapagkat hindi nila nakita na yaong sa pamamagitan ng mga kuwentong ito tungkol sa mga diyos ay di-tuwirang nagtuturo ng pisika ay itinatanggi rin ang mismong pag-iral ng mga diyos, yamang ginagawa nilang ang lahat ng uri ng diyos ay mga alegorikong larawan lamang ng iba’t ibang sangkap ng sansinukob. Kaya mas malamang na ang mga diyos na ipinagbubunyi ng mga taong ito ay ilang uri ng masasamang salamangkero—mga taong tunay ngang masasama ngunit sa pamamagitan ng mahika ay nag-anyong iba’t iba, gumawa ng pangangalunya, at kumitil ng buhay. Dahil dito, sa mga sinaunang taong hindi nakauunawa ng mahika, nagmukha silang mga diyos dahil sa kanilang ginawa. At ang mga katawan at libingan ng mga taong ito ay makikita pa sa maraming lungsod.</q></p><h3>Kabanata XXI. Makikita Pa ang Kanilang mga Libingan</h3><p><q>Halimbawa, gaya ng nabanggit ko na, sa kabundukan ng Caucasus ay ipinakikita ang libingan ng isang nagngangalang Kronos, isang tao at malupit na hari na pumatay sa kanyang mga anak. At ang anak ng taong ito, na tinawag na Zeus, ay naging mas masama pa <em>kaysa sa kanyang ama</em>; at nang maipahayag siyang pinuno ng sansinukob sa pamamagitan ng kapangyarihan ng mahika, gumawa siya ng maraming pangangalunya, pinarusahan ang kanyang ama at mga tiyuhin, at pagkatapos ay namatay; at ipinakikita ng mga taga-Creta ang kanyang libingan. At sa Mesopotamia ay nakalibing ang isang nagngangalang Helios sa Atir at isang Selene sa Carrhæ. Isang Hermes, na isang tao, ang nakalibing sa Ehipto; si Ares sa Thrace; si Aphrodite sa Cyprus; si Æsculapius sa Epidaurus; at makikita pa ang mga libingan ng marami pang gayong tao.</q></p><h3>Kabanata XXII. Kaya Hindi Sila Itinuring na mga Diyos ng Kanilang mga Kasabayan</h3><p><q>Kaya sa mga taong tama ang pag-iisip, malinaw na kinikilala silang mga mortal. At ang kanilang mga kasabayan, na nakaaalam na sila’y mortal, nang mamatay sila ay hindi na sila gaanong pinansin; ang mahabang panahon lamang ang nagbihis sa kanila ng kaluwalhatian ng mga diyos. At huwag kayong magtaka na nalinlang ang mga namuhay noong panahon nina Æsculapius at Hercules, o ang mga kasabayan ni Dionysus o ng sinumang ibang tao noong panahong iyon, sapagkat maging si Hector sa Ilium at si Achilles sa pulo ng Leuce ay sinasamba ng mga naninirahan sa mga lugar na iyon; at sinasamba ng mga taga-Opus si Patroclus, at ng mga taga-Rhodes si Alexander ng Macedonia.</q></p><h3>Kabanata XXIII. Nagbibigay ang mga Ehipsiyo ng Banal na Parangal sa Isang Tao</h3><p><q>Bukod dito, sa mga Ehipsiyo hanggang sa kasalukuyan ay sinasamba ang isang tao bilang diyos bago pa siya mamatay. At tunay na maliit na kawalang-galang pa lamang ito—na nagbibigay ang mga Ehipsiyo ng banal na parangal sa isang tao habang nabubuhay; ngunit ang pinakakatawa-tawa sa lahat ay sinasamba nila ang mga ibon, mga gumagapang na nilalang, at lahat ng uri ng hayop. Sapagkat ang karamihan ng tao ay hindi nag-iisip ni kumikilos nang may wastong paghatol. Ngunit tingnan ninyo, nakikiusap ako, ang pinakakahiya-hiya sa lahat: siya na itinuturing nilang ama ng mga diyos at mga tao ay sinasabing nakipagtalik kay Leda; at marami sa kanila ang naglalagay sa publiko ng larawan nito, na sinusulatan sa ibabaw ng pangalang Zeus. Upang maparusahan ang paghamak na ito, nanaisin kong ipinta nila ang sarili nilang kasalukuyang hari sa gayong mababang yakapan gaya ng ipinangahas nilang iguhit tungkol kay Zeus, at ilagay iyon sa publiko, upang mula sa galit ng isang pansamantalang hari—at mortal pa—matutuhan nilang ibigay ang karangalan kung saan ito nararapat. Sinasabi ko ito sa inyo hindi dahil kilala ko na mismo ang tunay na Diyos; ngunit masaya kong masasabi na kahit hindi ko alam kung sino ang Diyos, iniisip kong malinaw kong alam kahit paano kung ano ang Diyos.</q></p><h3>Kabanata XXIV. Kung Ano ang Hindi Diyos</h3><p><q>Una, kung gayon, ang apat na pangunahing elemento ay hindi maaaring maging Diyos, sapagkat may sanhi ang mga iyon. Hindi rin maaaring Diyos ang paghahalo, ang pagsasama-sama, ang paglikha, o ang globong nakapaligid sa nakikitang sansinukob; ni ang latak na nagtitipon sa Hades, ni ang tubig na lumulutang sa ibabaw nito; ni ang maapoy na sangkap, ni ang hangin na umaabot mula roon hanggang sa ating lupa. Sapagkat kung ang apat na elemento ay magkakahiwalay sa isa’t isa, hindi sana sila maaaring paghaluin upang makalikha ng buhay na hayop kung walang isang dakilang manlilikha. Kung palagi naman silang magkakasama, maging sa kasong ito ay inayos pa rin sila ng isang masining na isip ayon sa kinakailangan para sa mga sangkap at bahagi ng mga hayop, upang mapanatili ng mga iyon ang kani-kaniyang sukat, magkaroon ng malinaw na hugis, at makamit ng lahat ng panloob na bahagi ang angkop na pagkakabigkis. Sa gayunding paraan, ang mga puwestong naaangkop sa bawat isa ay itinatalaga—at napakaganda ng pagkakatalaga—ng isip na manlilikha. Sa madaling salita, sa lahat ng iba pang bagay na kailangang taglayin ng isang nilalang na may buhay, walang pagkukulang ang dakilang nilalang na ito na siyang sanlibutan.</q></p><h3>Kabanata XXV. Ang Sansinukob ay Bunga ng Isip</h3><p><q>Kaya napipilitan tayong ipalagay na may isang Manlilikha na hindi ipinanganak, na siyang nagsama-sama sa mga elemento kung magkakahiwalay ang mga iyon; o, kung magkakasama na, ay masining na pinaghalo ang mga iyon upang makalikha ng buhay at mula sa lahat ay gawing ganap ang isang iisang gawa. Sapagkat hindi maaaring malikha ang isang gawang ganap na marunong nang walang isang isip na higit na dakila kaysa rito. Hindi rin sapat sabihing pag-ibig ang manlilikha ng lahat ng bagay, o pagnanasa, o kapangyarihan, o anumang katulad nito. Ang lahat ng ito ay nagbabago at likas na panandalian. Ni hindi maaaring maging Diyos yaong pinakikilos ng iba, lalo na ang nababago ng panahon at kalikasan at maaaring mapawi.</q></p><h3>Kabanata XXVI. Dumating si Pedro mula sa Caesarea</h3><p>Habang sinasabi ko ang mga bagay na ito kay Appion, lumapit si Pedro mula sa Caesarea, at sa Tiro ay nagtipon-tipon ang mga tao, nagmamadaling salubungin siya at sama-samang ipahayag ang kanilang kagalakan sa kanyang pagdalaw. At umalis si Appion, kasama lamang sina Anubion at Athenodorus; ngunit kaming iba ay nagmadaling sumalubong kay Pedro, at ako ang unang bumati sa kanya sa tarangkahan at umakay sa kanya patungo sa bahay-panuluyan. Pagdating namin, pinaalis namin ang mga tao; at nang marapatin niyang itanong kung ano ang nangyari, wala akong ikinubli kundi ikinuwento ko sa kanya ang mga paninirang-puri ni Simon, ang mga kakila-kilabot na anyong kanyang kinuha, at lahat ng sakit na ipinadala niya matapos ang piging na may hain; at sinabi kong ilan sa mga maysakit ay naroon pa sa Tiro, samantalang ang iba ay sumama kay Simon patungong Sidon nang ako’y dumating, umaasang pagagalingin niya sila, ngunit narinig kong wala ni isa sa kanila ang napagaling niya. Isinalaysay ko rin kay Pedro ang pagtatalo namin ni Appion; at siya, dahil sa pagmamahal niya sa akin at sa pagnanais na palakasin ang aking loob, ay pinuri at pinagpala ako. Pagkatapos, matapos kumain, siya’y nagpahinga dahil lubhang kailangan iyon matapos ang pagod ng kanyang paglalakbay.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

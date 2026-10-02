@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 5</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Appion Does Not Appear</option><option value="1">Chapter II. Clement's Previous Knowledge of Appion</option><option value="2">Chapter III. Clement's Trick</option><option value="3">Chapter IV. Appion's Undertaking</option><option value="4">Chapter V. Theory of Magic</option><option value="5">Chapter VI. Scruples</option><option value="6">Chapter VII. A Distinction with a Difference</option><option value="7">Chapter VIII. Flattery or Magic</option><option value="8">Chapter IX. A Love-Letter</option><option value="9">Chapter X. The Lover to the Beloved One</option><option value="10">Chapter XI. All Uncleanness with Greediness.</option><option value="11">Chapter XII. Jupiter's Amours</option><option value="12">Chapter XIII. Jupiter's Amours Continued</option><option value="13">Chapter XIV. Jupiter's Undisguised Amours</option><option value="14">Chapter XV. Unnatural Lusts</option><option value="15">Chapter XVI. Praise of Unchastity</option><option value="16">Chapter XVII. The Constellations</option><option value="17">Chapter XVIII. The Philosophers Advocates of Adultery</option><option value="18">Chapter XIX. Close of the Love-Letter</option><option value="19">Chapter XX. The Use Made of It</option><option value="20">Chapter XXI. Answer to Appion's Letter</option><option value="21">Chapter XXII. Lying Fables</option><option value="22">Chapter XXIII. The Gods No Gods</option><option value="23">Chapter XXIV. If a Principle Be Good, Carry It Out</option><option value="24">Chapter XXV. Better to Marry Than to Burn</option><option value="25">Chapter XXVI. Close of the Answer</option><option value="26">Chapter XXVII. A Reason for Hatred</option><option value="27">Chapter XXVIII. The Hoax Confessed</option><option value="28">Chapter XXIX. Appion's Resentment</option><option value="29">Chapter XXX. A Discussion Promised</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Appion Does Not Appear</h3><p>The next day, therefore, in Tyre, as we had agreed, I came to the quiet place, and there I found the rest, with some others also. Then I saluted them. But as I did not see Appion, I asked the reason of his not being present; and some one said that he had been unwell ever since last evening. Then, when I said that it was reasonable that we should immediately set out to visit him, almost all begged me first to discourse to them, and that then we could go to see him. Therefore, as all were of one opinion, I proceeded to say: —</p><h3>Chapter II. Clement's Previous Knowledge of Appion</h3><p><q>Yesterday, when I left this, O friends, I confess that, through much anxiety about the discussion that was to take place with Appion, I was not able to get any sleep. And while I was unable to sleep, I remembered a trick that I played upon him in Rome. It was this. From my boyhood I Clement was a lover of truth, and a seeker of the things that are profitable for the soul, and spending my time in raising and refuting theories; but being unable to find anything perfect, through distress of mind I fell sick. And while I was confined to bed Appion came to Rome, and being my father's friend, he lodged with me; and hearing that I was in bed, he came to me, as being not unacquainted with medicine, and inquired the cause of my being in bed. But I, being aware that the man exceedingly hated the Jews, as also that he had written many books against them, and that he had formed a friendship with this Simon, not through desire of learning, but because he knew that he was a Samaritan and a hater of the Jews, and that he had come forth in opposition to the Jews, therefore he had formed an alliance with him, that he might learn something from him against the Jews; —</q></p><h3>Chapter III. Clement's Trick</h3><p><q>I knowing this before concerning Appion, as soon as he asked me the cause of my sickness, answered feignedly, that I was suffering and distressed in my mind after the manner of young men. And to this he said, 'My son, speak freely as to a father: what is your soul's ailment?' And when I again groaned feignedly, as being ashamed to speak of love, by means of silence and down-looking I conveyed the impression of what I wished to intimate. But he, being persuaded that I was in love with a woman, said: 'There is nothing in life which does not admit of help. For indeed I myself, when I was young, being in love with a most accomplished woman, not only thought it impossible to obtain her, but did not even hope ever to address her. And yet, having fallen in with a certain Egyptian who was exceedingly well versed in magic, and having become his friend, I disclosed to him my love, and not only did he assist me in all that I wished, but, honouring me more bountifully, he hesitated not to teach me an incantation by means of which I obtained her; and as soon as I had obtained her, by means of his secret instruction, being persuaded by the liberality of my teacher, I was cured of love.</q></p><h3>Chapter IV. Appion's Undertaking</h3><p><q>'Whence, if you also suffer any such thing after the manner of men, use freedom with me with all security; for within seven days I shall put you fully in possession of her.' When I heard this, looking at the object I had in view, I said: 'Pardon me that I do not altogether believe in the existence of magic; for I have already tried many who have made many promises, and have deceived me. However, your undertaking influences me, and leads me to hope. But when I think of the matter, I am afraid that the demons are sometimes not subject to the magicians with respect to the things that are commanded them.'</q></p><h3>Chapter V. Theory of Magic</h3><p><q>Then Appion said: 'Admit that I know more of these things than you do. However, that you may not think that there is nothing in what you have heard from me in reference to what you have said, I will tell you how the demons are under necessity to obey the magicians in the matters about which they are commanded. For as it is impossible for a soldier to contradict his general, and impossible for the generals themselves to disobey the king—for if any one oppose those set over him, he is altogether deserving of punishment—so it is impossible for the demons not to serve the angels who are their generals; and when they are adjured by them, they yield trembling, well knowing that if they disobey they shall be fully punished. But the angels also themselves, being adjured by the magicians in the name of their ruler, obey, lest, being found guilty of disobedience, they be destroyed. For unless all things that are living and rational foresaw vengeance from the ruler, confusion would ensue, all revolting against one another.'</q></p><h3>Chapter VI. Scruples</h3><p><q>Then said I: 'Are those things correct, then, which are spoken by poets and philosophers, that in Hades the souls of the wicked are judged and punished for their attempts; such as those of Ixion, and Tantalus, and Tityus, and Sisyphus, and the daughters of Danaus, and as many others as have been impious here? And how, if these things are not so, is it possible that magic can subsist?' Then he having told me that these things are so in Hades, I asked him: 'Why are not we ourselves afraid of magic, being persuaded of the punishment in Hades for adultery? For I do not admit that it is a righteous thing to compel to adultery a woman who is unwilling; but if any one will engage to persuade her, I am ready for that, besides confessing my thanks.'</q></p><h3>Chapter VII. A Distinction with a Difference</h3><p><q>Then Appion said: 'Do you not think it is the same thing, whether you obtain her by magic, or by deceiving her with words?' Then said I: 'Not altogether the same; for these differ widely from one another. For he who constrains an unwilling woman by the force of magic, subjects himself to the most terrible punishment, as having plotted against a chaste woman; but he who persuades her with words, and puts the choice in her own power and will, does not force her. And I am of opinion, that he who has persuaded <em>a woman</em> will not suffer so great punishment as he who has forced her. Therefore, if you can persuade her, I shall be thankful to you when I have obtained her; but otherwise, I had rather die than force her against her will.'</q></p><h3>Chapter VIII. Flattery or Magic</h3><p><q>Then Appion, being really puzzled, said: 'What am I to say to you? For at one time, as one perturbed with love, you pray to obtain her; and anon, as if you loved her not, you make more account of your fear than your desire: and you think that if you can persuade her you shall be blameless, as without sin; but obtaining her by the power of magic, you will incur punishment. But do you not know that it is the end of every action that is judged, the fact that it has been committed, and that no account is made of the means by which it has been effected? And if you commit adultery, being enabled by magic, shall you be judged as having done wickedly; and if by persuasion, shall you be absolved from sin in respect of the adultery?' Then I said: 'On account of my love, there is a necessity for me to choose one or other of the means that are available to procure the object of my love; and I shall choose, as far as possible, to cajole her rather than to use magic. But neither is it easy to persuade her by flattery, for the woman is very much of a philosopher.'</q></p><h3>Chapter IX. A Love-Letter</h3><p><q>Then Appion said: 'I am all the more hopeful to be able to persuade her, as you wish, provided only we be able to converse with her.' 'That,' said I, 'is impossible.' Then Appion asked if it were possible to send a letter to her. Then I said: 'That indeed may be done.' Then Appion said: 'This very night I shall write a paper on encomiums of adultery, which you shall get from me and dispatch to her; and I hope that she shall be persuaded, and consent.' Appion accordingly wrote the paper, and gave it to me; and I thought of it this very night, and I remembered that fortunately I have it by me, along with other papers which I carry about with me.</q> Having thus spoken, I showed the paper to those who were present, and read it to them as they wished to hear it; and having read it, I said: <q>This, O men, is the instruction of the Greeks, affording a bountiful licence to sin without fear. The paper was as follows:—</q></p><h3>Chapter X. The Lover to the Beloved One</h3><p><q>'Anonymously, on account of the laws of foolish men. At the bidding of Love, the first-born of all, salutation: I know that you are devoted to philosophy, and for the sake of virtue you affect the life of the noble. But who are nobler than the gods among all, and philosophers among men? For these alone know what works are good or evil by nature, and what, not being so, are accounted so by the imposition of laws. Now, then, some have supposed that the action which is called adultery is evil, although it is in every respect good. For it is by the appointment of Eros for the increase of life. And Eros is the eldest of all the gods. For without Eros there can be no mingling or generation either of elements, or gods, or men, or irrational animals, or anything else. For we are all instruments of Eros. He, by means of us, is the fabricator of all that is begotten, the mind inhabiting our souls. Hence it is not when we ourselves wish it, but when we are ordered by him, that we desire to do his will. But if, while we desire according to his will, we attempt to restrain the desire for the sake of what is called chastity, what do we do but the greatest impiety, when we oppose the oldest of all gods and men?</q></p><h3>Chapter XI. All Uncleanness with Greediness.</h3><p><q>'But let all doors be opened to him, and let all baneful and arbitrary laws be set aside, which have been ordained by fanatical men, who, under the power of senselessness, and not willing to understand what is reasonable, and, moreover, suspecting those who are called adulterers, are with good reason mocked with arbitrary laws by Zeus himself, through Minos and Rhadamanthus. For there is no restraining of Eros dwelling in our souls; for the passion of lovers is not voluntary. Therefore Zeus himself, the giver of these laws, approached myriads of women; and, according to some wise men, he sometimes had intercourse with human beings, as a benefactor for the production of children. But in the case of those to whom he knew that his being unknown would be a favour, he changed his form, in order that he might neither grieve them, nor seem to act in opposition to the laws given by himself. It becomes you, therefore, who are debaters of philosophy, for the sake of a good life, to imitate those who are acknowledged to be the nobler, who have had sexual intercourse ten thousand times.</q></p><h3>Chapter XII. Jupiter's Amours</h3><p><q>'And not to spend the time to no purpose in giving more examples, I shall begin with mentioning some embraces of Zeus himself, the father of gods and men. For it is impossible to mention all, on account of their multitude. Hear, therefore, the amours of this great Jupiter, which he concealed by changing his form, on account of the fanaticism of senseless men. For, in the first place, wishing to show to wise men that adultery is no sin, when he was going to marry, being, according to the multitude, knowingly an adulterer, in his first marriage, but not being so in reality, by means, as I said, of a seeming sin be accomplished a sinless marriage. For he married his own sister Hera, assuming the likeness of a cuckoo's wing; and of her were born Hebe and Ilithyia. For he gave birth to Metis without copulation with any one, as did also Hera to Vulcan.</q></p><h3>Chapter XIII. Jupiter's Amours Continued</h3><p><q>'Then he committed incest with his sister, who was born of Kronos and Thalasse, after the dismemberment of Kronos, and of whom were born Eros and Cypris, whom they call also Dodone. Then, in the likeness of a satyr, he had intercourse with Antiope the daughter of Nycteus, of whom were born Amphion and Zethus. And he embraced Alcmene, the wife of Amphitryon, in the form of her husband Amphitryon, of whom was born Hercules. And, changed into an eagle, he approached Ægina, the daughter of Asclepius, of whom Æacus was born. And in the form of a bear he lay with Amalthea the daughter of Phocus; and in a golden shower he fell upon Danae, the daughter of Acrisius, of whom sprang Perseus. He became wild as a lion to Callisto the daughter of Lycaon and begot Arcus the second. And with Europa the daughter of Phœnix he had intercourse by means of a bull, of whom sprang Minos, and Rhadamanthus, and Sarpedon; and with Eurymedusa the daughter of Achelous, changing himself into an ant, of whom was born Myrmidon. With a nymph of Hersæus, in the form of a vulture, from whom sprang the wise men of old in Sicily. He came to Juno the earth-born in Rhodes, and of her were born Pargæus, Kronius, Kytis. And he deflowered Ossia, taking the likeness of her husband Phœnix, of whom Anchinous was born to him. Of Nemesis the daughter of Thestius, who is also thought to be Leda, he begot Helena, in the form of a swan or goose; and again, in the form of a star, he produced Castor and Polydeuces. With Lamia he was transformed into a hoopoo.</q></p><h3>Chapter XIV. Jupiter's Undisguised Amours</h3><p><q>'In the likeness of a shepherd he made Mnemosyne mother of the Muses. Setting himself on fire, he married Semele, the daughter of Cadmus, of whom he begot Dionysus. In the likeness of a dragon he deflowered his daughter Persephone, thought to be the wife of his brother Pluto. He had intercourse with many other women without undergoing any change in his form; for the husbands had no ill-will to him as if it were a sin, but knew well that in associating with their wives he bountifully produced children for them, bestowing upon them the Hermeses, the Apollos, the Dionysi, the Endymions, and others whom we have spoken of, most excellent in beauty through his fatherhood.</q></p><h3>Chapter XV. Unnatural Lusts</h3><p><q>'And not to spend the time in an endless exposition, you will find numerous unions with Jupiter of all the gods. But senseless men call these doings of the gods adulteries; even of those gods who did not refrain from the abuse of males as disgraceful, but who practised even this as seemly. For instance, Jupiter himself was in love with Ganymede: Poseidon with Pelops; Apollo with Cinyras, Zacyinthus, Hyacinthus, Phorbas, Hylas, Admetus, Cyparissus, Amyclas, Troilus, Branchus the Tymnæan, Parus the Potnian, Orpheus; Dionysus with Laonis, Ampelus, Hymenæus, Hermaphrodites, Achilles; Asclepius with Hippolytus, and Hephæstus with Peleus; Pan with Daphnis; Hermes with Perseus, Chrysas, Theseus, Odrysus; Hercules with Abderus, Dryops, Jocastus, Philoctetes, Hylas, Polyphemus, Hæmon, Chonus, Eurystheus.</q></p><h3>Chapter XVI. Praise of Unchastity</h3><p><q>'Thus have I in part set before you the amours of all the more noted gods, beloved, that you may know that fanaticism respecting this thing is confined to senseless men. Therefore they are mortal, and spend their lives sadly, because through their zeal they proclaim those things to be evil which the gods esteem as excellent. Therefore for the future you will be blessed, imitating the gods, and not men. For men, seeing you preserving that which is thought to be chastity, on account of what they themselves feel, praise you indeed, but do not help you. But the gods, seeing you like unto themselves, will both praise and help.</q></p><h3>Chapter XVII. The Constellations</h3><p><q>'For reckon to me how many mistresses they have rewarded, some of whom they have placed among the stars; and of some they have blessed both the children and the associates. Thus Zeus made Callisto a constellation, called the Little Bear, which some also call the Dog's Tail. Poseidon also placed the dolphin in the sky for the sake of Amphitrite; and he gave a place among the stars to Orion the son of Euryale, the daughter of Minos, for the sake of his mother Euryale. And Dionysus made a constellation of the crown of Ariadne, and Zeus invested the eagle which assisted him in the rape of Ganymede, and Ganymede himself with the honour of the Water-pourer. Also he honoured the bull for the sake of Europa; and also having bestowed Castor, and Polydeuces, and Helena upon Leda, he made them stars. Also Perseus for the sake of Danae; and Arcus for the sake of Callisto. The virgin who also is Dice, for the sake of Themis; and Heracles for the sake of Alcmene. But I do not enlarge further; for it were long to tell particularly how many others the gods have blessed for the sake of their many mistresses. in their intercourse with human beings, which senseless men repudiate as evil deeds, not knowing that pleasure is the great advantage among men.</q></p><h3>Chapter XVIII. The Philosophers Advocates of Adultery</h3><p><q>'But why? Do not the celebrated philosophers extol pleasure, and have they not had intercourse with what women they would? Of these the first was that teacher of Greece, of whom Phœbus himself said, <q>Of all men, Socrates is the wisest.</q> Does not he teach that in a well-regulated state women should be common? and did he not conceal the fair Alcibiades under his philosopher's gown? And the Socratic Antisthenes writes of the necessity of not abandoning what is called adultery. And even his disciple Diogenes, did not he freely associate with Lais, for the hire of carrying her on his shoulders in public? Does not Epicurus extol pleasure? Did not Aristippus anoint himself with perfumes, and devote himself wholly to Aphrodite? Does not Zeno, intimating indifference, say that the deity pervades all things, that it may be known to the intelligent, that with whomsoever a man has intercourse, it is as with himself; and that it is superfluous to forbid what are called adulteries, or intercourse with mother, or daughter, or sister, or children. And Chrysippus, in his erotic epistles, makes mention of the statue in Argos, representing Hera and Zeus in an obscene position.</q></p><h3>Chapter XIX. Close of the Love-Letter</h3><p><q>'I know that to those uninitiated in the truth these things seem dreadful and most base; but not so to the gods and the philosophers of the Greeks, nor to those initiated in the mysteries of Dionysus and Demeter. But above all these, not to waste time in speaking of the lives of all the gods, and all the philosophers, let the two chief be your marks—Zeus the greatest of the gods, and Socrates of philosophic men. And the other things which I have mentioned in this letter, understand and attend to, that you may not grieve your lover; since, if you act contrarily to gods and heroes, you will be judged wicked, and will subject yourself to fitting punishment. But if you offer yourself to every lover, then, as an imitator of the gods, you shall receive benefits from them. For the rest, dearest one, remember what mysteries I have disclosed to you, and inform me by letter of your choice. Fare you well.'</q></p><h3>Chapter XX. The Use Made of It</h3><p><q>I therefore, having received this billet from Appion, as though I were really going to send it to a beloved one, pretended as if she had written in answer to it; and the next day, when Appion came, I gave him the reply, as if from her, as follows:—</q></p><h3>Chapter XXI. Answer to Appion's Letter</h3><p><q>'I wonder how, when you commend me for wisdom, you write to me as to a fool. For, wishing to persuade me to your passion, you make use of examples from the mythologies of the gods, that Eros is the eldest of all, as you say, and above all gods and men, not being afraid to blaspheme, that you might corrupt my soul and insult my body. For Eros is not the leader of the gods,—he, I mean, who has to do with lusts. For if he lusts willingly, he is himself his own suffering and punishment; and he who should suffer willingly could not be a god. But if against his will he lust for copulation, and, pervading our souls as through the members of our bodies, is borne into intermeddling with our minds, then he that impels him to love is greater than he. And again, he who impels him, being himself impelled by another desire, another greater than he is found impelling him. And thus we come to an endless succession of lovers, which is impossible. Thus, neither is there an impeller nor an impelled; but it is the lustful passion of the lover himself, which is increased by hope and diminished by despair.</q></p><h3>Chapter XXII. Lying Fables</h3><p><q>'But those who will not subdue base lusts belie the gods, that, by representing the gods as first doing the things which they do, they may be set free from blame. For if those who are called gods committed adulteries for the sake of begetting children, and not through lasciviousness, why did they also debauch males? But it is said they complimented their mistresses by making them stars. Therefore before this were there no stars, until such time as, by reason of wantonness, the heaven was adorned with stars by adulterers? And how is it that the children of those who have been made stars are punished in Hades,—Atlas loaded, Tantalus tortured with thirst, Sisyphus pushing a stone, Tityus thrust through the bowels, Ixion continually rolled round a wheel? How is it that these divine lovers made stars of the women whom they defiled, but gave no such grace to these?</q></p><h3>Chapter XXIII. The Gods No Gods</h3><p><q>'They were not gods, then, but representations of tyrants. For a certain tomb is shown among the Caucasian mountains, not in heaven, but in earth, as that of Kronos, a barbarous man and a devourer of children. Further, the tomb of the lascivious Zeus, so famed in story, who in like manner devoured his own daughter Metis, is to be seen in Crete, and those of Pluto and Poseidon in the Acherusian lake; and that of Helius in Astra, and of Selene in Carræ, of Hermes in Hermopolis, of Ares in Thrace, of Aphrodite in Cyprus, of Dionysus in Thebes, and of the rest in other places. At all events, the tombs are shown of those that I have named; for they were men, and in respect of these things, wicked men and magicians. For else they should not have become despots—I mean Zeus, renowned in story, and Dionysus—but that by changing their forms they prevailed over whom they pleased, for whatever purpose they designed.</q></p><h3>Chapter XXIV. If a Principle Be Good, Carry It Out</h3><p><q>'But if we must emulate their lives, let us imitate not only their adulteries, but also their banquets. For Kronos devoured his own children, and Zeus in like manner his own daughter. And what must I say? Pelops served as a supper for all the gods. Wherefore let us also, before unhallowed marriages, perpetrate a supper like that of the gods; for thus the supper would be worthy of the marriages. But this you would never consent to; no more will I to adultery. Besides this, you threaten me with the anger of Eros as of a powerful god. Eros is not a god, as I conceive him, but a desire occurring from the temperament of the living creature in order to the perpetuation of life, according to the foresight of Him who works all things, that the whole race may not fail, but by reason of pleasure another may be produced out of the substance of one who shall die, springing forth by lawful marriage, that he may know to sustain his own father in old age. And this those born from adultery cannot do, not having the nature of affection towards those who have begotten them.</q></p><h3>Chapter XXV. Better to Marry Than to Burn</h3><p><q>'Since, therefore, the erotic desire occurs for the sake of continuation and legitimate increasing, as I have said, it behooves parents providing for the chastity of their children to anticipate the desire, by imbuing them with instruction by means of chaste books, and to accustom them beforehand by excellent discourses; for custom is a second nature. And in addition to this, frequently to remind them of the punishments appointed by the laws, that, using fear as a bridle, they may not run on in wicked pleasures. And it behooves them also, before the springing of the desire, to satisfy the natural passion of puberty by marriage, first persuading them not to look upon the beauty of another woman.</q></p><h3>Chapter XXVI. Close of the Answer</h3><p><q>'For our mind, whenever it is impressed delightfully with the image of a beloved one, always seeing the form as in a mirror, is tormented by the recollection; and if it do not obtain its desire, it contrives ways of obtaining it; but if it do obtain it, it is rather increased, like fire having a supply of wood, and especially when there is no fear impressed upon the soul of the lover before the rise of passion. For as water extinguishes fire, so fear is the extinguisher of unreasonable desire. Whence I, having learned from a certain Jew both to understand and to do the things that are pleasing to God, am not to be entrapped into adultery by your lying fables. But may God help you in your wish and efforts to be chaste, and afford a remedy to your soul burning with love.'</q></p><h3>Chapter XXVII. A Reason for Hatred</h3><p><q>When Appion heard the pretended answer, he said: 'Is it without reason that I hate the Jews? Here now some Jew has fallen in with her, and has converted her to his religion, and persuaded her to chastity, and it is henceforth impossible that she ever have intercourse with another man; for these fellows, setting God before them as the universal inspector of actions, are extremely persistent in chastity, as being unable to be concealed from Him.'</q></p><h3>Chapter XXVIII. The Hoax Confessed</h3><p><q>When I heard this, I said to Appion: 'Now I shall confess the truth to you. I was not enamoured of the woman, or of any one else, my soul being exceedingly spent upon other desires, and upon the investigation of true doctrines. And till now, although I have examined many doctrines of philosophers, I have inclined to none of them, excepting only that of the Jews,—a certain merchant of theirs having sojourned here in Rome, selling linen clothes, and a fortunate meeting having set simply before me the doctrine of the unity of God.'</q></p><h3>Chapter XXIX. Appion's Resentment</h3><p><q>Then Appion, having heard from me the truth, with his unreasonable hatred of the Jews, and neither knowing nor wishing to know what their faith is, being senselessly angry, immediately quitted Rome in silence. And as this is my first meeting with him since then, I naturally expect his anger in consequence. However, I shall ask him in your presence what he has to say concerning those who are called gods, whose lives, fabled to be filled with all passions, are constantly celebrated to the people, in order to their imitation; while, besides their human passions as I have said, their graves are also shown in different places.</q></p><h3>Chapter XXX. A Discussion Promised</h3><p>The others having heard these things from me, and desiring to learn what would ensue, accompanied me to visit Appion. And we found him bathed, and sitting at a table furnished. Wherefore we inquired but little into the matter concerning the gods. But he, understanding, I suppose, our wish, promised that next day he would have something to say about the gods, and appointed to us the same place where he would converse with us. And we, as soon as he had promised, thanked him, and departed, each one to his home.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Hindi Dumating si Appion</h3><p>Kinabukasan, sa Tiro, gaya ng napagkasunduan namin, pumunta ako sa tahimik na lugar at doon ay nadatnan ko ang iba, kasama rin ang ilang iba pa. Binati ko sila. Ngunit dahil hindi ko nakita si Appion, tinanong ko kung bakit wala siya; at may nagsabi na masama ang kanyang pakiramdam mula pa noong nakaraang gabi. Nang sabihin kong makatuwiran na agad kaming pumunta upang dalawin siya, halos lahat ay nakiusap na magsalita muna ako sa kanila, at saka kami pupunta upang makita siya. Kaya, yamang iisa ang pasya ng lahat, nagsimula akong magsalita:</p><h3>Kabanata II. Ang Naunang Kaalaman ni Clemente tungkol kay Appion</h3><p><q>Kahapon, nang umalis ako rito, mga kaibigan, inaamin kong dahil sa matinding pag-aalala tungkol sa talakayang gaganapin namin ni Appion ay hindi ako nakatulog. At habang hindi ako makatulog, naalala ko ang isang panlilinlang na ginawa ko sa kanya sa Roma. Ganito iyon. Mula pagkabata, ako, si Clemente, ay umiibig sa katotohanan at naghahanap ng mga bagay na kapaki-pakinabang sa kaluluwa, at ginugugol ko ang aking panahon sa paghaharap at pagpapabulaan sa iba’t ibang aral. Ngunit dahil wala akong matagpuang ganap, dahil sa pagkabagabag ng isip ay nagkasakit ako. Habang nakaratay ako, dumating si Appion sa Roma at, bilang kaibigan ng aking ama, ay tumuloy sa amin. Nang marinig niyang ako’y nakahiga, pinuntahan niya ako, sapagkat may kaalaman din siya sa medisina, at tinanong ang dahilan ng aking pagkakasakit. Ngunit alam kong labis na kinapopootan ng taong ito ang mga Judio, na nagsulat siya ng maraming aklat laban sa kanila, at na nakipagkaibigan siya kay Simon hindi dahil nais niyang matuto, kundi dahil alam niyang Samaritano ito at napopoot sa mga Judio at lumalaban sa kanila. Kaya nakipagkaisa siya rito upang may matutuhan siyang magagamit laban sa mga Judio—</q></p><h3>Kabanata III. Ang Panlilinlang ni Clemente</h3><p><q>Dahil alam ko na ang mga bagay na ito tungkol kay Appion, nang tanungin niya ako kung ano ang sanhi ng aking karamdaman, nagkunwari akong sumagot na naghihirap at nababagabag ang aking isip gaya ng karaniwang nangyayari sa mga kabataan. Sinabi niya sa akin, ‘Anak ko, magsalita ka nang malaya sa akin na para bang sa isang ama: ano ang nagpapahirap sa iyong kaluluwa?’ At nang muli akong magkunwaring bumuntong-hininga na para bang nahihiyang magsalita tungkol sa pag-ibig, sa aking pananahimik at pagyuko ng tingin ay ipinahiwatig ko ang nais kong ipahiwatig. Nang makumbinsi siyang umiibig ako sa isang babae, sinabi niya: ‘Walang bagay sa buhay na hindi maaaring matulungan. Sapagkat ako rin, noong bata pa ako, nang umibig sa isang napakahusay na babae, ay hindi lamang nag-isip na imposibleng makuha siya kundi wala man lamang akong pag-asang makausap siya. Ngunit nakatagpo ako ng isang Ehipsiyong lubhang bihasa sa mahika at naging kaibigan ko siya. Ipinagtapat ko sa kanya ang aking pag-ibig, at hindi lamang niya ako tinulungan sa lahat ng nais ko, kundi dahil sa labis niyang paggalang sa akin ay hindi siya nag-atubiling turuan ako ng isang orasyon na sa pamamagitan nito ay nakuha ko ang babae. At nang makuha ko siya, sa pamamagitan ng lihim na turo ng aking guro at dahil napaniwala ako ng kanyang pagiging bukas-palad, gumaling ako sa pag-ibig.</q></p><h3>Kabanata IV. Ang Pangako ni Appion</h3><p><q>‘Kaya kung dumaranas ka rin ng gayong bagay gaya ng ibang tao, magsalita ka sa akin nang buong-laya at walang takot; sapagkat sa loob ng pitong araw ay lubos kitang pagkakalooban ng paraan upang mapasaiyo siya.’ Nang marinig ko ito, habang iniisip ang layunin ko, sinabi ko: ‘Patawarin mo ako kung hindi ko lubos na pinaniniwalaan ang pag-iral ng mahika; sapagkat nasubukan ko na ang marami na nangako ng maraming bagay ngunit nilinlang lamang ako. Gayunman, naaapektuhan ako ng iyong pangako at binibigyan ako nito ng pag-asa. Ngunit kapag pinag-iisipan ko ang bagay, natatakot ako na baka kung minsan ay hindi sumusunod ang mga demonyo sa mga salamangkero hinggil sa mga bagay na ipinag-uutos sa kanila.’</q></p><h3>Kabanata V. Teorya tungkol sa Mahika</h3><p><q>Pagkatapos ay sinabi ni Appion: ‘Aminin mong mas marami akong alam tungkol sa mga bagay na ito kaysa sa iyo. Gayunman, upang hindi mo isipin na walang kabuluhan ang narinig mo sa akin tungkol sa sinabi mo, ipaliliwanag ko sa iyo kung bakit kailangang sumunod ang mga demonyo sa mga salamangkero sa mga bagay na iniuutos sa kanila. Sapagkat kung paanong imposibleng salungatin ng isang kawal ang kanyang heneral, at imposibleng suwayin ng mga heneral mismo ang hari—sapagkat kung sinuman ang sumalungat sa mga nakatataas sa kanya ay ganap na karapat-dapat sa kaparusahan—gayon din imposibleng hindi paglingkuran ng mga demonyo ang mga anghel na kanilang mga heneral. At kapag sila’y isinumpa sa pangalan ng mga ito, nanginginig silang sumusunod, sapagkat alam na alam nilang kung susuway sila ay lubusang parurusahan. Ngunit ang mga anghel din mismo, kapag isinumpa ng mga salamangkero sa pangalan ng kanilang pinuno, ay sumusunod, baka kapag napatunayang masuwayin ay mapuksa sila. Sapagkat kung hindi inaasahan ng lahat ng nabubuhay at may katuwiran ang paghihiganti mula sa pinuno, magkakaroon ng kaguluhan at lahat ay maghihimagsik laban sa isa’t isa.’</q></p><h3>Kabanata VI. Mga Pag-aalinlangan</h3><p><q>Pagkatapos ay sinabi ko: ‘Kung gayon, tama ba ang mga sinasabi ng mga makata at pilosopo, na sa Hades ay hinahatulan at pinarurusahan ang mga kaluluwa ng masasama dahil sa kanilang mga ginawa—gaya nina Ixion, Tantalus, Tityus, Sisyphus, mga anak na babae ni Danaus, at ng maraming iba pang naging di-maka-Diyos dito? At kung hindi totoo ang mga bagay na ito, paano magiging posible ang mahika?’ Nang sabihin niya sa akin na totoo nga ang mga bagay na ito sa Hades, tinanong ko siya: ‘Bakit hindi tayo mismo matatakot gumamit ng mahika, yamang naniniwala tayo sa kaparusahan sa Hades dahil sa pangangalunya? Sapagkat hindi ko matatanggap na matuwid na pilitin sa pangangalunya ang isang babaeng ayaw; ngunit kung may mangangakong hihikayatin siya, handa ako riyan at magpapasalamat pa ako.’</q></p><h3>Kabanata VII. Isang Pagkakaibang Mahalaga</h3><p><q>Sinabi ni Appion: ‘Hindi mo ba iniisip na pareho lamang iyon, makuha mo man siya sa pamamagitan ng mahika o sa panlilinlang ng mga salita?’ Sinabi ko: ‘Hindi lubos na pareho; sapagkat malaki ang pagkakaiba ng dalawang iyon. Ang pumipilit sa isang babaeng ayaw sa pamamagitan ng kapangyarihan ng mahika ay naglalagay sa sarili sa ilalim ng pinakakakila-kilabot na kaparusahan, sapagkat nagbalak siya laban sa isang malinis na babae. Ngunit ang humihikayat sa kanya sa pamamagitan ng mga salita at iniiwan sa kanyang sariling pagpili at kalooban ang pasya ay hindi pumipilit sa kanya. At sa palagay ko, ang nakahikayat sa <em>isang babae</em> ay hindi daranas ng kaparusahang kasingbigat ng pumilit sa kanya. Kaya kung mahihikayat mo siya, magpapasalamat ako sa iyo kapag nakuha ko siya; ngunit kung hindi, mas nanaisin ko pang mamatay kaysa pilitin siya laban sa kanyang kalooban.’</q></p><h3>Kabanata VIII. Pambobola o Mahika</h3><p><q>Pagkatapos, tunay na nalito si Appion at sinabi: ‘Ano ang sasabihin ko sa iyo? Sa isang sandali, gaya ng isang taong nababagabag sa pag-ibig, idinadalangin mong makuha siya; at kaagad pagkatapos, na para bang hindi mo siya iniibig, mas pinahahalagahan mo ang iyong takot kaysa sa iyong pagnanasa. Iniisip mong kung mahihikayat mo siya ay wala kang kasalanan, ngunit kung makuha mo siya sa kapangyarihan ng mahika ay mapaparusahan ka. Ngunit hindi mo ba alam na ang wakas ng bawat kilos ang hinahatulan—ang katotohanang nagawa iyon—at hindi isinasaalang-alang ang paraan kung paano iyon naisakatuparan? Kung mangangalunya ka dahil natulungan ng mahika, hahatulan kang gumawa ng masama; ngunit kung sa pamamagitan ng panghihikayat, malilinis ka ba sa kasalanan tungkol sa pangangalunya?’ Sinabi ko: ‘Dahil sa aking pag-ibig, kailangan kong pumili ng isa sa mga paraang magagamit upang makamit ang minamahal ko; at hangga’t maaari, pipiliin kong bolahin siya kaysa gumamit ng mahika. Ngunit hindi rin madaling hikayatin siya sa pamamagitan ng pambobola, sapagkat ang babae ay lubhang pilosopiko.’</q></p><h3>Kabanata IX. Isang Liham ng Pag-ibig</h3><p><q>Pagkatapos ay sinabi ni Appion: ‘Lalo akong umaasang mahihikayat ko siya, gaya ng nais mo, basta makausap lamang natin siya.’ ‘Imposible iyon,’ sabi ko. Tinanong ni Appion kung maaari namang magpadala ng liham sa kanya. Sinabi ko: ‘Iyan ay maaaring gawin.’ Pagkatapos ay sinabi ni Appion: ‘Ngayong gabi mismo ay susulat ako ng isang pahayag na pumupuri sa pangangalunya; kukunin mo iyon sa akin at ipapadala sa kanya. Umaasa akong mahihikayat siya at papayag.’ Kaya isinulat ni Appion ang pahayag at ibinigay sa akin. Naalala ko ito kagabi, at mabuti na lamang ay dala ko pa ito kasama ng iba pang mga papel na lagi kong dinadala.</q> Pagkasabi nito, ipinakita ko ang papel sa mga naroroon at binasa iyon sa kanila, gaya ng nais nilang marinig. Pagkabasa ko, sinabi ko: <q>Ito, mga ginoo, ang turo ng mga Griyego, na saganang nagbibigay ng pahintulot na magkasala nang walang takot. Ganito ang nakasulat:</q></p><h3>Kabanata X. Ang Umiibig sa Minamahal</h3><p><q>‘Walang pangalan, dahil sa mga batas ng mga hangal na tao. Sa utos ni Eros, ang panganay sa lahat, pagbati: Alam kong nakatalaga ka sa pilosopiya at alang-alang sa kabutihan ay pinipili mo ang pamumuhay ng mararangal. Ngunit sino ang higit na marangal kaysa sa mga diyos sa lahat, at sa mga pilosopo sa mga tao? Sapagkat sila lamang ang nakaaalam kung aling mga gawa ang mabuti o masama ayon sa kalikasan, at kung aling mga gawa, bagaman hindi gayon sa kalikasan, ay itinuturing na gayon dahil lamang sa ipinataw ng mga batas. Ngayon, ipinapalagay ng ilan na masama ang gawaing tinatawag na pangangalunya, bagaman sa bawat paraan ay mabuti ito. Sapagkat itinakda ito ni Eros para sa pagdami ng buhay. At si Eros ang pinakamatanda sa lahat ng mga diyos. Sapagkat kung walang Eros, walang paghahalo ni paglikha ng mga elemento, mga diyos, mga tao, mga hayop na walang katuwiran, o anumang iba pa. Tayong lahat ay mga kasangkapan ni Eros. Sa pamamagitan natin ay siya ang gumagawa ng lahat ng ipinapanganak, gaya ng isip na nananahan sa ating mga kaluluwa. Kaya hindi tayo nagnanais na gawin ang kanyang kalooban kapag gusto natin, kundi kapag inuutusan niya tayo. Ngunit kung, habang nagnanais tayo ayon sa kanyang kalooban, sinisikap nating pigilin ang pagnanasa alang-alang sa tinatawag na kalinisan, ano ang ginagawa natin kundi ang pinakamalaking kawalang-galang, kapag sinasalungat natin ang pinakamatanda sa lahat ng diyos at tao?</q></p><h3>Kabanata XI. Lahat ng Karumihan na may Kasakiman</h3><p><q>‘Ngunit hayaang mabuksan sa kanya ang lahat ng pinto, at alisin ang lahat ng mapaminsala at di-makatuwirang batas na itinakda ng mga panatikong tao, na nasa kapangyarihan ng kawalang-katino at ayaw unawain kung ano ang makatwiran. Bukod dito, dahil pinaghihinalaan nila ang mga tinatawag na mangangalunya, makatuwirang nililibak sila ni Zeus mismo sa pamamagitan nina Minos at Rhadamanthus dahil sa kanilang arbitraryong mga batas. Sapagkat hindi mapipigil si Eros na nananahan sa ating mga kaluluwa; hindi kusang-loob ang pagnanasa ng mga umiibig. Kaya si Zeus mismo, ang tagapagbigay ng mga batas na ito, ay lumapit sa napakaraming babae; at ayon sa ilang marurunong, kung minsan ay nakipagtalik siya sa mga tao bilang isang tagapagpala upang magkaroon ng mga anak. Ngunit sa mga taong alam niyang makabubuting hindi nila malaman kung sino siya, binago niya ang kanyang anyo, upang hindi niya sila pighatiin ni magmukhang kumikilos laban sa mga batas na ibinigay niya mismo. Kaya nararapat sa inyo, na mga nakikipagtalo tungkol sa pilosopiya alang-alang sa mabuting buhay, na tularan yaong mga kinikilalang mas marangal, na nakipagtalik nang di-mabilang na ulit.</q></p><h3>Kabanata XII. Mga Pag-ibig ni Jupiter</h3><p><q>‘At upang hindi masayang ang oras sa pagbibigay ng higit pang mga halimbawa, sisimulan kong banggitin ang ilan sa mga pakikipagtagpo ni Zeus mismo, ang ama ng mga diyos at mga tao. Imposibleng banggitin ang lahat dahil napakarami ng mga iyon. Pakinggan ninyo, kung gayon, ang mga pag-ibig ng dakilang Jupiter na ito, na itinago niya sa pamamagitan ng pagbabago ng anyo dahil sa pagkapanatiko ng mga taong walang katinuan. Una sa lahat, upang ipakita sa marurunong na hindi kasalanan ang pangangalunya, nang siya’y mag-aasawa, bagaman ayon sa karamihan ay sinasadya niyang mangalunya sa kanyang unang pag-aasawa ngunit sa katotohanan ay hindi naman, sa pamamagitan, gaya ng sinabi ko, ng isang tila kasalanan ay isinagawa niya ang isang pag-aasawang walang kasalanan. Sapagkat pinakasalan niya ang sarili niyang kapatid na si Hera habang nag-anyong pakpak ng kuku; at mula sa kanya ay ipinanganak sina Hebe at Ilithyia. Sapagkat iniluwal niya si Metis nang walang pakikipagtalik kaninuman, gaya rin ng ginawa ni Hera kay Vulcan.</q></p><h3>Kabanata XIII. Nagpatuloy ang mga Pag-ibig ni Jupiter</h3><p><q>‘Pagkatapos ay nakipagtalik siya sa sarili niyang kapatid na babae, na ipinanganak nina Kronos at Thalasse matapos putulin-putol si Kronos, at mula sa kanya ay ipinanganak sina Eros at Cypris, na tinatawag din nilang Dodone. Pagkatapos, sa anyo ng isang satyr, nakipagtalik siya kay Antiope, anak ni Nycteus, at mula rito ay ipinanganak sina Amphion at Zethus. Niyakap niya si Alcmene, asawa ni Amphitryon, sa anyo ng kanyang asawang si Amphitryon, at mula rito ay ipinanganak si Hercules. Nag-anyong agila siya nang lapitan si Ægina, anak ni Asclepius, at mula rito ay ipinanganak si Æacus. Sa anyo ng oso ay nakipagtalik siya kay Amalthea, anak ni Phocus; at bilang gintong ulan ay bumagsak siya kay Danae, anak ni Acrisius, at mula rito ay nagmula si Perseus. Nag-anyong mailap na leon siya kay Callisto, anak ni Lycaon, at naging ama ni Arcus na ikalawa. Nakipagtalik siya kay Europa, anak ni Phœnix, sa anyo ng toro, at mula rito ay nagmula sina Minos, Rhadamanthus, at Sarpedon; at kay Eurymedusa, anak ni Achelous, nag-anyong langgam, at mula rito ay ipinanganak si Myrmidon. Sa isang nimpa ni Hersæus, sa anyo ng buwitre, at mula rito ay nagmula ang mga sinaunang marurunong sa Sicily. Lumapit siya kay Juno na isinilang mula sa lupa sa Rhodes, at mula sa kanya ay ipinanganak sina Pargæus, Kronius, at Kytis. Nilapastangan niya si Ossia sa anyo ng asawa nitong si Phœnix, at mula rito ay ipinanganak sa kanya si Anchinous. Kay Nemesis, anak ni Thestius, na inaakalang si Leda rin, naging ama siya ni Helena sa anyo ng isang sisne o gansa; at muli, sa anyo ng isang bituin, iniluwal niya sina Castor at Polydeuces. Kay Lamia naman ay nag-anyong hoopoe siya.</q></p><h3>Kabanata XIV. Hayagang mga Pag-ibig ni Jupiter</h3><p><q>‘Sa anyo ng isang pastol ay ginawa niyang ina ng mga Musa si Mnemosyne. Sinilaban niya ang kanyang sarili at pinakasalan si Semele, anak ni Cadmus, at mula rito ay naging ama siya ni Dionysus. Sa anyo ng isang dragon ay nilapastangan niya ang kanyang anak na si Persephone, na inaakalang asawa ng kapatid niyang si Pluto. Nakipagtalik siya sa marami pang ibang babae nang hindi na binabago ang kanyang anyo; sapagkat hindi nagkimkim laban sa kanya ang kanilang mga asawa na para bang kasalanan iyon, kundi alam nilang sa pakikipag-ugnayan niya sa kanilang mga asawa ay sagana siyang nagkakaloob sa kanila ng mga anak—mga Hermes, Apollo, Dionysus, Endymion, at iba pang nabanggit natin, na naging napakahusay sa kagandahan dahil sa kanyang pagiging ama.</q></p><h3>Kabanata XV. Mga Di-Likas na Pagnanasa</h3><p><q>‘At upang hindi gugulin ang oras sa walang-katapusang paglalahad, makikita mong marami ring pakikipag-ugnayan kay Jupiter ang lahat ng mga diyos. Ngunit tinatawag ng mga taong walang katinuan na pangangalunya ang mga gawaing ito ng mga diyos; maging yaong mga diyos na hindi umiwas sa pakikipagtalik sa kapwa lalaki na para bang kahiya-hiya, kundi isinagawa pa iyon na parang nararapat. Halimbawa, si Jupiter mismo ay umibig kay Ganymede; si Poseidon kay Pelops; si Apollo kina Cinyras, Zacyinthus, Hyacinthus, Phorbas, Hylas, Admetus, Cyparissus, Amyclas, Troilus, Branchus na Tymnæan, Parus na Potnian, at Orpheus; si Dionysus kina Laonis, Ampelus, Hymenæus, Hermaphrodites, at Achilles; si Asclepius kay Hippolytus; si Hephæstus kay Peleus; si Pan kay Daphnis; si Hermes kina Perseus, Chrysas, Theseus, at Odrysus; at si Hercules kina Abderus, Dryops, Jocastus, Philoctetes, Hylas, Polyphemus, Hæmon, Chonus, at Eurystheus.</q></p><h3>Kabanata XVI. Papuri sa Kahalayan</h3><p><q>‘Sa gayon, minamahal, nailahad ko sa iyo kahit sa bahagi lamang ang mga pag-ibig ng lahat ng higit na kilalang diyos, upang malaman mo na ang pagkapanatiko tungkol sa bagay na ito ay matatagpuan lamang sa mga taong walang katinuan. Kaya sila ay mortal at malungkot na ginugugol ang kanilang buhay, sapagkat dahil sa kanilang kasigasigan ay ipinahahayag nilang masama ang mga bagay na itinuturing ng mga diyos na napakahusay. Kaya mula ngayon ay magiging mapalad ka kung tutuluran mo ang mga diyos at hindi ang mga tao. Sapagkat kapag nakikita ng mga tao na iniingatan mo ang itinuturing na kalinisan, pinupuri ka nga nila dahil sa nararamdaman nila mismo, ngunit hindi ka nila tinutulungan. Ngunit ang mga diyos, kapag nakita kang katulad nila, ay kapwa pupuri at tutulong sa iyo.</q></p><h3>Kabanata XVII. Ang mga Konstelasyon</h3><p><q>‘Sapagkat isipin mo kung gaano karaming mangingibig na babae ang kanilang ginantimpalaan—ang ilan ay inilagay nila sa gitna ng mga bituin, at ang iba naman ay pinagpala pati ang kanilang mga anak at mga kasama. Ginawang konstelasyon ni Zeus si Callisto, na tinatawag na Maliit na Oso, na tinatawag din ng ilan na Buntot ng Aso. Inilagay naman ni Poseidon ang dolpin sa langit alang-alang kay Amphitrite; at binigyan niya ng lugar sa mga bituin si Orion, anak ni Euryale na anak ni Minos, alang-alang sa kanyang inang si Euryale. Ginawa namang konstelasyon ni Dionysus ang korona ni Ariadne, at pinarangalan ni Zeus ang agilang tumulong sa kanya sa pagdukot kay Ganymede, at si Ganymede mismo, sa karangalan ng Tagapagbuhos ng Tubig. Pinarangalan din niya ang toro alang-alang kay Europa; at matapos niyang ipagkaloob sina Castor, Polydeuces, at Helena kay Leda, ginawa niya silang mga bituin. Gayundin si Perseus alang-alang kay Danae, at si Arcus alang-alang kay Callisto. Ang birhen, na siya ring si Dice, alang-alang kay Themis; at si Heracles alang-alang kay Alcmene. Ngunit hindi ko na palalawakin pa; sapagkat mahaba kung isa-isahin kung gaano karami pa ang pinagpala ng mga diyos alang-alang sa kanilang maraming mangingibig na babae sa kanilang pakikipag-ugnayan sa mga tao—mga bagay na itinatakwil ng mga taong walang katinuan bilang masasamang gawa, sapagkat hindi nila nalalaman na ang kasiyahan ang dakilang pakinabang sa mga tao.</q></p><h3>Kabanata XVIII. Mga Pilosopong Tagapagtanggol ng Pangangalunya</h3><p><q>‘Ngunit bakit? Hindi ba pinupuri rin ng mga kilalang pilosopo ang kasiyahan, at hindi ba sila nakipagtalik sa sinumang babaeng naisin nila? Una sa kanila ang gurong iyon ng Gresya, na tungkol sa kanya ay sinabi mismo ni Phœbus, <q>Sa lahat ng tao, si Socrates ang pinakamarunong.</q> Hindi ba niya itinuro na sa isang maayos na estado ay dapat maging panlahat ang mga babae? At hindi ba niya itinago ang magandang si Alcibiades sa ilalim ng kanyang kasuotang pilosopo? Isinulat din ng Socratic na si Antisthenes na hindi dapat iwasan ang tinatawag na pangangalunya. At maging ang kanyang alagad na si Diogenes, hindi ba malaya siyang nakisama kay Lais kapalit ng pagdadala niya rito sa kanyang mga balikat sa publiko? Hindi ba pinupuri ni Epicurus ang kasiyahan? Hindi ba pinahiran ni Aristippus ang sarili ng mga pabango at buong ibinigay ang sarili kay Aphrodite? Hindi ba sinasabi ni Zeno, sa pagpapahiwatig ng kawalang-pagkiling, na ang pagka-Diyos ay lumalaganap sa lahat ng bagay, upang malaman ng mga may unawa na kanino man makipagtalik ang isang tao ay para lamang din siyang nakikipagtalik sa sarili niya; at na hindi na kailangang ipagbawal ang tinatawag na pangangalunya o pakikipagtalik sa ina, anak na babae, kapatid na babae, o mga anak? At si Chrysippus, sa kanyang mga liham tungkol sa pag-ibig, ay binabanggit ang estatwa sa Argos na kumakatawan kina Hera at Zeus sa isang malaswang posisyon.</q></p><h3>Kabanata XIX. Wakas ng Liham ng Pag-ibig</h3><p><q>‘Alam kong para sa mga hindi pa nakatalaga sa katotohanan ay kakila-kilabot at lubhang kahiya-hiya ang mga bagay na ito; ngunit hindi gayon para sa mga diyos at mga pilosopo ng mga Griyego, ni sa mga nakatalaga sa mga hiwaga nina Dionysus at Demeter. Ngunit higit sa lahat ng ito, upang hindi na masayang ang oras sa pagsasalita tungkol sa buhay ng lahat ng diyos at lahat ng pilosopo, gawin mong dalawang pangunahing halimbawa ang mga ito—si Zeus, ang pinakadakila sa mga diyos, at si Socrates sa mga pilosopo. At ang iba pang mga bagay na binanggit ko sa liham na ito, unawain at bigyang-pansin mo, upang hindi mo pighatiin ang umiibig sa iyo; sapagkat kung kikilos ka nang salungat sa mga diyos at bayani, hahatulan kang masama at ilalagay ang sarili mo sa nararapat na kaparusahan. Ngunit kung ibibigay mo ang sarili mo sa bawat umiibig, bilang tagatulad ng mga diyos ay tatanggap ka ng mga kabutihan mula sa kanila. Sa natitira, pinakamamahal, alalahanin mo ang mga hiwagang ibinunyag ko sa iyo at ipaalam mo sa akin sa pamamagitan ng liham ang iyong pasya. Paalam.’</q></p><h3>Kabanata XX. Ang Paggamit Dito</h3><p><q>Kaya, matapos kong tanggapin ang liham na ito mula kay Appion, nagkunwari akong tunay na ipapadala iyon sa isang minamahal na babae. Pagkatapos ay nagkunwari akong sumulat siya bilang tugon; at kinabukasan, nang dumating si Appion, ibinigay ko sa kanya ang sagot na para bang mula sa babae, na ganito ang nilalaman:</q></p><h3>Kabanata XXI. Sagot sa Liham ni Appion</h3><p><q>‘Nagtataka ako kung bakit, matapos mo akong purihin dahil sa karunungan, ay sumusulat ka sa akin na para bang ako’y hangal. Sapagkat sa pagnanais mong hikayatin ako sa iyong pagnanasa, ginagamit mong mga halimbawa ang mga alamat tungkol sa mga diyos—na si Eros, gaya ng sinasabi mo, ang pinakamatanda sa lahat at higit sa lahat ng diyos at tao—at hindi ka natatakot lumapastangan upang sirain ang aking kaluluwa at lapastanganin ang aking katawan. Sapagkat si Eros ay hindi pinuno ng mga diyos—ang ibig kong sabihin ay yaong may kinalaman sa mga pita. Kung kusang-loob siyang nagnanasa, siya mismo ang sarili niyang paghihirap at kaparusahan; at ang kusang nagdurusa ay hindi maaaring maging diyos. Ngunit kung laban sa kanyang kalooban ay nagnanasa siya sa pakikipagtalik, at sa pagpasok sa ating mga kaluluwa na gaya ng sa mga sangkap ng ating katawan ay nadadala siyang manghimasok sa ating mga isip, kung gayon ang nagtutulak sa kanya na umibig ay higit na dakila kaysa sa kanya. At muli, kung ang nagtutulak sa kanya ay itinutulak din ng ibang pagnanasa, may isa pang higit na dakila sa kanya na nagtutulak sa kanya. Sa ganitong paraan ay hahantong tayo sa walang-katapusang hanay ng mga umiibig, na imposible. Kaya wala ni nagtutulak ni itinutulak; ang totoo ay ang mapagnasang damdamin mismo ng umiibig, na lumalakas dahil sa pag-asa at humihina dahil sa kawalan ng pag-asa.</q></p><h3>Kabanata XXII. Mga Huwad na Alamat</h3><p><q>‘Ngunit ang mga ayaw magpigil sa mabababang pita ay nagsisinungaling tungkol sa mga diyos, upang sa paglalarawan nilang unang gumawa ang mga diyos ng mga bagay na ginagawa nila ay makalaya sila sa sisi. Sapagkat kung ang mga tinatawag na diyos ay nangalunya upang magkaroon ng mga anak at hindi dahil sa kahalayan, bakit nakipagtalik din sila sa mga lalaki? At sinasabing pinarangalan nila ang kanilang mga mangingibig na babae sa pamamagitan ng paggawa sa kanila bilang mga bituin. Kung gayon, bago nito ay wala bang mga bituin, hanggang dahil sa kahalayan ay pinalamutian ng mga mangangalunya ang langit ng mga bituin? At paano ngang ang mga anak ng mga ginawang bituin ay pinarurusahan sa Hades—si Atlas na pasan ang mabigat na karga, si Tantalus na pinahihirapan sa uhaw, si Sisyphus na nagtutulak ng bato, si Tityus na tinusok sa mga lamang-loob, at si Ixion na walang-tigil na umiikot sa isang gulong? Paano ngang ginawa ng mga banal na mangingibig na ito na mga bituin ang mga babaeng kanilang nilapastangan ngunit hindi nila ipinagkaloob ang gayong biyaya sa mga ito?</q></p><h3>Kabanata XXIII. Ang mga Diyus-diyosan ay Hindi mga Diyos</h3><p><q>‘Kung gayon, hindi sila mga diyos kundi mga larawan ng mga malulupit na pinuno. Sapagkat may isang libingang ipinakikita sa mga bundok ng Caucasus—hindi sa langit kundi sa lupa—bilang libingan ni Kronos, isang barbarong lalaki at lumalamon ng mga anak. Bukod dito, ang libingan ng mahalay na si Zeus, na tanyag na tanyag sa alamat at tulad ding lumamon sa sarili niyang anak na si Metis, ay makikita sa Crete; at ang mga libingan nina Pluto at Poseidon ay nasa lawa ng Acherusia; ang kay Helius sa Astra, ang kay Selene sa Carræ, ang kay Hermes sa Hermopolis, ang kay Ares sa Thrace, ang kay Aphrodite sa Cyprus, ang kay Dionysus sa Thebes, at ang sa iba pa ay nasa ibang mga lugar. Sa anumang kaso, ipinakikita ang mga libingan ng mga nabanggit ko; sapagkat sila ay mga tao, at hinggil sa mga bagay na ito ay masasamang tao at mga salamangkero. Kung hindi, hindi sana sila naging mga malulupit na pinuno—ang ibig kong sabihin ay sina Zeus, na tanyag sa alamat, at Dionysus—kundi sa pamamagitan ng pagpapalit ng kanilang anyo ay napangibabawan nila ang sinumang kanilang maibigan para sa anumang layuning kanilang itinakda.</q></p><h3>Kabanata XXIV. Kung Mabuti ang Isang Prinsipyo, Isagawa Ito Hanggang Wakas</h3><p><q>‘Ngunit kung kailangan nating tularan ang kanilang mga buhay, huwag lamang nating tularan ang kanilang mga pangangalunya kundi pati ang kanilang mga piging. Sapagkat nilamon ni Kronos ang sarili niyang mga anak, at gayundin ni Zeus ang sarili niyang anak na babae. At ano pa ang sasabihin ko? Inihain si Pelops bilang hapunan sa lahat ng mga diyos. Kaya bago ang mga di-banal na pag-aasawa ay gumawa rin tayo ng isang piging na gaya ng sa mga diyos; sa gayon ang piging ay magiging karapat-dapat sa mga pag-aasawa. Ngunit hindi mo kailanman papayagan iyan; gayundin naman ay hindi ko papayagan ang pangangalunya. Bukod dito, pinagbabantaan mo ako ng galit ni Eros na para bang isa siyang makapangyarihang diyos. Sa pagkaunawa ko, si Eros ay hindi diyos kundi isang pagnanasa na nagmumula sa kalagayan ng nabubuhay na nilalang para sa pagpapatuloy ng buhay, ayon sa paunang paglalaan Niya na gumagawa ng lahat ng bagay, upang hindi maubos ang buong lahi. Sa halip, sa pamamagitan ng kasiyahan ay maaaring magmula ang isa pa mula sa sangkap ng isang taong mamamatay, na isinilang sa pamamagitan ng ayon sa batas na pag-aasawa, upang makilala niya at masuportahan ang sarili niyang ama sa katandaan. Ngunit hindi ito magagawa ng mga ipinanganak mula sa pangangalunya, sapagkat wala silang likas na pagmamahal sa mga nagkaanak sa kanila.</q></p><h3>Kabanata XXV. Mas Mabuting Mag-asawa Kaysa Masunog</h3><p><q>‘Kaya, yamang ang pagnanasa sa pag-ibig ay nangyayari para sa pagpapatuloy at lehitimong pagdami, gaya ng sinabi ko, nararapat sa mga magulang na nag-iingat sa kalinisan ng kanilang mga anak na maunahan ang pagnanasa. Turuan nila ang mga ito sa pamamagitan ng malilinis na aklat at sanayin nang maaga sa pamamagitan ng mahuhusay na pananalita, sapagkat ang kaugalian ay nagiging ikalawang kalikasan. Bukod dito, madalas nilang ipaalaala ang mga kaparusahang itinakda ng mga batas, upang gamit ang takot na parang renda ay hindi sila mapadpad sa masasamang kalayawan. At nararapat din, bago sumibol ang pagnanasa, na tugunan ang likas na silakbo ng pagbibinata o pagdadalaga sa pamamagitan ng pag-aasawa, matapos munang hikayatin silang huwag pagmasdan nang may pagnanasa ang kagandahan ng ibang babae.</q></p><h3>Kabanata XXVI. Wakas ng Sagot</h3><p><q>‘Sapagkat kapag ang ating isip ay masayang natatakan ng larawan ng isang minamahal, lagi nitong nakikita ang anyo na parang nasa salamin at pinahihirapan ng alaala. Kung hindi nito makuha ang ninanais, nag-iisip ito ng mga paraan upang makuha iyon; ngunit kung makuha man nito, lalo lamang itong lumalakas, gaya ng apoy na patuloy na sinusunugan ng kahoy, lalo na kung walang takot na naitanim sa kaluluwa ng umiibig bago pa sumiklab ang pagnanasa. Sapagkat kung paanong pinapatay ng tubig ang apoy, gayon din ang takot ang pumapatay sa di-makatuwirang pagnanasa. Kaya ako, na natutuhan mula sa isang Judio kapwa ang maunawaan at gawin ang mga bagay na kalugud-lugod sa Diyos, ay hindi mahuhulog sa pangangalunya dahil sa iyong mga huwad na alamat. Nawa’y tulungan ka ng Diyos sa iyong hangarin at pagsisikap na maging malinis, at magbigay ng lunas sa iyong kaluluwang nag-aalab sa pag-ibig.’</q></p><h3>Kabanata XXVII. Isang Dahilan ng Pagkapoot</h3><p><q>Nang marinig ni Appion ang kunwaring sagot, sinabi niya: ‘Wala ba akong dahilan upang kapootan ang mga Judio? Narito ngayon, may isang Judio na nakatagpo sa kanya, inakay siya sa kanyang relihiyon, at hinikayat siyang maging malinis; at mula ngayon ay imposibleng makipagtalik pa siya sa ibang lalaki. Sapagkat ang mga taong ito, dahil inilalagay nila sa harap nila ang Diyos bilang pangkalahatang tagamasid ng lahat ng gawa, ay napakatatag sa kalinisan, yamang hindi nila maitatago sa Kanya ang anuman.’</q></p><h3>Kabanata XXVIII. Inamin ang Panlilinlang</h3><p><q>Nang marinig ko ito, sinabi ko kay Appion: ‘Ngayon ay ipagtatapat ko sa iyo ang katotohanan. Hindi ako umibig sa babaeng iyon o sa sinuman, sapagkat ang aking kaluluwa ay labis na nakatuon sa ibang mga hangarin at sa pagsisiyasat ng mga tunay na aral. Hanggang ngayon, bagaman sinuri ko ang maraming aral ng mga pilosopo, wala akong kinilingan sa mga iyon maliban sa aral ng mga Judio. May isang mangangalakal na Judio na nanirahan dito sa Roma at nagtitinda ng mga telang lino; sa isang mapalad na pagkakataong nagtagpo kami, payak niyang inilahad sa akin ang aral tungkol sa pagkakaisa ng Diyos.’</q></p><h3>Kabanata XXIX. Galit ni Appion</h3><p><q>Pagkatapos, nang marinig ni Appion sa akin ang katotohanan, dahil sa kanyang di-makatuwirang pagkapoot sa mga Judio at dahil ni hindi niya nalalaman ni nais malaman kung ano ang kanilang pananampalataya, nagalit siya nang walang katinuan at agad na umalis sa Roma nang walang imik. At dahil ito ang una naming pagkikita mula noon, likas lamang na asahan kong galit siya dahil sa pangyayaring iyon. Gayunman, sa harap ninyo ay tatanungin ko siya kung ano ang masasabi niya tungkol sa mga tinatawag na diyos, na ang mga buhay, ayon sa mga alamat, ay punô ng lahat ng uri ng pagnanasa at palaging isinasalaysay sa mga tao upang tularan nila; samantalang, bukod sa kanilang mga hilig na pantao, ipinakikita rin ang kanilang mga libingan sa iba’t ibang lugar.</q></p><h3>Kabanata XXX. Ipinangakong Talakayan</h3><p>Nang marinig ng iba ang mga bagay na ito mula sa akin at nagnanais malaman kung ano ang susunod na mangyayari, sinamahan nila akong dalawin si Appion. Natagpuan namin siyang bagong paligo at nakaupo sa isang hapag na may nakahandang pagkain. Kaya kaunti lamang ang naitanong namin tungkol sa usapin ng mga diyos. Ngunit sa pagkaunawa, sa palagay ko, sa aming hangarin, ipinangako niyang kinabukasan ay may sasabihin siya tungkol sa mga diyos, at itinakda niya ang parehong lugar upang makipag-usap sa amin. At nang maipangako niya iyon, nagpasalamat kami at umalis, bawat isa patungo sa kanyang tahanan.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+  let restoringLanguagePosition = false;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) {
+      restoringLanguagePosition = true;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollBy(0, delta);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      requestAnimationFrame(function () {
+        lastScrollY = window.scrollY || 0;
+        restoringLanguagePosition = false;
+        syncChapterSelectorToScroll();
+      });
+    }
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (restoringLanguagePosition) {
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>

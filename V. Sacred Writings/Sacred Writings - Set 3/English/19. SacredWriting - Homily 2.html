@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Sacred Writings — Homily 2</title>
+<style id="embedded-outline-css">
+/* Embedded from outline.css so original colors travel with this HTML file. */
+:root{
+    --outline-text-color: white;
+    --outline-text-color-light: lightgrey;
+    --outline-primary-color: rgb(0, 140, 255);
+    --outline-bg-color: rgb(37, 37, 37);
+}
+
+*{
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: rgb(219, 228, 198) !important;
+}
+
+h3 {color: rgb(24, 5, 105);}
+a {text-decoration: none !important; }
+p {text-align: justify;}
+
+#main-document{
+    width: 77%;
+    margin-left: 23%;
+    transition: width .3s, margin-left .3s;
+
+}
+#main-document.no-outline{
+    width: 97%;
+    margin-left: 3%;
+
+}
+
+/****** HOMEPAGE BUTTON ******/
+.richblue {
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    border-radius:12px;
+    padding:1% 2%;
+    font-size:1em;
+    transition: .2s ease-in-out all;
+      box-shadow: 0 0px 15px rgba(0, 0, 200, 0.2);
+  }
+  .richblue:hover{
+    background-color:#fff;
+    color:rgb(0,0,200);
+    border:2px rgb(53, 53, 63) solid;  
+    box-shadow: 0 4px 15px rgba(0, 0, 200, 0.3);
+    transform:translateY(-2%);
+        transition: .2s ease-in-out all;
+  }
+
+  .missing {color: red;}
+
+/****** Sacred Writings Qoute ******/
+.SCQoute {
+    color: rgb(255, 13, 13);
+    font-style: italic;
+    text-align: center;
+}
+
+.chapterTitle {
+    color: blue;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/****** OUTLINE ******/
+
+.outline-nav{
+    background-color: var(--outline-bg-color);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 2% 1.5%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: width .35s, opacity .25s;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+}
+
+.outline-nav-collapsed{
+    padding: 2% 0 !important;
+    width: 3%;
+}
+
+.outline-nav-header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.outline-nav-header-collapsed{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/****** OUTLINE SEARCH ******/
+
+.outline-search-container{
+    display: block;
+}
+.outline-search-container p{
+    color: var(--outline-text-color-light);
+    font-size: .8em;
+    padding-left: 2.5%;
+    display: none;
+}
+.outline-search{
+    width: 60%;
+    padding: 3%;
+    background: transparent;
+    border: solid 1px gray;
+    border-radius: .2em;
+    transition: width .2s;
+    justify-self: start;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: var(--outline-text-color);
+}
+.outline-search:focus{
+    width: 100%;
+    border-color: var(--outline-primary-color);
+}
+
+
+/****** OUTLINE MENU ICON ******/
+
+.outline-menu-icon-container{
+    top: 1%;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    padding: 3%;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: start;
+}
+.outline-menu-container-collapsed{
+    width: 70%;
+    justify-self: center;
+}
+.outline-menu-icon-container svg{
+    width: 100%;
+    fill: var(--outline-primary-color);
+}
+.outline-menu-container-collapsed svg{
+    height: 100%;
+}
+
+
+
+/****** OUTLINE TOC ******/
+
+.outline-nav ul, .outline-nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outline-nav li {
+    cursor: pointer;
+}
+.outline-nav span{
+    margin-bottom: 3%;
+    transition: color .1s;
+}
+.outline-nav span:hover{
+    color: var(--outline-primary-color);
+}
+
+.outline-nav li.list-head{
+    color: var(--outline-text-color);
+}
+
+.outline-nav li.list-head div{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--outline-primary-color);
+    border-bottom-style: groove;
+}
+
+.outline-nav li:not(.list-head){
+    color: var(--outline-text-color-light);
+}
+.outline-nav li:not(.list-head) div{
+    border-bottom: none;
+}
+
+.outline-nav ul:first-child{
+    margin-left: 0 !important;
+    margin-block-start: 0 !important;
+    padding-left: 0 !important;
+}
+
+#outline-list-root{
+    transition: opacity .2s;
+}
+
+.li-content{
+    margin-bottom: 6%;
+}
+
+.li-title-1{
+    font-size: 1em;
+    color: var(--outline-text-color);
+}
+.li-title-2{
+    font-size: .9em;
+}
+.li-title-3{
+    font-size: .85em;
+}
+.li-title-4{
+    font-size: .8em;
+}
+.li-title-5{
+    font-size: .75em;
+}
+.li-title-6{
+    font-size: .7em;
+}
+
+
+/*********** ANIMATIONS ************/
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+
+  
+/*********** MOBILE & TABLET ************/
+@media only screen and (max-width: 780px){
+
+    #main-document{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #main-document.no-outline{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .outline-nav{
+        position: fixed;
+        width: 100%;
+        padding: 6% 8%;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .outline-nav-collapsed{
+        width: 0;
+    }
+
+    #outline-list-root {
+        padding-inline-start: 5%;
+        font-size: 1.35em;
+    }
+
+    .outline-mobile-menu-icon-container{
+        position: sticky;
+        bottom: 5%;
+        left: 5%;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 5em;
+        padding: 1%;
+        z-index: 1000;
+        background-color: var(--outline-bg-color);
+        box-shadow: 0px 0 15px rgba(0,0,0,.25);
+    }
+    
+    .outline-mobile-menu-icon-container svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--outline-primary-color);
+    }
+
+}
+
+
+/****** MOBILE ******/
+
+@media only screen and (max-width: 480px){
+
+    .outline-mobile-menu-icon-container{
+        bottom: 5%;
+        left: 5%;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 5em;
+        padding: 2.5%;
+    }
+
+    #outline-list-root{
+        font-size: 1.1em;
+        padding-inline-start: 0;
+    }
+
+    p {text-align:left}
+    
+}
+
+
+   /* LIFE BUTTON FOR DAILY DEVOTIONAL STUDY */
+  /* method 1 -> use border-image */
+  .btn-gradient-1 {
+    background: linear-gradient(rgb(226, 106, 8), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    }
+
+    /* method 2 -> use background-clip to support border-radius */
+    .btn-gradient-2 {
+    background: linear-gradient(rgb(8, 226, 63), white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 5em;
+    border: 4px solid transparent;
+    }
+
+    /* demo stuff */
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    }
+
+    .btn-gradient-1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+    .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    }
+
+/* Table of Contents */
+
+.tocCon{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    gap: 50px !important;
+    background-color: rgb(219, 228, 198) !important;
+    padding: 20px !important;
+}
+
+.toc1c {
+    height: 2000px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.toc1{
+    height: 700px !important;
+    width: 500px !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    background-color: rgb(219, 214, 202) !important;
+    box-shadow: 10px 10px 5px #aaaaaa !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+    
+    .toc2{
+        height: 500px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .toc3{
+        height: 450px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc4{
+        height: 300px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc5{
+        height: 280px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toc6{
+        height: 250px !important;
+        width: 500px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .toccontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+
+
+    /* Notes Highlights */
+
+    .note { color: rgb(46, 3, 3); }
+
+    .notecontainer{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(201, 187, 169) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+    .notecontainerLetter{
+        padding: 20px !important;
+        border-radius: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+
+
+    .praise { color: rgb(8, 8, 126);}
+
+    /* Announcement */
+    .announce { color:#fafafa;}
+
+    /* Kingdom of God Badge */
+    .bagde1 {
+        color: rgb(3, 27, 245);
+        background-color: rgb(255, 204, 102);
+        padding: 5px;
+    }
+
+    /* Inner Court Badge */
+    .bagde2 {
+        color: rgb(18, 0, 97);
+        background-color: rgb(30, 190, 243);
+        padding: 5px;
+    }
+
+    /* Outer court Badge */
+    .bagde3 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 95, 185);
+        padding: 5px;
+    }
+
+    /* Trainees Badge */
+    .bagde4 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 52, 99);
+        padding: 5px;
+    }
+
+
+    /* Mountain of God's Glory */
+
+
+    img {
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+      /****** MOBILE ******/
+
+      .imgsc {
+        max-inline-size: 60%;
+        block-size: auto;
+        border-radius: 20px !important;
+        background-color: rgb(219, 214, 202) !important;
+        box-shadow: 10px 10px 5px #aaaaaa !important;
+        position: relative !important;
+        overflow: hidden !important;
+      }
+
+          /* Trainees Badge */
+    .bulletin {
+        color: rgb(255, 255, 255);
+        background-color: rgb(7, 155, 147);
+        padding: 5px;
+    }
+
+
+
+
+      /* <center>
+      <div class="container">
+        <div class="tocCon">
+            <div class="notecontainer">
+
+            </div>
+          </div>
+        </div>
+      </center> <br> */
+
+</style>
+<script>
+(function () {
+  /* Theme always starts in the original/default palette on every page load. */
+  document.documentElement.setAttribute('data-theme', 'original');
+})();
+</script>
+<style>
+  /*
+    MOBILE-FIRST READER LAYER
+    - Embedded outline.css above remains the controlling Original-theme palette.
+    - This layer provides reader behavior/layout and only intentional theme overrides.
+    - Base rules target phones first; larger screens are progressive enhancements.
+  */
+  :root {
+    --reader-scale: 1;
+    --reader-page-bg: rgb(219, 228, 198);
+    --reader-text: #000000;
+    --reader-heading: rgb(24, 5, 105);
+    --reader-panel-bg: rgba(255,255,255,.96);
+    --reader-panel-border: rgba(0,0,0,.18);
+    --reader-control-bg: #ffffff;
+    --reader-control-text: #30363b;
+    --reader-control-border: #6c757d;
+    --reader-link: #0000ee;
+    --reader-content-max: 64rem;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    --reader-page-bg: #121417;
+    --reader-text: #e7e9ec;
+    --reader-heading: #c9d4ff;
+    --reader-panel-bg: rgba(27,30,34,.97);
+    --reader-panel-border: #3b4148;
+    --reader-control-bg: #24282d;
+    --reader-control-text: #e7e9ec;
+    --reader-control-border: #7b848d;
+    --reader-link: #8ab4f8;
+    color-scheme: dark;
+  }
+
+  html[data-theme="sepia"] {
+    --reader-page-bg: #f4ecd8;
+    --reader-text: #3f3529;
+    --reader-heading: #5d4835;
+    --reader-panel-bg: rgba(249,242,224,.97);
+    --reader-panel-border: #c7b99b;
+    --reader-control-bg: #fffaf0;
+    --reader-control-text: #564936;
+    --reader-control-border: #9c8d70;
+    --reader-link: #7a5527;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html, body, button, select {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: var(--reader-page-bg) !important;
+    color: var(--reader-text) !important;
+    line-height: 1.65;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  /* Mobile is the default content layout. This intentionally overrides the
+     desktop-oriented width/margin rules embedded from outline.css. */
+  #main-document,
+  #main-document.no-outline {
+    width: 100% !important;
+    max-width: var(--reader-content-max);
+    margin: 0 auto !important;
+    padding: 0 .9rem 2.25rem !important;
+    color: var(--reader-text);
+    transition: color .2s ease;
+  }
+
+  .language-view[hidden] { display: none !important; }
+  .language-view { color: var(--reader-text); }
+  .sacred-heading { text-align: center; }
+  .sacred-heading .sacred-title {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .language-view p {
+    font-size: calc(1.08rem * var(--reader-scale));
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+  .language-view h1 {
+    font-size: calc(1.9rem * var(--reader-scale));
+    line-height: 1.2;
+  }
+  .language-view h2 {
+    font-size: calc(1.55rem * var(--reader-scale));
+    line-height: 1.25;
+  }
+  .language-view h3 {
+    font-size: calc(1.32rem * var(--reader-scale));
+    line-height: 1.3;
+    color: var(--reader-heading) !important;
+  }
+
+  .reader-controls-placeholder { height: 0; }
+
+  /* Mobile-first toolbar: text controls, cycling Theme button, chapter selector, then language. */
+  .reader-controls {
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+    margin: 0 0 .9rem;
+    padding:
+      max(.45rem, env(safe-area-inset-top))
+      max(.5rem, env(safe-area-inset-right))
+      .5rem
+      max(.5rem, env(safe-area-inset-left));
+    background-color: var(--reader-panel-bg) !important;
+    color: var(--reader-text);
+    border-bottom: 1px solid var(--reader-panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    transition: transform .24s ease, opacity .24s ease, background-color .2s ease,
+                color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    will-change: transform, opacity;
+  }
+
+  .reader-controls.is-floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    box-shadow: 0 5px 18px rgba(0,0,0,.20);
+  }
+
+  .reader-controls.is-hidden {
+    transform: translateY(calc(-100% - 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .reader-controls.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reader-controls button,
+  .reader-controls select {
+    min-width: 0;
+    min-height: 44px;
+    margin: 0;
+    padding: .55rem .65rem;
+    border: 1px solid var(--reader-control-border);
+    border-radius: .5rem;
+    background: var(--reader-control-bg);
+    color: var(--reader-control-text);
+    font: inherit;
+    font-size: .95rem;
+    line-height: 1.2;
+    touch-action: manipulation;
+  }
+
+  .reader-controls button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .reader-controls select {
+    width: 100%;
+  }
+
+  #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+  #themeToggle { grid-column: 1 / 2; grid-row: 2; }
+  #chapterSelect { grid-column: 2 / 4; grid-row: 2; }
+  #languageToggle { grid-column: 1 / -1; grid-row: 3; }
+
+  .reader-controls button:hover,
+  .reader-controls button:focus-visible,
+  .reader-controls select:focus-visible {
+    outline: 2px solid var(--reader-control-text);
+    outline-offset: 1px;
+  }
+
+  .reader-controls button:active {
+    transform: translateY(1px);
+  }
+
+  html[data-theme="dark"] hr { border-color: #5a6169; opacity: 1; }
+  html[data-theme="dark"] a { color: var(--reader-link); }
+
+  html[data-theme="dark"] #main-document .tocCon,
+  html[data-theme="dark"] #main-document .toc1c,
+  html[data-theme="dark"] #main-document .toc1,
+  html[data-theme="dark"] #main-document .toc2,
+  html[data-theme="dark"] #main-document .toc3,
+  html[data-theme="dark"] #main-document .toc4,
+  html[data-theme="dark"] #main-document .toc5,
+  html[data-theme="dark"] #main-document .toc6,
+  html[data-theme="dark"] #main-document .toccontainer,
+  html[data-theme="dark"] #main-document .notecontainer,
+  html[data-theme="dark"] #main-document .notecontainerLetter {
+    background-color: #20242a !important;
+    color: var(--reader-text) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45) !important;
+  }
+
+  html[data-theme="dark"] #main-document .note { color: #f1d6d6 !important; }
+  html[data-theme="dark"] #main-document .chapterTitle,
+  html[data-theme="dark"] #main-document .praise { color: #a9b8ff !important; }
+
+  html[data-theme="sepia"] #main-document .SCQoute { color: #9b2c2c; }
+  html[data-theme="sepia"] #main-document .chapterTitle,
+  html[data-theme="sepia"] #main-document .praise { color: #70521f !important; }
+
+  /* Progressive enhancement: small tablets / landscape phones. */
+  @media (min-width: 36rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    .reader-controls {
+      grid-template-columns: auto auto auto minmax(8.5rem, 1fr) minmax(10rem, 1.35fr);
+      align-items: center;
+      padding-left: max(.75rem, env(safe-area-inset-left));
+      padding-right: max(.75rem, env(safe-area-inset-right));
+    }
+
+    #textZoomOut, #textZoomReset, #textZoomIn { grid-row: 1; }
+    #themeToggle { grid-column: 4; grid-row: 1; }
+    #chapterSelect { grid-column: 5; grid-row: 1; }
+    #languageToggle { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* Tablet/desktop: compact single-row toolbar and slightly larger reading type. */
+  @media (min-width: 48rem) {
+    .language-view p { font-size: calc(1.18rem * var(--reader-scale)); }
+    .language-view h1 { font-size: calc(2.3rem * var(--reader-scale)); }
+    .language-view h2 { font-size: calc(1.85rem * var(--reader-scale)); }
+    .language-view h3 { font-size: calc(1.55rem * var(--reader-scale)); }
+
+    .reader-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1rem;
+    }
+
+    .reader-controls button,
+    .reader-controls select { width: auto; }
+    #textZoomOut, #textZoomIn { min-width: 3.2rem; }
+    #textZoomReset { min-width: 4.75rem; }
+    #themeToggle { min-width: 9.5rem; }
+    #chapterSelect { min-width: 11rem; max-width: 19rem; }
+    #languageToggle { min-width: 7rem; }
+  }
+
+  @media (min-width: 64rem) {
+    #main-document,
+    #main-document.no-outline {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reader-controls,
+    body,
+    #main-document { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div>
+<div aria-hidden="true" class="reader-controls-placeholder" id="readerControlsPlaceholder"></div>
+<div aria-label="Reader controls" class="reader-controls is-visible" role="group">
+<button aria-label="Decrease text size" class="btn btn-outline-secondary" id="textZoomOut" type="button">A−</button>
+<button aria-label="Reset text size" class="btn btn-outline-secondary" id="textZoomReset" type="button">100%</button>
+<button aria-label="Increase text size" class="btn btn-outline-secondary" id="textZoomIn" type="button">A+</button>
+<button aria-label="Theme: Default. Press to switch to Dark mode" class="btn btn-outline-secondary" id="themeToggle" title="Theme: Default" type="button">Theme</button>
+<select aria-label="Go to chapter" class="form-select form-select-sm" id="chapterSelect"><option value="">Chapter</option><option value="0">Chapter I. Peter's Attendants</option><option value="1">Chapter II. A Sound Mind in a Sound Body</option><option value="2">Chapter III. Forewarned is Forearmed</option><option value="3">Chapter IV. A Request</option><option value="4">Chapter V. Excellence of the Knowledge of the True Prophet</option><option value="5">Chapter VI. The True Prophet</option><option value="6">Chapter VII. Unaided Quest of Truth Profitless</option><option value="7">Chapter VIII. Test of Truth</option><option value="8">Chapter IX. The Weak Things of the World.</option><option value="9">Chapter X. Test of the Prophet</option><option value="10">Chapter XI. Ignorance, Knowledge, Foreknowledge</option><option value="11">Chapter XII. Doctrine of the True Prophet</option><option value="12">Chapter XIII. Future Rewards and Punishments</option><option value="13">Chapter XIV. Righteousness and Unrighteousness</option><option value="14">Chapter XV. Pairs</option><option value="15">Chapter XVI. Man's Ways Opposite to God's</option><option value="16">Chapter XVII. First the Worse, Then the Better</option><option value="17">Chapter XVIII. Mistake About Simon Magus</option><option value="18">Chapter XIX. Justa, a Proselyte</option><option value="19">Chapter XX. Divorced for the Faith</option><option value="20">Chapter XXI. Justa's Adopted Sons, Associates with Simon</option><option value="21">Chapter XXII. Doctrines of Simon</option><option value="22">Chapter XXIII. Simon a Disciple of the Baptist</option><option value="23">Chapter XXIV. Electioneering Stratagems</option><option value="24">Chapter XXV. Simon's Deceit</option><option value="25">Chapter XXVI. His Wickedness</option><option value="26">Chapter XXVII. His Promises</option><option value="27">Chapter XXVIII. Fruitless Counsel</option><option value="28">Chapter XXIX. Immortality of the Soul</option><option value="29">Chapter XXX. An Argument</option><option value="30">Chapter XXXI. A Dilemma</option><option value="31">Chapter XXXII. Simon's Prodigies</option><option value="32">Chapter XXXIII. Doctrine of Pairs</option><option value="33">Chapter XXXIV. Useless and Philanthropic Miracles</option><option value="34">Chapter XXXV. Discussion Postponed</option><option value="35">Chapter XXXVI. All for the Best</option><option value="36">Chapter XXXVII. Spies in the Enemy's Camp</option><option value="37">Chapter XXXVIII. Corruption of the Law</option><option value="38">Chapter XXXIX. Tactics</option><option value="39">Chapter XL. Preliminary Instruction</option><option value="40">Chapter XLI. Asking for Information, Not Contradiction</option><option value="41">Chapter XLII. Right Notions of God Essential to Holiness</option><option value="42">Chapter XLIII. A Priori Argument on the Divine Attributes</option><option value="43">Chapter XLIV. The Same Continued</option><option value="44">Chapter XLV. How God is to Be Thought of</option><option value="45">Chapter XLVI. Judgment to Come</option><option value="46">Chapter XLVII. A Pertinent Question</option><option value="47">Chapter XLVIII. A Particular Case</option><option value="48">Chapter XLIX. Reductio a.d. Absurdum</option><option value="49">Chapter L. A Satisfactory Answer</option><option value="50">Chapter LI. Weigh in the Balance</option><option value="51">Chapter LII. Sins of the Saints Denied</option><option value="52">Chapter LIII. Close of the Conference</option></select>
+<button aria-label="Switch to Tagalog" class="btn btn-outline-secondary" id="languageToggle" type="button">Tagalog</button>
+</div>
+<!--
+    READING-POSITION SYNC CONTRACT:
+    Keep the English and Tagalog views structurally parallel at the heading /
+    paragraph / blockquote level. Sentence restructuring inside a paragraph is
+    allowed, but paired reading blocks must remain in the same order so the
+    toolbar language switch can return the reader to the corresponding place.
+  -->
+<!-- ENGLISH VIEW -->
+<section class="language-view" id="englishView"><div class="sacred-heading"><h1 class="sacred-title">Sacred Writing</h1><p class="SCQoute">"All writings must be evaluated through its content, not on who have written it."</p></div><h3>Chapter I. Peter's Attendants</h3><p>Therefore the next day, I Clement, awaking from sleep before dawn, and learning that Peter was astir, and was conversing with his attendants concerning the worship of God (there were sixteen of them, and I have thought good to set forth their names, as I subsequently learned them, that you may also know who they were. The first of them was Zacchæus, who was once a publican, and Sophonias his brother; Joseph and his foster-brother Michaias; also Thomas and Eliezer the twins; also Æneas and Lazarus the priests; besides also Elisæus, and Benjamin the son of Saphrus; as also Rubilus and Zacharias the builders; and Ananias and Haggæus the Jamminians; and Nicetas and Aquila the friends),—accordingly I went in and saluted him, and at his request sat down.</p><h3>Chapter II. A Sound Mind in a Sound Body</h3><p>And he, breaking off the discourse in which he was engaged, assured me, by way of apology, why he had not awakened me that I might hear his discourses, assigning as the reason the discomfort of my voyage. As he wished this to be dispelled, he had suffered me to sleep. <q>For,</q> said he, <q>whenever the soul is distracted concerning some bodily want, it does not properly approach the instructions that are presented to it. On this account I am not willing to converse, either with those who are greatly grieving through some calamity, or are immoderately angry, or are turned to the frenzy of love, or are suffering under bodily exhaustion, or are distressed with the cares of life, or are harassed with any other sufferings, whose soul, as I said, being downcast, and sympathizing with the suffering body, occupies also its own intelligence therewith.</q></p><h3>Chapter III. Forewarned is Forearmed</h3><p><q>And let it not be said, Is it not, then, proper to present comforts and admonitions to those who are in any bad case? To this I answer, that if, indeed, any one is able, let him present them; but if not, let him bide his time. For I know that all things have their proper season. Wherefore it is proper to ply men with words which strengthen the soul in anticipation of evil; so that, if at any time any evil comes upon them, the mind, being forearmed with the right argument, may be able to bear up under that which befalls it: for then the mind knows in the crisis of the struggle to have recourse to him who succoured it by good counsel.</q></p><h3>Chapter IV. A Request</h3><p><q>However, I have learned, O Clement, how that in Alexandria Barnabas perfectly expounded to you the word respecting prophecy. Was it not so?</q> I answered, <q>Yes, and exceeding well.</q> Then Peter: <q>Therefore it is not necessary now to occupy with the instructions which you know, the time which may serve us for other instructions which you do not know.</q> Then said I: <q>You have rightly said, O Peter. But vouchsafe this to me, who purpose always to attend upon you, continuously to expound to me, a delighted hearer, the doctrine of the Prophet. For, apart from Him, as I learned from Barnabas, it is impossible to learn the truth.</q></p><h3>Chapter V. Excellence of the Knowledge of the True Prophet</h3><p>And Peter, being greatly pleased with this, answered: <q>Already has the rectifying process taken its end, as regards you, knowing as you do the greatness of the infallible prophecy, without which it is impossible for any one to receive that which is supremely profitable. For of many and diverse blessings which are in the things which are or which may be, the most blessed of all—whether it be eternal life, or perpetual health, or a perfect understanding, or light, or joy, or immortality, or whatever else there is or that can be supremely good in the nature of things—cannot be possessed without first knowing things as they are; and this knowledge cannot be otherwise obtained than by first becoming acquainted with the Prophet of the truth.</q></p><h3>Chapter VI. The True Prophet</h3><p><q>Now the Prophet of the truth is He who always knows all things—things past as they were, things present as they are, things future as they shall be; sinless, merciful, alone entrusted with the declaration of the truth. Read, and you shall find that those <em>were deceived</em> who thought that they had found the truth of themselves. For this is peculiar to the Prophet, to declare the truth, even as it is peculiar to the sun to bring the day. Wherefore, as many as have even desired to know the truth, but have not had the good fortune to learn it from Him, have not found it, but have died seeking it. For how can he find the truth who seeks it from his own ignorance? And even if he find it, he does not know it, and passes it by as if it were not. Nor yet shall he be able to obtain possession of the truth from another, who, in like manner, promises to him knowledge from ignorance; excepting only the knowledge of morality and things of that sort, which can be known through reason, which affords to every one the knowledge that he ought not to wrong another, through his not wishing <em>himself</em> to be wronged.</q></p><h3>Chapter VII. Unaided Quest of Truth Profitless</h3><p><q>All therefore who ever sought the truth, trusting to themselves to be able to find it, fell into a snare. This is what both the philosophers of the Greeks, and the more intelligent of the barbarians, have suffered. For, applying themselves to things visible, they have given decisions by conjecture on things not apparent, thinking that that was truth which at any time presented itself to them <em>as such</em>. For, like persons who know the truth, they, still seeking the truth, reject some of the suppositions that are presented to them, and lay hold of others, as if they knew, while they do not know, what things are true and what are false. And they dogmatize concerning truth, even those who are seeking after truth, not knowing that he who seeks truth cannot learn it from his own wandering. For not even, as I said, can he recognise her when she stands by him, since he is unacquainted with her.</q></p><h3>Chapter VIII. Test of Truth</h3><p><q>And it is by no means that which is true, but that which is pleasing, which persuades every one who seeks to learn from himself. Since, therefore, one thing is pleasing to one, and another to another, one thing prevails over one as truth, and another thing over another. But the truth is that which is approved by the Prophet, not that which is pleasant to each individual. For that which is one would be many, if the pleasing were the true; which is impossible. Wherefore also the Grecian philologers—rather than philosophers —going about matters by conjectures, have dogmatized much and diversely, thinking that the apt sequence of hypotheses is truth, not knowing that when they have assigned to themselves false beginnings, their conclusion has corresponded with the beginning.</q></p><h3>Chapter IX. The Weak Things of the World.</h3><p><q>Whence a man ought to pass by all else, and commit himself to the Prophet of the truth alone. And we are all able to judge of Him, whether he is a prophet, even although we be wholly unlearned, and novices in sophisms, and unskilled in geometry, and uninitiated in music. For God, as caring for all, has made the discovery concerning Himself easier to all, in order that neither the barbarians might be powerless, nor the Greeks unable to find Him. Therefore the discovery concerning Him is easy; and thus it is:—</q></p><h3>Chapter X. Test of the Prophet</h3><p><q>If he is a Prophet, and is able to know how the world was made, and the things that are in it, and the things that shall be to the end, if He has foretold us anything, and we have ascertained that it has been perfectly accomplished, we easily believe that the things shall be which <em>He says</em> are to be, from the things that have been already; we believe Him, I say, as not only knowing, but foreknowing. To whom then, however limited an understanding he may have, does it not appear, that it behooves us, with respect to the things that are pleasing to God, to believe beyond all others Him who beyond all men knows, even though He has not learned? Wherefore, if any one should be unwilling to concede the power of knowing the truth to such an one—I mean to Him who has foreknowledge through the divinity of the Spirit that is in Him—conceding the power of knowing to any one else, is he not void of understanding, in conceding to him who is no prophet, that power of knowing which he would not concede to the Prophet?</q></p><h3>Chapter XI. Ignorance, Knowledge, Foreknowledge</h3><p><q>Wherefore, before all things, we must test the Prophet with all judgment by means of the prophetic promise; and having ascertained Him to be the Prophet, we must undoubtingly follow the other words of His teaching; and having confidence concerning things hoped for, we must conduct ourselves according to the first judgment, knowing that He who tells us these things has not a nature to lie. Wherefore, if any of the things that are afterwards spoken by Him do not appear to us to be well spoken, we must know that it is not that it has been spoken amiss, but that it is that we have not conceived it aright. For ignorance does not judge knowledge, and so neither is knowledge competent truly to judge foreknowledge; but foreknowledge affords knowledge to the ignorant.</q></p><h3>Chapter XII. Doctrine of the True Prophet</h3><p><q>Hence, O beloved Clement, if you would know the things pertaining to God, you have to learn them from Him alone, because He alone knows the truth. For if any one else knows anything, he has received it from Him or from His disciples. And this is His doctrine and true proclamation, that there is one God, whose work the world is; who being altogether righteous, shall certainly at some time render to every one according to his deeds.</q></p><h3>Chapter XIII. Future Rewards and Punishments</h3><p><q>For there is every necessity, that he who says that God is by His nature righteous, should believe also that the souls of men are immortal: for where would be His justice, when some, having lived piously, have been evil-treated, and sometimes violently cut off, while others who have been wholly impious, and have indulged in luxurious living, have died the common death of men? Since therefore, without all contradiction, God who is good is also just, He shall not otherwise be known to be just, unless the soul after its separation from the body be immortal, so that the wicked man, being in hell, as having here received his good things, may there be punished for his sins; and the good man, who has been punished here for his sins, may then, as in the bosom of the righteous, be constituted an heir of good things. Since therefore God is righteous, it is fully evident to us that there is a judgment, and that souls are immortal.</q></p><h3>Chapter XIV. Righteousness and Unrighteousness</h3><p><q>But if any one, according to the opinion of this Simon the Samaritan, will not admit that God is just, to whom then can any one ascribe justice, or the possibility of it? For if the Root of all have it not, there is every necessity to think that it must be impossible to find it in human nature, which, is, as it were, the fruit. And if it is to be found in man, how much more in God! But if righteousness can be found nowhere, neither in God nor in man, then neither can unrighteousness. But there is such a thing as righteousness, for unrighteousness takes its name from the existence of righteousness; for it is called unrighteousness, when righteousness is compared with it, and is found to be opposite to it.</q></p><h3>Chapter XV. Pairs</h3><p><q>Hence therefore God, teaching men with respect to the truth of existing things, being Himself one, has distinguished all principles into pairs and opposites, Himself being one and sole God from the beginning, having made heaven and earth, day and night, light and fire, sun and moon, life and death. But man alone amongst these He made self-controlling, having a fitness to be either righteous or unrighteous. To him also he has varied the figures of combinations, placing before him small things first, and great ones afterwards, such as the world and eternity. But the world that now is, is temporary; that which shall be, is eternal. First is ignorance, then knowledge. So also has He arranged the leaders of prophecy. For, since the present world is female, as a mother bringing forth the souls of her children, but the world to come is male, as a father receiving his children <em>from their mother</em>, therefore in this world there come a succession of prophets, as being sons of the world to come, and having knowledge of men. And if pious men had understood this mystery, they would never have gone astray, but even now they should have known that Simon, who now enthralls all men, is a fellow-worker of error and deceit. Now, the doctrine of the prophetic rule is as follows.</q></p><h3>Chapter XVI. Man's Ways Opposite to God's</h3><p><q>As in the beginning God, who is one, like a right hand and a left, made the heavens first and then the earth, so also He constituted all the combinations in order; but upon men He no more does this, but varies all the combinations. For whereas from Him the greater things come first, and the inferior second, we find the opposite in men—the first worse, and the second superior. Therefore from Adam, who was made after the image of God, there sprang first the unrighteous Cain, and then the righteous Abel. Again, from him who amongst you is called Deucalion, two forms of spirits were sent forth, the impure namely, and the pure, first the black raven, and then the white dove. From Abraham also, the patriarchs of our nation, two firsts sprang—Ishmael first, then Isaac, who was blessed of God. And from Isaac himself, in like manner, there were again two—Esau the profane, and Jacob the pious. So, first in birth, as the first born in the world, was the high priest <em>Aaron</em>, then the lawgiver <em>Moses</em>.</q></p><h3>Chapter XVII. First the Worse, Then the Better</h3><p><q>In like manner, the combination with respect to Elias, which behooved to have come, has been willingly put off to another time, having determined to enjoy it conveniently hereafter. Wherefore, also, he who was among those born of woman came first; then he who was among the sons of men came second. It were possible, following this order, to perceive to what series Simon belongs, who came before me to the Gentiles, and to which I belong who have come after him, and have come in upon him as light upon darkness, as knowledge upon ignorance, as healing upon disease. And thus, as the true Prophet has told us, a false prophet must first come from some deceiver; and then, in like manner, after the removal of the holy place, the true Gospel must be secretly sent abroad for the rectification of the heresies that shall be. After this, also, towards the end, Antichrist must first come, and then our Jesus must be revealed to be indeed the Christ; and after this, the eternal light having sprung up, all the things of darkness must disappear.</q></p><h3>Chapter XVIII. Mistake About Simon Magus</h3><p><q>Since, then, as I said, some men do not know the rule of combination, thence they do not know who is my precursor Simon. For if he were known, he would not be believed; but now, not being known, he is improperly believed; and though his deeds are those of a hater, he is loved; and though an enemy, he is received as a friend; and though he be death, he is desired as a saviour; and though fire, he is esteemed as light; and though a deceiver, he is believed as a speaker of truth.</q></p><p>Then I Clement, when I heard this, said, <q>Who then, I pray you, is this who is such a deceiver? I should like to be informed.</q> Then said Peter: <q>If you wish to learn, it is in your power to know it from those from whom I also got accurate information on all points respecting him.</q></p><h3>Chapter XIX. Justa, a Proselyte</h3><p><q>There is amongst us one Justa, a Syro-Phœnician, by race a Canaanite, whose daughter was oppressed with a grievous disease. And she came to our Lord, crying out, and entreating that He would heal her daughter. But He, being asked also by us, said, 'It is not lawful to heal the Gentiles, who are like to dogs on account of their using various meats and practices, while the table in the kingdom has been given to the sons of Israel.' But she, hearing this, and begging to partake like a dog of the crumbs that fall from this table, having changed what she was, by living like the sons of the kingdom, she obtained healing for her daughter, as she asked. For she being a Gentile, and remaining in the same course of life, He would not have healed had she remained a Gentile, on account of its not being lawful to heal her as a Gentile. </q></p><h3>Chapter XX. Divorced for the Faith</h3><p><q>She, therefore, having taken up a manner of life according to the law, was, with the daughter who had been healed, driven out from her home by her husband, whose sentiments were opposed to ours. But she, being faithful to her engagements, and being in affluent circumstances, remained a widow herself, but gave her daughter in marriage to a certain man who was attached to the true faith, and who was poor. And, abstaining from marriage for the sake of her daughter, she bought two boys and educated them, and had them in place of sons. And they being educated from their boyhood with Simon Magus, have learned all things concerning him. For such was their friendship, that they were associated with him in all things in which he wished to unite with them.</q></p><h3>Chapter XXI. Justa's Adopted Sons, Associates with Simon</h3><p><q>These men having fallen in with Zacchæus, who sojourned here, and having received the word of truth from him, and having repented of their former innovations, and immediately denouncing Simon as being privy with him in all things, as soon as I came to sojourn here, they came to me with their foster-mother, being presented to me by him, <em>Zacchæus</em>, and ever since they continue with me, enjoying instructions in the truth.</q> When Peter had said this, he sent for them, and charged them that they should accurately relate to me all things concerning Simon. And they, having called God to witness that in nothing they would falsify, proceeded with the relation.</p><h3>Chapter XXII. Doctrines of Simon</h3><p>First Aquila began to speak in this wise: <q>Listen, O dearest brother, that you may know accurately everything about this man, whose he is, and what, and whence; and what the things are which he does, and how and why he does them. This Simon is the son of Antonius and Rachel, a Samaritan by race, of the village of Gitthæ, which is six schoeni distant from the city. He having disciplined himself greatly in Alexandria, and being very powerful in magic, and being ambitious, wishes to be accounted a certain supreme power, greater even than the God who created the world. And sometimes intimating that he is Christ, he styles himself the Standing One. And this epithet he employs, as intimating that he shall always stand, and as not having any cause of corruption so that his body should fall. And he neither says that the God who created the world is the Supreme, nor does he believe that the dead will be raised. He rejects Jerusalem, and substitutes Mount Gerizzim for it. Instead of our Christ, he proclaims himself. The things of the law he explains by his own presumption; and he says, indeed, that there is to be a judgment, but he does not expect it. For if he were persuaded that he shall be judged by God, he would not dare be impious towards God Himself. Whence some not knowing that, using religion as a cloak, he spoils the things of the truth, and faithfully believing the hope and the judgment which in some way he says are to be, are ruined.</q></p><h3>Chapter XXIII. Simon a Disciple of the Baptist</h3><p><q>But that he came to deal with the doctrines of religion happened on this wise. There was one John, a day-baptist, who was also, according to the method of combination, the forerunner of our Lord Jesus; and as the Lord had twelve apostles, bearing the number of the twelve months of the sun, so also he, <em>John</em>, had thirty chief men, fulfilling the monthly reckoning of the moon, in which number was a certain woman called Helena, that not even this might be without a dispensational significance. For a woman, being half a man, made up the imperfect number of the triacontad; as also in the case of the moon, whose revolution does not make the complete course of the month. But of these thirty, the first and the most esteemed by John was Simon; and the reason of his not being chief after the death of John was as follows:—</q></p><h3>Chapter XXIV. Electioneering Stratagems</h3><p><q>He being absent in Egypt for the practice of magic, and John being killed, Dositheus desiring the leadership, falsely gave out that Simon was dead, and succeeded to the seat. But Simon, returning not long after, and strenuously holding by the place as his own, when he met with Dositheus did not demand the place, knowing that a man who has attained power beyond his expectations cannot be removed from it. Wherefore with pretended friendship he gives himself for a while to the second place, under Dositheus. But taking his place after a few days among the thirty fellow-disciples, he began to malign Dositheus as not delivering the instructions correctly. And this he said that he did, not through unwillingness to deliver them correctly, but through ignorance. And on one occasion, Dositheus, perceiving that this artful accusation of Simon was dissipating the opinion of him with respect to many, so that they did not think that he was the Standing One, came in a rage to the usual place of meeting, and finding Simon, struck him with a staff. But it seemed to pass through the body of Simon as if he had been smoke. Thereupon Dositheus, being confounded, said to him, 'If you are the Standing One, I also will worship you.' Then Simon said that he was; and Dositheus, knowing that he himself was not the Standing One, fell down and worshipped; and associating himself with the twenty-nine chiefs, he raised Simon to his own place of repute; and thus, not many days after, Dositheus himself, while he (Simon) stood, fell down and died.</q></p><h3>Chapter XXV. Simon's Deceit</h3><p><q>But Simon is going about in company with Helena, and even till now, as you see, is stirring up the people. And he says that he has brought down this Helena from the highest heavens to the world; being queen, as the all-bearing being, and wisdom, for whose sake, says he, the Greeks and barbarians fought, having before their eyes but an image of truth; for she, who really is the truth, was then with the chiefest god. Moreover, by cunningly explaining certain things of this sort, made up from Grecian myths, he deceives many; especially as he performs many signal marvels, so that if we did not know that he does these things by magic, we ourselves should also have been deceived. But whereas we were his fellow-labourers at the first, so long as he did such things without doing wrong to the interests of religion; now that he has madly begun to attempt to deceive those who are religious, we have withdrawn from him.</q></p><h3>Chapter XXVI. His Wickedness</h3><p><q>For he even began to commit murder as himself disclosed to us, as a friend to friends, that, having separated the soul of a child from its own body by horrid incantations, as his assistant for the exhibition of anything that he pleased, and having drawn the likeness of the boy, he has it set up in the inner room where he sleeps, saying that he once formed the boy of air, by divine arts, and having painted his likeness, he gave him back again to the air. And he explains that he did the deed thus. He says that the first soul of man, being turned into the nature of heat, drew to itself, and sucked in the surrounding air, after the fashion of a gourd; and then that he changed it into water, when it was within the form of the spirit; and he said that he changed into the nature of blood the air that was in it, which could not be poured out on account of the consistency of the spirit, and that he made the blood solidified into flesh; then, the flesh being thus consolidated, that he exhibited a man not <em>made</em> from earth, but from air. And thus, having persuaded himself that he was able to make a new <em>sort of</em> man, he said that he reversed the changes, and again restored him to the air. And when he told this to others, he was believed; but by us who were present at his ceremonies he was religiously disbelieved. Wherefore we denounced his impieties, and withdrew from him.</q></p><h3>Chapter XXVII. His Promises</h3><p>When Aquila had thus spoken, his brother Nicetas said: <q>It is necessary, O Clement our brother, for me to mention what has been left out by Aquila. For, in the first place, God is witness that we assisted him in no impious work, but that we looked on while he wrought; and as long as he did harmless things, and exhibited them, we were also pleased. But when, in order to deceive the godly, he said that he did, by means of godhead, the things that were done by magic, we no longer endured him, though he made us many promises, especially that our statues should be thought worthy of <em>a place in</em> the temple, and that we should be thought to be gods, and should be worshipped by the multitude, and should be honoured by kings, and should be thought worthy of public honours, and enriched with boundless wealth.</q></p><h3>Chapter XXVIII. Fruitless Counsel</h3><p><q>These things, and things reckoned greater than these, he promised us, on condition only that we should associate with him, and keep silence as to the wickedness of his undertaking, so that the scheme of his deceit might succeed. But still we would not consent, but even counselled him to desist from such madness, saying to him: 'We, O Simon, remembering our friendship towards you from our childhood, and out of affection for you, give you good counsel. Desist from this attempt. You cannot be a God. Fear Him who is really God. Know that you are a man, and that the time of your life is short; and though you should get great riches, or even become a king, few things accrue to the short time of your life for enjoyment, and things wickedly gotten soon flee away, and procure everlasting punishment for the adventurer. Wherefore we counsel you to fear God, by whom the soul of every one must be judged for the deeds that he has done here.'</q></p><h3>Chapter XXIX. Immortality of the Soul</h3><p><q>When he heard this he laughed; and when we asked him why he laughed at us for giving him good counsel, he answered: 'I laugh at your foolish supposition, because you believe that the soul of man is immortal.' Then I said: 'We do not wonder, O Simon, at your attempting to deceive us, but we are confounded at the way in which you deceive even yourself. Tell me, O Simon, even if no one else has been fully convinced that the soul is immortal, at all events you and we <em>ought to be so:</em> you as having separated one from a human body, and conversed with it, and laid your commands upon it; and we as having been present, and heard your commands, and clearly witnessed <em>the performance of</em> what was ordered.' Then said Simon: 'I know what you mean; but you know nothing of the matters concerning which you reason.' Then said Nicetas: 'If you know, speak; but if you do not know, do not suppose that we can be deceived by your saying that you know, and that we do not. For we are not so childish, that you can sow in us a shrewd suspicion that we should think that you know some unutterable things, and so that you should take and hold us in subjection, by holding us in restraint through means of desire.'</q></p><h3>Chapter XXX. An Argument</h3><p><q>Then Simon said: 'I am aware that you know that I separated a soul from a human body; but I know that you are ignorant that it is not the soul of the dead person that ministers to me, for it does not exist; but a certain demon works, pretending to be the soul.' Then said Nicetas: 'Many incredible things we have heard in our lifetime, but something more senseless than this speech we do not expect ever to hear. For if a demon pretends to be the soul of the dead person, what is the use of the soul at all, that it should be separated from the body? Were not we ourselves present and heard you conjuring the soul from the body? And how comes it that, when one is conjured, another who is not conjured obeys, as if it were frightened? And you yourself, when at any time we have asked you why the conferences sometimes cease, did not you say that the soul, having fulfilled the time upon earth which it was to have passed in the body, goes to Hades? And you added, that the souls of those who commit suicide are not easily permitted to come, because, having gone home into Hades, they are guarded.'</q></p><h3>Chapter XXXI. A Dilemma</h3><p>Nicetas having thus spoken, Aquila himself in turn said: <q>This only should I wish to learn of you, Simon, whether it is the soul or whether it is a demon that is conjured: what is it afraid of, that it does not despise the conjuration? Then Simon said: 'It knows that it should suffer punishment if it were disobedient.' Then said Aquila: 'Therefore, if the soul comes when conjured, there is also a judgment. If, therefore, souls are immortal, assuredly there is also a judgment. As you say, then, that those which are conjured on wicked business are punished if they disobey, how are you not afraid to compel them, when those that are compelled are punished for disobedience? For it is not wonderful that you do not already suffer for your doings, seeing the judgment has not yet come, when you are to suffer the penalty of those deeds which you have compelled others to do, and when that which has been done under compulsion shall be pardoned, as having been out of respect for the oath which led to the evil action.' And he hearing this was enraged, and threatened death to us if we did not keep silence as to his doings.</q></p><h3>Chapter XXXII. Simon's Prodigies</h3><p>Aquila having thus spoken, I Clement inquired: <q>What, then, are the prodigies that he works?</q> And they told me that he makes statues walk, and that he rolls himself on the fire, and is not burnt; and sometimes he flies; and he makes loaves of stones; he becomes a serpent; he transforms himself into a goat; he becomes two-faced; he changes himself into gold; he opens lockfast gates; he melts iron; at banquets he produces images of all manner of forms. In his house he makes dishes be seen as borne of themselves to wait upon him, no bearers being seen. I wondered when I heard them speak thus; but many bore witness that they had been present, and had seen such things.</p><h3>Chapter XXXIII. Doctrine of Pairs</h3><p>These things having been thus spoken, the excellent Peter himself also proceeded to speak: <q>You must perceive, brethren, the truth of the rule of conjunction, from which he who departs not cannot be misled. For since, as we have said, we see all things in pairs and contraries, and as the night is first, and then the day; and first ignorance, then knowledge; first disease, then healing, so the things of error come first into our life, then truth supervenes, as the physician upon the disease. Therefore straightway, when our God-loved nation was about to be ransomed from the oppression of the Egyptians, first diseases were produced by means of the rod turned into a serpent, which was given to Aaron, and then remedies were superinduced by the prayers of Moses. And now also, when the Gentiles are about to be ransomed from the superstition with respect to idols, wickedness, which reigns over them, has by anticipation sent forth her ally like another serpent, even this Simon whom you see, who works wonders to astonish and deceive, not signs of healing to convert and save. Wherefore it behooves you also from the miracles that are done to judge the doers, what is the character of the performer, and what that of the deed. If he do unprofitable miracles, he is the agent of wickedness; but if he do profitable things, he is a leader of goodness.</q></p><h3>Chapter XXXIV. Useless and Philanthropic Miracles</h3><p><q>Those, then, are useless signs, which you say that Simon did. But I say that the making statues walk, and rolling himself on burning coals, and becoming a dragon, and being changed into a goat, and flying in the air, and all such things, not being for the healing of man, are of a nature to deceive many. But the miracles of compassionate truth are philanthropic, such as you have heard that the Lord did, and that I after Him accomplish by my prayers; at which most of you have been present, some being freed from all kinds of diseases, and some from demons, some having their hands restored, and some their feet, some recovering their eyesight, and some their hearing, and whatever else a man can do, being of a philanthropic spirit.</q></p><h3>Chapter XXXV. Discussion Postponed</h3><p>When Peter had thus spoken, towards dawn Zacchæus entered and saluted us, and said to Peter: <q>Simon puts off the inquiry till tomorrow; for today is his Sabbath, which occurs at intervals of eleven days.</q> To him Peter answered: <q>Say to Simon, Whenever you wish; and know that we are always in readiness to meet you, by divine providence, when you desire.</q> And Zacchæus hearing this, went out to return the answer.</p><h3>Chapter XXXVI. All for the Best</h3><p>But he (Peter) saw me disheartened, and asked the reason; and being told that it proceeded from no cause but the postponement of the inquiry, he said: <q>He who has apprehended that the world is regulated by the good providence of God, O beloved Clement, is not vexed by things howsoever occurring, considering that things take their course advantageously under the providence of the Ruler. Whence, knowing that He is just, and living with a good conscience, he knows how by right reason to shake off from his soul any annoyance that befalls him, because, when complete, it must come to some unknown good. Now then, let not Simon the magician's postponement of the inquiry grieve you; for perhaps it has happened from the providence of God for your profit. Wherefore I shall not scruple to speak to you as being my special friend.</q></p><h3>Chapter XXXVII. Spies in the Enemy's Camp</h3><p><q>Some of our people attend feignedly upon Simon as companions, as if they were persuaded by his most atheistic error, in order that they may learn his purpose and disclose it to us, so that we may be able to encounter this terrible man on favourable terms. And now I have learned from them what arguments he is going to employ in the discussion. And knowing this, I give thanks to God on the one hand, and I congratulate you on the other, on the postponement of the discussion; for you, being instructed by me before the discussion, of the arguments that are to be used by him for the destruction of the ignorant, will be able to listen without danger of falling.</q></p><h3>Chapter XXXVIII. Corruption of the Law</h3><p><q>For the Scriptures have had joined to them many falsehoods against God on this account. The prophet Moses having by the order of God delivered the law, with the explanations, to certain chosen men, some seventy in number, in order that they also might instruct such of the people as chose, after a little the written law had added to it certain falsehoods contrary to the law of God, who made the heaven and the earth, and all things in them; the wicked one having dared to work this for some righteous purpose. And this took place in reason and judgment, that those might be convicted who should dare to listen to the things written against God, and those who, through love towards Him, should not only disbelieve the things spoken against Him, but should not even endure to hear them at all, even if they should happen to be true, judging it much safer to incur danger with respect to religious faith, than to live with an evil conscience on account of blasphemous words.</q></p><h3>Chapter XXXIX. Tactics</h3><p><q>Simon, therefore, as I learn, intends to come into public, and to speak of those chapters against God that are added to the Scriptures, for the sake of temptation, that he may seduce as many wretched ones as he can from the love of God. For we do not wish to say in public that these chapters are added to the Bible, since we should thereby perplex the unlearned multitudes, and so accomplish the purpose of this wicked Simon. For they not having yet the power of discerning, would flee from us as impious; or, as if not only the blasphemous chapters were false, they would even withdraw from the word. Wherefore we are under a necessity of assenting to the false chapters, and putting questions in return to him concerning them, to draw him into a strait, and to give in private an explanation of the chapters that are spoken against God to the well-disposed after a trial of their faith; and of this there is but one way, and that a brief one. It is this. </q></p><h3>Chapter XL. Preliminary Instruction</h3><p><q>Everything that is spoken or written against God is false. But that we say this truly, not only for the sake of reputation, but for the sake of truth, I shall convince you when my discourse has proceeded a little further. Whence you, my most beloved Clement, ought not to be sorry at Simon's having interposed a day between this and the discussion. For today, before the discussion, you shall be instructed concerning the chapters added to the Scriptures; and then in the discussion concerning the only one and good God, the Maker also of the world, you ought not to be distracted. But in the discussion you will even wonder how impious men, overlooking the multitudes of things that are spoken in the Scriptures for God, and looking at those that are spoken against Him, gladly bring these forward; and thus the hearers, by reason of ignorance, believing the things against God, become outcasts from His kingdom. Wherefore you, by advantage of the postponement, learning the mystery of the Scriptures, and gaining the <em>means of</em> not sinning against God, will incomparably rejoice.</q></p><h3>Chapter XLI. Asking for Information, Not Contradiction</h3><p>Then I Clement, hearing this, said: <q>Truly I rejoice, and I give thanks to God, who in all things does well. However, he knows that I shall be able to think nothing other than that all things are for God. Wherefore do not suppose that I ask questions, as doubting the words concerning God, or those that are to be spoken, but rather that I may learn, and so be able myself to instruct another who is ingenuously willing to learn. Wherefore tell me what are the falsehoods added to the Scriptures, and how it comes that they are really false.</q> Then Peter answered: <q>Even although you had not asked me, I should have gone on in order, and afforded you the exposition of these matters, as I promised. Learn, then, how the Scriptures misrepresent Him in many respects, that you may know when you happen upon them.</q></p><h3>Chapter XLII. Right Notions of God Essential to Holiness</h3><p><q>But what I am going to tell you will be sufficient by way of example. But I do not think, my dear Clement, that any one who possesses ever so little love to God and ingenuousness, will be able to take in, or even to hear, the things that are spoken against Him. For how is it that he can have a monarchic soul, and be holy, who supposes that there are many gods, and not one only? But even if there be but one, who will cherish zeal to be holy, that finds in Him many defects, since he will hope that the Beginning of all things, by reason of the defects of his own nature, will not visit the crimes of others?</q></p><h3>Chapter XLIII. A Priori Argument on the Divine Attributes</h3><p><q>Wherefore, far be it from us to believe that the Lord of all, who made the heaven and the earth, and all things that are in them, shares His government with others, or that He lies. For if He lies, then who speaks truth? Or that He makes experiments as in ignorance; for then who foreknows? And if He deliberates, and changes His purpose, who is perfect in understanding and permanent in design? If He envies, who is above rivalry? If He hardens hearts, who makes wise? If He makes blind and deaf, who has given sight and hearing? If He commits pilfering, who administers justice? If He mocks, who is sincere? If He is weak, who is omnipotent? If He is unjust, who is just? If He makes evil things, who shall make good things? If He does evil, who shall do good?</q></p><h3>Chapter XLIV. The Same Continued</h3><p><q>But if He desires the fruitful hill, whose then are all things? If He is false, who then is true? If He dwells in a tabernacle, who is without bounds? If He is fond of fat, and sacrifices, and offerings, and drink-offerings, who then is without need, and who is holy, and pure, and perfect? If He is pleased with candles and candlesticks, who then placed the luminaries in heaven? If He dwells in shadow, and darkness, and storm, and smoke, who is the light that lightens the universe? If He comes with trumpets, and shoutings, and darts, and arrows, who is the looked-for tranquillity of all? If He loves war, who then wishes peace? If He makes evil things, who makes good things? If He is without affection, who is a lover of men? If He is not faithful to His promises, who shall be trusted? If He loves the wicked, and adulterers, and murderers, who shall be a just judge? If He changes His mind, who is stedfast? If He chooses evil men, who then takes the part of the good?</q></p><h3>Chapter XLV. How God is to Be Thought of</h3><p><q>Wherefore, Clement, my son, beware of thinking otherwise of God, than that He is the only God, and Lord, and Father, good and righteous, the Creator, long-suffering, merciful, the sustainer, the benefactor, ordaining love of men, counselling purity, immortal and making immortal, incomparable, dwelling in the souls of the good, that cannot be contained and yet is contained, who has fixed the great world as a centre in space, who has spread out the heavens and solidified the earth, who has stored up the water, who has disposed the stars in the sky, who has made the fountains flow in the earth, has produced fruits, has raised up mountains, has set bounds to the sea, has ordered winds and blasts, who by the spirit of counsel has kept safely the body comprehended in a boundless sea.</q></p><h3>Chapter XLVI. Judgment to Come</h3><p><q>This is our Judge, to whom it behooves us to look. and to regulate our own souls, thinking all things in His favour, speaking well of Him, persuaded that by His long-suffering He brings to light the obstinacy of all, and is alone good. And He, at the end of all, shall sit as a just Judge upon every one of those who have attempted what they ought not.</q></p><h3>Chapter XLVII. A Pertinent Question</h3><p>When I Clement heard this, I said, <q>Truly, this is a godliness; truly this is piety.</q> And again I said: <q>I would learn, therefore, why the Bible has written anything of this sort? For I remember that you said that it was for the conviction of those who should dare to believe anything that was spoken against God. But since you permit us, we venture to ask, at your command: If any one, most beloved Peter, should choose to say to us, 'The Scriptures are true, although to you the things spoken against God seem to be false,' how should we answer him?</q></p><h3>Chapter XLVIII. A Particular Case</h3><p>Then Peter answered: <q>You speak well in your inquiry; for it will be for your safety. Therefore listen: Since there are many things that are spoken by the Scriptures against God, as time presses on account of the evening, ask with respect to any one matter that you please, and I will explain it, showing that it is false, not only because it is spoken against God, but because it is really false.</q> Then I answered: <q>I wish to learn how, when the Scriptures say that God is ignorant, you can show that He knows?</q></p><h3>Chapter XLIX. Reductio a.d. Absurdum</h3><p>Then Peter answered: <q>You have presented us with a matter that can easily be answered. However, listen, how God is ignorant of nothing, but even foreknows. But first answer me what I ask of you. He who wrote the Bible, and told how the world was made, and said that God does not foreknow, was he a man or not?</q> Then I said: <q>He was a man.</q> Then Peter answered: <q>How, then, was it possible for him, being a man, to know assuredly how the world was made, and that God does not foreknow?</q></p><h3>Chapter L. A Satisfactory Answer</h3><p>Then I, already perceiving the explanation, smiled, and said that he was a prophet. And Peter said: <q>If, then, he was a prophet, being a man, he was ignorant of nothing, by reason of his having received foreknowledge from God; how then, should He, who gave to man the gift of foreknowledge, being God, Himself be ignorant?</q> And I said: <q>You have spoken rightly.</q> Then Peter said: <q>Come with me one step further. It being acknowledged by us that God foreknows all things, there is every necessity that the scriptures are false which say that He is ignorant, and those are true which say that He knows.</q> Then said I: <q>It must needs be so.</q></p><h3>Chapter LI. Weigh in the Balance</h3><p>Then Peter said: <q>If, therefore, some of the Scriptures are true and some false, with good reason said our Master, 'Be ye good money-changers,' inasmuch as in the Scriptures there are some true sayings and some spurious. And to those who err by reason of the false scriptures He fitly showed the cause of their error, saying, 'You therefore err, not knowing the true things of the Scriptures; for this reason you are ignorant also of the power of God.'</q> Then said I: <q> <em>You have spoken</em> very excellently.</q></p><h3>Chapter LII. Sins of the Saints Denied</h3><p>Then Peter answered: <q>Assuredly, with good reason, I neither believe anything against God, nor against the just men recorded in the law, taking for granted that they are impious imaginations. For, as I am persuaded, neither was Adam a transgressor, who was fashioned by the hands of God; nor was Noah drunken, who was found righteous above all the world; nor did Abraham live with three wives at once, who, on account of his sobriety, was thought worthy of a numerous posterity; nor did Jacob associate with four—of whom two were sisters—who was the father of the twelve tribes, and who intimated the coming of the presence of our Master; nor was Moses a murderer, nor did he learn to judge from an idolatrous priest—he who set forth the law of God to all the world, and for his right judgment has been testified to as a faithful steward.</q></p><h3>Chapter LIII. Close of the Conference</h3><p><q>But of these and such like things I shall afford you an explanation in due time. But for the rest, since, as you see, the evening has come upon us, let what has been said be enough for today. But whenever you wish, and about whatever you wish, ask boldly of us, and we shall gladly explain it at once.</q> Thus having spoken, he rose up. And then, having partaken of food, we turned to sleep, for the night had come upon us.</p></section>
+<!-- TAGALOG VIEW -->
+<section class="language-view" hidden="" id="tagalogView"><div class="sacred-heading"><h1 class="sacred-title">Mga Sagradong Sulatin</h1><p class="SCQoute">"Ang lahat ng sulatin ay dapat suriin batay sa nilalaman nito, hindi batay sa kung sino ang sumulat nito."</p></div><h3>Kabanata I. Mga Kasama ni Pedro</h3><p>Kaya nang sumunod na araw, ako, si Clemente, ay nagising bago magbukang-liwayway. Nang malaman kong gising na si Pedro at nakikipag-usap sa kanyang mga kasama tungkol sa pagsamba sa Diyos—labing-anim sila, at minabuti kong ilahad ang kanilang mga pangalan, gaya ng natutuhan ko kalaunan, upang malaman din ninyo kung sino sila. Ang una ay si Zaqueo, na dating maniningil ng buwis, at ang kanyang kapatid na si Sofonias; si Jose at ang kanyang kinakapatid na si Michaias; gayundin ang kambal na sina Tomas at Eliezer; ang mga paring sina Eneas at Lazaro; si Eliseo at si Benjamin na anak ni Safrus; ang mga tagapagtayong sina Rubilus at Zacarias; ang mga Jaminianong sina Ananias at Haggeo; at ang magkaibigang sina Nicetas at Aquila—pumasok ako, bumati sa kanya, at sa kanyang kahilingan ay naupo.</p><h3>Kabanata II. Malinaw na Isip sa Malusog na Katawan</h3><p>At itinigil niya ang usapang kinasasangkutan niya at, bilang paliwanag, sinabi sa akin kung bakit hindi niya ako ginising upang marinig ko ang kanyang mga pahayag: dahil sa hirap at pagod ng aking paglalakbay. Dahil nais niyang mawala muna iyon, hinayaan niya akong matulog. <q>Sapagkat,</q> sabi niya, <q>kapag ang kaluluwa ay nagagambala dahil sa anumang pangangailangan ng katawan, hindi nito wastong napagtutuunan ang mga aral na inihaharap dito. Kaya ayaw kong makipag-usap sa mga labis na nagdadalamhati dahil sa isang kapahamakan, sa mga sukdulang nagagalit, sa mga nahuhulog sa kabaliwan ng pag-ibig, sa mga nanghihina ang katawan, sa mga nabibigatan ng mga alalahanin sa buhay, o sa mga pinahihirapan ng anumang iba pang pagdurusa. Sapagkat ang kanilang kaluluwa, gaya ng sinabi ko, ay nalulumbay at nakikiramay sa naghihirap na katawan, kaya pati ang sarili nitong pag-iisip ay doon nakatuon.</q></p><h3>Kabanata III. Ang Naunang Babala ay Paghahanda</h3><p><q>At huwag sabihin: Kung gayon, hindi ba nararapat magbigay ng aliw at paalaala sa mga nasa anumang masamang kalagayan? Ang sagot ko ay ito: kung may kakayahang gawin iyon, gawin niya; ngunit kung wala, hintayin niya ang tamang panahon. Sapagkat alam kong may angkop na panahon ang lahat ng bagay. Kaya nararapat na palakasin nang maaga ang mga tao sa pamamagitan ng mga salitang nagpapatatag sa kaluluwa bago dumating ang kasamaan. Sa gayon, kung sakaling dumating sa kanila ang anumang masama, ang isip, na nahanda na ng wastong pangangatwiran, ay makatatagal sa anumang sumapit dito; sapagkat sa gitna ng labanan ay alam nitong balikan ang tumulong dito sa pamamagitan ng mabuting payo.</q></p><h3>Kabanata IV. Isang Kahilingan</h3><p><q>Gayunman, nalaman ko, O Clemente, na sa Alexandria ay lubos na ipinaliwanag sa iyo ni Bernabe ang aral tungkol sa propesiya. Hindi ba?</q> Sumagot ako, <q>Oo, at napakahusay.</q> Pagkatapos ay sinabi ni Pedro: <q>Kung gayon, hindi na kailangang gamitin ngayon sa mga aral na alam mo na ang panahong maaari nating gugulin sa ibang mga aral na hindi mo pa alam.</q> Sinabi ko: <q>Tama ang sinabi mo, O Pedro. Ngunit ipagkaloob mo sa akin, na naglalayong lagi kang samahan, na patuloy mong ipaliwanag sa akin—isang masayang tagapakinig—ang aral ng Propeta. Sapagkat bukod sa Kanya, gaya ng natutuhan ko kay Bernabe, imposibleng matutuhan ang katotohanan.</q></p><h3>Kabanata V. Kahusayan ng Kaalaman tungkol sa Tunay na Propeta</h3><p>Lubhang natuwa si Pedro rito at sumagot: <q>Para sa iyo, natapos na ang proseso ng pagtutuwid, sapagkat nauunawaan mo na ang kadakilaan ng di-nagkakamaling propesiya, na kung wala ay imposibleng matanggap ng sinuman ang pinakamataas na pakinabang. Sa napakarami at sari-saring pagpapalang umiiral o maaaring umiral—maging buhay na walang hanggan, patuloy na kalusugan, ganap na pagkaunawa, liwanag, kagalakan, kawalang-kamatayan, o anumang iba pang maaaring maging pinakamataas na kabutihan sa likas na kaayusan ng mga bagay—wala sa mga iyon ang maaaring matamo nang hindi muna nalalaman ang mga bagay ayon sa tunay nilang kalagayan. At ang kaalamang ito ay hindi matatamo sa ibang paraan kundi sa pagkilala muna sa Propeta ng katotohanan.</q></p><h3>Kabanata VI. Ang Tunay na Propeta</h3><p><q>Ang Propeta ng katotohanan ay Siya na laging nakaaalam ng lahat ng bagay—ng nakaraan ayon sa tunay na nangyari, ng kasalukuyan ayon sa tunay na kalagayan nito, at ng hinaharap ayon sa tunay na mangyayari. Siya ay walang kasalanan, mahabagin, at tanging pinagkatiwalaang magpahayag ng katotohanan. Basahin ninyo, at matutuklasan ninyong <em>nalinlang</em> ang mga nag-isip na sa sarili lamang nila ay natagpuan na nila ang katotohanan. Sapagkat natatangi sa Propeta ang pagpapahayag ng katotohanan, kung paanong natatangi sa araw ang pagdadala ng liwanag ng araw. Kaya ang lahat ng nagnanais makaalam ng katotohanan ngunit hindi nagkaroon ng pagkakataong matutuhan iyon mula sa Kanya ay hindi nakasumpong nito kundi namatay na hinahanap pa rin iyon. Sapagkat paano matatagpuan ng isang tao ang katotohanan kung hinahanap niya iyon mula sa sarili niyang kamangmangan? At kahit matagpuan niya iyon, hindi niya ito makikilala at malalampasan niya ito na para bang wala roon. Hindi rin niya makakamtan ang katotohanan mula sa ibang taong, sa gayunding paraan, ay nangangakong magbibigay ng kaalaman mula sa kamangmangan. Ang tanging eksepsiyon ay ang kaalaman tungkol sa moralidad at mga bagay na katulad nito, na maaaring malaman sa pamamagitan ng katuwiran—gaya ng pagkaunawang hindi dapat gawan ng masama ang iba dahil ayaw din niyang <em>siya mismo</em> ay gawan ng masama.</q></p><h3>Kabanata VII. Walang Bunga ang Paghahanap ng Katotohanan nang Walang Tulong</h3><p><q>Kaya lahat ng naghahanap ng katotohanan na nagtitiwala na kaya nila itong matagpuan sa sarili nilang kakayahan ay nahulog sa bitag. Ito ang nangyari kapwa sa mga pilosopong Griyego at sa mas matatalino sa mga barbaro. Dahil nakatuon sila sa mga nakikitang bagay, humahatol sila tungkol sa mga hindi nakikita sa pamamagitan lamang ng haka, at iniisip nilang katotohanan ang anumang minsang nagmukhang <em>totoo</em> sa kanila. Tulad ng mga taong alam na ang katotohanan, habang hinahanap pa nila ito ay itinatakwil nila ang ilang palagay na inihaharap sa kanila at tinatanggap ang iba, na para bang alam nila—gayong hindi—kung alin ang totoo at alin ang mali. At naglalabas sila ng tiyak na mga aral tungkol sa katotohanan kahit naghahanap pa lamang sila nito, hindi nauunawaang ang naghahanap ng katotohanan ay hindi matututuhan iyon mula sa sarili niyang pagkaligaw. Sapagkat, gaya ng sinabi ko, hindi niya makikilala ang katotohanan kahit nakatayo na ito sa tabi niya, dahil hindi niya ito kilala.</q></p><h3>Kabanata VIII. Pagsubok sa Katotohanan</h3><p><q>At hindi ang tunay kundi ang nakalulugod ang humihikayat sa bawat taong nagsisikap matuto mula sa sarili lamang. Dahil magkaiba ang nakalulugod sa bawat tao, isang bagay ang nanaig bilang katotohanan sa isa at ibang bagay naman sa iba. Ngunit ang katotohanan ay yaong pinagtitibay ng Propeta, hindi yaong kasiya-siya sa bawat indibiduwal. Sapagkat kung ang nakalulugod ang siyang totoo, ang iisang katotohanan ay magiging marami—na imposible. Kaya ang mga Griyegong mahilig sa mga salita—sa halip na mga tunay na pilosopo—ay gumagala sa mga usapin sa pamamagitan ng haka at naglatag ng marami at magkakaibang dogma. Iniisip nilang katotohanan ang maayos na pagkakasunod-sunod ng mga palagay, hindi nila nalalamang kapag mali ang mga panimulang batayang pinili nila, ang konklusyon ay magiging kaayon lamang ng maling pasimula.</q></p><h3>Kabanata IX. Ang Mahihinang Bagay ng Sanlibutan</h3><p><q>Kaya dapat lampasan ng tao ang lahat ng iba pa at ipagkatiwala ang sarili sa Propeta ng katotohanan lamang. At kaya nating lahat na humatol kung Siya nga ay isang propeta, kahit tayo’y lubos na walang pinag-aralan, baguhan sa mga sopismo, walang kasanayan sa heometriya, at hindi naturuan sa musika. Sapagkat ang Diyos, dahil nagmamalasakit sa lahat, ay ginawang mas madaling matuklasan ng lahat ang tungkol sa Kanyang sarili, upang hindi mawalan ng kakayahan ang mga barbaro ni maging imposible para sa mga Griyego na matagpuan Siya. Kaya madaling matuklasan ang tungkol sa Kanya; at ganito iyon:</q></p><h3>Kabanata X. Pagsubok sa Propeta</h3><p><q>Kung Siya ay Propeta at kayang malaman kung paano nilikha ang sanlibutan, ang mga bagay na nasa loob nito, at ang mga bagay na mangyayari hanggang sa wakas; kung may anumang Kanyang inihula sa atin at natiyak nating lubos itong natupad, madali nating pinaniniwalaan mula sa mga bagay na naganap na ang mga bagay na <em>sinasabi Niyang</em> mangyayari ay tunay na mangyayari. Pinaniniwalaan natin Siya, hindi lamang bilang nakaaalam kundi bilang may paunang kaalaman. Kanino, gaano man kaliit ang pagkaunawa niya, hindi magiging malinaw na tungkol sa mga bagay na kalugud-lugod sa Diyos, higit nating dapat paniwalaan kaysa sa lahat ang Siyang higit sa lahat ng tao ay nakaaalam kahit hindi Siya tinuruan? Kaya kung ayaw ng sinuman na kilalanin ang kapangyarihang makaalam ng katotohanan sa gayong Isa—ang ibig kong sabihin, sa Siyang may paunang kaalaman sa pamamagitan ng pagka-Diyos ng Espiritung nasa Kanya—ngunit kinikilala niya ang gayong kapangyarihan sa ibang tao, hindi ba wala siyang wastong pagkaunawa, dahil ibinibigay niya sa hindi propeta ang kakayahang makaalam na ayaw niyang kilalanin sa Propeta?</q></p><h3>Kabanata XI. Kamangmangan, Kaalaman, at Paunang Kaalaman</h3><p><q>Kaya higit sa lahat, kailangan nating subukin nang buong paghatol ang Propeta sa pamamagitan ng pangakong makahula. Kapag natiyak nating Siya nga ang Propeta, dapat nating sundin nang walang pag-aalinlangan ang iba pang mga salita ng Kanyang pagtuturo. Taglay ang pagtitiwala tungkol sa mga bagay na inaasahan, dapat tayong mamuhay ayon sa unang paghatol na iyon, sapagkat alam nating ang nagsasabi sa atin ng mga bagay na ito ay hindi likas na nagsisinungaling. Kaya kung may alinman sa mga bagay na pagkatapos Niyang sabihin na waring hindi tama para sa atin, dapat nating malaman na hindi iyon dahil mali ang sinabi, kundi dahil hindi natin iyon naunawaan nang tama. Sapagkat ang kamangmangan ay hindi makapaghuhukom sa kaalaman; gayundin, ang kaalaman ay hindi tunay na may kakayahang humatol sa paunang kaalaman. Sa halip, ang paunang kaalaman ang nagbibigay ng kaalaman sa mangmang.</q></p><h3>Kabanata XII. Aral ng Tunay na Propeta</h3><p><q>Kaya, minamahal kong Clemente, kung nais mong malaman ang mga bagay na nauukol sa Diyos, sa Kanya lamang dapat mong matutuhan ang mga iyon, sapagkat Siya lamang ang nakaaalam ng katotohanan. Kung may iba mang nakaaalam ng anuman, tinanggap niya iyon mula sa Kanya o mula sa Kanyang mga alagad. At ito ang Kanyang aral at tunay na pahayag: iisa ang Diyos, at gawa Niya ang sanlibutan; at dahil Siya ay lubos na matuwid, tiyak na darating ang panahon na gagantihan Niya ang bawat isa ayon sa kanyang mga gawa.</q></p><h3>Kabanata XIII. Mga Gantimpala at Kaparusahan sa Hinaharap</h3><p><q>Sapagkat kailangang ang nagsasabing likas na matuwid ang Diyos ay maniwala ring walang kamatayan ang mga kaluluwa ng tao. Kung hindi, nasaan ang Kanyang katarungan, kung ang ilan na namuhay nang maka-Diyos ay pinagmalupitan at kung minsan ay marahas na pinatay, samantalang ang iba na lubhang di-maka-Diyos at nagpakasasa sa marangyang pamumuhay ay namatay lamang sa karaniwang kamatayan ng tao? Kaya dahil walang pagtatalong ang Diyos na mabuti ay matuwid din, hindi makikilalang lubos ang Kanyang katarungan malibang ang kaluluwa, matapos mahiwalay sa katawan, ay walang kamatayan. Sa gayon ang masamang tao, na tumanggap na rito ng kanyang mabubuting bagay, ay maaaring parusahan sa impiyerno dahil sa kanyang mga kasalanan; at ang mabuting tao, na nagdusa rito dahil sa kanyang mga kasalanan, ay maaari namang maging tagapagmana ng mabubuting bagay sa piling ng mga matuwid. Kaya dahil matuwid ang Diyos, lubos na malinaw sa atin na may paghuhukom at walang kamatayan ang mga kaluluwa.</q></p><h3>Kabanata XIV. Katuwiran at Kalikuan</h3><p><q>Ngunit kung may sinuman, ayon sa pananaw nitong Samaritanong si Simon, na ayaw tanggaping matuwid ang Diyos, kanino pa maiaangkin ang katarungan o maging ang posibilidad nito? Sapagkat kung wala nito ang Ugat ng lahat, kailangang isipin na imposibleng matagpuan ito sa kalikasan ng tao, na wari’y bunga lamang. At kung matatagpuan ito sa tao, gaano pa kaya sa Diyos! Ngunit kung hindi matatagpuan ang katuwiran saanman, maging sa Diyos o sa tao, hindi rin maaaring magkaroon ng kalikuan. Gayunman, umiiral ang katuwiran, sapagkat ang kalikuan ay tinatawag na kalikuan dahil umiiral ang katuwiran; tinatawag itong kalikuan kapag inihambing dito ang katuwiran at napatunayang kabaligtaran nito.</q></p><h3>Kabanata XV. Mga Magkaparis</h3><p><q>Kaya ang Diyos, habang tinuturuan ang mga tao tungkol sa katotohanan ng mga umiiral na bagay, bagaman Siya mismo ay iisa, ay hinati ang lahat ng mga simulain sa mga magkapares at magkasalungat. Siya ang iisa at tanging Diyos mula pa sa simula, at ginawa Niya ang langit at lupa, araw at gabi, liwanag at apoy, araw at buwan, buhay at kamatayan. Ngunit sa lahat ng ito, ang tao lamang ang ginawa Niyang may kakayahang mamahala sa sarili, na maaaring maging matuwid o di-matuwid. Para rin sa tao ay binago Niya ang mga anyo ng magkapares, inilalagay sa harap niya muna ang maliliit na bagay at saka ang dakila, gaya ng sanlibutan at kawalang-hanggan. Ang kasalukuyang sanlibutan ay pansamantala; ang darating ay walang hanggan. Una ang kamangmangan, pagkatapos ang kaalaman. Gayon din Niya inayos ang mga pinuno ng propesiya. Sapagkat ang kasalukuyang sanlibutan ay babae, gaya ng isang inang nagsisilang ng mga kaluluwa ng kanyang mga anak; ngunit ang darating na sanlibutan ay lalaki, gaya ng isang amang tumatanggap sa kanyang mga anak <em>mula sa kanilang ina</em>. Kaya sa sanlibutang ito ay sunod-sunod na dumarating ang mga propeta, bilang mga anak ng darating na sanlibutan at may kaalaman tungkol sa mga tao. Kung naunawaan lamang ng mga taong maka-Diyos ang hiwagang ito, hindi sana sila naligaw. At maging ngayon ay dapat sana nilang makilala na si Simon, na ngayo’y bumibihag sa lahat ng tao, ay kasabwat ng kamalian at panlilinlang. Ngayon, ganito ang aral tungkol sa tuntunin ng propesiya.</q></p><h3>Kabanata XVI. Ang mga Paraan ng Tao ay Kabaligtaran ng sa Diyos</h3><p><q>Kung paanong sa pasimula ang iisang Diyos, na wari’y kanang kamay at kaliwa, ay unang gumawa ng mga langit at pagkatapos ng lupa, gayon din Niya inayos nang sunod-sunod ang lahat ng magkapares. Ngunit sa mga tao ay hindi Niya palaging sinusunod ang gayong ayos; sa halip ay binabago Niya ang pagkakasunod ng mga magkapares. Sapagkat mula sa Kanya ay nauuna ang higit na dakila at sumusunod ang mas mababa, ngunit sa mga tao ay nakikita natin ang kabaligtaran—una ang mas masama, at pangalawa ang higit na mabuti. Kaya mula kay Adan, na nilikhang ayon sa larawan ng Diyos, unang lumitaw ang di-matuwid na si Cain at pagkatapos ang matuwid na si Abel. Muli, mula sa taong tinatawag ninyong Deucalion ay lumitaw ang dalawang anyo ng espiritu—ang marumi at ang malinis: una ang itim na uwak at pagkatapos ang puting kalapati. Mula rin kay Abraham, ang patriyarka ng ating bansa, ay lumitaw ang dalawang una—si Ismael muna, pagkatapos si Isaac na pinagpala ng Diyos. Mula naman kay Isaac ay muli ring may dalawa—ang lapastangang si Esau at ang maka-Diyos na si Jacob. Gayundin, sa kapanganakan, bilang unang isinilang sa sanlibutan, nauna ang mataas na paring si <em>Aaron</em>, pagkatapos ang tagapagbigay ng kautusan na si <em>Moises</em>.</q></p><h3>Kabanata XVII. Una ang Masama, Pagkatapos ang Mas Mabuti</h3><p><q>Sa gayunding paraan, ang magkaparis na nauukol kay Elias, na dapat sana’y dumating, ay kusang ipinagpaliban sa ibang panahon, sapagkat itinakdang tamasahin iyon nang angkop sa hinaharap. Kaya nauna rin ang kabilang sa mga ipinanganak ng babae; pagkatapos ay sumunod ang kabilang sa mga anak ng tao. Kung susundin ang pagkakasunud-sunod na ito, makikita kung saang hanay nabibilang si Simon, na nauna sa akin sa mga Hentil, at kung saang hanay naman ako nabibilang na dumating pagkatapos niya at sumapit laban sa kanya gaya ng liwanag laban sa kadiliman, kaalaman laban sa kamangmangan, at kagalingan laban sa karamdaman. At sa gayon, gaya ng sinabi sa atin ng tunay na Propeta, kailangan munang dumating ang isang huwad na propeta mula sa isang manlilinlang; pagkatapos, sa gayunding paraan, matapos alisin ang banal na lugar, ang tunay na Ebanghelyo ay kailangang lihim na maipalaganap upang ituwid ang mga erehiyang lilitaw. Pagkatapos nito, sa pagtatapos, kailangan munang dumating ang Anticristo, at pagkatapos ay mahahayag na ang ating Jesus nga ang Cristo. At kapag sumikat na ang walang-hanggang liwanag, mawawala ang lahat ng bagay ng kadiliman.</q></p><h3>Kabanata XVIII. Pagkakamali tungkol kay Simon Magus</h3><p><q>Kaya, gaya ng sinabi ko, dahil hindi alam ng ilang tao ang tuntunin ng pagkakapares, hindi nila nakikilala kung sino ang naunang dumarating sa akin—si Simon. Sapagkat kung makikilala siya ayon sa tunay niyang kalagayan, hindi siya paniniwalaan; ngunit ngayon, dahil hindi siya nakikilala, mali siyang pinaniniwalaan. Bagaman ang kanyang mga gawa ay gawa ng isang napopoot, minamahal siya; bagaman kaaway, tinatanggap siya bilang kaibigan; bagaman kamatayan, hinahangad siya bilang tagapagligtas; bagaman apoy, itinuturing siyang liwanag; at bagaman manlilinlang, pinaniniwalaan siyang nagsasalita ng katotohanan.</q></p><p>Nang marinig ko ito, ako, si Clemente, ay nagsabi: <q>Kung gayon, sino ang manlilinlang na ito? Nais kong malaman.</q> Sinabi ni Pedro: <q>Kung nais mong matuto, maaari mong malaman iyon mula sa mga taong pinagkunan ko rin ng tumpak na impormasyon tungkol sa lahat ng bagay na nauukol sa kanya.</q></p><h3>Kabanata XIX. Si Justa, Isang Proselyta</h3><p><q>May isa sa atin na nagngangalang Justa, isang Siro-Fenician at Canaanita ayon sa lahi, na ang anak na babae ay pinahihirapan ng isang malubhang karamdaman. Lumapit siya sa ating Panginoon, sumisigaw at nagsusumamong pagalingin Niya ang kanyang anak. Ngunit nang pakiusapan din namin Siya, sinabi Niya, ‘Hindi nararapat pagalingin ang mga Hentil, na gaya ng mga aso dahil sa paggamit nila ng sari-saring pagkain at mga kaugalian, samantalang ang hapag sa kaharian ay ibinigay sa mga anak ng Israel.’ Ngunit nang marinig niya ito, nakiusap siyang makabahagi, gaya ng isang aso, sa mga mumong nahuhulog mula sa hapag. Binago niya ang dati niyang kalagayan sa pamamagitan ng pamumuhay na gaya ng mga anak ng kaharian, kaya natamo niya ang paggaling ng kanyang anak ayon sa kanyang kahilingan. Sapagkat kung nanatili siyang Hentil at nagpatuloy sa dati niyang paraan ng pamumuhay, hindi Niya sana siya pinagaling, sapagkat hindi nararapat pagalingin siya bilang Hentil.</q></p><h3>Kabanata XX. Hiniwalayan Dahil sa Pananampalataya</h3><p><q>Kaya nang yakapin niya ang paraan ng pamumuhay ayon sa kautusan, siya at ang anak niyang napagaling ay pinalayas sa kanilang tahanan ng kanyang asawa, na salungat sa atin ang mga paniniwala. Ngunit nanatili siyang tapat sa kanyang pinanghahawakan. Dahil sagana ang kanyang kabuhayan, nanatili siyang balo, ngunit ipinakasal niya ang kanyang anak sa isang lalaking nakakapit sa tunay na pananampalataya at mahirap. At dahil umiwas siya sa muling pag-aasawa alang-alang sa kanyang anak, bumili siya ng dalawang batang lalaki, pinalaki at tinuruan ang mga ito, at itinuring na parang sariling mga anak. Mula pagkabata ay naturuan ang dalawang ito sa piling ni Simon Magus at natutuhan nila ang lahat ng bagay tungkol sa kanya. Napakalapit ng kanilang pakikipagkaibigan sa kanya kaya nakasama nila siya sa lahat ng bagay na nais niyang gawin kasama nila.</q></p><h3>Kabanata XXI. Ang mga Ampon ni Justa, mga Kasamahan ni Simon</h3><p><q>Nang makatagpo ng mga lalaking ito si Zaqueo, na pansamantalang naninirahan dito, tinanggap nila mula sa kanya ang salita ng katotohanan. Nagsisi sila sa kanilang mga dating pagbabago at agad na inilantad si Simon, sapagkat alam nila ang lahat niyang gawain. Nang dumating ako upang manirahan dito, pumunta sila sa akin kasama ang kanilang inang umampon sa kanila, at ipinakilala sila sa akin ni <em>Zaqueo</em>. Mula noon ay nananatili sila sa piling ko at tumatanggap ng mga aral tungkol sa katotohanan.</q> Pagkasabi nito ni Pedro, ipinatawag niya sila at inatasang ilahad sa akin nang tumpak ang lahat ng bagay tungkol kay Simon. Tinawag nilang saksi ang Diyos na hindi sila magsisinungaling sa anumang bagay, at pagkatapos ay nagsimula silang magsalaysay.</p><h3>Kabanata XXII. Mga Aral ni Simon</h3><p>Unang nagsalita si Aquila sa ganitong paraan: <q>Makinig ka, pinakamamahal naming kapatid, upang malaman mo nang tumpak ang lahat tungkol sa taong ito—kanino siya nabibilang, ano siya, saan siya nagmula, ano ang mga ginagawa niya, at paano at bakit niya ginagawa ang mga iyon. Si Simon ay anak nina Antonio at Raquel, isang Samaritanong nagmula sa nayon ng Gitthae, na anim na schoeni ang layo mula sa lungsod. Masidhi niyang sinanay ang sarili sa Alexandria at napakalakas niya sa mahika. Dahil ambisyoso, nais niyang kilalanin bilang isang pinakamataas na kapangyarihan, mas dakila pa kaysa sa Diyos na lumikha ng sanlibutan. Kung minsan ay ipinahihiwatig niyang siya ang Cristo, at tinatawag niya ang sarili na Ang Nakatayo. Ginagamit niya ang katawagang ito upang ipahiwatig na mananatili siya magpakailanman at wala siyang anumang sanhi ng pagkasira upang bumagsak ang kanyang katawan. Hindi niya sinasabing ang Diyos na lumikha ng sanlibutan ang Kataas-taasan, ni naniniwala siyang bubuhaying muli ang mga patay. Itinatakwil niya ang Jerusalem at inilalagay ang Bundok Gerizim kapalit nito. Sa halip na ang ating Cristo ang ipahayag, ang sarili niya ang ipinangangaral niya. Ipinapaliwanag niya ang mga bagay ng kautusan ayon sa sarili niyang kapangahasan. Sinasabi nga niyang magkakaroon ng paghuhukom, ngunit hindi niya iyon inaasahan. Sapagkat kung tunay siyang kumbinsidong hahatulan siya ng Diyos, hindi siya mangangahas maging lapastangan sa Diyos mismo. Dahil dito, ang ilan na hindi nakaaalam na ginagamit lamang niya ang relihiyon bilang balabal habang sinisira niya ang mga bagay ng katotohanan, at tapat na naniniwala sa pag-asa at paghuhukom na sa isang paraan ay sinasabi niyang darating, ay napapahamak.</q></p><h3>Kabanata XXIII. Si Simon Bilang Alagad ng Bautista</h3><p><q>Ganito nangyari na napasok siya sa mga aral tungkol sa relihiyon. May isang Juan, isang tagapagbautismo sa araw, na ayon din sa paraan ng pagkakapares ay naging tagapagpauna ng ating Panginoong Jesus. At kung paanong ang Panginoon ay may labindalawang apostol, ayon sa bilang ng labindalawang buwan ng araw, gayon din si <em>Juan</em> ay may tatlumpung pangunahing alagad, ayon sa bilang ng mga araw sa buwan ng buwan. Kabilang sa bilang na iyon ang isang babaeng nagngangalang Helena, upang maging makahulugan din ito sa kaayusan. Sapagkat ang babae, na kalahati ng isang lalaki, ang bumuo sa di-ganap na bilang na tatlumpu, gaya rin ng buwan na ang pag-ikot ay hindi bumubuo sa ganap na haba ng isang buwan. Ngunit sa tatlumpung ito, ang una at pinakamarangal kay Juan ay si Simon. At ganito ang dahilan kung bakit hindi siya naging pinuno pagkamatay ni Juan:</q></p><h3>Kabanata XXIV. Mga Pakana sa Pag-agaw ng Pamumuno</h3><p><q>Nasa Ehipto siya noon upang magsanay sa mahika. Nang mapatay si Juan, si Dositheo, na nagnanais ng pamumuno, ay nagsinungaling na patay na si Simon at humalili sa luklukan. Hindi nagtagal, bumalik si Simon at mariing itinuturing na kanya ang puwesto. Ngunit nang makaharap niya si Dositheo, hindi niya kaagad inangkin ang lugar, sapagkat alam niyang mahirap alisin sa kapangyarihan ang isang taong nakamit iyon nang higit sa kanyang inaasahan. Kaya sa pamamagitan ng pakunwaring pakikipagkaibigan ay pansamantala niyang tinanggap ang pangalawang puwesto sa ilalim ni Dositheo. Ngunit makalipas ang ilang araw, nang makapuwesto na siya kasama ng tatlumpung kapwa-alagad, sinimulan niyang siraan si Dositheo na hindi raw nito naihahatid nang tama ang mga aral. Sinabi niyang hindi iyon dahil ayaw ni Dositheong ituro nang tama ang mga ito, kundi dahil mangmang ito. Minsan, nang makita ni Dositheo na ang tusong paratang ni Simon ay nagpapahina sa pagtingin sa kanya ng marami, anupa’t hindi na nila siya itinuturing na Ang Nakatayo, galit siyang nagtungo sa karaniwang lugar ng pagtitipon. Natagpuan niya roon si Simon at hinampas ito ng tungkod. Ngunit waring dumaan lamang ang tungkod sa katawan ni Simon na para bang usok ito. Nalito si Dositheo at sinabi sa kanya, ‘Kung ikaw ang Ang Nakatayo, sasambahin din kita.’ Sinabi ni Simon na siya nga iyon. Nang malaman ni Dositheo na hindi siya mismo ang Ang Nakatayo, nagpatirapa siya at sumamba. Isinama niya ang sarili sa dalawampu’t siyam na pangunahing alagad at itinaas si Simon sa sarili niyang dating puwesto ng karangalan. At hindi nagtagal, habang nananatiling nakatayo si Simon, bumagsak si Dositheo at namatay.</q></p><h3>Kabanata XXV. Panlilinlang ni Simon</h3><p><q>Ngunit si Simon ay naglalakbay kasama si Helena at, gaya ng nakikita ninyo, hanggang ngayon ay ginugulo niya ang mga tao. Sinasabi niyang ibinaba niya si Helena mula sa pinakamataas na mga langit patungo sa sanlibutan, bilang reyna, bilang nilalang na nagdadala ng lahat, at bilang karunungan. Ayon sa kanya, alang-alang kay Helena ay naglaban ang mga Griyego at barbaro, bagaman larawan lamang ng katotohanan ang nasa harap nila; sapagkat ang tunay na Helena, na siyang katotohanan, ay noon pa man kasama ng pinakamataas na diyos. Sa pamamagitan ng tusong pagpapaliwanag sa mga bagay na gaya nito, na hinango niya sa mga alamat ng Griyego, nililinlang niya ang marami. Lalo itong nagiging mabisa dahil gumagawa siya ng maraming kapansin-pansing kababalaghan, anupa’t kung hindi namin alam na sa pamamagitan ng mahika niya ginagawa ang mga iyon, kami man ay malilinlang din. Noong una ay mga kasama niya kami sa gawain habang ginagawa niya ang gayong mga bagay nang hindi sinisira ang kapakanan ng relihiyon. Ngunit nang baliw na niyang simulan ang pagtatangkang linlangin ang mga maka-Diyos, lumayo kami sa kanya.</q></p><h3>Kabanata XXVI. Kanyang Kasamaan</h3><p><q>Sapagkat nagsimula pa nga siyang pumatay, gaya ng siya mismo ang nagbunyag sa amin bilang kaibigan sa mga kaibigan. Sinabi niyang sa pamamagitan ng nakapangingilabot na mga bulong ay inihiwalay niya ang kaluluwa ng isang bata mula sa sarili nitong katawan upang maging katulong niya sa pagpapakita ng anumang naisin niya. Gumuhit siya ng larawan ng bata at inilagay iyon sa loob na silid na kanyang tinutulugan. Sinasabi niyang minsan ay hinubog niya ang bata mula sa hangin sa pamamagitan ng mga sining na banal, at matapos iguhit ang anyo nito ay ibinalik niya muli sa hangin. Ganito niya ipinaliliwanag ang ginawa niya. Sinasabi niyang ang unang kaluluwa ng tao, nang mabago tungo sa likas na katangian ng init, ay humigop sa nakapaligid na hangin gaya ng isang kalabasa; pagkatapos ay ginawa niya itong tubig habang nasa anyo ng espiritu. Sinabi niyang ang hangin sa loob nito, na hindi maaaring bumuhos dahil sa pagkakabuo ng espiritu, ay ginawa niyang dugo; pagkatapos ay pinatigas niya ang dugo upang maging laman. Nang maging matibay na ang laman, ipinakita raw niya ang isang taong hindi <em>ginawa</em> mula sa lupa kundi mula sa hangin. Sa gayon, nang makumbinsi niyang kaya niyang gumawa ng isang bagong <em>uri ng</em> tao, sinabi niyang binaligtad niya ang mga pagbabagong iyon at ibinalik muli ang tao sa hangin. Nang ikuwento niya ito sa iba ay pinaniwalaan siya; ngunit kami na naroroon sa kanyang mga seremonya ay, dahil sa paggalang sa Diyos, hindi naniwala. Kaya itinakwil namin ang kanyang mga kalapastanganan at lumayo sa kanya.</q></p><h3>Kabanata XXVII. Kanyang mga Pangako</h3><p>Pagkasabi nito ni Aquila, sinabi ng kanyang kapatid na si Nicetas: <q>Kailangan kong banggitin, kapatid naming Clemente, ang mga bagay na hindi naisama ni Aquila. Una sa lahat, saksi ang Diyos na wala kaming tinulungan na anumang lapastangang gawain niya; nanood lamang kami habang ginagawa niya ang mga iyon. Habang gumagawa at nagpapakita siya ng mga bagay na hindi nakapipinsala, nalulugod din kami. Ngunit nang sabihin niyang sa pamamagitan ng pagka-Diyos niya nagagawa ang mga bagay na sa katunayan ay ginagawa sa pamamagitan ng mahika upang linlangin ang mga maka-Diyos, hindi na namin siya tiniis. Marami siyang ipinangako sa amin, lalo na na ang aming mga rebulto ay ituturing na karapat-dapat sa <em>isang lugar sa</em> templo; na ituturing kaming mga diyos at sasambahin ng karamihan; na pararangalan kami ng mga hari, pagkakalooban ng pampublikong karangalan, at payayamanin ng walang-hanggang kayamanan.</q></p><h3>Kabanata XXVIII. Walang-Bungang Payo</h3><p><q>Ang mga bagay na ito at mga ipinapalagay pang mas dakila rito ay ipinangako niya sa amin kung sasama lamang kami sa kanya at mananahimik tungkol sa kasamaan ng kanyang balak upang magtagumpay ang pakana ng kanyang panlilinlang. Ngunit hindi pa rin kami pumayag. Sa halip, pinayuhan namin siyang tigilan ang gayong kabaliwan at sinabi sa kanya: ‘O Simon, naaalala namin ang ating pagkakaibigan mula pagkabata at dahil mahal ka namin ay binibigyan ka namin ng mabuting payo. Tigilan mo ang pagtatangkang ito. Hindi ka maaaring maging Diyos. Matakot ka sa tunay na Diyos. Alamin mong tao ka at maikli ang panahon ng iyong buhay. Kahit magkaroon ka ng malaking kayamanan o maging hari, kakaunti lamang ang maaaring matamasa sa maikling panahon ng buhay mo. At ang mga bagay na nakuha sa kasamaan ay madaling nawawala at nagdadala ng walang-hanggang kaparusahan sa taong nangahas gumawa niyon. Kaya ipinapayo naming matakot ka sa Diyos, na hahatol sa kaluluwa ng bawat isa ayon sa mga gawa niyang ginawa rito.’</q></p><h3>Kabanata XXIX. Kawalang-Kamatayan ng Kaluluwa</h3><p><q>Nang marinig niya ito, tumawa siya. Nang tanungin namin kung bakit niya kami pinagtatawanan sa pagbibigay sa kanya ng mabuting payo, sumagot siya: ‘Tinatawanan ko ang inyong hangal na palagay, dahil naniniwala kayong walang kamatayan ang kaluluwa ng tao.’ Sinabi ko: ‘O Simon, hindi namin ipinagtatakang sinusubukan mo kaming linlangin; ngunit nalilito kami kung paano mo nalilinlang maging ang sarili mo. Sabihin mo sa akin, O Simon: kahit wala nang ibang lubos na kumbinsidong walang kamatayan ang kaluluwa, ikaw at kami man lamang ay <em>dapat kumbinsido:</em> ikaw, dahil naghiwalay ka ng kaluluwa mula sa katawan ng tao, nakipag-usap dito at nagbigay ng mga utos; at kami, dahil naroroon kami, narinig ang mga utos mo, at malinaw na nasaksihan <em>ang pagsasagawa</em> ng ipinag-utos.’ Sinabi ni Simon: ‘Alam ko ang ibig ninyong sabihin; ngunit wala kayong nalalaman tungkol sa mga bagay na inyong pinangangatwiranan.’ Sinabi ni Nicetas: ‘Kung alam mo, magsalita ka. Ngunit kung hindi mo alam, huwag mong isipin na malilinlang mo kami sa pagsasabing ikaw ang nakaaalam at kami ang hindi. Hindi kami mga bata na maaari mong taniman ng tusong pag-aalinlangan upang isipin naming may alam kang hindi maipahayag na mga bagay, at sa gayon ay mapasailalim mo kami sa iyong kapangyarihan sa pamamagitan ng pagpigil sa amin gamit ang aming paghahangad na makaalam.’</q></p><h3>Kabanata XXX. Isang Pangangatwiran</h3><p><q>Sinabi ni Simon: ‘Alam kong alam ninyong naghiwalay ako ng kaluluwa mula sa katawan ng tao. Ngunit alam kong hindi ninyo nauunawaang hindi kaluluwa ng namatay ang naglilingkod sa akin, sapagkat wala na iyon; sa halip ay isang demonyo ang kumikilos at nagpapanggap na kaluluwa.’ Sinabi ni Nicetas: ‘Marami na kaming narinig na hindi kapani-paniwala sa aming buhay, ngunit wala na kaming inaasahang marinig na mas walang katuturan kaysa sa pahayag na ito. Kung isang demonyo ang nagpapanggap na kaluluwa ng namatay, para saan pa ang kaluluwa na hinihiwalay mula sa katawan? Hindi ba naroroon kami mismo at narinig kang tumatawag sa kaluluwa palabas ng katawan? At bakit kapag isang kaluluwa ang tinatawag, ibang hindi naman tinawag ang sumusunod na para bang natatakot? At kapag tinatanong ka namin noon kung bakit kung minsan ay humihinto ang pakikipag-usap, hindi ba sinabi mong ang kaluluwa, matapos tuparin ang takdang panahong dapat sana nitong ginugol sa katawan sa lupa, ay pumupunta sa Hades? Idinagdag mo pa na ang mga kaluluwa ng nagpapakamatay ay hindi madaling pinahihintulutang dumating, sapagkat pag-uwi nila sa Hades ay binabantayan sila.’</q></p><h3>Kabanata XXXI. Isang Suliraning Dalawa ang Posibleng Sagot</h3><p>Pagkasabi nito ni Nicetas, si Aquila naman ang nagsalita: <q>Ito lamang ang nais kong malaman mula sa iyo, Simon: kaluluwa man o demonyo ang tinatawag, ano ang kinatatakutan nito kaya hindi nito hinahamak ang pagtawag? Sinabi ni Simon: ‘Alam nitong parurusahan ito kung susuway.’ Sinabi ni Aquila: ‘Kung gayon, kung dumarating ang kaluluwa kapag tinatawag, mayroon ding paghuhukom. At kung walang kamatayan ang mga kaluluwa, tiyak na mayroon ding paghuhukom. Kung sinasabi mong ang mga tinatawag upang gumawa ng masasamang gawain ay pinarurusahan kapag sumuway, bakit hindi ka natatakot na pilitin sila, gayong ang mga pinipilit mo ang siyang pinarurusahan dahil sa pagsuway? Hindi kataka-takang hindi ka pa nagdurusa ngayon dahil sa mga ginagawa mo, sapagkat hindi pa dumarating ang paghuhukom. Sa paghuhukom mo mararanasan ang kaparusahan para sa mga gawang pinilit mong gawin ng iba, samantalang ang ginawa sa ilalim ng pamimilit ay patatawarin dahil ginawa iyon dahil sa paggalang sa sumpang nagtulak sa masamang gawain.’ Nang marinig niya ito, nagalit siya at binantaan kaming papatayin kung hindi kami tatahimik tungkol sa kanyang mga ginagawa.</q></p><h3>Kabanata XXXII. Mga Kababalaghan ni Simon</h3><p>Pagkasabi nito ni Aquila, nagtanong ako, si Clemente: <q>Kung gayon, anu-ano ang mga kababalaghang ginagawa niya?</q> Sinabi nila sa akin na pinalalakad niya ang mga rebulto; gumugulong siya sa apoy ngunit hindi nasusunog; kung minsan ay lumilipad siya; ginagawang mga tinapay ang mga bato; nagiging ahas siya; nagiging kambing; nagkakaroon ng dalawang mukha; nagiging ginto; nagbubukas ng mga nakakandadong tarangkahan; at tinutunaw ang bakal. Sa mga handaan ay nagpapakita siya ng mga larawan ng sari-saring anyo. Sa kanyang bahay ay pinagmumukha niyang kusang dinadala ng mga pinggan ang kanilang sarili upang maglingkod sa kanya, kahit walang nakikitang tagapagdala. Namangha ako nang marinig ko ang mga ito; ngunit marami ang nagpatotoong naroroon sila at nakita nila ang gayong mga bagay.</p><h3>Kabanata XXXIII. Aral tungkol sa mga Magkaparis</h3><p>Pagkasabi ng mga bagay na ito, nagsimula ring magsalita ang marangal na si Pedro: <q>Mga kapatid, kailangan ninyong maunawaan ang katotohanan ng tuntunin ng pagkakapares; ang hindi lumilihis dito ay hindi maliligaw. Sapagkat gaya ng sinabi natin, nakikita nating ang lahat ng bagay ay nasa mga pares at magkasalungat: una ang gabi, pagkatapos ang araw; una ang kamangmangan, pagkatapos ang kaalaman; una ang sakit, pagkatapos ang kagalingan. Gayon din, nauuna sa ating buhay ang mga bagay ng kamalian, at pagkatapos ay dumarating ang katotohanan, gaya ng manggagamot na dumarating sa may sakit. Kaya nang malapit nang palayain ang ating bansang minamahal ng Diyos mula sa pang-aapi ng mga Ehipsiyo, nauna ang mga salot sa pamamagitan ng tungkod na naging ahas na ibinigay kay Aaron, at pagkatapos ay dumating ang mga lunas sa pamamagitan ng mga panalangin ni Moises. Ngayon din, nang malapit nang palayain ang mga Hentil mula sa pamahiin tungkol sa mga diyus-diyosan, ang kasamaan na naghahari sa kanila ay naunang nagpadala ng kakampi nito na gaya ng isa pang ahas—itong Simon na nakikita ninyo—na gumagawa ng mga kababalaghan upang manggilalas at manlinlang, hindi ng mga tandang nagpapagaling upang magbalik-loob at magligtas. Kaya mula rin sa mga himalang ginagawa ay dapat ninyong hatulan ang gumagawa: ano ang katangian ng gumagawa at ano ang katangian ng gawa. Kung gumagawa siya ng mga himalang walang pakinabang, siya ay kasangkapan ng kasamaan; ngunit kung gumagawa siya ng mga bagay na may pakinabang, siya ay pinuno ng kabutihan.</q></p><h3>Kabanata XXXIV. Walang-Silbi at Makataong mga Himala</h3><p><q>Kung gayon, walang pakinabang ang mga tandang sinasabi ninyong ginawa ni Simon. Ang pagpapalakad ng mga rebulto, paggulong sa nagliliyab na baga, pagiging dragon, pagpapalit-anyo bilang kambing, paglipad sa hangin, at lahat ng gayong bagay—dahil hindi para sa pagpapagaling ng tao—ay likas na nakapaglilinlang sa marami. Ngunit ang mga himala ng mahabaging katotohanan ay makatao, gaya ng mga narinig ninyong ginawa ng Panginoon at mga ginagawa ko rin pagkatapos Niya sa pamamagitan ng aking mga panalangin. Naroroon ang marami sa inyo nang ang ilan ay napalaya sa lahat ng uri ng sakit, ang iba sa mga demonyo; ang ilan ay naibalik ang kanilang mga kamay, ang iba ang kanilang mga paa; ang ilan ay muling nakakita, ang iba ay muling nakarinig—at anumang iba pang magagawa ng isang taong may mahabaging espiritu.</q></p><h3>Kabanata XXXV. Ipinagpaliban ang Talakayan</h3><p>Pagkasabi nito ni Pedro, malapit nang magbukang-liwayway nang pumasok si Zaqueo at bumati sa amin. Sinabi niya kay Pedro: <q>Ipinagpaliban ni Simon ang pagsisiyasat hanggang bukas, sapagkat ngayon ang kanyang Sabbath, na dumarating tuwing ikalabing-isang araw.</q> Sumagot si Pedro: <q>Sabihin mo kay Simon: Kailanman mo naisin. At alamin mong lagi kaming handang harapin ka, sa pamamagitan ng banal na pamamatnubay, sa panahong iyong naisin.</q> Nang marinig ito ni Zaqueo, lumabas siya upang ihatid ang sagot.</p><h3>Kabanata XXXVI. Lahat ay Nauuwi sa Mabuti</h3><p>Ngunit nakita ni Pedro na pinanghihinaan ako ng loob at tinanong ang dahilan. Nang sabihin kong wala itong ibang dahilan kundi ang pagkakapagpaliban ng pagsisiyasat, sinabi niya: <q>Ang taong nakaunawa na ang sanlibutan ay pinamamahalaan ng mabuting pamamatnubay ng Diyos, O minamahal kong Clemente, ay hindi nababagabag anuman ang mangyari, sapagkat itinuturing niyang ang mga bagay ay umuusad tungo sa kapakinabangan sa ilalim ng pamamatnubay ng Namumuno. Dahil alam niyang Siya ay matuwid at namumuhay siyang may mabuting budhi, alam niya kung paano alisin sa kanyang kaluluwa, sa pamamagitan ng wastong pangangatwiran, ang anumang pagkayamot na sumapit sa kanya, sapagkat kapag natapos ang pangyayari ay kailangang humantong iyon sa isang kabutihang hindi pa natin alam. Kaya huwag kang malungkot sa pagpapaliban ni Simon na salamangkero sa pagsisiyasat; marahil nangyari ito sa pamamatnubay ng Diyos para sa iyong kapakinabangan. Kaya hindi ako mag-aatubiling magsalita sa iyo bilang natatangi kong kaibigan.</q></p><h3>Kabanata XXXVII. Mga Espiya sa Kampo ng Kaaway</h3><p><q>May ilan sa ating mga tao na nagkukunwaring sumasama kay Simon bilang mga kasama, na para bang nahikayat sila ng kanyang lubhang walang-Diyos na kamalian, upang malaman nila ang kanyang balak at maipahayag iyon sa atin. Sa gayon ay mahaharap natin ang mapanganib na taong ito sa mas kanais-nais na kalagayan. At ngayon ay nalaman ko mula sa kanila kung anu-anong pangangatwiran ang gagamitin niya sa talakayan. Dahil alam ko na ito, sa isang banda ay nagpapasalamat ako sa Diyos, at sa kabilang banda ay binabati kita dahil ipinagpaliban ang talakayan; sapagkat kung maturuan muna kita bago ang talakayan tungkol sa mga pangangatwirang gagamitin niya upang ipahamak ang mga mangmang, makapakikinig ka nang walang panganib na mahulog.</q></p><h3>Kabanata XXXVIII. Pagkasira ng Kautusan</h3><p><q>Sapagkat dahil dito ay maraming kasinungalingang laban sa Diyos ang naidugtong sa mga Kasulatan. Ang propetang si Moises, sa utos ng Diyos, ay nagbigay ng kautusan kasama ng mga paliwanag nito sa ilang piling lalaki, mga pitumpu ang bilang, upang maturuan din nila ang sinuman sa mga tao na nagnanais. Pagkaraan ng kaunting panahon, nadagdagan ang nakasulat na kautusan ng ilang kasinungalingang salungat sa kautusan ng Diyos na gumawa ng langit at lupa at ng lahat ng nasa mga iyon; nangahas ang masama na gawin ito para sa isang layuning matuwid. At nangyari ito ayon sa katuwiran at paghatol upang mahayag ang mga mangangahas makinig sa mga bagay na isinulat laban sa Diyos, at upang makilala rin yaong, dahil sa pag-ibig sa Kanya, ay hindi lamang tatangging maniwala sa mga sinasabing laban sa Kanya kundi hindi man lamang matitiis na pakinggan ang mga iyon, kahit pa mangyaring totoo ang mga iyon, sapagkat itinuturing nilang higit na ligtas ang malagay sa panganib hinggil sa pananampalatayang maka-Diyos kaysa mamuhay na may masamang budhi dahil sa mga salitang lumalapastangan.</q></p><h3>Kabanata XXXIX. Paraan ng Pakikipagtalo</h3><p><q>Kaya, ayon sa nalaman ko, balak ni Simon na lumitaw sa harap ng madla at magsalita tungkol sa mga bahaging laban sa Diyos na idinagdag sa mga Kasulatan, bilang isang pagsubok, upang mailayo niya sa pag-ibig sa Diyos ang pinakamaraming kaawa-awang tao hangga’t maaari. Ayaw naming sabihin sa madla na idinagdag ang mga bahaging ito sa Biblia, sapagkat malilito namin ang mga karamihang walang pinag-aralan at sa gayon ay maisasakatuparan pa namin ang layunin ng masamang si Simon. Dahil wala pa silang kakayahang kumilatis, maaaring layuan nila kami bilang mga lapastangan; o, na para bang hindi lamang ang mga bahaging lumalapastangan ang mali, baka pati ang salita ay talikuran nila. Kaya napipilitan kaming pansamantalang sumang-ayon sa mga maling bahagi at magbalik ng mga tanong sa kanya tungkol sa mga iyon upang mailagay siya sa mahigpit na kalagayan. At sa mga taong may mabuting kalooban, matapos subukin ang kanilang pananampalataya, ipaliliwanag namin nang pribado ang mga bahaging nagsasalita laban sa Diyos. Iisa lamang ang paraan nito, at maikli. Ito iyon.</q></p><h3>Kabanata XL. Paunang Pagtuturo</h3><p><q>Lahat ng sinasabi o isinusulat laban sa Diyos ay mali. At mapatutunayan kong sinasabi natin ito nang totoo, hindi lamang alang-alang sa mabuting pangalan kundi alang-alang sa katotohanan, kapag nakapagpatuloy nang kaunti ang aking pahayag. Kaya, pinakamamahal kong Clemente, hindi ka dapat malungkot na naglagay si Simon ng isang araw sa pagitan ng ngayon at ng talakayan. Sapagkat ngayon, bago ang talakayan, tuturuan ka tungkol sa mga bahaging idinagdag sa mga Kasulatan. Pagkatapos, sa talakayan tungkol sa iisa at mabuting Diyos, na Siya ring Maylikha ng sanlibutan, hindi ka maguguluhan. Sa mismong talakayan ay mamamangha ka pa kung paanong ang mga taong lapastangan, habang nilalampasan ang napakaraming bagay sa mga Kasulatan na nagsasalita para sa Diyos, ay masayang inilalabas ang mga bagay na nagsasalita laban sa Kanya. Dahil dito, ang mga nakikinig, dahil sa kamangmangan, ay naniniwala sa mga bagay na laban sa Diyos at nagiging mga itinakwil mula sa Kanyang kaharian. Kaya dahil sa pakinabang ng pagkakapagpaliban, matututuhan mo ang hiwaga ng mga Kasulatan at magkakaroon ng <em>paraan upang</em> hindi magkasala laban sa Diyos, kaya magagalak ka nang higit sa maihahambing.</q></p><h3>Kabanata XLI. Pagtatanong para sa Kaalaman, Hindi para Sumalungat</h3><p>Nang marinig ko ito, ako, si Clemente, ay nagsabi: <q>Tunay akong nagagalak at nagpapasalamat ako sa Diyos, na gumagawa nang mabuti sa lahat ng bagay. Alam Niya na hindi ko kayang isipin ang iba kundi na ang lahat ng bagay ay para sa Diyos. Kaya huwag mong isipin na nagtatanong ako dahil nag-aalinlangan ako sa mga salitang tungkol sa Diyos o sa mga sasabihin pa, kundi upang matuto ako at sa gayon ay kaya ko ring turuan ang ibang taong tapat na nagnanais matuto. Kaya sabihin mo sa akin kung anu-ano ang mga kasinungalingang idinagdag sa mga Kasulatan at kung paano napatutunayang tunay na mali ang mga iyon.</q> Sumagot si Pedro: <q>Kahit hindi mo ako tinanong, magpapatuloy pa rin sana ako ayon sa pagkakasunud-sunod at ipaliliwanag ko sa iyo ang mga bagay na ito, gaya ng ipinangako ko. Kaya alamin mo kung paano sa maraming paraan ay mali ang paglalarawan ng mga Kasulatan sa Kanya, upang makilala mo ang mga iyon kapag nasumpungan mo.</q></p><h3>Kabanata XLII. Wastong Pagkaunawa sa Diyos, Mahalaga sa Kabanalan</h3><p><q>Ang sasabihin ko sa iyo ay sapat na bilang halimbawa. Ngunit hindi ko iniisip, minamahal kong Clemente, na ang sinumang may kahit kaunting pag-ibig sa Diyos at tapat na kalooban ay kayang tanggapin o maging pakinggan man ang mga bagay na sinasabi laban sa Kanya. Sapagkat paano magkakaroon ng isip na kumikilala sa iisang Pinuno at magiging banal ang isang taong naniniwalang maraming diyos at hindi iisa lamang? At kahit iisa nga lamang, sino ang magkakaroon ng sigasig na maging banal kung nakikita niyang maraming kapintasan sa Kanya, yamang aasahan niyang ang Pasimula ng lahat ng bagay, dahil sa mga kapintasan ng sarili Niyang kalikasan, ay hindi paparusahan ang mga kasalanan ng iba?</q></p><h3>Kabanata XLIII. Paunang Pangangatwiran tungkol sa mga Katangian ng Diyos</h3><p><q>Kaya malayo nawa sa atin ang paniwalang ang Panginoon ng lahat, na gumawa ng langit at lupa at ng lahat ng nasa mga iyon, ay nakikibahagi sa pamamahala kasama ng iba o nagsisinungaling. Sapagkat kung Siya’y nagsisinungaling, sino ang nagsasabi ng katotohanan? O kung nagsasagawa Siya ng mga pagsubok dahil sa kamangmangan, sino ang may paunang kaalaman? At kung Siya’y nagpapasiya at binabago ang Kanyang layunin, sino ang ganap sa pagkaunawa at matatag sa pasiya? Kung Siya’y naiinggit, sino ang higit sa pakikipag-agawan? Kung pinatitigas Niya ang mga puso, sino ang nagpaparunong? Kung binubulag at binibingi Niya, sino ang nagbigay ng paningin at pandinig? Kung nagnanakaw Siya, sino ang nagpapatupad ng katarungan? Kung nangungutya Siya, sino ang tapat? Kung mahina Siya, sino ang makapangyarihan sa lahat? Kung di-matuwid Siya, sino ang matuwid? Kung gumagawa Siya ng masasamang bagay, sino ang gagawa ng mabubuting bagay? Kung gumagawa Siya ng masama, sino ang gagawa ng mabuti?</q></p><h3>Kabanata XLIV. Pagpapatuloy ng Gayunding Pangangatwiran</h3><p><q>Ngunit kung ninanasa Niya ang mabungang burol, kanino kung gayon ang lahat ng bagay? Kung Siya’y bulaang nagsasalita, sino ang totoo? Kung naninirahan Siya sa isang tabernakulo, sino ang walang hangganan? Kung mahilig Siya sa taba, mga hain, mga handog, at mga handog na inumin, sino kung gayon ang walang pangangailangan, at sino ang banal, dalisay, at ganap? Kung nalulugod Siya sa mga kandila at kandelero, sino ang naglagay ng mga tanglaw sa langit? Kung naninirahan Siya sa anino, kadiliman, bagyo, at usok, sino ang liwanag na nagbibigay-liwanag sa sansinukob? Kung dumarating Siya na may mga trumpeta, sigawan, sibat, at palaso, sino ang hinihintay na kapayapaan ng lahat? Kung iniibig Niya ang digmaan, sino ang nagnanais ng kapayapaan? Kung gumagawa Siya ng masasamang bagay, sino ang gumagawa ng mabuti? Kung wala Siyang pagmamahal, sino ang umiibig sa mga tao? Kung hindi Siya tapat sa Kanyang mga pangako, sino ang mapagkakatiwalaan? Kung iniibig Niya ang masasama, mga mangangalunya, at mga mamamatay-tao, sino ang magiging matuwid na Hukom? Kung binabago Niya ang Kanyang isip, sino ang matatag? Kung pinipili Niya ang masasamang tao, sino ang pumapanig sa mabubuti?</q></p><h3>Kabanata XLV. Kung Paano Dapat Isipin ang Diyos</h3><p><q>Kaya, Clemente, anak ko, mag-ingat kang huwag isipin ang Diyos sa ibang paraan kundi ito: Siya ang tanging Diyos, Panginoon, at Ama; mabuti at matuwid; ang Manlilikha; mapagtiis, mahabagin, tagapagpanatili, tagapagkaloob ng kabutihan; nag-uutos ng pag-ibig sa mga tao at nagpapayo ng kalinisan; walang kamatayan at nagbibigay ng kawalang-kamatayan; walang kapantay; nananahan sa mga kaluluwa ng mabubuti; hindi kayang saklawin ngunit gayunma’y nananahan sa mga ito; naglagay sa dakilang sanlibutan na parang isang sentro sa kalawakan; naglatag ng mga langit at nagpatibay ng lupa; nag-imbak ng tubig; nag-ayos ng mga bituin sa langit; nagpaagos ng mga bukal sa lupa; nagpalago ng mga bunga; nagtaas ng mga bundok; nagtakda ng mga hangganan sa dagat; nag-ayos ng mga hangin at bugso; at sa pamamagitan ng espiritu ng payo ay ligtas na nag-iingat sa katawang nakapaloob sa isang walang-hanggang dagat.</q></p><h3>Kabanata XLVI. Ang Darating na Paghuhukom</h3><p><q>Siya ang ating Hukom, at sa Kanya tayo dapat tumingin at ayon sa Kanya ay ayusin ang ating mga kaluluwa, iniisip ang lahat ng bagay nang pabor sa Kanya, nagsasalita nang mabuti tungkol sa Kanya, at naniniwalang sa Kanyang mahabang pagtitiis ay inilalantad Niya ang katigasan ng lahat at Siya lamang ang mabuti. At sa wakas ng lahat ay uupo Siya bilang matuwid na Hukom upang hatulan ang bawat taong nagtangkang gawin ang hindi nararapat.</q></p><h3>Kabanata XLVII. Isang Angkop na Tanong</h3><p>Nang marinig ko ito, ako, si Clemente, ay nagsabi, <q>Tunay, ito ang kabanalan; tunay, ito ang pagiging maka-Diyos.</q> At muli kong sinabi: <q>Nais kong malaman kung bakit may isinulat ang Biblia na ganitong uri ng bagay. Natatandaan kong sinabi mong isinulat iyon upang mahayag ang mga mangangahas maniwala sa anumang sinasabing laban sa Diyos. Ngunit dahil pinahihintulutan mo kaming magtanong, nangangahas kami ayon sa iyong utos: Kung may isang tao, pinakamamahal na Pedro, na magsabi sa amin, ‘Totoo ang mga Kasulatan, kahit para sa inyo ay waring mali ang mga bagay na sinasabing laban sa Diyos,’ paano namin siya sasagutin?</q></p><h3>Kabanata XLVIII. Isang Tiyak na Kaso</h3><p>Sumagot si Pedro: <q>Mabuti ang iyong tanong, sapagkat magiging para sa iyong kaligtasan ang sagot. Kaya makinig ka. Dahil marami ang sinasabi ng mga Kasulatan laban sa Diyos at kapos na ang oras dahil papalapit ang gabi, magtanong ka tungkol sa anumang isang bagay na nais mo at ipaliliwanag ko iyon, na ipinakikitang mali iyon hindi lamang dahil sinasabi laban sa Diyos kundi dahil tunay na mali.</q> Sumagot ako: <q>Nais kong malaman kung paano mo maipakikitang nakaaalam ang Diyos kapag sinasabi ng mga Kasulatan na Siya ay mangmang?</q></p><h3>Kabanata XLIX. Pangangatwiran sa Pamamagitan ng Pagpapakitang Humahantong sa Kabalintunaan</h3><p>Sumagot si Pedro: <q>Nagbigay ka sa amin ng isang bagay na madaling sagutin. Gayunman, makinig ka kung paano walang anumang hindi nalalaman ang Diyos, kundi may paunang kaalaman pa Siya. Ngunit sagutin mo muna ang itatanong ko. Ang sumulat ng Biblia, na nagsalaysay kung paano nilikha ang sanlibutan at nagsabing walang paunang kaalaman ang Diyos—tao ba siya o hindi?</q> Sinabi ko: <q>Tao siya.</q> Sumagot si Pedro: <q>Kung gayon, paano naging posible para sa kanya, bilang tao, na tiyak na malaman kung paano nilikha ang sanlibutan at na walang paunang kaalaman ang Diyos?</q></p><h3>Kabanata L. Isang Kasiya-siyang Sagot</h3><p>Nang maunawaan ko na ang paliwanag, ngumiti ako at sinabi kong siya ay isang propeta. Sinabi ni Pedro: <q>Kung gayon, kung bilang isang taong propeta ay wala siyang hindi nalalaman dahil tumanggap siya mula sa Diyos ng paunang kaalaman, paano magiging mangmang ang Diyos mismo na Siyang nagbigay sa tao ng kaloob na paunang kaalaman?</q> Sinabi ko: <q>Tama ang sinabi mo.</q> Sinabi ni Pedro: <q>Sumama ka sa akin sa isa pang hakbang. Yamang kinikilala nating may paunang kaalaman ang Diyos sa lahat ng bagay, kailangang mali ang mga kasulatang nagsasabing Siya ay mangmang at totoo ang mga nagsasabing Siya ay nakaaalam.</q> Sinabi ko: <q>Talagang kailangang gayon nga.</q></p><h3>Kabanata LI. Timbangin sa Timbangan</h3><p>Sinabi ni Pedro: <q>Kung gayon, kung ang ilang bahagi ng mga Kasulatan ay totoo at ang iba ay mali, may mabuting dahilan kung bakit sinabi ng ating Guro, ‘Maging mabubuting tagasuri kayo ng salapi,’ sapagkat sa mga Kasulatan ay may ilang tunay na pahayag at may ilang huwad. At sa mga nagkakamali dahil sa mga maling kasulatan ay angkop Niyang ipinakita ang sanhi ng kanilang pagkakamali sa pagsasabing, ‘Nagkakamali kayo dahil hindi ninyo nalalaman ang mga tunay na bagay ng mga Kasulatan; kaya hindi rin ninyo nalalaman ang kapangyarihan ng Diyos.’</q> Sinabi ko: <q><em>Napakahusay ng sinabi mo.</em></q></p><h3>Kabanata LII. Itinatanggi ang mga Kasalanan ng mga Banal</h3><p>Sumagot si Pedro: <q>Tiyak, at may mabuting dahilan, na hindi ako naniniwala sa anumang laban sa Diyos ni laban sa mga matuwid na lalaking nakatala sa kautusan, sapagkat itinuturing kong mga lapastangang kathang-isip ang mga iyon. Sapagkat ayon sa aking paniniwala, si Adan na hinubog ng mga kamay ng Diyos ay hindi isang lumabag; si Noe, na napatunayang matuwid kaysa sa buong sanlibutan, ay hindi nalasing; si Abraham, na dahil sa kanyang pagpipigil ay itinuring na karapat-dapat magkaroon ng napakaraming salinlahi, ay hindi namuhay nang sabay-sabay kasama ng tatlong asawa; ni si Jacob, na ama ng labindalawang lipi at nagpahiwatig sa darating na pagparito ng ating Guro, ay hindi nakipamuhay sa apat—na dalawa sa kanila ay magkapatid na babae; ni si Moises ay hindi mamamatay-tao, at hindi rin siya natutong humatol mula sa isang paring sumasamba sa diyus-diyosan—siya na naghayag ng kautusan ng Diyos sa buong sanlibutan at pinatotohanang tapat na katiwala dahil sa kanyang wastong paghatol.</q></p><h3>Kabanata LIII. Pagtatapos ng Talakayan</h3><p><q>Ngunit ang mga ito at mga katulad na bagay ay ipaliliwanag ko sa inyo sa tamang panahon. Sa ngayon, yamang gaya ng nakikita ninyo ay inabutan na tayo ng gabi, sapat na muna para sa araw na ito ang mga nasabi. Ngunit kailanman ninyo naisin at tungkol sa anumang nais ninyo, malaya kayong magtanong sa amin, at agad naming ipaliliwanag nang buong galak.</q> Pagkasabi nito, tumayo siya. Pagkatapos naming kumain, natulog kami, sapagkat sumapit na ang gabi.</p></section>
+<hr/>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  const englishView = document.getElementById('englishView');
+  const tagalogView = document.getElementById('tagalogView');
+  const languageToggle = document.getElementById('languageToggle');
+  const textZoomOut = document.getElementById('textZoomOut');
+  const textZoomReset = document.getElementById('textZoomReset');
+  const textZoomIn = document.getElementById('textZoomIn');
+  const themeToggle = document.getElementById('themeToggle');
+  const chapterSelect = document.getElementById('chapterSelect');
+  const controls = document.querySelector('.reader-controls');
+  const controlsPlaceholder = document.getElementById('readerControlsPlaceholder');
+
+  const SCALE_KEY = 'sacredWritings.readerScale';
+  const MIN_SCALE = 0.85;
+  const MAX_SCALE = 1.75;
+  const SCALE_STEP = 0.15;
+
+  /* Toolbar behavior timings. */
+  const UP_STAY_MS = 2300;          // Scroll up: show immediately and stay briefly.
+  const DOWN_APPEAR_DELAY_MS = 900; // Scroll down: appear after sustained downward movement.
+  const VISIBLE_WINDOW_MS = 2600;   // Once shown, stay visible for this long.
+  const SCROLL_IDLE_MS = 180;
+  const MIN_SCROLL_DELTA = 4;
+
+  let readerScale = 1;
+  let currentLanguage = 'en';
+  let lastScrollY = window.scrollY || 0;
+  let lastDirection = 'none';
+  let toolbarHideTimer = null;
+  let downRevealTimer = null;
+  let scrollIdleTimer = null;
+  let interactingWithToolbar = false;
+  let toolbarOriginBottom = 0;
+
+  const READING_BLOCK_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, blockquote';
+
+  function readStoredValue(key) {
+    try { return window.localStorage.getItem(key); }
+    catch (error) { return null; }
+  }
+
+  function storeValue(key, value) {
+    try { window.localStorage.setItem(key, value); }
+    catch (error) {}
+  }
+
+  function clearTimer(name) {
+    if (name === 'hide' && toolbarHideTimer) {
+      clearTimeout(toolbarHideTimer);
+      toolbarHideTimer = null;
+    }
+    if (name === 'down' && downRevealTimer) {
+      clearTimeout(downRevealTimer);
+      downRevealTimer = null;
+    }
+  }
+
+  function measureToolbarOrigin() {
+    const wasFloating = controls.classList.contains('is-floating');
+    if (wasFloating) controls.classList.remove('is-floating');
+    toolbarOriginBottom = controls.getBoundingClientRect().bottom + window.scrollY;
+    if (wasFloating) controls.classList.add('is-floating');
+  }
+
+  function isNearOriginalToolbar() {
+    return window.scrollY <= Math.max(8, toolbarOriginBottom - controls.offsetHeight);
+  }
+
+  function showToolbar(options) {
+    options = options || {};
+    clearTimer('hide');
+
+    if (!isNearOriginalToolbar() || options.forceFloating) {
+      controls.classList.add('is-floating');
+    } else {
+      controls.classList.remove('is-floating');
+    }
+
+    controls.classList.remove('is-hidden');
+    controls.classList.add('is-visible');
+
+    if (!interactingWithToolbar && options.autoHide !== false) {
+      toolbarHideTimer = setTimeout(function () {
+        hideToolbar(true);
+      }, options.duration || VISIBLE_WINDOW_MS);
+    }
+  }
+
+  function hideToolbar(releaseFloating) {
+    if (interactingWithToolbar || isNearOriginalToolbar()) return;
+    clearTimer('hide');
+    controls.classList.remove('is-visible');
+    controls.classList.add('is-hidden');
+
+    if (releaseFloating) {
+      setTimeout(function () {
+        if (controls.classList.contains('is-hidden')) {
+          controls.classList.remove('is-floating');
+        }
+      }, 250);
+    }
+  }
+
+  function getReaderAnchorY() {
+    if (controls.classList.contains('is-floating') && controls.classList.contains('is-visible')) {
+      return controls.getBoundingClientRect().bottom + 12;
+    }
+    return 12;
+  }
+
+  function getReadingBlocks(view) {
+    return Array.from(view.querySelectorAll(READING_BLOCK_SELECTOR));
+  }
+
+  function captureReadingPosition(view) {
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return null;
+
+    const anchorY = getReaderAnchorY();
+    let selectedIndex = 0;
+    let selectedRect = blocks[0].getBoundingClientRect();
+
+    for (let index = 0; index < blocks.length; index += 1) {
+      const rect = blocks[index].getBoundingClientRect();
+      if (rect.top <= anchorY && rect.bottom >= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+        break;
+      }
+      if (rect.top <= anchorY) {
+        selectedIndex = index;
+        selectedRect = rect;
+      } else {
+        break;
+      }
+    }
+
+    const height = Math.max(selectedRect.height, 1);
+    return {
+      index: selectedIndex,
+      progress: Math.max(0, Math.min(1, (anchorY - selectedRect.top) / height))
+    };
+  }
+
+  function restoreReadingPosition(view, position) {
+    if (!position) return;
+    const blocks = getReadingBlocks(view);
+    if (!blocks.length) return;
+    const target = blocks[Math.min(position.index, blocks.length - 1)];
+    const rect = target.getBoundingClientRect();
+    const targetPoint = rect.top + (rect.height * position.progress);
+    const delta = targetPoint - getReaderAnchorY();
+    if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+  }
+
+  function renderLanguage(language) {
+    currentLanguage = language === 'tl' ? 'tl' : 'en';
+    const showTagalog = currentLanguage === 'tl';
+    englishView.hidden = showTagalog;
+    tagalogView.hidden = !showTagalog;
+    document.documentElement.lang = currentLanguage;
+    languageToggle.textContent = showTagalog ? 'English' : 'Tagalog';
+    languageToggle.setAttribute('aria-label', showTagalog
+      ? 'Switch to English at the same reading position'
+      : 'Lumipat sa Tagalog sa parehong bahagi ng binabasa');
+    syncChapterSelectorToScroll();
+  }
+
+  function switchLanguage() {
+    const sourceView = currentLanguage === 'en' ? englishView : tagalogView;
+    const targetLanguage = currentLanguage === 'en' ? 'tl' : 'en';
+    const targetView = targetLanguage === 'en' ? englishView : tagalogView;
+    const readingPosition = captureReadingPosition(sourceView);
+    renderLanguage(targetLanguage);
+    requestAnimationFrame(function () { restoreReadingPosition(targetView, readingPosition); });
+  }
+
+  function applyReaderScale() {
+    readerScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, readerScale));
+    document.documentElement.style.setProperty('--reader-scale', readerScale.toFixed(2));
+    textZoomReset.textContent = Math.round(readerScale * 100) + '%';
+    textZoomOut.disabled = readerScale <= MIN_SCALE + 0.001;
+    textZoomIn.disabled = readerScale >= MAX_SCALE - 0.001;
+    storeValue(SCALE_KEY, readerScale.toFixed(2));
+  }
+
+  const THEME_ORDER = ['original', 'dark', 'sepia'];
+  let currentTheme = 'original';
+
+  function setTheme(theme) {
+    const resolved = THEME_ORDER.includes(theme) ? theme : 'original';
+    currentTheme = resolved;
+    document.documentElement.setAttribute('data-theme', resolved);
+
+    const labels = { original: 'Default', dark: 'Dark', sepia: 'Sepia' };
+    const nextTheme = THEME_ORDER[(THEME_ORDER.indexOf(resolved) + 1) % THEME_ORDER.length];
+    themeToggle.textContent = 'Theme';
+    themeToggle.title = 'Theme: ' + labels[resolved];
+    themeToggle.setAttribute('aria-label', 'Theme: ' + labels[resolved] + '. Press to switch to ' + labels[nextTheme] + ' mode');
+  }
+
+  function cycleTheme() {
+    const index = THEME_ORDER.indexOf(currentTheme);
+    setTheme(THEME_ORDER[(index + 1) % THEME_ORDER.length]);
+  }
+
+  function getEnglishChapterAnchors() {
+    let headings = Array.from(englishView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Chapter\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(englishView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function getTagalogChapterAnchors() {
+    let headings = Array.from(tagalogView.querySelectorAll('h3')).filter(function (h) {
+      return /^\s*Kabanata\s+(?:\d+|[IVXLCDM]+)/i.test(h.textContent || '');
+    });
+    if (!headings.length) headings = Array.from(tagalogView.querySelectorAll('h2'));
+    return headings;
+  }
+
+  function buildChapterSelector() {
+    const en = getEnglishChapterAnchors();
+    chapterSelect.innerHTML = '<option value="">Chapter</option>';
+    en.forEach(function (heading, index) {
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = (heading.textContent || ('Chapter ' + (index + 1))).trim();
+      chapterSelect.appendChild(option);
+    });
+    chapterSelect.disabled = en.length === 0;
+  }
+
+  function goToChapter(index) {
+    if (!Number.isInteger(index) || index < 0) return;
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    const target = targets[index];
+    if (!target) return;
+    showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS });
+    const toolbarOffset = controls.offsetHeight + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - toolbarOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function syncChapterSelectorToScroll() {
+    const targets = currentLanguage === 'tl' ? getTagalogChapterAnchors() : getEnglishChapterAnchors();
+    if (!targets.length) return;
+
+    /* At the document tail the final heading may be unable to rise to the
+       normal reader anchor because there is no remaining page height.
+       Treat the bottom of the document as the final chapter so a direct
+       navigation choice does not fall back to the preceding chapter. */
+    const root = document.documentElement;
+    const atDocumentEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 4;
+    if (atDocumentEnd) {
+      chapterSelect.value = String(targets.length - 1);
+      return;
+    }
+
+    const anchor = getReaderAnchorY() + 8;
+    let current = 0;
+    for (let i = 0; i < targets.length; i += 1) {
+      if (targets[i].getBoundingClientRect().top <= anchor) current = i;
+      else break;
+    }
+    chapterSelect.value = String(current);
+  }
+
+  function handleScroll() {
+    const y = window.scrollY || 0;
+    const delta = y - lastScrollY;
+
+    if (isNearOriginalToolbar()) {
+      clearTimer('hide');
+      clearTimer('down');
+      controls.classList.remove('is-floating', 'is-hidden');
+      controls.classList.add('is-visible');
+      lastScrollY = y;
+      syncChapterSelectorToScroll();
+      return;
+    }
+
+    if (Math.abs(delta) >= MIN_SCROLL_DELTA) {
+      const direction = delta < 0 ? 'up' : 'down';
+
+      if (direction === 'up') {
+        clearTimer('down');
+        /* Start the up-scroll visibility window once per continuous gesture.
+           Do not restart it on every scroll event, so the toolbar eventually
+           leaves the screen even while the user keeps scrolling upward. */
+        if (lastDirection !== 'up') {
+          showToolbar({ autoHide: true, duration: UP_STAY_MS, forceFloating: true });
+        }
+      } else {
+        /* Downward reading gets a clean screen first, then controls appear after a short delay. */
+        if (lastDirection !== 'down') {
+          hideToolbar(false);
+          clearTimer('down');
+          downRevealTimer = setTimeout(function () {
+            showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+          }, DOWN_APPEAR_DELAY_MS);
+        }
+      }
+
+      lastDirection = direction;
+    }
+
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(function () {
+      lastDirection = 'none';
+      clearTimer('down');
+    }, SCROLL_IDLE_MS);
+
+    lastScrollY = y;
+    syncChapterSelectorToScroll();
+  }
+
+  const storedScale = parseFloat(readStoredValue(SCALE_KEY));
+  if (Number.isFinite(storedScale)) readerScale = storedScale;
+
+  setTheme('original');
+  applyReaderScale();
+  renderLanguage('en');
+  buildChapterSelector();
+
+  languageToggle.addEventListener('click', switchLanguage);
+  textZoomOut.addEventListener('click', function () { readerScale -= SCALE_STEP; applyReaderScale(); });
+  textZoomIn.addEventListener('click', function () { readerScale += SCALE_STEP; applyReaderScale(); });
+  textZoomReset.addEventListener('click', function () { readerScale = 1; applyReaderScale(); });
+  themeToggle.addEventListener('click', cycleTheme);
+  chapterSelect.addEventListener('change', function () {
+    if (chapterSelect.value !== '') goToChapter(parseInt(chapterSelect.value, 10));
+  });
+
+  controls.addEventListener('mouseenter', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+    showToolbar({ autoHide: false, forceFloating: !isNearOriginalToolbar() });
+  });
+  controls.addEventListener('mouseleave', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('focusin', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  });
+  controls.addEventListener('focusout', function () {
+    interactingWithToolbar = false;
+    if (!isNearOriginalToolbar()) showToolbar({ autoHide: true, duration: VISIBLE_WINDOW_MS, forceFloating: true });
+  });
+  controls.addEventListener('touchstart', function () {
+    interactingWithToolbar = true;
+    clearTimer('hide');
+  }, { passive: true });
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', function () {
+    measureToolbarOrigin();
+    syncChapterSelectorToScroll();
+  });
+
+  measureToolbarOrigin();
+})();
+</script>
+</body>
+</html>
